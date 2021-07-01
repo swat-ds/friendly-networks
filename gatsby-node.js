@@ -4,7 +4,7 @@ const apiData = require('./src/assets/data/ids.json')
 
 const constellationIds = apiData.ids;
 
-var constellations = [];
+let constellations = [];
 
 exports.sourceNodes = async ({
   actions,
@@ -27,13 +27,11 @@ exports.sourceNodes = async ({
 
     constellations.push(await fetchConstellation());
   }
-
-  console.log(constellations.length);
-  // const fetchConstellation = (id) =>
-  //   axios.put(`https://api.snaccooperative.org`, {
-  //     command: "read",
-  //     constellationid: id,
-  //   });
+  const fetchConstellation = (id) =>
+    axios.put(`https://api.snaccooperative.org`, {
+      command: "read",
+      constellationid: id,
+    });
   // await for results
   // let res = await fetchConstellation(85290808);
   // console.log(res.status);
@@ -42,15 +40,15 @@ exports.sourceNodes = async ({
   // constellations.push(res.data.constellation);
   // console.log(constellations.length);
 
-  // const getALlConstellations = async (_) => {
-  //   console.log("Started fetching");
-  //     for (let i = 0; i < constellationIds.length; i++) {
-  //       const res = await fetchConstellation(constellationIds[i]);
-  //       constellations.push(res.data.constellation);
-  //     }
-  //   console.log("All are fetched");
-  // };
-  // getALlConstellations();
+  const getALlConstellations = async (_) => {
+    console.log("Started fetching");
+      for (let i = 0; i < constellationIds.length; i++) {
+        const res = await fetchConstellation(constellationIds[i]);
+        constellations.push(res.data.constellation);
+      }
+    console.log("All are fetched");
+  };
+  getALlConstellations();
 
   // //With promises
   // const allPromises = []
@@ -107,7 +105,13 @@ exports.sourceNodes = async ({
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      text: c.data.constellation.sources,
+      sources: c.data.constellation.sources,
+      nameEntries: c.data.constellation.nameEntries,
+      bioHists: c.data.constellation.bioHists,
+      resourceRelations: c.data.constellation.resourceRelations,
+      places: c.data.constellation.places,
+      subjects: c.data.constellation.subjects,
+      dates: c.data.constellation.dates,
     };
 
     // add it to userNode
