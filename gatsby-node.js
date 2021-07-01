@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
 const axios = require("axios");
+const filesystem = require("fs");
 
 
 const constellationIds = [
@@ -96,44 +97,52 @@ const constellationIds = [
 
 let constellations = []
 
-exports.sourceNodes = ({
-  actions: { createNode },
-  createNodeId,
-  createContentDigest,
-}) => {
+exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
+const { createNode } = actions;
   console.log("(1)", "read");
 
   //inputs to fetch the data
   //   fetch raw data from the randomuser api
   
 
-  constellationIds.forEach(async id =>{
-      await fetch(`https://api.snaccooperative.org`, {
-          command: "read",
-          constellationid: id,
-        })
-        .then((response) => {
-            constellations.push(response.data);
-        })
-        .catch(error => {
-          if (error.response) {
-            // Request made and server responded
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            // The request was made but no response was received
-            console.log(error.request);
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log("Error", error.message);
-          }
-        });
+  // constellationIds.forEach( id =>{
+
+  let id = 6888581;
+
+    const fetchConstellation = () =>
+      axios.put(`https://api.snaccooperative.org`, {
+        "command": "read",
+        "constellationid": id,
+      });
+    // await for results
+    const res = await fetchConstellation();
+    // console.log(res)
+    constellations.push(res.data.constellation);
+
+
+    // const options = {
+    //   method: "PUT",
+    //   body: {
+    //     command
+    //   }
+    // }
+    //    fetch(`https://api.snaccooperative.org`, {
+    //      body: JSON.stringify(options),
+    //      headers: { "Content-Type": "application/json" },
+    //    })
+    //      .then((response) => {
+    //        console.log(response.status);
+    //        constellations.push(response.data);
+    //      })
+    //      .catch((error) => {
+    //        // Something happened in setting up the request that triggered an Error
+    //        console.log("Error", error.message);
+    //      });
       
-  })
+  // })
   console.log("(2)", "retrieved");
   // map into these results and create nodes
-  constellations.map((constellation) => {
+  constellations = constellations.map((constellation) => {
     //   // Create your node object
     const constellationNode = {
       //     // Required fields
@@ -146,7 +155,7 @@ exports.sourceNodes = ({
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      text: constellation.sources[3].text,
+      text: constellation.sources,
     };
 
     // add it to userNode

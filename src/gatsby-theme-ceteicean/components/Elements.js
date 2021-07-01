@@ -33,6 +33,7 @@ export const Entry = (props) => {
   </Behavior>)
 }
 
+//MNBN
 export const TEI = (props) => {
   return (
     <Behavior node={props.teiNode}>
@@ -41,6 +42,7 @@ export const TEI = (props) => {
   );
 };
 
+//MNBN
 export const Header = (props) => {
   return (
     <Behavior node={props.teiNode}>
