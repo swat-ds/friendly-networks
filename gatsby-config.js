@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "/src/assets/data/transcripts",
+        path: "./src/assets/data/transcripts",
       },
     },
   ],
