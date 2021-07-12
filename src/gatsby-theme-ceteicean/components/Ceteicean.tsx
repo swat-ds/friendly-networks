@@ -1,7 +1,8 @@
 import React from "react"
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
-
+import {Container, Row, Button, Col} from 'react-bootstrap'
 import * as El from "./Elements"
+import '../../styles.scss'
 
 const ShadowedCeteicean = ({pageContext}) => {
   const routes = {
@@ -29,9 +30,11 @@ const ShadowedCeteicean = ({pageContext}) => {
     "tei-title": El.Title,
     "tei-said": El.Said,
   };
-  return(
-    <Ceteicean pageContext={pageContext} routes={routes}/>
-  )
+  return (
+    <Container>
+      <Ceteicean pageContext={pageContext} routes={routes} />
+    </Container>
+  );
 
 }
 export default ShadowedCeteicean

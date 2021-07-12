@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
+import Button from "react-bootstrap/Button"
 
 const allSC = [
 "sc203238",
@@ -49,12 +50,12 @@ const Image = () => {
 export default Image;
 
 const Wrapper = styled.div`
-width: 9in;
+width: 6in;
 border: 2px solid red;
 align-items: center;
 display: flex;
   img {
-    height: 7in;
+    height: 6in;
     width: 5in;
   }
 `;

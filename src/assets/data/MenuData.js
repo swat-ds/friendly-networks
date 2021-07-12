@@ -3,4 +3,5 @@ export const menuData = [
   { title: "Project", link: "/project" },
   { title: "Learn", link: "/learn" },
   { title: "Contact", link: "/contact" },
-]
+  { title: "Journals", link: "/journals" },
+];

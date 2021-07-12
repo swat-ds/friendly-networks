@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const axios = require("axios");
 const apiData = require('./src/assets/data/ids.json')
 

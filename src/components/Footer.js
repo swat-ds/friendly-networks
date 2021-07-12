@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Footer = (props) => {
-    return (
-      <Wrapper className="footer">
-        <h5>
-          Created by Digital Scholarship @ Swarthmore College
-          All Rights are Reserved
-        </h5>
-      </Wrapper>
-    );
-}
+  return (
+    <Wrapper className="footer">
+      <h5>
+        Created by Digital Scholarship @ Swarthmore College All Rights are
+        Reserved
+      </h5>
+    </Wrapper>
+  );
+};
 //TODO: Style this component
 const Wrapper = styled.div`
   position: absolute;
@@ -22,5 +22,6 @@ const Wrapper = styled.div`
   color: white;
   text-align: center;
   border: medium solid #2596be;
+  
 `;
-export default Footer
+export default Footer;

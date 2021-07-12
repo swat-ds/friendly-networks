@@ -1,125 +1,89 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
 import { FaBars } from "react-icons/fa";
 import { menuData } from "../assets/data/MenuData";
-import { Button } from "./Button";
+import Button from 'react-bootstrap/Button'
+import {
+  Navbar,
+   Nav, 
+  Form, 
+FormControl} from 'react-bootstrap'
+
 const Header = (props) => {
   return (
-    // <Div>
-    //   <div className="nav-page">
-    //     <ul>
-    //       <li>
-    //         <Link to="/" className="link">
-    //           home
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/about" className="link">
-    //           about
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/contact" className="link">
-    //           contact
-    //         </Link>
-    //       </li>
-    //     </ul>
-    //   </div>
-    //   <div className="query">
-    //     <input
-    //       type="text"
-    //       className="search-bar"
-    //       placeholder="Type to Search..."
-    //     />
-    //     <button className="search-btn">Search</button>
-    //   </div>
-    //   {props.children}
-    // </Div>
-    <Nav>
-      <NavLink to="/">OBF</NavLink>
+    <Div>
+      <div id="logo-container">
+        <img src="../assets/images/logo.png" alt="" />
+      </div>
+      <div id="nav-menu">
+        <button className="menu-btn">
+          <Link to="/journals">Journals</Link>
+        </button>
+      </div>
       <Bars />
-      <NavMenu>
-        {menuData.map((item, index) => (
-          <NavLink to={item.link} key={index}>
-            {item.title}
-          </NavLink>
-        ))}
-      </NavMenu>
-      <NavBtn>
-        <Button primary="true" round="true" to="/trips">
-          Espanol
-        </Button>
-      </NavBtn>
-    </Nav>
+      <Info>
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-info">Search</Button>
+          </Form>
+        </Navbar>
+      </Info>
+    </Div>
   );
 };
 
-//TODO: Style this component
-// const Div = styled.header`
-//   display: flex;
-//   flex-wrap: wrap;
-//   border: medium solid #2596be;
-//   text-align: center;
-//   justify-content: center;
-//   background: rebeccapurple;
-//   color: white;
-//   height: 6rem;
-
-//   .query {
-//     position: absolute;
-//     height: fit-content;
-//     width: fit-content;
-//     left: 70%;
-//     top: 6%;
-//     border: medium solid #2596be;
-//   }
-
-//   .search-bar {
-//     height: 40px;
-//     width: 15rem;
-//   }
-//   .search-btn {
-//     height: 40px;
-//   }
-
-//   .nav-page {
-//     position: absolute;
-//     border: medium solid #2596be;
-//     height: 3%;
-//     width: 20%;
-//     left: 70%;
-//     top: 1%;
-//   }
-
-//   .nav-page ul {
-//     margin: 0;
-//     padding: 0;
-//     display: flex;
-//     flex-flow: row nowrap;
-//     justify-content: space-around;
-//   }
-
-//   .nav-page li {
-//     margin: 0;
-//     padding: 0;
-//     display: block;
-//   }
-//   .link{
-//       color: white;
-//       text-decoration: none;
-//   }
-// `;
-const Nav = styled.nav`
-  background: rebeccapurple;
+const Div = styled.div`
+  position: relative;
+  background: #0b8ab8;
   height: 80px;
   display: flex;
+  border-bottom: thick solid orange;
 
   justify-content: space-between;
   padding: 0.5rem calc((100vw -1300vw) / 2);
   z-index: 100;
-  position: relative;
+
+  #logo-container {
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 5rem;
+    top: 0px;
+    left: 0px;
+  }
+
+  #logo-container img {
+    height: inherit;
+    width: inherit;
+  }
+
+  #nav-menu {
+    position: absolute;
+    border: thin solid blue;
+    width: 40rem;
+    height: 3rem;
+    top: 25px;
+    left: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nav-menu .menu-btn{
+    height: 2rem;
+    width: 6rem;
+    color: white;
+    background: none;
+
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -145,24 +109,17 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `;
-const NavMenu = styled.div`
+const Info = styled.div`
+position: absolute;
   display: flex;
   align-items: center;
-  margin-right: -48px;
+  border: thin solid blue;
+  padding: 5px;
+  right: 10rem;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
-const NavBtn = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`
 
 export default Header;
