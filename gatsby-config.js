@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "./src/assets/data/Transcripts",
+        path: "./src/assets/pid-tei",
       },
     },
     {

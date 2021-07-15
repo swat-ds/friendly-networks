@@ -1,37 +1,35 @@
-import React from "react"
-import { TEINodes } from "react-teirouter"
-import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior"
-
+import React from "react";
+import { TEINodes } from "react-teirouter";
+import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
+import { isExportSpecifier } from "typescript";
 
 export const PersonName = (props) => {
-  return (<Behavior node={props.teiNode}>
-    <a href={props.teiNode.attributes.getNamedItem('key').value}>
-      {<TEINodes 
-          teiNodes={props.teiNode.childNodes}
-          {...props}/>}
-    </a>
-  </Behavior>)
-}
+  return (
+    <Behavior node={props.teiNode}>
+      <a href={props.teiNode.attributes.getNamedItem("key").value}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </a>
+    </Behavior>
+  );
+};
 
 export const EntryDate = (props) => {
-  return (<Behavior node={props.teiNode}>
-    <span style={{textDecoration:'underline'}}>
-      {<TEINodes 
-          teiNodes={props.teiNode.childNodes}
-          {...props}/>}
-    </span>
-  </Behavior>)
-}
+  return (
+    <Behavior node={props.teiNode}>
+      <span style={{ textDecoration: "underline" }}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </span>
+    </Behavior>
+  );
+};
 
 export const Entry = (props) => {
-  return (<Behavior node={props.teiNode}>
-    <div>
-      {<TEINodes 
-          teiNodes={props.teiNode.childNodes}
-          {...props}/>}
-    </div>
-  </Behavior>)
-}
+  return (
+    <Behavior node={props.teiNode}>
+      <div>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</div>
+    </Behavior>
+  );
+};
 
 //MNBN
 export const TEI = (props) => {
@@ -46,7 +44,9 @@ export const TEI = (props) => {
 export const Header = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <header>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</header>
+      <header>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </header>
     </Behavior>
   );
 };
@@ -67,10 +67,12 @@ export const Body = (props) => {
   );
 };
 
+var allPids = [];
 export const Pb = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
+      <hr id={props.teiNode.attributes.getNamedItem("facs").value} />
     </Behavior>
   );
 };
@@ -115,13 +117,10 @@ export const Quote = (props) => {
   );
 };
 
-
 export const I = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <i>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </i>
+      <i>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</i>
     </Behavior>
   );
 };
@@ -129,7 +128,9 @@ export const I = (props) => {
 export const Figure = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <figure>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</figure>
+      <figure>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </figure>
     </Behavior>
   );
 };
@@ -137,9 +138,7 @@ export const Figure = (props) => {
 export const Note = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </>
+      <>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</>
     </Behavior>
   );
 };
@@ -147,7 +146,9 @@ export const Note = (props) => {
 export const Table = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <table>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</table>
+      <table>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </table>
     </Behavior>
   );
 };
@@ -155,9 +156,7 @@ export const Table = (props) => {
 export const Row = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <tr>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </tr>
+      <tr>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</tr>
     </Behavior>
   );
 };
@@ -173,7 +172,9 @@ export const Cell = (props) => {
 export const Label = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <label>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</label>
+      <label>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </label>
     </Behavior>
   );
 };
@@ -181,9 +182,7 @@ export const Label = (props) => {
 export const Item = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <li>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </li>
+      <li>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</li>
     </Behavior>
   );
 };

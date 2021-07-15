@@ -1,10 +1,16 @@
 import React from "react"
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import {Container, Row, Button, Col} from 'react-bootstrap'
+import Image from '../../components/Image'
+import Layout from "../../components/Layout";
+
 import * as El from "./Elements"
 import '../../styles.scss'
 
 const ShadowedCeteicean = ({pageContext}) => {
+  // let pids  = El.Pids();
+  // console.log(pids)
+
   const routes = {
     "tei-TEI": El.TEI,
     "tei-teiHeader": El.Header,
@@ -30,11 +36,36 @@ const ShadowedCeteicean = ({pageContext}) => {
     "tei-title": El.Title,
     "tei-said": El.Said,
   };
+
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(pageContext.prefixed, "text/xml");
+  const pages = xmlDoc.getElementsByTagName("tei-pb");
+  let pids = []
+  for (let index = 0; index < pages.length; index++) {
+    pids.push(pages[index].attributes.getNamedItem("facs").value);
+  }
+  console.log(pids)
+
+  
   return (
-    <Container>
-      <Ceteicean pageContext={pageContext} routes={routes} />
-    </Container>
+    <Layout>
+      <Row>
+        <Col>Page Break Pagination</Col>
+      </Row>
+      <Row>
+        <Image></Image>
+        <Col>
+          <section>
+            <Ceteicean pageContext={pageContext} routes={routes} />
+          </section>
+        </Col>
+      </Row>
+      <Row>
+        <Col>Journal File Pagination Pagination</Col>
+      </Row>
+    </Layout>
   );
 
 }
+
 export default ShadowedCeteicean
