@@ -1,22 +1,39 @@
 import React from 'react'
 
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import Image from "../components/Image";
 import {Button} from 'react-bootstrap'
 
-const journals = () => {
+const journals = ({data}) => {
     return (
       <>
         <Layout>
           <Button variant="outline-info">
-            <Link to="/sc203240">John Hunt</Link>
+            <Link to={"/" + data.allCetei.nodes[0].parent.name}>
+              John Hunt
+            </Link>
           </Button>
         </Layout>
       </>
     );
 }
 
+export const data = graphql`
+  {
+    allCetei {
+      totalCount
+      nodes {
+        parent {
+          ... on File {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+`;
 export default journals
 

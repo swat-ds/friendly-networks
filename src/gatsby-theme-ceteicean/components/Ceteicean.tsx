@@ -1,13 +1,19 @@
 import React from "react"
+import {useState, useEffect } from 'react'
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import {Container, Row, Button, Col} from 'react-bootstrap'
 import Image from '../../components/Image'
 import Layout from "../../components/Layout";
+import { graphql, Link } from "gatsby";
 
 import * as El from "./Elements"
 import '../../styles.scss'
 
-const ShadowedCeteicean = ({pageContext}) => {
+
+let counter = 1;
+let counter2 = 0;
+
+const ShadowedCeteicean = ({pageContext, data}) => {
   // let pids  = El.Pids();
   // console.log(pids)
 
@@ -44,16 +50,51 @@ const ShadowedCeteicean = ({pageContext}) => {
   for (let index = 0; index < pages.length; index++) {
     pids.push(pages[index].attributes.getNamedItem("facs").value);
   }
-  console.log(pids)
+  // console.log(pids);
+  // console.log(typeof pids[0])
+
+  const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
+  // console.log(data.allCetei.nodes);
+
+  const [currentImage, setImage] = useState(pids[counter2])
+
+  function getNextCetei(){
+    //  console.log(counter);
+      setCetei(data.allCetei.nodes[counter++].parent.name)
+      // console.log(data.allCetei.nodes[counter].parent.name);
+  }
+    function getPrevCetei() {
+      // console.log(counter);
+      setCetei(data.allCetei.nodes[counter--].parent.name);
+      // console.log(data.allCetei.nodes[counter].parent.name);
+    }
+
+    function getNextImage(){
+      console.log(pids[counter2])
+      setImage(pids[counter2++]);
+      ///Increment in
+    }
+  function getPrevImage() {
+    console.log(pids[counter2]);
+     setImage(pids[counter2--]);
+  }
 
   
   return (
     <Layout>
       <Row>
-        <Col>Page Break Pagination</Col>
+        <Col>
+          <Button variant="outline-info" onClick={() => getPrevImage()}>
+            Previous Page
+          </Button>
+        </Col>
+        <Col md={{ offset: 7 }}>
+          <Button variant="outline-info" onClick={() => getNextImage()}>Next Page
+          </Button>
+        </Col>
       </Row>
       <Row>
-        <Image></Image>
+        <Image pid={currentImage}></Image>
         <Col>
           <section>
             <Ceteicean pageContext={pageContext} routes={routes} />
@@ -61,11 +102,36 @@ const ShadowedCeteicean = ({pageContext}) => {
         </Col>
       </Row>
       <Row>
-        <Col>Journal File Pagination Pagination</Col>
+        <Col>
+          <Button variant="outline-info" onClick={() => getPrevCetei()}>
+            <Link to={"/" + cetei}>Previous Journal</Link>
+          </Button>
+        </Col>
+        <Col md={{ offset: 7 }}>
+          <Button variant="outline-info" onClick={() => getNextCetei()}>
+            <Link to={"/" + cetei}>Next Journal</Link>
+          </Button>
+        </Col>
       </Row>
     </Layout>
   );
 
 }
+
+export const query = graphql`
+  {
+    allCetei {
+      totalCount
+      nodes {
+        parent {
+          ... on File {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default ShadowedCeteicean

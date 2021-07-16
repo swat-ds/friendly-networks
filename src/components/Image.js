@@ -28,18 +28,14 @@ let postFix = "~JP2~/full/max/0/default.jpg";
 //   return src;
 // }
 const Image = (props) => {
-  function nextURL() {
-    // let pid = props.pid;
-    // var pidReady = pid.slice(0, 2) + ":" + pid.slice(2);
-    // var src = baseURl + pidReady + postFix;
-    // return src;
-    return null
-  }
-  let initialSrc = nextURL();
-  const [displayedImage, setImage] = useState(initialSrc);
+    let pid = props.pid;
+    var pidReady = pid.slice(0, 2) + ":" + pid.slice(2);
+    var src = baseURl + pidReady + postFix;
+  
+
   return (
       <Col>
-        <img src={displayedImage} id="image" style={{ "height": "6in",
+        <img src={src} id="image" style={{ "height": "6in",
     "width": "5in"}}/>
       </Col>
     
