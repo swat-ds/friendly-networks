@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import Header from "./Header";
 import Footer from "./Footer";
 import {Container, Row, Col} from "react-bootstrap"
+import "../assets/styles/styles.scss";
 
 
 const Layout = (props) => {

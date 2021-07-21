@@ -1,47 +1,65 @@
-import React from "react";
-import { useState } from "react";
-import styled from "styled-components";
-import {Button, Col, Row} from "react-bootstrap";
+// import React from "react";
+// import OpenSeadragon from 'openseadragon';
+// import { useState, useEffect } from "react";
+// import styled from "styled-components";
+// import { Button, Col, Row } from "react-bootstrap";
 
+// let baseURl =
+//   "https://digitalcollections.tricolib.brynmawr.edu/cantaloupe/iiif/2/";
+// let postFix = "~JP2~/full/max/0/default.jpg";
 
-const allSC = [
-"sc203238",
-"sc203247",
-"sc203248",
-"sc203249",
-"sc203250",
-"sc203251",
-"sc203252",
-"sc203253"];
-let counter = 0;
-let baseURl =
-  "https://digitalcollections.tricolib.brynmawr.edu/cantaloupe/iiif/2/";
-let postFix = "~JP2~/full/max/0/default.jpg";
+// // function prevURL() {
+// //   // let pid = "sc203248";
+// //   counter--;
+// //   let pid = allSC[counter];
+// //   let pidReady = pid.slice(0, 2) + ":" + pid.slice(2);
+// //   let src = baseURl + pidReady + postFix;
+// //   return src;
+// // }
+// const Image = ({ imageId }) => {
+//   let imageInfo =
+//     baseURl + imageId.slice(0, 2) + ":" + imageId.slice(2) + postFix;
 
+//   const [viewer, setViewer] = useState(null);
 
-// function prevURL() {
-//   // let pid = "sc203248";
-//   counter--;
-//   let pid = allSC[counter];
-//   let pidReady = pid.slice(0, 2) + ":" + pid.slice(2);
-//   let src = baseURl + pidReady + postFix;
-//   return src;
-// }
-const Image = (props) => {
-    let pid = props.pid;
-    var pidReady = pid.slice(0, 2) + ":" + pid.slice(2);
-    var src = baseURl + pidReady + postFix;
-  
+//   useEffect(() => {
+//     if (imageId && viewer) {
+//       viewer.open(imageId);
+//     }
+//   }, [imageId]);
 
-  return (
-      <Col>
-        <img src={src} id="image" style={{ "height": "6in",
-    "width": "5in"}}/>
-      </Col>
-    
-  );
-};
+//   const InitOpenSeadragon = () => {
+//     viewer && viewer.destroy();
+//     setViewer(
+//       OpenSeadragon({
+//         id: "openseadragon",
+//         prefixUrl: "openseadragon/images/",
+//         preserveViewport: true,
+//         visibilityRatio: 1,
+//         minZoomLevel: 1,
+//         defaultZoomLevel: 1,
+//         sequenceMode: false,
+//         tileSources: [imageInfo],
+//       })
+//     );
+//   };
 
-export default Image;
+//   useEffect(() => {
+//     InitOpenSeadragon();
+//     return () => {
+//       viewer && viewer.destroy();
+//     };
+//   }, []);
 
+//   return (
+//     <div
+//       id="openseadragon"
+//       style={{
+//         height: "800px",
+//         width: "600px",
+//       }}
+//     ></div>
+//   );
+// };
 
+// export default Image;

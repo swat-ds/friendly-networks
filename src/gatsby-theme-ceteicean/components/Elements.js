@@ -2,6 +2,7 @@ import React from "react";
 import { TEINodes } from "react-teirouter";
 import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
 import { isExportSpecifier } from "typescript";
+import "../../assets/styles/styles.scss";
 
 export const PersonName = (props) => {
   return (
@@ -72,7 +73,19 @@ export const Pb = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
-      <hr id={props.teiNode.attributes.getNamedItem("facs").value} />
+      <hr
+        class="page-line"
+        id={props.teiNode.attributes.getNamedItem("facs").value}
+        style={{
+          // color: "#d17a08",
+          // height: "5px",
+          border: "0",
+          height: "3px",
+          background: "#333",
+          backgroundImage: "linear-gradient(to right, #ccc, #333, #ccc)",
+          borderRadius: "3px",
+        }}
+      />
     </Behavior>
   );
 };

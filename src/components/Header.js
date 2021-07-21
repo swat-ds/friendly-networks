@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { menuData } from "../assets/data/MenuData";
-import "../styles.scss"
+import "../assets/styles/styles.scss";
 import {
   Navbar,
    Nav, 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import {Row, Col} from "react-bootstrap"
-import "../styles.scss"
+import "../assets/styles/styles.scss"
 
 const home = () => {
   return (

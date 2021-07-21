@@ -2,13 +2,11 @@ import React from "react"
 import {useState, useEffect } from 'react'
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import {Container, Row, Button, Col} from 'react-bootstrap'
-import Image from '../../components/Image'
-import Layout from "../../components/Layout";
 import { graphql, Link } from "gatsby";
 import Volume from '../../components/Volume'
 
 import * as El from "./Elements"
-import '../../styles.scss'
+import "../../assets/styles/styles.scss";
 
 
 
@@ -40,6 +38,10 @@ const ShadowedCeteicean = ({pageContext, data}) => {
     "tei-title": El.Title,
     "tei-said": El.Said,
   }; 
+  // for (let index = 0; index < hrs.length; index++) {
+  //   console.log(hrs[index].height)
+    
+  // }
   return (
     <Volume pageContext={pageContext} data={data}>
       <Ceteicean pageContext={pageContext} routes={routes} />
