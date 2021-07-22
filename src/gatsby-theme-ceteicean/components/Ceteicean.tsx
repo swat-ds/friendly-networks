@@ -1,9 +1,18 @@
 import React from "react"
+import {useState, useEffect } from 'react'
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
+import {Container, Row, Button, Col} from 'react-bootstrap'
+import { graphql, Link } from "gatsby";
+import Volume from '../../components/Volume'
 
 import * as El from "./Elements"
+import "../../assets/styles/styles.scss";
 
-const ShadowedCeteicean = ({pageContext}) => {
+
+
+const ShadowedCeteicean = ({pageContext, data}) => {
+
+
   const routes = {
     "tei-TEI": El.TEI,
     "tei-teiHeader": El.Header,
@@ -28,10 +37,32 @@ const ShadowedCeteicean = ({pageContext}) => {
     "tei-label": El.Label,
     "tei-title": El.Title,
     "tei-said": El.Said,
-  };
-  return(
-    <Ceteicean pageContext={pageContext} routes={routes}/>
-  )
+  }; 
+  // for (let index = 0; index < hrs.length; index++) {
+  //   console.log(hrs[index].height)
+    
+  // }
+  return (
+    <Volume pageContext={pageContext} data={data}>
+      <Ceteicean pageContext={pageContext} routes={routes} />
+    </Volume>
+  );
 
 }
+
+export const query = graphql`
+  {
+    allCetei {
+      totalCount
+      nodes {
+        parent {
+          ... on File {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+`;
 export default ShadowedCeteicean

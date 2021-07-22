@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(150, 163, 163);
+}
+
+tei-p {
+  text-decoration: underline;
+}
+
+#journal {
+  height: 70vh;
+  width: 40vw;
+  overflow: scroll;
+  resize: none;
+  padding: 10px;
+  border: thin solid gray;
+}
+
+#openseadragon {
+  height: 70vh;
+  width: 40vw;
+}
+
+
+// main :not(#sc203676, #sc203676 ~ *) {
+//   display: none;
+// }
+
+// #sc203676 ~ * {
+//       display: block;
+//  }
+
+// #sc203676 ~ * {
+//       display: none;
+// }
+
+@import "bootstrap";

@@ -1,10 +1,9 @@
-const fetch = require("node-fetch");
 const axios = require("axios");
 const apiData = require('./src/assets/data/ids.json')
 
 const constellationIds = apiData.ids;
 
-var constellations = [];
+let constellations = [];
 
 exports.sourceNodes = async ({
   actions,
@@ -25,8 +24,68 @@ exports.sourceNodes = async ({
 
     constellations.push(await fetchConstellation());
   }
+  const fetchConstellation = (id) =>
+    axios.put(`https://api.snaccooperative.org`, {
+      command: "read",
+      constellationid: id,
+    });
+  // await for results
+  // let res = await fetchConstellation(85290808);
+  // console.log(res.status);
+  // constellations.push(res.data.constellation);
+  // res = await fetchConstellation(28160043);
+  // constellations.push(res.data.constellation);
+  // console.log(constellations.length);
 
-  console.log(constellations.length);
+  const getALlConstellations = async (_) => {
+    console.log("Started fetching");
+      for (let i = 0; i < constellationIds.length; i++) {
+        const res = await fetchConstellation(constellationIds[i]);
+        constellations.push(res.data.constellation);
+      }
+    console.log("All are fetched");
+  };
+  getALlConstellations();
+
+  // //With promises
+  // const allPromises = []
+  // const getALlConstellations = (_) => {
+  //   console.log("Started fetching")
+  //   for (let i = 0; i < constellationIds.length; i++) {
+  //     const res = fetchConstellation(constellationIds[i]);
+  //     console.log(i)
+  //     allPromises.push(res);
+  //   }
+  //   Promise.all(...allPromises)
+  //   .then
+
+  //   console.log("All are fetched");
+  // };
+  // getALlConstellations();
+  // console.log(constellations.length);
+
+  // console.log(res)
+
+  // const options = {
+  //   method: "PUT",
+  //   body: {
+  //     command
+  //   }
+  // }
+  //    fetch(`https://api.snaccooperative.org`, {
+  //      body: JSON.stringify(options),
+  //      headers: { "Content-Type": "application/json" },
+  //    })
+  //      .then((response) => {
+  //        console.log(response.status);
+  //        constellations.push(response.data);
+  //      })
+  //      .catch((error) => {
+  //        // Something happened in setting up the request that triggered an Error
+  //        console.log("Error", error.message);
+  //      });
+
+  // })
 
   //Assumed data is retrieved
   console.log("(2)", "retrieved");
@@ -44,7 +103,13 @@ exports.sourceNodes = async ({
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      text: c.data.constellation.sources,
+      sources: c.data.constellation.sources,
+      nameEntries: c.data.constellation.nameEntries,
+      bioHists: c.data.constellation.bioHists,
+      resourceRelations: c.data.constellation.resourceRelations,
+      places: c.data.constellation.places,
+      subjects: c.data.constellation.subjects,
+      dates: c.data.constellation.dates,
     };
 
     // add it to userNode

@@ -3,27 +3,18 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import Header from "./Header";
 import Footer from "./Footer";
-import { GlobalStyles } from "../styles/GlobalStyles";
+import {Container, Row, Col} from "react-bootstrap"
+import "../assets/styles/styles.scss";
 
 
 const Layout = (props) => {
   return (
-    <Wrapper className="layout">
-      <GlobalStyles></GlobalStyles>
+    <Container fluid>
       <Header></Header>
       {props.children}
       <Footer></Footer>
-    </Wrapper>
+    </Container>
   );
 };
 //TODO: Style this component
-const Wrapper = styled.main`
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  border: thin solid maroon;
-`;
 export default Layout;

@@ -1,11 +1,12 @@
 import React from 'react'
-
+import Layout from "../components/Layout"
 const about = () => {
     return (
-        <div>
-            <h1>This project is made possible by the contribution of the following people</h1>
-            <p>Nabil, James, Zakir, Ayodeji, Anna</p>
-        </div>
+        <Layout>
+            <h1>
+                The Contact page of this project
+            </h1>
+        </Layout>
     )
 }
 
