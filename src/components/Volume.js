@@ -9,27 +9,10 @@ import { scroller } from "react-scroll";
 
 let counter = 1;
 let counter2 = 0;
+let currentInput = 0;
 // Creating a custom hook
 
-
 const Volume = (props) => {
-  function useInput(defaultValue, pages) {
-    const [currentPage, setCurrentPage] = useState(defaultValue);
-    function onChange(e) {
-      e.preventDefault();
-      // var pageNumber = e.target.value;
-      console.log(pages[e.target.value - 1]);
-      if (pages[e.target.value]) {
-        setCurrentPage(
-          pages[e.target.value - 1].attributes.getNamedItem("facs").value
-        );
-      }
-    }
-    return {
-      currentPage,
-      onChange,
-    };
-  }
   const { pageContext, data } = props;
 
   const parser = new DOMParser();
@@ -41,7 +24,25 @@ const Volume = (props) => {
     pids.push(pages[index].attributes.getNamedItem("facs").value);
   }
   console.log(pids);
-   const inputProps = useInput(pids[0], pages);
+
+  function useInput(defaultPid, pages) {
+    const [currentInputPid, setCurrentInputPid] = useState(defaultPid);
+    function onChange(e) {
+      currentInput = e.target.value;
+      e.preventDefault();
+      console.log(pages[e.target.value - 1]);
+      if (pages[e.target.value]) {
+        setCurrentInputPid(
+          pages[e.target.value - 1].attributes.getNamedItem("facs").value
+        );
+      }
+    }
+    return {
+      currentInputPid,
+      onChange,
+    };
+  }
+  const inputProps = useInput(pids[currentInput], pages);
 
   // useEffect(() => {
   //   const hrs = document.getElementsByTagName("hr");
@@ -52,7 +53,7 @@ const Volume = (props) => {
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
   // console.log(data.allCetei.nodes);
 
-  const [currentImage, setImage] = useState(pids[counter2]);
+  const [currentPid, setPid] = useState(inputProps.currentInputPid);
 
   function getNextCetei() {
     //  console.log(counter);
@@ -65,29 +66,31 @@ const Volume = (props) => {
     // console.log(data.allCetei.nodes[counter].parent.name);
   }
 
-  function getNextImage() {
-    console.log(pids[counter2]);
-    setImage(pids[counter2++]);
-    ///Increment in
-  }
-  function getPrevImage() {
-    console.log(pids[counter2]);
-    setImage(pids[counter2--]);
-  }
-
- 
-
-  function handleClick() {
-    scroller.scrollTo(inputProps.currentPage, {
+  function scroll(page) {
+    scroller.scrollTo(page, {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
       containerId: "journal",
     });
-    setImage(inputProps.currentPage);
+  }
+  function getNextImage() {
+    let i = pids.indexOf(currentPid) + 1;
+    console.log(i, pids[i]);
+    setPid(pids[i]);
+    scroll(pids[i]);
+  }
+  function getPrevImage() {
+    let i = pids.indexOf(currentPid) - 1;
+    console.log(i, pids[i]);
+    setPid(pids[i]);
+    scroll(pids[i]);
   }
 
-  let imageId = currentImage;
+  function handleClick() {
+    setPid(pids[currentInput]);
+    scroll(inputProps.currentPid);
+  }
 
   return (
     <Layout>
@@ -100,11 +103,11 @@ const Volume = (props) => {
 
         <Col sm={8}>
           {/* <h1>
-            {inputProps.currentPage}: which is{" "}
-            {inputProps.currentPage.slice(-2)} of {pages.length}{" "}
+            {inputProps.currentPid}: which is{" "}
+            {inputProps.currentPid.slice(-2)} of {pages.length}{" "}
           </h1> */}
-          <input {...inputProps} placeholder={inputProps.currentPage.value} />
-          {/* <scrollLink to={inputProps.currentPage} spy={true} smooth={true}>
+          <input {...inputProps} placeholder={""} />
+          {/* <scrollLink to={inputProps.currentPid} spy={true} smooth={true}>
             Jump
           </scrollLink> */}
           <Button
@@ -123,7 +126,7 @@ const Volume = (props) => {
       </Row>
       <Row>
         <Col>
-          <OpenSeadragonViewer imageId={imageId} />
+          <OpenSeadragonViewer imageId={currentPid} />
         </Col>
         <Col>
           <div id="journal">{props.children}</div>
