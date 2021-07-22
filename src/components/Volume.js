@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../assets/styles/styles.scss";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { OpenSeadragonViewer } from "./OpenSeadragonViewer";
@@ -14,7 +14,6 @@ let currentInput = 0;
 
 const Volume = (props) => {
   const { pageContext, data } = props;
-
   const parser = new DOMParser();
   const xmlDoc = parser.parseFromString(pageContext.prefixed, "text/xml");
   const pages = xmlDoc.getElementsByTagName("tei-pb");
@@ -23,26 +22,6 @@ const Volume = (props) => {
   for (let index = 0; index < pages.length; index++) {
     pids.push(pages[index].attributes.getNamedItem("facs").value);
   }
-  console.log(pids);
-
-  function useInput(defaultPid, pages) {
-    const [currentInputPid, setCurrentInputPid] = useState(defaultPid);
-    function onChange(e) {
-      currentInput = e.target.value;
-      e.preventDefault();
-      console.log(pages[e.target.value - 1]);
-      if (pages[e.target.value]) {
-        setCurrentInputPid(
-          pages[e.target.value - 1].attributes.getNamedItem("facs").value
-        );
-      }
-    }
-    return {
-      currentInputPid,
-      onChange,
-    };
-  }
-  const inputProps = useInput(pids[currentInput], pages);
 
   // useEffect(() => {
   //   const hrs = document.getElementsByTagName("hr");
@@ -52,8 +31,49 @@ const Volume = (props) => {
 
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
   // console.log(data.allCetei.nodes);
+  function onChange(e) {
+    currentInput = e.target.value;
+    e.preventDefault();
+  }
+  const [currentPid, setPid] = useState(pids[currentInput]);
 
-  const [currentPid, setPid] = useState(inputProps.currentInputPid);
+  // const journal = useRef(null);
+  //   const options = {
+  //     root: journal.current,
+  //     rootMargin: "0px",
+  //     threshhold: 1,
+  //   };
+  // function useOnPageChange(options){
+
+  //   const [currentVisible, setCurrentVisible] = useState(pages[0])
+
+  //   useEffect(()=> {
+  //     const observer = new IntersectionObserver((entries =>{
+  //       entries.some(entry =>{
+  //         if(entry.isIntersecting){
+  //           setCurrentVisible(entry.target)
+  //           return;
+  //         }
+  //       })
+  //     }), options);
+
+  //     for (let index = 0; index < pages.length; index++) {
+  //       observer.observe(pages[index]);
+  //     }
+
+  //     return () => {
+  //       for (let index = 0; index < pages.length; index++) {
+  //         observer.unobserve(pages[index]);
+  //       }
+  //     };
+
+  //   }, [...pages, options])
+
+  //   return currentVisible
+  // }
+
+  // const visibleEl = useOnPageChange(options)
+  // console.log(visibleEl);
 
   function getNextCetei() {
     //  console.log(counter);
@@ -77,19 +97,18 @@ const Volume = (props) => {
   function getNextImage() {
     let i = pids.indexOf(currentPid) + 1;
     console.log(i, pids[i]);
-    setPid(pids[i]);
     scroll(pids[i]);
+    setPid(pids[i]);
   }
   function getPrevImage() {
     let i = pids.indexOf(currentPid) - 1;
     console.log(i, pids[i]);
-    setPid(pids[i]);
     scroll(pids[i]);
+    setPid(pids[i]);
   }
 
   function handleClick() {
-    setPid(pids[currentInput]);
-    scroll(inputProps.currentPid);
+    scroll(currentPid);
   }
 
   return (
@@ -106,7 +125,7 @@ const Volume = (props) => {
             {inputProps.currentPid}: which is{" "}
             {inputProps.currentPid.slice(-2)} of {pages.length}{" "}
           </h1> */}
-          <input {...inputProps} placeholder={""} />
+          <input onChange={onChange} placeholder={""} />
           {/* <scrollLink to={inputProps.currentPid} spy={true} smooth={true}>
             Jump
           </scrollLink> */}
@@ -129,7 +148,9 @@ const Volume = (props) => {
           <OpenSeadragonViewer imageId={currentPid} />
         </Col>
         <Col>
-          <div id="journal">{props.children}</div>
+          <div id="journal">
+            {props.children}
+          </div>
         </Col>
       </Row>
       <Row>
