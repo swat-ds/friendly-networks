@@ -1,7 +1,8 @@
 const axios = require("axios");
-const apiData = require('./src/assets/data/ids.json')
+const apiData = require("./src/assets/data/ids_arks.json");
+const component = require.resolve(`./src/components/Relative.js`);
 
-const constellationIds = apiData.ids;
+const constellationData = apiData.ids_arks;
 
 let constellations = [];
 
@@ -15,85 +16,27 @@ exports.sourceNodes = async ({
 
   //fetch the data
 
-  for (const i of constellationIds) {
+  for (const i of constellationData) {
     const fetchConstellation = () =>
       axios.put(`https://api.snaccooperative.org`, {
         command: "read",
-        constellationid: i,
+        constellationid: i.id,
       });
 
     constellations.push(await fetchConstellation());
   }
-  const fetchConstellation = (id) =>
-    axios.put(`https://api.snaccooperative.org`, {
-      command: "read",
-      constellationid: id,
-    });
-  // await for results
-  // let res = await fetchConstellation(85290808);
-  // console.log(res.status);
-  // constellations.push(res.data.constellation);
-  // res = await fetchConstellation(28160043);
-  // constellations.push(res.data.constellation);
-  // console.log(constellations.length);
 
-  const getALlConstellations = async (_) => {
-    console.log("Started fetching");
-      for (let i = 0; i < constellationIds.length; i++) {
-        const res = await fetchConstellation(constellationIds[i]);
-        constellations.push(res.data.constellation);
-      }
-    console.log("All are fetched");
-  };
-  getALlConstellations();
 
-  // //With promises
-  // const allPromises = []
-  // const getALlConstellations = (_) => {
-  //   console.log("Started fetching")
-  //   for (let i = 0; i < constellationIds.length; i++) {
-  //     const res = fetchConstellation(constellationIds[i]);
-  //     console.log(i)
-  //     allPromises.push(res);
-  //   }
-  //   Promise.all(...allPromises)
-  //   .then
-
-  //   console.log("All are fetched");
-  // };
-  // getALlConstellations();
-  // console.log(constellations.length);
-
-  // console.log(res)
-
-  // const options = {
-  //   method: "PUT",
-  //   body: {
-  //     command
-  //   }
-  // }
-  //    fetch(`https://api.snaccooperative.org`, {
-  //      body: JSON.stringify(options),
-  //      headers: { "Content-Type": "application/json" },
-  //    })
-  //      .then((response) => {
-  //        console.log(response.status);
-  //        constellations.push(response.data);
-  //      })
-  //      .catch((error) => {
-  //        // Something happened in setting up the request that triggered an Error
-  //        console.log("Error", error.message);
-  //      });
-
-  // })
+console.log(constellations.length)
 
   //Assumed data is retrieved
   console.log("(2)", "retrieved");
   let i = 0;
   for (const c of constellations) {
+    const { constellation } = c.data
     const constNode = {
       //     // Required fields
-      id: `${constellationIds[i]}`,
+      id: `${constellationData[i].id}`,
       parent: `__SOURCE__`,
       internal: {
         type: `Constellation`, // name of the graphQL query --> allRandomUser {}
@@ -103,13 +46,19 @@ exports.sourceNodes = async ({
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      sources: c.data.constellation.sources,
-      nameEntries: c.data.constellation.nameEntries,
-      bioHists: c.data.constellation.bioHists,
-      resourceRelations: c.data.constellation.resourceRelations,
-      places: c.data.constellation.places,
-      subjects: c.data.constellation.subjects,
-      dates: c.data.constellation.dates,
+      entityType: constellation.entityType,
+      sources: constellation.sources,
+      nameEntries: constellation.nameEntries,
+      occupations: constellation.occupations,
+      biogHists: constellation.biogHists,
+      relations: constellation.relations,
+      sameAsRelations: constellation.sameAsRelations,
+      resourceRelations: constellation.resourceRelations,
+      places: constellation.places,
+      subjects: constellation.subjects,
+      genders: constellation.genders,
+      dates: constellation.dates,
+
     };
 
     // add it to userNode
@@ -122,4 +71,94 @@ exports.sourceNodes = async ({
   }
 
   return;
+};
+
+
+
+
+//Create pages for each entity, depends on the creation of entity nodes above
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions;
+  
+
+  const result = await graphql(`
+    query Constellations {
+      allConstellation {
+        nodes {
+          id
+          nameEntries {
+            original
+            components {
+              dataType
+              id
+              order
+              text
+              type {
+                term
+              }
+            }
+            id
+          }
+          entityType {
+            term
+          }
+          biogHists {
+            language {
+              language {
+                term
+                description
+              }
+            }
+            text
+          }
+          places {
+            confirmed
+            original
+            note
+            geoplace {
+              administrationCode
+              countryCode
+              id
+              latitude
+              longitude
+              name
+              uri
+            }
+          }
+          relations {
+            sourceArkID
+            targetArkID
+            sourceConstellation
+            targetConstellation
+          }
+          subjects {
+            term {
+              term
+            }
+          }
+        }
+      }
+    }
+  `);
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
+  for (const node of result.data.allConstellation.nodes) {
+    createPage({
+      path: `entities/${node.id}`,
+      component,
+      context: {
+        id: node.id,
+        nameEntries: node.nameEntries,
+        entityType: node.entityType,
+        biogHists: node.biogHists,
+        places: node.places,
+        relations: node.relations,
+        sameAsRelations: node.sameAsRelations,
+        resourceRelations: node.resourceRelations,
+        subjects: node.subjects
+      },
+    });
+  }
 };

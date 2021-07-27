@@ -4,7 +4,7 @@ const about = () => {
     return (
         <Layout>
             <h1>
-                The Contact page of this project
+                The About page of this project
             </h1>
         </Layout>
     )

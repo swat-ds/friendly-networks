@@ -5,14 +5,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 import {Container, Row, Col} from "react-bootstrap"
 import "../assets/styles/styles.scss";
+import Nav from './Nav'
 
 
 const Layout = (props) => {
   return (
     <Container fluid>
-      <Header></Header>
-      {props.children}
-      <Footer></Footer>
+        <Nav></Nav>
+        <Header></Header>
+        {props.children}
+        <Footer></Footer>
     </Container>
   );
 };
