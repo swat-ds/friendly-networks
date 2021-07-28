@@ -1,0 +1,53 @@
+.header-items{
+    display: flex;
+    justify-content:space-evenly;
+
+    .header-item{
+         display: flex;
+        justify-content: center;
+        padding: 4px;
+        margin-top: 8px;
+        border-radius: 3px;
+        width: 20vw;
+        color: white;
+        transition: all 1s ease-out;
+    }
+
+     #header-journal{
+            background-color: darkorange;
+        }
+     #header-journal:hover,#header-journal:active{
+            background-color: white;
+            color: darkorange;
+            border: thin solid darkorange;
+    }
+
+     #header-relative{
+            background-color: hsl(335, 61%, 43%);
+        }
+     #header-relative:hover, #header-relative:active{
+            background-color: white;
+            color: hsl(335, 61%, 43%);
+            border: thin solid hsl(335, 61%, 43%);
+    }
+    #header-network{
+            background-color: hsl(198, 89%, 49%);
+        }
+     #header-network:hover, #header-network:active{
+            background-color: white;
+            color: hsl(198, 89%, 49%);
+            border: thin solid hsl(198, 89%, 49%);
+    }
+
+    #header-timeline{
+            background-color: hsl(48, 66%, 37%);
+        }
+     #header-timeline:hover, #header-timeline:active{
+            background-color: white;
+            color:hsl(48, 66%, 37%);
+            border: thin solid hsl(48, 66%, 37%);;
+    }
+}
+
+
+@import "bootstrap";

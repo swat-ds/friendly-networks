@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
+import "../assets/styles/nav.scss";
 import logo from '../assets/images/logo.jpeg'
 import {
   Form,
@@ -22,26 +23,39 @@ const Header = (props) => {
         </Link>
       </Col>
 
-      <Col md={{ offset: 5 }}>
-        <Link to="/about">
-          <Button variant="outline-info">
+      <Col xs={5} md={{ offset: 5 }} >
+        <div
+          className="container-fluid "
+          id="nav-items"
+        >
+          <Link className="g-link" to="/about">
             About
-          </Button>
-        </Link>
+          </Link>
 
-        <Link to="/contact">
-          <Button variant="outline-info">
+          <Link className="g-link" to="/contact">
             Contact
+          </Link>
+          <Button
+            variant="outline-info"
+            className="float-right"
+            style={{ float: "right" }}
+            id="spanish"
+          >
+            Español
           </Button>
-        </Link>
+        </div>
 
-        <Button variant="outline-info" id="spanish">
-          Español
-        </Button>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-5" />
-          <Button variant="outline-info">Search</Button>
-        </Form>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
       </Col>
     </Row>
   );

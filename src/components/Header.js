@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { menuData } from "../assets/data/MenuData";
 import "../assets/styles/styles.scss";
+import "../assets/styles/header.scss";
+
 import {
   Navbar,
   Nav,
@@ -18,12 +20,26 @@ import {
 const Header = (props) => {
   return (
     <Row>
-      <Col style={{ backgroundColor: "#8a8686" }}>
-        <Link to="/journals" className="gatsby-link">
-          <Button variant="outline-info">Journals</Button>
+      <Col bsPrefix="col header-items">
+        <Link className="g-link" to="/journals">
+          <div className="d-flex header-item" id="header-journal">
+            <h1>Journals</h1>
+          </div>
         </Link>
-        <Link to="/relatives" className="gatsby-link">
-          <Button variant="outline-info">Relatives</Button>
+        <Link className="g-link" to="/people">
+          <div className="d-flex header-item" id="header-relative">
+            <h1>People</h1>
+          </div>
+        </Link>
+        <Link className="g-link" to="/network">
+          <div className="d-flex header-item" id="header-network">
+            <h1>Network</h1>
+          </div>
+        </Link>
+        <Link className="g-link" to="/timeline">
+          <div className="d-flex header-item" id="header-timeline">
+            <h1>Timeline</h1>
+          </div>
         </Link>
       </Col>
     </Row>
