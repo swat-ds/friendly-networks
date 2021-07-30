@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import Fox from "../assets/images/george_fox.jpeg"
 import "../assets/styles/styles.scss"
 import PeopleCard from  "../components/PeopleCard"
 

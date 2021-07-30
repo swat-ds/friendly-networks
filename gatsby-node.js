@@ -46,6 +46,7 @@ console.log(constellations.length)
       children: [],
 
       //     // Other fields that you want to query with graphQl
+      ark: constellation.ark,
       entityType: constellation.entityType,
       sources: constellation.sources,
       nameEntries: constellation.nameEntries,
@@ -86,6 +87,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allConstellation {
         nodes {
           id
+          ark
           nameEntries {
             original
             components {
@@ -177,6 +179,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component,
       context: {
         id: node.id,
+        ark: node.ark,
         nameEntries: node.nameEntries,
         occupations: node.occupations,
         entityType: node.entityType,

@@ -2,44 +2,45 @@ import React from "react";
 import { useRef, useState, useEffect } from "react";
 import * as d3 from "d3";
 import { Container, Row, Col } from "react-bootstrap";
-const nodesInJSON = require("../assets/data/dataTable.json");
-const linksInJSON = require("../assets/data/relationshipTable.json");
 
-//What parameters to be the depth of
 
-const Network = () => {
+
+/**
+ * 
+ * @param {*} nodesInJSON A json array contains multiple nodes as object
+ * @param {*} linksInJSON A json array contains multiple link as object
+ * @param {*} centralFigure An indication of whose entity is rendered
+ * 
+ * Note: all of the above @params are destructured from  @props @param
+ * @returns a @Row element containing an svg
+ */
+
+const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
+  //states to changes nodes and links if needed
   const [nodes, setNodes] = useState(nodesInJSON);
   const [links, setLinks] = useState(linksInJSON);
-  console.log(nodes);
-  console.log(links);
 
-  // const nodes = [
-  //   { "id": "Alice" },
-  //   { "id": "Bob" },
-  //   { "id": "Carol"},
+  const svgRef = useRef(); // A reference to refer to the SVG element
+  let width = 1024, height = 800; //height of the svg
 
-  // ];
-
-  // const links = [
-  //   { "source": "Alice", "label": "a", "target": "Bob" }, // Alice → Bob
-  //   { "source": "Bob", "label": "a", "target": "Carol" }, // Bob → Carol
-  //   { "source": "James", "label": "a", "target": "Alice" }, //James -> Alice
-  //   { "source": "Bob", "label": "a", "target": "James" },
-  //  ] //Bob -> James
-  const svgRef = useRef();
-
+  //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
+  //Synonymous to componentDidMount() in the class version of the component
   useEffect(() => {
-    const svg = d3.select(svgRef.current);
+    const svg = d3
+      .select(svgRef.current)
+      .attr("width", width)
+      .attr("height", height)
+      .call(
+        d3.zoom().on("zoom", (event) => {
+          svg.attr("transform", event.transform);
+        })
+      )
+      .append("g"); //'g' is an encompassing tag that groups elements inside an svg
 
-    let width = +svg.attr("width");
-    let height = +svg.attr("height");
-    let centerX = width / 2;
-    let centerY = height / 2;
-    // let transform = d3.zoomIdentity;
-
+    //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-200))
+      .force("charge", d3.forceManyBody().strength(-2000))
       .force(
         "link",
         d3
@@ -47,59 +48,47 @@ const Network = () => {
           .distance(50)
           .id((node) => node.id)
       )
-      .force("center", d3.forceCenter(centerX, centerY));
+      .force("center", d3.forceCenter(width / 2, height / 2));
 
+    //Feature to make the force directed graph zoomable
     const dragInteraction = d3.drag().on("drag", (event, node) => {
       node.fx = event.x;
       node.fy = event.y;
-      simulation.alpha(1);
+      simulation.alpha(.2);
       simulation.restart();
     });
+    //Bind a line to each link
     const lines = svg
-    //   .append("g")
+      .append("g")
       .selectAll("line")
       .data(links)
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label == "acquaintanceOf" ? "gray" : "green";
-      });
-const zoomRect = svg
-//   .append("rect")
-  .attr("width", width)
-  .attr("height", height)
-  .style("fill", "none")
-  .style("pointer-events", "all");
+        return link.label == "acquaintanceOf" ? "#6fad11" : "purple";
+      })
+      .attr("stroke-width", 5);
 
+    //Bind a circle to each node
     const circles = svg
-    //   .append("g")
+      .append("g")
       .selectAll("circle")
       .data(nodes)
       .enter()
       .append("circle")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        return node.id == "w6n9820p" ? 30 : 10;
+        return node.id == centralFigure ? 50 : 30; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       .style("stroke", "#bd0fdb")
       .style("stroke-width", 2)
-      .style("stroke-dasharray", "10,3")
-      .style("fill", "#13a5d6")
-      ;
-// function zoomed() {
-//   transform = d3.event.transform;
-//   circles.attr("transform", d3.event.transform);
-//   lines.attr("transform", d3.event.transform);
-// }
-//   const zoom = d3
-//     .zoom()
-//     .scaleExtent([1 / 2, 64])
-//     .on("zoom", zoomed);
+      .style("stroke-dasharray", "2,3")
+      .style("fill", "#13a5d6");
 
-//   zoomRect.call(zoom).call(zoom.translateTo, 0, 0);
-
+    //Bind the name of each person to the corresponding node
     const text = svg
+      .append("g")
       .selectAll("text")
       .data(nodes)
       .enter()
@@ -117,7 +106,8 @@ const zoomRect = svg
         let fullName = `${firstName} ${lastName}`;
         return fullName;
       });
-
+    
+      //Render the simulation
     simulation.on("tick", () => {
       circles.attr("cx", (node) => node.x).attr("cy", (node) => node.y);
       text.attr("x", (node) => node.x).attr("y", (node) => node.y);
@@ -127,16 +117,15 @@ const zoomRect = svg
         .attr("x2", (link) => link.target.x)
         .attr("y2", (link) => link.target.y);
     });
-  }, [nodes, links]);
+  }, [nodes, links]); //End of useEffect()
 
   return (
-    <Row >
+    <Row>
       <svg
         ref={svgRef}
-        id="container"
-        width="960"
-        height="500"
-        overflow="auto"
+        // id="svgContainer"
+        width="1000"
+        height="600"
         style={{ border: "thin solid blue" }}
       ></svg>
     </Row>

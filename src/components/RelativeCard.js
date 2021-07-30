@@ -4,6 +4,12 @@ import {Card, Col} from 'react-bootstrap'
 import "../assets/styles/styles.scss";
 import "../assets/styles/card.scss";
 
+/**
+ * Creates a bootstrap card for each of the @relation. Each card contains some brief info about the
+ * entity, including the name, date, etc.
+ * @param {*} relation the relation to be put in the card
+ * @returns a react card, wrapped with a GatsbyJS Link
+ */
 const RelativeCard = ({ relation }) => {
     let type='';
     let content = ''

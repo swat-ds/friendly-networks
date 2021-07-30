@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components";
 import Layout from '../components/Layout'
-import Image from '../components/Image'
 import {Row, Col} from "react-bootstrap"
 import "../assets/styles/styles.scss"
 

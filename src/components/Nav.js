@@ -14,6 +14,12 @@ import {
   Image
 } from "react-bootstrap";
 
+
+/**
+ * 
+ * @param {*} props contains all the properties that maybe passed to Footer. 
+ * @returns a @Row element containing a @Col which contains some nav elements
+ */
 const Header = (props) => {
   return (
     <Row>

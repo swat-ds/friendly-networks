@@ -3,11 +3,16 @@ import React, { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import "../assets/styles/styles.scss";
 
+/**
+ * 
+ * @param {*} imageId the id of the image which to be rendered in the OpenSeadragon 
+ * @returns a @Col 
+ */
 export const OpenSeadragonViewer = ({ imageId }) => {
   const [viewer, setViewer] = useState(null);
 
+  //Getting the id ready to feed to viewer
   const baseURl = "https://digitalcollections.tricolib.brynmawr.edu/iiif/2/";
-  //https://digitalcollections.tricolib.brynmawr.edu/iiif/2/sc:203289~JP2~/info.json
   const postFix = "~JP2~/info.json";
   let idWithColon = imageId.slice(0, 2) + ":" + imageId.slice(2);
   console.log(idWithColon);
@@ -20,6 +25,7 @@ export const OpenSeadragonViewer = ({ imageId }) => {
     }
   }, [image]);
 
+  //Initialize the viewer
   const InitOpenSeadragon = () => {
     viewer && viewer.destroy();
     setViewer(

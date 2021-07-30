@@ -41,12 +41,6 @@ module.exports = {
     //   query: { documents: { as_of: { $gte: 1604397088013 } } },
     // },
     
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
     "gatsby-theme-ceteicean",
     {
       resolve: "gatsby-source-filesystem",

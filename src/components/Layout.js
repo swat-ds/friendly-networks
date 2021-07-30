@@ -8,6 +8,12 @@ import "../assets/styles/styles.scss";
 import Nav from './Nav'
 
 
+/**
+ * 
+ * @param {*} props contains all the properties that maybe passed to Footer. 
+ * @returns a @Container element containing multiple components, all can be found 
+ * under 'components' folder. Any children passed will be spread inside
+ */
 const Layout = (props) => {
   return (
     <Container fluid>
@@ -18,5 +24,4 @@ const Layout = (props) => {
     </Container>
   );
 };
-//TODO: Style this component
 export default Layout;

@@ -7,6 +7,12 @@ import "../assets/styles/styles.scss";
 import "../assets/styles/card.scss";
 import { color } from "d3";
 
+/**
+ * Creates a bootstrap card for each of the entity. Each card contains some brief info about the
+ * entity, including the name, date, etc.
+ * @param {*} props the properties that can be passed when used this component
+ * @returns a react card, wrapped with a GatsbyJS Link
+ */
 const PeopleCard = (props) => {
     const {entity} = props
   return (
@@ -36,5 +42,4 @@ const PeopleCard = (props) => {
     </Link>
   );
 };
-
 export default PeopleCard;

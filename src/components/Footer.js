@@ -1,9 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 import {Row, Col} from 'react-bootstrap'
 import "../assets/styles/footer.scss"
-import swat_logo from "../assets/images/swarthmore-college-logo.png"
 
+/**
+ * 
+ * @param {*} props contains all the properties that maybe passed to Footer. 
+ * @returns a @Row element containing a @Col which contains an @footer
+ */
 const Footer = (props) => {
   return (
     <Row >
@@ -26,6 +29,5 @@ const Footer = (props) => {
     </Row>
   );
 };
-//TODO: Style this component
-  
+
 export default Footer;

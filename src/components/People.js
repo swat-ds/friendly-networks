@@ -5,21 +5,31 @@ import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
 import RelativeCard from "./RelativeCard";
-
+import Network from './Network'
 import "../assets/styles/styles.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
+/**
+ * 
+ * @param {*} props properties for this component, including the data comping from Page Creation of
+ * gatsby-node.js. This component has been passed for those page creations
+ * @returns the page for each entity with curated data
+ */
 const People = (props) => {
-  const { id, nameEntries,
-    entityType, 
-    biogHists, 
-    dates, 
-    places, 
-    occupations, 
+  const {
+    id,
+    ark,
+    nameEntries,
+    entityType,
+    biogHists,
+    dates,
+    places,
+    occupations,
     subjects,
     relations,
-    sameAsRelations } =
-    props.pageContext;
+    genders,
+    sameAsRelations,
+  } = props.pageContext;
   // const parser = new DOMParser();
   // const xmlDoc = parser.parseFromString(biogHists[0].text, "text/xml");
   // console.log(nameEntries)
@@ -29,6 +39,10 @@ const People = (props) => {
   // console.log(citation);
   // console.log(nameEntries)
 
+  /**
+   * Extracts the bio of the @biogHist and renders it
+   * @returns an article containing the biography of each entity
+   */
   const renderBio = () => {
     if (biogHists) {
       return (
@@ -43,6 +57,13 @@ const People = (props) => {
       );
     }
   };
+
+  /**
+   *
+   * @param {*} entity the entity whose alternatives names to be rendered
+   * @param {*} _ ignored the index
+   * @returns A list element containing the a single alternative name
+   */
   function renderNameVariant(entity, _) {
     if (entity.original && entity.original !== nameEntries[0].original) {
       const pieces = entity.original.split(",");
@@ -52,6 +73,10 @@ const People = (props) => {
       return <li>{` ${names.join()}; `}</li>;
     }
   }
+
+  /**
+   * @returns An unordered list containing all the alternative names
+   */
   const renderNameVariants = () => {
     if (nameEntries.length > 1) {
       return (
@@ -65,11 +90,15 @@ const People = (props) => {
     }
   };
 
+  /**
+   * Extracts the data from the @dates object
+   * @returns The birth and decease death of the current entity
+   */
   const renderDates = () => {
     if (dates.length > 1) {
       return (
         <h6>
-          Exit Dates:
+          Dates:
           <ul>
             <li>{`Born: ${dates[0].fromDate}`}</li>
             <li>{`Decease: ${dates[1].toDate}`}</li>
@@ -79,7 +108,7 @@ const People = (props) => {
     } else {
       return (
         <h6>
-          Exit Dates:
+          Dates:
           <ul>
             <li>{`Born: ${dates[0].fromDate}`}</li>
             <li>{`Decease: ${dates[0].toDate}`}</li>
@@ -89,7 +118,14 @@ const People = (props) => {
     }
   };
 
-  const renderPlace = (place, index) => {
+  /**
+   * renders a single place of the @places visited by the current entity
+   * @param {*} place the place to be rendered
+   * @param {*} _ the index is ignored
+   * @returns returns a single place name in the form of city/town, state, country
+   */
+
+  const renderPlace = (place, _) => {
     if (place) {
       let placeName = place.geoplace?.name ? place.geoplace.name : null;
       let country = place.geoplace?.countryCode
@@ -119,106 +155,186 @@ const People = (props) => {
     }
   };
 
+  /**
+   * renders all the places from the @places visited by the current entity
+   * @returns returns all places' name in the form of city/town, state, country
+   */
   const renderPlaces = () => {
     if (places) {
       return (
-        <h6>Places:
+        <h6>
+          Places:
           <ul>{places.map(renderPlace)}</ul>
         </h6>
       );
     }
   };
 
-  const renderOccupation = (occupation, index)=>{
+  /**
+   * renders a single occupation from the @occupations done by the current entity
+   * @param {*} occupation the occupation to be rendered
+   * @param {*} _ the index is ignored
+   * @returns the @occupation
+   */
+  const renderOccupation = (occupation, _) => {
     if (occupation) {
-      let occupationName = occupation.term?.term ? occupation.term.term:null;
+      let occupationName = occupation.term?.term ? occupation.term.term : null;
       if (occupationName) {
-        return <li>{occupationName}{'; '}</li>;
-      }
-    }
-  }
-
-  const renderOccupations = () =>{
-    if (occupations) {
-      return (
-        <h6>Occupations:
-          <ul>{occupations.map(renderOccupation)}</ul>
-        </h6>
-      );
-    }
-  }
-
-
-
-  const renderSubject = (subject, index) => {
-    if (subject) {
-      let subjectName = subject.term?.term ? subject.term.term : null;
-      if (subjectName) {
         return (
           <li>
-            {subjectName}
+            {occupationName}
+            {"; "}
           </li>
         );
       }
     }
   };
+  /**
+   * renders all the occupations from the @occupations done by the current entity
+   * @returns all the occupations
+   */
+  const renderOccupations = () => {
+    if (occupations) {
+      return (
+        <h6>
+          Occupations:
+          <ul>{occupations.map(renderOccupation)}</ul>
+        </h6>
+      );
+    }
+  };
 
+  /**
+   * Render a single subject from the @subjects
+   * @param {*} subject the subject to be rendered
+   * @param {*} _ the index is ignored
+   * @returns the @subject
+   */
+  const renderSubject = (subject, _) => {
+    if (subject) {
+      let subjectName = subject.term?.term ? subject.term.term : null;
+      if (subjectName) {
+        return <li>{subjectName}</li>;
+      }
+    }
+  };
+  /**
+   * Render all the subjects from the @subjects
+   * @returns all the subjects
+   */
   const renderSubjects = () => {
     if (subjects) {
       return (
-        <h6>Subjects
+        <h6>
+          Subjects
           <ul>{subjects.map(renderSubject)}</ul>
         </h6>
       );
     }
   };
 
-    const renderSameAsRelation = (sameAsRelation, index) => {
-      if (sameAsRelation) {
-        let sameAsRelationName = sameAsRelation.uri ? sameAsRelation.uri : null;
-        if (sameAsRelationName) {
-          return (
-            <li>
-              <a href={sameAsRelationName}>{sameAsRelationName}</a>
-            </li>
-          );
-        }
-      }
-    };
-
-    const renderSameAsRelations = () => {
-      if (sameAsRelations) {
+  /**
+   * Render a single sameAsRelation uri from the @sameAsRelations
+   * @param {*} sameAsRelation the sameAsRelation to be returned
+   * @param {*} _ the index is ignored
+   * @returns a uri of the sameAsRelation
+   */
+  const renderSameAsRelation = (sameAsRelation, _) => {
+    if (sameAsRelation) {
+      let sameAsRelationName = sameAsRelation.uri ? sameAsRelation.uri : null;
+      if (sameAsRelationName) {
         return (
-          <h6>
-            External Records
-            <ul>
-              <li>
-                <a href={"https://snaccooperative.org/view/" + id}>
-                  snaccooperative.org
-                </a>
-              </li>
-              {sameAsRelations.map(renderSameAsRelation)}
-            </ul>
-          </h6>
+          <li>
+            <a href={sameAsRelationName}>{sameAsRelationName}</a>
+          </li>
         );
       }
-    };
-
-  const renderRelative = (relation, index) =>{
-    return (
-      <RelativeCard relation={relation}></RelativeCard>
-    )
-  }
-console.log(relations)
-  const renderRelatives = () =>{
-    if (relations) {
-       return (
-         <Row>
-           {relations.map(renderRelative)}
-         </Row>
-       );
     }
-  }
+  };
+  /**
+   * Render a uri for each of @sameAsRelations
+   * @returns the uri for each of @sameAsRelations
+   */
+  const renderSameAsRelations = () => {
+    if (sameAsRelations) {
+      return (
+        <h6>
+          External Records
+          <ul>
+            <li>
+              <a href={"https://snaccooperative.org/view/" + id}>
+                snaccooperative.org
+              </a>
+            </li>
+            {sameAsRelations.map(renderSameAsRelation)}
+          </ul>
+        </h6>
+      );
+    }
+  };
+
+  /**
+   * Render a single relation from the @relations with the component of RelativeCard
+   * @param {*} relation the relation to be rendered
+   * @param {*} _ the index is ignored
+   * @returns the relation from the @relations with the component of RelativeCard
+   */
+  const renderRelative = (relation, _) => {
+    return <RelativeCard relation={relation}></RelativeCard>;
+  };
+
+  /**
+   * Render all relation from the @relations with the component of RelativeCard
+   * @returns all the relation from the @relations with the component of RelativeCard
+   */
+  const renderRelatives = () => {
+    if (relations) {
+      return <Row>{relations.map(renderRelative)}</Row>;
+    }
+  };
+
+  /**
+   * Constructs nodes and links from the @relations
+   * The @nodes contains an object for each relation, INCLUDING the self
+   * Each object in the @nodes contains an @id and a @label (name) of the entity
+   *
+   * The @links contains an object for each relation
+   * Each object in the @links contains a @source a @label (name) and a @target
+   * 
+   * @returns the @nodes and the @links
+   */
+  const createRelationData = () => {
+    let nodes = [];
+    let links = [];
+    //Insert self first
+    let self = {
+      id: id,
+      label: nameEntries[0].original,
+    };
+    nodes.push(self);
+
+    //Insert the relatives to the nodes and construct the links
+    for (const relation of relations) {
+      //For nodes
+      let node = {
+        id: relation.id,
+        label: "",
+      };
+      nodes.push(node);
+
+      // for links
+      const link = {
+        source: id,
+        label: relation.type.term,
+        target: relation.id,
+      };
+      links.push(link);
+    }
+    return [nodes, links];
+  };
+
+  const [nodes, links] = createRelationData();
+
   return (
     <Layout>
       <Row>
@@ -240,9 +356,13 @@ console.log(relations)
         <Col>{renderBio()}</Col>
       </Row>
       <h4>Relatives</h4>
-        {renderRelatives()}
+      {renderRelatives()}
+      <Network
+        nodesInJSON={nodes}
+        linksInJSON={links}
+        centralFigure={id}
+      ></Network>
     </Layout>
   );
 };
-
 export default People;

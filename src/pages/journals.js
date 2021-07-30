@@ -1,9 +1,6 @@
 import React from "react";
-
 import { Link, graphql } from "gatsby";
-import styled from "styled-components";
 import Layout from "../components/Layout";
-import Image from "../components/Image";
 import { Button } from "react-bootstrap";
 
 const journals = ({ data }) => {

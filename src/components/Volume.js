@@ -7,11 +7,14 @@ import Layout from "./Layout";
 import { Link } from "gatsby";
 import { scroller } from "react-scroll";
 
-let counter = 1;
-let counter2 = 0;
-let currentInput = 0;
-// Creating a custom hook
+let counter = 1; // counter for to tract the index of each transcript (cetei)
+let currentInput = 0; // variable for the input value for the scroll
 
+/**
+ * An all-encompassing component for the journal display; the image and the transcript
+ * @param {*} props the properties to be passed when used this component
+ * @returns a component, containing the OpenSeaDragon and transcript, for each journal
+ */
 const Volume = (props) => {
   const { pageContext, data } = props;
   const parser = new DOMParser();
@@ -23,69 +26,33 @@ const Volume = (props) => {
     pids.push(pages[index].attributes.getNamedItem("facs").value);
   }
 
-  // useEffect(() => {
-  //   const hrs = document.getElementsByTagName("hr");
-  //   const section = document.getElementsByTagName("section");
-  //   console.log(hrs);
-  // }, []);
-
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
-  // console.log(data.allCetei.nodes);
+
+  /**
+   * Handle the change when a new value is entered on the input
+   * @param {*} e the event
+   */
   function onChange(e) {
     currentInput = e.target.value;
     e.preventDefault();
   }
+  //State to set pid (constellation id)
   const [currentPid, setPid] = useState(pids[currentInput]);
 
-  // const journal = useRef(null);
-  //   const options = {
-  //     root: journal.current,
-  //     rootMargin: "0px",
-  //     threshhold: 1,
-  //   };
-  // function useOnPageChange(options){
-
-  //   const [currentVisible, setCurrentVisible] = useState(pages[0])
-
-  //   useEffect(()=> {
-  //     const observer = new IntersectionObserver((entries =>{
-  //       entries.some(entry =>{
-  //         if(entry.isIntersecting){
-  //           setCurrentVisible(entry.target)
-  //           return;
-  //         }
-  //       })
-  //     }), options);
-
-  //     for (let index = 0; index < pages.length; index++) {
-  //       observer.observe(pages[index]);
-  //     }
-
-  //     return () => {
-  //       for (let index = 0; index < pages.length; index++) {
-  //         observer.unobserve(pages[index]);
-  //       }
-  //     };
-
-  //   }, [...pages, options])
-
-  //   return currentVisible
-  // }
-
-  // const visibleEl = useOnPageChange(options)
-  // console.log(visibleEl);
-
+  //Sets the current cetei with the next cetei
   function getNextCetei() {
-    //  console.log(counter);
     setCetei(data.allCetei.nodes[counter++].parent.name);
-    // console.log(data.allCetei.nodes[counter].parent.name);
-  }
-  function getPrevCetei() {
-    // console.log(counter);
-    setCetei(data.allCetei.nodes[counter--].parent.name);
-    // console.log(data.allCetei.nodes[counter].parent.name);
   }
 
+  //Sets the current cetei to the previous cetei
+  function getPrevCetei() {
+    setCetei(data.allCetei.nodes[counter--].parent.name);
+  }
+
+  /**
+   * Implements the scroll functionality for th transcript
+   * @param {*} page the page to be scrolled to
+   */
   function scroll(page) {
     scroller.scrollTo(page, {
       duration: 800,
@@ -94,12 +61,21 @@ const Volume = (props) => {
       containerId: "journal",
     });
   }
+
+  /**
+   * Find and get the index of the next pid relative to th @currentPid
+   * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
+   */
   function getNextImage() {
     let i = pids.indexOf(currentPid) + 1;
-    console.log(i, pids[i]);
     scroll(pids[i]);
     setPid(pids[i]);
   }
+
+  /**
+   * Find and get the index of the previous pid relative to th @currentPid
+   * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
+   */
   function getPrevImage() {
     let i = pids.indexOf(currentPid) - 1;
     console.log(i, pids[i]);
@@ -107,6 +83,7 @@ const Volume = (props) => {
     setPid(pids[i]);
   }
 
+  // A wrapper function for the scroll()
   function handleClick() {
     scroll(currentPid);
   }
@@ -121,14 +98,7 @@ const Volume = (props) => {
         </Col>
 
         <Col sm={8}>
-          {/* <h1>
-            {inputProps.currentPid}: which is{" "}
-            {inputProps.currentPid.slice(-2)} of {pages.length}{" "}
-          </h1> */}
           <input onChange={onChange} placeholder={""} />
-          {/* <scrollLink to={inputProps.currentPid} spy={true} smooth={true}>
-            Jump
-          </scrollLink> */}
           <Button
             variant="outline-info"
             style={{ position: "fixed" }}
@@ -148,9 +118,7 @@ const Volume = (props) => {
           <OpenSeadragonViewer imageId={currentPid} />
         </Col>
         <Col>
-          <div id="journal">
-            {props.children}
-          </div>
+          <div id="journal">{props.children}</div>
         </Col>
       </Row>
       <Row>
