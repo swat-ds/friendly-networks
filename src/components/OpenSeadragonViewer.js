@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import "../assets/styles/styles.scss";
 
+// const OpenSeadragon  = null;
+// if (typeof window !== `undefined`) {
+//    OpenSeadragon = require("openseadragon");
+// }
 /**
  * 
  * @param {*} imageId the id of the image which to be rendered in the OpenSeadragon 
@@ -26,28 +30,30 @@ export const OpenSeadragonViewer = ({ imageId }) => {
   }, [image]);
 
   //Initialize the viewer
-  const InitOpenSeadragon = () => {
-    viewer && viewer.destroy();
-    setViewer(
-      OpenSeadragon({
-        id: "openseadragon",
-        prefixUrl: "openseadragon/images/",
-        preserveViewport: true,
-        visibilityRatio: 1,
-        minZoomLevel: 1,
-        defaultZoomLevel: 1,
-        sequenceMode: false,
-        tileSources: [image],
-      })
-    );
-  };
-
-  useEffect(() => {
+useEffect(() => {
+    const InitOpenSeadragon = () => {
+      viewer && viewer.destroy();
+      setViewer(
+        OpenSeadragon({
+          id: "openseadragon",
+          prefixUrl: "openseadragon/images/",
+          preserveViewport: true,
+          visibilityRatio: 1,
+          minZoomLevel: 1,
+          defaultZoomLevel: 1,
+          sequenceMode: false,
+          tileSources: [image],
+        })
+      );
+    };
+ 
     InitOpenSeadragon();
     return () => {
       viewer && viewer.destroy();
     };
-  }, []);
+
+},[])
+
 
   return <Col id="openseadragon"></Col>;
 };
