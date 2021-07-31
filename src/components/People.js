@@ -9,6 +9,21 @@ import Network from './Network'
 import "../assets/styles/styles.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
+//Modify any of these properties to alter the naming of the labels. 
+const bioDataLabels = {
+  id: "",
+  ark: "",
+  nameEntries: "Other Names",
+  entityType: "",
+  biogHists: "",
+  dates: "Relevant Dates",
+  places: "Relevant Places",
+  occupations: "Occupations",
+  subjects: "Things interested of",
+  relations: "Relative and acquaintances",
+  genders: "Identity",
+  sameAsRelations: "External Links for other relevant resources",
+};
 /**
  * 
  * @param {*} props properties for this component, including the data comping from Page Creation of
@@ -81,7 +96,7 @@ const People = (props) => {
     if (nameEntries.length > 1) {
       return (
         <h6>
-          Name Variants:
+          {`${bioDataLabels.nameEntries}: `}:
           <ul>{nameEntries.map(renderNameVariant)}</ul>
         </h6>
       );
@@ -98,7 +113,7 @@ const People = (props) => {
     if (dates.length > 1) {
       return (
         <h6>
-          Dates:
+          {`${bioDataLabels.dates}: `}
           <ul>
             <li>{`Born: ${dates[0].fromDate}`}</li>
             <li>{`Decease: ${dates[1].toDate}`}</li>
@@ -108,7 +123,7 @@ const People = (props) => {
     } else {
       return (
         <h6>
-          Dates:
+          {`${bioDataLabels.dates}: `}
           <ul>
             <li>{`Born: ${dates[0].fromDate}`}</li>
             <li>{`Decease: ${dates[0].toDate}`}</li>
@@ -163,7 +178,7 @@ const People = (props) => {
     if (places) {
       return (
         <h6>
-          Places:
+          {`${bioDataLabels.places}: `}
           <ul>{places.map(renderPlace)}</ul>
         </h6>
       );
@@ -197,7 +212,7 @@ const People = (props) => {
     if (occupations) {
       return (
         <h6>
-          Occupations:
+          {`${bioDataLabels.occupations}: `}
           <ul>{occupations.map(renderOccupation)}</ul>
         </h6>
       );
@@ -226,7 +241,7 @@ const People = (props) => {
     if (subjects) {
       return (
         <h6>
-          Subjects
+          {`${bioDataLabels.subjects}: `}
           <ul>{subjects.map(renderSubject)}</ul>
         </h6>
       );
@@ -259,7 +274,7 @@ const People = (props) => {
     if (sameAsRelations) {
       return (
         <h6>
-          External Records
+          {`${bioDataLabels.sameAsRelations}`}
           <ul>
             <li>
               <a href={"https://snaccooperative.org/view/" + id}>
@@ -293,6 +308,12 @@ const People = (props) => {
     }
   };
 
+  const renderGender = () =>{
+    if(genders){
+      let label = genders[0].term.term
+      return <p>{`Gender: ${label}`}</p>
+    }
+  }
   /**
    * Constructs nodes and links from the @relations
    * The @nodes contains an object for each relation, INCLUDING the self
@@ -316,9 +337,10 @@ const People = (props) => {
     //Insert the relatives to the nodes and construct the links
     for (const relation of relations) {
       //For nodes
+      let contentParts = relation.content.split(",");
       let node = {
         id: relation.id,
-        label: "",
+        label: relation.content,
       };
       nodes.push(node);
 
@@ -349,13 +371,11 @@ const People = (props) => {
           {renderOccupations()}
           {renderSubjects()}
           {renderSameAsRelations()}
-          {/* <h1>{`${props.name}  ${props.period}`}</h1> */}
-          {/* <img src={props.image} alt={props.alt} />
-                <div>{props.links}</div> */}
+          {renderGender()}
         </Col>
         <Col>{renderBio()}</Col>
       </Row>
-      <h4>Relatives</h4>
+      <h4>{`${bioDataLabels.relations}: `}</h4>
       {renderRelatives()}
       <Network
         nodesInJSON={nodes}

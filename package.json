@@ -23,7 +23,6 @@
     "gatsby": "^3.6.2",
     "gatsby-plugin-sass": "^4.9.0",
     "gatsby-plugin-sitemap": "^4.4.0",
-    "gatsby-plugin-styled-components": "^4.8.0",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-theme-ceteicean": "^1.0.1",
     "openseadragon": "^2.4.2",
