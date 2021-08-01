@@ -45,24 +45,37 @@ const People = (props) => {
     genders,
     sameAsRelations,
   } = props.pageContext;
-  // const parser = new DOMParser();
-  // const xmlDoc = parser.parseFromString(biogHists[0].text, "text/xml");
-  // console.log(nameEntries)
-  // const paragraphs =  xmlDoc.getElementsByTagName("p")
-  // const citation = xmlDoc.getElementsByTagName("citation")
-  // console.log(paragraphs)
-  // console.log(citation);
-  // console.log(nameEntries)
+
+ 
 
   /**
    * Extracts the bio of the @biogHist and renders it
    * @returns an article containing the biography of each entity
    */
   const renderBio = () => {
+    let bio = '';
     if (biogHists) {
+      let isXML =
+        biogHists[0]?.text?.includes("xmlns") ||
+        biogHists[0]?.text?.includes("<biogHists>"); 
+      if(isXML){
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(biogHists[0].text, "text/xml");
+        const paragraphs =  xmlDoc.getElementsByTagName("p")
+        const citation = xmlDoc.getElementsByTagName("citation")
+
+        for(const p of paragraphs){
+          bio += `${p.innerHTML} \n`
+        }
+        console.log(paragraphs)
+        console.log(citation)
+      }
+      else{
+        bio = biogHists[0].text;
+      }
       return (
         <article id="bio">
-          {biogHists[0].text}
+          {bio}
           <br />
           <br />
           <figcaption>
@@ -308,6 +321,10 @@ const People = (props) => {
     }
   };
 
+  /**
+   * creates a paragraph @p containing the gender type of the entity
+   * @returns the @p
+   */
   const renderGender = () =>{
     if(genders){
       let label = genders[0].term.term

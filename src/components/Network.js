@@ -21,7 +21,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
   const [links, setLinks] = useState(linksInJSON);
 
   const svgRef = useRef(); // A reference to refer to the SVG element
-  let width = 1024, height = 800; //height of the svg
+  let width = 600, height = 600; //height of the svg
 
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
@@ -124,8 +124,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       <svg
         ref={svgRef}
         // id="svgContainer"
-        width="1000"
-        height="600"
+        // width="1000"
+        // height="600"
         style={{ border: "thin solid blue" }}
       ></svg>
     </Row>
