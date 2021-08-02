@@ -68,7 +68,6 @@ export const Body = (props) => {
   );
 };
 
-var allPids = [];
 export const Pb = (props) => {
   return (
     <Behavior node={props.teiNode}>

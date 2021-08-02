@@ -55,6 +55,7 @@ export const query = graphql`
     allCetei {
       totalCount
       nodes {
+        original
         parent {
           ... on File {
             id
