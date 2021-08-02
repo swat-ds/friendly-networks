@@ -25,10 +25,11 @@ function getALlPageBreaks(jsonPrefixed){
   let pageBreakIDs = []; 
   if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
     let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
-
-    front["teit-pb"].forEach((pb) => {
-      pageBreakIDs.push(pb?.$?.facs);
-    });
+    if("tei-pb" in front){
+      front["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
     if ("tei-div" in front) {
       pageBreakIDs.push(...getDivBreaks(front["tei-div"]));
     }
@@ -40,9 +41,11 @@ function getALlPageBreaks(jsonPrefixed){
     //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
     //     pageBreakIDs.push(pid.$.facs);
     //   }
-    body["tei-pb"].forEach((pb) => {
-      pageBreakIDs.push(pb?.$?.facs);
-    });
+    if("tei-pb" in body){
+      body["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
 
     if ("tei-div" in body) {
       pageBreakIDs.push(...getDivBreaks(body["tei-div"]));
@@ -51,9 +54,12 @@ function getALlPageBreaks(jsonPrefixed){
 
   if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
     let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
-    back["teit-pb"].forEach((pb) => {
-      pageBreakIDs.push(pb?.$?.facs);
-    });
+   
+    if("tei-pb" in back){
+      back["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
     if ("tei-div" in back) {
       pageBreakIDs.push(...getDivBreaks(back["tei-div"]));
     }

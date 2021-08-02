@@ -55,24 +55,7 @@ const People = (props) => {
   const renderBio = () => {
     let bio = '';
     if (biogHists) {
-      let isXML =
-        biogHists[0]?.text?.includes("xmlns") ||
-        biogHists[0]?.text?.includes("<biogHists>"); 
-      if(isXML){
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(biogHists[0].text, "text/xml");
-        const paragraphs =  xmlDoc.getElementsByTagName("p")
-        const citation = xmlDoc.getElementsByTagName("citation")
-
-        for(const p of paragraphs){
-          bio += `${p.innerHTML} \n`
-        }
-        console.log(paragraphs)
-        console.log(citation)
-      }
-      else{
-        bio = biogHists[0].text;
-      }
+      let isXML = bio = biogHists[0].text;
       return (
         <article id="bio">
           {bio}
@@ -352,22 +335,24 @@ const People = (props) => {
     nodes.push(self);
 
     //Insert the relatives to the nodes and construct the links
-    for (const relation of relations) {
-      //For nodes
-      let contentParts = relation.content.split(",");
-      let node = {
-        id: relation.id,
-        label: relation.content,
-      };
-      nodes.push(node);
+    if(relations){
+      for (const relation of relations) {
+        //For nodes
+        let contentParts = relation.content.split(",");
+        let node = {
+          id: relation.id,
+          label: relation.content,
+        };
+        nodes.push(node);
 
-      // for links
-      const link = {
-        source: id,
-        label: relation.type.term,
-        target: relation.id,
-      };
-      links.push(link);
+        // for links
+        const link = {
+          source: id,
+          label: relation.type.term,
+          target: relation.id,
+        };
+        links.push(link);
+      }
     }
     return [nodes, links];
   };

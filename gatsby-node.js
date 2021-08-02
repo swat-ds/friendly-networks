@@ -46,19 +46,19 @@ console.log(constellations.length)
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      ark: constellation.ark,
-      entityType: constellation.entityType,
-      sources: constellation.sources,
-      nameEntries: constellation.nameEntries,
-      occupations: constellation.occupations,
-      biogHists: constellation.biogHists,
-      relations: constellation.relations,
-      sameAsRelations: constellation.sameAsRelations,
-      resourceRelations: constellation.resourceRelations,
-      places: constellation.places,
-      subjects: constellation.subjects,
-      genders: constellation.genders,
-      dates: constellation.dates,
+      ark: constellation.ark || null,
+      entityType: constellation.entityType || null,
+      sources: constellation.sources || null,
+      nameEntries: constellation.nameEntries || null,
+      occupations: constellation.occupations || null,
+      biogHists: constellation.biogHists || null,
+      relations: constellation.relations || null,
+      sameAsRelations: constellation.sameAsRelations || null,
+      resourceRelations: constellation.resourceRelations || null,
+      places: constellation.places || null,
+      subjects: constellation.subjects || null,
+      genders: constellation.genders || null,
+      dates: constellation.dates || null,
 
     };
 
