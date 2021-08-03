@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import Header from "./Header";
-import Footer from "./Footer";
 import {Container, Row, Col} from "react-bootstrap"
 import "../assets/styles/styles.scss";
-import NavBar from './Nav'
-
+import NavBar from './Nav';
+import TestFooter from './TestFooter';
 
 /**
  * 
@@ -20,7 +19,7 @@ const Layout = (props) => {
         <NavBar></NavBar>
         <Header></Header>
         {props.children}
-        <Footer></Footer>
+        <TestFooter></TestFooter>
     </Container>
   );
 };
