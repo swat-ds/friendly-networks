@@ -22,22 +22,22 @@ const Header = (props) => {
       <Col bsPrefix="col header-items">
         <Link className="g-link" to={pageLinks.journals}>
           <div className="d-flex header-item" id="header-journal">
-            <h1>Journals</h1>
+            <h3>Journals</h3>
           </div>
         </Link>
         <Link className="g-link" to={pageLinks.people}>
           <div className="d-flex header-item" id="header-relative">
-            <h1>People</h1>
+            <h3>People</h3>
           </div>
         </Link>
         <Link className="g-link" to={pageLinks.network}>
           <div className="d-flex header-item" id="header-network">
-            <h1>Network</h1>
+            <h3>Network</h3>
           </div>
         </Link>
         <Link className="g-link" to={pageLinks.timeline}>
           <div className="d-flex header-item" id="header-timeline">
-            <h1>Timeline</h1>
+            <h3>Timeline</h3>
           </div>
         </Link>
       </Col>

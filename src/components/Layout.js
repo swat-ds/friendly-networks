@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import {Container, Row, Col} from "react-bootstrap"
 import "../assets/styles/styles.scss";
-import Nav from './Nav'
+import NavBar from './Nav'
 
 
 /**
@@ -17,7 +17,7 @@ import Nav from './Nav'
 const Layout = (props) => {
   return (
     <Container fluid>
-        <Nav></Nav>
+        <NavBar></NavBar>
         <Header></Header>
         {props.children}
         <Footer></Footer>

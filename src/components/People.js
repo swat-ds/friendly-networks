@@ -9,6 +9,8 @@ import Network from './Network'
 import "../assets/styles/styles.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
+const parseString = require("xml2js").parseString;
+
 //Modify any of these properties to alter the naming of the labels. 
 const bioDataLabels = {
   id: "",
@@ -53,21 +55,54 @@ const People = (props) => {
    * @returns an article containing the biography of each entity
    */
   const renderBio = () => {
-    let bio = '';
+    let wrappedBio = `<bio>${biogHists[0].text}</bio>`;
+    console.log(wrappedBio);
+
+    let bioJSON;
     if (biogHists) {
-      let isXML = bio = biogHists[0].text;
+      parseString(wrappedBio, function (err, result) {
+        bioJSON = result;
+      });
+
+      console.log(bioJSON)
+      let bio = bioJSON.bio
+      console.log(bio)
+
+      if(bio.biogHist){
       return (
         <article id="bio">
-          {bio}
-          <br />
-          <br />
+          {bio.biogHist[0].p?.map((p) => <p>{p._}</p>)}
           <figcaption>
-            <small>{/* {citation[0].innerHTML} */}</small>
+            {bio.biogHist[0].citation?.map((c) => <small>{c._}</small>)}
           </figcaption>
         </article>
       );
-    }
-  };
+      }
+      else if(bio.p){
+         return (
+            <article id="bio">
+            {bio.p.map((p) => (
+              <p>{p._}</p>
+            ))}
+            <figcaption>
+              {bio.citation?.map((c) => (
+                <small>{c._}</small>
+              ))}
+            </figcaption>
+          </article>
+         )
+      }
+      else{
+        return (
+            <article id="bio">
+            <p>{bio}</p>
+          </article>
+        )
+      }
+
+
+    };
+  }
 
   /**
    *
@@ -386,5 +421,5 @@ const People = (props) => {
       ></Network>
     </Layout>
   );
-};
+}
 export default People;

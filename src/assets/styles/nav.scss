@@ -1,17 +1,82 @@
-
-
-#nav-items{
-    // border: thin solid blue;
-    width: 60%;
-    height: 50%;
-    margin-bottom: 5px;
-
+#nav-items {
+  // border: thin solid blue;
+  width: 60%;
+  height: 50%;
+  margin-bottom: 5px;
 }
 
-.g-link{
-    padding: 5px;
-    color: hsl(0, 3%, 23%);
+.g-link {
+  padding: 5px;
+  color: hsl(0, 3%, 23%);
 }
 
+// #explore{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+
+#alink {
+  display: none;
+}
+
+.header-items-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .header-items-mobile {
+    display: flex;
+    justify-content: space-evenly;
+
+    .header-item{
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      margin-top: 8px;
+      border-radius: 3px;
+      color: white;
+      transition: all 1s ease-out;
+    }
+
+    #header-journal-mobile {
+      background-color: darkorange;
+    }
+    #header-journal-mobile:hover,
+    #header-journal-mobile:active {
+      background-color: white;
+      color: darkorange;
+      border: thin solid darkorange;
+    }
+
+    #header-relative-mobile {
+      background-color: hsl(335, 61%, 43%);
+    }
+    #header-relative-mobile:hover,
+    #header-relative:active {
+      background-color: white;
+      color: hsl(335, 61%, 43%);
+      border: thin solid hsl(335, 61%, 43%);
+    }
+    #header-network-mobile {
+      background-color: hsl(198, 89%, 49%);
+    }
+    #header-network-mobile:hover,
+    #header-network-mobile:active {
+      background-color: white;
+      color: hsl(198, 89%, 49%);
+      border: thin solid hsl(198, 89%, 49%);
+    }
+
+    #header-timeline-mobile {
+      background-color:hsl(120, 59%, 41%);
+    }
+    #header-timeline-mobile:hover,
+    #header-timeline-mobile:active {
+      background-color: white;
+      color: hsl(120, 59%, 41%);
+      border: thin solid hsl(120, 59%, 41%);
+    }
+  }
+}
 
 @import "bootstrap";

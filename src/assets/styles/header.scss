@@ -40,14 +40,19 @@
     }
 
     #header-timeline{
-            background-color: hsl(48, 66%, 37%);
+            background-color:hsl(120, 59%, 41%);
         }
      #header-timeline:hover, #header-timeline:active{
             background-color: white;
-            color:hsl(48, 66%, 37%);
-            border: thin solid hsl(48, 66%, 37%);;
+            color:hsl(120, 59%, 41%);
+            border: thin solid hsl(120, 59%, 41%);
     }
 }
 
+@media only screen and (max-width: 990px) {
+ .header-items{
+     display: none;
+}
+}
 
 @import "bootstrap";

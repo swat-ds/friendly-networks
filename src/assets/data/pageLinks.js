@@ -8,7 +8,7 @@
    about: "/about",
    contact: "/contact",
    error: "/error",
-   index: "/index",
+   home: "/",
    journals: "/journals",
    network: "/network",
    people: "/people",
