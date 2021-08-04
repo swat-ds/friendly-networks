@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 import Header from "./Header";
 import {Container, Row, Col} from "react-bootstrap"
 import "../assets/styles/styles.scss";
-import NavBar from './Nav';
-import TestFooter from './TestFooter';
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 /**
  * 
@@ -19,7 +19,7 @@ const Layout = (props) => {
         <NavBar></NavBar>
         <Header></Header>
         {props.children}
-        <TestFooter></TestFooter>
+        <Footer></Footer>
     </Container>
   );
 };

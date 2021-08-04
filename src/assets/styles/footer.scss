@@ -1,10 +1,15 @@
-
-
-footer {
-    color: white;
-    justify-content: center;
-    background-color: #113036;
+#footer-row{
+    background-color: hsl(240, 6%, 24%);
 }
 
+.email, .phone{
+    margin-left: 40px;
+}
 
-@import "bootstrap";
+.contactInfo, .footer-description{
+    color: hsl(0, 9%, 79%);
+}
+
+.footer-description {
+    font-size: 20px;
+}

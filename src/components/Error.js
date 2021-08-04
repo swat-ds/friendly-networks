@@ -8,7 +8,7 @@ const Error = () => {
   return (
     <Row id="error-row">
       <Col>
-        <svg
+        <svg id="error-svg"
           width="380px"
           height="500px"
           viewBox="0 0 837 1045"

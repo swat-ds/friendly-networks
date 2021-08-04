@@ -1,31 +1,121 @@
 import React from "react";
-import {Row, Col} from 'react-bootstrap'
-import "../assets/styles/footer.scss"
+import {Link} from 'gatsby'
 
-/**
- * 
- * @param {*} props contains all the properties that maybe passed to Footer. 
- * @returns a @Row element containing a @Col which contains an @footer
- */
-const Footer = (props) => {
+
+import {
+    Row
+} from 'react-bootstrap';
+import {pageLinks, contacts} from '../assets/data/pageLinks'
+import '../assets/styles/styles.scss'
+import "../assets/styles/footer.scss";
+
+const Footer = () => {
   return (
-    <Row >
-      <Col>
-        <footer className="text-center">
-          <a href="https://www.swarthmore.edu/">Swarthmore College</a>
-          This site is created by Friends Historical Library @ Swarthmore
-          College
-          <p>
-            Copyright &copy; {new Date().getFullYear()} FHL. All Rights are
-            Reserved
-            <span>
-              <a href="https://www.swarthmore.edu/friends-historical-library">
-                FHL
-              </a>
-            </span>
-          </p>
-        </footer>
-      </Col>
+    <Row id="footer-row">
+      <footer className="text-center text-lg-start text-muted">
+        <section className="">
+          <div className="container text-center text-md-start mt-5">
+            <div className="row mt-3">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">
+                  <i className="fas fa-gem me-3"></i>Friends Historical Library
+                </h6>
+                <p className="footer-description">
+                  A library dedicated to the preservation of Friends historical
+                  literature. Associated with the McCabe Library of Swarthmore
+                  College. Located on the left side of the front desk respective
+                  to entering the building.
+                </p>
+              </div>
+
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <Link to={pageLinks.home} className="g-link ">
+                    Home
+                  </Link>
+                  <Link to={pageLinks.about} className=" g-link ">
+                    About
+                  </Link>
+                  <Link to={pageLinks.contact} className="g-link ">
+                    Contact
+                  </Link>
+                </p>
+                <p>
+                  <Link to={pageLinks.swat} className="g-link ">
+                    Swarthmore College
+                  </Link>
+                </p>
+                <p>
+                  <Link to={pageLinks.fhl} className="g-link ">
+                    Friends Historical Library
+                  </Link>
+                </p>
+                <p>
+                  <Link to={pageLinks.lib} className="g-link ">
+                    Swarthmore College Libraries
+                  </Link>
+                </p>
+                <p>
+                  <Link to={pageLinks.tricLib} className="g-link ">
+                    Tri-College Library
+                  </Link>
+                </p>
+              </div>
+
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">
+                  Contact &amp; Address
+                </h6>
+                <p className="contactInfo">
+                  <span>
+                    {" "}
+                    {`${contacts.swat.address}   ( `}
+                    <a className="g-link" href={pageLinks.swatAddressMap}>
+                      map
+                    </a>
+                    {` )`}
+                  </span>
+                </p>
+                <p className="contactInfo">
+                  <span>Swarthmore:</span>
+                  <br />
+                  <span className="phone">Phone: {contacts.swat.phone}</span>
+                  <br />
+                  <span className="email">Email: {contacts.swat.email}</span>
+                </p>
+                <p className="contactInfo">
+                  <span>McCabe Library:</span>
+                  <br />
+                  <span className="phone">Phone: {contacts.library.phone}</span>
+                  <br />
+                  <span className="email">Email: {contacts.library.email}</span>
+                </p>
+                <p className="contactInfo">
+                  <span>FHL:</span>
+                  <br />
+                  <span className="phone">Phone: {contacts.fhl.phone}</span>
+                  <br />
+                  <span className="email">Email: {contacts.fhl.email}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          className="text-center p-4"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+        >
+          <span>&copy; {new Date().getFullYear()} Copyright </span>
+          <a
+            className="g-link fw-bold"
+            href="https://www.swarthmore.edu/libraries/digital-scholarship"
+          >
+            Digital Scholarship Library
+          </a>
+        </div>
+      </footer>
     </Row>
   );
 };

@@ -18,7 +18,7 @@ import {
  */
 const Header = (props) => {
   return (
-    <Row style={{ backgroundColor: "#2F3242" }}>
+    <Row id="header-row">
       <Col bsPrefix="col header-items">
         <Link className="g-link" to={pageLinks.journals}>
           <div className="d-flex header-item" id="header-journal">

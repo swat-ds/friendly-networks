@@ -28,7 +28,7 @@ import {
  */
 const NavBar = (props) => {
 return (
-  <Row style={{ backgroundColor: "#2F3242" }}>
+  <Row id="nav-row">
     <Col>
       <img src={logo} style={{ height: "8vh" }}></img>
     </Col>

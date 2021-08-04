@@ -98,7 +98,7 @@ body {
 }
 
 
-svg {
+#error-svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,7 +164,7 @@ svg {
   }
 }
 @media (max-width: 450px) {
-  svg {
+  #error-svg {
     position: absolute;
     top: 50%;
     left: 50%;

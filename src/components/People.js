@@ -412,7 +412,9 @@ const People = (props) => {
         </Col>
         <Col>{renderBio()}</Col>
       </Row>
-      <h4>{`${bioDataLabels.relations}: `}</h4>
+      <Row>
+        <h4>{`${bioDataLabels.relations}: `}</h4>
+      </Row>
       {renderRelatives()}
       <Network
         nodesInJSON={nodes}

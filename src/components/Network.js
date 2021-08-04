@@ -2,6 +2,8 @@ import React from "react";
 import { useRef, useState, useEffect } from "react";
 import * as d3 from "d3";
 import { Container, Row, Col } from "react-bootstrap";
+import "../assets/styles/styles.scss";
+import '../assets/styles/network.scss'
 
 
 
@@ -120,14 +122,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
   }, [nodes, links]); //End of useEffect()
 
   return (
-    <Row>
-      <svg
-        ref={svgRef}
-        // id="svgContainer"
-        // width="1000"
-        // height="600"
-        style={{ border: "thin solid blue" }}
-      ></svg>
+    <Row >
+        <svg ref={svgRef}></svg>
+
     </Row>
   );
 };
