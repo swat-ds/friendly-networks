@@ -4,6 +4,7 @@
 const fs = require("fs");
 const tsvNodes = fs.readFileSync("./dataTable.tsv", "utf8");
 const tsvLinks = fs.readFileSync("./relationshipTable.tsv", "utf8");
+const tsvTimeline = fs.readFileSync("./timeline.tsv", "utf8");
 
 
 /**
@@ -20,21 +21,16 @@ const tsvLinks = fs.readFileSync("./relationshipTable.tsv", "utf8");
  */
 function tsvJSON(tsv) {
   var lines = tsv.split("\n");
-
   var result = [];
-
   var headers = lines[0].split("\t");
-
   //Last line is ignored, it's an empty line
   for (var i = 1; i < lines.length-1; i++) {
     var obj = {};
     var currentLine = lines[i].split("\t");
-
     //Last header is ignored as it's empty
     for (var j = 0; j < headers.length-1; j++) {
       obj[headers[j]] = currentLine[j];
     }
-
     result.push(obj);
   }
 
@@ -42,6 +38,7 @@ function tsvJSON(tsv) {
 }
 const jsonNodes = tsvJSON(tsvNodes);
 const jsonLinks = tsvJSON(tsvLinks);
+const jsonTimeline = tsvJSON(tsvTimeline);
 
 //Creates file 'dataTable.json' that contains the jsonNodes
 fs.writeFileSync("dataTable.json", jsonNodes, (err) =>{
@@ -49,5 +46,8 @@ fs.writeFileSync("dataTable.json", jsonNodes, (err) =>{
 })
 //Creates file 'relationshipTable.json' that contains the jsonLinks
 fs.writeFileSync("relationshipTable.json", jsonLinks, (err) => {
+  if (err) throw err;
+});
+fs.writeFileSync("timeline.json", jsonTimeline, (err) => {
   if (err) throw err;
 });
