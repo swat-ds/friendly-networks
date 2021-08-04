@@ -44,9 +44,22 @@ tei-p {
     width: 18rem;
   }
 
-  .g-link{
-    text-decoration: none;
-    color: hsl(0, 4%, 9%);
-  }
+  // .g-link{
+  //   text-decoration: none;
+  //   color: hsl(0, 4%, 9%);
+  // }
+
+  .g-link {
+  padding: 5px;
+  color: hsl(0, 10%, 88%);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.5s;
+
+}
+  .g-link:hover{
+  color: hsl(0, 33%, 99%);
+  border-color: hsl(0, 33%, 99%);;
+}
 
 @import "bootstrap";

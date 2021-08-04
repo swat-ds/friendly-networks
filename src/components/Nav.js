@@ -28,13 +28,13 @@ import {
  */
 const NavBar = (props) => {
 return (
-  <Row>
+  <Row style={{ backgroundColor: "#2F3242" }}>
     <Col>
       <img src={logo} style={{ height: "8vh" }}></img>
     </Col>
     <Col>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand>Menu</Navbar.Brand>
+      <Navbar expand="lg">
+        <Navbar.Brand id="brand">Menu</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

@@ -7,7 +7,7 @@
  export const pageLinks = {
    about: "/about",
    contact: "/contact",
-   error: "/error",
+   error: "/404",
    home: "/",
    journals: "/journals",
    network: "/network",

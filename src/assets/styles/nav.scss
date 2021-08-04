@@ -5,15 +5,16 @@
   margin-bottom: 5px;
 }
 
-.g-link {
-  padding: 5px;
-  color: hsl(0, 3%, 23%);
-}
+
 
 // #explore{
 //     display: flex;
 //     justify-content: space-evenly;
 // }
+
+#brand{
+  color: #2F3242;
+}
 
 #alink {
   display: none;
@@ -24,6 +25,9 @@
 }
 
 @media only screen and (max-width: 990px) {
+  #brand{
+  color: hsl(0, 10%, 88%);
+}
   .header-items-mobile {
     display: flex;
     justify-content: space-evenly;

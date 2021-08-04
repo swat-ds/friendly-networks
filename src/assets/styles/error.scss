@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+
+body {
+  background-color: #2F3242;
+}
+#error-row{
+    height: 90vh;
+    background-color: #2F3242;
+    overflow: scroll;
+}
+#oops-message{
+    color: hsl(0, 8%, 82%);
+    text-align: center;
+    font-size: 20px;
+}
+
+.error-buttons{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.error-container {
+  text-align: center;
+  font-size: 106px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  margin: 70px 15px;
+}
+.error-container > span {
+  display: inline-block;
+  position: relative;
+}
+
+.error-container > span.four {
+  width: 136px;
+  height: 43px;
+  border-radius: 999px;
+  background:
+    linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
+    linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
+    linear-gradient(to right, #d89ca4, #e27b7e);
+}
+.error-container > span.four:before,
+.error-container > span.four:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 999px;
+}
+
+.error-container > span.four:before {
+  width: 43px;
+  height: 156px;
+  left: 60px;
+  bottom: -43px;
+  background:
+    linear-gradient(128deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 40%, transparent 41%, transparent 100%),
+    linear-gradient(116deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 50%, transparent 51%, transparent 100%),
+    linear-gradient(to top, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);
+}
+
+.error-container > span.four:after {
+  width: 137px;
+  height: 43px;
+  transform: rotate(-49.5deg);
+  left: -18px;
+  bottom: 36px;
+  background: linear-gradient(to right, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);
+}
+
+@keyframes bigShadow {
+  0% {
+    box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);
+  }
+  45% {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  55% {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.error-container > span.zero {
+  vertical-align: text-top;
+  width: 156px;
+  height: 156px;
+  border-radius: 999px;
+  background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%,  transparent 51%, transparent 100%),
+    linear-gradient(to top right, #99749D, #99749D, #B895AB, #CC9AA6, #D7969E, #ED8687, #ED8687);
+  overflow: hidden;
+  animation: bigShadow 5s infinite;
+}
+
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
+
+@import 'bootstrap';
