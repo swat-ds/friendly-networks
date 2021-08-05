@@ -1,3 +1,12 @@
-// #network{
-//     height: 50vh;
-// }
+
+#network-row{
+    background-color: #2F3242;
+    display: flex;
+    justify-content: center;
+}
+#network-svg{
+    background-color: hsl(180, 1%, 53%);;
+    width: 95vw;
+    border: 2px solid #034d81;
+    border-radius: 10px;
+}

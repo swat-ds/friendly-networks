@@ -67,9 +67,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label == "acquaintanceOf" ? "#6fad11" : "purple";
+        return link.label == "acquaintanceOf" ? "#00563f" : "#A7026A";
       })
-      .attr("stroke-width", 5);
+      .attr("stroke-width", 7);
 
     //Bind a circle to each node
     const circles = svg
@@ -122,8 +122,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
   }, [nodes, links]); //End of useEffect()
 
   return (
-    <Row >
-        <svg ref={svgRef}></svg>
+    <Row id="network-row">
+        <svg id="network-svg" ref={svgRef}></svg>
 
     </Row>
   );

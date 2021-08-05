@@ -21,7 +21,7 @@ const RelativeCard = ({ relation }) => {
       <Col>
         <Link to={"/entities/" + relation.id}>
           <Card
-            bsPrefix="card entity-card"
+            bsPrefix="card card-entity"
             bg="secondary"
             border="warning"
             style={{ width: "18rem", color: "white" }}

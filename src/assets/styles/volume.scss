@@ -19,23 +19,19 @@ body {
   width: 40vw;
 }
 
-#logo{
-  height: 12vh;
-  width: 7vw;
-}
 
 
-  .g-link {
-  padding: 5px;
-  color: hsl(0, 9%, 70%);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.5s;
+//   .g-link {
+//   padding: 5px;
+//   color: hsl(0, 9%, 70%);
+//   text-decoration: none;
+//   border-bottom: 1px solid transparent;
+//   transition: all ease-in-out 0.5s;
 
-}
-  .g-link:hover{
-  color: hsl(0, 27%, 94%);
-  border-color: hsl(207, 87%, 45%);;
-}
+// }
+//   .g-link:hover{
+//   color: hsl(0, 27%, 94%);
+//   border-color: hsl(207, 87%, 45%);;
+// }
 
 @import "bootstrap";

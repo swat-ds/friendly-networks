@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import Layout from "./Layout";
 import RelativeCard from "./RelativeCard";
 import Network from './Network'
-import "../assets/styles/styles.scss";
+import "../assets/styles/people.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
 const parseString = require("xml2js").parseString;
@@ -55,53 +55,50 @@ const People = (props) => {
    * @returns an article containing the biography of each entity
    */
   const renderBio = () => {
-    let wrappedBio = `<bio>${biogHists[0].text}</bio>`;
-    console.log(wrappedBio);
-
-    let bioJSON;
-    if (biogHists) {
+    if (biogHists && 'text' in biogHists[0]) {
+       let wrappedBio = `<bio>${biogHists[0].text}</bio>`;
       parseString(wrappedBio, function (err, result) {
-        bioJSON = result;
+         
+         if(result && 'bio' in result){
+           let bio = result.bio;
+           if (bio.biogHist) {
+             return (
+               <article id="bio">
+                 {bio.biogHist[0].p?.map((p) => (
+                   <p>{p._}</p>
+                 ))}
+                 <figcaption>
+                   {bio.biogHist[0].citation?.map((c) => (
+                     <small>{c._}</small>
+                   ))}
+                 </figcaption>
+               </article>
+             );
+           } else if (bio.p) {
+             return (
+               <article id="bio">
+                 {bio.p.map((p) => (
+                   <p>{p._}</p>
+                 ))}
+                 <figcaption>
+                   {bio.citation?.map((c) => (
+                     <small>{c._}</small>
+                   ))}
+                 </figcaption>
+               </article>
+             );
+           } else {
+             return (
+               <article id="bio">
+                 <p>{bio}</p>
+               </article>
+             );
+           }
+         }
       });
 
-      console.log(bioJSON)
-      let bio = bioJSON.bio
-      console.log(bio)
-
-      if(bio.biogHist){
-      return (
-        <article id="bio">
-          {bio.biogHist[0].p?.map((p) => <p>{p._}</p>)}
-          <figcaption>
-            {bio.biogHist[0].citation?.map((c) => <small>{c._}</small>)}
-          </figcaption>
-        </article>
-      );
-      }
-      else if(bio.p){
-         return (
-            <article id="bio">
-            {bio.p.map((p) => (
-              <p>{p._}</p>
-            ))}
-            <figcaption>
-              {bio.citation?.map((c) => (
-                <small>{c._}</small>
-              ))}
-            </figcaption>
-          </article>
-         )
-      }
-      else{
-        return (
-            <article id="bio">
-            <p>{bio}</p>
-          </article>
-        )
-      }
-
-
-    };
+     
+    }else return;
   }
 
   /**

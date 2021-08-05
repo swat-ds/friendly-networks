@@ -2,23 +2,33 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import "../assets/styles/styles.scss"
+import "../assets/styles/people.scss"
 import PeopleCard from  "../components/PeopleCard"
 
 const people = ({ data }) => {
 
   const renderPeople = (entity, index) => {
     return (
-      <Col>
+      <div id="entity-card">
       <PeopleCard entity={entity}></PeopleCard>
-      </Col>
+      </div>
     );
   };
   
   return (
     <Layout>
-      <Row md={4}>
-          {data.allConstellation.nodes.map(renderPeople)}
+      <Row id="all-entity-row">
+        <Col id="left-arrow-col">
+          <div id="left-triangle-arrow"></div>
+        </Col>
+        <Col id="card-entity-col">
+          {data.allConstellation.nodes.slice(1, 5).map(renderPeople)}
+        </Col>
+        <Col
+          id="right-arrow-col"
+        >
+          <div id="right-triangle-arrow"></div>
+        </Col>
       </Row>
     </Layout>
   );

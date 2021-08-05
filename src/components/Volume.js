@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
-import "../assets/styles/styles.scss";
+import "../assets/styles/volume.scss";
 import { Container, Row, Button, Col } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
