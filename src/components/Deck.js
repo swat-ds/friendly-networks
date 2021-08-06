@@ -13,17 +13,24 @@ let topCardIndex = 0;
 let bottomCardIndex = topCardIndex + deckSize - 1; // 3
 
 const Deck = ({ deck, cardType }) => {
+
   const [currentDeck, setCurrentDeck] = useState(
     deck.slice(topCardIndex, bottomCardIndex + 1)
   );
+  const [isLeftClickAble, setIsLeftClickAble] = useState(false);
+  const[isRightClickAble, setIsRightClickAble] = useState(true);
 
   const handleRightArrowClick = () => {
     // console.log(topCardIndex, bottomCardIndex);
     // console.log(nodes[topCardIndex]);
     // console.log(nodes[bottomCardIndex]);
+      if (bottomCardIndex <= 0 || bottomCardIndex >= deck.length) {
+        setIsRightClickAble(false);
+      }
     topCardIndex = bottomCardIndex + 1; // => 3+1 = 4
     bottomCardIndex = topCardIndex + deckSize - 1; // => 4 + 4-1 = 7;
     setCurrentDeck(deck.slice(topCardIndex, bottomCardIndex + 1));
+    setIsLeftClickAble(true)
     // console.log(topCardIndex, bottomCardIndex);
     // console.log(nodes[topCardIndex]);
     // console.log(nodes[bottomCardIndex]);
@@ -33,9 +40,13 @@ const Deck = ({ deck, cardType }) => {
     // console.log(nodes[topCardIndex]);
     // console.log(nodes[bottomCardIndex]);
     //4
+    if (topCardIndex <= 0 || topCardIndex >= deck.length) {
+      setIsLeftClickAble(false);
+    }
     bottomCardIndex = topCardIndex - 1; // => 4-1 = 3
     topCardIndex = bottomCardIndex - deckSize + 1; // => 3 - 4 +1 = 0
     setCurrentDeck(deck.slice(topCardIndex, bottomCardIndex + 1)); // (0, 4)
+    setIsRightClickAble(true);
     // console.log(topCardIndex, bottomCardIndex);
     // console.log(nodes[topCardIndex]);
     // console.log(nodes[bottomCardIndex]);
@@ -81,7 +92,9 @@ const Deck = ({ deck, cardType }) => {
     <Row id="all-entity-row">
       <Col id="left-arrow-col">
         <div
-          style={topCardIndex ==0 ? { pointerEvents: "none", opacity: "0.2" } : {}}
+          style={
+            !isLeftClickAble ? { pointerEvents: "none", opacity: "0.2" } : {}
+          }
           id="left-triangle-arrow"
           onClick={() => handleLeftArrowClick()}
         ></div>
@@ -89,8 +102,11 @@ const Deck = ({ deck, cardType }) => {
       </Col>
       {renderDeck()}
       <Col id="right-arrow-col">
-        <span id="right-counter">{deck.length - bottomCardIndex}</span>
-        <div
+        <span id="right-counter">{deck.length - bottomCardIndex-1}</span>
+        <div 
+          style={
+            !isRightClickAble ? { pointerEvents: "none", opacity: "0.2" } : {}
+          }
           id="right-triangle-arrow"
           onClick={() => handleRightArrowClick()}
         ></div>
