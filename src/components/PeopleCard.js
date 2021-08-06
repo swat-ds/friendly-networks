@@ -13,7 +13,7 @@ import "../assets/styles/card.scss";
  */
 
 const PeopleCard = (props) => {
-    const {entity} = props
+    const { entity, index, size} = props
   return (
     <Link className="g-link" to={"/entities/" + entity.id}>
       {/* <Card className="card entity-card rounded" border="info" style={{borderRadius: "10px"}}>
@@ -31,19 +31,20 @@ const PeopleCard = (props) => {
           <Card.Text>First 100 chars of bio should be here</Card.Text>
         </Card.Body>
       </Card> */}
-      <div class="card" style={{ width: "20vw;" }}>
-        <div class="card-body">
-          <h5 class="card-title">
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">
             {" "}
             {entity.entityType.term === "person"
               ? entity.nameEntries[0].original
               : "Corporate Body"}
           </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">
+          <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p className="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
+          <p>{`${index+1} out of ${size}`}</p>
         </div>
       </div>
     </Link>

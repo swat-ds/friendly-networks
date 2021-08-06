@@ -1,6 +1,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(136, 146, 146);
 }
 
 #bio{
@@ -18,56 +19,78 @@ body {
 #all-entity-row{
     background-color: hsl(240, 7%, 81%);
     height: 70vh;
-    display: flex;
-    align-items: center;
 }
 #right-arrow-col{
     display: flex;
     align-items: center;
-    height: 70vh;
-    // justify-content: center;
-    width: 5vw;
-    border: 2px solid #2CA82B;
+    justify-content: end;
+    width: 2vw;
+    border: 2px solid #de5907;
 }
 #left-arrow-col{
     display: flex;
     align-items: center;
-    height: 70vh;
-    // justify-content: center;
-    width: 5vw;
+    text-align: right;
+    justify-content: end;
+    width: 4vw;
     border: 2px solid #2CA82B;
 
 }
 #left-triangle-arrow{
     display: flex;
-    // align-items: center;
+    text-align:right;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 20vh 5vw 20vh 0vw;
-    border-color: transparent #007bff transparent transparent;
+    border-width: 20vh 4vw 20vh 0vw;
+    border-color: transparent hsl(215, 14%, 45%) transparent transparent;
+    transition: all 1s ease-out ;
+}
+
+#left-triangle-arrow:hover{
+    cursor: pointer;
+    border-width: 30vh 4vw 30vh 0vw;
+    border-color: transparent #2CA82B transparent transparent;
 }
 
 #right-triangle-arrow{
     display: flex;
-    // align-items: center;
+    text-align: center;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 20vh 5vw 20vh 5vw;
-    border-color: transparent transparent transparent #007bff;
+    border-width: 20vh 0vw 20vh 4vw;
+    border-color: transparent transparent transparent hsl(215, 14%, 45%);
+     transition: all 1s ease-out ;
 
 }
 
+#right-triangle-arrow:hover{
+    cursor: pointer;
+    border-width: 30vh 0vw 30vh 4vw;
+    border-color: transparent transparent transparent #2CA82B;
+}
 
+#left-counter{
+    display: flex;
+    transform: translateX(6px);
+}
+
+#right-counter{
+    display: flex;
+    transform: translateX(-6px);
+}
 #card-entity-col{
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    // height: 70vh;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     border: 2px solid #128DE5;
-}
+}   
 
-#entity-card{
-    padding: 0.5vw;
-}
+
+
+
+@import 'bootstrap';

@@ -20,6 +20,34 @@ body {
  
 }
 
+.card{
+    padding: 0.5vw;
+    height: 50vh;
+    width: 18vw;
+    perspective: 1000px;
+    transform-origin: center center 0px;
+  transition: all 0.6s ease-out;
+  transform: perspective(1000px) rotateX(4deg) rotateY(2deg) rotateZ(-10deg);
+  z-index: 1;
+}
 
+.card:hover{
+    // transform: scale(2, 2);
+    // transform: perspective(1000px) rotateX(10deg) rotateY(4deg) rotateZ(-20deg)
+    animation: magic 6s infinite alternate ease-in-out;
+}
 
+@keyframes magic {
+  10%{
+    border: 2px solid #2CA82B;
+    box-shadow: rgba(#2CA82B, 0.25) 20px 54px 55px, rgba(#2CA82B, 0.12) 30px -20px 30px 10px, rgba(#2CA82B, 0.12) 0px 4px 30px 12px, rgba(#2CA82B, 0.17) 0px 12px 13px, rgba(#2CA82B, 0.09) 0px -3px 5px;
+  }
+    20%{
+        transform: translateX(-20px);
+        
+    }
+    50%{
+     transform: perspective(1000px) rotateX(10deg) rotateY(2deg) rotateZ(-15deg)
+     }
+}
 @import "bootstrap";
