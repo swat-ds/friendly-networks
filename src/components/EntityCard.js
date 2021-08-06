@@ -12,8 +12,8 @@ import "../assets/styles/card.scss";
  * @returns a react card, wrapped with a GatsbyJS Link
  */
 
-const PeopleCard = (props) => {
-    const { entity, index, size, className } = props;
+const EntityCard = (props) => {
+  const { entity, index, size, className } = props;
 
   return (
     <Link className="g-link" to={"/entities/" + entity.id}>
@@ -51,4 +51,4 @@ const PeopleCard = (props) => {
     </Link>
   );
 };
-export default PeopleCard;
+export default EntityCard;

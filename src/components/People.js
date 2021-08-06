@@ -5,8 +5,9 @@ import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
 import RelativeCard from "./RelativeCard";
+import Deck from './Deck'
 import Network from "./Network";
-import "../assets/styles/entities.scss";
+import "../assets/styles/deck.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
 const parseString = require("xml2js").parseString;
@@ -382,18 +383,9 @@ const People = (props) => {
      * @param {*} _ the index is ignored
      * @returns the relation from the @relations with the component of RelativeCard
      */
-    const renderRelative = (relation, _) => {
-      return <RelativeCard relation={relation}></RelativeCard>;
-    };
-
-    /**
-     * Render all relation from the @relations with the component of RelativeCard
-     * @returns all the relation from the @relations with the component of RelativeCard
-     */
     const renderRelatives = () => {
-      if (relations) {
-        return <Row>{relations.map(renderRelative)}</Row>;
-      }
+      if(relations.length > 0)
+      return <Deck deck={relations} cardType="relative"></Deck>;
     };
 
     /**

@@ -2,13 +2,15 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import "../assets/styles/entities.scss"
-import Entities from  "../components/Entities"
+//TODO: May want to remove this
+import "../assets/styles/deck.scss";
+import Deck from  "../components/Deck"
 
 const people = ({ data }) => {
+  let deck = data.allConstellation.nodes
     return (
       <Layout>
-        <Entities data={data}></Entities>
+        <Deck deck={deck} cardType="entity"></Deck>
       </Layout>
   );
 };
