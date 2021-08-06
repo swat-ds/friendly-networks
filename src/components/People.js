@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import Layout from "./Layout";
 import RelativeCard from "./RelativeCard";
 import Network from './Network'
-import "../assets/styles/people.scss";
+import "../assets/styles/entities.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
 const parseString = require("xml2js").parseString;

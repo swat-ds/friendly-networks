@@ -88,7 +88,14 @@ body {
     text-align: center;
     justify-content: center;
     border: 2px solid #128DE5;
-}   
+    transition: filter ease-in-out 5s;
+}  
+
+//select all @card children of @card-entity when hovered on it. If the hovered cursor on a particular @card ignore that one
+#card-entity-col:hover  .card:not(:hover){
+    // filter: blur(2px);
+    filter: opacity(60%)
+}
 
 
 

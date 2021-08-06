@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import "../assets/styles/people.scss"
+import "../assets/styles/entities.scss"
 import Entities from  "../components/Entities"
 
 const people = ({ data }) => {

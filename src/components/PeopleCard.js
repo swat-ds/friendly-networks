@@ -13,7 +13,8 @@ import "../assets/styles/card.scss";
  */
 
 const PeopleCard = (props) => {
-    const { entity, index, size} = props
+    const { entity, index, size, className } = props;
+
   return (
     <Link className="g-link" to={"/entities/" + entity.id}>
       {/* <Card className="card entity-card rounded" border="info" style={{borderRadius: "10px"}}>
@@ -31,7 +32,7 @@ const PeopleCard = (props) => {
           <Card.Text>First 100 chars of bio should be here</Card.Text>
         </Card.Body>
       </Card> */}
-      <div className="card">
+      <div className={className}>
         <div className="card-body">
           <h5 className="card-title">
             {" "}
