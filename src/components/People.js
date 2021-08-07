@@ -4,8 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
-import RelativeCard from "./RelativeCard";
-import Deck from './Deck'
+import RelationCardDeck from './RelationCardDeck'
 import Network from "./Network";
 import "../assets/styles/deck.scss";
 import Fox from "../assets/images/george_fox.jpeg";
@@ -36,7 +35,7 @@ const bioDataLabels = {
 const People = (props) => {
   const {
     id,
-    ark,
+    arkId,
     nameEntries,
     entityType,
     biogHists,
@@ -384,8 +383,7 @@ const People = (props) => {
      * @returns the relation from the @relations with the component of RelativeCard
      */
     const renderRelatives = () => {
-      if(relations.length > 0)
-      return <Deck deck={relations} cardType="relative"></Deck>;
+      return <RelationCardDeck relationDeck={relations}></RelationCardDeck>;
     };
 
     /**

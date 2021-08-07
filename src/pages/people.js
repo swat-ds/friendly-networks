@@ -4,15 +4,15 @@ import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
 //TODO: May want to remove this
 import "../assets/styles/deck.scss";
-import Deck from  "../components/Deck"
+import EntityCardDeck from  "../components/EntityCardDeck"
 
 const people = ({ data }) => {
   let deck = data.allConstellation.nodes
     return (
       <Layout>
-        <Deck deck={deck} cardType="entity"></Deck>
+        <EntityCardDeck entityDeck={deck}></EntityCardDeck>
       </Layout>
-  );
+    );
 };
 
 export default people;
@@ -22,6 +22,7 @@ export default people;
     allConstellation {
       nodes {
         id
+        arkId
         entityType {
           term
         }

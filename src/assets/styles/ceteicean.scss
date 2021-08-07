@@ -5,38 +5,15 @@ body {
 }
 
 
-#journal {
-  height: 70vh;
-  width: 40vw;
-  overflow: scroll;
-  resize: none;
-  padding: 10px;
-  border: thin solid gray;
-}
-
-#openseadragon {
-  height: 70vh;
-  width: 40vw;
-}
-
-#logo{
-  height: 12vh;
-  width: 7vw;
+.page-line{
+  border: 0;
+  height: 3px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  border-radius: 3px;
 }
 
 
-  .g-link {
-  padding: 5px;
-  color: hsl(0, 9%, 70%);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.5s;
-
-}
-  .g-link:hover{
-  color: hsl(0, 27%, 94%);
-  border-color: hsl(207, 87%, 45%);;
-}
 
 
 .name-g-link {

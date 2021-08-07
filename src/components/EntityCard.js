@@ -16,7 +16,7 @@ const EntityCard = (props) => {
   const { entity, index, size, className } = props;
 
   return (
-    <Link className="g-link" to={"/entities/" + entity.id}>
+    <Link className="g-link" to={"/entities/" + entity.arkId}>
       {/* <Card className="card entity-card rounded" border="info" style={{borderRadius: "10px"}}>
         <Card.Img className="image-card"
           variant="top"

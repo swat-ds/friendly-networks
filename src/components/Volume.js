@@ -86,10 +86,6 @@ const Volume = (props) => {
     parseString(pageContext.prefixed, function (err, result) {
       jsonPrefixed = result;
     });
-  
-    console.log(typeof jsonPrefixed);
-    console.log(jsonPrefixed);
-    console.log(jsonPrefixed.hasOwnProperty("tei-TEI"));
     pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
   // function getDivBreaks(divList) {
@@ -136,8 +132,6 @@ const Volume = (props) => {
   //     getDivBreaks(back["tei-div"]);
   //   }
   // }
-
-   console.log(pageBreakIDs);
 
    pids = pageBreakIDs;
   // const parser = new DOMParser();

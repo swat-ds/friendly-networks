@@ -1,28 +1,33 @@
 import React from "react";
 import { TEINodes } from "react-teirouter";
 import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
-import { isExportSpecifier } from "typescript";
-import "../../assets/styles/styles.scss";
-
-export const PersonName = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <a href={props.teiNode.attributes.getNamedItem("key").value}>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </a>
-    </Behavior>
-  );
-};
+// import { isExportSpecifier } from "typescript";
+import "../../assets/styles/ceteicean.scss";
+import {Link} from 'gatsby'
 
 export const EntryDate = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <span style={{ textDecoration: "underline" }}>
+      <p>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </span>
+      </p>
     </Behavior>
   );
 };
+
+export const Name = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <Link
+        className="name-g-link"
+        to={"/entities/" + props.teiNode.attributes.getNamedItem("key").value}
+      >
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </Link>
+    </Behavior>
+  );
+};
+
 
 export const Entry = (props) => {
   return (
@@ -73,17 +78,9 @@ export const Pb = (props) => {
     <Behavior node={props.teiNode}>
       <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
       <hr
-        class="page-line"
+        className="page-line"
         id={props.teiNode.attributes.getNamedItem("facs").value}
-        style={{
-          // color: "#d17a08",
-          // height: "5px",
-          border: "0",
-          height: "3px",
-          background: "#333",
-          backgroundImage: "linear-gradient(to right, #ccc, #333, #ccc)",
-          borderRadius: "3px",
-        }}
+        
       />
     </Behavior>
   );
@@ -100,7 +97,7 @@ export const Dateline = (props) => {
 export const Emph = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
+      <p >{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
     </Behavior>
   );
 };
@@ -150,7 +147,7 @@ export const Figure = (props) => {
 export const Note = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</>
+      <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
     </Behavior>
   );
 };

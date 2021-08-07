@@ -10,15 +10,20 @@ import "../assets/styles/card.scss";
  * @param {*} relation the relation to be put in the card
  * @returns a react card, wrapped with a GatsbyJS Link
  */
-const RelativeCard = ({relative, index, size, className }) => {
+const RelationCard = ({relation, index, size, className }) => {
+  console.log(relation)
+
+  let arkId = relation.targetArkID.split("/").pop();
+  console.log(arkId)
+
     let type='';
     let content = ''
-    if(relative){
-        type = relative.type?.term ? relative.type?.term : type
-        content = relative.content ? relative.content : content;
+    if(relation){
+        type = relation.type?.term ? relation.type?.term : type
+        content = relation.content ? relation.content : content;
     }
     return (
-      <Link to={"/entities/" + relative.targetConstellation}>
+      <Link to={"/entities/" + arkId}>
         <div className={className}>
           <div className="card-body">
             <h5 className="card-title">{type}</h5>
@@ -30,5 +35,4 @@ const RelativeCard = ({relative, index, size, className }) => {
       </Link>
     );
 }
-
-export default RelativeCard;
+export default RelationCard;
