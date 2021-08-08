@@ -59,10 +59,8 @@ const People = (props) => {
       let wrappedBio = `<bio>${biogHists[0].text}</bio>`;
 
       parseString(wrappedBio, function (err, result) {
-           console.log(result.bio);
 
         let bio = result.bio;
-        console.log(bio);
         // console.log(result.bio.biogHist[0].p[0]._);
         // text = result.bio.biogHist[0].p[0]._;
 

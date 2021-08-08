@@ -5,33 +5,67 @@ body {
 }
 
 
-#journal {
-  height: 70vh;
-  width: 40vw;
+#image-journal-row{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    // background-color: black;
+
+}
+#journal-col{
   overflow: scroll;
+  color: rgb(96, 94, 94);
+}
+
+#journal-col, #image-col {
+  height: 90vh;
   resize: none;
-  padding: 10px;
-  border: thin solid gray;
+  // width: 50%;
+  padding: 5px;
+  border: thin solid red;
 }
 
-#openseadragon {
-  height: 70vh;
-  width: 40vw;
+.arrow-icons{
+  color: hsl(0, 6%, 68%) ;
 }
 
+#right-arrow-image, #left-arrow-image{
+  border-color:  hsl(0, 2%, 30%);
+  border-radius: 10px;
+  border-width: 1px;
+  transition: all 1s ease-out;
+  background-color: hsl(0, 2%, 30%);
+  &:hover{
+    background-color: hsl(0, 9%, 84%);
+    
+    .arrow-icons{
+      color:hsl(120, 59%, 41%);
+    }
+  };
+}
 
+#right-arrow-image{
+  float:right;
+}
 
-//   .g-link {
-//   padding: 5px;
-//   color: hsl(0, 9%, 70%);
-//   text-decoration: none;
-//   border-bottom: 1px solid transparent;
-//   transition: all ease-in-out 0.5s;
-
+// #image-col{
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: black;
 // }
-//   .g-link:hover{
-//   color: hsl(0, 27%, 94%);
-//   border-color: hsl(207, 87%, 45%);;
+// #image{
+//   height: 90vh;
+//   // padding: 50px;
 // }
+
+// #openseadragon {
+//   height: 70vh;
+//   width: 40vw;
+// }
+
+
+
 
 @import "bootstrap";

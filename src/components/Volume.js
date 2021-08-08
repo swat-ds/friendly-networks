@@ -2,10 +2,12 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import "../assets/styles/volume.scss";
+import { IconContext } from "react-icons";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { Container, Row, Button, Col } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
-import Image from "./Image";
+import JournalImage from "./Image";
 
 import { scroller } from "react-scroll";
 
@@ -214,50 +216,52 @@ const Volume = (props) => {
 
   return (
     <Layout>
-      <Row>
-        <Col>
+      <Row id="image-journal-row">
+        <Col id="image-col">
+          <div id="journal-image">
+            <JournalImage id="image" imageId={currentPid} />
+          </div>
           <Button
-            variant="outline-info"
+            id="left-arrow-image"
+            variant="outline-success"
             onClick={() => getPrevImage()}
           >
-            Previous Page
+            <IconContext.Provider value={{ className: "arrow-icons" }}>
+              <BsArrowLeft size={30} />
+            </IconContext.Provider>
           </Button>
-        </Col>
-
-        <Col sm={8}>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              onChange={onChange}
-              placeholder={""}
-            />
-            <button
-              class="btn btn-outline-success"
-              type="submit"
-              onClick={() => handleClick()}
-            >
-              Search
-            </button>
-          </form>
-        </Col>
-        <Col md={{ offset: 7 }}>
           <Button
-            variant="outline-info"
+            id="right-arrow-image"
+            variant="outline-success"
             onClick={() => getNextImage()}
           >
-            Next Page
+            <IconContext.Provider value={{ className: "arrow-icons" }}>
+              <BsArrowRight size={30} />
+            </IconContext.Provider>
           </Button>
         </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Image imageId={currentPid} />
-        </Col>
-        <Col>
-          <div id="journal">{props.children}</div>
+        <Col id="journal-col">
+          <div style={{}}>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                onChange={onChange}
+                placeholder={""}
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                onClick={() => handleClick()}
+              >
+                Search
+              </button>
+            </form>
+
+            <div id="journal-transcript">{props.children}</div>
+          </div>
         </Col>
       </Row>
       <Row>
