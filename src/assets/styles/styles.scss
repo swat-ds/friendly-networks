@@ -5,18 +5,8 @@ body {
 }
 
 
-// #journal {
-//   height: 70vh;
-//   width: 40vw;
-//   overflow: scroll;
-//   resize: none;
-//   padding: 10px;
-//   border: thin solid gray;
-// }
-
-#openseadragon {
-  height: 70vh;
-  width: 40vw;
+#main-container{
+  background-color: #EEEEEE;
 }
 
 #logo{
@@ -38,53 +28,16 @@ body {
   border-color: hsl(207, 87%, 45%);;
 }
 
-
-.name-g-link {
-  cursor: pointer;
-  position: relative;
+.btn-g-link{
+    padding: 5px;
+  color: black;
   text-decoration: none;
-  display: inline-block;
-  color: hsl(207, 87%, 45%);
-  padding: 0 1px;
-  transition: color ease 1s;
+  transition: color ease-in-out 0.1s;
   
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    background-color:  hsl(207, 87%, 45%);
-    z-index: -1;
-    height: 2px;
-  }
-  
-  &::before {
-    width: 0%;
-    left: 0;
-    bottom: 0;
-    transition: width ease 1s;
-  }
-  
-  &::after {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    transition: all ease 0.6s;
-  }
-  
-  &:hover {
-    color: hsla(0, 8%, 33%, 0.575);
-
-    &::before {
-      width: 100%;
-    }
-    
-    &::after {
-      left: 100%;
-      width: 0%;
-      transition: all ease 0.2s;
+    &:hover{
+      color: white;
     }
   }
-  
-}
 
 
 

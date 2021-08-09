@@ -15,7 +15,7 @@ import Footer from './Footer';
  */
 const Layout = (props) => {
   return (
-    <Container fluid>
+    <Container id="main-container" fluid>
         <NavBar></NavBar>
         <Header></Header>
         {props.children}

@@ -1,69 +1,133 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(136, 146, 146);
 }
+
 
 
 #image-journal-row{
     height: 90vh;
     display: flex;
     flex-direction: row;
+    margin: 0;
     // background-color: black;
 
 }
-#journal-col{
-  overflow: scroll;
-  color: rgb(96, 94, 94);
-}
 
-#journal-col, #image-col {
+
+#image-col, #journal-col {
   height: 90vh;
   resize: none;
   // width: 50%;
-  padding: 5px;
-  border: thin solid red;
+  // border: thin solid red;
 }
 
-.arrow-icons{
-  color: hsl(0, 6%, 68%) ;
-}
 
-#right-arrow-image, #left-arrow-image{
-  border-color:  hsl(0, 2%, 30%);
-  border-radius: 10px;
-  border-width: 1px;
-  transition: all 1s ease-out;
-  background-color: hsl(0, 2%, 30%);
-  &:hover{
-    background-color: hsl(0, 9%, 84%);
-    
-    .arrow-icons{
-      color:hsl(120, 59%, 41%);
+
+#image-tool{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 5vh;
+  // border: 2px solid yellowgreen;
+
+  #left-arrow-icon{
+  
+    display: flex;
+    text-align:right;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2vh 2vw 2vh 0vw;
+    border-color: transparent hsl(215, 14%, 45%) transparent transparent;
+    transition: all 0.1s ease-out ;
+    &:hover{
+    cursor: pointer;
+    border-width: 2vh 2.5vw 2vh 0vw;
+    border-color: transparent #A7026A transparent transparent;
     }
-  };
+  }
+
+  #right-arrow-icon{
+     display: flex;
+    text-align: center;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2vh 0vw 2vh 2vw;
+    border-color: transparent transparent transparent hsl(215, 14%, 45%);
+     transition: all 0.1s ease-out;
+
+     &:hover{
+        cursor: pointer;
+      border-width: 2vh 0vw 2vh 2.5vw;
+      border-color: transparent transparent transparent #A7026A;
+     }
+    
+   
+  }
 }
 
-#right-arrow-image{
-  float:right;
+#journal-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 85vh;
+  border-left: 0.5px solid #A7026A;
+  border-right: 5px solid #A7026A;
+  border-top: 0.5px solid #A7026A;
+  border-bottom: 0.5px solid #A7026A;
+  background-color: hsl(0, 0%, 57%);
+
+  #image{
+  height: 85vh;
+  // border: 0.5px solid blue;
+}
 }
 
-// #image-col{
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: black;
-// }
-// #image{
-//   height: 90vh;
-//   // padding: 50px;
-// }
 
-// #openseadragon {
-//   height: 70vh;
-//   width: 40vw;
-// }
+#journal-search{
+  // border: 2px solid yellowgreen;
+  height: 5vh;
+
+   #journal-search-form{
+    height: 100%;
+    width: 50%;
+    // border: 1px solid rgb(215, 78, 5);
+    float: right;
+  }
+  
+  #journal-search-input, #journal-search-btn{
+    height: 100%;
+    display: flex;
+  }
+
+  #journal-search-input{
+    width: 80%;
+  }
+  #journal-search-btn{
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+#journal-transcript{
+  height: 85vh;
+  overflow: scroll;
+  padding: 2em;
+  border-left: 5px solid #A7026A;
+  border-right: 0.5px solid #A7026A;
+  border-top: 0.5px solid #A7026A;
+  border-bottom: 0.5px solid #A7026A;
+}
+
+#journal-pagination-row{
+  margin-top: 1vh;
+  #next-journal{
+  float: right;
+}
+}
 
 
 

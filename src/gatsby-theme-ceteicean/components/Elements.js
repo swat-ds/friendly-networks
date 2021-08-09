@@ -19,7 +19,7 @@ export const Name = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <Link
-        className="name-g-link"
+        class="name-g-link"
         to={"/entities/" + props.teiNode.attributes.getNamedItem("key").value}
       >
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}

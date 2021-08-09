@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import "../assets/styles/volume.scss";
 import { IconContext } from "react-icons";
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { BsArrowRight, BsArrowLeft, BsTriangleFill } from "react-icons/bs";
 import { Container, Row, Button, Col } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
@@ -176,7 +176,7 @@ const Volume = (props) => {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
-      containerId: "journal",
+      containerId: "journal-transcript",
     });
   }
 
@@ -218,33 +218,30 @@ const Volume = (props) => {
     <Layout>
       <Row id="image-journal-row">
         <Col id="image-col">
+          <div id="image-tool">
+            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+            <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
+            {/* </IconContext.Provider> */}
+
+            {/* <IconContext.Provider value={{ className: "right-arrow-icon" }}> */}
+            <div
+              id="right-arrow-icon"
+              size={28}
+              onClick={() => getNextImage()}
+            ></div>
+            {/* </IconContext.Provider> */}
+          </div>
           <div id="journal-image">
             <JournalImage id="image" imageId={currentPid} />
           </div>
-          <Button
-            id="left-arrow-image"
-            variant="outline-success"
-            onClick={() => getPrevImage()}
-          >
-            <IconContext.Provider value={{ className: "arrow-icons" }}>
-              <BsArrowLeft size={30} />
-            </IconContext.Provider>
-          </Button>
-          <Button
-            id="right-arrow-image"
-            variant="outline-success"
-            onClick={() => getNextImage()}
-          >
-            <IconContext.Provider value={{ className: "arrow-icons" }}>
-              <BsArrowRight size={30} />
-            </IconContext.Provider>
-          </Button>
         </Col>
+
         <Col id="journal-col">
-          <div style={{}}>
-            <form class="d-flex">
+          <div id="journal-search">
+            <form id="journal-search-form" class="d-flex">
               <input
                 class="form-control me-2"
+                id="journal-search-input"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -253,26 +250,32 @@ const Volume = (props) => {
               />
               <button
                 class="btn btn-outline-success"
+                id="journal-search-btn"
                 type="submit"
                 onClick={() => handleClick()}
               >
                 Search
               </button>
             </form>
-
-            <div id="journal-transcript">{props.children}</div>
           </div>
+          <div id="journal-transcript">{props.children}</div>
         </Col>
       </Row>
-      <Row>
+      <Row id="journal-pagination-row">
         <Col>
-          <Button variant="outline-info" onClick={() => getPrevCetei()}>
-            <Link to={"/" + cetei}>Previous Journal</Link>
+          <Button variant="outline-primary" onClick={() => getPrevCetei()}>
+            <Link className="btn-g-link" to={"/" + cetei}>
+              Previous Journal
+            </Link>
           </Button>
-        </Col>
-        <Col md={{ offset: 7 }}>
-          <Button variant="outline-info" onClick={() => getNextCetei()}>
-            <Link to={"/" + cetei}>Next Journal</Link>
+          <Button
+            id="next-journal"
+            variant="outline-primary"
+            onClick={() => getNextCetei()}
+          >
+            <Link className="btn-g-link" to={"/" + cetei}>
+              Next Journal
+            </Link>
           </Button>
         </Col>
       </Row>
