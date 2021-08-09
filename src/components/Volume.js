@@ -70,7 +70,7 @@ function getALlPageBreaks(jsonPrefixed){
 
 }
 
-let counter = 1; // counter for to tract the index of each transcript (cetei)
+let counter = 0; // counter for to tract the index of each transcript (cetei)
 let currentInput = 0; // variable for the input value for the scroll
 
 /**
@@ -79,7 +79,7 @@ let currentInput = 0; // variable for the input value for the scroll
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
 const Volume = (props) => {
-  const { pageContext, data } = props;
+  const { pageContext, data, name_index } = props;
   // console.log(pageContext.prefixed);
   let pids = [];
   let pageBreakIDs = [];
@@ -144,6 +144,7 @@ const Volume = (props) => {
   //   pids.push(pages[index].attributes.getNamedItem("facs").value);
   // }
 
+  counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
   /**

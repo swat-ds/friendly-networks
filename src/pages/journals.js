@@ -1,17 +1,27 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { Button, Card } from "react-bootstrap";
+import JournalCard from "../components/JournalCard";
+import { Button, Card, Row, Col } from "react-bootstrap";
 
 const journals = ({ data }) => {
+  const nodes = data.allCetei.nodes;
+
+  const renderJournals = (node, _)=>{
+    
+    return (
+      <Col>
+        <JournalCard route={"/" + node.parent.name}></JournalCard>
+      </Col>
+    );
+  }
+
   return (
-    <>
       <Layout>
-        <Button variant="outline-info">
-          <Link to={"/" + data.allCetei.nodes[0].parent.name}>Journal 1</Link>
-        </Button>
+       <Row md={4}>
+         {nodes.map(renderJournals)}
+       </Row>
       </Layout>
-    </>
   );
 };
 

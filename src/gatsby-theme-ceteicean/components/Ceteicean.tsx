@@ -11,6 +11,12 @@ import "../../assets/styles/styles.scss";
 
 
 const ShadowedCeteicean = ({pageContext, data}) => {
+  const nodes = data.allCetei.nodes;
+  //Create indices for the journal file names
+  let name_index = new Map();
+  nodes.forEach((node, index) =>{
+    name_index.set(node.parent.name, index);
+  })
 
 
   const routes = {
@@ -44,7 +50,7 @@ const ShadowedCeteicean = ({pageContext, data}) => {
     
   // }
   return (
-    <Volume pageContext={pageContext} data={data}>
+    <Volume pageContext={pageContext} data={data} name_index={name_index}>
       <Ceteicean pageContext={pageContext} routes={routes} />
     </Volume>
   );
