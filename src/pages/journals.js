@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 const journals = ({ data }) => {
   return (
