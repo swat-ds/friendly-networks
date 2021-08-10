@@ -143,8 +143,7 @@ const Volume = (props) => {
   // for (let index = 0; index < pages.length; index++) {
   //   pids.push(pages[index].attributes.getNamedItem("facs").value);
   // }
-
-  counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
+  // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
   /**
@@ -160,7 +159,10 @@ const Volume = (props) => {
 
   //Sets the current cetei with the next cetei
   function getNextCetei() {
-    setCetei(data.allCetei.nodes[counter++].parent.name);
+    counter +=1;
+    setCetei(data.allCetei.nodes[counter].parent.name);
+    console.log(counter)
+    console.log(data.allCetei.nodes[counter].parent.name);
   }
 
   //Sets the current cetei to the previous cetei

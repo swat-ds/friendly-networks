@@ -5,6 +5,10 @@ const fs = require("fs");
 const tsvNodes = fs.readFileSync("./dataTable.tsv", "utf8");
 const tsvLinks = fs.readFileSync("./relationshipTable.tsv", "utf8");
 const tsvTimeline = fs.readFileSync("./timeline.tsv", "utf8");
+const tsvConstellationsForInclusion = fs.readFileSync(
+  "./constellationsForInclusion.tsv",
+  "utf8"
+);
 
 
 /**
@@ -19,7 +23,7 @@ const tsvTimeline = fs.readFileSync("./timeline.tsv", "utf8");
  * @returns a valid json object that is created from the @tsv
  * 
  */
-function tsvJSON(tsv) {
+function tsvJSON(tsv, headerEmpty) {
   var lines = tsv.split("\n");
   var result = [];
   var headers = lines[0].split("\t");
@@ -28,7 +32,7 @@ function tsvJSON(tsv) {
     var obj = {};
     var currentLine = lines[i].split("\t");
     //Last header is ignored as it's empty
-    for (var j = 0; j < headers.length-1; j++) {
+    for (var j = 0; j < headers.length-headerEmpty; j++) {
       obj[headers[j]] = currentLine[j];
     }
     result.push(obj);
@@ -36,9 +40,10 @@ function tsvJSON(tsv) {
 
   return JSON.stringify(result);
 }
-const jsonNodes = tsvJSON(tsvNodes);
-const jsonLinks = tsvJSON(tsvLinks);
-const jsonTimeline = tsvJSON(tsvTimeline);
+const jsonNodes = tsvJSON(tsvNodes, 1);
+const jsonLinks = tsvJSON(tsvLinks, 1);
+const jsonTimeline = tsvJSON(tsvTimeline, 0);
+const jsonConstellationsForInclusion = tsvJSON(tsvConstellationsForInclusion, 0);
 
 //Creates file 'dataTable.json' that contains the jsonNodes
 fs.writeFileSync("dataTable.json", jsonNodes, (err) =>{
@@ -51,3 +56,10 @@ fs.writeFileSync("relationshipTable.json", jsonLinks, (err) => {
 fs.writeFileSync("timeline.json", jsonTimeline, (err) => {
   if (err) throw err;
 });
+fs.writeFileSync(
+  "constellationsForInclusion.json",
+  jsonConstellationsForInclusion,
+  (err) => {
+    if (err) throw err;
+  }
+);

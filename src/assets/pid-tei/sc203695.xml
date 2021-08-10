@@ -1,222 +1,35 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader>
-	</teiHeader>
-	<text>
-		<body>
-			<pb n="01" facs="sc203822" />
-			<div type="entry" n="1808-01-21">
-				<head>
-					January 1808
-				</head>
-				<dateline>
-					<date when="1808-01-21">
-						21st [5th day] of the 1st Month, 1808.
-					</date>
-				</dateline>
-				<p>
-					Having the approbation of Friends
-					<note resp="transcr">
-						Chester Monthly Meeting minutes, January 1808: “John Hunt opened a prospect of visiting some of the meetings of friends within the limits of Mington and Bucks Quarter in Pennsylvania as way might open, which, upon deliberation, was concurred with, and he left at liberty to proceed therein, being a minister in good esteem with us. The Clk. Is directed to furnish him with a copy of this minute and sign it on behalf of the meeting.”
-					</note>
-					I left home to visit some meetings in Bucks and Abington quarters [in] Pennsylvania. Got to Mount Holly Meeting on Fifth Day which was very poor, low, little to be done. Here I met Hinchman Hains of Gabriel Daviss. Sixth Day had an appointed meeting for H.H. [
-					<persName key="w6md9qck">
-						Hinchman Haines
-					</persName>
-					] at Crosswicks. He took up almost the whole time and was much favoured. In the evening had a meeting at Bordentown. The few Friends there the house was crowded full and the weight fell on me and I believe it ended to general satisfaction. A Methodist minister was there and came to our lodging and said he wanted some friendly religious discourse with us and we parted friendly and respectfully he expressing great love and friendship for us.  7th Day had a meeting at Trenton. Religion seemed to be at a low ebb and hard getting along though. I hope we came off without loss. This evening I got to my friend Jonathan Kirkbride's.  My companions went on pursuant to their prospect down the river.
-				</p>
-			</div>
-			<div type="entry" n="1808-01-24">
-				<dateline>
-					<date when="1808-01-24">
-						[24] 1st Day
-					</date>
-				</dateline>
-				<p>
-					I was at the Falls Meeting which was an owning favored time I believe to general satisfaction.
-				</p>
-			</div>
-			<div type="entry" n="1808-01-25">
-				<dateline>
-					<date when="1808-01-25">
-						[25] 2nd.
-					</date>
-				</dateline>
-				<p>
-					Had an appointed meeting at Makefield and I hope and believe in a good degree owning. Got to Oliver Paxton's to lodge. Third Day got to John Balderston's.
-				</p>
-				<p>
-					[left marginal note]  Stop to see an old man in a deep consumption. He was very tender.
-				</p>
-			</div>
-			<div type="entry" n="1808-01-26">
-				<dateline>
-					<date when="1808-01-26">
-						[26] [crossed out] 4th Day.
-					</date>
-				</dateline>
-				<p>
-					And were at Solebury Meeting
-				</p>
-			</div>
-			<div type="entry" n="1808-01-27">
-				<dateline>
-					<date when="1808-01-27">
-						[27] Fourth Day at Buckingham Preparative Meeting -- middling.
-					</date>
-				</dateline>
-				<p>
-				</p>
-			</div>
-			<div type="entry" n="1808-01-28">
-				<dateline>
-					<date when="1808-01-28">
-						[28] 5 Day.
-					</date>
-				</dateline>
-				<p>
-					Plumsted Preparative. A very stormy snowy day. The meeting was very small and things seemed low we had but a poor time. Lodged at Edward Good's.
-				</p>
-			</div>
-			<div type="entry" n="1808-01-29">
-				<dateline>
-					<date when="1808-01-29">
-						[29] 6 Day [inserted] an appointed meeting.
-					</date>
-				</dateline>
-				<p>
-					We went to Richland Meeting fifteen miles in a sleigh. The roads very bad and crossing the creeks very difficult and dangerous, the waters high and ice not quite strong enough to bear the horses.
-				</p>
-				<p>
-					We had some dismal discouraging dangerous places to go through but were favoured to get safe along in good season starting before sunrise and a full favoured owning open time it was I believe to general satisfaction. Came back to Edward Good's to lodge. Had a sitting with them for the better I hope. Had an opportunity at Robert Kirkbride's sons family in a disunited state to satisfaction
-				</p>
-			</div>
-			<pb n="02" facs="sc203823" />
-			<div type="entry" n="1808-01-30">
-				<dateline>
-					<date when="1808-01-30">
-						[30] 7th Day.
-					</date>
-				</dateline>
-				<p>
-					On our way we stopped at a school for the better I believe and stopped to see old Peter Vickers and family.  His daughter and he being in a poor, low, afflicted condition. Had a little setting with them and it seemed very acceptable to them. Got to John Balderston's about noon.
-				</p>
-			</div>
-			<div type="entry" n="1808-01-31">
-				<dateline>
-					<date when="1808-01-31">
-						31 was First Day.
-					</date>
-				</dateline>
-				<p>
-					Went to Wrightstown meeting which was large and  an owning open time I believe to general good satisfaction. Got to our kind Friend's William Blake to lodge. We have had fine winter, moderate weather some days but now a stormy morning.
-				</p>
-				<p>
-					[Left Margin] Went to see an ancient widow in affliction which very acceptable to her as she expressed.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-02">
-				<head>
-					February 1808
-				</head>
-				<dateline>
-					<date when="1808-02-02">
-						2nd Month 1st.
-					</date>
-				</dateline>
-				<p>
-					At Middletown Meeting, not very large. The roads stormy. I believe the meeting ended solid and to general satisfaction.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-03">
-				<dateline>
-					<date when="1808-02-03">
-						[3] 3rd Day.
-					</date>
-				</dateline>
-				<p>
-					Had a meeting appointed at Bristol, the roads very heavy traveling. Not a very full meeting but in a good degree favoured. [crossed out] 4th Day
-				</p>
-				<p>
-					Lodged at William Walton's. Had a good time in the evening.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-03">
-				<dateline>
-					<date when="1808-02-03">
-						[3] 4 day.
-					</date>
-				</dateline>
-				<p>
-					Got to the Select Meeting at Abington and were owned and preserved. Dined at Charles William's and had an open favored time. After dinner went to Jacob Paxton to lodge and there William Blake my companion called their large family of children together in the evening for the better I hope and believe.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-04">
-				<dateline>
-					<date when="1808-02-04">
-						[4] 5 Day.
-					</date>
-				</dateline>
-				<p>
-					Was Quarterly Meeting at Abington. Some stirrings of life but things did not rise as I could wish though got some relief at last in the women's meeting. Lodged at Jared Spencer's with divers choice Friends of Richland. Had an opportunity with the family and a number of young people in the evening later for the better I hope and believe.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-05">
-				<dateline>
-					<date when="1808-02-05">
-						[5] 6 Day.
-					</date>
-				</dateline>
-				<p>
-					Went to an appointed meeting at Horsham which was large and an highly favoured open owning time it was I believe to general satisfaction, very pleasant and full of love. Friends seemed to be a parting under a lively sense of the ownings of truth.
-				</p>
-			</div>
-			<pb n="03" facs="sc203824" />
-			<div type="entry" n="1808-02-06">
-				<dateline>
-					<date when="1808-02-06">
-						[6] 7 Day night.
-					</date>
-				</dateline>
-				<p>
-					Got to my cousin Hanncy Yarnal's to lodge. Visited John Comly's boarding school of young women, most of them not of our society and very gay and fashionable. When the ground is not prepared the hopes of the sower is but small. Not much sign of entrance through a door of utterance, not much satisfaction amongst their school of lads.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-10">
-				<dateline>
-					<date when="1808-02-10">
-						10.
-					</date>
-				</dateline>
-				<p>
-					Was First Day. At Byberry Meeting which was large and open and I hope to general satisfaction as far as I could discover they were very loving and inviting after meeting though I had not that satisfaction as at some other places. We don't always get our pay as soon as we have done our work but now and then a rarity or a downright good satisfactory meeting.
-				</p>
-			</div>
-			<div type="entry" n="1808-02-11">
-				<dateline>
-					<date when="1808-02-11">
-						11.
-					</date>
-				</dateline>
-				<p>
-					Lodged at cousin James Thorington's after a sweet time amongst the children and family. In the morning cousin James brought me over the river to cousin Benjamin Warrington's.
-				</p>
-				<p>
-					This meeting at Horsham was a memorable time (for about an hour and a half). William Blakey said when we came out this is the best meeting I ever seen at this place this is the cap sheaf this crowns all.
-					<note resp="transcr">
-						Chester Monthly Meeting minutes, February 1808: “John Hunt returned the minute granted him at last meeting and reported he has performed the visit then in prospect much to his satisfaction.”
-					</note>
-				</p>
-				<p>
-					Jacob Paxson said I wish I had got more of my children along; pleasantness sweetness and feeling nearness was felt to abound
-				</p>
-				<pb n="04" facs="sc203825" />
-				<p>
-					see London Epistle 1768
-					<quote>
-						The advice of divine wisdom is buy the truth and sell it not but those who prefer the gaiety, the vain customs and fluctuating fashions of the world renounce Wisdom for folly duty for disobedience and the reality of Enduring substance for the flattering delusion of Transitory enjoyments an as the inspired penman said: they that pursue lying vanities forsake their own mercies
-					</quote>
-				</p>
-			</div>
-		</body>
-	</text>
+<teiHeader></teiHeader>
+<text>
+<body>
+<pb n="01" facs="sc203822"/>
+<div type="entry" n="1808-01-21"><head>January 1808</head><dateline><date when="1808-01-21">21st [5th day] of the 1st Month, 1808.</date></dateline><p> Having the approbation of Friends<note resp="transcr">Chester Monthly Meeting minutes, January 1808: “John Hunt opened a prospect of visiting some of the meetings of friends within the limits of Mington and Bucks Quarter in Pennsylvania as way might open, which, upon deliberation, was concurred with, and he left at liberty to proceed therein, being a minister in good esteem with us. The Clk. Is directed to furnish him with a copy of this minute and sign it on behalf of the meeting.”</note> I left home to visit some meetings in Bucks and Abington quarters [in] Pennsylvania. Got to Mount Holly Meeting on Fifth Day which was very poor, low, little to be done. Here I met Hinchman Hains of Gabriel Daviss. Sixth Day had an appointed meeting for H.H. [<persName key="w6md9qck">Hinchman Haines</persName>] at Crosswicks. He took up almost the whole time and was much favoured. In the evening had a meeting at Bordentown. The few Friends there the house was crowded full and the weight fell on me and I believe it ended to general satisfaction. A Methodist minister was there and came to our lodging and said he wanted some friendly religious discourse with us and we parted friendly and respectfully he expressing great love and friendship for us.  7th Day had a meeting at Trenton. Religion seemed to be at a low ebb and hard getting along though. I hope we came off without loss. This evening I got to my friend Jonathan Kirkbride's.  My companions went on pursuant to their prospect down the river.</p></div>
+<div type="entry" n="1808-01-24"><dateline><date when="1808-01-24">[24] 1st Day</date></dateline><p> I was at the Falls Meeting which was an owning favored time I believe to general satisfaction.</p></div>
+<div type="entry" n="1808-01-25"><dateline><date when="1808-01-25">[25] 2nd.</date></dateline><p> Had an appointed meeting at Makefield and I hope and believe in a good degree owning. Got to Oliver Paxton's to lodge. Third Day got to John Balderston's.</p>
+<p>[left marginal note]  Stop to see an old man in a deep consumption. He was very tender. </p></div>
+<div type="entry" n="1808-01-26"><dateline><date when="1808-01-26">[26] [crossed out] 4th Day.</date></dateline><p> And were at Solebury Meeting </p></div>
+<div type="entry" n="1808-01-27"><dateline><date when="1808-01-27">[27] Fourth Day at Buckingham Preparative Meeting -- middling.</date></dateline><p> </p></div>
+<div type="entry" n="1808-01-28"><dateline><date when="1808-01-28">[28] 5 Day.</date></dateline><p> Plumsted Preparative. A very stormy snowy day. The meeting was very small and things seemed low we had but a poor time. Lodged at Edward Good's.</p></div>
+<div type="entry" n="1808-01-29"><dateline><date when="1808-01-29">[29] 6 Day [inserted] an appointed meeting.</date></dateline><p> We went to Richland Meeting fifteen miles in a sleigh. The roads very bad and crossing the creeks very difficult and dangerous, the waters high and ice not quite strong enough to bear the horses.</p>
+<p>We had some dismal discouraging dangerous places to go through but were favoured to get safe along in good season starting before sunrise and a full favoured owning open time it was I believe to general satisfaction. Came back to Edward Good's to lodge. Had a sitting with them for the better I hope. Had an opportunity at Robert Kirkbride's sons family in a disunited state to satisfaction </p></div>
+<pb n="02" facs="sc203823"/>
+<div type="entry" n="1808-01-30"><dateline><date when="1808-01-30">[30] 7th Day.</date></dateline><p> On our way we stopped at a school for the better I believe and stopped to see old Peter Vickers and family.  His daughter and he being in a poor, low, afflicted condition. Had a little setting with them and it seemed very acceptable to them. Got to John Balderston's about noon. </p></div>
+<div type="entry" n="1808-01-31"><dateline><date when="1808-01-31">31 was First Day.</date></dateline><p> Went to Wrightstown meeting which was large and  an owning open time I believe to general good satisfaction. Got to our kind Friend's William Blake to lodge. We have had fine winter, moderate weather some days but now a stormy morning.</p>
+<p>[Left Margin] Went to see an ancient widow in affliction which very acceptable to her as she expressed.</p></div>
+<div type="entry" n="1808-02-02"><head>February 1808</head><dateline><date when="1808-02-02">2nd Month 1st.</date></dateline><p> At Middletown Meeting, not very large. The roads stormy. I believe the meeting ended solid and to general satisfaction. </p></div>
+<div type="entry" n="1808-02-03"><dateline><date when="1808-02-03">[3] 3rd Day.</date></dateline><p> Had a meeting appointed at Bristol, the roads very heavy traveling. Not a very full meeting but in a good degree favoured. [crossed out] 4th Day</p>
+<p>Lodged at William Walton's. Had a good time in the evening.</p></div>
+<div type="entry" n="1808-02-03"><dateline><date when="1808-02-03">[3] 4 day.</date></dateline><p> Got to the Select Meeting at Abington and were owned and preserved. Dined at Charles William's and had an open favored time. After dinner went to Jacob Paxton to lodge and there William Blake my companion called their large family of children together in the evening for the better I hope and believe.</p></div>
+<div type="entry" n="1808-02-04"><dateline><date when="1808-02-04">[4] 5 Day.</date></dateline><p> Was Quarterly Meeting at Abington. Some stirrings of life but things did not rise as I could wish though got some relief at last in the women's meeting. Lodged at Jared Spencer's with divers choice Friends of Richland. Had an opportunity with the family and a number of young people in the evening later for the better I hope and believe.</p></div>
+<div type="entry" n="1808-02-05"><dateline><date when="1808-02-05">[5] 6 Day.</date></dateline><p> Went to an appointed meeting at Horsham which was large and an highly favoured open owning time it was I believe to general satisfaction, very pleasant and full of love. Friends seemed to be a parting under a lively sense of the ownings of truth.</p></div>
+<pb n="03" facs="sc203824"/>
+<div type="entry" n="1808-02-06"><dateline><date when="1808-02-06">[6] 7 Day night.</date></dateline><p> Got to my cousin <persName key="w6g77m31">Hannay Yarnal's</persName> to lodge. Visited <persName key="w62n51qq">John Comly's</persName> boarding school of young women, most of them not of our society and very gay and fashionable. When the ground is not prepared the hopes of the sower is but small. Not much sign of entrance through a door of utterance, not much satisfaction amongst their school of lads.</p></div>
+<div type="entry" n="1808-02-10"><dateline><date when="1808-02-10">10.</date></dateline><p> Was First Day. At Byberry Meeting which was large and open and I hope to general satisfaction as far as I could discover they were very loving and inviting after meeting though I had not that satisfaction as at some other places. We don't always get our pay as soon as we have done our work but now and then a rarity or a downright good satisfactory meeting.</p></div>
+<div type="entry" n="1808-02-11"><dateline><date when="1808-02-11">11.</date></dateline><p> Lodged at cousin James Thorington's after a sweet time amongst the children and family. In the morning cousin James brought me over the river to cousin Benjamin Warrington's.</p>
+<p>This meeting at Horsham was a memorable time (for about an hour and a half). William Blakey said when we came out this is the best meeting I ever seen at this place this is the cap sheaf this crowns all.<note resp="transcr">Chester Monthly Meeting minutes, February 1808: “John Hunt returned the minute granted him at last meeting and reported he has performed the visit then in prospect much to his satisfaction.”</note></p>
+<p>Jacob Paxson said I wish I had got more of my children along; pleasantness sweetness and feeling nearness was felt to abound</p>
+<pb n="04" facs="sc203825"/>
+<p>see London Epistle 1768
+<quote>The advice of divine wisdom is buy the truth and sell it not but those who prefer the gaiety, the vain customs and fluctuating fashions of the world renounce Wisdom for folly duty for disobedience and the reality of Enduring substance for the flattering delusion of Transitory enjoyments an as the inspired penman said: they that pursue lying vanities forsake their own mercies</quote></p></div>
+</body></text>
 </TEI>

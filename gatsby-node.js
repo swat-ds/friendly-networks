@@ -1,10 +1,16 @@
 const axios = require("axios");
-const apiData = require("./src/assets/data/ids_arks.json");
+const constellationData = require("./src/assets/data/constellationsForInclusion.json");
 const component = require.resolve(`./src/components/People.js`);
 
-const constellationData = apiData.ids_arks;
-
 let constellations = [];
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+    },
+  });
+};
 
 exports.sourceNodes = async ({
   actions,
@@ -20,7 +26,7 @@ exports.sourceNodes = async ({
     const fetchConstellation = () =>
       axios.put(`https://api.snaccooperative.org`, {
         command: "read",
-        constellationid: i.id,
+        constellationid: i["SNAC ID"],
       });
 
     constellations.push(await fetchConstellation());
@@ -36,7 +42,7 @@ console.log(constellations.length)
     const { constellation } = c.data
     const constNode = {
       //     // Required fields
-      id: `${constellationData[i].id}`,
+      id: `${constellationData[i]["SNAC ID"]}`,
       parent: `__SOURCE__`,
       internal: {
         type: `Constellation`, // name of the graphQL query --> allRandomUser {}
@@ -46,7 +52,8 @@ console.log(constellations.length)
       children: [],
 
       //     // Other fields that you want to query with graphQl
-      arkId: constellation.ark.split('/').pop() || null,
+      arkId: constellation.ark.split("/").pop() || null,
+      triCoID: constellationData[i]["TriCo ID"] || null,
       entityType: constellation.entityType || null,
       sources: constellation.sources || null,
       nameEntries: constellation.nameEntries || null,
@@ -59,7 +66,6 @@ console.log(constellations.length)
       subjects: constellation.subjects || null,
       genders: constellation.genders || null,
       dates: constellation.dates || null,
-
     };
 
     // add it to userNode
