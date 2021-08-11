@@ -2,8 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-//TODO: May want to remove this
-import "../assets/styles/deck.scss";
 import EntityCardDeck from  "../components/EntityCardDeck"
 
 const people = ({ data }) => {

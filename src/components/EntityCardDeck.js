@@ -54,7 +54,6 @@ const EntityCardDeck = ({entityDeck}) => {
   const renderCard = (Card, _) => {
       return (
         <EntityCard
-          className="card"
           entity={Card}
           index={cardIndex++}
           size={entityDeck.length}

@@ -1,13 +1,33 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from '../components/Layout'
-import {Row, Col} from "react-bootstrap"
-import "../assets/styles/styles.scss"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { scroller } from "react-scroll";
+import Layout from "../components/Layout";
+import { Row, Col } from "react-bootstrap";
+import "../assets/styles/styles.scss";
 
-const home = () => {
+const home = ({location}) => {
+  console.log(location);
   return (
     <Layout>
-      <p>
+      <AnchorLink to="/#p1" title="Our team">
+        <p>Statement!</p>
+      </AnchorLink>
+
+      <AnchorLink to="/#alorem10" title="Our team">
+        <p>alorem10</p>
+      </AnchorLink>
+      <section id="testId" style={{border: "2px solid gray", height: "20em", width:"15em", overflow:"scroll",}}>
+        {Array.from({ length: 50 }).map((e, i) => (
+          <p id={"alorem" + i}>{i}. Lorem ipsum dolor sit amet.</p>
+        ))}
+      </section>
+
+      <br></br>
+      <br />
+      <br />
+      <br />
+      <p id="p1">
         The essence of the Quakers Quakers believe that there is something of
         God in everybody and that each human being is of unique worth. This is
         why Quakers value all people equally, and oppose anything that may harm
@@ -28,6 +48,5 @@ const home = () => {
     </Layout>
   );
 };
-
 
 export default home;

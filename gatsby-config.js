@@ -40,7 +40,7 @@ module.exports = {
     //   options: { dbName: `local`, collection: `documents` },
     //   query: { documents: { as_of: { $gte: 1604397088013 } } },
     // },
-    
+
     "gatsby-theme-ceteicean",
     {
       resolve: "gatsby-source-filesystem",
@@ -57,6 +57,12 @@ module.exports = {
             "/Users/zakirhossain/FriendProject/obf/node_modules/bootstrap/scss",
           ],
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        duration: 1000,
       },
     },
   ],

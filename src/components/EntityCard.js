@@ -13,7 +13,7 @@ import "../assets/styles/card.scss";
  */
 
 const EntityCard = (props) => {
-  const { entity, index, size, className } = props;
+  const { entity, index, size} = props;
 
   return (
     <Link className="g-link" to={"/entities/" + entity.arkId}>
@@ -32,7 +32,7 @@ const EntityCard = (props) => {
           <Card.Text>First 100 chars of bio should be here</Card.Text>
         </Card.Body>
       </Card> */}
-      <div className={className}>
+      <div className="card entity-card">
         <div className="card-body">
           <h5 className="card-title">
             {" "}
@@ -40,12 +40,15 @@ const EntityCard = (props) => {
               ? entity.nameEntries[0].original
               : "Corporate Body"}
           </h5>
-          <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <h6 className="card-subtitle mb-2">Card subtitle</h6>
           <p className="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <p>{`${index+1} out of ${size}`}</p>
+          <Button variant="outline-warning">Detail</Button>
+          <p className="text-muted">{`${
+            index + 1
+          } out of ${size}`}</p>
         </div>
       </div>
     </Link>

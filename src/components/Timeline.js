@@ -67,7 +67,7 @@ const Timeline = (props) => {
        );
     }
   return (
-    <Row className="container">
+    <Row id="timeline-row">
       {renderTimeline()}
     </Row>
   );

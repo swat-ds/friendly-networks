@@ -79,16 +79,16 @@ let currentInput = 0; // variable for the input value for the scroll
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
 const Volume = (props) => {
-  const { pageContext, data, name_index } = props;
+  const { pageContext, data, hash } = props;
   // console.log(pageContext.prefixed);
   let pids = [];
   let pageBreakIDs = [];
 
-    let jsonPrefixed;
-    parseString(pageContext.prefixed, function (err, result) {
-      jsonPrefixed = result;
-    });
-    pageBreakIDs = getALlPageBreaks(jsonPrefixed);
+  let jsonPrefixed;
+  parseString(pageContext.prefixed, function (err, result) {
+    jsonPrefixed = result;
+  });
+  pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
   // function getDivBreaks(divList) {
   //   divList.forEach((div) => {
@@ -123,8 +123,6 @@ const Volume = (props) => {
   //   }
   // }
 
- 
-
   // if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
   //   let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
   //  back["teit-pb"].forEach((pb) => {
@@ -135,7 +133,7 @@ const Volume = (props) => {
   //   }
   // }
 
-   pids = pageBreakIDs;
+  pids = pageBreakIDs;
   // const parser = new DOMParser();
   // const xmlDoc = parser.parseFromString(pageContext.prefixed, "text/xml");
   // const pages = xmlDoc.getElementsByTagName("tei-pb");
@@ -159,9 +157,9 @@ const Volume = (props) => {
 
   //Sets the current cetei with the next cetei
   function getNextCetei() {
-    counter +=1;
+    counter += 1;
     setCetei(data.allCetei.nodes[counter].parent.name);
-    console.log(counter)
+    console.log(counter);
     console.log(data.allCetei.nodes[counter].parent.name);
   }
 
@@ -184,14 +182,24 @@ const Volume = (props) => {
   }
 
   /**
+   * Possible patterns:
+   * 1. http://localhost:8000/sc203246?/#pid=sc203683
+   * 2. http://localhost:8000/sc203246/#pid=sc203683
+   * Nothing needs to be changed for the scrolling whatsoever, both works. 
+   */
+  if (hash != "") {
+    let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
+    scroll(hashPid);
+  }
+
+  /**
    * Find and get the index of the next pid relative to th @currentPid
    * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
    */
 
-
   function getNextImage() {
     let i = pids.indexOf(currentPid) + 1;
-    if(i >= 0 && i <= pids.length-1){
+    if (i >= 0 && i <= pids.length - 1) {
       scroll(pids[i]);
       setPid(pids[i]);
     }
@@ -203,10 +211,10 @@ const Volume = (props) => {
    */
   function getPrevImage() {
     let i = pids.indexOf(currentPid) - 1;
-     if (i >= 0 && i <= pids.length-1) {
-       scroll(pids[i]);
-       setPid(pids[i]);
-     }
+    if (i >= 0 && i <= pids.length - 1) {
+      scroll(pids[i]);
+      setPid(pids[i]);
+    }
   }
 
   // function conditionalCallBack(callback){

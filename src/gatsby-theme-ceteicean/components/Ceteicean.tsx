@@ -10,7 +10,10 @@ import "../../assets/styles/styles.scss";
 
 
 
-const ShadowedCeteicean = ({pageContext, data}) => {
+const ShadowedCeteicean = ({pageContext, data, location}) => {
+  console.log(location);
+
+  let hash = location.hash;
 
   const routes = {
     "tei-TEI": El.TEI,
@@ -43,7 +46,7 @@ const ShadowedCeteicean = ({pageContext, data}) => {
     
   // }
   return (
-    <Volume pageContext={pageContext} data={data}>
+    <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
     </Volume>
   );

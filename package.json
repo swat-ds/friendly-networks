@@ -20,6 +20,7 @@
     "bootstrap": "^5.0.2",
     "d3": "^7.0.0",
     "gatsby": "^3.6.2",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-sass": "^4.9.0",
     "gatsby-plugin-sitemap": "^4.4.0",
     "gatsby-source-filesystem": "^3.8.0",

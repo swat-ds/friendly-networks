@@ -9,7 +9,17 @@ body {
 }
 .card{
   text-decoration: none;
-  color: hsl(0, 1%, 13%);
+  color: white;
+  text-align: center;
+  background-color: #324756 !important;
+  margin: 0.3vw;
+  height: 50vh;
+  width: 18vw;
+  perspective: 1000px;
+  transform-origin: center center 0px;
+  transition: all 0.2s ease-out;
+  transform: perspective(1000px) rotateX(4deg) rotateY(2deg) rotateZ(-10deg);
+  z-index: 1;
   box-shadow:
   0 2.8px 2.2px rgba(180, 125, 125, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -20,21 +30,16 @@ body {
  
 }
 
-.card{
-  margin: 0.4vw;
-  height: 50vh;
+.journal-card{
+  height: 40vh;
   width: 18vw;
-  perspective: 1000px;
-  transform-origin: center center 0px;
-  transition: all 0.6s ease-out;
-  transform: perspective(1000px) rotateX(4deg) rotateY(2deg) rotateZ(-10deg);
-  z-index: 1;
+  margin-left: 2vw;
 }
 
 .card:hover{
     // transform: scale(2, 2);
     // transform: perspective(1000px) rotateX(10deg) rotateY(4deg) rotateZ(-20deg)
-    animation: magic 8s infinite alternate ease-in-out;
+    animation: magic 3s infinite alternate ease-in-out;
 }
 
 @keyframes magic {

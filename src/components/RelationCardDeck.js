@@ -60,7 +60,6 @@ const RelationCardDeck = ({ relationDeck }) => {
   const renderCard = (relation, _) => {
     return (
       <RelationCard
-        className="card"
         relation={relation}
         index={cardIndex++}
         size={relationDeck.length}

@@ -10,7 +10,7 @@ import "../assets/styles/card.scss";
  * @param {*} relation the relation to be put in the card
  * @returns a react card, wrapped with a GatsbyJS Link
  */
-const RelationCard = ({relation, index, size, className }) => {
+const RelationCard = ({relation, index, size }) => {
   console.log(relation)
 
   let arkId = relation.targetArkID.split("/").pop();
@@ -24,12 +24,12 @@ const RelationCard = ({relation, index, size, className }) => {
     }
     return (
       <Link to={"/entities/" + arkId}>
-        <div className={className}>
+        <div className="card relative-card">
           <div className="card-body">
             <h5 className="card-title">{type}</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <h6 className="card-subtitle mb-2">Card subtitle</h6>
             <p className="card-text">{content}</p>
-            <p>{`${index + 1} out of ${size}`}</p>
+            <p className="text-muted">{`${index + 1} out of ${size}`}</p>
           </div>
         </div>
       </Link>
