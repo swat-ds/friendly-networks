@@ -1,16 +1,92 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader></teiHeader>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Hunt Journal, 1823 5mo. 8 - 1824 1mo. 23: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>James Truitt</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2021">2021</date>
+                <idno type="local">A0011536</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">
+                    <title level="s" type="main">Friendly Networks</title>
+                    <title level="s" type="sub">The Journals of Our Beloved Friend John Hunt</title></title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt Papers, SFHL-RG5-240</collection>
+                        <idno>A0011536</idno>
+                        <idno>sc203244</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The journals of Quaker minister John Hunt are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed the journals, and in 2021, encoded the text in TEI. The 2021 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref>
+                </p>
+            </projectDesc>
+            <editorialDecl>
+                <p> John Hunt was a good writer, but like most 18th century authors, his punctuation, spelling, and abbreviations were not standardized or necessarily consistent. The goal of the Hunt project was to produce a text accessible to the modern reader, retaining all the words in the order they appear, but with added punctuation and capitalization to make the document readable. Some spelling of surnames and places has been corrected in order to facilitate searching. Any other additions supplied to aid the reader are surrounded by brackets. Archaic forms and spellings of words are also retained. “How art thou feeling” remains as written, not changed to “How are you feeling.” And Hunt frequently used the abbreviation “Do.” for ditto; this has not been changed. The word “sic” means that word or words are transcribed as written. Usually this marks an error in the original text. When identified by the editor, biblical references, all from the King James version, have been identified in notes. Where Hunt himself identified them as such this attribution is retained in the main body of the text.</p>
+                <p>Hunt consistently used Quaker-style plain dating, avoiding the names of the months and the names of days of the week. “Monday, October 9th,” for instance, is written as “Second Day, Ninth of the Tenth Month.” The headings dividing the texts were added by the editors, using the standard names for the months, again for ease of reading.</p>
+                <p>Hunt had a practice of regularly adding to a series of bound journals when he was at home, but usually recorded entries while he was at Yearly Meeting or travelling in the ministry on single sheets of paper. In publishing the entirety of the journal we have added “loose” sections where they fit chronologically.  </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1823" to="1824">1823-1824</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers -- Conduct of life</term>
+                    <term>Quakers -- Religious life</term>
+                    <term>Quakers -- Social life and customs</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2005064399">Hunt, John, 1740-1824</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
 <text>
 <body>
 <pb n="01" facs="sc203676"/>
-<div type="entry" n="1823-05-08"><head>May 1823</head><p>Attended monthly meeting at Chester Moorestown the 8th of 5 Month 1823. Present: William Forster Jr. from S Monthly meeting of quarterly meeting held at Pool in 1918, England, <persName key="w6gq882n">Richard Jordan</persName>, William Evans from Philadelphia accompanied William Foster as did H. Haines etc.</p>
-<p>William Foster spoke in the first meeting something after this manner: the children of the Kingdom were cast out etc.; it would be well for to reflect a moment who the children of the kingdom were that were to be cast out etc. what they were cast out for - now Abraham, Isaac, and Jacob were to sit down together in the kingdom of Heaven and when the Jews' Messiah walk personally among men when in that prepared body said how oft would I have gathered you as a hen gathered her chickens etc. but ye would not (Mark says here they were under no moral impossibility of predetermined fiat, but might have received the Messiah in the way of his coming; for to as many as did receive him to them them he gave power to become the Children of God of Heaven. He spoke much about the propitiatory sacrifice and not to call the precious blood and unholy thing etc.</p>
+<div type="entry" n="1823-05-08"><head>May 1823</head><p>Attended monthly meeting at Chester Moorestown the 8th of 5 Month 1823. Present: <persName key="w65d92g1">William Forster Jr.</persName> from S Monthly meeting of quarterly meeting held at Pool in 1918, England, <persName key="w6gq882n">Richard Jordan</persName>, William Evans from Philadelphia accompanied <persName key="w65d92g1">William Foster</persName> as did H. Haines etc.</p>
+<p><persName key="w65d92g1">William Foster</persName> spoke in the first meeting something after this manner: the children of the Kingdom were cast out etc.; it would be well for to reflect a moment who the children of the kingdom were that were to be cast out etc. what they were cast out for - now Abraham, Isaac, and Jacob were to sit down together in the kingdom of Heaven and when the Jews' Messiah walk personally among men when in that prepared body said how oft would I have gathered you as a hen gathered her chickens etc. but ye would not (Mark says here they were under no moral impossibility of predetermined fiat, but might have received the Messiah in the way of his coming; for to as many as did receive him to them them he gave power to become the Children of God of Heaven. He spoke much about the propitiatory sacrifice and not to call the precious blood and unholy thing etc.</p>
 <p>The Devil, that power, that went about like a roaring lion etc. was neat, and no imaginary power or being etc., for which he cautioned against etc.</p>
 <p>I thought he endeavored to show that among all the families of this Earth the Quakers were the Lord's peculiar prophets, and that there was no doubt at all but the covenant that was made with our predecessors of primitive Friends would last to the end of the world; and the Lord's minister or messengers among us now (that is the preachers by their ministry would do a great deal of good in disseminating the knowledge of the Lord, until it should and would cover the Earth as waters do the Sea.) mentioned there were those of us who were upon the heights of speculation, and finding and easier way to Heaven than did our first Friends etc, but they would fall, and in his judgment no matter how soon, etc. Williams said "he" was never made to be a sharp thrusting instrument for it was more disagreeable to him to speak harshly, than it could be for anyone to hear etc., yet he spoke sharply to the sisters against their being some of them worldly minded and having on Grave-clothes instancing "Lazarus, come forth" etc.</p>
 <pb n="02" facs="sc203677"/>
 <p>After William sat down, William Evans rose, said he could not expect to add anything to the foregoing testimony of divine truths which had been delivered which fully accorded with his sentiments etc. - Then enlarged and the visited of the Lord would have the victory if it was through suffering and encouraged to hold out in well doing, and let no man spoil you this philosophy etc. Afterwards said the God head was bodily in Jesus Christ (see that text when I am at leisure etc.)</p>
 <p><persName key="w6gq882n">Richard Jordan</persName> seemed to think although the meeting was appointed for discipline yet he thought a simile might be added to etc. and be very illustrative. Suppose I (says he) or any other man was under sentence of death, by a broken law, which if it was to be executed must die. It would fill us with amazement, but if some unknown one should offer to die for us - for he said he thought the Apostles thought it a possible case, that some one might be found that would die for a good man, but could any be found that would die for a sinner etc. Then made the application as I thought to view the situation of us poor mortals who had all fallen short of the glory of God, but Jesus Christ our savior bought us with his precious blood. That is as I thought endeavored to show that Christ has made a way for us to be reconciled to God by our having time with the assistance of the Holy Spirit to make our peace, or reconciliation etc, before the time of probation be over etc. The [illegible] were then closed <persName key="w6gq882n">R. Jordan</persName> kept to his seat some of the Friends, inviting him to another.</p>
-<p>William Foster Jr. remarked that the charge he thought brought against any for them outgoing in marriage ought to state the mode in which it was accomplished, as well as "that it was accomplished contrary to discipline" viz "whether it was done by a priest of minister of another denomination" or "by a magistrate when one was a member", "or when both was members.' - William instanced his own marriage was accompany with what he wanted not part with for all the world, etc.</p>
+<p><persName key="w65d92g1">William Foster Jr.</persName> remarked that the charge he thought brought against any for them outgoing in marriage ought to state the mode in which it was accomplished, as well as "that it was accomplished contrary to discipline" viz "whether it was done by a priest of minister of another denomination" or "by a magistrate when one was a member", "or when both was members.' - William instanced his own marriage was accompany with what he wanted not part with for all the world, etc.</p>
 <p>Nathan Morgan's request to become a member was granted at this time.</p>
 <p>William Evans cautioned Friends against too lightly or easily, or in other words those that came in by convincement should show forth in life and conduct they were convinced, and manifest such convincement by fruits etc., such as steady attending meeting circumspect walking.</p></div>
 <pb n="03" facs="sc203678"/>

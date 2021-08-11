@@ -1,118 +1,149 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader></teiHeader>
-    <text>
-        <body>
-            <pb n="01" facs="sc203925"/>
-            <div>
-                <p>Tilton Bunting son of</p>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Hunt Journal, 1815 4mo. 1 - 1817 8mo. 3: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>James Truitt</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 20 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2021">2021</date>
+                <idno type="local">A0011528</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">
+                    <title level="s" type="main">Friendly Networks</title>
+                    <title level="s" type="sub">The Journals of Our Beloved Friend John Hunt</title></title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt Papers, SFHL-RG5-240</collection>
+                        <idno>A0011528</idno>
+                        <idno>sc203698</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>12 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The journals of Quaker minister John Hunt are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed the journals, and in 2021, encoded the text in TEI. The 2021 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref>
+                </p>
+            </projectDesc>
+            <editorialDecl>
+                <p> John Hunt was a good writer, but like most 18th century authors, his punctuation, spelling, and abbreviations were not standardized or necessarily consistent. The goal of the Hunt project was to produce a text accessible to the modern reader, retaining all the words in the order they appear, but with added punctuation and capitalization to make the document readable. Some spelling of surnames and places has been corrected in order to facilitate searching. Any other additions supplied to aid the reader are surrounded by brackets. Archaic forms and spellings of words are also retained. “How art thou feeling” remains as written, not changed to “How are you feeling.” And Hunt frequently used the abbreviation “Do.” for ditto; this has not been changed. The word “sic” means that word or words are transcribed as written. Usually this marks an error in the original text. When identified by the editor, biblical references, all from the King James version, have been identified in notes. Where Hunt himself identified them as such this attribution is retained in the main body of the text.</p>
+                <p>Hunt consistently used Quaker-style plain dating, avoiding the names of the months and the names of days of the week. “Monday, October 9th,” for instance, is written as “Second Day, Ninth of the Tenth Month.” The headings dividing the texts were added by the editors, using the standard names for the months, again for ease of reading.</p>
+                <p>Hunt had a practice of regularly adding to a series of bound journals when he was at home, but usually recorded entries while he was at Yearly Meeting or travelling in the ministry on single sheets of paper. In publishing the entirety of the journal we have added “loose” sections where they fit chronologically.  </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1815" to="1817">1815-1817</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers -- Conduct of life</term>
+                    <term>Quakers -- Religious life</term>
+                    <term>Quakers -- Social life and customs</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2005064399">Hunt, John, 1740-1824</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+<text>
+<body>
+<pb n="01" facs="sc203925"/>
+<div><p>Tilton Bunting son of</p>
 
-                <p>[in pencil:] 1815 to 1817</p>
-            </div>
-            <pb n="02" facs="sc203926"/>
-            <div type="narrative">
-                <p>Nathan Smith made the second appearance in public signified he had been under a serious concern about this yearly meeting several days past and greatly desired those Friends that had come so far from the different parts of the yearly meeting might be benefitted by coming and he seemed to be very sure they would he hoped the youth might be preserved from the many baits and snares, the many places of amusement and</p>
-            </div>
+<p>[in pencil:] 1815 to 1817</p></div>
+<pb n="02" facs="sc203926"/>
+<div type="narrative"><p>Nathan Smith made the second appearance in public signified he had been under a serious concern about this yearly meeting several days past and greatly desired those Friends that had come so far from the different parts of the yearly meeting might be benefitted by coming and he seemed to be very sure they would he hoped the youth might be preserved from the many baits and snares, the many places of amusement and</p></div>
 
-            <div>
-                <list rend="numbered">
-                    <label>1</label>
-                    <item/>
-                    <label>2</label>
-                    <item> Nathan small</item>
-                    <label>3</label>
-                    <item/>
-                    <label>4</label>
-                    <item>Joshua Curtis made a prayer</item>
-                    <label>5</label>
-                    <item>
-                        <persName key="w60006f4">George Dwylin</persName>
-                    </item>
-                    <label>6</label>
-                    <item/>
-                    <label>7</label>
-                    <item> Stephen Grellett</item>
-                    <label>8</label>
-                    <item>Mafsey Brown belongs to the Western Qua wise</item>
-                </list>
-            </div>
-            <div>
-                <p>[upside down:] Please to make pantaloons longer in the seat so as the lower part of the seat will not bind between the legs and</p>
-                <p>Please to make the pantaloons longer in the seat, so as the lower part of the seat will not betwean the legs and</p>
-            </div>
-            <pb n="03" facs="sc203927"/>
-            <div type="entry" n="1815-04">
-                <dateline>
-                    <date when="1815-04">First day morning the day of the fourth month 1815</date>
-                </dateline>
-                <p> attended the forenoon meeting at the monthly meeting house.</p>
-                <p>First appeared in the ministry recommending us to build upon the sure foundation Christ Jesus the rock of ages</p>
-                <p>Woman Friend very short space after appeared</p>
-                <p>Joshua Curtis made a prayer</p>
-                <p>
-                    <persName key="w60006f4">George Dillwyn</persName> next appeared [and] signified there was various opinions concerning Christ who bespoke his disciples after this manner</p>
-                <p>but whom do you say that I the son of man am Oh that we could answer as Peter did thou art Christ the son of [blank space] Jesus saith unto him flesh and blood hath not revealed it to him here was the [i "right"] foundation is to build upon which will stand in a day of trial will most surely come upon all though it might beat upon the superstructure reared up upon this Foundation yet the foundation standeth sure against which</p>
-                <p>which ale the storms of Affliction may beat in vain to practice one gospel truth was of more worth than form to heart full of the experiences and practice of others from one end of our lives to the others</p>
-                <pb n="04" facs="sc203928"/>
-                <p>Afternoon meeting began at 4 o'clock at the same house which I attended a woman Friend named [blank space]compared a true follower of Christ to be like a ship prepared for Voyage when they are willing to go and come like what storms of tribulation come as might then the vessel was prepared for life's voyage</p>
+<div><list rend="numbered">
+<label>1</label><item/>
+<label>2</label><item> Nathan small</item>
+<label>3</label><item/>
+<label>4</label> <item>Joshua Curtis made a prayer</item>
+<label>5</label> <item><persName key="w60006f4">George Dwylin</persName></item>
+<label>6</label><item/>
+<label>7</label><item> Stephen Grellett</item>
+<label>8</label> <item>Mafsey Brown belongs to the Western Qua wise</item>
+</list></div>
+<div><p>[upside down:] Please to make pantaloons longer in the seat so as the lower part of the seat will not bind between the legs and</p>
+<p>Please to make the pantaloons longer in the seat, so as the lower part of the seat will not betwean the legs and</p></div>
+<pb n="03" facs="sc203927"/>
+<div type="entry" n="1815-04"><dateline><date when="1815-04">First day morning the day of the fourth month 1815</date></dateline><p> attended the forenoon meeting at the monthly meeting house.</p>
+<p>First appeared in the ministry recommending us to build upon the sure foundation Christ Jesus the rock of ages</p>
+<p>Woman Friend very short space after appeared</p>
+<p>Joshua Curtis made a prayer</p>
+<p><persName key="w60006f4">George Dillwyn</persName> next appeared [and] signified there was various opinions concerning Christ who bespoke his disciples after this manner</p>
+<p>but whom do you say that I the son of man am Oh that we could answer as Peter did thou art Christ the son of [blank space] Jesus saith unto him flesh and blood hath not revealed it to him here was the [i "right"] foundation is to build upon which will stand in a day of trial will most surely come upon all though it might beat upon the superstructure reared up upon this Foundation yet the foundation standeth sure against which</p>
+<p>which ale the storms of Affliction may beat in vain to practice one gospel truth was of more worth than form to heart full of the experiences and practice of others from one end of our lives to the others</p>
+<pb n="04" facs="sc203928"/>
+<p>Afternoon meeting began at 4 o'clock at the same house which I attended a woman Friend named [blank space]compared a true follower of Christ to be like a ship prepared for Voyage when they are willing to go and come like what storms of tribulation come as might then the vessel was prepared for life's voyage</p>
 
-                <list>
-                    <item>Patience Sleeper wife of Samuel Sleeper lives at Stroudsburg</item>
-                    <item>Morgan Judge from Indian Spring Meeting daughter of Hugh Judge and his wife they being both ministers</item>
-                    <item>Nathan Hain from North Carolina Guilford</item>
-                    <item>Evan Thomas from Baltimore Mo Meeting</item>
-                    <item>Micajah Collins from Salem Monthly Meeting, Massachusetts</item>
-                    <item>Richard Most</item>
-                </list>
-            </div>
-            <pb n="05" facs="sc203929"/>
-            <div type="entry" n="1815-04">
-                <p>At 10 o'clock meeting settled</p>
+<list><item>Patience Sleeper wife of Samuel Sleeper lives at Stroudsburg</item>
+<item>Morgan Judge from Indian Spring Meeting daughter of Hugh Judge and his wife they being both ministers</item>
+<item>Nathan Hain from North Carolina Guilford</item>
+<item>Evan Thomas from Baltimore Mo Meeting</item>
+<item>Micajah Collins from Salem Monthly Meeting, Massachusetts</item>
+<item>Richard Most</item></list></div>
+<pb n="05" facs="sc203929"/>
+<div type="entry" n="1815-04"><p>At 10 o'clock meeting settled</p>
 
-                <p>
-                    <persName key="w60006f4">George Dillwyn</persName> said that communication was very helpful to build each other up in the most holy faith hope he might not when he went up to the house of the Lord he might not offer the sacrifice of fools. Richard Mott next after said if every individual was to endeavor to keep a steady mind wish desires to be acquainted with that which was good we might have a well grounded hope of his refreshing presence being sensible felt among us.</p>
+<p><persName key="w60006f4">George Dillwyn</persName> said that communication was very helpful to build each other up in the most holy faith hope he might not when he went up to the house of the Lord he might not offer the sacrifice of fools. Richard Mott next after said if every individual was to endeavor to keep a steady mind wish desires to be acquainted with that which was good we might have a well grounded hope of his refreshing presence being sensible felt among us.</p>
 
-                <p>Opening minutes being read the representatives were all called over and abstracts from the minutes each other[?] the quarterly meeting were next read out with the name of the clerks and one representative men the clerk and requested the meeting to consider which should be taken up. The Epistles from each yearly meeting or Dublin Friends' certificates</p>
-                <p>the meeting concluded to have the certificates read which was immediately done afterwards the [indecipherable looks like "Chinth"] was read and to a committee was next appointed to settle the Indue's accounts 3 appealing the clerk intimated was come the meeting desired that the parties might be ready the meeting would take notice of them the [indecipherable looks like "sipe"] sitting the representatives were desired [indecipherable looks like "strpck theoris"] of the meeting and considered of Persons for clerk and Assistance</p>
+<p>Opening minutes being read the representatives were all called over and abstracts from the minutes each other[?] the quarterly meeting were next read out with the name of the clerks and one representative men the clerk and requested the meeting to consider which should be taken up. The Epistles from each yearly meeting or Dublin Friends' certificates</p>
+<p>the meeting concluded to have the certificates read which was immediately done afterwards the [indecipherable looks like "Chinth"] was read and to a committee was next appointed to settle the Indue's accounts 3 appealing the clerk intimated was come the meeting desired that the parties might be ready the meeting would take notice of them the [indecipherable looks like "sipe"] sitting the representatives were desired [indecipherable looks like "strpck theoris"] of the meeting and considered of Persons for clerk and Assistance</p>
 
-                <p>Jesse Kersey wished Friend not to come and obstruct the [first letter illegible]eessas at the gate beforehe member as duty he owned as Friend</p>
-                <pb n="06" facs="sc203930"/>
-                <p>The meeting adjourned till 3 o'clock PM at which time Friends again assembled. Jonathan Evans on behalf of the representatives made a report; they were united with much unity to propose John Cox for to serve the meeting as clerk the present year and Samuel Bettle to assist him; the meeting waited a short time for the appellants to ascend; and on account of Margaret Boyles attend in company with a woman Friends and signified she should appeal from the judgment of monthly meeting confirmed by quarterly two Friends from each quarterly meeting except the one from"] were appointed as a committee to hear the appellant pay due attention to the minutes of the quarterly meeting and monthly meeting in her care as well as what the four Friends from that quarterly meeting should say in support there and report then they be in[remainder indecipherable]</p>
-            </div>
-            <pb n="07" facs="sc203931"/>
-            <div type="entry" n="1815-04-18">
-                <dateline>
-                    <date when="1815-04-18">18 of the month and 3rd of the week</date>
-                </dateline>
-                <p> meeting got [illegible] pursuant to a [indecipherable 2-3 words] went into consideration of the state of society as contained in the replies to the queries [indecipherable] up from the different quarters constate <persName key="w6gq882n">Richard Jordan</persName> remarked the scriptures promises were to be experienced in this life which a many thought belong to that which was to come the principle we make profession of was the same thing which the unprofitable servant hide in a napkin but there was wherein he had to account for his latest how will it be with thou who Neglect meeting the fascinating [i "visible"] things with which the minds may engage in we so many as the talent to must be laid by but it will rise in Judgment against us sooner or later though we lay it by for the present those emanations is the same fire that consumed the rebellious captain and fishes at the prayer of Elijah yea this is the very hell fire to sinners the fire descended immediately from heaven on the alter whereon was Gods acceptable sacrifice</p>
-                <p>proceeded as far as to include the 5th Query then adjourned till 3 o clock Pm</p>
+<p>Jesse Kersey wished Friend not to come and obstruct the [first letter illegible]eessas at the gate beforehe member as duty he owned as Friend</p>
+<pb n="06" facs="sc203930"/>
+<p>The meeting adjourned till 3 o'clock PM at which time Friends again assembled. Jonathan Evans on behalf of the representatives made a report; they were united with much unity to propose John Cox for to serve the meeting as clerk the present year and Samuel Bettle to assist him; the meeting waited a short time for the appellants to ascend; and on account of Margaret Boyles attend in company with a woman Friends and signified she should appeal from the judgment of monthly meeting confirmed by quarterly two Friends from each quarterly meeting except the one from"] were appointed as a committee to hear the appellant pay due attention to the minutes of the quarterly meeting and monthly meeting in her care as well as what the four Friends from that quarterly meeting should say in support there and report then they be in[remainder indecipherable]</p></div>
+<pb n="07" facs="sc203931"/>
+<div type="entry" n="1815-04-18"><dateline><date when="1815-04-18">18 of the month and 3rd of the week</date></dateline><p> meeting got [illegible] pursuant to a [indecipherable 2-3 words] went into consideration of the state of society as contained in the replies to the queries [indecipherable] up from the different quarters constate <persName key="w6gq882n">Richard Jordan</persName> remarked the scriptures promises were to be experienced in this life which a many thought belong to that which was to come the principle we make profession of was the same thing which the unprofitable servant hide in a napkin but there was wherein he had to account for his latest how will it be with thou who Neglect meeting the fascinating [i "visible"] things with which the minds may engage in we so many as the talent to must be laid by but it will rise in Judgment against us sooner or later though we lay it by for the present those emanations is the same fire that consumed the rebellious captain and fishes at the prayer of Elijah yea this is the very hell fire to sinners the fire descended immediately from heaven on the alter whereon was Gods acceptable sacrifice</p>
+<p>proceeded as far as to include the 5th Query then adjourned till 3 o clock Pm</p>
 
-                <p>Jesse Kersey remarked that children's minds sometimes sealed with a belief that their parents [crossed out "were"] are not religious</p>
-                <pb n="08" facs="sc203932"/>
-                <p>There was no power the church could make use of but the power of love if children believe their parents are religious they will love them oh how precious it would then be for children and parents in this [crossed out "parents"] state when they are by their fire sides for parents to inform their little and just opening minds</p>
+<p>Jesse Kersey remarked that children's minds sometimes sealed with a belief that their parents [crossed out "were"] are not religious</p>
+<pb n="08" facs="sc203932"/>
+<p>There was no power the church could make use of but the power of love if children believe their parents are religious they will love them oh how precious it would then be for children and parents in this [crossed out "parents"] state when they are by their fire sides for parents to inform their little and just opening minds</p>
 
-                <p>At the time adjourned to Friends again as the remaining queries were read and Answered Stephen Grellet thereto As well as the reports from sent up from the several quarterly meetings and as much [interline note above "many"] of the minutes of last year as would be likely to be considered at this time; the meetings Attention was then turned towards the consideration of the proposition sent up from the quarterly meeting respecting some part of the discipline respecting a treatment with those who may be present at marriages accomplished contrary to our rules the meetinghouse was very warm and no way appearing to come to any conclusion on the subject the meeting adjourned till 10 o'clock tomorrow morning also an abstract from Chambers Walters will was read stating he bequeathed 100$ to the care of the Year meeting for the benefit of Poor Friends at Upper Canada which the meeting agree should</p>
-                <pb n="09" facs="sc203933"/>
-                <p>there were about 17 minister and Elders deceased since last year <persName key="w60006f4">George Dillwyn</persName> said his mind was saturated with this language "be ye also ready" <persName key="w60006f4">George</persName> was impressed with a belief [i"which he communicated"] that he thought [interline note above "at a former setting"] we should never there were so many Friends that would never meet in a yearly meeting capacity again</p>
-                <p>
-                    <persName key="w6wh3qkh">Nathan Hunt</persName> enjoined as though it was and all important thing not to neglect our religious duty towards God for he thou from a failure in this particular arose all the defoulnies pointed out in the Ans[remainder indecipherable]
-                    <persName key="w60006f4">George Dillwyn</persName> remarked on the query those were unfaithful in the unrighteous manners who would commit to them the true riches </p>
-            </div>
-            <pb n="10" facs="sc203934"/>
-            <div type="entry">
-                <p>Attended the N meeting First day morning at 10 O'clock the first who appeared in the ministry was a woman from [blank space] These communications I thought was not acceptable to Friends: the second appearance Amos Peasly [and] Nathan Yarnal made a prayer from [blank space] Went to the afternoon meeting at the N. Meeting the first appearance in the ministry was by a man the next by [blank space] from [blank space]</p>
-            </div>
-            <pb n="11" facs="sc203935"/>
-            <div>
-                <p>[upside down "call at Harrison's
-the first House below Cherry Street ally in 12 str"]</p>
-            </div>
-            <pb n="12" facs="sc203936"/>
-            <div type="entry" n="1817-08-03">
-                <dateline>
-                    <date when="1817-08-03">This year 1817 8 Month 3rd and First day of the week</date>
-                </dateline>
-                <p> Edward Hicks from Pennsylvania was at Chester Meeting of [indecipherable looks like "moves"] " Agree with thine adversary quickly while thou art in the way with him that when an evil thought prevents itself, repulse it and not yield whilst thou has strength to do so, least he deliver thee to judge, who judge the light of Christ in the [indecipherable looks like "peck"]</p>
-            </div>
-        </body>
-    </text>
+<p>At the time adjourned to Friends again as the remaining queries were read and Answered Stephen Grellet thereto As well as the reports from sent up from the several quarterly meetings and as much [interline note above "many"] of the minutes of last year as would be likely to be considered at this time; the meetings Attention was then turned towards the consideration of the proposition sent up from the quarterly meeting respecting some part of the discipline respecting a treatment with those who may be present at marriages accomplished contrary to our rules the meetinghouse was very warm and no way appearing to come to any conclusion on the subject the meeting adjourned till 10 o'clock tomorrow morning also an abstract from Chambers Walters will was read stating he bequeathed 100$ to the care of the Year meeting for the benefit of Poor Friends at Upper Canada which the meeting agree should</p>
+<pb n="09" facs="sc203933"/>
+<p>there were about 17 minister and Elders deceased since last year <persName key="w60006f4">George Dillwyn</persName> said his mind was saturated with this language "be ye also ready" <persName key="w60006f4">George</persName> was impressed with a belief [i"which he communicated"] that he thought [interline note above "at a former setting"] we should never there were so many Friends that would never meet in a yearly meeting capacity again</p>
+<p><persName key="w6wh3qkh">Nathan Hunt</persName> enjoined as though it was and all important thing not to neglect our religious duty towards God for he thou from a failure in this particular arose all the defoulnies pointed out in the Ans[remainder indecipherable]
+<persName key="w60006f4">George Dillwyn</persName> remarked on the query those were unfaithful in the unrighteous manners who would commit to them the true riches </p></div>
+<pb n="10" facs="sc203934"/>
+<div type="entry"><p>Attended the N meeting First day morning at 10 O'clock the first who appeared in the ministry was a woman from [blank space] These communications I thought was not acceptable to Friends: the second appearance Amos Peasly [and] Nathan Yarnal made a prayer from [blank space] Went to the afternoon meeting at the N. Meeting the first appearance in the ministry was by a man the next by [blank space] from [blank space]</p></div>
+<pb n="11" facs="sc203935"/>
+<div><p>[upside down "call at Harrison's
+the first House below Cherry Street ally in 12 str"]</p></div>
+<pb n="12" facs="sc203936"/>
+<div type="entry" n="1817-08-03"><dateline><date when="1817-08-03">This year 1817 8 Month 3rd and First day of the week</date></dateline><p> <persName key="w68w3qrz">Edward Hicks</persName> from Pennsylvania was at Chester Meeting of [indecipherable looks like "moves"] " Agree with thine adversary quickly while thou art in the way with him that when an evil thought prevents itself, repulse it and not yield whilst thou has strength to do so, least he deliver thee to judge, who judge the light of Christ in the [indecipherable looks like "peck"]</p></div>
+</body></text>
 </TEI>
