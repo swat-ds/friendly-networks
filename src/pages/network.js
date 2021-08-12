@@ -2,9 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Network from "../components/Network";
 import {graphql} from 'gatsby'
-const fs = require('fs')
-const nodes = require("../assets/data/dataTable.json");
-const links = require("../assets/data/relationshipTable.json");
+// const fs = require('fs')
+// const nodes = require("../assets/data/dataTable.json");
+// const links = require("../assets/data/relationshipTable.json");
 
 let d3Nodes = [];
 let d3Links = [];
@@ -63,7 +63,9 @@ function isTargetInIds(arkIds, target){
 }
 
 const network = ({data}) => {
+
   let constellations = data.allConstellation.nodes;
+  console.log("Size of entities:", constellations.length)
   let arkIds = [];
   constellations.forEach(c => arkIds.push(c.arkId))
   console.log("arkIds: ", arkIds)

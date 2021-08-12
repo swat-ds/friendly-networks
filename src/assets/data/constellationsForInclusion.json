@@ -1,372 +1,418 @@
 [
   {
-    "SNAC ID": "144438",
-    "ARK ID": "w6qr572m",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8819"
-  },
-  { "SNAC ID": "39965134", 
-    "ARK ID": "w6kp9nc6" },
-  { "SNAC ID": "85531241", "ARK ID": "w6d902xk" },
-  { "SNAC ID": "60917789", "ARK ID": "w60g68ww" },
-  {
-    "SNAC ID": "51652987",
-    "ARK ID": "w6n05cnp",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9177"
-  },
-  { "SNAC ID": "85539565", "ARK ID": "w66f6jgb" },
-  {
-    "SNAC ID": "45956082",
-    "ARK ID": "w65147nn",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8821"
-  },
-  { "SNAC ID": "5796280", "ARK ID": "w64n1mqv" },
-  { "SNAC ID": "47376325", "ARK ID": "w67d3g1h" },
-  { "SNAC ID": "85545503", "ARK ID": "w6vv2hnp" },
-  { "SNAC ID": "68531606", "ARK ID": "w6k6603s" },
-  { "SNAC ID": "85556964", "ARK ID": "w6vf7pzj", "TriCo ID": "" },
-  {
     "SNAC ID": "85290808",
     "ARK ID": "w6n9820p",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/11148"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/11148\r"
   },
-  { "SNAC ID": "85289148", "ARK ID": "w6wx87x7" },
+  { "SNAC ID": "85289148", "ARK ID": "w6wx87x7", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "8563091",
     "ARK ID": "w6c82qz0",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/6620"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6620\r"
   },
-  { "SNAC ID": "85288342", "ARK ID": "w6fv9b6q" },
+  { "SNAC ID": "85288342", "ARK ID": "w6fv9b6q", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "9302981",
     "ARK ID": "w68m543d",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/15962"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/15962\r"
   },
-  { "SNAC ID": "85289632", "ARK ID": "w6165774" },
-  { "SNAC ID": "28160043", "ARK ID": "w6zw3s78" },
-  { "SNAC ID": "14777823", "ARK ID": "w6bv9xp3" },
+  { "SNAC ID": "85289632", "ARK ID": "w6165774", "TriCo ID\r": "\r" },
+  { "SNAC ID": "28160043", "ARK ID": "w6zw3s78", "TriCo ID\r": "\r" },
+  { "SNAC ID": "14777823", "ARK ID": "w6bv9xp3", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "42201796",
     "ARK ID": "w6r525r2",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/12526"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/12526\r"
   },
-  { "SNAC ID": "85290220", "ARK ID": "w6jb6xn6" },
-  { "SNAC ID": "85290256", "ARK ID": "w6hj799d" },
+  { "SNAC ID": "85290220", "ARK ID": "w6jb6xn6", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85290256", "ARK ID": "w6hj799d", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "45693157",
     "ARK ID": "w6p55q0b",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9548"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9548\r"
   },
   {
     "SNAC ID": "47361734",
     "ARK ID": "w6gq882n",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/3269"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3269\r"
   },
   {
     "SNAC ID": "26991682",
     "ARK ID": "w6b01gx6",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/6863"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6863\r"
   },
-  { "SNAC ID": "85366255", "ARK ID": "w6j49htj" },
-  { "SNAC ID": "85311292", "ARK ID": "w6x16z80" },
-  { "SNAC ID": "85312751", "ARK ID": "w6ph2gz9" },
-  { "SNAC ID": "85313024", "ARK ID": "w6xt6kpr" },
-  { "SNAC ID": "85359969", "ARK ID": "w6wt9jhx" },
-  { "SNAC ID": "85361084", "ARK ID": "w65v49t0" },
+  { "SNAC ID": "85366255", "ARK ID": "w6j49htj", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85311292", "ARK ID": "w6x16z80", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85312751", "ARK ID": "w6ph2gz9", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85313024", "ARK ID": "w6xt6kpr", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85359969", "ARK ID": "w6wt9jhx", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85361084", "ARK ID": "w65v49t0", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "17012007",
     "ARK ID": "w6zk9cxf",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2935"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2935\r"
   },
   {
     "SNAC ID": "1821202",
     "ARK ID": "w6nk4g54",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9101"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9101\r"
   },
-  { "SNAC ID": "85366734", "ARK ID": "w63z8z1g", "TriCo ID": "" },
-  { "SNAC ID": "85366829", "ARK ID": "w6zx2b7v" },
+  { "SNAC ID": "85366734", "ARK ID": "w63z8z1g", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85366829", "ARK ID": "w6zx2b7v", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "10043205",
-    "ARK ID": "w6zx2b7v",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9524"
+    "ARK ID": "w6cr7rz4",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9524\r"
   },
-  { "SNAC ID": "85378859", "ARK ID": "w6vj6d7g" },
-  { "SNAC ID": "85385027", "ARK ID": "w63s1j4g" },
+  { "SNAC ID": "85378859", "ARK ID": "w6vj6d7g", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85620528", "ARK ID": "w6096wx2", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85385027", "ARK ID": "w63s1j4g", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "67118714",
     "ARK ID": "w6t72g07",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9612"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9612\r"
   },
-  { "SNAC ID": "85389877", "ARK ID": "w6n69bqr" },
-  { "SNAC ID": "85391488", "ARK ID": "w6wj3fbd" },
+  { "SNAC ID": "85389877", "ARK ID": "w6n69bqr", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85391488", "ARK ID": "w6wj3fbd", "TriCo ID\r": "\r" },
   {
-    "SNAC ID": "33467654",
-    "ARK ID": "w63n434v",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/6672"
+    "SNAC ID": "85555670",
+    "ARK ID": "w6xf1s5t",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6672\r"
   },
   {
     "SNAC ID": "85392783",
     "ARK ID": "w6427nc6",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/4479"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/4479\r"
   },
   {
     "SNAC ID": "85394506",
     "ARK ID": "w6kx66c3",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/16316"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/16316\r"
   },
   {
     "SNAC ID": "25702881",
     "ARK ID": "w6g77m31",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9176"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9176\r"
   },
   {
     "SNAC ID": "16476689",
     "ARK ID": "w66124pd",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9523"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9523\r"
   },
   {
     "SNAC ID": "63882491",
     "ARK ID": "w6028wf4",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/11359"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/11359\r"
   },
-  { "SNAC ID": "85402523", "ARK ID": "w6hv3dnq" },
+  { "SNAC ID": "85402523", "ARK ID": "w6hv3dnq", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "73184126",
     "ARK ID": "w6jd66gz",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8745"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8745\r"
   },
   {
     "SNAC ID": "56228280",
     "ARK ID": "w6h14ctn",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2923"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2923\r"
   },
   {
     "SNAC ID": "85410868",
     "ARK ID": "w63g5dz0",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/10427"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/10427\r"
   },
   {
     "SNAC ID": "3442439",
     "ARK ID": "w6sf4z67",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2953"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2953\r"
   },
   {
     "SNAC ID": "20994989",
     "ARK ID": "w6ht6kfw",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2864"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2864\r"
   },
   {
     "SNAC ID": "44495596",
     "ARK ID": "w60006f4",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8749"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8749\r"
   },
   {
     "SNAC ID": "57502540",
     "ARK ID": "w6dn68k9",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2928"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2928\r"
   },
-  { "SNAC ID": "65278400", "ARK ID": "w6qj854r" },
-  { "SNAC ID": "85386051", "ARK ID": "w6md9qck" },
-  { "SNAC ID": "85558894", "ARK ID": "w6107trk" },
+  { "SNAC ID": "65278400", "ARK ID": "w6qj854r", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85386051", "ARK ID": "w6md9qck", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85558894", "ARK ID": "w6107trk", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "8578951",
     "ARK ID": "w6wq14dj",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/6664"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6664\r"
   },
-  { "SNAC ID": "85494329", "ARK ID": "w6b38kp0" },
-  { "SNAC ID": "85501852", "ARK ID": "w66794np" },
-  { "SNAC ID": "85560461", "ARK ID": "w6rg6kjz" },
+  { "SNAC ID": "85494329", "ARK ID": "w6b38kp0", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85501852", "ARK ID": "w66794np", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85560461", "ARK ID": "w6rg6kjz", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "35918349",
     "ARK ID": "w68g9ffr",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/3376"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3376\r"
   },
-  { "SNAC ID": "85564036", "ARK ID": "w63p2txf" },
-  { "SNAC ID": "85560490", "ARK ID": "w67j292w" },
+  { "SNAC ID": "85564036", "ARK ID": "w63p2txf", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85560490", "ARK ID": "w67j292w", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "55784347",
     "ARK ID": "w6jx3293",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/3217"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3217\r"
   },
   {
     "SNAC ID": "12635601",
     "ARK ID": "w6n05bth",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9182"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9182\r"
   },
-  { "SNAC ID": "85562686", "ARK ID": "w6hv3dtz" },
+  { "SNAC ID": "85562686", "ARK ID": "w6hv3dtz", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "85567526",
     "ARK ID": "w6912v76",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/1031"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/1031\r"
   },
-  { "SNAC ID": "85558534", "ARK ID": "w6x74cd2" },
-  { "SNAC ID": "85560501", "ARK ID": "w6qk87r0" },
-  { "SNAC ID": "85563064", "ARK ID": "w6w48mwd" },
-  { "SNAC ID": "85591755", "ARK ID": "w6q924mx" },
-  { "SNAC ID": "74118480", "ARK ID": "w6058f0z" },
-  { "SNAC ID": "286968", "ARK ID": "w6cg1kgr" },
+  { "SNAC ID": "85558534", "ARK ID": "w6x74cd2", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85560501", "ARK ID": "w6qk87r0", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85563064", "ARK ID": "w6w48mwd", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85591755", "ARK ID": "w6q924mx", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "74118480",
+    "ARK ID": "w6058f0z",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9522\r"
+  },
+  { "SNAC ID": "286968", "ARK ID": "w6cg1kgr", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "33762128",
     "ARK ID": "w6n87x9b",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/7329"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/7329\r"
   },
   {
     "SNAC ID": "68324529",
     "ARK ID": "w6s1844s",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/1566"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/1566\r"
   },
-  { "SNAC ID": "85566563", "ARK ID": "w6xq7wg4" },
+  { "SNAC ID": "85566563", "ARK ID": "w6xq7wg4", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "23145759",
     "ARK ID": "w6cz4d1t",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9091"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9091\r"
   },
   {
     "SNAC ID": "52062192",
     "ARK ID": "w65q5g7f",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2968"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2968\r"
   },
   {
     "SNAC ID": "43798553",
     "ARK ID": "w69891jc",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/3374"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3374\r"
   },
   {
     "SNAC ID": "73142617",
     "ARK ID": "w6rj4s40",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8825"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8825\r"
   },
   {
-    "SNAC ID": "73313762",
-    "ARK ID": "w62n51qq",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8723"
+    "SNAC ID": "85664492",
+    "ARK ID": "w6gv6crg",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8723\r"
   },
-  { "SNAC ID": "69262260", "ARK ID": "w6086z81" },
-  { "SNAC ID": "85542130", "ARK ID": "w67b4w4h" },
-  { "SNAC ID": "85532673", "ARK ID": "w6sk2b2m" },
-  { "SNAC ID": "85566391", "ARK ID": "w6tz45z2" },
-  { "SNAC ID": "85564260", "ARK ID": "w6b38ksb" },
-  { "SNAC ID": "28660463", "ARK ID": "w6mk6p7z" },
-  { "SNAC ID": "85564628", "ARK ID": "w6xx5995" },
-  { "SNAC ID": "85547666", "ARK ID": "w6553d40" },
-  { "SNAC ID": "85617214", "ARK ID": "w6xt6kzb" },
-  { "SNAC ID": "85513426", "ARK ID": "w6jj4bpx" },
-  { "SNAC ID": "85566518", "ARK ID": "w6q924kg" },
-  { "SNAC ID": "85566596", "ARK ID": "w6fs0n6b" },
-  { "SNAC ID": "85567755", "ARK ID": "w61h1brp" },
-  { "SNAC ID": "15248318", "ARK ID": "w6d59f93" },
-  { "SNAC ID": "85568358", "ARK ID": "w6r31rzq" },
-  { "SNAC ID": "85578553", "ARK ID": "w66z02ks" },
-  { "SNAC ID": "85578809", "ARK ID": "w6rk58z8" },
-  { "SNAC ID": "21001667", "ARK ID": "w64r0gvn" },
-  { "SNAC ID": "85585690", "ARK ID": "w6rg6kkd" },
-  { "SNAC ID": "85588035", "ARK ID": "w67f3kpm" },
-  { "SNAC ID": "85585645", "ARK ID": "w6mt4j9v" },
-  { "SNAC ID": "85585714", "ARK ID": "w6bd4q25" },
-  { "SNAC ID": "85586547", "ARK ID": "w6g55ftx" },
-  { "SNAC ID": "85610409", "ARK ID": "w63s1jcm" },
-  { "SNAC ID": "2579218", "ARK ID": "w6tq8ftp" },
-  { "SNAC ID": "85610538", "ARK ID": "w6qk87tw" },
-  { "SNAC ID": "85589274", "ARK ID": "w6010spn" },
-  { "SNAC ID": "85589327", "ARK ID": "w6jr1rg4" },
+  { "SNAC ID": "69262260", "ARK ID": "w6086z81", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85542130", "ARK ID": "w67b4w4h", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85532673", "ARK ID": "w6sk2b2m", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85566391", "ARK ID": "w6tz45z2", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85670079", "ARK ID": "w6621qxj", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85564260", "ARK ID": "w6b38ksb", "TriCo ID\r": "\r" },
+  { "SNAC ID": "28660463", "ARK ID": "w6mk6p7z", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85564628", "ARK ID": "w6xx5995", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85664290", "ARK ID": "w6mh8f3b", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85547666", "ARK ID": "w6553d40", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85617214", "ARK ID": "w6xt6kzb", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85513426", "ARK ID": "w6jj4bpx", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85566518", "ARK ID": "w6q924kg", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85566596", "ARK ID": "w6fs0n6b", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85664639", "ARK ID": "w6912v93", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85567755", "ARK ID": "w61h1brp", "TriCo ID\r": "\r" },
+  { "SNAC ID": "15248318", "ARK ID": "w6d59f93", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85568358", "ARK ID": "w6r31rzq", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85578553", "ARK ID": "w66z02ks", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85578809", "ARK ID": "w6rk58z8", "TriCo ID\r": "\r" },
+  { "SNAC ID": "21001667", "ARK ID": "w64r0gvn", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85585690", "ARK ID": "w6rg6kkd", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85588035", "ARK ID": "w67f3kpm", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85585645", "ARK ID": "w6mt4j9v", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85585714", "ARK ID": "w6bd4q25", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85586547", "ARK ID": "w6g55ftx", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85610409", "ARK ID": "w63s1jcm", "TriCo ID\r": "\r" },
+  { "SNAC ID": "2579218", "ARK ID": "w6tq8ftp", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85610538", "ARK ID": "w6qk87tw", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85589274", "ARK ID": "w6010spn", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85589327", "ARK ID": "w6jr1rg4", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "12632404",
     "ARK ID": "w66696rh",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/6613"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6613\r"
   },
-  { "SNAC ID": "85593586", "ARK ID": "w66b7v3g" },
-  { "SNAC ID": "85594035", "ARK ID": "w6t25v7b" },
+  { "SNAC ID": "85593586", "ARK ID": "w66b7v3g", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85594035", "ARK ID": "w6t25v7b", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "47146111",
     "ARK ID": "w6x098rs",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9611"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9611\r"
   },
-  { "SNAC ID": "11157948", "ARK ID": "w61p2c7g" },
+  { "SNAC ID": "11157948", "ARK ID": "w61p2c7g", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "67558766",
     "ARK ID": "w65t3wn2",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8848"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8848\r"
   },
-  { "SNAC ID": "41503579", "ARK ID": "w6h70g88" },
-  { "SNAC ID": "85596342", "ARK ID": "w6md9qk8" },
-  { "SNAC ID": "85532454", "ARK ID": "w69h6c86" },
-  { "SNAC ID": "85596371", "ARK ID": "w6zq4xpd" },
-  { "SNAC ID": "85597121", "ARK ID": "w6kf2pgw" },
-  { "SNAC ID": "66265183", "ARK ID": "w65v3tfw" },
-  { "SNAC ID": "85597130", "ARK ID": "w60h49r3" },
-  { "SNAC ID": "85600321", "ARK ID": "w6vr3t5g" },
+  { "SNAC ID": "41503579", "ARK ID": "w6h70g88", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85596342", "ARK ID": "w6md9qk8", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85532454", "ARK ID": "w69h6c86", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85596371", "ARK ID": "w6zq4xpd", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85597121", "ARK ID": "w6kf2pgw", "TriCo ID\r": "\r" },
+  { "SNAC ID": "42710532", "ARK ID": "w6cv5qpd", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85597130", "ARK ID": "w60h49r3", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85600321", "ARK ID": "w6vr3t5g", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "57841013",
     "ARK ID": "w6qj9kc7",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/3223"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3223\r"
   },
-  { "SNAC ID": "85600347", "ARK ID": "w6c931wj" },
-  { "SNAC ID": "85552141", "ARK ID": "w6hb9wqh" },
-  { "SNAC ID": "85557519", "ARK ID": "w6kx66hw" },
-  { "SNAC ID": "53837053", "ARK ID": "w66t871b" },
+  { "SNAC ID": "85600347", "ARK ID": "w6c931wj", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85552141", "ARK ID": "w6hb9wqh", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85557519", "ARK ID": "w6kx66hw", "TriCo ID\r": "\r" },
+  { "SNAC ID": "53837053", "ARK ID": "w66t871b", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "13584587",
     "ARK ID": "w6wh3qkh",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9072"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9072\r"
   },
-  { "SNAC ID": "85564969", "ARK ID": "w6jn3260" },
-  { "SNAC ID": "85597469", "ARK ID": "w6650f8c" },
-  { "SNAC ID": "85600366", "ARK ID": "w6r032ff" },
-  { "SNAC ID": "21526822", "ARK ID": "w6wf3zbk" },
-  { "SNAC ID": "85600398", "ARK ID": "w6gg1k1v" },
-  { "SNAC ID": "85600473", "ARK ID": "w6j20tr8" },
-  { "SNAC ID": "85601164", "ARK ID": "w6q061bh" },
-  { "SNAC ID": "85552155", "ARK ID": "w66v1c5g" },
+  { "SNAC ID": "85564969", "ARK ID": "w6jn3260", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85597469", "ARK ID": "w6650f8c", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85600366", "ARK ID": "w6r032ff", "TriCo ID\r": "\r" },
+  { "SNAC ID": "21526822", "ARK ID": "w6wf3zbk", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85600398", "ARK ID": "w6gg1k1v", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85600473", "ARK ID": "w6j20tr8", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85601164", "ARK ID": "w6q061bh", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85552155", "ARK ID": "w66v1c5g", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "36928915",
     "ARK ID": "w6wh4nqv",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/16029"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/16029\r"
   },
-  { "SNAC ID": "85617623", "ARK ID": "w61m02bn" },
+  { "SNAC ID": "85617623", "ARK ID": "w61m02bn", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85617724", "ARK ID": "w6sv8fbg", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85619475", "ARK ID": "w6p37ppz", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "67782267",
     "ARK ID": "w6gj3q0h",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9183"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9183\r"
   },
+  { "SNAC ID": "58082478", "ARK ID": "w6md3mdh", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "74054099",
     "ARK ID": "w65d92g1",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/8927"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8927\r"
   },
-  { "SNAC ID": "72779524", "ARK ID": "w6gb275h" },
+  { "SNAC ID": "72779524", "ARK ID": "w6gb275h", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85620384", "ARK ID": "w6zd8tgw", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "3507407",
     "ARK ID": "w6cr7t0d",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2884"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2884\r"
   },
   {
     "SNAC ID": "33984863",
     "ARK ID": "w6d01xtv",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/11147"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/11147\r"
   },
   {
     "SNAC ID": "59840986",
     "ARK ID": "w6xm0dbv",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9536"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9536\r"
   },
-  { "SNAC ID": "74109159", "ARK ID": "w6nz8ghx" },
-  { "SNAC ID": "52194817", "ARK ID": "w67h3crq" },
-  { "SNAC ID": "85612440", "ARK ID": "w6f29q6b" },
+  { "SNAC ID": "74109159", "ARK ID": "w6nz8ghx", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85627600", "ARK ID": "w6w77bbk", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85619741", "ARK ID": "w6hf8m7k", "TriCo ID\r": "\r" },
+  { "SNAC ID": "52194817", "ARK ID": "w67h3crq", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85618917", "ARK ID": "w6tv5gh9", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85612440", "ARK ID": "w6f29q6b", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85674655", "ARK ID": "w6sp11k8", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85676076", "ARK ID": "w6z71dmb", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "25243048",
+    "ARK ID": "w68w3qrz",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8908\r"
+  },
+  {
+    "SNAC ID": "16084717",
+    "ARK ID": "w6z65997",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/3402\r"
+  },
+  { "SNAC ID": "85677206", "ARK ID": "w69h6cd0", "TriCo ID\r": "\r" },
+  { "SNAC ID": "76463121", "ARK ID": "w6sq9jjd", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85683849", "ARK ID": "w6s57hk5", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "69112313",
     "ARK ID": "w68d3sbk",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/2913"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/2913\r"
   },
-  { "SNAC ID": "39281734", "ARK ID": "w6s505g1" },
-  { "SNAC ID": "85527109", "ARK ID": "w6j20tpc" },
-  { "SNAC ID": "85517848", "ARK ID": "w61657hq" },
+  { "SNAC ID": "39281734", "ARK ID": "w6s505g1", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85527109", "ARK ID": "w6j20tpc", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85517848", "ARK ID": "w61657hq", "TriCo ID\r": "\r" },
   {
     "SNAC ID": "13632608",
     "ARK ID": "w6gb2s37",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/9613"
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9613\r"
   },
   {
     "SNAC ID": "74207550",
     "ARK ID": "w6br9gtg",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/12532"
-  }
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/12532\r"
+  },
+  { "SNAC ID": "85617754", "ARK ID": "w6vv2hqk", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "144438",
+    "ARK ID": "w6qr572m",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8819\r"
+  },
+  { "SNAC ID": "39965134", "ARK ID": "w6kp9nc6", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85531241", "ARK ID": "w6d902xk", "TriCo ID\r": "\r" },
+  { "SNAC ID": "60917789", "ARK ID": "w60g68ww", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "51652987",
+    "ARK ID": "w6n05cnp",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9177\r"
+  },
+  { "SNAC ID": "85539565", "ARK ID": "w66f6jgb", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "45956082",
+    "ARK ID": "w65147nn",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/8821\r"
+  },
+  { "SNAC ID": "5796280", "ARK ID": "w64n1mqv", "TriCo ID\r": "\r" },
+  { "SNAC ID": "47376325", "ARK ID": "w67d3g1h", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85545503", "ARK ID": "w6vv2hnp", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "1522001",
+    "ARK ID": "w6f78cd7",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/6671\r"
+  },
+  { "SNAC ID": "9796282", "ARK ID": "w6x93chq", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85681488", "ARK ID": "w6hv3dwv", "TriCo ID\r": "\r" },
+  {
+    "SNAC ID": "68531606",
+    "ARK ID": "w6k6603s",
+    "TriCo ID\r": "http://archives.tricolib.brynmawr.edu/agents/people/9180\r"
+  },
+  { "SNAC ID": "85556964", "ARK ID": "w6vf7pzj", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85669126", "ARK ID": "w60h49sj", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85666845", "ARK ID": "w6vz1749", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85619551", "ARK ID": "w68x44wf", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85624623", "ARK ID": "w64v7902", "TriCo ID\r": "\r" },
+  { "SNAC ID": "85667510", "ARK ID": "w638818j", "TriCo ID\r": "\r" }
 ]

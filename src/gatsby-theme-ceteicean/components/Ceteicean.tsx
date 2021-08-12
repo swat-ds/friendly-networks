@@ -17,7 +17,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
   const routes = {
     "tei-TEI": El.TEI,
-    "tei-teiHeader": El.Header,
+    "tei-teiheader": El.teiHeader,
     "tei-text": El.Text,
     "tei-body": El.Body,
     "tei-pb": El.Pb,

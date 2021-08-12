@@ -47,13 +47,14 @@ export const TEI = (props) => {
   );
 };
 
+
 //MNBN
-export const Header = (props) => {
+export const teiHeader = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <header>
+      <p style={{display: "none"}}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </header>
+      </p>
     </Behavior>
   );
 };

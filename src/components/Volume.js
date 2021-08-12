@@ -88,6 +88,7 @@ const Volume = (props) => {
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
+    
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
   // function getDivBreaks(divList) {

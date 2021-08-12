@@ -1,21 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import '../assets/styles/timeline.scss'
-
-  const monthNames = [
-    { name: "January", abbr: "Jan" },
-    { name: "Febuary", abbr: "Feb" },
-    { name: "March", abbr: "Mar" },
-    { name: "April", abbr: "Apr" },
-    { name: "May", abbr: "May" },
-    { name: "June", abbr: "Jun" },
-    { name: "July", abbr: "Jul" },
-    { name: "August", abbr: "Aug" },
-    { name: "September", abbr: "Sep" },
-    { name: "October", abbr: "Oct" },
-    { name: "November", abbr: "Nov" },
-    { name: "December", abbr: "Dec" },
-  ];
+import { months } from "../assets/data/globalVariables";
 /**
  *
  * @returns
@@ -46,7 +32,7 @@ const Timeline = (props) => {
                  <span class="index">{index + 1}</span>
                  {monthIndex !== null ? (
                    <span class="month">{`${
-                     monthNames[monthIndex - 1].abbr
+                     months[monthIndex - 1].abbr
                    } ${day} ${tentativeComma} `}</span>
                  ) : (
                    ""

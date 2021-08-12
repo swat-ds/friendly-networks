@@ -12,12 +12,10 @@ const journals = ({ data }) => {
     
     return (
       <Col style={{ border: "0.2px solid lightblue" }}>
-        <JournalCard route={"/" + node.parent.name} 
-        title="John Hunt Journal"
-        subtitle="1740" 
-        text="Then there was the first line of text which brought here" 
+        <JournalCard
+        node={node}
         index={index}
-        total ={nodes.length}
+        size ={nodes.length}
         ></JournalCard>
       </Col>
     );
@@ -37,6 +35,7 @@ export const data = graphql`
     allCetei {
       totalCount
       nodes {
+        prefixed
         parent {
           ... on File {
             id

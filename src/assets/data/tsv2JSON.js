@@ -2,8 +2,6 @@
  * Necessary modules to parse TSV (Tab Separated Value) and convert them to valid JSON objects
  */
 const fs = require("fs");
-const tsvNodes = fs.readFileSync("./dataTable.tsv", "utf8");
-const tsvLinks = fs.readFileSync("./relationshipTable.tsv", "utf8");
 const tsvTimeline = fs.readFileSync("./timeline.tsv", "utf8");
 const tsvConstellationsForInclusion = fs.readFileSync(
   "./constellationsForInclusion.tsv",
@@ -28,7 +26,7 @@ function tsvJSON(tsv, headerEmpty) {
   var result = [];
   var headers = lines[0].split("\t");
   //Last line is ignored, it's an empty line
-  for (var i = 1; i < lines.length-1; i++) {
+  for (var i = 1; i < lines.length; i++) {
     var obj = {};
     var currentLine = lines[i].split("\t");
     //Last header is ignored as it's empty
@@ -40,19 +38,9 @@ function tsvJSON(tsv, headerEmpty) {
 
   return JSON.stringify(result);
 }
-const jsonNodes = tsvJSON(tsvNodes, 1);
-const jsonLinks = tsvJSON(tsvLinks, 1);
 const jsonTimeline = tsvJSON(tsvTimeline, 0);
 const jsonConstellationsForInclusion = tsvJSON(tsvConstellationsForInclusion, 0);
 
-//Creates file 'dataTable.json' that contains the jsonNodes
-fs.writeFileSync("dataTable.json", jsonNodes, (err) =>{
-    if(err) throw err;
-})
-//Creates file 'relationshipTable.json' that contains the jsonLinks
-fs.writeFileSync("relationshipTable.json", jsonLinks, (err) => {
-  if (err) throw err;
-});
 fs.writeFileSync("timeline.json", jsonTimeline, (err) => {
   if (err) throw err;
 });

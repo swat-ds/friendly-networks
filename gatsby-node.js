@@ -4,14 +4,6 @@ const component = require.resolve(`./src/components/People.js`);
 
 let constellations = [];
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    node: {
-      fs: "empty",
-    },
-  });
-};
-
 exports.sourceNodes = async ({
   actions,
   createNodeId,

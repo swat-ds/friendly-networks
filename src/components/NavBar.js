@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
 import "../assets/styles/nav.scss";
 import logo from '../assets/images/logo.jpeg'
-import { pageLinks } from "../assets/data/pageLinks"
+import { pageLinks } from "../assets/data/globalVariables"
 
 import {
   Form,

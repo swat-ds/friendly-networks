@@ -1,7 +1,7 @@
 ## Our Beloved Friend:  Website for John Hunt’s Journal
 
 *  This project is dedicated to John Hunt, specifically digitally archiving journals he wrote throughout his life. John Hunt was an active member of the Society of Friends (colloquially known as the Quakers). John Hunt was born in 1740, the son of Robert and Abigail (Wood) Hunt of New Jersey. His father was a first cousin to the John Woolman (1720-1772). In 1763, John Hunt married Esther Warrington in the Chester meeting house, under the supervision of Evesham Monthly Meeting. He was a Quaker minister for more than 50 years and died in 1824. His memorial, published in 1841, highlighted his public testimony concerning pride and superfluity, and stated that he was particularly concerned with temperance.
-*  Besides his active presence as a Quaker, John Hunt was a farmer in New Jersey and a clergyman as well. 
+*  Besides his active presence as a Quaker, John Hunt was a farmer and carpenter in New Jersey. 
 
 *  Following William Penn's advice, John Hunt kept a journal for over half a century, beginning in 1770 and ending shortly before his death in 1824. This original work, penned in his own hand, is in the collections of Friends Historical Library. 
 
