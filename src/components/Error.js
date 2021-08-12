@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'gatsby'
 import "../assets/styles/error.scss";
 import { Row, Col, Button } from "react-bootstrap";
-import {pageLinks} from '../assets/data/pageLinks'
+import { pageLinks } from "../assets/data/globalVariables";
 
 const Error = () => {
   return (

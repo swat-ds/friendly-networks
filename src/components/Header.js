@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
-import { pageLinks } from "../assets/data/pageLinks";
+import { pageLinks } from "../assets/data/globalVariables";
 import "../assets/styles/styles.scss";
 import "../assets/styles/header.scss";
 

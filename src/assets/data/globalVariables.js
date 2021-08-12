@@ -38,3 +38,18 @@
      email: "circ@swarthmore.edu",
    },
  };
+
+ export const months = [
+    { name: "January", abbr: "Jan" },
+    { name: "Febuary", abbr: "Feb" },
+    { name: "March", abbr: "Mar" },
+    { name: "April", abbr: "Apr" },
+    { name: "May", abbr: "May" },
+    { name: "June", abbr: "Jun" },
+    { name: "July", abbr: "Jul" },
+    { name: "August", abbr: "Aug" },
+    { name: "September", abbr: "Sep" },
+    { name: "October", abbr: "Oct" },
+    { name: "November", abbr: "Nov" },
+    { name: "December", abbr: "Dec" },
+ ];

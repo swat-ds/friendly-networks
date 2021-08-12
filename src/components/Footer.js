@@ -1,11 +1,9 @@
 import React from "react";
 import {Link} from 'gatsby'
-
-
 import {
     Row
 } from 'react-bootstrap';
-import {pageLinks, contacts} from '../assets/data/pageLinks'
+import {pageLinks, contacts} from '../assets/data/globalVariables'
 import '../assets/styles/styles.scss'
 import "../assets/styles/footer.scss";
 
