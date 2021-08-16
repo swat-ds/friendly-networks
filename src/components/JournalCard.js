@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import "../assets/styles/card.scss";
 import { months } from "../assets/data/globalVariables";
+import {Button } from 'react-bootstrap'
+import {BsBoxArrowRight} from 'react-icons/bs'
 
 const parseString = require("xml2js").parseString;
 // function extractDate(header) {
@@ -60,10 +62,10 @@ const JournalCard = ({ node, index, size }) => {
       "tei-title"
     ][0]._.split(":")[0].split(",")[0] || "John Hunt Journal";
 
-  let date =
-    header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
-      "tei-date"
-    ][0]._.split("-") || "";
+  // let date =
+  //   header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
+  //     "tei-date"
+  //   ][0]._.split("-") || "";
 
   let detailedDate =
     header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
@@ -100,26 +102,47 @@ const JournalCard = ({ node, index, size }) => {
           <h5 className="card-title">
             {`${title}`}
             <br />
-            <br />
-            <small>from</small>
-            <br />
-            <br />
           </h5>
+          <hr class="card-hr" />
           <p className="card-subtitle mb-2">
             {/* `{}` */}
-            {beginningMonth ? <span>{`${months[beginningMonth-1].abbr} `}</span> : ""}
-            {beginningDay ? <span>{`${beginningDay}, `}</span> : ""}
-            {beginningYear ? <span>{`${beginningYear}`}</span> : ""}
-
-            {endingYear ? <span>{` to `}</span> : ""}
-
-            {endingMonth ? <span>{`${months[endingMonth-1].abbr} `}</span> : ""}
-            {endingDay ? <span>{`${endingDay}, `}</span> : ""}
-            {endingYear ? <span>{`${endingYear}`}</span> : ""}
+            <span>from {` `}</span>
+            {beginningMonth ? (
+              <span className="date">{`${
+                months[beginningMonth - 1].name
+              } `}</span>
+            ) : (
+              ""
+            )}
+            {beginningDay ? (
+              <span className="date">{`${beginningDay}, `}</span>
+            ) : (
+              ""
+            )}
+            {beginningYear ? (
+              <span className="date">{`${beginningYear}`}</span>
+            ) : (
+              ""
+            )}
+            <br />
+            {endingYear ? <span>to {` `}</span> : ""}
+            {endingMonth ? (
+              <span className="date">{`${months[endingMonth - 1].name} `}</span>
+            ) : (
+              ""
+            )}
+            {endingDay ? <span className="date">{`${endingDay}, `}</span> : ""}
+            {endingYear ? <span className="date">{`${endingYear}`}</span> : ""}
             {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
           </p>
           <p className="card-text">{text}</p>
-          <p className="text-muted">{`${index} out of ${size}`}</p>
+          <div className="card-footer">
+            <small
+              id="journal-card-footer-index"
+              className="text-muted"
+            >{`${index} out of ${size}`}</small>
+            <Button variant="outline-success"><BsBoxArrowRight/></Button>
+          </div>
         </div>
       </div>
     </Link>

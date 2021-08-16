@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
 import Fox from "../assets/images/george_fox.jpeg";
 import "../assets/styles/card.scss";
+import {BsBoxArrowRight} from 'react-icons/bs'
 
 /**
  * Creates a bootstrap card for each of the entity. Each card contains some brief info about the
@@ -40,15 +41,21 @@ const EntityCard = (props) => {
               ? entity.nameEntries[0].original
               : "Corporate Body"}
           </h5>
+          <hr class="card-hr" />
           <h6 className="card-subtitle mb-2">Card subtitle</h6>
           <p className="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <Button variant="outline-warning">Detail</Button>
-          <p className="text-muted">{`${
-            index + 1
-          } out of ${size}`}</p>
+          <div className="card-footer">
+            <small
+              id="entity-card-footer-index"
+              className="text-muted"
+            >{`${index} out of ${size}`}</small>
+            <Button variant="outline-success">
+              <BsBoxArrowRight />
+            </Button>
+          </div>
         </div>
       </div>
     </Link>

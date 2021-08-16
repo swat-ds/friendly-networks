@@ -8,6 +8,7 @@ body {
   text-decoration: none;
 }
 .card{
+  position: relative;
   text-decoration: none;
   color: white;
   text-align: center;
@@ -30,10 +31,23 @@ body {
  
 }
 
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #658E15 #fff;
+}
+
 .journal-card{
   height: 40vh;
   width: 18vw;
   margin-left: 2vw;
+}
+.relative-card{
+  text-decoration: none;
 }
 
 .card:hover{
@@ -54,5 +68,23 @@ body {
     70%{
      transform: perspective(1000px) rotateX(10deg) rotateY(2deg) rotateZ(-15deg)
      }
+}
+
+.date{
+  color: #10A8EC !important;
+  font-size: 18px;
+}
+
+.card-hr{
+  background-color: #FF8C00;
+  height: 2px !important;
+}
+.card-footer{
+  position: absolute;
+  width: 80%;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  bottom: 0;
 }
 @import "bootstrap";

@@ -10,24 +10,8 @@ const home = ({location}) => {
   console.log(location);
   return (
     <Layout>
-      <AnchorLink to="/#p1" title="Our team">
-        <p>Statement!</p>
-      </AnchorLink>
-
-      <AnchorLink to="/#alorem10" title="Our team">
-        <p>alorem10</p>
-      </AnchorLink>
-      <section id="testId" style={{border: "2px solid gray", height: "20em", width:"15em", overflow:"scroll",}}>
-        {Array.from({ length: 50 }).map((e, i) => (
-          <p id={"alorem" + i}>{i}. Lorem ipsum dolor sit amet.</p>
-        ))}
-      </section>
-
-      <br></br>
       <br />
-      <br />
-      <br />
-      <p id="p1">
+      <p>
         The essence of the Quakers Quakers believe that there is something of
         God in everybody and that each human being is of unique worth. This is
         why Quakers value all people equally, and oppose anything that may harm
