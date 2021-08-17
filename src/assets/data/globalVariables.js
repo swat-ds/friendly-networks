@@ -4,21 +4,30 @@
   * Each of this page can be found under the 'pages' folder, a direct child of the 'src'
   */
 
- export const pageLinks = {
-   about: "/about",
+ export const globalVariables = {
+   //Local links
+   about: "/about-project/about",
+   doc: "/about-project/documentation",
    contact: "/contact",
    error: "/404",
    home: "/",
    journals: "/journals",
    network: "/network",
    people: "/people",
-   timeline: "/timeline",
+   timeline: "/background/about-author/timeline",
+   essay: "/background/about-author/essay",
+   background: "/background/background",
+   bibliography: "/background/about-author/bibliography",
+   quaker_glossary: "/background/quakers/quaker_glossary",
+   quaker_meeting_structure: "/background/quakers/quaker_meeting_structure",
+
+   //External links
    swat: "https://www.swarthmore.edu/",
    fhl: "https://www.swarthmore.edu/friends-historical-library",
    lib: "https://www.swarthmore.edu/libraries",
    tricoLib:
      "https://digitalcollections.tricolib.brynmawr.edu/institution/swarthmore-college",
-     swatAddressMap: "https://goo.gl/maps/xmThPZhXkFwh9e2b9"
+   swatAddressMap: "https://goo.gl/maps/xmThPZhXkFwh9e2b9",
  };
 
  export const contacts = {

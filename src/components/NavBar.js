@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
 import "../assets/styles/nav.scss";
 import logo from '../assets/images/logo.jpeg'
-import { pageLinks } from "../assets/data/globalVariables"
+import { globalVariables } from "../assets/data/globalVariables"
 
 import {
   Form,
@@ -43,13 +43,13 @@ return (
             navbarScroll
           >
             <div id="explore">
-              <Link className="g-link" to={pageLinks.home}>
+              <Link className="g-link" to={globalVariables.home}>
                 Home
               </Link>
-              <Link className="g-link" to={pageLinks.about}>
+              <Link className="g-link" to={globalVariables.about}>
                 About
               </Link>
-              <Link className="g-link" to={pageLinks.contact}>
+              <Link className="g-link" to={globalVariables.contact}>
                 Contact
               </Link>
             </div>
@@ -64,24 +64,24 @@ return (
             <Button variant="outline-success">Search</Button>
           </Form>
           <div className="header-items-mobile">
-            <Link className="g-link" to="/journals">
+            <Link className="g-link" to={globalVariables.journals}>
               <div className="header-item" id="header-journal-mobile">
                 Journal
               </div>
             </Link>
-            <Link className="g-link" to="/people">
+            <Link className="g-link" to={globalVariables.people}>
               <div className="header-item" id="header-relative-mobile">
                 People
               </div>
             </Link>
-            <Link className="g-link" to="/network">
+            <Link className="g-link" to={globalVariables.network}>
               <div className="header-item" id="header-network-mobile">
                 Network
               </div>
             </Link>
-            <Link className="g-link" to="/timeline">
-              <div className="header-item" id="header-timeline-mobile">
-                Timeline
+            <Link className="g-link" to={globalVariables.background}>
+              <div className="header-item" id="header-background-mobile">
+                Background
               </div>
             </Link>
           </div>

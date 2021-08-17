@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import {
     Row
 } from 'react-bootstrap';
-import {pageLinks, contacts} from '../assets/data/globalVariables'
+import {globalVariables, contacts} from '../assets/data/globalVariables'
 import '../assets/styles/styles.scss'
 import "../assets/styles/footer.scss";
 
@@ -29,33 +29,33 @@ const Footer = () => {
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
                 <p>
-                  <Link to={pageLinks.home} className="g-link ">
+                  <Link to={globalVariables.home} className="g-link ">
                     Home
                   </Link>
-                  <Link to={pageLinks.about} className=" g-link ">
+                  <Link to={globalVariables.about} className=" g-link ">
                     About
                   </Link>
-                  <Link to={pageLinks.contact} className="g-link ">
+                  <Link to={globalVariables.contact} className="g-link ">
                     Contact
                   </Link>
                 </p>
                 <p>
-                  <Link to={pageLinks.swat} className="g-link ">
+                  <Link to={globalVariables.swat} className="g-link ">
                     Swarthmore College
                   </Link>
                 </p>
                 <p>
-                  <Link to={pageLinks.fhl} className="g-link ">
+                  <Link to={globalVariables.fhl} className="g-link ">
                     Friends Historical Library
                   </Link>
                 </p>
                 <p>
-                  <Link to={pageLinks.lib} className="g-link ">
+                  <Link to={globalVariables.lib} className="g-link ">
                     Swarthmore College Libraries
                   </Link>
                 </p>
                 <p>
-                  <Link to={pageLinks.tricLib} className="g-link ">
+                  <Link to={globalVariables.tricLib} className="g-link ">
                     Tri-College Library
                   </Link>
                 </p>
@@ -69,7 +69,7 @@ const Footer = () => {
                   <span>
                     {" "}
                     {`${contacts.swat.address}   ( `}
-                    <a className="g-link" href={pageLinks.swatAddressMap}>
+                    <a className="g-link" href={globalVariables.swatAddressMap}>
                       map
                     </a>
                     {` )`}

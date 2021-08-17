@@ -14,12 +14,13 @@
         padding: 4px;
         margin-top: 8px;
         border-radius: 3px;
-        width: 20vw;
+        width: 18vw;
         color: white;
         transition: all 1s ease-out;
     }
 
      #header-journal{
+         margin-left: 5px;
             background-color: darkorange;
         }
      #header-journal:hover,#header-journal:active{
@@ -44,16 +45,19 @@
             color: hsl(198, 89%, 49%);
             border: thin solid hsl(198, 89%, 49%);
     }
-
-    #header-timeline{
-            background-color:hsl(120, 59%, 41%);
+    
+     #header-background{
+         margin-right: 5px;
+        background-color:hsl(120, 59%, 41%);
         }
-     #header-timeline:hover, #header-timeline:active{
+     #header-background:hover, #header-background:active{
             background-color: white;
             color:hsl(120, 59%, 41%);
-            border: thin solid hsl(120, 59%, 41%);
+            border: thin solid hsl(120, 59%, 41%);;
     }
+    
 }
+
 
 @media only screen and (max-width: 990px) {
  .header-items{
