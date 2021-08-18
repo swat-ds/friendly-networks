@@ -13,41 +13,6 @@ const Bibliography = () => {
   return (
     <Row id="bib-row">
       <Col className="background-col">
-        <div className="scroll-links">
-          <AnchorLink className="g-link a-link" to="/background/allInOne#appendix-bib">
-            <span>Bibliography</span>
-          </AnchorLink>
-          <AnchorLink
-            className="g-link a-link"
-            to="/background/allInOne#appendix-essay"
-          >
-            <span>Essay</span>
-          </AnchorLink>
-          <AnchorLink
-            className="g-link a-link"
-            to="/background/allInOne#appendix-glossary"
-          >
-            <span>Glossary</span>
-          </AnchorLink>
-          <AnchorLink
-            className="g-link a-link"
-            to="/background/allInOne#appendix-structure"
-          >
-            <span>Structure</span>
-          </AnchorLink>
-          <AnchorLink
-            className="g-link a-link"
-            to="/background/allInOne#appendix-timeline"
-          >
-            <span>Timeline</span>
-          </AnchorLink>
-          <AnchorLink
-            className="g-link a-link"
-            to="/background/allInOne#appendix-tabulated"
-          >
-            <span>Tabulated Timeline</span>
-          </AnchorLink>
-        </div>
         <br />
         <h4 className="background-text">Background: Bibliography</h4>
         <div className="appendix-text" id="appendix-bib">
