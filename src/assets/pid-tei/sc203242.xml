@@ -79,7 +79,7 @@
 <text>
 <body>
 <pb n="01" facs="sc203591"/>
-<div type="entry" n="1788-02-10"><head>February 1788</head><dateline><date when="1788-02-10">10th of the Second Month, 1788.</date></dateline><p> Was First Day. Went <rs key="w6wx87x7">my wife</rs> [page missing] which was a solid favored time I think. Went to see <persName key="w6wt9jhx">Enoch Evans</persName>.</p></div>
+<div type="entry" n="1788-02-10"><head>February 1788</head><dateline><date when="1788-02-10">10th of the Second Month, 1788.</date></dateline><p> Was First Day. Went <rs key="w6wx87x7">my wife</rs> and I to Crop<damage><supplied>well meeting</supplied></damage> which was a solid favored time I think. Went to see <persName key="w6wt9jhx">Enoch Evans</persName>.</p></div>
 <div type="entry" n="1788-02-11"><dateline><date when="1788-02-11">11.</date></dateline><p> At work at screws for cheese press.</p></div>
 <div type="entry" n="1788-02-12"><dateline><date when="1788-02-12">12.</date></dateline><p> Was our weekday meeting. William Venable and Rachel Croshan was married. <persName key="w63s1j4g">Solomon Gaskill</persName> was there and I think it was lively good meeting. I am ready to think the scoffer and gainsayer, if any was there, was put to silence.</p></div>
 <div type="entry" n="1788-02-13"><dateline><date when="1788-02-13">13.</date></dateline><p> Went to make a pump for William Wright. <persName key="w63s1j4g">Solomon Gaskill</persName> went with us to <persName key="w6c82qz0">Joshua Evans</persName>.</p></div>
@@ -88,6 +88,6 @@
 <div type="entry" n="1788-02-17"><dateline><date when="1788-02-17">17.</date></dateline><p> Was First Day at our meeting. <persName key="w63s1j4g">Solomon Gaskill</persName> was there and I thought we came off pretty well, a favor.</p></div>
 <div type="entry" n="1788-02-18"><dateline><date when="1788-02-18">18.</date></dateline><p> About home at work in the shop.</p></div>
 <div type="entry" n="1788-02-19"><dateline><date when="1788-02-19">19.</date></dateline><p> Was our weekday meeting. Joshua Stokes and Deborah Hooten was married. <persName key="w63s1j4g">Solomon Gaskill</persName> was favored and I had satisfaction. Came off bravely considering all things. Many spectators and a light company but I think I have seen since where it might have been better though no cause of complaint.</p></div>
-    <div type="entry" n="1788-02-20/1788-02-23"><dateline><date from="1788-02-20" to="1788-02-23">20:21:22:23.</date></dateline><p> About home except visited D. Higbe. <persName key="w6hf8m7k">Joseph Thorington</persName> was to see us and Jo Buzby to Quarter.</p><p>[Page cut off at the bottom.]</p></div>
+    <div type="entry" n="1788-02-20/1788-02-23"><dateline><date from="1788-02-20" to="1788-02-23">20:21:22:23.</date></dateline><p> About home except visited D. Higbe. <persName key="w6hf8m7k">Joseph Thorington</persName> was to see us etc.<damage><gap/></damage>Burlingtong Quarter<damage><gap/></damage></p></div>
 </body></text>
 </TEI>
