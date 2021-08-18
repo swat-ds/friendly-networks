@@ -4,13 +4,23 @@ body{
     margin-top:20px;
 }
 
-#timeline-row{
-    background-color: #EEEEEE;
+#timeline-col{
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .main-timeline {
     position: relative;
-    border: thin solid lightblue;
+    // border: thin solid lightblue;
+  width: 70vw;
+  padding: 3vw;
+  margin-bottom: 3vh;
+  background-color: #F1F1F1;
+  border-top: 0.1vw solid hsl(335, 61%, 43%);
+  border-right: 0.1vw solid hsl(335, 61%, 43%);
+  border-bottom: 0.1vw solid hsl(335, 61%, 43%);
+  border-left: 0.5vw solid hsl(335, 61%, 43%);
 }
 
 .main-timeline:before {

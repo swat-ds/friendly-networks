@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import '../assets/styles/timeline.scss'
 import { months } from "../assets/data/globalVariables";
 /**
@@ -49,12 +49,16 @@ const Timeline = (props) => {
     }
     const renderTimeline = () =>{
        return (
-         <div class="main-timeline">{timelineData.map(renderEvent)}</div>
+         <div class="main-timeline" id="appendix-timeline">{timelineData.map(renderEvent)}</div>
        );
     }
   return (
+    
     <Row id="timeline-row">
-      {renderTimeline()}
+      <Col id="timeline-col">
+        <h4>Visualization of the events</h4>
+        {renderTimeline()}
+        </Col>
     </Row>
   );
 };

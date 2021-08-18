@@ -17,6 +17,7 @@
    timeline: "/background/about-author/timeline",
    essay: "/background/about-author/essay",
    background: "/background/background",
+   all_in_one: "/background/allInOne",
    bibliography: "/background/about-author/bibliography",
    quaker_glossary: "/background/quakers/quaker_glossary",
    quaker_meeting_structure: "/background/quakers/quaker_meeting_structure",

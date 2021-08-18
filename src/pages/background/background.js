@@ -17,7 +17,10 @@ const background = () => {
             <Link className="g-link" to={globalVariables.timeline}>
               <div className="d-flex background-item" id="background-timeline">
                 <h3>Timeline</h3>
-                <p>Highlights some of the key events occurred in a chronological manner </p>
+                <p>
+                  Highlights some of the key events occurred in a chronological
+                  manner{" "}
+                </p>
               </div>
             </Link>
             <Link className="g-link" to={globalVariables.essay}>
@@ -50,6 +53,17 @@ const background = () => {
                 id="background-quaker-meeting-structure"
               >
                 <h3>Quaker Meeting Structures</h3>
+              </div>
+            </Link>
+            <Link
+              className="g-link"
+              to={globalVariables.all_in_one}
+            >
+              <div
+                className="d-flex background-item"
+                id="background-quaker-meeting-structure"
+              >
+                <h3>All</h3>
               </div>
             </Link>
           </Col>

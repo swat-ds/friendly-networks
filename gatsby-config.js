@@ -10,6 +10,9 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     // `gatsby-plugin-gatsby-cloud`,
     //the elastic search plugin is in this object
     // {
@@ -63,6 +66,7 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         duration: 1000,
+        offset: -100,
       },
     },
   ],
