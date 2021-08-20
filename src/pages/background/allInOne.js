@@ -2,6 +2,7 @@ import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "../../assets/styles/background.scss";
 import Layout from "../../components/Layout";
+import SideScroll from "../../components/SideScroll";
 import Bibliography from "../../components/Bibliography";
 import Essay from "../../components/Essay";
 import Glossary from "../../components/Glossary";
@@ -10,6 +11,20 @@ import Timeline from "../../components/Timeline";
 import TabulatedTimeline from "../../components/TabulatedTimeline";
 const timelineData = require("../../assets/data/timeline.json");
 
+const links = [
+  {
+    title: "Bibliography",
+    link: "/background/allInOne#appendix-bib",
+  },
+  {
+    title: "Bibliography",
+    link: "/background/allInOne#appendix-bib",
+  },
+  {
+    title: "Bibliography",
+    link: "/background/allInOne#appendix-bib",
+  },
+];
 const allInOne = () => {
   return (
     <Layout>

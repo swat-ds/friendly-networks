@@ -49,7 +49,7 @@ const Timeline = (props) => {
     }
     const renderTimeline = () =>{
        return (
-         <div class="main-timeline" id="appendix-timeline">{timelineData.map(renderEvent)}</div>
+         <div class="main-timeline" id="timeline">{timelineData.map(renderEvent)}</div>
        );
     }
   return (

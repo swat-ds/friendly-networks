@@ -6,7 +6,7 @@ import { globalVariables } from "../assets/data/globalVariables";
 import "../assets/styles/styles.scss";
 import "../assets/styles/header.scss";
 
-import { Row, Col, DropdownButton } from "react-bootstrap";
+import { Row, Col, Dropdown} from "react-bootstrap";
 
 
 /**
@@ -36,11 +36,43 @@ const Header = (props) => {
             <h3>Network</h3>
           </div>
         </Link>
-        <Link className="g-link" to={globalVariables.background}>
-          <div className="d-flex header-item" id="header-background">
-            <h3>Background</h3>
-          </div>
-        </Link>
+        <Dropdown>
+          <Dropdown.Toggle
+            className="header-dropdown"
+            variant="outline-success"
+            id="dropdown-basic"
+          >
+            Background
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item
+              className="d-flex header-item"
+              id="header-background"
+              href=""
+            >
+              <Link
+                className="g-link dropdown-link"
+                to={globalVariables.author_bg}
+              >
+                john Hunt
+              </Link>
+             
+            </Dropdown.Item>
+            <Dropdown.Item
+              className="d-flex header-item"
+              id="header-background"
+              href=""
+            >
+              <Link
+                className="g-link dropdown-link"
+                to={globalVariables.quaker_bg}
+              >
+                Quakers
+              </Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Col>
     </Row>
   );

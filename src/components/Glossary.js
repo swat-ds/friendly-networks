@@ -14,7 +14,7 @@ const Glossary = () => {
       <Col className="background-col">
         <br />
         <h4 className="background-text">Background: Terms</h4>
-        <div className="appendix-text" id="appendix-glossary">
+        <div className="appendix-text" id="quaker-glossary">
           {/* <h6 className="background-text">Terms: </h6>
             <br />
             {appendixData.appendixB.terms.map(term)} */}

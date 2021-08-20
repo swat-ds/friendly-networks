@@ -9,7 +9,7 @@
     justify-content:space-evenly;
 
     .header-item{
-         display: flex;
+        display: flex;
         justify-content: center;
         padding: 4px;
         margin-top: 8px;
@@ -17,6 +17,10 @@
         width: 18vw;
         color: white;
         transition: all 1s ease-out;
+    }
+    .header-dropdown{
+        width: 18vw;
+        margin-top: 18px;
     }
 
      #header-journal{
@@ -48,12 +52,17 @@
     
      #header-background{
          margin-right: 5px;
-        background-color:hsl(120, 59%, 41%);
+        background-color: #808B42;
+          .dropdown-link{
+            color: white;
+        }
         }
      #header-background:hover, #header-background:active{
             background-color: white;
-            color:hsl(120, 59%, 41%);
-            border: thin solid hsl(120, 59%, 41%);;
+            border: thin solid  #808B42;
+              .dropdown-link{
+            color:  #808B42;
+        }
     }
     
 }
