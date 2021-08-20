@@ -14,7 +14,7 @@ const MeetingStructure = () => {
       <Col className="background-col">
         <h4 className="background-text">Background: Structures of Society of Friends</h4>
         <br />
-        <div className="appendix-text" id="appendix-structure">
+        <div className="appendix-text" id="meeting-structure">
           {/* <h6 className="background-text">Structure: </h6>
               <br />
               <section className="background-text">

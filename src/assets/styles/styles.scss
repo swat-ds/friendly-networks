@@ -6,7 +6,7 @@ body {
 
 
 #main-container{
-  background-color: #ffffff;
+  background-color: #f5f0f0;
 }
 
 #logo{
@@ -28,16 +28,19 @@ body {
   border-color: hsl(207, 87%, 45%);;
 }
 
-.btn-g-link{
+  .g-link2 {
   padding: 5px;
-  color: black;
+  color: hsl(0, 5%, 16%);
   text-decoration: none;
-  transition: color ease-in-out 0.1s;
-  
-    &:hover{
-      color: white;
-    }
-  }
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.5s;
+
+}
+  .g-link2:hover{
+  color: hsl(0, 4%, 37%);
+  border-color: hsl(207, 87%, 45%);;
+}
+
 
 
 

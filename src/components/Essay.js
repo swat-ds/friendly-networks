@@ -15,24 +15,11 @@ const Essay = () => {
         <br />
         <h4 className="background-text">Background: Essay</h4>
         <div className="appendix-text" id="appendix-essay">
-
-          <p>
-            Our Beloved Friend
-          </p>
-          <p >
-            The Journals of John Hunt, 1770-1824
-          </p>
-      
-          <p>
-            Volume 1
-          </p>
-          <p >
-             Christopher Densmore, editor
-          </p>
-          <p>
-            2018
-          </p>
-         
+          <p id="essay-title">Our Beloved Friend</p>
+          <p>The Journals of John Hunt, 1770-1824</p>
+          <p>Volume 1</p>
+          <p>Christopher Densmore, editor</p>
+          <p>2018</p>
           <p class="c39">
             <span class="c23">Friends Historical Library</span>
           </p>
@@ -57,9 +44,8 @@ const Essay = () => {
               without prior written permission.
             </span>
           </p>
-
           <hr style={{ pageBreakBefore: "always", display: "none" }} />
-          <p class="c39">
+          <p class="c39" id="monthly-meeting-testimonies">
             <span class="c1">
               Testimony of Chester Monthly Meeting, New Jersey, concerning John
               Hunt,
@@ -211,154 +197,8 @@ const Essay = () => {
               </a>
             </sup>
           </p>
-        
           <hr style={{ pageBreakBefore: "always", display: "none" }} />
-          <h1 class="c24 c31" id="h.t2crdwf5hv8s">
-            <span class="c18 c13">Table of Contents</span>
-          </h1>
-          <h3 class="c31 c76" id="h.kh27w0tgtvbk">
-            <span class="c18 c13">VOLUME 1</span>
-          </h3>
-          <p class="c37 c54">
-            <span class="c18 c13">
-              Preface&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.
-            </span>
-          </p>
-          <p class="c48 c43">
-            <span class="c13">John Hunt Manuscript Journal 1770 to 1800</span>
-            <span class="c9">
-              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1770 7mo-1773 2mo
-              ……………………………………………...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1773 3mo-1777 1mo
-              ……………………………………………...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;52.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1776 12mo-1787 12mo
-              ……………………………………………113&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">1788 3mo-1792 3mo ……………………………………………....305.</span>
-          </p>
-          <p class="c19">
-            <span class="c9">1792 4mo-1800 8mo ……………………………………………....390.</span>
-          </p>
-          
-          <h3 class="c48 c31" id="h.ear638ksu12k">
-            <span class="c18 c13">VOLUME 2</span>
-          </h3>
-          
-          <p class="c48 c43">
-            <span class="c13">John Hunt Manuscript Journal 1800 to 1812</span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1805 5mo &amp; n.d. &nbsp;……………………………………………..........516.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1806 8mo ……………………………………………........................571.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1808 1mo ……………………………………………........................519.
-            </span>
-          </p>
-          <p class="c20">
-            <span class="c60 c65">
-              John Hunt Manuscript Journal 1812 – 1824
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">1812 7mo 8-1816 2mo ….…………………………………………522.</span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1817 7mo-1818 5mo &nbsp;……………………………………………....635.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1818 5mo-1818 9mo
-              &nbsp;……………………………………………....656.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1819 2mo-1820 12mo &nbsp;……………………………………………..668.{" "}
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1820 1mo-1820 7mo &nbsp;……………………………………………....704.{" "}
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1820 7mo-1821 8mo &nbsp;……………………………………………....723.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1821 8mo-1822 1mo &nbsp;…………………………………………….... 747.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1822 6mo-1823 4mo ……………………………………………......763.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1823 4mo 27-1823 7mo …..………………………………………...798.
-            </span>
-          </p>
-          <p class="c19">
-            <span class="c9">
-              1824 6mo-1824 10mo &nbsp;……………………………………………...812.
-            </span>
-          </p>
-          <p class="c48 c43 c61 c69">
-            <span class="c13">
-              Appendix A: Chronology of the Life of John Hunt (1740-1824)
-            </span>
-            <span class="c10">…………818.</span>
-          </p>
-          <p class="c48 c43 c61">
-            <span class="c13 c21">
-              Appendix B: Friends in the late 18th &amp; early 19th centuries
-            </span>
-            <span class="c10 c21">…………….819.</span>
-          </p>
-          <p class="c54 c43">
-            <span class="c13 c21">
-              Appendix C: John Hunt Manuscripts in Friends Historical Library
-            </span>
-            <span class="c10 c21">…...822.</span>
-          </p>
-          <hr style={{ pageBreakBefore: "always", display: "none" }} />
-          <p class="c20">
-            <span class="c18 c13">&nbsp;</span>
-          </p>
-          
-         
-          <hr style={{ pageBreakBefore: "always", display: "none" }} />
-          
-          
-          <h1 class="c31 c40" id="h.78n8vlobegh4">
+          <h1 class="c31 c40" id="preface">
             <span class="c18 c13">Preface</span>
           </h1>
           <StaticImage
@@ -366,7 +206,6 @@ const Essay = () => {
             alt=""
             src="../assets/images/image6.jpg"
           />
-
           <a id="t.684031840da5c4a8914dad4a2ae5411291ae6ca0"></a>
           <a id="t.0"></a>
           <table class="c38">
@@ -393,7 +232,7 @@ const Essay = () => {
           <p class="c6">
             <span class="c9"></span>
           </p>
-          <h2 class="c17" id="h.vo332kas1cet">
+          <h2 class="c17" id="journal-form">
             <span class="c18 c13">The Form of the Journal</span>
           </h2>
           <p class="c30">
@@ -488,7 +327,7 @@ const Essay = () => {
               of FHL.
             </span>
           </p>
-          <h2 class="c17" id="h.rm737omdnqwb">
+          <h2 class="c17" id="acknowledgment">
             <span class="c18 c13">Acknowledgements</span>
           </h2>
           <p class="c30">
@@ -513,7 +352,7 @@ const Essay = () => {
               of ways from time to time.
             </span>
           </p>
-          <h2 class="c17" id="h.flm6ba2mabiq">
+          <h2 class="c17" id="editorial-practice">
             <span class="c18 c13">Editorial Practices</span>
           </h2>
           <p class="c0">
@@ -559,7 +398,7 @@ const Essay = () => {
               brackets and with a horizontal line.{" "}
             </span>
           </p>
-          <h2 class="c17" id="h.i3cgowe4j3uu">
+          <h2 class="c17" id="introduction">
             <span class="c18 c13">Introducing John Hunt</span>
           </h2>
           <p class="c0">
@@ -573,13 +412,11 @@ const Essay = () => {
               his life and times.
             </span>
           </p>
-          
-            
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image4.jpg"
-              />{" "}
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image4.jpg"
+          />{" "}
           <a id="t.1da658536e55dc963e6dc8e34d5ccfea4b59c35b"></a>
           <a id="t.1"></a>
           <table class="c38">
@@ -702,7 +539,7 @@ const Essay = () => {
               the meetinghouse.{" "}
             </span>
           </p>
-          <h2 class="c31 c45" id="h.npr0oddzc4jz">
+          <h2 class="c31 c45" id="why-keep">
             <span class="c18 c13">“Advantages”: Why Keep a Journal? </span>
           </h2>
           <p class="c30">
@@ -926,15 +763,14 @@ const Essay = () => {
               &nbsp;text is less than five percent of the original.{" "}
             </span>
           </p>
-          <h2 class="c0 c31" id="h.y1hh0b3rb7mf">
+          <h2 class="c0 c31" id="family">
             <span class="c13 c18">&nbsp;“About Home:” The Hunt Family</span>
           </h2>
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image10.jpg"
-              />{" "}
-          
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image10.jpg"
+          />{" "}
           <p class="c0">
             <span class="c9">
               The oldest son of Robert and Abigail Hunt of Haddonfield Monthly
@@ -986,12 +822,11 @@ const Essay = () => {
               intimacy between Hunt and his children.{" "}
             </span>
           </p>
-          
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image8.jpg"
-              />{" "}
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image8.jpg"
+          />{" "}
           <p class="c0">
             <span class="c9">
               Hunt’s family connections extended far beyond his immediate kin.
@@ -1047,7 +882,7 @@ const Essay = () => {
               reading.{" "}
             </span>
           </p>
-          <h2 class="c0 c31" id="h.84wscuaxjrsm">
+          <h2 class="c0 c31" id="quaker-world">
             <span class="c18 c13">The Quaker World of John Hunt</span>
           </h2>
           <p class="c30">
@@ -1057,13 +892,11 @@ const Essay = () => {
               and his family were members of Chester Preparative Meeting.{" "}
             </span>
           </p>
-          
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image5.jpg"
-              />{" "}
-           
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image5.jpg"
+          />{" "}
           <a id="t.931d261e44363a8eabc32222f4df16a440ede2b1"></a>
           <a id="t.2"></a>
           <table class="c44">
@@ -1116,13 +949,11 @@ const Essay = () => {
               to hear Friends who were traveling in the ministry.{" "}
             </span>
           </p>
-         
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image1.jpg"
-              />{" "}
-           
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image1.jpg"
+          />{" "}
           <a id="t.33fe548e47c4a05aa7f2501d3d06335b3b572f38"></a>
           <a id="t.3"></a>
           <table class="c38">
@@ -1200,13 +1031,11 @@ const Essay = () => {
               as they felt “led by the spirit”.{" "}
             </span>
           </p>
-         
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image3.jpg"
-              />{" "}
-          
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image3.jpg"
+          />{" "}
           <a id="t.8c6e5255e146558d727ba9831b54be319c2b307a"></a>
           <a id="t.4"></a>
           <table class="c44">
@@ -1283,13 +1112,11 @@ const Essay = () => {
               unfortunately, this account has not been located.
             </span>
           </p>
-         
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image7.jpg"
-              />{" "}
-            
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image7.jpg"
+          />{" "}
           <a id="t.c72ab674946f61a8b483e16915b82619ef21fe85"></a>
           <a id="t.5"></a>
           <table class="c67">
@@ -1319,7 +1146,7 @@ const Essay = () => {
           <p class="c6">
             <span class="c9"></span>
           </p>
-          <h2 class="c0 c31" id="h.edrd6bynizfl">
+          <h2 class="c0 c31" id="dear-friends">
             <span class="c18 c13">“Dear Friends:” Mentors and Role Models</span>
           </h2>
           <p class="c0">
@@ -1364,13 +1191,11 @@ const Essay = () => {
               been a
             </span>
           </p>
-          
-              <StaticImage
-                className="essay-image"
-                alt=""
-                src="../assets/images/image2.jpg"
-              />{" "}
-           
+          <StaticImage
+            className="essay-image"
+            alt=""
+            src="../assets/images/image2.jpg"
+          />{" "}
           <a id="t.10c2b686184e4865c8a0ba980ad8a9396627d0f1"></a>
           <a id="t.6"></a>
           <table class="c67">
@@ -1471,7 +1296,7 @@ const Essay = () => {
               </a>
             </sup>
           </p>
-          <p class="c0">
+          <p class="c0" id="essay-testimony-quakers">
             <span class="c51 c13 c21">
               “Everything that is Required of Us:” Quaker Testimonies
             </span>
@@ -1599,9 +1424,7 @@ const Essay = () => {
               </a>
             </sup>
           </p>
-          
-              <StaticImage alt="" src="../assets/images/image9.jpg" />{" "}
-           
+          <StaticImage alt="" src="../assets/images/image9.jpg" />{" "}
           <a id="t.636bc44ddc6b260dd0cd71ce2342fa5892412ca8"></a>
           <a id="t.7"></a>
           <table class="c42">
@@ -1791,7 +1614,7 @@ const Essay = () => {
               paid by an unknown party, believed to be a Doctor Benevitte.{" "}
             </span>
           </p>
-          <h2 class="c40 c31" id="h.duxaql3wxixt">
+          <h2 class="c40 c31" id="hunt-bookshelf">
             <span class="c18 c13">Hunt’s Bookshelf</span>
           </h2>
           <p class="c30">

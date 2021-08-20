@@ -14,13 +14,15 @@
    journals: "/journals",
    network: "/network",
    people: "/people",
-   timeline: "/background/about-author/timeline",
-   essay: "/background/about-author/essay",
+   timeline: "/background/author-background/timeline",
+   author_bg: "/background/author-bg/author-bg",
+   quaker_bg: "/background/quaker-bg",
    background: "/background/background",
    all_in_one: "/background/allInOne",
-   bibliography: "/background/about-author/bibliography",
-   quaker_glossary: "/background/quakers/quaker_glossary",
-   quaker_meeting_structure: "/background/quakers/quaker_meeting_structure",
+   bibliography: "/background/author-background/bibliography",
+   quaker_glossary: "/background/quaker-background/quaker_glossary",
+   quaker_meeting_structure:
+     "/background/quaker-background/quaker_meeting_structure",
 
    //External links
    swat: "https://www.swarthmore.edu/",
