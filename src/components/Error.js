@@ -2,13 +2,14 @@ import React from "react";
 import {Link} from 'gatsby'
 import "../assets/styles/error.scss";
 import { Row, Col, Button } from "react-bootstrap";
-import { pageLinks } from "../assets/data/globalVariables";
+import { globalVariables } from "../assets/data/globalVariables";
 
 const Error = () => {
   return (
     <Row id="error-row">
       <Col>
-        <svg id="error-svg"
+        <svg
+          id="error-svg"
           width="380px"
           height="500px"
           viewBox="0 0 837 1045"
@@ -79,12 +80,12 @@ const Error = () => {
           Oop! Looks like the page you came to a page that does not exist
         </p>
         <div className="error-buttons">
-          <Link to={pageLinks.home}>
+          <Link to={globalVariables.home}>
             <Button variant="outline-info" id="error-go-back">
               Go Back
             </Button>
           </Link>
-          <Link to={pageLinks.home}>
+          <Link to={globalVariables.home}>
             <Button variant="outline-info" id="error-go-home">
               Go Home
             </Button>

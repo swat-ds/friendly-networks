@@ -4,6 +4,7 @@ import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
 // import { isExportSpecifier } from "typescript";
 import "../../assets/styles/ceteicean.scss";
 import {Link} from 'gatsby'
+import {OverlayTrigger, Tooltip, Button} from 'react-bootstrap'
 
 export const EntryDate = (props) => {
   return (
@@ -149,7 +150,22 @@ export const Figure = (props) => {
 export const Note = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
+      {/* <div className="journal-note-div">
+        <p className="journal-note">
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </p>
+      </div> */}
+      <div class="wrapper">
+        note...
+        <div class="tooltip">
+          {" "}
+          <p className="journal-note">
+            Note...
+            {/* <span>{props.teiNode.attributes.getNamedItem("facs").value}</span> */}
+            {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+          </p>
+        </div>
+      </div>
     </Behavior>
   );
 };
