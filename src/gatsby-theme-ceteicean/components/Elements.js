@@ -148,26 +148,39 @@ export const Figure = (props) => {
 };
 
 export const Note = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      {/* <div className="journal-note-div">
-        <p className="journal-note">
+
+  let noteType = props.teiNode.attributes.getNamedItem("type").value || "Note";
+  if(noteType === "structure"){
+    return (
+      <Behavior>
+        <span>{"["} </span>
+        <span style={{fontStyle: "italic"}}>
           {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        </p>
-      </div> */}
-      <div class="wrapper">
-        note...
-        <div class="tooltip">
-          {" "}
-          <p className="journal-note">
-            Note...
-            {/* <span>{props.teiNode.attributes.getNamedItem("facs").value}</span> */}
-            {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-          </p>
+        </span>
+        <span>{"]"}</span>
+      </Behavior>
+    );
+  }
+  let title = 'Note...';
+  if (noteType === "authorial"){
+    title = "marginal note..."
+  }
+  if(noteType === "editorial"){
+    title = "editors' note...";
+  }
+    return (
+      <Behavior node={props.teiNode}>
+        <div class="wrapper">
+          <span>[{title}]</span>
+          <div class="tooltip">
+            <p className="journal-note">
+              {/* <span>{props.teiNode.attributes.getNamedItem("facs").value}</span> */}
+              {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+            </p>
+          </div>
         </div>
-      </div>
-    </Behavior>
-  );
+      </Behavior>
+    );
 };
 
 export const Table = (props) => {
