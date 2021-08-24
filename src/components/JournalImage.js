@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Image } from "react-bootstrap";
 import "../assets/styles/styles.scss";
+
 // import "../assets/styles/image.scss"
 
 
@@ -10,7 +11,7 @@ import "../assets/styles/styles.scss";
  * @param {*} imageId the id of the image which to be rendered in the OpenSeadragon
  * @returns a @Col
  */
-const JournalImage = ({ imageId, id }) => {
+const JournalImage = ({ imageId}) => {
 
   //Getting the id ready to feed to viewer
   const baseURl = "https://digitalcollections.tricolib.brynmawr.edu/iiif/2/";
@@ -22,7 +23,11 @@ const JournalImage = ({ imageId, id }) => {
   //Initialize the viewer
 
 
-  return <Image id={id} src={image} alt="journal image" fluid></Image>;
+  return (
+
+      <Image id="image" src={image} alt="journal image" fluid></Image>
+   
+  );
 };
 
 export default JournalImage;

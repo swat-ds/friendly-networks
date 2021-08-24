@@ -7,7 +7,8 @@ import { BsArrowRight, BsArrowLeft, BsTriangleFill } from "react-icons/bs";
 import { Container, Row, Button, Col } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
-import JournalImage from "./Image";
+import JournalImage from "./JournalImage";
+import OpenSeadragonViewer from "./OpenSeadragonViewer";
 
 import { scroller } from "react-scroll";
 
@@ -244,7 +245,7 @@ const Volume = (props) => {
             {/* </IconContext.Provider> */}
           </div>
           <div id="journal-image">
-            <JournalImage id="image" imageId={currentPid} />
+            <JournalImage imageId={currentPid} />
           </div>
         </Col>
 

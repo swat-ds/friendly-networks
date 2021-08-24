@@ -1,18 +1,18 @@
-// // import OpenSeadragon from "openseadragon";
-// import React, { useEffect, useState } from "react";
-// import { Col } from "react-bootstrap";
-// import "../assets/styles/styles.scss";
+// import OpenSeadragon from "openseadragon";
+import React, { useEffect, useState } from "react";
+import { Col } from "react-bootstrap";
+import "../assets/styles/styles.scss";
 
-// // const OpenSeadragon  = null;
-// // if (typeof window !== `undefined`) {
-// //    OpenSeadragon = require("openseadragon");
-// // }
-// /**
-//  * 
-//  * @param {*} imageId the id of the image which to be rendered in the OpenSeadragon 
-//  * @returns a @Col 
-//  */
-// export const OpenSeadragonViewer = ({ imageId }) => {
+// const OpenSeadragon  = null;
+// if (typeof window !== `undefined`) {
+//    OpenSeadragon = require("openseadragon");
+// }
+/**
+ * 
+ * @param {*} imageId the id of the image which to be rendered in the OpenSeadragon 
+ * @returns a @Col 
+ */
+export const OpenSeadragonViewer = ({ imageId }) => {
 //   const [viewer, setViewer] = useState(null);
 
 //   //Getting the id ready to feed to viewer
@@ -31,41 +31,38 @@
 
 //   //Initialize the viewer
 // useEffect(() => {
-//     const InitOpenSeadragon = () => {
-//       viewer && viewer.destroy();
-//       setViewer(
-//         OpenSeadragon({
-//           id: "openseadragon",
-//           prefixUrl: "openseadragon/images/",
-//           preserveViewport: true,
-//           visibilityRatio: 1,
-//           minZoomLevel: 1,
-//           defaultZoomLevel: 1,
-//           sequenceMode: false,
-//           tileSources: [image],
-//         })
-//       );
-//     };
- 
-//     InitOpenSeadragon();
-//     return () => {
-//       viewer && viewer.destroy();
-//     };
+//    if(typeof document !="undefined"){
+//       const InitOpenSeadragon = () => {
+//         viewer && viewer.destroy();
+//         setViewer(
+//           OpenSeadragon({
+//             id: "openseadragon",
+//             prefixUrl: "openseadragon/images/",
+//             preserveViewport: true,
+//             visibilityRatio: 1,
+//             minZoomLevel: 1,
+//             defaultZoomLevel: 1,
+//             sequenceMode: false,
+//             tileSources: [image],
+//           })
+//         );
+//       };
 
+//       InitOpenSeadragon();
+//       return () => {
+//         viewer && viewer.destroy();
+//       };
+
+//    }
 // },[])
 
 
-//   return <Col id="openseadragon"></Col>;
-// };
+// if(typeof window !== "undefined"){
+//   console.log(typeof window);
+//     return <Col id="openseadragon"></Col>;
+// }
+return null;
+};
 
-import React from 'react'
-
-const OpenSeadragonViewer = () => {
-  return (
-    <div>
-      <h1>None</h1>
-    </div>
-  )
-}
 
 export default OpenSeadragonViewer;
