@@ -11,40 +11,29 @@ import "../../assets/styles/styles.scss";
 
 
 const ShadowedCeteicean = ({pageContext, data, location}) => {
-  console.log(location);
-
   let hash = location.hash;
 
-  const routes = {
-    "tei-TEI": El.TEI,
+
+    const routes = {
     "tei-teiheader": El.teiHeader,
-    "tei-text": El.Text,
     "tei-body": El.Body,
+    "tei-head": El.Head,
     "tei-pb": El.Pb,
     "tei-div": El.Entry,
     "tei-persname": El.Name,
+    "tei-gap": El.Gap,
+    "tei-del": El.Del,
+    "tei-add": El.Add,
+    "tei-supplied": El.Supplied,
     "tei-dateline": El.Dateline,
-    "tei-date": El.EntryDate,
     "tei-p": El.Para,
-    "tei-emph": El.Emph,
     "tei-floatingtext": El.FloatingText,
     "tei-quote": El.Quote,
-    "tei-l": El.I,
-    "tei-figure": El.Figure,
+    // "tei-l": El.L,
     "tei-note": El.Note,
-    "tei-table": El.Table,
-    "tei-row": El.Row,
-    "tei-cell": El.Cell,
-    "tei-list": El.List,
-    "tei-item": El.Item,
-    "tei-label": El.Label,
     "tei-title": El.Title,
     "tei-said": El.Said,
   }; 
-  // for (let index = 0; index < hrs.length; index++) {
-  //   console.log(hrs[index].height)
-    
-  // }
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
