@@ -90,6 +90,7 @@ body {
 
 .wrapper .tooltip {
   background: #1496bb;
+  cursor: pointer;
   position: absolute;
   font-style: italic;
   bottom: 100%;
@@ -101,10 +102,9 @@ body {
   margin-bottom: 15px;
   opacity: 0;
   padding: 10px;
-  pointer-events: none;
   transform: translateY(15px);
   transform: translateX(30px);
-  transition: all .25s ease-out;
+  transition: all 2s ease-out 1s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 /* This bridges the gap so you can mouse into the tooltip without it disappearing */
@@ -133,6 +133,7 @@ body {
 }
 
 .wrapper:hover .tooltip {
+  transition: all 1s ease-in-out 0s;
   opacity: 1;
 }
 
