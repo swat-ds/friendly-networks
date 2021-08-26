@@ -166,7 +166,11 @@ export const Dateline = (props) => {
 export const Para = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <p style={{marginTop: "0px"}}>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
+      <span style={{ marginTop: "0px" }}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </span>
+      <br />
+      <br />
     </Behavior>
   );
 };

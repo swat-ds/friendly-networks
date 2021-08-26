@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import Layout from "./Layout";
 import RelationCardDeck from './RelationCardDeck'
 import Network from "./Network";
-import "../assets/styles/deck.scss";
+import "../assets/styles/entity.scss";
 import Fox from "../assets/images/george_fox.jpeg";
 
 const parseString = require("xml2js").parseString;
@@ -169,7 +169,7 @@ const People = (props) => {
         const names = pieces.filter(
           (dep, index) => index !== pieces.length - 1 && dep
         );
-        return <li>{` ${names.join()}; `}</li>;
+        return names.length>0? <li>{` ${names.join()}; `}</li>: null;
       }
     }
 
@@ -304,6 +304,10 @@ const People = (props) => {
         );
       }
     };
+
+    const renderNote = () =>{
+      
+    }
 
     /**
      * Render a single subject from the @subjects
@@ -442,20 +446,25 @@ const People = (props) => {
     return (
       <Layout>
         <Row>
-          <Col>
-            <div>
-              <img id="bio-image" src={Fox} alt="" />
-            </div>
-            <h3>{nameEntries[0].original}</h3>
-            {renderNameVariants()}
-            {renderDates()}
-            {renderPlaces()}
-            {renderOccupations()}
-            {renderSubjects()}
-            {renderSameAsRelations()}
-            {renderGender()}
+          <Col id="entity-name">
+            <h1>{nameEntries[0].original}</h1>
           </Col>
-          <Col>{renderBio()}</Col>
+        </Row>
+        <Row>
+          <Col>
+            <div id="bio-data-container">
+              {renderNameVariants()}
+              {renderDates()}
+              {renderPlaces()}
+              {renderOccupations()}
+              {renderSubjects()}
+              {renderSameAsRelations()}
+              {renderGender()}
+            </div>
+          </Col>
+          <Col>
+            <div id="bio-container">{renderBio()}</div>
+          </Col>
         </Row>
         <Row>
           <h4>{`${bioDataLabels.relations}: `}</h4>

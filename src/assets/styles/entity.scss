@@ -1,0 +1,62 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(136, 146, 146);
+}
+
+#bio-container{
+  height: 85vh;
+  overflow: scroll;
+  padding: 2em;
+  border-left: 5px solid #A7026A;
+  border-right: 0.5px solid #A7026A;
+  border-top: 0.5px solid #A7026A;
+  border-bottom: 0.5px solid #A7026A;
+
+}
+#bio-data-container{
+      height: 85vh;
+  overflow: scroll;
+  padding: 2em;
+  border-right: 5px solid #A7026A;
+  border-left: 0.5px solid #A7026A;
+  border-top: 0.5px solid #A7026A;
+  border-bottom: 0.5px solid #A7026A;
+}
+
+#all-entity-row{
+    background-color: hsl(240, 7%, 81%);
+    // height: 70vh;
+}
+
+#entity-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.card-entity-col{
+    display: flex;
+    flex-direction: row;
+    // height: 70vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    // border: 2px solid #128DE5;
+    transition: filter ease-in-out 5s;
+}  
+
+//select all @card children of @card-entity when hovered on it. If the hovered cursor on a particular @card ignore that one
+.card-entity-col:hover  .card:not(:hover){
+    // filter: blur(2px);
+    filter: opacity(60%)
+}
+
+
+
+
+@import 'bootstrap';

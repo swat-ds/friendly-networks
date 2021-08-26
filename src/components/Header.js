@@ -38,6 +38,7 @@ const Header = (props) => {
         </Link>
         <Dropdown>
           <Dropdown.Toggle
+          style={{height: "6vh"}}
             className="header-dropdown"
             variant="outline-success"
             id="dropdown-basic"

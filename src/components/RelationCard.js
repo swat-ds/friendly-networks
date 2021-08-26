@@ -18,6 +18,10 @@ const RelationCard = ({relation, index, size }) => {
   console.log(arkId)
 
     let type='';
+    let note = '';
+    if("note" in relation){
+      note = relation.note;
+    }
     let content = ''
     if(relation){
         type = relation.type?.term ? relation.type?.term : type
@@ -31,8 +35,9 @@ const RelationCard = ({relation, index, size }) => {
               {type}
             </h5>
             <hr class="card-hr" />
-            <h6 className="card-subtitle mb-2">Card subtitle</h6>
-            <p className="card-text">{content}</p>
+            <h6 className="card-subtitle mb-2">{content}</h6>
+            <br/>
+            <p className="card-text">{note}</p>
             <div className="card-footer">
               <small
                 id="entity-card-footer-index"

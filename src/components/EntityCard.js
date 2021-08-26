@@ -16,42 +16,35 @@ import {BsBoxArrowRight} from 'react-icons/bs'
 const EntityCard = (props) => {
   const { entity, index, size} = props;
 
+
+  let name = '';
+  let date = '';
+
+  if("nameEntries" in entity){
+    let entries = entity.nameEntries[0].original.split(",");
+    if(entity.entityType.term === "person"){
+      date =  entries.pop();
+      name = entries.join(",");
+    }
+    else{
+      name = "Corporate Body";
+    }
+  }
+
   return (
     <Link className="g-link" to={"/entities/" + entity.arkId}>
-      {/* <Card className="card entity-card rounded" border="info" style={{borderRadius: "10px"}}>
-        <Card.Img className="image-card"
-          variant="top"
-          src={Fox}
-        />
-        <Card.Body>
-          <Card.Title>
-            {entity.entityType.term === "person"
-              ? entity.nameEntries[0].original
-              : "Corporate Body"}
-          </Card.Title>
-
-          <Card.Text>First 100 chars of bio should be here</Card.Text>
-        </Card.Body>
-      </Card> */}
       <div className="card entity-card">
         <div className="card-body">
           <h5 className="card-title">
-            {" "}
-            {entity.entityType.term === "person"
-              ? entity.nameEntries[0].original
-              : "Corporate Body"}
+            {name}
           </h5>
           <hr class="card-hr" />
-          <h6 className="card-subtitle mb-2">Card subtitle</h6>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h6 className="card-subtitle mb-2">{date}</h6>
           <div className="card-footer">
             <small
               id="entity-card-footer-index"
               className="text-muted"
-            >{`${index} out of ${size}`}</small>
+            >{`${index+1} out of ${size}`}</small>
             <Button variant="outline-success">
               <BsBoxArrowRight />
             </Button>
