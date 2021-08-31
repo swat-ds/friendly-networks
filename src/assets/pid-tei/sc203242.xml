@@ -55,7 +55,7 @@
             </editorialDecl>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="1788">1788</date></creation>
+            <creation>Original written <date from="1788-02-10" to="1788-02-23">1788 2mo. 10 - 1788 2mo. 23</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
