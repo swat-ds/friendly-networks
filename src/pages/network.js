@@ -31,10 +31,12 @@ const createD3Nodes = (constellations) => {
       id: constellation.arkId || null,
       label: constellation.nameEntries[0].original || null,
       gender: constellation.genders? constellation.genders[0].term.term : null,
+      degree: constellation.relations.length,
       occupations: constellation.occupations?.reduce((labels, occupation)=>{
         let occupationLabel = occupation.term?.term ? occupation.term.term + "; " : "";
         return labels + occupationLabel;
-      }, '') || null ///=> label; lable2; lable3
+      }, '') || null, ///=> label; lable2; lable3
+
     };
 
     if(node.id != null){
@@ -58,9 +60,6 @@ const createD3Links = (source, target, label ) => {
   return link;
 };
 
-function isTargetInIds(arkIds, target){
-  return arkIds.includes(target);
-}
 
 const network = ({data}) => {
 

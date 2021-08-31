@@ -67,9 +67,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label == "acquaintanceOf" ? "#00563f" : "#A7026A";
+        return link.label == "acquaintanceOf" || link.label == "correspondedWith"  ||  link.label == "associatedWith"? "#00563f": "#A7026A";
       })
-      .attr("stroke-width", 7);
+      .attr("stroke-width", 7)
 
     //Bind a circle to each node
     const circles = svg
@@ -85,8 +85,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .call(dragInteraction)
       .style("stroke", "#bd0fdb")
       .style("stroke-width", 2)
-      .style("stroke-dasharray", "2,3")
-      .style("fill", "#13a5d6");
+      .style("fill", "#2287c9");
+      
 
     //Bind the name of each person to the corresponding node
     const text = svg
