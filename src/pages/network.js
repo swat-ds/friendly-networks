@@ -30,13 +30,22 @@ const createD3Nodes = (constellations) => {
     let node = {
       id: constellation.arkId || null,
       label: constellation.nameEntries[0].original || null,
-      gender: constellation.genders? constellation.genders[0].term.term : null,
-      degree: constellation.relations.length,
-      occupations: constellation.occupations?.reduce((labels, occupation)=>{
-        let occupationLabel = occupation.term?.term ? occupation.term.term + "; " : "";
-        return labels + occupationLabel;
-      }, '') || null, ///=> label; lable2; lable3
-
+      gender: constellation.genders ? constellation.genders[0].term.term : null,
+      degree: constellation.relations?.length || null,
+      occupations:
+        constellation.occupations?.reduce((labels, occupation) => {
+          let occupationLabel = occupation.term?.term
+            ? occupation.term.term + "; "
+            : "";
+          return labels + occupationLabel;
+        }, "") || null, ///=> label; lable2; lable3
+      subjects:
+        constellation.subjects?.reduce((labels, subject) => {
+          let subjectLabel = subject.term?.term
+            ? subject.term.term + "; "
+            : "";
+          return labels + subjectLabel;
+        }, "") || null, ///=> label; lable2; lable3
     };
 
     if(node.id != null){
@@ -177,6 +186,11 @@ export const query = graphql`
           id
         }
         occupations {
+          term {
+            term
+          }
+        }
+        subjects {
           term {
             term
           }
