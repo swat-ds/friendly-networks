@@ -21,7 +21,7 @@ let preparedNodes = [];
     parseString(teiHeaderBody, function (err, result) {
       header = result;
     });
-    console.log(header);
+    // console.log(header);
 
     let route = "/" + node.parent.name;
 
@@ -35,12 +35,12 @@ let preparedNodes = [];
     //     "tei-date"
     //   ][0]._.split("-") || "";
 
-    let detailedDate =
+    let detailedDateStr =
       header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
         "tei-title"
       ][0]._.split(":")[0].split(",")[1];
 
-    detailedDate = detailedDate.split("-");
+    let detailedDate = detailedDateStr.split("-");
     let beginningDate = detailedDate[0].trim().split(/\s+/);
     let endingDate =
       detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
@@ -76,7 +76,7 @@ let preparedNodes = [];
       endYear: endingYear ,
 
       description: text,
-      detailedDate: detailedDate
+      detailedDateStr: detailedDateStr
     };
 
     return preparedNode;
@@ -86,8 +86,10 @@ const journals = ({ data }) => {
   nodes.forEach(node => preparedNodes.push(prepareNode(node)))
 
   preparedNodes.sort((a, b)=>{
-    return a.startYear > b.startYear? 1: -1;
+    return a.detailedDateStr > b.detailedDateStr ? 1 : -1;
   })
+
+  // preparedNodes.forEach((node) => console.log(node.detailedDateStr));
   const renderJournals = (node, index)=>{
     
     return (

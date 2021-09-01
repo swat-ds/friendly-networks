@@ -43,10 +43,10 @@ const JournalCard = ({ node, index, size }) => {
             {node.endMonth ? (
               <span className="date">{`${months[node.endMonth - 1].name} `}</span>
             ) : (
-              "Unknown"
+              ''
             )}
             {node.endDay ? <span className="date">{`${node.endDay}, `}</span> : ""}
-            {node.endYear ? <span className="date">{`${node.endYear}`}</span> : ""}
+            {node.endYear ? <span className="date">{`${node.endYear}`}</span> : "Unknown"}
             {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
           </p>
           <p className="card-text">{node.description}</p>

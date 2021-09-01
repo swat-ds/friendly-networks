@@ -23,7 +23,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
   const [links, setLinks] = useState(linksInJSON);
 
   const svgRef = useRef(); // A reference to refer to the SVG element
-  let width = 600, height = 600; //height of the svg
+  let width = 600, height = 1200; //height of the svg
 
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
@@ -67,9 +67,22 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label == "acquaintanceOf" || link.label == "correspondedWith"  ||  link.label == "associatedWith"? "#00563f": "#A7026A";
+        return link.label == "acquaintanceOf" ||
+          link.label == "correspondedWith" ||
+          link.label == "associatedWith"
+          ? "#03AC93"
+          : "#A7026A"; //purple
       })
-      .attr("stroke-width", 7)
+      .attr("stroke-width", 3)
+      .attr("class", link =>{
+        if(link.label == "acquaintanceOf" ||
+          link.label == "correspondedWith" ||
+          link.label == "associatedWith"){
+            return "non-family-line";
+          }
+          return "family-line";
+      })
+      // .style("stroke-dasharray", "3, 3");
 
     //Bind a circle to each node
     const circles = svg
@@ -80,12 +93,18 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .append("circle")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        return node.id == centralFigure ? 50 : 30; //Accentuates the centralFigure with bigger radius
+        return node.id == centralFigure ? 60 : Math.log(node.degree)*15; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       .style("stroke", "#bd0fdb")
-      .style("stroke-width", 2)
-      .style("fill", "#2287c9");
+      .style("stroke-width", 1)
+      .style("fill", (node) =>{
+        if (node.id == centralFigure) return "#FF8C00";
+        if(node.subjects.includes("ministry") ){
+          return "#79990e";
+        }
+        return "#10A8EC";
+      });
       
 
     //Bind the name of each person to the corresponding node
@@ -107,7 +126,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
             : nameParts[nameParts.length - 1];
         let fullName = `${firstName} ${lastName}`;
         return fullName;
-      });
+      })
+      .attr("class", "node-text")
+      .style("fill", "green")
     
       //Render the simulation
     simulation.on("tick", () => {
@@ -123,8 +144,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
 
   return (
     <Row id="network-row">
-        <svg id="network-svg" ref={svgRef}></svg>
-
+      <svg
+        style={{ backgroundColor: "#111420" }}
+        id="network-svg"
+        ref={svgRef}
+      ></svg>
     </Row>
   );
 };
