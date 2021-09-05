@@ -470,11 +470,11 @@ const People = (props) => {
           <h4>{`${bioDataLabels.relations}: `}</h4>
         </Row>
         {renderRelatives()}
-        <Network
+        {/* <Network
           nodesInJSON={nodes}
           linksInJSON={links}
           centralFigure={id}
-        ></Network>
+        ></Network> */}
       </Layout>
     );
   };

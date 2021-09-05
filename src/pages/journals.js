@@ -7,7 +7,6 @@ import "../assets/styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;
 
-let preparedNodes = [];
   function prepareNode(node){
     let header;
     //Variables to extract the header from the prefix
@@ -82,6 +81,7 @@ let preparedNodes = [];
     return preparedNode;
   }
 const journals = ({ data }) => {
+  let preparedNodes = [];
   const nodes = data.allCetei.nodes;
   nodes.forEach(node => preparedNodes.push(prepareNode(node)))
 

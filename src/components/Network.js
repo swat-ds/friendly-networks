@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
 import * as d3 from "d3";
-import { Container, Row, Col } from "react-bootstrap";
+import {Row,Col, OverlayTrigger, Tooltip, Button, Popover } from "react-bootstrap";
 import "../assets/styles/styles.scss";
 import '../assets/styles/network.scss'
 
@@ -73,15 +73,16 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
           ? "#03AC93"
           : "#A7026A"; //purple
       })
-      .attr("stroke-width", 3)
-      .attr("class", link =>{
-        if(link.label == "acquaintanceOf" ||
+      .attr("stroke-width", (link) => {
+        if (
+          link.label == "acquaintanceOf" ||
           link.label == "correspondedWith" ||
-          link.label == "associatedWith"){
-            return "non-family-line";
-          }
-          return "family-line";
-      })
+          link.label == "associatedWith"
+        ) {
+          return 4;
+        }
+        return 2;
+      });
       // .style("stroke-dasharray", "3, 3");
 
     //Bind a circle to each node
@@ -127,8 +128,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
         let fullName = `${firstName} ${lastName}`;
         return fullName;
       })
-      .attr("class", "node-text")
-      .style("fill", "green")
+      .style("fill", "#9bc9c9");
     
       //Render the simulation
     simulation.on("tick", () => {
@@ -140,15 +140,37 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
         .attr("x2", (link) => link.target.x)
         .attr("y2", (link) => link.target.y);
     });
-  }, [nodes, links]); //End of useEffect()
+  }, []); //End of useEffect()
 
   return (
     <Row id="network-row">
-      <svg
-        style={{ backgroundColor: "#111420" }}
-        id="network-svg"
-        ref={svgRef}
-      ></svg>
+      <Col>
+        {["top", "right", "bottom", "left"].map((placement) => (
+          <OverlayTrigger
+            trigger="click"
+            key={placement}
+            placement={placement}
+            overlay={
+              <Popover id={`popover-positioned-${placement}`}>
+                <Popover.Header as="h3">{`Popover ${placement}`}</Popover.Header>
+                <Popover.Body>
+                  <strong>Holy guacamole!</strong> Check this info.
+                </Popover.Body>
+              </Popover>
+            }
+          >
+            <Button variant="secondary">Popover on {placement}</Button>
+          </OverlayTrigger>
+        ))}
+      </Col>
+
+      <Col>
+        <svg
+          style={{ backgroundColor: "#111420" }}
+          id="network-svg"
+          ref={svgRef}
+        ></svg>
+      </Col>
     </Row>
   );
 };
