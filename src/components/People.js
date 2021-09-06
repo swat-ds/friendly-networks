@@ -385,7 +385,10 @@ const People = (props) => {
      * @returns the relation from the @relations with the component of RelativeCard
      */
     const renderRelatives = () => {
-      return <RelationCardDeck relationDeck={relations}></RelationCardDeck>;
+      if(relations){
+        return <RelationCardDeck relationDeck={relations}></RelationCardDeck>;
+      }
+      return null;
     };
 
     /**
