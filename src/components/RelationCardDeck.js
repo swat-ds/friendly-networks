@@ -5,71 +5,54 @@ import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
 import "../assets/styles/entity.scss";
 import RelationCard from "./RelationCard";
 
-//default deck size
-let handSize = 4;
-let topCardIndex = 0;
+
 
 const RelationCardDeck = ({ relationDeck }) => {
 
-  //Adjusting handSize best on the length of deck
-  if(relationDeck.length >= 10){
-    handSize = 8;
-  }
 
-  let bottomCardIndex = topCardIndex + handSize - 1; // 3
+  const renderEntityRow = (relation, index) => {
 
-  const [currentDeck, setCurrentDeck] = useState(
-    relationDeck.slice(topCardIndex, bottomCardIndex + 1)
-  );
-
-  const handleRightArrowClick = () => {
-
-
-    topCardIndex = bottomCardIndex + 1; // => 3+1 = 4
-    bottomCardIndex = topCardIndex + handSize - 1; // => 4 + 4-1 = 7;
-    setCurrentDeck(relationDeck.slice(topCardIndex, bottomCardIndex + 1))
-  };
-  const handleLeftArrowClick = () => {
-    // console.log(topCardIndex, bottomCardIndex);
-    // console.log(nodes[topCardIndex]);
-    // console.log(nodes[bottomCardIndex]);
-    //4
-    bottomCardIndex = topCardIndex - 1; // => 4-1 = 3
-    topCardIndex = bottomCardIndex - handSize + 1; // => 3 - 4 +1 = 0
-    setCurrentDeck(relationDeck.slice(topCardIndex, bottomCardIndex + 1)); // (0, 4)
-  };
-  
-  let cardIndex = topCardIndex;
-  const renderCard = (relation, _) => {
+    let type = "unknown";
+    let note = "unknown";
+    let name = "unknown";
+    let date = "unknown";
+    let arkId = "";
+    if ("note" in relation) {
+      note = relation.note;
+    }
+    let content = "";
+    if (relation) {
+      type = relation.type?.term ? relation.type?.term : type;
+      content = relation.content ? relation.content : content;
+      arkId = relation.targetArkID.split("/").pop();
+      if (content != "unknown") {
+        content = content.split(",");
+        date = content.pop();
+        name = content.join(",");
+      }
+    }
+    
     return (
-      <RelationCard
-        relation={relation}
-        index={cardIndex++}
-        size={relationDeck.length}
-      ></RelationCard>
+      <tr scope="row">
+        <td>{date}</td>
+        <td>
+            <Link className="g-link" to={"/entities/" + arkId}>{name}</Link>
+        </td>
+        <td>{type}</td>
+        <td>{note}</td>
+        <td>
+          <a href="#" class="more">
+            SNACC Link
+          </a>
+        </td>
+      </tr>
     );
   };
-  const renderDeck = () => {
-    return (
-      <Col style={{margin: "2vw"}}xs={10}>
-        <div class="card-entity-col">
-          {currentDeck.slice(0, currentDeck.length / 2).map(renderCard)}
-        </div>
-        <div>
-          {" "}
-          <div class="card-entity-col">
-            {currentDeck
-              .slice(currentDeck.length / 2, currentDeck.length)
-              .map(renderCard)}
-          </div>
-        </div>
-      </Col>
-    );
-  };
+
 
   return (
-    <Row id="all-entity-row">
-      <Col id="left-arrow-col">
+    <Row id="main-row">
+      {/* <Col id="left-arrow-col">
         <div
           id="left-triangle-arrow"
           onClick={() => handleLeftArrowClick()}
@@ -83,7 +66,25 @@ const RelationCardDeck = ({ relationDeck }) => {
           id="right-triangle-arrow"
           onClick={() => handleRightArrowClick()}
         ></div>
-      </Col>
+      </Col> */}
+
+      <div class="table-responsive">
+        <table class="table table-striped custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Name</th>
+              <th scope="col">Relation Type</th>
+              <th scope="col">Note</th>
+              <th scope="col">External Source</th>
+              {/* <th scope="col">Link</th> */}
+            </tr>
+          </thead>
+          <tbody>
+            {relationDeck.map(renderEntityRow)}
+          </tbody>
+        </table>
+      </div>
     </Row>
   );
 };

@@ -5,9 +5,7 @@ import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from './RelationCardDeck'
-import Network from "./Network";
 import "../assets/styles/entity.scss";
-import Fox from "../assets/images/george_fox.jpeg";
 
 const parseString = require("xml2js").parseString;
 
@@ -46,6 +44,7 @@ const People = (props) => {
     relations,
     genders,
     sameAsRelations,
+    allArks
   } = props.pageContext;
 
   /**
@@ -385,7 +384,21 @@ const People = (props) => {
      * @returns the relation from the @relations with the component of RelativeCard
      */
     const renderRelatives = () => {
-      return <RelationCardDeck relationDeck={relations}></RelationCardDeck>;
+      console.log(relations.length);
+      let existentRelations = []
+      for(let r of relations){
+        let arkId = r.targetArkID.split("/").pop();
+        if(allArks.includes(arkId)){
+          existentRelations.push(r);
+        }
+      }
+      console.log(existentRelations.length);
+      if(existentRelations.length > 0){
+        return (
+          <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
+        );
+      }
+      return null;
     };
 
     /**
@@ -467,7 +480,8 @@ const People = (props) => {
           </Col>
         </Row>
         <Row>
-          <h4>{`${bioDataLabels.relations}: `}</h4>
+          <br/>
+          <h4 style={{ color: "#d6d0d0" }}>{`${bioDataLabels.relations}: `}</h4>
         </Row>
         {renderRelatives()}
         {/* <Network

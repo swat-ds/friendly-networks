@@ -1,8 +1,8 @@
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(203, 206, 206);
-}
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #3c373e;
+  font-weight: 300; }
 
 .g-link{
   text-decoration: none;
@@ -51,12 +51,13 @@ body {
 }
 .relative-card{
   text-decoration: none;
+  height: 20vh;
 }
 
 .card:hover{
     // transform: scale(2, 2);
     // transform: perspective(1000px) rotateX(10deg) rotateY(4deg) rotateZ(-20deg)
-    animation: magic 3s infinite alternate ease-in-out;
+    animation: magic 3s alternate ease-in-out;
 }
 
 @keyframes magic {
@@ -90,4 +91,81 @@ body {
   justify-content: space-between;
   bottom: 0;
 }
+
+
+
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px;
+  color: #fff; }
+
+.custom-table {
+  min-width: 900px; }
+  .custom-table thead tr, .custom-table thead th {
+    padding-bottom: 30px;
+    border-top: none;
+    border-bottom: none !important;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .custom-table tbody th, .custom-table tbody td {
+    color: #777;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 300;
+    border: none;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .custom-table tbody th small, .custom-table tbody td small {
+      color: rgba(255, 255, 255, 0.3);
+      font-weight: 300; }
+    .custom-table tbody th a, .custom-table tbody td a {
+      color: rgba(255, 255, 255, 0.3); }
+    .custom-table tbody th .more, .custom-table tbody td .more {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .2rem; }
+  .custom-table tbody tr {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .custom-table tbody tr:hover td, .custom-table tbody tr:focus td {
+      color: #fff; }
+      .custom-table tbody tr:hover td a, .custom-table tbody tr:focus td a {
+        color: #fdd114; }
+      .custom-table tbody tr:hover td .more, .custom-table tbody tr:focus td .more {
+        color: #fdd114; }
+  .custom-table .td-box-wrap {
+    padding: 0; }
+  .custom-table .box {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .custom-table .box td, .custom-table .box th {
+      border: none !important; }
+
 @import "bootstrap";
