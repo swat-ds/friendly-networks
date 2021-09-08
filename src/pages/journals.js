@@ -93,7 +93,7 @@ const journals = ({ data }) => {
   const renderJournals = (node, index)=>{
     
     return (
-      <Col style={{ border: "0.2px solid lightblue" }}>
+      <Col style={{ border: "0.1px solid gray" }}>
         <JournalCard
         node={node}
         index={index}
@@ -105,7 +105,7 @@ const journals = ({ data }) => {
 
   return (
       <Layout>
-       <Row md={4} id="journal-card-row">
+       <Row md={4} id="main-row">
          {preparedNodes.map(renderJournals)}
        </Row>
       </Layout>

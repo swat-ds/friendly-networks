@@ -8,7 +8,7 @@ import { Row, Col, Button } from "react-bootstrap";
 const about = () => {
   return (
     <Layout>
-      <Row>
+      <Row id="main-row">
         <Col>
           <h3>An Ambitious project for our Our Beloved Friend John Hunt</h3>
           <br />

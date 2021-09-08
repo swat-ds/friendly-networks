@@ -229,7 +229,7 @@ const Volume = (props) => {
 
   return (
     <Layout>
-      <Row id="image-journal-row">
+      <Row id="main-row">
         <Col id="image-col">
           <div id="image-tool">
             {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
@@ -276,17 +276,25 @@ const Volume = (props) => {
       </Row>
       <Row id="journal-pagination-row">
         <Col>
-          <Button variant="outline-primary" onClick={() => getPrevCetei()}>
-            <Link className="btn-g-link" to={"/" + cetei}>
+          <Button variant="outline-warning" onClick={() => getPrevCetei()}>
+            <Link
+              style={{ color: "white" }}
+              className="btn-g-link"
+              to={"/" + cetei}
+            >
               Previous Journal
             </Link>
           </Button>
           <Button
             id="next-journal"
-            variant="outline-primary"
+            variant="outline-warning"
             onClick={() => getNextCetei()}
           >
-            <Link className="btn-g-link" to={"/" + cetei}>
+            <Link
+              style={{ color: "white" }}
+              className="btn-g-link"
+              to={"/" + cetei}
+            >
               Next Journal
             </Link>
           </Button>

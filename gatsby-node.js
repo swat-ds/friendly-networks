@@ -73,8 +73,6 @@ console.log(constellations.length)
 };
 
 
-
-
 //Create pages for each entity, depends on the creation of entity nodes above
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -171,25 +169,31 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-  for (const node of result.data.allConstellation.nodes) {
-    createPage({
-      path: `entities/${node.arkId}`,
-      component,
-      context: {
-        id: node.id,
-        arkId: node.arkId,
-        nameEntries: node.nameEntries,
-        occupations: node.occupations,
-        entityType: node.entityType,
-        biogHists: node.biogHists,
-        places: node.places,
-        relations: node.relations,
-        sameAsRelations: node.sameAsRelations,
-        resourceRelations: node.resourceRelations,
-        subjects: node.subjects,
-        genders: node.genders,
-        dates: node.dates,
-      },
-    });
+  let arks = []
+  for (const node of result.data.allConstellation.nodes){
+    arks.push(node.arkId);
   }
+  console.log(arks.length);
+    for (const node of result.data.allConstellation.nodes) {
+      createPage({
+        path: `entities/${node.arkId}`,
+        component,
+        context: {
+          id: node.id,
+          arkId: node.arkId,
+          nameEntries: node.nameEntries,
+          occupations: node.occupations,
+          entityType: node.entityType,
+          biogHists: node.biogHists,
+          places: node.places,
+          relations: node.relations,
+          sameAsRelations: node.sameAsRelations,
+          resourceRelations: node.resourceRelations,
+          subjects: node.subjects,
+          genders: node.genders,
+          dates: node.dates,
+          allArks: arks,
+        },
+      });
+    }
 };

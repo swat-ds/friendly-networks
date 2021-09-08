@@ -74,11 +74,9 @@ body {
   justify-content: center;
   height: 85vh;
   border-left: 0.5px solid #A7026A;
-  border-right: 5px solid #A7026A;
+  border-right: 5px solid #4d0c35;
   border-top: 0.5px solid #A7026A;
   border-bottom: 0.5px solid #A7026A;
-  background-color: hsl(0, 0%, 57%);
-
 }
 
 
@@ -112,10 +110,11 @@ body {
   height: 85vh;
   overflow: scroll;
   padding: 2em;
-  border-left: 5px solid #A7026A;
+  border-left: 5px solid #4d0c35;
   border-right: 0.5px solid #A7026A;
   border-top: 0.5px solid #A7026A;
   border-bottom: 0.5px solid #A7026A;
+  color: rgb(214, 208, 208);
 }
 
 #journal-pagination-row{
@@ -124,7 +123,6 @@ body {
   float: right;
 }
 }
-
 
 
 
