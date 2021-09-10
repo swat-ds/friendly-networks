@@ -384,10 +384,6 @@ const People = (props) => {
      * @returns the relation from the @relations with the component of RelativeCard
      */
     const renderRelatives = () => {
-<<<<<<< HEAD
-      if(relations){
-        return <RelationCardDeck relationDeck={relations}></RelationCardDeck>;
-=======
       console.log(relations.length);
       let existentRelations = []
       for(let r of relations){
@@ -401,7 +397,6 @@ const People = (props) => {
         return (
           <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
         );
->>>>>>> network
       }
       return null;
     };

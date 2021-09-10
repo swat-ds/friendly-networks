@@ -6,28 +6,6 @@ import "../assets/styles/entity.scss";
 import RelationCard from "./RelationCard";
 
 
-<<<<<<< HEAD
-const RelationCardDeck = ({ relationDeck }) => {
-
-
-
-  const renderCard = (relation, index) => {
-    return (
-      <RelationCard
-        relation={relation}
-        index={index+1}
-        size={relationDeck.length}
-      ></RelationCard>
-    );
-  };
-  const renderDeck = () => {
-    return (
-      <Col style={{margin: "2vw"}}xs={10}>
-        <div class="card-entity-col">
-          {relationDeck.map(renderCard)}
-        </div>
-      </Col>
-=======
 
 const RelationCardDeck = ({ relationDeck }) => {
 
@@ -68,16 +46,11 @@ const RelationCardDeck = ({ relationDeck }) => {
           </a>
         </td>
       </tr>
->>>>>>> network
     );
   };
 
 
   return (
-<<<<<<< HEAD
-    <Row id="all-entity-row">
-      {renderDeck()}
-=======
     <Row id="main-row">
       {/* <Col id="left-arrow-col">
         <div
@@ -112,7 +85,6 @@ const RelationCardDeck = ({ relationDeck }) => {
           </tbody>
         </table>
       </div>
->>>>>>> network
     </Row>
   );
 };

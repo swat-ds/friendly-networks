@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useState, useEffect } from "react";
 import * as d3 from "d3";
 import {Row,Col, OverlayTrigger, Tooltip, Button, Popover } from "react-bootstrap";
-import "../assets/styles/styles.scss";
+// import "../assets/styles/styles.scss";
 import '../assets/styles/network.scss'
 
 
@@ -56,7 +56,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
     const dragInteraction = d3.drag().on("drag", (event, node) => {
       node.fx = event.x;
       node.fy = event.y;
-      simulation.alpha(.2);
+      simulation.alpha(0.2);
       simulation.restart();
     });
     //Bind a line to each link
@@ -83,30 +83,72 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
         }
         return 2;
       });
-      // .style("stroke-dasharray", "3, 3");
+    // .style("stroke-dasharray", "3, 3");
 
     //Bind a circle to each node
-    const circles = svg
+    const nodeWrapper = svg
       .append("g")
-      .selectAll("circle")
+      .attr("class", "nodes")
+      .selectAll(".node")
       .data(nodes)
       .enter()
+      .append("g")
+      .attr("class", "nodeWrapper");
+
+    const circles = nodeWrapper
       .append("circle")
+      .attr("class", "node")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        return node.id == centralFigure ? 60 : Math.log(node.degree)*15; //Accentuates the centralFigure with bigger radius
+        return node.id == centralFigure ? 60 : Math.log(node.degree) * 15; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       .style("stroke", "#bd0fdb")
       .style("stroke-width", 1)
-      .style("fill", (node) =>{
+      .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
-        if(node.subjects.includes("ministry") ){
+        if (node.subjects.includes("ministry")) {
           return "#79990e";
         }
         return "#10A8EC";
-      });
-      
+      })
+      // .on("click", function () {
+      //   d3.select(this).style("fill", "lightcoral").style("stroke", "red");
+         
+      // })
+      // .on("mouseleave", function (d) {
+      //      d3.select(this)
+      //       .style("stroke", "#bd0fdb").style("stroke-width", 1);
+            
+
+      // });
+
+    const tooltip = d3
+      .select("#mainContainer")
+      .append("div")
+      .classed("tooltip", true)
+      .attr("id", "node-tooltip")
+      .style("opacity", 0) //
+    
+    const button = d3.select("#node-tootip")
+        .append("button")
+        .html("Click me")
+        
+    nodeWrapper
+      .on("click", function (event, d) {
+        tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
+        tooltip
+          .html(d.label)
+          .style(
+            "left",
+            event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
+          )
+          .style(
+            "top",
+            event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
+          );
+      })
+  
 
     //Bind the name of each person to the corresponding node
     const text = svg
@@ -129,8 +171,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
         return fullName;
       })
       .style("fill", "#9bc9c9");
-    
-      //Render the simulation
+
+    //Render the simulation
     simulation.on("tick", () => {
       circles.attr("cx", (node) => node.x).attr("cy", (node) => node.y);
       text.attr("x", (node) => node.x).attr("y", (node) => node.y);
@@ -144,32 +186,13 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
 
   return (
     <Row id="network-row">
-      <Col>
-        {["top", "right", "bottom", "left"].map((placement) => (
-          <OverlayTrigger
-            trigger="click"
-            key={placement}
-            placement={placement}
-            overlay={
-              <Popover id={`popover-positioned-${placement}`}>
-                <Popover.Header as="h3">{`Popover ${placement}`}</Popover.Header>
-                <Popover.Body>
-                  <strong>Holy guacamole!</strong> Check this info.
-                </Popover.Body>
-              </Popover>
-            }
-          >
-            <Button variant="secondary">Popover on {placement}</Button>
-          </OverlayTrigger>
-        ))}
-      </Col>
-
-      <Col>
+      <Col id="mainContainer">
         <svg
-          style={{ backgroundColor: "#111420" }}
+          style={{ backgroundColor: "#111420"}}
           id="network-svg"
           ref={svgRef}
-        ></svg>
+        >
+        </svg>
       </Col>
     </Row>
   );
