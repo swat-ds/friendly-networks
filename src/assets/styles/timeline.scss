@@ -1,11 +1,10 @@
 
 body{
-    background-color: #f7f7f7;
     margin-top:20px;
 }
 
 #timeline-col{
-     display: flex;
+display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,7 +15,7 @@ body{
   width: 70vw;
   padding: 3vw;
   margin-bottom: 3vh;
-  background-color: #F1F1F1;
+  background-color: #5f5d5d;
   border-top: 0.1vw solid hsl(335, 61%, 43%);
   border-right: 0.1vw solid hsl(335, 61%, 43%);
   border-bottom: 0.1vw solid hsl(335, 61%, 43%);

@@ -168,7 +168,7 @@ const People = (props) => {
         const names = pieces.filter(
           (dep, index) => index !== pieces.length - 1 && dep
         );
-        return names.length>0? <li>{` ${names.join()}; `}</li>: null;
+        return names.length>0? <li><span>{` ${names.join()}; `}</span></li>: null;
       }
     }
 
@@ -460,12 +460,12 @@ const People = (props) => {
       <Layout>
         <Row>
           <Col id="entity-name">
-            <h1>{nameEntries[0].original}</h1>
+            <h1 className="general-text">{nameEntries[0].original}</h1>
           </Col>
         </Row>
         <Row>
           <Col>
-            <div id="bio-data-container">
+            <div className="general-text" id="bio-data-container">
               {renderNameVariants()}
               {renderDates()}
               {renderPlaces()}
@@ -476,12 +476,14 @@ const People = (props) => {
             </div>
           </Col>
           <Col>
-            <div id="bio-container">{renderBio()}</div>
+            <div className="general-text" id="bio-container">
+              {renderBio()}
+            </div>
           </Col>
         </Row>
         <Row>
-          <br/>
-          <h4 style={{ color: "#d6d0d0" }}>{`${bioDataLabels.relations}: `}</h4>
+          <br />
+          <h4 className="general-text" >{`${bioDataLabels.relations}: `}</h4>
         </Row>
         {renderRelatives()}
         {/* <Network

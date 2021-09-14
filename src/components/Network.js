@@ -1,33 +1,39 @@
 import React from "react";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useLayoutEffect } from "react";
 import * as d3 from "d3";
-import {Row,Col, OverlayTrigger, Tooltip, Button, Popover } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  OverlayTrigger,
+  Tooltip,
+  Button,
+  Popover,
+} from "react-bootstrap";
 // import "../assets/styles/styles.scss";
-import '../assets/styles/network.scss'
-
-
+import "../assets/styles/network.scss";
 
 /**
- * 
+ *
  * @param {*} nodesInJSON A json array contains multiple nodes as object
  * @param {*} linksInJSON A json array contains multiple link as object
  * @param {*} centralFigure An indication of whose entity is rendered
- * 
+ *
  * Note: all of the above @params are destructured from  @props @param
  * @returns a @Row element containing an svg
  */
 
-const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
+const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //states to changes nodes and links if needed
   const [nodes, setNodes] = useState(nodesInJSON);
   const [links, setLinks] = useState(linksInJSON);
 
   const svgRef = useRef(); // A reference to refer to the SVG element
-  let width = 600, height = 1200; //height of the svg
+  let width = 600,
+    height = 1200; //height of the svg
 
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
-  useEffect(() => {
+  useLayoutEffect(() => {
     const svg = d3
       .select(svgRef.current)
       .attr("width", width)
@@ -96,6 +102,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
       .attr("class", "nodeWrapper");
 
     const circles = nodeWrapper
+      .enter()
       .append("circle")
       .attr("class", "node")
       .attr("r", (node) => {
@@ -111,44 +118,46 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
           return "#79990e";
         }
         return "#10A8EC";
-      })
-      // .on("click", function () {
-      //   d3.select(this).style("fill", "lightcoral").style("stroke", "red");
-         
-      // })
-      // .on("mouseleave", function (d) {
-      //      d3.select(this)
-      //       .style("stroke", "#bd0fdb").style("stroke-width", 1);
-            
+      });
+    // .on("click", function () {
+    //   d3.select(this).style("fill", "lightcoral").style("stroke", "red");
 
-      // });
+    // })
+    // .on("mouseleave", function (d) {
+    //      d3.select(this)
+    //       .style("stroke", "#bd0fdb").style("stroke-width", 1);
+
+    // });
 
     const tooltip = d3
       .select("#mainContainer")
       .append("div")
       .classed("tooltip", true)
+      .classed("general-text", true)
       .attr("id", "node-tooltip")
-      .style("opacity", 0) //
-    
-    const button = d3.select("#node-tootip")
-        .append("button")
-        .html("Click me")
-        
-    nodeWrapper
-      .on("click", function (event, d) {
-        tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
-        tooltip
-          .html(d.label)
-          .style(
-            "left",
-            event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
-          )
-          .style(
-            "top",
-            event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
-          );
-      })
-  
+      .style("opacity", 0); //
+
+    nodeWrapper.on("mouseover", function (event, d) {
+      tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
+      tooltip
+        .html(d.label)
+        .style(
+          "left",
+          event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
+        )
+        .style(
+          "top",
+          event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
+        );
+
+      // button.transition().duration(300).style("opacity", 1); // show the tooltip
+      // button
+      //   .html("click")
+    });
+
+    nodeWrapper.on("mouseleave", (event, d) => {
+      tooltip.transition().duration(1000).style("opacity", 0); //
+    });
 
     //Bind the name of each person to the corresponding node
     const text = svg
@@ -182,17 +191,33 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
         .attr("x2", (link) => link.target.x)
         .attr("y2", (link) => link.target.y);
     });
-  }, []); //End of useEffect()
+  }, [nodes, links]); //End of useEffect()
 
+  function removeCenter(){
+    console.log(nodes.length, links.length)
+    let filteredLinks = linksInJSON.filter(link => {
+      return link.source.id !== centralFigure;
+    });
+    
+
+    let filteredNodes = nodesInJSON.filter(node =>{
+      return node.id !== centralFigure;
+    })
+    setNodes(filteredNodes)
+    setLinks(filteredLinks);
+    console.log(filteredNodes.length, filteredLinks.length);
+  }
   return (
-    <Row id="network-row">
+    <Row id="main-row">
       <Col id="mainContainer">
+        <Button variant="outline-success" onClick={() => removeCenter()}>
+          <span className="general-text">Without Hunt</span>
+        </Button>
         <svg
-          style={{ backgroundColor: "#111420"}}
+          style={{ backgroundColor: "#111420" }}
           id="network-svg"
           ref={svgRef}
-        >
-        </svg>
+        ></svg>
       </Col>
     </Row>
   );

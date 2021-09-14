@@ -9,7 +9,7 @@ import "../../../assets/styles/pageStyles.scss";
 const author_bg = () => {
   return (
     <Layout>
-      <Row>
+      <Row id="main-row">
         <Col id="author-bg-col">
           <h2>Backgrounds of John Hunt</h2>
           <Link className="g-link2" to="/background/author-bg/timeline">

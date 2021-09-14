@@ -56,7 +56,7 @@ const Timeline = (props) => {
     
     <Row id="timeline-row">
       <Col id="timeline-col">
-        <h4>Visualization of the events</h4>
+        <h4 className="general-text">Visualization of the events</h4>
         {renderTimeline()}
         </Col>
     </Row>

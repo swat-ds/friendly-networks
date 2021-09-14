@@ -10,7 +10,7 @@ const timeline = () => {
     <Layout>
       <Row>
         <Col>
-          <h3 style={{ marginLeft: "2vw" }}>
+          <h3 className="general-text" style={{ marginLeft: "2vw"}}>
             Chronology of the Life of John Hunt (1740-1824)
           </h3>
         </Col>

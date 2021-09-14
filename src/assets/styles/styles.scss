@@ -9,10 +9,9 @@ body {
 }
 #main-row{
   background-color: #3c373e;
-  color: rgb(214, 208, 208);;
 }
 
-  #image{
+#image{
   height: 85vh;
   // border: 0.5px solid blue;
 }
@@ -57,6 +56,9 @@ body {
   text-decoration: none;
 }
 
+.general-text{
+  color: hsl(0, 7%, 83%);
+}
 
 
 

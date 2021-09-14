@@ -271,7 +271,7 @@ const Volume = (props) => {
               </button>
             </form>
           </div>
-          <div id="journal-transcript">{props.children}</div>
+          <div className="general-text" id="journal-transcript">{props.children}</div>
         </Col>
       </Row>
       <Row id="journal-pagination-row">
