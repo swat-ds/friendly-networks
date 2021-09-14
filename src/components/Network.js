@@ -26,6 +26,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //states to changes nodes and links if needed
   const [nodes, setNodes] = useState(nodesInJSON);
   const [links, setLinks] = useState(linksInJSON);
+  const [clicker, setClicker] = useState(false);
 
   const svgRef = useRef(); // A reference to refer to the SVG element
   let width = 600,
@@ -33,7 +34,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
-  useLayoutEffect(() => {
+  useEffect(() => {
     const svg = d3
       .select(svgRef.current)
       .attr("width", width)
@@ -44,7 +45,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         })
       )
       .append("g"); //'g' is an encompassing tag that groups elements inside an svg
-
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
@@ -102,7 +102,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("class", "nodeWrapper");
 
     const circles = nodeWrapper
-      .enter()
       .append("circle")
       .attr("class", "node")
       .attr("r", (node) => {
@@ -191,22 +190,25 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         .attr("x2", (link) => link.target.x)
         .attr("y2", (link) => link.target.y);
     });
-  }, [nodes, links]); //End of useEffect()
+    
+  },[nodes, links, clicker]); //End of useEffect()
 
   function removeCenter(){
+    setClicker(!clicker)
     console.log(nodes.length, links.length)
-    let filteredLinks = linksInJSON.filter(link => {
-      return link.source.id !== centralFigure;
-    });
-    
 
-    let filteredNodes = nodesInJSON.filter(node =>{
-      return node.id !== centralFigure;
-    })
+    let filteredNodes = nodesInJSON.filter((node) => {
+         return node.id !== centralFigure;
+    });
+
+    let filteredLinks = linksInJSON.filter(link => {
+      return link.source.id !== centralFigure && link.target.id !== centralFigure;
+    });
     setNodes(filteredNodes)
     setLinks(filteredLinks);
     console.log(filteredNodes.length, filteredLinks.length);
   }
+  
   return (
     <Row id="main-row">
       <Col id="mainContainer">
