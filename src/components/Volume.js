@@ -8,7 +8,7 @@ import { Container, Row, Button, Col } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
 import JournalImage from "./JournalImage";
-import OpenSeadragonViewer from "./OpenSeadragonViewer";
+import Viewer from "./Viewer";
 
 import { scroller } from "react-scroll";
 
@@ -245,7 +245,7 @@ const Volume = (props) => {
             {/* </IconContext.Provider> */}
           </div>
           <div id="journal-image">
-            <JournalImage imageId={currentPid} />
+            <Viewer/>
           </div>
         </Col>
 

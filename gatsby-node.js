@@ -26,11 +26,12 @@ exports.sourceNodes = async ({
 
 
 console.log(constellations.length)
+console.log(constellations[0].data.ark);
 
   //Assumed data is retrieved
   console.log("(2)", "retrieved");
   let i = 0;
-  for (const c of constellations) {
+  constellations.forEach(c => {
     const { constellation } = c.data
     const constNode = {
       //     // Required fields
@@ -68,7 +69,7 @@ console.log(constellations.length)
     // });
     createNode(constNode);
     i++;
-  }
+  })
 
   return;
 };
