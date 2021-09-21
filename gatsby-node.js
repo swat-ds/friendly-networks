@@ -46,6 +46,7 @@ console.log(constellations.length)
       //     // Other fields that you want to query with graphQl
       arkId: constellation.ark.split("/").pop() || null,
       triCoID: constellationData[i]["TriCo ID"] || null,
+      mentions: parseInt(constellationData[i]["Mntns"]),
       entityType: constellation.entityType || null,
       sources: constellation.sources || null,
       nameEntries: constellation.nameEntries || null,

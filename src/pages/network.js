@@ -31,7 +31,7 @@ const createD3Nodes = (constellations) => {
       id: constellation.arkId || null,
       label: constellation.nameEntries[0].original || null,
       gender: constellation.genders ? constellation.genders[0].term.term : null,
-      degree: constellation.relations?.length || null,
+      degree: constellation.mentions,
       occupations:
         constellation.occupations?.reduce((labels, occupation) => {
           let occupationLabel = occupation.term?.term
@@ -172,6 +172,7 @@ export const query = graphql`
       nodes {
         id
         arkId
+        mentions
         nameEntries {
           original
           components {

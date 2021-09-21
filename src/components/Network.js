@@ -25,6 +25,7 @@ import "../assets/styles/network.scss";
 const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //states to changes nodes and links if needed
   const [nodes, setNodes] = useState(nodesInJSON);
+  console.log(nodes);
   const [links, setLinks] = useState(linksInJSON);
   const [clicker, setClicker] = useState(false);
 
@@ -113,7 +114,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .style("stroke-width", 1)
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
-        if (node.subjects.includes("ministry")) {
+        if (node.subjects?.includes("ministry")) {
           return "#79990e";
         }
         return "#10A8EC";
