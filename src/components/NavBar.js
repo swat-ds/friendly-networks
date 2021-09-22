@@ -71,7 +71,7 @@ const NavBar = (props) => {
                 aria-label="Search"
                 onChange={handleChange}
               />
-              <Link to={"/search"} state={{ data: result }}>
+              <Link to={"/search"} state={{ searchQuery: result }}>
                 <Button variant="outline-success">Search</Button>
               </Link>
             </Form>

@@ -1,20 +1,32 @@
 import React, {useState, useEffect, useRef} from 'react'
-import {Link} from 'gatsby'
+import {Link, graphql} from 'gatsby'
+import Fuse from 'fuse.js'
 import Layout from "../components/Layout";
 import {Form, Button, FormControl} from 'react-bootstrap'
 
 
-const search = ({location}) => {
+const search = ({location, data}) => {
 
     const { state = {} } = location
    
 
-    const { data } = state
-    let result = "result: " +data
+    const { searchQuery } = state;
+    let result = []
 
-    // const btnRef = useRef(null);
-    // const [query, setQuery] = useState(initQuery)
-    // const [result, setResult] = useState("")
+    console.log(data)
+
+    const journalFuse = new Fuse(data.journals.nodes, {
+      keys: ["prefixed"],
+    });
+
+    const constellationFuse = new Fuse(data.constellations.nodes, {
+      keys: ["nameEntries.original"],
+    });
+
+    
+
+    console.log(constellationFuse.search(searchQuery));
+
 
     // function handleChange(e){
     //     e.preventDefault()
@@ -32,10 +44,117 @@ const search = ({location}) => {
       <Layout>
         <div>
           {/* <h4>you searched {result}</h4> */}
-          <h className="general-text">{result}</h>
+          <h className="general-text">{searchQuery}</h>
         </div>
       </Layout>
     );
 }
 
 export default search
+
+export const query = graphql`
+  query {
+    constellations: allConstellation {
+      nodes {
+        id
+        arkId
+        mentions
+        nameEntries {
+          original
+          components {
+            dataType
+            id
+            order
+            text
+            type {
+              term
+            }
+          }
+          id
+        }
+        occupations {
+          term {
+            term
+          }
+        }
+        subjects {
+          term {
+            term
+          }
+        }
+        entityType {
+          term
+        }
+        biogHists {
+          language {
+            language {
+              term
+              description
+            }
+          }
+          text
+        }
+        places {
+          confirmed
+          original
+          note
+          geoplace {
+            administrationCode
+            countryCode
+            id
+            latitude
+            longitude
+            name
+            uri
+          }
+        }
+        relations {
+          sourceArkID
+          targetArkID
+          sourceConstellation
+          targetConstellation
+
+          type {
+            term
+          }
+          content
+          note
+          id
+        }
+        sameAsRelations {
+          uri
+        }
+        subjects {
+          term {
+            term
+          }
+        }
+        genders {
+          term {
+            term
+            type
+          }
+        }
+        dates {
+          fromDate
+          fromDateOriginal
+          toDate
+          toDateOriginal
+        }
+      }
+    }
+
+    journals: allCetei {
+      totalCount
+      nodes {
+        prefixed
+        parent {
+          ... on File {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+`;
