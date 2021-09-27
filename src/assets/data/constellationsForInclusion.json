@@ -2,8 +2,7 @@
   {
     "SNAC ID": "85290808",
     "ARK ID": "w6n9820p",
-    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/11148",
-    "Mntns": "0"
+    "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/11148"
   },
   {
     "SNAC ID": "85289148",
@@ -319,7 +318,7 @@
     "SNAC ID": "85721052",
     "ARK ID": "w66r2nv3",
     "TriCo ID": "",
-    "Mntns": "#REF!"
+    "Mntns": "40"
   },
   {
     "SNAC ID": "85560490",
@@ -1023,6 +1022,5 @@
     "ARK ID": "w63g5f9w",
     "TriCo ID": "http://archives.tricolib.brynmawr.edu/agents/people/5407",
     "Mntns": "6"
-  },
-  { "SNAC ID": "" }
+  }
 ]

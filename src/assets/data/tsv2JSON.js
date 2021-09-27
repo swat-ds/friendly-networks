@@ -26,7 +26,7 @@ function tsvJSON(tsv, headerEmpty) {
   var result = [];
   var headers = lines[0].split("\t");
   //Last line is ignored, it's an empty line
-  for (var i = 1; i < lines.length; i++) {
+  for (var i = 1; i < lines.length-1; i++) {
     var obj = {};
     var currentLine = lines[i].split("\t");
     //Last header is ignored as it's empty

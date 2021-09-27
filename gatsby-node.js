@@ -13,20 +13,23 @@ exports.sourceNodes = async ({
   console.log("(1)", "read");
 
   //fetch the data
-
+  let x = 0;
   for (const i of constellationData) {
     const fetchConstellation = () =>
       axios.put(`https://api.snaccooperative.org`, {
         command: "read",
         constellationid: i["SNAC ID"],
       });
-
-    constellations.push(await fetchConstellation());
+      let result = await fetchConstellation()
+      if("constellation" in result.data){
+        x++;
+        constellations.push(result);
+      }
   }
 
 
 console.log(constellations.length)
-console.log(constellations[0].data.ark);
+console.log(x);
 
   //Assumed data is retrieved
   console.log("(2)", "retrieved");
@@ -47,7 +50,7 @@ console.log(constellations[0].data.ark);
       //     // Other fields that you want to query with graphQl
       arkId: constellation.ark.split("/").pop() || null,
       triCoID: constellationData[i]["TriCo ID"] || null,
-      mentions: parseInt(constellationData[i]["Mntns"]),
+      mentions: parseInt(constellationData[i]["Mntns"]) || 0,
       entityType: constellation.entityType || null,
       sources: constellation.sources || null,
       nameEntries: constellation.nameEntries || null,

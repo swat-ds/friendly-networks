@@ -82,10 +82,10 @@ const network = ({data}) => {
   console.log("D3 nodes created:", d3Nodes)
 
   for (const node of constellations) {
-    let relations = node.relations || [];
+    let relations = node.relations?node.relations: [];
     for (const relation of relations) {
       let target = relation.targetArkID.split("/").pop() || null;
-      let  label=  relation.type.term || null;
+      let  label=  relation.type?.term || null;
       let hasTargetAvailable = (arkIds.includes(target));
         if (hasTargetAvailable) {
           d3Links.push(createD3Links(node.arkId, target, label));

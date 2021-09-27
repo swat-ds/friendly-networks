@@ -6,28 +6,29 @@ import {Form, Button, FormControl} from 'react-bootstrap'
 
 
 const search = ({location, data}) => {
-
-    const { state = {} } = location
    
-
-    const { searchQuery } = state;
     let result = []
 
-    console.log(data)
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
 
-    const journalFuse = new Fuse(data.journals.nodes, {
-      keys: ["prefixed"],
-    });
+      const { state = {} } = location;
+      const { searchQuery } = state;
 
-    const constellationFuse = new Fuse(data.constellations.nodes, {
-      keys: ["nameEntries.original"],
-    });
+      console.log(data);
 
-    
+      const journalFuse = new Fuse(data.journals.nodes, {
+        keys: ["prefixed"],
+      });
 
-    console.log(constellationFuse.search(searchQuery));
+      const constellationFuse = new Fuse(data.constellations.nodes, {
+        keys: ["nameEntries.original"],
+      });
 
 
+      console.log(constellationFuse.search(searchQuery));
+      result.push(searchQuery)
+
+    }
     // function handleChange(e){
     //     e.preventDefault()
     //     setQuery(e.target.value)
@@ -44,7 +45,7 @@ const search = ({location, data}) => {
       <Layout>
         <div>
           {/* <h4>you searched {result}</h4> */}
-          <h className="general-text">{searchQuery}</h>
+          <h className="general-text">{result[0]}</h>
         </div>
       </Layout>
     );
@@ -58,7 +59,6 @@ export const query = graphql`
       nodes {
         id
         arkId
-        mentions
         nameEntries {
           original
           components {
