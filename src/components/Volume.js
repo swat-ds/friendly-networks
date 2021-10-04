@@ -14,21 +14,21 @@ import { scroller } from "react-scroll";
 
 const parseString = require("xml2js").parseString;
 
-  function getDivBreaks(divList) {
-    let divBreaks = []
-    divList.forEach((div) => {
-      if ("tei-pb" in div) {
-        div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
-      }
-    });
-    return divBreaks;
-  }
+function getDivBreaks(divList) {
+  let divBreaks = [];
+  divList.forEach((div) => {
+    if ("tei-pb" in div) {
+      div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
+    }
+  });
+  return divBreaks;
+}
 
-function getALlPageBreaks(jsonPrefixed){
-  let pageBreakIDs = []; 
+function getALlPageBreaks(jsonPrefixed) {
+  let pageBreakIDs = [];
   if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
     let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
-    if("tei-pb" in front){
+    if ("tei-pb" in front) {
       front["tei-pb"].forEach((pb) => {
         pageBreakIDs.push(pb?.$?.facs);
       });
@@ -44,7 +44,7 @@ function getALlPageBreaks(jsonPrefixed){
     //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
     //     pageBreakIDs.push(pid.$.facs);
     //   }
-    if("tei-pb" in body){
+    if ("tei-pb" in body) {
       body["tei-pb"].forEach((pb) => {
         pageBreakIDs.push(pb?.$?.facs);
       });
@@ -57,8 +57,8 @@ function getALlPageBreaks(jsonPrefixed){
 
   if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
     let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
-   
-    if("tei-pb" in back){
+
+    if ("tei-pb" in back) {
       back["tei-pb"].forEach((pb) => {
         pageBreakIDs.push(pb?.$?.facs);
       });
@@ -68,17 +68,17 @@ function getALlPageBreaks(jsonPrefixed){
     }
   }
   return pageBreakIDs;
-
 }
 
 let counter = 0; // counter for to tract the index of each transcript (cetei)
-let currentInput = 0; // variable for the input value for the scroll
 
 /**
  * An all-encompassing component for the journal display; the image and the transcript
  * @param {*} props the properties to be passed when used this component
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
+let counter2 = 0;
+
 const Volume = (props) => {
   const { pageContext, data, hash } = props;
   // console.log(pageContext.prefixed);
@@ -89,60 +89,11 @@ const Volume = (props) => {
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
-    
+
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
-  // function getDivBreaks(divList) {
-  //   divList.forEach((div) => {
-  //     if ("tei-pb" in div) {
-  //       div["tei-pb"].forEach((pb) => pageBreakIDs.push(pb.$.facs));
-  //     }
-  //   });
-  // }
-  // if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-  //     let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0]
-
-  //       front["teit-pb"].forEach((pb) => {
-  //           pageBreakIDs.push(pb?.$?.facs);
-  //         });
-  //     if("tei-div" in front){
-  //         getDivBreaks(front["tei-div"])
-  //     }
-  // }
-
-  // //Get the ones that are body's children
-  // if ("tei-body" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-  //   let body = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-body"][0];
-  //   //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
-  //   //     pageBreakIDs.push(pid.$.facs);
-  //   //   }
-  //   body["tei-pb"].forEach((pb) => {
-  //     pageBreakIDs.push(pb?.$?.facs);
-  //   });
-
-  //   if ("tei-div" in body) {
-  //     getDivBreaks(body["tei-div"]);
-  //   }
-  // }
-
-  // if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-  //   let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
-  //  back["teit-pb"].forEach((pb) => {
-  //    pageBreakIDs.push(pb?.$?.facs);
-  //  });
-  //   if ("tei-div" in back) {
-  //     getDivBreaks(back["tei-div"]);
-  //   }
-  // }
-
   pids = pageBreakIDs;
-  // const parser = new DOMParser();
-  // const xmlDoc = parser.parseFromString(pageContext.prefixed, "text/xml");
-  // const pages = xmlDoc.getElementsByTagName("tei-pb");
 
-  // for (let index = 0; index < pages.length; index++) {
-  //   pids.push(pages[index].attributes.getNamedItem("facs").value);
-  // }
   // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
@@ -150,12 +101,9 @@ const Volume = (props) => {
    * Handle the change when a new value is entered on the input
    * @param {*} e the event
    */
-  function onChange(e) {
-    currentInput = e.target.value;
-    e.preventDefault();
-  }
+
   //State to set pid (constellation id)
-  const [currentPid, setPid] = useState(pids[currentInput]);
+  const [currentPid, setPid] = useState(pids[counter2]);
 
   //Sets the current cetei with the next cetei
   function getNextCetei() {
@@ -187,7 +135,7 @@ const Volume = (props) => {
    * Possible patterns:
    * 1. http://localhost:8000/sc203246?/#pid=sc203683
    * 2. http://localhost:8000/sc203246/#pid=sc203683
-   * Nothing needs to be changed for the scrolling whatsoever, both works. 
+   * Nothing needs to be changed for the scrolling whatsoever, both works.
    */
   if (hash != "") {
     let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
@@ -200,31 +148,27 @@ const Volume = (props) => {
    */
 
   function getNextImage() {
+    console.log(currentPid);
     let i = pids.indexOf(currentPid) + 1;
     if (i >= 0 && i <= pids.length - 1) {
       scroll(pids[i]);
       setPid(pids[i]);
     }
   }
+   console.log(currentPid);
 
   /**
    * Find and get the index of the previous pid relative to th @currentPid
    * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
    */
   function getPrevImage() {
+    console.log(currentPid);
     let i = pids.indexOf(currentPid) - 1;
     if (i >= 0 && i <= pids.length - 1) {
       scroll(pids[i]);
       setPid(pids[i]);
     }
-  }
-
-  // function conditionalCallBack(callback){
-
-  // }
-  // A wrapper function for the scroll()
-  function handleClick() {
-    scroll(currentPid);
+    console.log(currentPid);
   }
 
   return (
@@ -244,34 +188,16 @@ const Volume = (props) => {
             ></div>
             {/* </IconContext.Provider> */}
           </div>
+
           <div id="journal-image">
-            <Viewer/>
+            <Viewer imageId={currentPid}></Viewer>
           </div>
         </Col>
 
         <Col id="journal-col">
-          <div id="journal-search">
-            <form id="journal-search-form" class="d-flex">
-              <input
-                class="form-control me-2"
-                id="journal-search-input"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                onChange={onChange}
-                placeholder={""}
-              />
-              <button
-                class="btn btn-outline-success"
-                id="journal-search-btn"
-                type="submit"
-                onClick={() => handleClick()}
-              >
-                Search
-              </button>
-            </form>
+          <div className="general-text" id="journal-transcript">
+            {props.children}
           </div>
-          <div className="general-text" id="journal-transcript">{props.children}</div>
         </Col>
       </Row>
       <Row id="journal-pagination-row">
