@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
@@ -28,14 +28,12 @@ import {
  */
 const NavBar = (props) => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState("");
-  function handleChange(e) {
-    e.preventDefault();
+   const handleChange = e => {
     setQuery(e.target.value);
-     let resultData = query
-     setResult(resultData);
   }
-
+    // useEffect(() => {
+      
+    // }, [query]);
   return (
     <Row id="nav-row">
       <Col>
@@ -71,8 +69,10 @@ const NavBar = (props) => {
                 aria-label="Search"
                 onChange={handleChange}
               />
-              <Link to={"/search"} state={{ searchQuery: result }}>
-                <Button variant="outline-success">Search</Button>
+              <Link to={"/search"} state={{ searchQuery: query }}>
+                <Button variant="outline-success">
+                  Search
+                </Button>
               </Link>
             </Form>
             <div className="header-items-mobile">

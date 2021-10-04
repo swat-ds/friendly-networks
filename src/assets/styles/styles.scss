@@ -60,6 +60,15 @@ body {
   color: hsl(0, 7%, 83%);
 }
 
+#result-card{
+  transform: none;
+  transition: none;
+  animation: none;
+  width: 90vw;
+  height: fit-content;
 
+  margin-bottom: 3vh;
+
+}
 
 @import "bootstrap";
