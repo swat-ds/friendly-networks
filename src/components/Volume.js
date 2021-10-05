@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import "../assets/styles/volume.scss";
 import { IconContext } from "react-icons";
 import { BsArrowRight, BsArrowLeft, BsTriangleFill } from "react-icons/bs";
-import { Container, Row, Button, Col } from "react-bootstrap";
+import { Container, Row, Button, Col, Collapse } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
 import JournalImage from "./JournalImage";
@@ -96,6 +96,7 @@ const Volume = (props) => {
 
   // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
+  const ref = useRef();
 
   /**
    * Handle the change when a new value is entered on the input
@@ -155,7 +156,8 @@ const Volume = (props) => {
       setPid(pids[i]);
     }
   }
-   console.log(currentPid);
+  console.log(currentPid);
+  console.log(ref);
 
   /**
    * Find and get the index of the previous pid relative to th @currentPid
@@ -170,6 +172,37 @@ const Volume = (props) => {
     }
     console.log(currentPid);
   }
+
+  // function useOnScreen(element) {
+  //   const [isIntersecting, setIntersecting] = useState(false);
+
+  //   const observer = new IntersectionObserver(([entry]) =>
+  //     setIntersecting(entry.isIntersecting)
+  //   );
+  //   useEffect(() => {
+  //     observer.observe(ref.current);
+  //     // Remove the observer as soon as the component is unmounted
+  //     return () => {
+  //       observer.disconnect();
+  //     };
+  //   }, []);
+
+  //   return isIntersecting;
+  // }
+
+   useEffect(() => {
+       if (typeof window !== "undefined" && typeof document !== "undefined") {
+         pids.forEach((pid) => {
+           let element = document.getElementById(pid);
+           console.log(element);
+         });
+       }
+   }, [])
+  function handleScroll(e) {
+   
+
+  }
+  // }
 
   return (
     <Layout>
@@ -195,7 +228,12 @@ const Volume = (props) => {
         </Col>
 
         <Col id="journal-col">
-          <div className="general-text" id="journal-transcript">
+          <div
+            className="general-text"
+            id="journal-transcript"
+            ref={ref}
+            onScroll={handleScroll}
+          >
             {props.children}
           </div>
         </Col>
@@ -228,6 +266,6 @@ const Volume = (props) => {
       </Row>
     </Layout>
   );
-};
+};;
 
 export default Volume;
