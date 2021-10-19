@@ -156,8 +156,8 @@ const Volume = (props) => {
       setPid(pids[i]);
     }
   }
-  console.log(currentPid);
-  console.log(ref);
+  // console.log(currentPid);
+  // console.log(ref);
 
   /**
    * Find and get the index of the previous pid relative to th @currentPid
@@ -189,6 +189,11 @@ const Volume = (props) => {
 
   //   return isIntersecting;
   // }
+   let options = {
+     root: document.getElementById("journal-transcript"),
+     rootMargin: "0px",
+     threshold: 0,
+   };
 
    const [scrollNumber, setScrollNumber] = useState(0);
 
@@ -200,8 +205,10 @@ const Volume = (props) => {
            if (entry.isIntersecting) {
              // let elem = entry.target;
              // console.log(elem)
-             console.log(entry.target);
-             console.log("intersecting");
+             console.log("intersecting id:");
+             let visiblePid = entry.target.getAttribute("id");
+             setPid(visiblePid)
+             
            }
            // else {
            //   console.log("not intersecting");

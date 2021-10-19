@@ -76,19 +76,19 @@ function useOnScreen(ref) {
 
 export const Pb = (props) => {
 
-  const ref = useRef();
-  const isVisible = useOnScreen(ref);
+  // const ref = useRef();
+  // const isVisible = useOnScreen(ref);
 
-  if(isVisible){
-    console.log("I am visible")
-  }
+  // if(isVisible){
+  //   console.log("I am visible")
+  // }
   return (
     <Behavior node={props.teiNode}>
       <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
       <hr
         className="page-line"
         id={props.teiNode.attributes.getNamedItem("facs").value}
-        ref={ref}
+        // ref={ref}
       />
     </Behavior>
   );
