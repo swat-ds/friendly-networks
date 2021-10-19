@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState, useRef} from "react";
 import { TEINodes } from "react-teirouter";
 import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
 // import { isExportSpecifier } from "typescript";
@@ -56,13 +56,39 @@ export const Name = (props) => {
   );
 };
 
+function useOnScreen(ref) {
+  const [isIntersecting, setIntersecting] = useState(false);
+
+  const observer = new IntersectionObserver(([entry]) =>
+    setIntersecting(entry.isIntersecting)
+  );
+
+  useEffect(() => {
+    observer.observe(ref.current);
+    // Remove the observer as soon as the component is unmounted
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return isIntersecting;
+}
+
 export const Pb = (props) => {
+
+  // const ref = useRef();
+  // const isVisible = useOnScreen(ref);
+
+  // if(isVisible){
+  //   console.log("I am visible")
+  // }
   return (
     <Behavior node={props.teiNode}>
       <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
       <hr
         className="page-line"
         id={props.teiNode.attributes.getNamedItem("facs").value}
+        // ref={ref}
       />
     </Behavior>
   );
