@@ -190,19 +190,51 @@ const Volume = (props) => {
   //   return isIntersecting;
   // }
 
-   useEffect(() => {
-       if (typeof window !== "undefined" && typeof document !== "undefined") {
-         pids.forEach((pid) => {
-           let element = document.getElementById(pid);
-           console.log(element);
-         });
-       }
-   }, [])
-  function handleScroll(e) {
-   
+   const [scrollNumber, setScrollNumber] = useState(0);
 
-  }
-  // }
+   useEffect(() => {
+     if (window !== undefined && document !== undefined) {
+       let callback = (entries, observer) => {
+         // console.log(pids.length);
+         entries.forEach((entry) => {
+           if (entry.isIntersecting) {
+             // let elem = entry.target;
+             // console.log(elem)
+             console.log(entry.target);
+             console.log("intersecting");
+           }
+           // else {
+           //   console.log("not intersecting");
+           // }
+           // Each entry describes an intersection change for one observed
+           // target element:
+           //   entry.boundingClientRect
+           //   entry.intersectionRatio
+           //   entry.intersectionRect
+           //   entry.isIntersecting
+           //   entry.rootBounds
+           //   entry.target
+           //   entry.time
+         });
+       };
+
+       pids.forEach((pid) => {
+         let target = document.getElementById(pid);
+         const observer = new IntersectionObserver((entries) => {
+           callback(entries, observer);
+         }, options);
+         observer.observe(target);
+       });
+     }
+     // return () => {
+     //   observer.disc
+     // }
+   }, [scrollNumber]);
+
+   function handleScroll(e) {
+     setScrollNumber(Math.random());
+   }
+
 
   return (
     <Layout>
