@@ -189,16 +189,17 @@ const Volume = (props) => {
 
   //   return isIntersecting;
   // }
-   let options = {
-     root: document.getElementById("journal-transcript"),
-     rootMargin: "0px",
-     threshold: 0,
-   };
 
    const [scrollNumber, setScrollNumber] = useState(0);
 
    useEffect(() => {
      if (window !== undefined && document !== undefined) {
+        let options = {
+          root: document.getElementById("journal-transcript"),
+          rootMargin: "0px",
+          threshold: 0,
+        };
+
        let callback = (entries, observer) => {
          // console.log(pids.length);
          entries.forEach((entry) => {

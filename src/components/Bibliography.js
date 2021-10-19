@@ -12,7 +12,7 @@ const Bibliography = () => {
   // );
   return (
     <Row id="bib-row">
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <br />
         <h4 className="background-text">Background: Bibliography</h4>
         <div className="appendix-text" id="appendix-bib">
