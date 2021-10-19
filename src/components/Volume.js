@@ -150,10 +150,10 @@ const Volume = (props) => {
 
   function getNextImage() {
     console.log(currentPid);
-    let i = pids.indexOf(currentPid) + 1;
-    if (i >= 0 && i <= pids.length - 1) {
-      scroll(pids[i]);
-      setPid(pids[i]);
+    let i = pids.indexOf(currentPid);
+    if (i > 0 && i <= pids.length - 1) {
+       setPid(pids[i+1]);
+      scroll(pids[i + 1]);
     }
   }
   // console.log(currentPid);
@@ -165,12 +165,22 @@ const Volume = (props) => {
    */
   function getPrevImage() {
     console.log(currentPid);
-    let i = pids.indexOf(currentPid) - 1;
-    if (i >= 0 && i <= pids.length - 1) {
-      scroll(pids[i]);
-      setPid(pids[i]);
+    let i = pids.indexOf(currentPid);
+    if (i > 0 && i <= pids.length - 1) {
+      setPid(pids[i-1]);
+      scroll(pids[i - 1]);
     }
     console.log(currentPid);
+  }
+
+  const [jump, setJump] = useState(pids.indexOf(currentPid));
+
+  function handleKeyDown(e) {
+     if (e.key === "Enter") {
+       setJump(e.target.value)
+       setPid(pids[parseInt(e.target.value)]);
+       scroll(pids[parseInt(e.target.value)]);
+     }
   }
 
   // function useOnScreen(element) {
@@ -247,21 +257,18 @@ const Volume = (props) => {
   return (
     <Layout>
       <Row id="main-row">
+        <div id="image-tool">
+          {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+          <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
+          <input placeholder="jump to" onKeyDown={handleKeyDown}></input>
+          <div
+            id="right-arrow-icon"
+            size={28}
+            onClick={() => getNextImage()}
+          ></div>
+          {/* </IconContext.Provider> */}
+        </div>
         <Col id="image-col">
-          <div id="image-tool">
-            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-            <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
-            {/* </IconContext.Provider> */}
-
-            {/* <IconContext.Provider value={{ className: "right-arrow-icon" }}> */}
-            <div
-              id="right-arrow-icon"
-              size={28}
-              onClick={() => getNextImage()}
-            ></div>
-            {/* </IconContext.Provider> */}
-          </div>
-
           <div id="journal-image">
             <Viewer imageId={currentPid}></Viewer>
           </div>
