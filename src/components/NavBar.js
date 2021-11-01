@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
@@ -28,9 +28,12 @@ import {
  */
 const NavBar = (props) => {
   const [query, setQuery] = useState("");
+
+
    const handleChange = e => {
     setQuery(e.target.value);
   }
+
     // useEffect(() => {
       
     // }, [query]);
@@ -70,9 +73,7 @@ const NavBar = (props) => {
                 onChange={handleChange}
               />
               <Link to={"/search"} state={{ searchQuery: query }}>
-                <Button variant="outline-success">
-                  Search
-                </Button>
+                <Button variant="outline-success">Search</Button>
               </Link>
             </Form>
             <div className="header-items-mobile">

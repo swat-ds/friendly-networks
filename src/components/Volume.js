@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import "../assets/styles/volume.scss";
 import { IconContext } from "react-icons";
 import { BsArrowRight, BsArrowLeft, BsTriangleFill } from "react-icons/bs";
-import { Container, Row, Button, Col, Collapse } from "react-bootstrap";
+import { Container, Row, Button, Col, Collapse, Form, InputGroup } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
 import JournalImage from "./JournalImage";
@@ -77,7 +77,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  * @param {*} props the properties to be passed when used this component
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
-let counter2 = 0;
 
 const Volume = (props) => {
   const { pageContext, data, hash } = props;
@@ -104,7 +103,7 @@ const Volume = (props) => {
    */
 
   //State to set pid (constellation id)
-  const [currentPid, setPid] = useState(pids[counter2]);
+  const [currentPid, setPid] = useState(pids[0]);
 
   //Sets the current cetei with the next cetei
   function getNextCetei() {
@@ -130,6 +129,7 @@ const Volume = (props) => {
       smooth: "easeInOutQuart",
       containerId: "journal-transcript",
     });
+    setPid(page)
   }
 
   /**
@@ -147,48 +147,52 @@ const Volume = (props) => {
    * Find and get the index of the next pid relative to th @currentPid
    * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
    */
+ console.log("Current pid:", currentPid);
+ console.log("All Pids: ", pids);
 
   function getNextImage() {
-    console.log(currentPid);
-    let i = pids.indexOf(currentPid) + 1;
-    if (i >= 0 && i <= pids.length - 1) {
-      scroll(pids[i]);
-      setPid(pids[i]);
+    let i = pids.indexOf(currentPid);
+    if (i < pids.length - 1) {
+       scroll(pids[i + 1]);
     }
   }
-  // console.log(currentPid);
-  // console.log(ref);
 
   /**
    * Find and get the index of the previous pid relative to th @currentPid
    * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
    */
+
+  const [isOnWheel, setIsOnWheel] = useState(false)
+  
   function getPrevImage() {
-    console.log(currentPid);
-    let i = pids.indexOf(currentPid) - 1;
-    if (i >= 0 && i <= pids.length - 1) {
-      scroll(pids[i]);
-      setPid(pids[i]);
-    }
-    console.log(currentPid);
+      let i = pids.indexOf(currentPid);
+      if (i > 0) {
+        scroll(pids[i-1]); 
+      }
+  }
+ 
+
+  const [jump, setJump] = useState(0);
+
+  function handleKeyDown(e) {
+     if (e.key === "Enter") {
+       let val = e.target.value
+      if(val !== '' && val%1 === 0 && val <= pids.length && val >=1){
+        setJump(e.target.value-1);
+      }
+
+     }
   }
 
-  // function useOnScreen(element) {
-  //   const [isIntersecting, setIntersecting] = useState(false);
+  const [visiblePid, setVisiblePid] = useState(pids[0])
 
-  //   const observer = new IntersectionObserver(([entry]) =>
-  //     setIntersecting(entry.isIntersecting)
-  //   );
-  //   useEffect(() => {
-  //     observer.observe(ref.current);
-  //     // Remove the observer as soon as the component is unmounted
-  //     return () => {
-  //       observer.disconnect();
-  //     };
-  //   }, []);
+  useEffect(() => {
+    console.log(jump);
+    scroll(pids[jump])
 
-  //   return isIntersecting;
-  // }
+  }, [jump])
+
+  console.log("Current pid:",  currentPid)
 
    const [scrollNumber, setScrollNumber] = useState(0);
 
@@ -201,28 +205,16 @@ const Volume = (props) => {
         };
 
        let callback = (entries, observer) => {
-         // console.log(pids.length);
          entries.forEach((entry) => {
            if (entry.isIntersecting) {
-             // let elem = entry.target;
-             // console.log(elem)
-             console.log("intersecting id:");
              let visiblePid = entry.target.getAttribute("id");
-             setPid(visiblePid)
-             
+            //  if(isOnWheel){
+               setVisiblePid(visiblePid);
+            //  }
+            //  setIsOnWheel(!isOnWheel)
            }
-           // else {
-           //   console.log("not intersecting");
-           // }
-           // Each entry describes an intersection change for one observed
-           // target element:
-           //   entry.boundingClientRect
-           //   entry.intersectionRatio
-           //   entry.intersectionRect
-           //   entry.isIntersecting
-           //   entry.rootBounds
-           //   entry.target
-           //   entry.time
+        
+           
          });
        };
 
@@ -234,34 +226,56 @@ const Volume = (props) => {
          observer.observe(target);
        });
      }
-     // return () => {
-     //   observer.disc
-     // }
+    //  return () => {
+     
+    //  }
    }, [scrollNumber]);
 
-   function handleScroll(e) {
+   function handleWheel(e) {
+     console.log("scrolling")
+    //  setIsOnWheel(true);
      setScrollNumber(Math.random());
+     setPid(visiblePid)
    }
 
-
+   console.log(currentPid)
   return (
     <Layout>
       <Row id="main-row">
+        <div id="image-tool">
+          {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+          <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
+          <InputGroup hasValidation style={{ width: "15vw" }}>
+            <Form.Control
+              required
+              size="sm"
+              type="number"
+              placeholder="jump to "
+              onKeyDown={handleKeyDown}
+            ></Form.Control>
+            <Form.Control.Feedback type="invalid">
+              Invalid type
+            </Form.Control.Feedback>
+          </InputGroup>
+          {/* <Form.Control
+            size="sm"
+            type="number"
+            placeholder="jump to "
+            onKeyDown={handleKeyDown}
+            style={{ width: "15vw" }}
+          ></Form.Control> */}
+          {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
+          <span class="general-text">
+            Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}
+          </span>
+          <div
+            id="right-arrow-icon"
+            size={28}
+            onClick={() => getNextImage()}
+          ></div>
+          {/* </IconContext.Provider> */}
+        </div>
         <Col id="image-col">
-          <div id="image-tool">
-            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-            <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
-            {/* </IconContext.Provider> */}
-
-            {/* <IconContext.Provider value={{ className: "right-arrow-icon" }}> */}
-            <div
-              id="right-arrow-icon"
-              size={28}
-              onClick={() => getNextImage()}
-            ></div>
-            {/* </IconContext.Provider> */}
-          </div>
-
           <div id="journal-image">
             <Viewer imageId={currentPid}></Viewer>
           </div>
@@ -272,7 +286,7 @@ const Volume = (props) => {
             className="general-text"
             id="journal-transcript"
             ref={ref}
-            onScroll={handleScroll}
+            onWheel={handleWheel}
           >
             {props.children}
           </div>
