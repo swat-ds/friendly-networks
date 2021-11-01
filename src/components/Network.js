@@ -22,7 +22,7 @@ import "../assets/styles/network.scss";
  * @returns a @Row element containing an svg
  */
 
-const Network = ({ nodesInJSON, linksInJSON, centralFigure, location }) => {
+const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
   //states to changes nodes and links if needed
   const [nodes, setNodes] = useState(nodesInJSON);
   console.log(nodes);
@@ -199,8 +199,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure, location }) => {
     return () => {
       svg.remove();
     };
-    
-  },[nodes, links, clicker]); //End of useEffect()
+  }, [nodes, links, clicker]); //End of useEffect()
 
   function removeCenter(){
     setClicker(!clicker)

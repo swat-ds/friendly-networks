@@ -184,6 +184,8 @@ const Volume = (props) => {
      }
   }
 
+  const [visiblePid, setVisiblePid] = useState(pids[0])
+
   useEffect(() => {
     console.log(jump);
     scroll(pids[jump])
@@ -204,10 +206,12 @@ const Volume = (props) => {
 
        let callback = (entries, observer) => {
          entries.forEach((entry) => {
-           if (entry.isIntersecting && isOnWheel) {
+           if (entry.isIntersecting) {
              let visiblePid = entry.target.getAttribute("id");
-             setPid(visiblePid)
-             
+            //  if(isOnWheel){
+               setVisiblePid(visiblePid);
+            //  }
+            //  setIsOnWheel(!isOnWheel)
            }
         
            
@@ -222,15 +226,16 @@ const Volume = (props) => {
          observer.observe(target);
        });
      }
-     // return () => {
-     //   observer.disc
-     // }
+    //  return () => {
+     
+    //  }
    }, [scrollNumber]);
 
    function handleWheel(e) {
      console.log("scrolling")
-     setIsOnWheel(true);
+    //  setIsOnWheel(true);
      setScrollNumber(Math.random());
+     setPid(visiblePid)
    }
 
    console.log(currentPid)
