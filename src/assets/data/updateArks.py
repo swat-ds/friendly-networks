@@ -147,7 +147,12 @@ def getUpdatedArks(arks):
 			constellation = readConstellation(ark)
 		except ApiError as e:
 			msg = "\nCould not read " + ark + " due to the following error\n"
-			raise
+			msg += e.message
+			errors.append(ark)
+			continue
+
+		# If we've made it here, the API call worked, so raise the successCount
+		successCount +=1
 
 		# Extract Ark ID from up-to-date constellation
 		currentArk = constellation["ark"][-8:]
@@ -156,24 +161,39 @@ def getUpdatedArks(arks):
 		if ark != currentArk:
 			arksToUpdate[ark] = currentArk
 
-	print("Successfully")
+	print("Successfully checked", successCount, "Ark IDs.")
+	print("Found", len(arksToUpdate), "that need to be updated")
+
+	if len(errors) > 0:
+		print("Could not check the following Ark IDs due to API errors:")
+		print(", ".join(errors))
+
+	print()
+
 	return arksToUpdate
 
-def updateArkInTei(ark, teiData):
+def updateArkInTei(oldArk, newArk, teiData):
 	"""
 	Replace an outdated Ark ID w/ its current form across the TEI documents.
 
-	@param ark: an outdate Ark ID that is a key of the updatedArks dict
+	@param oldArk: an outdate Ark ID to be replaced
+	@param newArk: the current Ark ID with which to replace it
 	@param teiData: a dict w/ filenames as keys and file contents as values
 	@return: None
 	@side effects: Alter the contents of the values in teiData.
 	"""
-	pass
+	print("Bringing Ark IDs up to date in TEI...")
+
+	# Loop over TEI files, running a replacement on each one
+	for filename in teiData:
+		teiData[filename] = teiData[filename].replace(oldArk, newArk)
 
 def writeTeiToFile(filename, teiContents):
 	"""
 	Write the contents of a TEI file (in str form) to a file.
 	"""
+	with open(filename, "w") as f:
+		f.write(teiContents)
 
 def main():
 	print()
@@ -182,13 +202,13 @@ def main():
 
 	arks = findArks(teiData)
 
-	updatedArks = getUpdatedArks(arks)
+	arksToUpdate = getUpdatedArks(arks)
 
-	for ark in updatedArks:
-		updateArkInTei(ark, teiData)
+	for oldArk in arksToUpdate:
+		updateArkInTei(oldArk, arksToUpdate[oldArk], teiData)
 
-	for tei in teiData:
-		writeTeiToFile(tei, teiData[tei])
+	for filename in teiData:
+		writeTeiToFile(filename, teiData[tei])
 
 if __name__ == "__main__":
 	main()
