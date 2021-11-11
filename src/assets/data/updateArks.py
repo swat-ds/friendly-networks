@@ -204,6 +204,9 @@ def main():
 
 	arksToUpdate = getUpdatedArks(arks)
 
+	if len(arksToUpdate) == 0:
+		return None
+
 	for oldArk in arksToUpdate:
 		updateArkInTei(oldArk, arksToUpdate[oldArk], teiData)
 
