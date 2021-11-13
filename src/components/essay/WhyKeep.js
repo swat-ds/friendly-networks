@@ -11,9 +11,9 @@ const WhyKeep = () => {
   // );
   return (
     <Row>
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <br />
-        <h4 className="background-text">Background: Essay</h4>
+        <h4 className="general-text">Background: Essay</h4>
         <div className="appendix-text essay" id="why-keep">
           <h2 class="c31 c45">
             <span class="c18 c13">“Advantages”: Why Keep a Journal? </span>

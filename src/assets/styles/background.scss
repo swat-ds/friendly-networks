@@ -43,19 +43,6 @@ body {
   border-left: 0.5vw solid hsl(335, 61%, 43%);
 }
 
-.scroll-links{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-left: 2px solid hsl(240, 5%, 22%);
-  border-radius: 5px;
-  height: fit-content;
-  width: 12vw;
-  top: 20vh;
-  left: 2vw;
-}
 .a-link{
   color: hsl(240, 5%, 22%);
 }

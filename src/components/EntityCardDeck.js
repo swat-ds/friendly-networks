@@ -50,8 +50,8 @@ const EntityCardDeck = ({entityDeck}) => {
            </Link>
          </td>
          <td>
-           <a href="#" class="more">
-             SNACC Link
+           <a href={"http://n2t.net/ark:/99166/" + entity.arkId} class="more">
+            SNACC link
            </a>
          </td>
        </tr>

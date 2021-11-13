@@ -1,13 +1,14 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "../components/Layout";
 import Network from "../components/Network";
-import {graphql} from 'gatsby'
+import Vis from "../components/Vis";
+import { graphql } from "gatsby";
 // const fs = require('fs')
 // const nodes = require("../assets/data/dataTable.json");
 // const links = require("../assets/data/relationshipTable.json");
 
-let d3Nodes = [];
-let d3Links = [];
+// let d3Nodes = [];
+// let d3Links = [];
 
 /**
  * 
@@ -25,8 +26,7 @@ const createD3Nodes = (constellations) => {
   let d3Nodes = [];
   //Insert the relatives to the nodes and construct the links
 
-  for(const constellation of constellations){
-
+  for (const constellation of constellations) {
     let node = {
       id: constellation.arkId || null,
       label: constellation.nameEntries[0].original || null,
@@ -41,14 +41,12 @@ const createD3Nodes = (constellations) => {
         }, "") || null, ///=> label; lable2; lable3
       subjects:
         constellation.subjects?.reduce((labels, subject) => {
-          let subjectLabel = subject.term?.term
-            ? subject.term.term + "; "
-            : "";
+          let subjectLabel = subject.term?.term ? subject.term.term + "; " : "";
           return labels + subjectLabel;
         }, "") || null, ///=> label; lable2; lable3
     };
 
-    if(node.id != null){
+    if (node.id != null) {
       d3Nodes.push(node);
     }
   }
@@ -57,9 +55,9 @@ const createD3Nodes = (constellations) => {
 
 /**
  *   { "source": "w6tq8ftp", "label": "spouseOf", "target": "w6qj854r" },
- * @returns 
+ * @returns
  */
-const createD3Links = (source, target, label ) => {
+const createD3Links = (source, target, label) => {
   const link = {
     source: source,
     label: label,
@@ -69,102 +67,101 @@ const createD3Links = (source, target, label ) => {
   return link;
 };
 
-
-const network = ({data}) => {
+const network = ({ data }) => {
+  let d3Nodes = [];
+  let d3Links = [];
 
   let constellations = data.allConstellation.nodes;
-  console.log("Size of entities:", constellations.length)
+  console.log("Size of entities:", constellations.length);
   let arkIds = [];
-  constellations.forEach(c => arkIds.push(c.arkId))
-  console.log("arkIds: ", arkIds)
+  constellations.forEach((c) => arkIds.push(c.arkId));
+  console.log("arkIds: ", arkIds);
 
   d3Nodes.push(...createD3Nodes(constellations));
-  console.log("D3 nodes created:", d3Nodes)
+  console.log("D3 nodes created:", d3Nodes);
 
   for (const node of constellations) {
-    let relations = node.relations?node.relations: [];
+    let relations = node.relations ? node.relations : [];
     for (const relation of relations) {
       let target = relation.targetArkID.split("/").pop() || null;
-      let  label=  relation.type?.term || null;
-      let hasTargetAvailable = (arkIds.includes(target));
-        if (hasTargetAvailable) {
-          d3Links.push(createD3Links(node.arkId, target, label));
-        }
+      let label = relation.type?.term || null;
+      let hasTargetAvailable = arkIds.includes(target);
+      if (hasTargetAvailable) {
+        d3Links.push(createD3Links(node.arkId, target, label));
+      }
     }
   }
-console.log("d3Links created: ", d3Links)
 
-// let sourceNotInNodes =[]
-// let targetNotInNodes = [];
+  // let sourceNotInNodes =[]
+  // let targetNotInNodes = [];
 
-//  for (let index = 0; index < d3Links.length; index++) {
-//    let sourceFound = false;
-//    loop2: for(let node = 0; node < d3Nodes.length; node++){
-//      if(d3Links[index].source  == d3Nodes[node].id){
-//        sourceFound = true;
-//       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-//        break loop2;
-//      }
-//    }
-//     if (sourceFound == false) {
-//       // console.log(`${d3Links[index].source} is not in any of the node ids`);
-//       sourceNotInNodes.push(d3Links[index].source);
-//     }
-//  }
+  //  for (let index = 0; index < d3Links.length; index++) {
+  //    let sourceFound = false;
+  //    loop2: for(let node = 0; node < d3Nodes.length; node++){
+  //      if(d3Links[index].source  == d3Nodes[node].id){
+  //        sourceFound = true;
+  //       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
+  //        break loop2;
+  //      }
+  //    }
+  //     if (sourceFound == false) {
+  //       // console.log(`${d3Links[index].source} is not in any of the node ids`);
+  //       sourceNotInNodes.push(d3Links[index].source);
+  //     }
+  //  }
 
-//  console.log("source not found:" ,sourceNotInNodes)
+  //  console.log("source not found:" ,sourceNotInNodes)
 
-//  let removableIndices = []
-//  let removableLinks = []
-//   for (let index = 0; index < d3Links.length; index++) {
-//     let targetFound = false;
-//     loop2: for (let node = 0; node < d3Nodes.length; node++) {
-//       if (d3Links[index].target == d3Nodes[node].id) {
-//         targetFound = true;
-//         //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-//         break loop2;
-//       }
-//     }
-//     if (targetFound == false) {
-//       // console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
-//       removableLinks.push(d3Links[index])
-//       removableIndices.push(index);
-//     }
-//   }
-//  console.log("removable links", removableLinks);
-//  console.log("removable indices", removableIndices);
- 
-//  let  i = 0
-    // for (let index = 0; index < d3Links.length; index++) {
-    //   let targetFound = false;
-    //   loop2: for (let node = 0; node < d3Nodes.length; node++) {
-    //     if (d3Links[index].target == d3Nodes[node].id) {
-    //       targetFound = true;
-    //       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-    //       break loop2;
-    //     }
-    //   }
-    //   if (targetFound == false) {
-    //     i++;
-    //     console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
-    //     // d3Links.splice(index, 1);
-    //   }
-    // }
+  //  let removableIndices = []
+  //  let removableLinks = []
+  //   for (let index = 0; index < d3Links.length; index++) {
+  //     let targetFound = false;
+  //     loop2: for (let node = 0; node < d3Nodes.length; node++) {
+  //       if (d3Links[index].target == d3Nodes[node].id) {
+  //         targetFound = true;
+  //         //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
+  //         break loop2;
+  //       }
+  //     }
+  //     if (targetFound == false) {
+  //       // console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
+  //       removableLinks.push(d3Links[index])
+  //       removableIndices.push(index);
+  //     }
+  //   }
+  //  console.log("removable links", removableLinks);
+  //  console.log("removable indices", removableIndices);
 
+  //  let  i = 0
+  // for (let index = 0; index < d3Links.length; index++) {
+  //   let targetFound = false;
+  //   loop2: for (let node = 0; node < d3Nodes.length; node++) {
+  //     if (d3Links[index].target == d3Nodes[node].id) {
+  //       targetFound = true;
+  //       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
+  //       break loop2;
+  //     }
+  //   }
+  //   if (targetFound == false) {
+  //     i++;
+  //     console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
+  //     // d3Links.splice(index, 1);
+  //   }
+  // }
 
-    return (
-      <Layout>
-        <Network
-          nodesInJSON={d3Nodes}
-          linksInJSON={d3Links}
-          centralFigure="w6n9820p"
-        ></Network>
-      </Layout>
-    );
-}
+  return (
+    <Layout>
+      {/* <Vis nodesInJSON={d3Nodes} linksInJSON={d3Links}></Vis> */}
+      <Network
+        nodesInJSON={d3Nodes}
+        linksInJSON={d3Links}
+        centralFigure="w6n9820p"
+      ></Network>
+    </Layout>
+  );
+};
 
-export default network
-
+export default network;
 
 export const query = graphql`
   {
@@ -259,4 +256,3 @@ export const query = graphql`
     }
   }
 `;
-

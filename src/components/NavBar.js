@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
 import "../assets/styles/nav.scss";
-import logo from "../assets/images/logo.jpeg";
+import logo from "../assets/images/HuntSiteLogoRough.png";
 import { globalVariables } from "../assets/data/globalVariables";
 
 import {
@@ -18,6 +18,7 @@ import {
   Navbar,
   Nav,
   NavDropdown,
+  Dropdown
 } from "react-bootstrap";
 
 //style={{display:"flex", flexDirection: "row", justifyContent: "space-between" }}
@@ -29,79 +30,149 @@ import {
 const NavBar = (props) => {
   const [query, setQuery] = useState("");
 
-
-   const handleChange = e => {
+  const handleChange = (e) => {
     setQuery(e.target.value);
-  }
+  };
 
-    // useEffect(() => {
-      
-    // }, [query]);
+  // useEffect(() => {
+
+  // }, [query]);
   return (
-    <Row id="nav-row">
-      <Col>
-        <img src={logo} style={{ height: "8vh" }}></img>
-      </Col>
-      <Col>
-        <Navbar expand="lg">
-          <Navbar.Brand id="brand">Menu</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="mr-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-              <div id="explore">
-                <Link className="g-link" to={globalVariables.home}>
-                  Home
+    <>
+      <Row id="nav-image">
+        <Col>
+          <img id="logo" src={logo}></img>
+        </Col>
+        <Col className="search-form">
+          <Form className="d-flex">
+            <FormControl
+              type="search"
+              placeholder="Search"
+              className=" form-box mr-2"
+              aria-label="Search"
+              onChange={handleChange}
+            />
+            <Link to={"/search"} state={{ searchQuery: query }}>
+              <Button variant="success">Search</Button>
+            </Link>
+          </Form>
+        </Col>
+      </Row>
+      <Row id="nav-row">
+        <Col>
+          <Navbar expand="lg">
+            <Navbar.Brand id="brand">Menu</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              {/* <Form className="d-flex">
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="mr-2"
+                  aria-label="Search"
+                  onChange={handleChange}
+                />
+                <Link to={"/search"} state={{ searchQuery: query }}>
+                  <Button variant="outline-success">Search</Button>
                 </Link>
-                <Link className="g-link" to={globalVariables.about}>
-                  About
+              </Form> */}
+              <div className="header-items-mobile">
+                <Link className="g-link" to={globalVariables.journals}>
+                  <div className="header-item" id="header-journal-mobile">
+                    Journal
+                  </div>
                 </Link>
-                <Link className="g-link" to={globalVariables.contact}>
-                  Contact
+                <Link className="g-link" to={globalVariables.people}>
+                  <div className="header-item" id="header-relative-mobile">
+                    People
+                  </div>
                 </Link>
+                <Link className="g-link" to={globalVariables.network}>
+                  <div className="header-item" id="header-network-mobile">
+                    Network
+                  </div>
+                </Link>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    style={{ height: "5vh" }}
+                    className="header-dropdown"
+                    variant="outline-success"
+                    id="dropdown-basic"
+                  >
+                    Background
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      className="d-flex header-item"
+                      id="header-background-mobile"
+                      href=""
+                    >
+                      <Link
+                        className="g-link dropdown-link"
+                        to={globalVariables.author_bg}
+                      >
+                        john Hunt
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className="d-flex header-item"
+                      id="header-background-mobile"
+                      href=""
+                    >
+                      <Link
+                        className="g-link dropdown-link"
+                        to={globalVariables.quaker_bg}
+                      >
+                        Quakers
+                      </Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+
+                <Dropdown>
+                  <Dropdown.Toggle
+                    style={{ height: "6vh" }}
+                    className="header-dropdown"
+                    variant="outline-success"
+                    id="dropdown-basic"
+                  >
+                    About
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      className="d-flex header-item"
+                      id="header-background-mobile"
+                      href=""
+                    >
+                      <Link
+                        className="g-link dropdown-link"
+                        to={globalVariables.about}
+                      >
+                        about
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      className="d-flex header-item"
+                      id="header-background-mobile"
+                      href=""
+                    >
+                      <Link
+                        className="g-link dropdown-link"
+                        to={globalVariables.contact}
+                      >
+                        contact
+                      </Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
-            </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="mr-2"
-                aria-label="Search"
-                onChange={handleChange}
-              />
-              <Link to={"/search"} state={{ searchQuery: query }}>
-                <Button variant="outline-success">Search</Button>
-              </Link>
-            </Form>
-            <div className="header-items-mobile">
-              <Link className="g-link" to={globalVariables.journals}>
-                <div className="header-item" id="header-journal-mobile">
-                  Journal
-                </div>
-              </Link>
-              <Link className="g-link" to={globalVariables.people}>
-                <div className="header-item" id="header-relative-mobile">
-                  People
-                </div>
-              </Link>
-              <Link className="g-link" to={globalVariables.network}>
-                <div className="header-item" id="header-network-mobile">
-                  Network
-                </div>
-              </Link>
-              <Link className="g-link" to={globalVariables.background}>
-                <div className="header-item" id="header-background-mobile">
-                  Background
-                </div>
-              </Link>
-            </div>
-          </Navbar.Collapse>
-        </Navbar>
-      </Col>
-    </Row>
+            </Navbar.Collapse>
+          </Navbar>
+        </Col>
+      </Row>
+    </>
   );
 };
 

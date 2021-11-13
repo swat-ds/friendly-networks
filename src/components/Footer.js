@@ -10,7 +10,7 @@ import "../assets/styles/footer.scss";
 const Footer = () => {
   return (
     <Row id="footer-row">
-      <footer className="text-center text-lg-start text-muted">
+      <footer className="text-center text-lg-start text-muted" id="footer">
         <section className="">
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">

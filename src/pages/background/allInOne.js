@@ -2,7 +2,6 @@ import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "../../assets/styles/background.scss";
 import Layout from "../../components/Layout";
-import SideScroll from "../../components/SideScroll";
 import Bibliography from "../../components/Bibliography";
 import Essay from "../../components/Essay";
 import Glossary from "../../components/Glossary";
