@@ -16,7 +16,7 @@ body {
   position: relative;
   text-decoration: none;
   display: inline-block;
-  color: hsl(207, 87%, 45%);
+  color: #808B42;
   padding: 0 1px;
   transition: color ease 1s;
   &:before {
@@ -26,7 +26,7 @@ body {
     left: 0;
     right: 50%;
     height: 3px;
-    background-color: hsl(207, 87%, 45%);
+    background-color: #808B42;
     transform: scaleX(0);
     transform-origin: bottom left;
 
@@ -40,7 +40,7 @@ body {
     right: 0;
     left: 50%;
     height: 3px;
-    background-color: hsl(207, 87%, 45%);
+    background-color: #808B42;
     transform: scaleX(0);
     transform-origin: bottom right;
 
@@ -48,6 +48,7 @@ body {
   }
 
   &:hover {
+    color: #808B42;
     &:before {
       transform: scaleX(1);
     }
@@ -89,8 +90,8 @@ body {
 }
 
 .wrapper .tooltip {
-  background: #1496bb;
-  cursor: pointer;
+  background: #342E37;
+  cursor: pointer;  
   position: absolute;
   font-style: italic;
   bottom: 100%;
@@ -122,7 +123,7 @@ body {
 .wrapper .tooltip:after {
   // border-left: solid transparent 10px;
   border-right: solid transparent 10px;
-  border-top: solid #1496bb 15px;
+  border-top: solid #342E37 15px;
   bottom: -10px;
   content: " ";
   height: 0;

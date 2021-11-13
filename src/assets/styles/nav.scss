@@ -1,8 +1,40 @@
 
+
 #nav-row{
-    background-color: #2F3242;
+  display: none;
+  // background-color: #2F3242;
+
 }
 
+#nav-image{
+  height: 15vh;
+  width: 100vw;
+  background-image: url("../images/HuntSiteHeader.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin:auto;
+  padding:0;
+}
+
+#logo{
+  height: 15vh;
+  width: 15vw;
+}
+
+.search-form{
+  display: flex;
+  // flex-direction: row;
+  justify-content: right;
+  // align-items: right;
+  align-items: center;
+  margin-right: 5px;
+
+  .form-box{
+    width: 20vw;
+     height:5vh;
+  }
+}
 #nav-items {
   // border: thin solid blue;
   width: 60%;
@@ -30,6 +62,10 @@
 }
 
 @media only screen and (max-width: 990px) {
+  #nav-row{
+  display: flex;
+  background-color: #2F3242;
+}
   #brand{
   color: hsl(0, 10%, 88%);
 }
@@ -48,43 +84,51 @@
     }
 
     #header-journal-mobile {
-      background-color: darkorange;
+      background-color: #808B42;
     }
     #header-journal-mobile:hover,
     #header-journal-mobile:active {
       background-color: white;
-      color: darkorange;
-      border: thin solid darkorange;
+      color: #808B42;
+      border: thin solid #808B42;
     }
 
     #header-relative-mobile {
-      background-color: hsl(335, 61%, 43%);
+      background-color:#808b42;
     }
     #header-relative-mobile:hover,
     #header-relative:active {
       background-color: white;
-      color: hsl(335, 61%, 43%);
-      border: thin solid hsl(335, 61%, 43%);
+      color:#808b42;
+      border: thin solid#808b42;
     }
     #header-network-mobile {
-      background-color: hsl(198, 89%, 49%);
+      background-color: #808b42;
     }
     #header-network-mobile:hover,
     #header-network-mobile:active {
       background-color: white;
-      color: hsl(198, 89%, 49%);
-      border: thin solid hsl(198, 89%, 49%);
+      color: #808b42;
+      border: thin solid #808b42;
     }
 
-    #header-background-mobile {
-      background-color:hsl(120, 59%, 41%);
+
+ #header-background-mobile{
+        background-color: #808B42;
+          .dropdown-link{
+            color: white;
+        }
+        }
+      .header-dropdown{
+        margin-top: 10px;
     }
-    #header-background-mobile:hover,
-    #header-background-mobile:active {
-      background-color: white;
-      color: hsl(120, 59%, 41%);
-      border: thin solid hsl(120, 59%, 41%);
-    }
+     #header-background-mobile:hover, #header-background-mobile:active{
+            background-color: white;
+            border: thin solid  #808B42;
+              .dropdown-link{
+            color:  #808B42;
+  }
+}
   }
 }
 

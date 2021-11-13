@@ -11,7 +11,7 @@ const MeetingStructure = () => {
   // );
   return (
     <Row>
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <h4 className="background-text">Background: Structures of Society of Friends</h4>
         <br />
         <div className="appendix-text" id="meeting-structure">

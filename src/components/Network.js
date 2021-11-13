@@ -116,19 +116,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure}) => {
        .style("fill", (node) => {
          if (node.id == centralFigure) return "#FF8C00";
          if (node.subjects?.includes("ministry")) {
-           return "#79990e";
+           return "#808b42";
          }
          return "#10A8EC";
        });
-     // .on("click", function () {
-     //   d3.select(this).style("fill", "lightcoral").style("stroke", "red");
 
-     // })
-     // .on("mouseleave", function (d) {
-     //      d3.select(this)
-     //       .style("stroke", "#bd0fdb").style("stroke-width", 1);
-
-     // });
 
      const tooltip = d3
        .select("#mainContainer")

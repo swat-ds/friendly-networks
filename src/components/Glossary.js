@@ -11,7 +11,7 @@ const Glossary = () => {
   // );
   return (
     <Row>
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <br />
         <h4 className="background-text">Background: Terms</h4>
         <div className="appendix-text" id="quaker-glossary">
@@ -19,7 +19,9 @@ const Glossary = () => {
             <br />
             {appendixData.appendixB.terms.map(term)} */}
           <h2 class="c8 c30" id="h.r07dnzyj1d4v">
-            <span class="c12">Terminologies involved within the context of Quakerism</span>
+            <span class="c12">
+              Terminologies involved within the context of Quakerism
+            </span>
           </h2>
           <p class="c5">
             <span class="c11 c13 c14">Acknowledgement</span>

@@ -11,9 +11,9 @@ const Family = () => {
   // );
   return (
     <Row>
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <br />
-        <h4 className="background-text">Background: Essay</h4>
+        <h4 className="general-text">Background: Essay</h4>
         <div className="appendix-text essay" id="family">
           <h2 class="c0 c31">
             <span class="c13 c18">&nbsp;“About Home:” The Hunt Family</span>

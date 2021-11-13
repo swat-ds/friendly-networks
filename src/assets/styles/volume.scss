@@ -1,7 +1,4 @@
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
@@ -44,7 +41,7 @@ body {
     &:hover{
     cursor: pointer;
     border-width: 2vh 2.5vw 2vh 0vw;
-    border-color: transparent #A7026A transparent transparent;
+    border-color: transparent #808B42 transparent transparent;
     }
   }
 
@@ -61,7 +58,7 @@ body {
      &:hover{
         cursor: pointer;
       border-width: 2vh 0vw 2vh 2.5vw;
-      border-color: transparent transparent transparent #A7026A;
+      border-color: transparent transparent transparent #808B42;
      }
     
    
@@ -73,10 +70,10 @@ body {
   flex-direction: row;
   justify-content: center;
   height: 85vh;
-  border-left: 0.5px solid #A7026A;
-  border-right: 5px solid #4d0c35;
-  border-top: 0.5px solid #A7026A;
-  border-bottom: 0.5px solid #A7026A;
+  border-left: 0.5px solid #808B42;
+  border-right: 5px solid #808B42;
+  border-top: 0.5px solid #808B42;
+  border-bottom: 0.5px solid #808B42;
 }
 
 
@@ -110,10 +107,10 @@ body {
   height: 85vh;
   overflow: scroll;
   padding: 2em;
-  border-left: 5px solid #4d0c35;
-  border-right: 0.5px solid #A7026A;
-  border-top: 0.5px solid #A7026A;
-  border-bottom: 0.5px solid #A7026A;
+  border-left: 5px solid #808B42;
+  border-right: 0.5px solid #808B42;
+  border-top: 0.5px solid #808B42;
+  border-bottom: 0.5px solid #808B42;
   color: hsl(0, 7%, 83%);
 }
 

@@ -1,14 +1,14 @@
 
+// change the theme
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #main-container{
-  background-color: #494949;
-}
-#main-row{
-  background-color: #3c373e;
+  background-color: #342E37;
 }
 
 #image{
@@ -28,7 +28,7 @@ body {
 
   .g-link {
   padding: 5px;
-  color: hsl(0, 9%, 70%);
+  color: #808B42;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all ease-in-out 0.5s;
@@ -36,7 +36,7 @@ body {
 }
   .g-link:hover{
   color: hsl(0, 27%, 94%);
-  border-color: hsl(207, 87%, 45%);;
+  border-color: #808B42;
 }
 
   .g-link2 {
@@ -57,7 +57,7 @@ body {
 }
 
 .general-text{
-  color: hsl(0, 7%, 83%);
+  color: white;
 }
 
 #result-card{

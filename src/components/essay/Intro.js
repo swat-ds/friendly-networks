@@ -11,9 +11,9 @@ const Intro = () => {
   // );
   return (
     <Row>
-      <Col className="background-col">
+      <Col className="background-col general-text">
         <br />
-        <h4 className="background-text">Background: Essay</h4>
+        <h4 className="general-text">Background: Essay</h4>
         <div className="appendix-text essay" id="introduction">
           <h2 class="c17">
             <span class="c18 c13">Introducing John Hunt</span>
