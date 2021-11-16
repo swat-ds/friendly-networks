@@ -42,7 +42,7 @@ const Timeline = (props) => {
              </div>
            </div>
            <div class="timeline-content">
-             <p class="description">{event}</p>
+             <p class="description general-text">{event}</p>
            </div>
          </div>
        );

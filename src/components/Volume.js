@@ -9,10 +9,68 @@ import { Container, Row, Button, Col, Collapse, Form, InputGroup } from "react-b
 import Layout from "./Layout";
 import JournalImage from "./JournalImage";
 import Viewer from "./Viewer";
+import { months } from "../assets/data/globalVariables";
 
 import { scroller } from "react-scroll";
 
 const parseString = require("xml2js").parseString;
+
+function getTitle(journal){
+ 
+let header  = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
+
+if(header && "tei-fileDesc" in header){
+
+  let title =
+    header["tei-fileDesc"][0]["tei-titleStmt"][0][
+      "tei-title"
+    ][0]._.split(":")[0].split(",")[0] || "John Hunt Journal";
+
+  // let date =
+  //   header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
+  //     "tei-date"
+  //   ][0]._.split("-") || "";
+
+  let detailedDateStr =
+    header["tei-fileDesc"][0]["tei-titleStmt"][0][
+      "tei-title"
+    ][0]._.split(":")[0].split(",")[1];
+
+  let detailedDate = detailedDateStr.split("-");
+  let beginningDate = detailedDate[0].trim().split(/\s+/);
+
+  let endingDate =
+    detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
+
+  let beginningYear = beginningDate[0] != undefined ? beginningDate[0] : "";
+
+  let beginningMonth = beginningDate[1] != undefined ? beginningDate[1] : "";
+  beginningMonth =
+    beginningMonth != undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
+
+  let beginningDay = beginningDate[2] != undefined ? beginningDate[2] : "";
+
+  let endingYear = endingDate[0] != undefined ? endingDate[0] : "";
+  let endingMonth = endingDate[1] != undefined ? endingDate[1] : "";
+  endingMonth = endingMonth != undefined ? endingMonth.slice(0, -3) : "";
+  let endingDay = endingDate[2] != undefined ? endingDate[2] : "";
+
+  return {
+    title: title,
+    startMonth: beginningMonth,
+    startDay: beginningDay,
+    startYear: beginningYear,
+
+    endMonth: endingMonth,
+    endDay: endingDay,
+    endYear: endingYear,
+    detailedDateStr: detailedDateStr,
+  };
+
+}
+  return null;
+
+}
 
 function getDivBreaks(divList) {
   let divBreaks = [];
@@ -88,6 +146,7 @@ const Volume = (props) => {
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
+  console.log(jsonPrefixed)
 
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
@@ -238,9 +297,58 @@ const Volume = (props) => {
      setPid(visiblePid)
    }
 
-   console.log(currentPid)
+function renderTitle(journalMetadata){
+  return (
+    <span>
+      <span className="general-text">
+        {`${journalMetadata.title}`}
+      </span>
+      <span className="">
+        {/* `{}` */}
+        <span className="general-text">      from {` `}</span>
+        {journalMetadata.startMonth ? (
+          <span className="date">{`${
+            months[journalMetadata.startMonth - 1].name
+          } `}</span>
+        ) : (
+          ""
+        )}
+        {journalMetadata.startDay ? (
+          <span className="date">{`${journalMetadata.startDay}, `}</span>
+        ) : (
+          ""
+        )}
+        {journalMetadata.startYear ? (
+          <span className="date">{`${journalMetadata.startYear}`}</span>
+        ) : (
+          ""
+        )}
+        {journalMetadata.startYear != undefined ? <span className="general-text">  to {` `}</span> : ""}
+        {journalMetadata.endMonth ? (
+          <span className="date">{`${
+            months[journalMetadata.endMonth - 1].name
+          } `}</span>
+        ) : (
+          ""
+        )}
+        {journalMetadata.endDay ? (
+          <span className="date">{`${journalMetadata.endDay}, `}</span>
+        ) : (
+          ""
+        )}
+        {journalMetadata.endYear ? (
+          <span className="date">{`${journalMetadata.endYear}`}</span>
+        ) : (
+          "Unknown"
+        )}
+        {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
+      </span>
+    </span>
+  );
+}
   return (
     <Layout>
+      <Row style={{display: "flex", textAlign:"center"}}>{renderTitle(getTitle(jsonPrefixed))}</Row>
       <Row id="main-row">
         <div id="image-tool">
           {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
@@ -266,7 +374,7 @@ const Volume = (props) => {
           ></Form.Control> */}
           {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
           <span class="general-text">
-            Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}
+            Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
           </span>
           <div
             id="right-arrow-icon"

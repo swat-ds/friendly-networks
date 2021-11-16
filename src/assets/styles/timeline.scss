@@ -15,11 +15,10 @@ display: flex;
   width: 70vw;
   padding: 3vw;
   margin-bottom: 3vh;
-  background-color: #5f5d5d;
-  border-top: 0.1vw solid hsl(335, 61%, 43%);
-  border-right: 0.1vw solid hsl(335, 61%, 43%);
-  border-bottom: 0.1vw solid hsl(335, 61%, 43%);
-  border-left: 0.5vw solid hsl(335, 61%, 43%);
+  border-top: 0.1vw solid #808B42;
+  border-right: 0.1vw solid #808B42;
+  border-bottom: 0.1vw solid #808B42;
+  border-left: 0.5vw solid #808B42;
 }
 
 .main-timeline:before {
@@ -77,7 +76,7 @@ display: flex;
     background: #fff;
     border: 1px dotted #128DE5;
     left: -5px;
-    background-color:#A7026A;
+    background-color:#808B42
     // .index{
     //     left: -5px;
     // }
@@ -93,7 +92,7 @@ display: flex;
 
 .main-timeline .timeline:hover .icon:before {
     left: 5px;
-    border: 1px dotted #A7026A;
+    border: 1px dotted #808B42;
     background-color: #128DE5;
 
     //  .index{
@@ -103,7 +102,7 @@ display: flex;
 
 .main-timeline .timeline:hover .icon:after {
     left: -5px;
-    border: 1px solid #A7026A;
+    border: 1px solid #808B42
     //  .index{
     //     left: -5px;
     // }
@@ -152,7 +151,7 @@ display: flex;
 }
 
 .main-timeline .date-outer:before {
-    background: #A7026A;
+    background: #808B42;
     border: 3px dotted #128DE5;
     left: -15px;
 
@@ -167,15 +166,15 @@ display: flex;
 .main-timeline .timeline:hover .date-outer:before {
     left: 15px;
     background-color: #128DE5;
-    border: 2px dotted #A7026A;
+    border: 2px dotted #808B42
     
 }
 
 .main-timeline .timeline:hover .date-outer:after {
     left: -15px;
-    border: 2px solid #A7026A;
+    border: 2px solid #808B42
     
-    // background-color: #A7026A;
+    // background-color: #808B42
 }
 
 .main-timeline .date {
@@ -216,7 +215,7 @@ display: flex;
 
 .main-timeline .timeline:nth-child(odd) .timeline-content {
      padding: 10px 0px 10px 20px;
-    border-right: 2px solid gray;
+    border-right: 2px solid #808B42;
      
 }
 

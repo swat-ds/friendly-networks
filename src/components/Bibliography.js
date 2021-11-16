@@ -14,7 +14,7 @@ const Bibliography = () => {
     <Row id="bib-row">
       <Col className="background-col general-text">
         <br />
-        <h4 className="background-text">Background: Bibliography</h4>
+        <h4>Background: Bibliography</h4>
         <div className="appendix-text" id="appendix-bib">
           {/* <h6 className="background-text">
               {appendixData.appendixC.header}:{" "}
@@ -29,8 +29,8 @@ const Bibliography = () => {
             </span>
           </h1>
           <br />
-          <p class="c8">
-            <span class="c11 c14 c28">
+          <p>
+            <span>
               Digital Surrogates Available online:
             </span>
             <span class="c12">&nbsp;</span>

@@ -11,7 +11,7 @@ const home = ({location}) => {
   return (
     <Layout>
       <br />
-      <p>
+      <p className="general-text">
         The essence of the Quakers Quakers believe that there is something of
         God in everybody and that each human being is of unique worth. This is
         why Quakers value all people equally, and oppose anything that may harm
