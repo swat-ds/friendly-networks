@@ -1,4 +1,4 @@
-![alt text](../images/image10.jpg "Direct Ancestors and Children of John Hunt (1740-1824)")
+![A family tree containing the following information: John Woolman (1655-1718) married Elizabeth Borton (1664-1718). Their daughter Elizabeth Woolman (1685-1756) married Robert Hunt (1685-1716). Elizabeth and Robert's son Robert Hunt (1709-1764) married Abigail Wood (1715-1747). Robert and Abigail's son John Hunt (1740-1824) married Esther Warrington (1743-1833) and had the following 10 children: William Hunt (1763-1764), Samuel Hunt (1765-1791), Joseph Hunt (1768-1856), Abigail Hunt (1770-1823), Rachel Hunt (1773-1775), William Hunt (1776-1778), John Hunt (1778-1824), Benjamin Hunt (1780-1822), Esther Hunt (1783-1808), and Hannah Hunt (1785-1839).](../images/image10.jpg "Direct Ancestors and Children of John Hunt (1740-1824)")
 
 The oldest son of Robert and Abigail Hunt of Haddonfield Monthly Meeting, John was born in August of 1740. John’s mother died when he was very young and Robert then married a young widow, Martha Ward, in 1749. John Hunt was subsequently apprenticed to George Matlack (1717-1766), a Quaker carpenter in Evesham.
 
