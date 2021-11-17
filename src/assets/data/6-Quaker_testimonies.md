@@ -18,6 +18,11 @@ Hunt wrote “Then let us begin to prepare and do everything that is required of
 
 [^33]: _Journal,_ September, 8, 1813.
 
+<p><figure>
+  <img src="../images/image9.jpg" alt="Black-and-white photograph of the interior of an old building. Rows of wooden benches take up the foreground; behind them a set of wooden stairs, with vertical banister posts, rises from left to right. The lower half of the walls are wood-paneled; the upper half are white-washed. The ceiling is made of close-fitted wooden boards. No people are visible." title="Interior photograph of the Evesham meeting house, looking toward the back, probably taken in the late 19th century."/>
+ <figcaption><i>Interior photograph of the Evesham meeting house, looking toward the back, probably taken in the late 19th century. Courtesy Friends Historical Library of Swarthmore College (A00179825).</i></figcaption>
+</figure></p>
+
 ## Antislavery
 
 As reflected in his journal entries, John Hunt was committed to the abolition of slavery and the promotion of human rights. He particularly admired [Joshua Evans’s](/entities/w6c82qz0) work on behalf of both Native Americans and African-Americans. At Evans’ death he observed that “this afternoon, fourth hour, was appointed to meet at the burial of Joshua Evans, and a vast concourse of people there was of different colors. The Negroes and Indians, for whom he had been a great advocate, testified their regard for him by attending his funeral, as well as the white people.”[^34] Quakers esteemed a long history of peaceful relations with the indigenous inhabitants of Pennsylvania and New Jersey, the Lenni-Lenape. By 1770s, Native American communities in New Jersey were in need of material and spiritual support. On more than one occasion John Hunt and Joshua Evans took aid to those living on their reservation at Edgepelick, Burlington County: 
@@ -25,11 +30,6 @@ As reflected in his journal entries, John Hunt was committed to the abolition of
 
 [^34]: _Journal,_ July 8, 1798.
 [^35]: _Journal,_ January 2, 1777.
-
- <p><figure>
-  <img src="../images/image9.jpg" alt="Black-and-white photograph of the interior of an old building. Rows of wooden benches take up the foreground; behind them a set of wooden stairs, with vertical banister posts, rises from left to right. The lower half of the walls are wood-paneled; the upper half are white-washed. The ceiling is made of close-fitted wooden boards. No people are visible." title="Interior photograph of the Evesham meeting house, looking toward the back, probably taken in the late 19th century."/>
- <figcaption><i>Interior photograph of the Evesham meeting house, looking toward the back, probably taken in the late 19th century. Courtesy Friends Historical Library of Swarthmore College (A00179825).</i></figcaption>
-</figure></p>
 
 Quakers were pioneers in the anti-slavery movement. Nevertheless it took several decades for Friends as a corporate body to reach the position that enslavement in any and all forms was incompatible with Quakerism and to finally require that all enslaved people held by Friends be liberated and that any Friend who refused to do so would be disowned. By 1780, slavery was virtually extinct among Friends. New Jersey nurtured the growing anti-slavery movement among Friends. [John Woolman (1720-1772)](/entities/w6wr0v4m/), [David Cooper (1725-1795)](/entities/w6qj9kc7/), and [Joshua Evans (1731-1798)](/entities/w6c82qz0) were among the most vocal proponents. 
 
