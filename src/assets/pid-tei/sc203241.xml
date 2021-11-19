@@ -100,7 +100,7 @@
 	<div type="entry" n="1777-02-03"><dateline><date when="1777-02-03">3rd</date></dateline> <p>about home</p></div>
 <div type="entry" n="1777-02-04"><dateline><date when="1777-02-04">4.</date></dateline><p> I went with <persName key="w6tz45z2">William Matlack</persName> and <persName key="w6j49htj">John Lippincott</persName> on some business enjoined us by the Monthly Meeting concerning manumitting Negroes. At some places we had tight work of it though not rough this day. We were favored and come of with great encouragement beyond expectation.</p>
 </div>
-<div type="entry" n="1777-02-22"><note type=structure>The following entry, expanding Hunt's accounts of events on January 22, 1777, was inserted here at the bottom of the page</note><dateline><date when="1777-02-22">22nd of the First Month above mention.</date></dateline><p> About that time there was many pressed and six out of Evesham and others about Holly taken as prisoners up to the general.<note type="editorial">Notes and Observations inserts here on page 105, <q>Some had a right among Friends.</q></note> Was pretty moderate to them and discharged most of them except some who had been exercising a little. This by account was a very close sifting time with them. Some were cleared on examination by pleading infirmity which they had been subject to. I was told they look as if they had had a fit of sickness. <note type="editorial"><emph rend="italic">Notes and Observations</emph> inserts here on page 105: <q>I was told some of them when they came back looked as if they had had a fit of sickness.</q></note> Inquire of some of them when they came back I was told that J. Natt a young man amongst them said he thought they might count it a favor that they were counted worthy to suffer. See Sewel's<emph rend="italic"> History</emph>, page 264.</p>
+<div type="entry" n="1777-02-22"><note type="structure">The following entry, expanding Hunt's accounts of events on January 22, 1777, was inserted here at the bottom of the page</note><dateline><date when="1777-02-22">22nd of the First Month above mention.</date></dateline><p> About that time there was many pressed and six out of Evesham and others about Holly taken as prisoners up to the general.<note type="editorial">Notes and Observations inserts here on page 105, <q>Some had a right among Friends.</q></note> Was pretty moderate to them and discharged most of them except some who had been exercising a little. This by account was a very close sifting time with them. Some were cleared on examination by pleading infirmity which they had been subject to. I was told they look as if they had had a fit of sickness. <note type="editorial"><emph rend="italic">Notes and Observations</emph> inserts here on page 105: <q>I was told some of them when they came back looked as if they had had a fit of sickness.</q></note> Inquire of some of them when they came back I was told that J. Natt a young man amongst them said he thought they might count it a favor that they were counted worthy to suffer. See Sewel's<emph rend="italic"> History</emph>, page 264.</p>
 <note type="authorial" place="right margin"> though wild youth</note>
 <p>About that time the press company went about there was several very comical occurrences. To relate in full would seem more jocose than serious. People being in great fear took frights when there was no occasion and so false alarms were raised which flew so fast they could not be stopped till they spread several miles in a neighborhood, and some things a little remarkable happened to some young men that fled to get out of this trouble met with losses and returned home.</p>
 <note type="authorial" place="left margin"> This was a very trying season to many that was forced to leave their families in a very sorrowful manner. I was told of one that quite sweat with fear.</note>
@@ -2732,18 +2732,19 @@ I came from Thomas Woodward's about 18 miles to Caleb Pierce's (to lodge). A sub
 <div type="entry" n="1784-06-29"><dateline><date when="1784-06-29">29.</date></dateline><p> Went to our meeting. But middling so so.</p>
 <note type="authorial" place="left margin"> This spring the worms eat the Indian Corn very much so that almost whole fields are cut off in places the first planting- See Isaiah 5-12 verses- and our garden truck is much much cut off with the worms. See Joel 1 chapter and 4 verse and 5 verse. This passage much occurred to my mind when I seen the garden truck cut off the new wine is cut off from your mouth.</note></div>
 <pb n="127" facs="sc203513"/>
-<div type="entry" n="1784-06-30"><dateline><date when="1784-06-30">30th of the Sixth Month, 1784.</date></dateline><p> <persName key="w60h49sj">Samme</persName> and I went to Nehemiah Leeds to make a pump. [crossed out] 27 feet long the pump we made of oak.</p><p>
-				 13 – 6
- 	 			  7 – 6 boxes
-				------------
-				 2=8=0
-				 0–10–0
-   		  =6=0
-				------------
-				 3=4–0
+	<div type="entry" n="1784-06-30"><dateline><date when="1784-06-30">30th of the Sixth Month, 1784.</date></dateline><p> <persName key="w60h49sj">Samme</persName> and I went to Nehemiah Leeds to make a pump 27 feet long. [crossed out] The pump we made of oak.
+<table>
+	<row><cell/><cell/><cell>27</cell><cell/><cell>feet long</cell></row>
+	<row><cell/><cell/><cell>13</cell><cell>6</cell><cell/></row>
+	<row><cell/><cell/><cell>7</cell><cell>6</cell><cell>boxes</cell></row>
+	<row rend="sum"><cell/><cell>2</cell><cell>8</cell><cell>0</cell><cell/></row>
+	<row><cell>To boring and putting boxes in old piece.</cell><cell>0</cell><cell>10</cell><cell>0</cell><cell/></row>
+	<row><cell>to hewing this pump</cell><cell/><cell>6</cell><cell>0</cell><cell/></row>
+	<row rend="sum"><cell/><cell>3</cell><cell>4</cell><cell>0</cell><cell/></row>
+</table>
 </p></div>
 <div type="entry" n="1784-07-02"><dateline><date when="1784-07-02">2nd of the Seventh Month.</date></dateline><p> We finished and came home.</p>
-<note type="authorial" place="left margin"> I thought too much hard work and hurry and cumber of business hurt me this week and I thought I rather lost than gained as to spiritual strength.</note></div>
+<p> I thought too much hard work and hurry and cumber of business hurt me this week and I thought I rather lost than gained as to spiritual strength.</p></div>
 <div type="entry" n="1784-07-03"><dateline><date when="1784-07-03">3 of the Seventh Month.</date></dateline><p> I made a plow for James Kaighn. Paid for.</p></div>
 <div type="entry" n="1784-07-04"><dateline><date when="1784-07-04">4.</date></dateline><p> Was First Day. A close trial this morning. Went to our meeting. A very poor time with us.</p></div>
 <div type="entry" n="1784-07-05"><dateline><date when="1784-07-05">5.</date></dateline><p> At work at home amongst the garden truck etc.</p></div>
