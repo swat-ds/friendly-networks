@@ -51,7 +51,7 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
   <dd>A member of committee of overseers responsible for the welfare and discipline of members of the <a href="#monthly-meetings">monthly meeting</a>.</dd>
 
 <dt id="particular-meeting">Particular Meeting</dt>
-  <dd>A formally established meeting for worship under the care of a <a href="#monthly-meetings">monthly meeting</a> (what would today be called a "worship group”).</dd>
+  <dd>A formally established meeting for worship under the care of a <a href="#monthly-meetings">monthly meeting</a>. This would today be called a "worship group."</dd>
 
 <dt id="preparative-meeting">Preparative Meeting</dt>
   <dd>A regularly organized business meeting of a single "congregation." It oversaw the meetings for worship and prepared business to be presented to the <a href="#monthly-meetings">monthly meeting</a>. Today, most preparative meetings have become monthly meetings or have been discontinued.</dd>
