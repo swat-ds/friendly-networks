@@ -34,7 +34,7 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
 
 <dt id="ministers">Minister</dt>
   <dd>Historically, men and women who were recognized as being unusually inspired by the Spirit of God and provided most of the vocal messages in meeting for worship.  Ministers were formally designated or “recorded” by the <a href="#monthly-meetings">monthly meeting</a>, and regular meetings of ministers and <a href="#elders">elders</a>, called "Preparative Meetings of Ministers and Elders" or <a href="#select-meeting">"select meetings"</a> were held to consider the spiritual life of the meeting.  The practice of “recording” ministers has for the most part been discontinued today.</dd>
-  
+
 <dt id="monthly-meetings">Monthly Meeting</dt>
   <dd>The monthly meeting was the fundamental unit of Friends’ organization. It had responsibility for care of members, authorized <a href="#removal">removals</a> and marriages, maintained discipline, considered <a href="#queries">queries</a>, and reported regularly to the <a href="#quarterly-meeting">quarterly meeting</a>. All business meetings (at all levels) were held in a spirit of worship, and so were in effect meetings for worship for conducting business. In theory, all members in good standing could participate in the monthly business sessions, but the representatives generally presented the business of the <a href="#preparative-meeting">preparative meeting</a>.</dd>
 
@@ -49,10 +49,10 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
 
 <dt id="preparative-meeting">Preparative Meeting</dt>
   <dd>A regularly organized business meeting of a single "congregation." It oversaw the meetings for worship and prepared business to be presented to the <a href="#monthly-meetings">monthly meeting</a>. Today, most preparative meetings have become monthly meetings or have been discontinued.</dd>
-  
+
 <dt id="quarterly-meeting">Quarterly Meeting</dt>
   <dd>These meetings are under the jurisdiction of a <a href="#yearly-meeting">yearly meeting</a>.  Half-yearly meetings were established where distance between meetings made more frequent gathering difficult.</dd>
-  
+
 <dt id="queries">Queries</dt>
 <dd>A set of questions, revised periodically, which were to be answered in writing by <a href="#preparative-meeting">preparative</a>, <a href="#monthly-meetings">monthly</a>, and <a href="#quarterly-meeting">quarterly</a> meetings and reported to the <a href="#yearly-meeting">yearly meeting</a>.  The queries concern conduct of individuals and practices of the meetings and provide one means of assuring uniformity in discipline.  <a href="#select-meeting">Meetings of ministers and elders</a> also responded to queries.</dd>
 
@@ -66,17 +66,16 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
   <dd>A religious visit, generally to a family. See also: <a href="#opportunity">"Opportunity"</a>.</dd>
 
 <dt id="testimonies">Testimonies</dt>
-  <dd>Traditionally, Quakers developed a series of specific practices, often called testimonies, that expressed ethical conduct of truthfulness, simplicity, equality, and peace.  Testimonies include rejection of oaths, use of “thee” and “thou” in speech, plain dress, refusal to take off hats to social superiors, equality of men and women, opposition to slavery, and refusal to bear arms.  Testimonies also can refer to official documents, frequently <a href="#disownments">disownments</a> and <a href="#memorials">memorials</a>, prepared by Quaker business meetings as part of what they considered witnessing to truth.</dd>
+  <dd>Traditionally, Quakers developed a series of specific practices, often called testimonies, that expressed ethical conduct of truthfulness, simplicity, equality, and peace.  Testimonies include rejection of oaths, use of “thee” and “thou” in speech, plain dress, refusal to take off hats to social superiors, equality of men and women, opposition to slavery, and refusal to bear arms.  Testimonies also can refer to official documents, frequently <a href="#disownment">disownments</a> and <a href="#memorials">memorials</a>, prepared by Quaker business meetings as part of what they considered witnessing to truth.</dd>
 
 <dt id="traveling-certificate-or-minute">Traveling Certificate or Minute</dt>
   <dd>A document issued by a meeting to a member in good standing (normally a recorded <a href="#ministers">minister</a>), allowing him or her to travel to other meetings to visit or preach. </dd>
 
 <dt id="womens-meeting">Women’s Meeting</dt>
   <dd>Separate business meetings for women alongside the men’s meetings were held by <a href="#preparative-meeting">preparative</a>, <a href="#monthly-meetings">monthly</a>, <a href="#quarterly-meeting">quarterly</a>, and <a href="#yearly-meeting">yearly meetings</a>.  Women appointed representatives, communicated with other women’s meetings, granted or received certificates of <a href="#removal">removal</a>, approved marriages for women members.  The men’s meeting rarely overruled the women’s meetings on removals, marriages or questions regarding matters of discipline.  Gradually, beginning late in the 19th century, men and women began meeting jointly to conduct business.</dd>
-  
+
 <dt id="yearly-meeting">Yearly Meeting</dt>
   <dd>Yearly meeting was the highest level of authority within the Society of Friends, a large and autonomous body of Quakers in a particular geographic region. Decisions were binding on the <a href="#monthly-meetings">monthly</a> and <a href="#quarterly-meeting">quarterly</a> meetings within its jurisdiction. It met annually over a period of several days to conduct business, formulate the discipline, receive reports and concerns from its constituent meetings, review the state of the Society, and to communicate with other yearly meetings through epistles.</dd>
-  </dl>
 
 <dt id="opportunity">Opportunity</dt>
   <dd>An opportunity for a religious visit to families or to speak in meeting for worship. See also: <a href="sitting">"Sitting"</a>.</dd>
@@ -89,10 +88,10 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
 
 <dt id="preparative-meeting">Preparative Meeting</dt>
 <dd>A regularly organized business meeting of a single "congregation." It oversaw the meetings for worship and prepared business to be presented to the <a href="monthly-meetings">monthly meeting</a>. Today, most preparative meetings have become monthly meetings or have been discontinued.</dd>
-  
+
 <dt id="quarterly-meeting">Quarterly Meeting</dt>
   <dd>These meetings are under the jurisdiction of a <a href="yearly-meeting">yearly meeting</a>.  Half-yearly meetings were established where distance between meetings made more frequent gathering difficult.</dd>
-  
+
 <dt id="queries">Queries</dt>
 <dd>A set of questions, revised periodically, which were to be answered in writing by <a href="preparative-meeting">preparative</a>, <a href="monthly-meetings">monthly</a>, and <a href="quarterly-meeting">quarterly</a> meetings and reported to the <a href="yearly-meeting">yearly meeting</a>.  The queries concern conduct of individuals and practices of the meetings and provide one means of assuring uniformity in discipline.  <a href="select-meeting">Meetings of ministers and elders</a> also responded to queries.</dd>
 
@@ -106,14 +105,14 @@ quarterly</a> and/or yearly meeting. Yearly meetings also periodically published
   <dd>A religious visit, generally to a family. See also: <a href="opportunity">"Opportunity"</a>.</dd>
 
 <dt id="testimonies">Testimonies</dt>
-  <dd>Traditionally, Quakers developed a series of specific practices, often called testimonies, that expressed ethical conduct of truthfulness, simplicity, equality, and peace.  Testimonies include rejection of oaths, use of “thee” and “thou” in speech, plain dress, refusal to take off hats to social superiors, equality of men and women, opposition to slavery, and refusal to bear arms.  Testimonies also can refer to official documents, frequently <a href="#disownments">disownments</a> and <a href="memorials">memorials</a>, prepared by Quaker business meetings as part of what they considered witnessing to truth.</dd>
+  <dd>Traditionally, Quakers developed a series of specific practices, often called testimonies, that expressed ethical conduct of truthfulness, simplicity, equality, and peace.  Testimonies include rejection of oaths, use of “thee” and “thou” in speech, plain dress, refusal to take off hats to social superiors, equality of men and women, opposition to slavery, and refusal to bear arms.  Testimonies also can refer to official documents, frequently <a href="#disownment">disownments</a> and <a href="memorials">memorials</a>, prepared by Quaker business meetings as part of what they considered witnessing to truth.</dd>
 
 <dt id="traveling-certificate-or-minute">Traveling Certificate or Minute</dt>
   <dd>A document issued by a meeting to a member in good standing (normally a recorded <a href="ministers">minister</a>), allowing him or her to travel to other meetings to visit or preach. </dd>
 
 <dt id="womens-meeting">Women’s Meeting</dt>
   <dd>Separate business meetings for women alongside the men’s meetings were held by <a href="preparative-meeting">preparative</a>, <a href="monthly-meetings">monthly</a>, <a href="quarterly-meeting">quarterly</a>, and <a href="yearly-meeting">yearly meetings</a>.  Women appointed representatives, communicated with other women’s meetings, granted or received certificates of <a href="removal">removal</a>, approved marriages for women members.  The men’s meeting rarely overruled the women’s meetings on removals, marriages or questions regarding matters of discipline.  Gradually, beginning late in the 19th century, men and women began meeting jointly to conduct business.</dd>
-  
+
 <dt id="yearly-meeting">Yearly Meeting</dt>
   <dd>Yearly meeting was the highest level of authority within the Society of Friends, a large and autonomous body of Quakers in a particular geographic region. Decisions were binding on the <a href="monthly-meetings">monthly</a> and <a href="quarterly-meeting">quarterly</a> meetings within its jurisdiction. It met annually over a period of several days to conduct business, formulate the discipline, receive reports and concerns from its constituent meetings, review the state of the Society, and to communicate with other yearly meetings through epistles.</dd>
   </dl>
