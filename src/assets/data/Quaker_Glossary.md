@@ -1,3 +1,9 @@
+---
+slug: "/background/quaker-bg/glossary"
+date: "2021-11-19"
+title: "Glossary of Quaker Terms"
+---
+
 # Glossary of Quaker Terms
 
 <dl>

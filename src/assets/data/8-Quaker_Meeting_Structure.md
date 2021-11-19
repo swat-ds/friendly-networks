@@ -1,4 +1,10 @@
-# Structure of Quaker meetings
+---
+slug: "/background/quaker-bg/structure-society-friends"
+date: "2021-11-19"
+title: "Structure of Quaker Meetings"
+---
+
+# Structure of Quaker Meetings
 
 Philadelphia Yearly Meeting published its first printed Discipline in 1797. Its introduction included a paragraph on the structure of its constituent bodies:
 >And for the worship of God, and the more regular and easy proceeding in the service and discipline of the Church, Meetings have been by Divine assistance, as above hinted, set up and established, serviceable and subordinate to each other, as particular meetings Meetings for worship, one or more of which constitute a Preparative Meeting. Monthly, which mostly take In several particular or Preparative Meetings, who are to meet together once a month. Quarterly, including so many monthly Meetings as may under right direction most usually meet together once every three months. And Yearly, which is composed of so many Quarterly Meetings as may most conveniently attend the same; each of which have their respective Powers and Service for the well ordering of Society, and advancement of Truth and Righteousness.[^1]
@@ -11,7 +17,7 @@ In the late 18th century, “General Meetings” (for worship) were appointed ev
 
 Preparative Meetings generally oversaw the meetings for worship. It was, in effect, the local “congregation.” Men and women held separate business meetings (at all levels) until the late 19th century. The Preparative Meeting usually held the deeds to the land on which the meetinghouse and burial ground stood. Unlike many other Protestant denominations, the preparative meeting was constituted by the members who worshipped in a home or meeting house, not the building or church in which worship occurred.
 
-And the Preparative Meeting appointed representatives to attend the Monthly Meeting of which it was a part. The Monthly Meeting was the fundamental unit of Friends’ organization. It had responsibility for care of members, authorized removals and marriages, maintained discipline, considered queries, and reported regularly to the quarterly meeting. All business meetings (at all levels) were held in a spirit of worship, and so were in effect meetings for worship for conducting business. In theory, all members in good standing could participate in the monthly business sessions, but the representatives generally presented the business of the Preparative Meeting. 
+And the Preparative Meeting appointed representatives to attend the Monthly Meeting of which it was a part. The Monthly Meeting was the fundamental unit of Friends’ organization. It had responsibility for care of members, authorized removals and marriages, maintained discipline, considered queries, and reported regularly to the quarterly meeting. All business meetings (at all levels) were held in a spirit of worship, and so were in effect meetings for worship for conducting business. In theory, all members in good standing could participate in the monthly business sessions, but the representatives generally presented the business of the Preparative Meeting.
 
 Quarterly Meeting for business was held four times per year, attended by representatives of all monthly meetings in a given area. It served as an appellate body for disciplinary matters and considered problems too large for a local meeting to solve. A quarterly meeting held the authority to establish or discontinue a monthly, preparative, or particular meeting for worship.  Evesham Monthly Meeting was part of Salem Quarterly Meeting until its division in 1794 when Haddonfield Quarterly Meeting was set off. The Monthly Meetings of Haddonfield, Great Egg Harbor, and Evesham (Hunt's meeting) then constituted the latter.
 
