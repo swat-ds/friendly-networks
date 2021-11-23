@@ -53,7 +53,7 @@ const search = ({ location, data }) => {
   if (typeof window !== "undefined" && typeof document !== "undefined") {
     console.log(location);
 
-    if (location.state !== null) {
+    if (location.state.searchQuery) {
       query = location.state.searchQuery;
     } else {
       query = location.search.slice(3);

@@ -53,11 +53,12 @@ const search = ({ location, data }) => {
   if (typeof window !== "undefined" && typeof document !== "undefined") {
     console.log(location);
 
-    if (location.state !== null) {
+    if ('state' in location) {
       query = location.state.searchQuery;
     } else {
       query = location.search.slice(3);
     }
+    query = location.search.slice(3);
     let baseKey = "text.tei-TEI.tei-text.tei-body.tei-div";
     let baseKey2 = "text.tei-TEI.tei-text.tei-front";
     const journalFuse = new Fuse(parsedJournals, {

@@ -38,7 +38,7 @@ const NavBar = (props) => {
 
   //takes the input value and set it to be the value of property 'searchQuery' in the state
   const handleChange = (e) => {
-    setQuery(e.target.value);
+    setSearchOBj();
   };
 
   //wheen pressed Enter key, the state will be set and programmatically trigger the click of the Link
@@ -46,7 +46,7 @@ const NavBar = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     // Go to new page
-    navigate(`/search?q=${query}`, {state: {searchQuery: query}} )
+    navigate('/search', {state: {searchQuery: }} )
 
   }
 

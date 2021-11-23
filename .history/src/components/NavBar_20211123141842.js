@@ -46,7 +46,7 @@ const NavBar = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     // Go to new page
-    navigate(`/search?q=${query}`, {state: {searchQuery: query}} )
+    navigate(`/search?${}', {state: {searchQuery: query}} )
 
   }
 

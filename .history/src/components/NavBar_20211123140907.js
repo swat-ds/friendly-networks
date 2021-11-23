@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
 import "../assets/styles/nav.scss";
@@ -32,22 +32,23 @@ const NavBar = (props) => {
 
  //the state that will be passed to search page upon the click of the Link
  //the 'searchQuery' is being destructured in the search.js 
-  const [query, setQuery] = useState("");
+  const [searchObj, setSearchOBj] = useState({searchQuery: ""});
   //to refer to the Link to trigger click when pressed Enter key. 
   const linkRef = useRef();
 
   //takes the input value and set it to be the value of property 'searchQuery' in the state
   const handleChange = (e) => {
-    setQuery(e.target.value);
+    setSearchOBj({searchQuery: e.target.value});
   };
 
   //wheen pressed Enter key, the state will be set and programmatically trigger the click of the Link
   //TODO: not working, goes to the search page but comes back to /?
-  function handleSubmit(e) {
-    e.preventDefault();
-    // Go to new page
-    navigate(`/search?q=${query}`, {state: {searchQuery: query}} )
-
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      setSearchOBj({ searchQuery: e.target.value });
+      // console.log(searchObj);
+      linkRef.current.click();
+    }
   }
 
   return (
@@ -57,17 +58,18 @@ const NavBar = (props) => {
           <img id="logo" src={logo}></img>
         </Col>
         <Col className="search-form">
-          <Form className="d-flex" onSubmit={handleSubmit}>
+          <Form className="d-flex">
             <FormControl
               type="search"
               placeholder="Search"
               className=" form-box mr-2"
               aria-label="Search"
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
             />
-            <Button type="submit" variant="success">
-              Search
-            </Button>
+           
+              <Button type="submit" variant="success">Search</Button>
+            </Link>
           </Form>
         </Col>
       </Row>

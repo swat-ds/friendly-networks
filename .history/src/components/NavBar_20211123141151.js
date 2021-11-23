@@ -32,13 +32,13 @@ const NavBar = (props) => {
 
  //the state that will be passed to search page upon the click of the Link
  //the 'searchQuery' is being destructured in the search.js 
-  const [query, setQuery] = useState("");
+  const [searchObj, setSearchOBj] = useState({searchQuery: ""});
   //to refer to the Link to trigger click when pressed Enter key. 
   const linkRef = useRef();
 
   //takes the input value and set it to be the value of property 'searchQuery' in the state
   const handleChange = (e) => {
-    setQuery(e.target.value);
+    setSearchOBj({searchQuery: e.target.value});
   };
 
   //wheen pressed Enter key, the state will be set and programmatically trigger the click of the Link
@@ -46,7 +46,7 @@ const NavBar = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     // Go to new page
-    navigate(`/search?q=${query}`, {state: {searchQuery: query}} )
+    navigate('/search", )
 
   }
 
