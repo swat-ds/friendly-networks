@@ -1,0 +1,2 @@
+global primary: #808B42
+secondary : #342E37
