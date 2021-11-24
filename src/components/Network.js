@@ -99,7 +99,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-2000))
+      .force("charge", d3.forceManyBody().strength(-2300))
       .force(
         "link",
         d3
@@ -263,6 +263,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         <Button
           variant={removeHunt ? "success" : "danger"}
           onClick={() => setRemoveHunt(!removeHunt)}
+          style={{ margin: "2px"}}
         >
           <span className="general-text">
             {removeHunt ? "Add Hunt" : "Remove Hunt"}
