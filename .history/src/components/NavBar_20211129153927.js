@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Link, navigate } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 import { FaBars } from "react-icons/fa";
 import "../assets/styles/styles.scss";
 import "../assets/styles/nav.scss";

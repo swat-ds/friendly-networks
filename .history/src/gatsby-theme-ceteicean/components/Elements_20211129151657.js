@@ -215,8 +215,7 @@ export const Para = (props) => {
 
   //   }
   // }
-  // const ref = useRef();
-  // console.log(ref.current.nextSibling);
+  console.log()
   return (
     <Behavior node={props.teiNode}>
       <span style={{ marginTop: "0px" }}>

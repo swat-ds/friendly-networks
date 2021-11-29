@@ -18,16 +18,11 @@
 }
 
 #logo{
-  margin-left: 0;
+  margin-right: 0;
  width:70%; 
  height:auto; 
- display: flex;
- justify-content: left;
+ display: block;
  max-width:200px;
-
- @media screen and (max-height: 700px) {
-
-}
 }
 
 .search-form{

@@ -210,17 +210,14 @@ export const Dateline = (props) => {
 };
 
 export const Para = (props) => {
-  // function getBreaks(){
-  //   if(props.teiNode.sibling){
-
-  //   }
-  // }
-  // const ref = useRef();
-  // console.log(ref.current.nextSibling);
+  function getBreaks(){
+    if
+  }
   return (
     <Behavior node={props.teiNode}>
       <span style={{ marginTop: "0px" }}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        {props.teiNode.sib}
       </span>
       <br />
       <br />

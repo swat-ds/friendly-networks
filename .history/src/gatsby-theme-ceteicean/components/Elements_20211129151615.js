@@ -215,12 +215,12 @@ export const Para = (props) => {
 
   //   }
   // }
-  // const ref = useRef();
-  // console.log(ref.current.nextSibling);
+  console.log(props.teiNode)
   return (
-    <Behavior node={props.teiNode}>
+    <Behavior node={props.teiNode.}>
       <span style={{ marginTop: "0px" }}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+
       </span>
       <br />
       <br />

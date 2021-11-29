@@ -157,7 +157,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("class", "node")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
+        return node.id == centralFigure ? 60 : Math.log(node.degree) * 15+; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       .style("stroke", "#bd0fdb")
