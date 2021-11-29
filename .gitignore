@@ -13,5 +13,5 @@ npm-debug.log*
 vendor
 .cache
 public
-src/assets/.DS_Store
+*.DS_Store
 src/assets/.DS_Store
