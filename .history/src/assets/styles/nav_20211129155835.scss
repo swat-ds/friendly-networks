@@ -20,14 +20,10 @@
 #logo{
   margin-left: 0;
  width:70%; 
- height:auto; 
+ height:; 
  display: flex;
  justify-content: left;
  max-width:200px;
-
- @media screen and (max-height: 700px) {
-
-}
 }
 
 .search-form{
