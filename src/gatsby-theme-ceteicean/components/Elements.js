@@ -217,6 +217,20 @@ export const Para = (props) => {
   // }
   // const ref = useRef();
   // console.log(ref.current.nextSibling);
+
+  let followingNode = props.teiNode.nextElementSibling?.localName;
+
+  console.log(followingNode);
+
+  if (followingNode === "tei-note") {
+    return (
+      <Behavior node={props.teiNode}>
+        <span style={{ marginTop: "0px" }}>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </span>
+      </Behavior>
+    );
+  }
   return (
     <Behavior node={props.teiNode}>
       <span style={{ marginTop: "0px" }}>
