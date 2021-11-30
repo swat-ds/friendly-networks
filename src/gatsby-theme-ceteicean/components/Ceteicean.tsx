@@ -29,11 +29,11 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-p": El.Para,
     "tei-floatingtext": El.FloatingText,
     "tei-quote": El.Quote,
-    // "tei-l": El.L,
+    "tei-l": El.Line,
     "tei-note": El.Note,
     "tei-title": El.Title,
     "tei-said": El.Said,
-  }; 
+  };
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />

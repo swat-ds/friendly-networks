@@ -115,7 +115,7 @@ export const Pb = (props) => {
 };
 
 /**
- * 
+ *
  *  "tei-gap": El.Gap,
     "tei-del": El.Del,
     "tei-add": El.Add,
@@ -132,7 +132,7 @@ export const Supplied = (props) =>{
    )
 }
 export const Add = (props) =>{
-   
+
   return (
      <Behavior node={props.teiNode}>
       <span style={{color: "green"}}>
@@ -258,7 +258,7 @@ export const Quote = (props) => {
   );
 };
 
-export const L = (props) => {
+export const Line = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <br />
