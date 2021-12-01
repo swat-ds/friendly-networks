@@ -15,7 +15,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
 
     const routes = {
-    "tei-teiheader": El.teiHeader,
+    "tei-teiheader": El.TeiHeader,
     "tei-body": El.Body,
     "tei-head": El.Head,
     "tei-pb": El.Pb,
@@ -33,6 +33,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-note": El.Note,
     "tei-title": El.Title,
     "tei-said": El.Said,
+    "tei-lg": El.LineGroup,
   };
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>

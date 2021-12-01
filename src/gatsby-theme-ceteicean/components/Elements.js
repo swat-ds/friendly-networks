@@ -172,7 +172,10 @@ export const teiHeader = (props) => {
 export const Entry = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <div>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</div>
+      <div>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        <br/><br/>
+      </div>
     </Behavior>
   );
 };
@@ -202,12 +205,37 @@ export const Body = (props) => {
 };
 
 export const Dateline = (props) => {
+  let nextNode = props.teiNode?.nextElementSibling;
+
+  if (props.children === "render") {
+    return (
+      <Behavior node={props.teiNode}>
+        <u>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </u>
+      </Behavior>
+    );
+  }
+
+  // Return an empty node if this dateline immediately precedes <p>
+  if (nextNode?.localName === "tei-p") {
+    return(
+      <Behavior node={props.teiNode}/>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
-      <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
     </Behavior>
   );
 };
+
+export const TeiHeader = (props) => {
+  return(
+    <Behavior node={props.teiNode}/>
+  )
+}
 
 export const Para = (props) => {
   // function getBreaks(){
@@ -217,27 +245,37 @@ export const Para = (props) => {
   // }
   // const ref = useRef();
   // console.log(ref.current.nextSibling);
+  // console.log(props);
 
-  let followingNode = props.teiNode.nextElementSibling?.localName;
+  let prevNode = props.teiNode?.previousElementSibling;
 
-  console.log(followingNode);
+  let dateline = (prevNode?.localName === "tei-dateline")
+    ? <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>
+    : "";
 
-  if (followingNode === "tei-note") {
-    return (
-      <Behavior node={props.teiNode}>
-        <span style={{ marginTop: "0px" }}>
-          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        </span>
-      </Behavior>
-    );
-  }
+  // if (prevNode?.localName === "tei-dateline") {
+  //   const dateline = (<Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>);
+  // } else {
+  //   const dateline = (<Behavior/>);
+  // }
+
+  // if (prevNode?.localName === "tei-dateline") {
+  //   return (
+  //     <Behavior node={props.teiNode}>
+  //       <p>
+  //         <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>
+  //         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+  //       </p>
+  //     </Behavior>
+  //   );
+  // }
+
   return (
     <Behavior node={props.teiNode}>
-      <span style={{ marginTop: "0px" }}>
+      <p>
+        {dateline}
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </span>
-      <br />
-      <br />
+      </p>
     </Behavior>
   );
 };
@@ -261,13 +299,23 @@ export const FloatingText = (props) => {
 };
 
 export const Quote = (props) => {
+
+  let quoteType = props.teiNode.attributes.getNamedItem("type")?.value
+  if (quoteType === "poem") {
+    return (
+      <Behavior node={props.teiNode}>
+        <span>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </span>
+      </Behavior>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
-      <br />
-      <p className="poem-block">
+      <q>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
-      <br />
+      </q>
     </Behavior>
   );
 };
@@ -275,11 +323,21 @@ export const Quote = (props) => {
 export const Line = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <br />
       <i>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </i>
       <br />
+    </Behavior>
+  );
+};
+
+export const LineGroup = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <br/><br/>
+      <span className="poem-block">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </span>
     </Behavior>
   );
 };
