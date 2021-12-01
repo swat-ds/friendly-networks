@@ -20,6 +20,11 @@ function handleMouseLeave(event) {
   setClick(false);
 }
 
+  let prevNode = props.teiNode?.previousElementSibling;
+  if (prevNode?.localName === "tei-p" && !(props?.render)){
+    return(<Behavior node={props.teiNode}/>);
+  }
+
   let noteType = props.teiNode.attributes.getNamedItem("type")?.value || "Note";
   if (noteType === "structure") {
     return (
@@ -159,22 +164,12 @@ export const Gap = (props) =>{
       </Behavior>
     );
 }
-export const teiHeader = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <p style={{ display: "none" }}>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
-    </Behavior>
-  );
-};
 
 export const Entry = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <div>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        <br/><br/>
       </div>
     </Behavior>
   );
@@ -207,7 +202,8 @@ export const Body = (props) => {
 export const Dateline = (props) => {
   let nextNode = props.teiNode?.nextElementSibling;
 
-  if (props.children === "render") {
+  // Definitely render the dateline if it has a @render attribute
+  if (props?.render) {
     return (
       <Behavior node={props.teiNode}>
         <u>
@@ -248,10 +244,15 @@ export const Para = (props) => {
   // console.log(props);
 
   let prevNode = props.teiNode?.previousElementSibling;
+  let nextNode = props.teiNode?.nextElementSibling;
 
   let dateline = (prevNode?.localName === "tei-dateline")
-    ? <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>
-    : "";
+    ? <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} render="true"/> :
+    "";
+
+  let followingNote = (nextNode?.localName === "tei-note")
+    ? <Note teiNode={nextNode} availableRoutes={props.availableRoutes} render="true"/> :
+    "";
 
   // if (prevNode?.localName === "tei-dateline") {
   //   const dateline = (<Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>);
@@ -275,6 +276,7 @@ export const Para = (props) => {
       <p>
         {dateline}
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        {followingNote}
       </p>
     </Behavior>
   );
@@ -334,10 +336,9 @@ export const Line = (props) => {
 export const LineGroup = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <br/><br/>
-      <span className="poem-block">
+      <p className="poem-block">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </span>
+      </p>
     </Behavior>
   );
 };
