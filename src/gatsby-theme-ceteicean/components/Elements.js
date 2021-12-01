@@ -250,9 +250,11 @@ export const Para = (props) => {
     ? <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} render="true"/> :
     "";
 
-  let followingNote = (nextNode?.localName === "tei-note")
-    ? <Note teiNode={nextNode} availableRoutes={props.availableRoutes} render="true"/> :
-    "";
+  let followingNotes = [];
+  while (nextNode?.localName === "tei-note") {
+    followingNotes.push(nextNode)
+    nextNode = nextNode?.nextElementSibling
+  }
 
   // if (prevNode?.localName === "tei-dateline") {
   //   const dateline = (<Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>);
@@ -276,7 +278,11 @@ export const Para = (props) => {
       <p>
         {dateline}
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        {followingNote}
+        {followingNotes.map((note) =>
+          (
+    <Note teiNode={note} availableRoutes={props.availableRoutes} render="true"/>
+          )
+        )}
       </p>
     </Behavior>
   );
