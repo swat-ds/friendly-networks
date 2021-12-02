@@ -145,7 +145,7 @@ export const Supplied = (props) =>{
    return (
       <Behavior node={props.teiNode}>
       <span>
-        {' ['}{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />} {']'}
+        {'['}{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}{']'}
       </span>
     </Behavior>
    )
@@ -154,7 +154,7 @@ export const Add = (props) =>{
 
   return (
      <Behavior node={props.teiNode}>
-      <span style={{color: "green"}}>
+      {"‸"}<span class="superscript">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </span> {' '}
     </Behavior>
@@ -185,14 +185,6 @@ export const Entry = (props) => {
       <div>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </div>
-    </Behavior>
-  );
-};
-
-export const Title = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <h1>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</h1>
     </Behavior>
   );
 };
@@ -305,9 +297,9 @@ export const Para = (props) => {
 export const Head = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <h2>
+      <h3>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </h2>
+      </h3>
     </Behavior>
   );
 };
