@@ -152,6 +152,8 @@ export const Supplied = (props) =>{
 }
 export const Add = (props) =>{
 
+  console.log("In Add()")
+  console.log(props.teiNode);
   return (
      <Behavior node={props.teiNode}>
       {"‸"}<span class="superscript">
@@ -211,19 +213,18 @@ export const Dateline = (props) => {
   // Definitely render the dateline if it has a @render attribute
   if (props?.render) {
     return (
-      <Behavior node={props.teiNode}>
         <u>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
         </u>
-      </Behavior>
     );
+    // Unclear why, but returning a <Behavior> tag here caused Problems –JT
   }
 
-  // Return an empty node if this dateline immediately precedes <p>
+  // Return an empty string if this dateline immediately precedes <p>
   if (nextNode?.localName === "tei-p") {
-    return(
-      <Behavior node={props.teiNode}/>
-    );
+    // console.log("In Dateline()")
+    // console.log(<Behavior node={props.teiNode}/>)
+    return("");
   }
 
   return (
@@ -261,23 +262,6 @@ export const Para = (props) => {
     followingNotes.push(nextNode)
     nextNode = nextNode?.nextElementSibling
   }
-
-  // if (prevNode?.localName === "tei-dateline") {
-  //   const dateline = (<Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>);
-  // } else {
-  //   const dateline = (<Behavior/>);
-  // }
-
-  // if (prevNode?.localName === "tei-dateline") {
-  //   return (
-  //     <Behavior node={props.teiNode}>
-  //       <p>
-  //         <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} children="render"/>
-  //         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-  //       </p>
-  //     </Behavior>
-  //   );
-  // }
 
   return (
     <Behavior node={props.teiNode}>
