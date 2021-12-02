@@ -21,8 +21,12 @@ function handleMouseLeave(event) {
 }
 
   let prevNode = props.teiNode?.previousElementSibling;
-  if (prevNode?.localName === "tei-p" && !(props?.render)){
-    return(<Behavior node={props.teiNode}/>);
+
+  while (["tei-note", "tei-p"].includes(prevNode?.localName)) {
+    if (prevNode?.localName === "tei-p" && !(props?.render)){
+      return(<Behavior node={props.teiNode}/>);
+    }
+    prevNode = prevNode?.previousElementSibling
   }
 
   let noteType = props.teiNode.attributes.getNamedItem("type")?.value || "Note";
@@ -38,8 +42,18 @@ function handleMouseLeave(event) {
     );
   }
   let title = "Note...";
+
+  // Extract a value from @place to display
   if (noteType === "authorial") {
-    title = "marginal note...";
+    let place;
+    place = props.teiNode.attributes.getNamedItem("place")?.value || "margin";
+    place = place.split(" ")[0]
+    if (place === "margin") {
+      title = "marginal note...";
+    } else {
+      title = place + " " + "marginal note...";
+    }
+
   }
   if (noteType === "editorial") {
     title = "editors' note...";
