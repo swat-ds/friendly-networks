@@ -305,9 +305,9 @@ export const Para = (props) => {
 export const Head = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <p>
+      <h2>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
+      </h2>
     </Behavior>
   );
 };
