@@ -165,10 +165,8 @@ export const Add = (props) =>{
 export const Del = (props) =>{
     return (
       <Behavior node={props.teiNode}>
-        <span style={{ textDecoration: "line-through", color: "red" }}>
-          <span style={{color: "black"}}>
-            {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-          </span>
+        <span style={{ textDecoration: "line-through" }}>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
         </span>
       </Behavior>
     );
@@ -176,7 +174,7 @@ export const Del = (props) =>{
 export const Gap = (props) =>{
     return (
       <Behavior node={props.teiNode}>
-        <span >[...]</span>
+        {"[...]"}
       </Behavior>
     );
 }
@@ -281,9 +279,9 @@ export const Para = (props) => {
 export const Head = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <h3>
+      <h2 class="teiHead general-text">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </h3>
+      </h2>
     </Behavior>
   );
 };

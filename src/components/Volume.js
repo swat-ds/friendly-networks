@@ -16,7 +16,7 @@ import { scroller } from "react-scroll";
 const parseString = require("xml2js").parseString;
 
 function getTitle(journal){
- 
+
 let header  = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
 
 if(header && "tei-fileDesc" in header){
@@ -222,14 +222,14 @@ const Volume = (props) => {
    */
 
   const [isOnWheel, setIsOnWheel] = useState(false)
-  
+
   function getPrevImage() {
       let i = pids.indexOf(currentPid);
       if (i > 0) {
-        scroll(pids[i-1]); 
+        scroll(pids[i-1]);
       }
   }
- 
+
 
   const [jump, setJump] = useState(0);
 
@@ -272,8 +272,8 @@ const Volume = (props) => {
             //  }
             //  setIsOnWheel(!isOnWheel)
            }
-        
-           
+
+
          });
        };
 
@@ -286,7 +286,7 @@ const Volume = (props) => {
        });
      }
     //  return () => {
-     
+
     //  }
    }, [scrollNumber]);
 
@@ -299,7 +299,7 @@ const Volume = (props) => {
 
 function renderTitle(journalMetadata){
   return (
-    <h3 className="general-text">
+    <h1 className="general-text header3">
       <span >
         {`${journalMetadata.title}`}
       </span>
@@ -343,7 +343,7 @@ function renderTitle(journalMetadata){
         )}
         {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
       </span>
-    </h3>
+    </h1>
   );
 }
   return (
