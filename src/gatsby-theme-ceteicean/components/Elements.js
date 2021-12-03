@@ -337,8 +337,53 @@ export const LineGroup = (props) => {
   );
 };
 
+export const Table = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <table>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </table>
+      <br/>
+    </Behavior>
+  );
+};
 
+export const TableRow = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <tr>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </tr>
+    </Behavior>
+  );
+};
 
+export const TableCell = (props) => {
+  // Check if the parent <tr> has the "rend" attribute set to "sum"
+  let parent = props.teiNode.parentNode?.attributes?.getNamedItem("rend")?.value
+
+  // Check if the  cell contains any numbers
+  let containsNumber = /\d/.test(props.teiNode?.textContent)
+
+  // Return <td> with className "sum" if both checks are true
+  if (parent === "sum" && containsNumber) {
+    return(
+      <Behavior node={props.teiNode}>
+        <td className="sum">
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </td>
+      </Behavior>
+    );
+  }
+
+  return(
+    <Behavior node={props.teiNode}>
+      <td>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </td>
+    </Behavior>
+  );
+};
 
 // //MNBN
 // export const TEI = (props) => {

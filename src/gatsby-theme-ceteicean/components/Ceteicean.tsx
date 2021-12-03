@@ -35,6 +35,9 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-title": El.Title,
     "tei-said": El.Said,
     "tei-lg": El.LineGroup,
+    "tei-table": El.Table,
+    "tei-row": El.TableRow,
+    "tei-cell": El.TableCell,
   };
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>

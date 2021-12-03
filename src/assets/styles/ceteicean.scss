@@ -140,4 +140,13 @@ body {
   font-size: 1.25rem
 }
 
+.sum {
+  border-top: 1px solid;
+}
+
+td {
+  padding: 4px 6px;
+  text-align: right;
+}
+
 @import "bootstrap";
