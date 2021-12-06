@@ -33,7 +33,7 @@ function handleMouseLeave(event) {
   if (noteType === "structure") {
     return (
       <Behavior node={props.teiNode}>
-        <span>{"["} </span>
+        <span>{"["}</span>
         <span style={{ fontStyle: "italic" }}>
           {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
         </span>
@@ -212,6 +212,16 @@ export const Body = (props) => {
   );
 };
 
+export const Block = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <p>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
+    </Behavior>
+  );
+};
+
 export const Dateline = (props) => {
   let nextNode = props.teiNode?.nextElementSibling;
 
@@ -293,6 +303,16 @@ export const Head = (props) => {
   );
 };
 
+export const Item = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <li>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </li>
+    </Behavior>
+  );
+};
+
 export const FloatingText = (props) => {
   return (
     <Behavior node={props.teiNode}>
@@ -340,6 +360,39 @@ export const LineGroup = (props) => {
       <p className="poem-block">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </p>
+    </Behavior>
+  );
+};
+
+export const List = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <ul style={{ listStyleType: "none" }}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </ul>
+    </Behavior>
+  );
+};
+
+export const Salute = (props) => {
+  // Add a linebreak before the Salute if it's in the opener
+  let linebreak = (props.teiNode.parentNode.localName === "tei-opener")?
+    (<br/>):
+    "";
+
+  return(
+    <Behavior node={props.teiNode}>
+      {linebreak}
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+    </Behavior>
+  );
+};
+
+export const Signed = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <br/>
+      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
     </Behavior>
   );
 };

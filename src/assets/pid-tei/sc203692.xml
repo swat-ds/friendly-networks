@@ -2578,7 +2578,7 @@ She contented herself with the least expensive manner of living and dress, in or
 
     <signed>[signature (name indecipherable)]</signed></closer></div>
 
-    <div><note type="structure">[the will and label on the back of the certificate are both in a very clear hand, not John Hunt's, perhaps a solicitor's. The certificate in a third hand, most formal and exact]</note>
+    <div><note type="structure">the will and label on the back of the certificate are both in a very clear hand, not John Hunt's, perhaps a solicitor's. The certificate in a third hand, most formal and exact</note>
 <pb n="107" facs="sc203814"/>
 <p>Be it recorded that I John Hunt of Evesham in the County of Burlington and State of New Jersey, being often infirm of body, yet favored with sound and disposing mind and memory and calling to mind the uncertainty of life, do make this my testament and last will as follows, Viz.,</p>
 <p>Imprimus, I direct all my just debts and funeral expenses to be paid out of my personal estate.</p>
@@ -2590,16 +2590,15 @@ She contented herself with the least expensive manner of living and dress, in or
 <pb n="108" facs="sc203815"/>
 <persName key="w6136j8n">Hannah Hunt</persName>, executor and executrix of this my last will In testimony whereof I have hereunto set my hand and seal this seventh day of the third month in the year of our Lord eighteen hundred and twenty four 1824</p>
 <closer><signed>Signed and sealed and pronounced by the Testator
-    <persName key="w6n9820p">John Hunt</persName><note type="structure">[copy of signature and a little circle with the letters LS seeming to show where the original was sealed]</note>
-to be his last will in the presence of us
-
-    <list> <note type="structure">[copies of signatures]</note>
+    <persName key="w6n9820p">John Hunt</persName> <note type="structure">copy of signature and a little circle with the letters LS seeming to show where the original was sealed</note>
+to be his last will in the presence of us <note type="structure">copies of signatures</note>
+    <list> 
 <item>Samuel Church</item>
         <item><persName key="w6k6603s">David Roberts</persName></item>
 <item>Job Roberts</item>
 </list>
-A true copy <note type="structure">[again in formal exact hand]</note>
-    <note type="structure">[same signature as on the certificate, illegible]</note></signed></closer>
+A true copy <note type="structure">again in formal exact hand</note>
+    <note type="structure">same signature as on the certificate, illegible</note></signed></closer>
 <pb n="109" facs="sc203816"/>
 </div></body></text>
 </TEI>

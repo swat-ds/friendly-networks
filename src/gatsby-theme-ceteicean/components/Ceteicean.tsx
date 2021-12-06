@@ -20,37 +20,37 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-add": El.Add,
     "tei-body": El.Body,
     "tei-cell": El.TableCell,
-    //"tei-closer"
+    "tei-closer": El.Block,
     //"tei-damage"
     "tei-dateline": El.Dateline,
     "tei-del": El.Del,
     "tei-div": El.Entry,
     //"tei-docTitle"?
-    //"tei-emph"
     //"tei-expan"
     //"tei-figDesc"
     //"tei-figure"
     "tei-floatingtext": El.FloatingText,
     "tei-gap": El.Gap,
     "tei-head": El.Head,
-    //"tei-item"
+    "tei-item": El.Item,
     //"tei-label"
     //"tei-lb"?
     "tei-l": El.Line,
     "tei-lg": El.LineGroup,
-    //"tei-list"
+    "tei-list": El.List,
     "tei-note": El.Note,
-    //"tei-opener"
+    "tei-opener": El.Block,
     "tei-p": El.Para,
     "tei-pb": El.Pb,
     "tei-persname": El.Name,
-    //"tei-postscript"
-    //"tei-q"
+    "tei-postscript": El.Block,
+    "tei-q": El.Said,
     "tei-quote": El.Quote,
     "tei-row": El.TableRow,
     "tei-rs": El.Name,
     "tei-said": El.Said,
-    //"tei-signed"
+    "tei-salute": El.Salute,
+    "tei-signed": El.Signed,
     //"tei-space"
     "tei-supplied": El.Supplied,
     "tei-table": El.Table,
