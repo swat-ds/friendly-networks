@@ -392,6 +392,26 @@ export const TableCell = (props) => {
   );
 };
 
+export const Title = (props) => {
+  // If <title> is being used to tag document structure:
+  if (props.teiNode.parentNode.localName === "tei-head"){
+    return(
+      <Behavior node={props.teiNode}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </Behavior>
+    );
+  }
+
+  // If <title> is being used to tag the name of another work:
+  return(
+    <Behavior node={props.teiNode}>
+      <cite>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </cite>
+    </Behavior>
+  );
+};
+
 // //MNBN
 // export const TEI = (props) => {
 //   return (
