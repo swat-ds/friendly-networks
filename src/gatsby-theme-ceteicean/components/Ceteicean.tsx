@@ -16,28 +16,45 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
     const routes = {
     "tei-teiheader": El.TeiHeader,
-    "tei-body": El.Body,
-    "tei-head": El.Head,
-    "tei-pb": El.Pb,
-    "tei-div": El.Entry,
-    "tei-persname": El.Name,
-    "tei-rs": El.Name,
-    "tei-gap": El.Gap,
-    "tei-del": El.Del,
+    //"tei-ab"
     "tei-add": El.Add,
-    "tei-supplied": El.Supplied,
-    "tei-dateline": El.Dateline,
-    "tei-p": El.Para,
-    "tei-floatingtext": El.FloatingText,
-    "tei-quote": El.Quote,
-    "tei-l": El.Line,
-    "tei-note": El.Note,
-    "tei-title": El.Title,
-    "tei-said": El.Said,
-    "tei-lg": El.LineGroup,
-    "tei-table": El.Table,
-    "tei-row": El.TableRow,
+    "tei-body": El.Body,
     "tei-cell": El.TableCell,
+    //"tei-closer"
+    //"tei-damage"
+    "tei-dateline": El.Dateline,
+    "tei-del": El.Del,
+    "tei-div": El.Entry,
+    //"tei-docTitle"?
+    //"tei-emph"
+    //"tei-expan"
+    //"tei-figDesc"
+    //"tei-figure"
+    "tei-floatingtext": El.FloatingText,
+    "tei-gap": El.Gap,
+    "tei-head": El.Head,
+    //"tei-item"
+    //"tei-label"
+    //"tei-lb"?
+    "tei-l": El.Line,
+    "tei-lg": El.LineGroup,
+    //"tei-list"
+    "tei-note": El.Note,
+    //"tei-opener"
+    "tei-p": El.Para,
+    "tei-pb": El.Pb,
+    "tei-persname": El.Name,
+    //"tei-postscript"
+    //"tei-q"
+    "tei-quote": El.Quote,
+    "tei-row": El.TableRow,
+    "tei-rs": El.Name,
+    "tei-said": El.Said,
+    //"tei-signed"
+    //"tei-space"
+    "tei-supplied": El.Supplied,
+    "tei-table": El.Table,
+    "tei-title": El.Title, //titlePart?
   };
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>
