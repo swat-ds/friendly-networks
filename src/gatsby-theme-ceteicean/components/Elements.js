@@ -151,9 +151,6 @@ export const Supplied = (props) =>{
    )
 }
 export const Add = (props) =>{
-
-  console.log("In Add()")
-  console.log(props.teiNode);
   return (
      <Behavior node={props.teiNode}>
       {"‸"}<span class="superscript">
@@ -180,6 +177,16 @@ export const Gap = (props) =>{
 }
 
 export const Entry = (props) => {
+  let number = props.teiNode.attributes.getNamedItem("n")?.value
+  if (number) {
+    return (
+      <Behavior node={props.teiNode}>
+        <div id={number}>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </div>
+      </Behavior>
+    );
+  }
   return (
     <Behavior node={props.teiNode}>
       <div>
