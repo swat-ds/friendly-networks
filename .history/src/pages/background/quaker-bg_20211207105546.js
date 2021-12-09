@@ -41,12 +41,8 @@ const quakeer_bg = () => {
           <Link className="g-link2" to={globalVariables.glossary}>
             {/* <Button variant="outline-success">All in One</Button> */}
             <div className="box blue">
-              <h2>Glossary of the Quakerism</h2>
-              <p>
-                Acknowledgement: A formal, written statement of apology by an
-                offending member to the meeting for having acted in a manner
-                contrary to the rules of discipline.
-              </p>
+              <h2>Glo</h2>
+              <p></p>
             </div>
           </Link>
         </Col>

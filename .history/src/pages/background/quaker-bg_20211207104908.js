@@ -1,20 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
-import Layout from "../../../components/Layout";
-import { globalVariables } from "../../../assets/data/globalVariables";
-import { Row, Col, Button } from "react-bootstrap";
-import "../../../assets/styles/pageStyles.scss";
+import Layout from "../../components/Layout";
+import Glossary from "../../components/Glossary";
+import MeetingStructure from "../../components/MeetingStructure";
+// import "../../../assets/styles/pageStyles.scss";
+// import { Row, Col } from "react-bootstrap";
+// const appendixData = require("../../../assets/data/john_hunt_appendix.json");
 
-
-  //  timeline: "/background/author-background/timeline",
-  //  bookshelf: "/background/john-hunt/7-bookshelf",
-  //  form_of_the_journal: "/background/quaker-bg/0-Form_of_the_Journal",
-  //  introduction: "/background/john-hunt/1-introducing-john-hunt",
-  //  family: "/background/john-hunt/3-family",
-  //  mentors_role_models: "/background/john-hunt/5-mentors-role-models",
-  //  bibliography: "/background/author-background/bibliography",
-
-const author_bg = () => {
+const quakeer_bg = () => {
+  // const term = (term) => (
+  //   <p className="background-text">
+  //     <strong>{term.term}</strong>: {term.definition}
+  //   </p>
+  // );
   return (
     <Layout>
       <Row id="main-row">
@@ -103,4 +100,4 @@ const author_bg = () => {
   );
 };
 
-export default author_bg;
+export default quakeer_bg;

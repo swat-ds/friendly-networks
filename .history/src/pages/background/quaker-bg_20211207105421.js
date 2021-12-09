@@ -30,22 +30,21 @@ const quakeer_bg = () => {
           <Link className="g-link2" to={globalVariables.testimonies}>
             {/* <Button variant="outline-success">All in One</Button> */}
             <div className="box blue">
-              <h2>The Testimonies of Quaker</h2>
+              <h2>The structure of the Quaker meetings</h2>
               <p>
-                The first printed Discipline of Philadelphia Yearly Meeting
-                included separate sections on core eighteenth century Quaker
-                testimonies...
+                Philadelphia Yearly Meeting published its first printed
+                Discipline in 1797. Its introduction included...
               </p>
             </div>
           </Link>
           <Link className="g-link2" to={globalVariables.glossary}>
             {/* <Button variant="outline-success">All in One</Button> */}
             <div className="box blue">
-              <h2>Glossary of the Quakerism</h2>
+              <h2>The structure of the Quaker meetings</h2>
               <p>
-                Acknowledgement: A formal, written statement of apology by an
-                offending member to the meeting for having acted in a manner
-                contrary to the rules of discipline.
+                The first printed Discipline of Philadelphia Yearly Meeting
+                included separate sections on core eighteenth century Quaker
+                testimonies...
               </p>
             </div>
           </Link>

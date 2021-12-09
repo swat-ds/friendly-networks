@@ -18,7 +18,7 @@ const author_bg = () => {
   return (
     <Layout>
       <Row id="main-row">
-        <Col id="bg-col">
+        <Col id="author-bg-col">
           <h2>Backgrounds of John Hunt</h2>
           <Link className="g-link2" to="/background/author-bg/timeline">
             <div className="box cyan">

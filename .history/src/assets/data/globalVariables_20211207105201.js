@@ -28,12 +28,13 @@
    mentors_role_models: "/background/john-hunt/5-mentors-role-models",
    whyKeep: "/background/john-hunt/2-why-keep-a-journal",
    bibliography: "/background/author-background/bibliography",
-   quaker_world: "/background/john-hunt/4-quaker-world",
-
+  
    glossary: "/background/quaker-bg/glossary",
+   quaker_world: "/background/john-hunt/4-quaker-world",
    testimonies: "/background/john-hunt/6-quaker-testimonies",
-   quaker_meeting_structure: "/background/quaker-bg/structure-society-friends",
    all_in_one: "/background/allInOne",
+
+   quaker_meeting_structure: "/background/quaker-bg/structure-society-friends",
 
    //External links
    swat: "https://www.swarthmore.edu/",

@@ -18,7 +18,7 @@ const author_bg = () => {
   return (
     <Layout>
       <Row id="main-row">
-        <Col id="bg-col">
+        <Col id="author-bg-col">
           <h2>Backgrounds of John Hunt</h2>
           <Link className="g-link2" to="/background/author-bg/timeline">
             <div className="box cyan">
@@ -77,13 +77,13 @@ const author_bg = () => {
               </p>
             </div>
           </Link>
-          <Link className="g-link2" to={globalVariables.whyKeep}>
+          <Link className="g-link2" to={globalVariables.mentors_role_models}>
             {/* <Button variant="outline-success">Friends</Button> */}
-            <div className="box blue">
-              <h2>Why Keep the journals</h2>
+            <div className="box red">
+              <h2>Dear Friends</h2>
               <p>
-                Why keep a journal? Hunt explained his resolve in the very first
-                entry...
+                Some of the people John Hunt venerated, lived among, and
+                exchanged dialogues with
               </p>
             </div>
           </Link>

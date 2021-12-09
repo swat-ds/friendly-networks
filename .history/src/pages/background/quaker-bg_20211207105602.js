@@ -43,9 +43,12 @@ const quakeer_bg = () => {
             <div className="box blue">
               <h2>Glossary of the Quakerism</h2>
               <p>
-                Acknowledgement: A formal, written statement of apology by an
-                offending member to the meeting for having acted in a manner
-                contrary to the rules of discipline.
+                <dt id="acknowledgement">Acknowledgement</dt>
+                <dd>
+                  A formal, written statement of apology by an offending member
+                  to the meeting for having acted in a manner contrary to the
+                  rules of discipline.
+                </dd>
               </p>
             </div>
           </Link>
