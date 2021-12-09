@@ -3,9 +3,9 @@ import {useState} from 'react'
 import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
-import { globalVariables } from "../assets/data/globalVariables";
-import "../assets/styles/styles.scss";
-import "../assets/styles/header.scss";
+import { globalVariables } from "../globalVariables";
+import "../styles/styles.scss";
+import "../styles/header.scss";
 
 import { Row, Col, Dropdown} from "react-bootstrap";
 

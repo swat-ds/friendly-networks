@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import Glossary from "../../components/Glossary";
-import MeetingStructure from "../../components/MeetingStructure";
-import { globalVariables } from "../../assets/data/globalVariables";
+import { globalVariables } from "../../globalVariables";
+import {Row, Col} from 'react-bootstrap';
+import {Link} from 'gatsby';
 // import "../../../assets/styles/pageStyles.scss";
 // import { Row, Col } from "react-bootstrap";
 // const appendixData = require("../../../assets/data/john_hunt_appendix.json");
+
 
 const quakeer_bg = () => {
   // const term = (term) => (
@@ -17,7 +18,7 @@ const quakeer_bg = () => {
     <Layout>
       <Row id="main-row">
         <Col id="bg-col">
-          <Link className="g-link2" to={globalVariables.MeetingStructure}>
+          <Link className="g-link2" to={globalVariables.quaker_meeting_structure}>
             {/* <Button variant="outline-success">All in One</Button> */}
             <div className="box blue">
               <h2>The structure of the Quaker meetings</h2>
@@ -29,7 +30,7 @@ const quakeer_bg = () => {
           </Link>
           <Link className="g-link2" to={globalVariables.testimonies}>
             {/* <Button variant="outline-success">All in One</Button> */}
-            <div className="box blue">
+            <div className="box cyan">
               <h2>The Testimonies of Quaker</h2>
               <p>
                 The first printed Discipline of Philadelphia Yearly Meeting
@@ -40,7 +41,7 @@ const quakeer_bg = () => {
           </Link>
           <Link className="g-link2" to={globalVariables.glossary}>
             {/* <Button variant="outline-success">All in One</Button> */}
-            <div className="box blue">
+            <div className="box orange">
               <h2>Glossary of the Quakerism</h2>
               <p>
                 Acknowledgement: A formal, written statement of apology by an

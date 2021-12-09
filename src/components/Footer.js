@@ -3,9 +3,9 @@ import {Link} from 'gatsby'
 import {
     Row
 } from 'react-bootstrap';
-import {globalVariables, contacts} from '../assets/data/globalVariables'
-import '../assets/styles/styles.scss'
-import "../assets/styles/footer.scss";
+import {globalVariables, contacts} from '../globalVariables'
+import '../styles/styles.scss'
+import "../styles/footer.scss";
 
 const Footer = () => {
   return (

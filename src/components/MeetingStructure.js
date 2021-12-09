@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/background.scss";
+import "../styles/background.scss";
 import { Row, Col } from "react-bootstrap";
 // const appendixData = require("../../../assets/data/john_hunt_appendix.json");
 

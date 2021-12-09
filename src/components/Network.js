@@ -11,7 +11,7 @@ import {
   Popover,
 } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
-import "../assets/styles/network.scss";
+import "../styles/network.scss";
 
 /**
  *

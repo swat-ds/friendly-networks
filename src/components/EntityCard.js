@@ -1,8 +1,7 @@
 import React from "react";
-import Layout from "./Layout";
-import { Link, graphql } from "gatsby";
-import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import "../assets/styles/card.scss";
+import { Link } from "gatsby";
+import {Button} from "react-bootstrap";
+import "../styles/card.scss";
 import {BsBoxArrowRight} from 'react-icons/bs'
 
 /**

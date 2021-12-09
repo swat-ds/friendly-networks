@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Col, Image } from "react-bootstrap";
-import "../assets/styles/styles.scss";
+import "../styles/styles.scss";
 
 // import "../assets/styles/image.scss"
 

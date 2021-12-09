@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import Header from "./Header";
 import {Container, Row, Col} from "react-bootstrap"
-import "../assets/styles/styles.scss";
+import "../styles/styles.scss";
 import NavBar from './NavBar';
 import Footer from './Footer';
 

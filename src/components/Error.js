@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from 'gatsby'
-import "../assets/styles/error.scss";
+import "../styles/error.scss";
 import { Row, Col, Button } from "react-bootstrap";
-import { globalVariables } from "../assets/data/globalVariables";
+import { globalVariables } from "../globalVariables";
 
 const Error = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../assets/styles/card.scss";
-import { months } from "../assets/data/globalVariables";
+import "../styles/card.scss";
+import { months } from "../globalVariables";
 import {Button } from 'react-bootstrap'
 import {BsBoxArrowRight} from 'react-icons/bs'
 

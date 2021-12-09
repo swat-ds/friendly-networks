@@ -3,10 +3,10 @@ import { useState, useEffect, useRef } from "react";
 import { Link, navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
 import { FaBars } from "react-icons/fa";
-import "../assets/styles/styles.scss";
-import "../assets/styles/nav.scss";
-import logo from "../assets/images/HuntLogo_withShadow.png";
-import { globalVariables } from "../assets/data/globalVariables";
+import "../styles/styles.scss";
+import "../styles/nav.scss";
+import logo from "../../content/assets/images/HuntLogo_withShadow.png";
+import { globalVariables } from "../globalVariables";
 
 import {
   Form,

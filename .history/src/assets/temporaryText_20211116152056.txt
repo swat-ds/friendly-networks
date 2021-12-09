@@ -1,3 +1,0 @@
-global primary: #808B42
-secondary : #342E37
-links: #10A8EC

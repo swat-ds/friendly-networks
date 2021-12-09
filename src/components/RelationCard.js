@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {Card, Col, Button} from 'react-bootstrap'
-import "../assets/styles/styles.scss";
-import "../assets/styles/card.scss";
+import "../styles/styles.scss";
+import "../styles/card.scss";
 import {BsBoxArrowRight} from 'react-icons/bs'
 
 /**

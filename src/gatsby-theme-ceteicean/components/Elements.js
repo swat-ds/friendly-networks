@@ -1,8 +1,8 @@
 import React, {useEffect, useState, useRef} from "react";
 import { TEINodes } from "react-teirouter";
-import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
-// import { isExportSpecifier } from "typescript";
-import "../../assets/styles/ceteicean.scss";
+// import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
+import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
+import "../../styles/ceteicean.scss";
 import {Link} from 'gatsby'
 import {OverlayTrigger, Tooltip, Button} from 'react-bootstrap'
 

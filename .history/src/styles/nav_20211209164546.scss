@@ -1,0 +1,143 @@
+
+
+#nav-row{
+  display: none;
+  // background-color: #2F3242;
+
+}
+
+#nav-image{
+  height: 15vh;
+  width: 100vw;
+  background-image: url("../../content/assets/");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin:auto;
+  padding:0;
+}
+
+#logo{
+margin-left: 0;
+ width:70%; 
+ height:auto; 
+ display: flex;
+ justify-content: left;
+ max-width:200px;
+
+ @media screen and (max-height: 700px) {
+
+}
+}
+
+.search-form{
+  display: flex;
+  // flex-direction: row;
+  justify-content: right;
+  // align-items: right;
+  align-items: center;
+  margin-right: 5px;
+
+  .form-box{
+    width: 20vw;
+     height:5vh;
+  }
+}
+#nav-items {
+  // border: thin solid blue;
+  width: 60%;
+  height: 50%;
+  margin-bottom: 5px;
+}
+
+
+
+// #explore{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+
+#brand{
+  color: #2F3242;
+}
+
+#alink {
+  display: none;
+}
+
+.header-items-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  #nav-row{
+  display: flex;
+  background-color: #2F3242;
+}
+  #brand{
+  color: hsl(0, 10%, 88%);
+}
+  .header-items-mobile {
+    display: flex;
+    justify-content: space-evenly;
+
+    .header-item{
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      margin-top: 8px;
+      border-radius: 3px;
+      color: white;
+      transition: all 1s ease-out;
+    }
+
+    #header-journal-mobile {
+      background-color: #808B42;
+    }
+    #header-journal-mobile:hover,
+    #header-journal-mobile:active {
+      background-color: white;
+      color: #808B42;
+      border: thin solid #808B42;
+    }
+
+    #header-relative-mobile {
+      background-color:#808b42;
+    }
+    #header-relative-mobile:hover,
+    #header-relative:active {
+      background-color: white;
+      color:#808b42;
+      border: thin solid#808b42;
+    }
+    #header-network-mobile {
+      background-color: #808b42;
+    }
+    #header-network-mobile:hover,
+    #header-network-mobile:active {
+      background-color: white;
+      color: #808b42;
+      border: thin solid #808b42;
+    }
+
+
+ #header-background-mobile{
+        background-color: #808B42;
+          .dropdown-link{
+            color: white;
+        }
+        }
+      .header-dropdown{
+        margin-top: 10px;
+    }
+     #header-background-mobile:hover, #header-background-mobile:active{
+            background-color: white;
+            border: thin solid  #808B42;
+              .dropdown-link{
+            color:  #808B42;
+  }
+}
+  }
+}
+
+@import "bootstrap";

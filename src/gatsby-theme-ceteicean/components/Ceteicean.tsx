@@ -6,7 +6,7 @@ import { graphql, Link } from "gatsby";
 import Volume from '../../components/Volume'
 
 import * as El from "./Elements"
-import "../../assets/styles/styles.scss";
+import "../../styles/styles.scss";
 
 
 

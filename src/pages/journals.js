@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import JournalCard from "../components/JournalCard";
 import { Button, Card, Row, Col } from "react-bootstrap";
-import "../assets/styles/pageStyles.scss"
+import "../styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;
 

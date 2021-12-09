@@ -4,7 +4,7 @@ import Fuse from "fuse.js";
 import Layout from "../components/Layout";
 import { Form, Button, Card, Row, Col, FormControl } from "react-bootstrap";
 
-import "../assets/styles/styles.scss";
+import "../styles/styles.scss";
 
 const parseString = require("xml2js").parseString;
 

@@ -13,49 +13,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    // `gatsby-plugin-gatsby-cloud`,
-    //the elastic search plugin is in this object
-    // {
-    //   resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-    //   options: {
-    //     // Fields to index
-    //     fields: [`title`, `tags`],
-    //     // How to resolve each field`s value for a supported node type
-    //     resolvers: {
-    //       // For any node of type MarkdownRemark, list how to resolve the fields` values
-    //       MarkdownRemark: {
-    //         title: (node) => node.frontmatter.title,
-    //         tags: (node) => node.frontmatter.tags,
-    //         path: (node) => node.frontmatter.path,
-    //       },
-    //     },
-    //     // Optional filter to limit indexed nodes
-    //     filter: (node, getNode) => node.frontmatter.tags !== "exempt",
-    //   },
-    // },
-    // `gatsby-plugin-sitemap`,
-    /*
-     *setup the site to pull data from the "documents" collection in a local
-     * MongoDB instance
-     */
-    // {
-    //   resolve: `gatsby-source-mongodb`,
-    //   options: { dbName: `local`, collection: `documents` },
-    //   query: { documents: { as_of: { $gte: 1604397088013 } } },
-    // },
-
     "gatsby-theme-ceteicean",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "./src/assets/pid-tei",
+        path: `${__dirname}/content/pid-tei`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/assets/data/md`,
+        path: `${__dirname}/content/markdown`,
       },
     },
     {

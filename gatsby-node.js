@@ -1,7 +1,7 @@
 const axios = require("axios");
-const constellationData = require("./src/assets/data/constellationsForInclusion.json");
+const constellationData = require("./content/constellationsForInclusion.json");
 const PeopleComponent = require.resolve(`./src/components/People.js`);
-const bgComponent = require.resolve(`./src/components/BgComponent.js`);
+const bgComponent = require.resolve(`./src/templates/BgComponent.js`);
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");

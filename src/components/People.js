@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from "./RelationCardDeck";
-import "../assets/styles/entity.scss";
+import "../styles/entity.scss";
 
 const parseString = require("xml2js").parseString;
 

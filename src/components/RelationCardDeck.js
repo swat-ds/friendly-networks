@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link, graphql } from "gatsby";
 import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
-import "../assets/styles/entity.scss";
+import "../styles/entity.scss";
 import RelationCard from "./RelationCard";
 
 
