@@ -26,7 +26,6 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-del": El.Del,
     "tei-div": El.Entry,
     //"tei-docTitle"?
-    //"tei-expan"
     //"tei-figDesc"
     //"tei-figure"
     "tei-floatingtext": El.FloatingText,

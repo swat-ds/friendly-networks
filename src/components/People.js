@@ -16,13 +16,13 @@ const bioDataLabels = {
   nameEntries: "Other Names",
   entityType: "",
   biogHists: "",
-  dates: "Relevant Dates",
-  places: "Relevant Places",
+  dates: "Dates",
+  places: "Related Places",
   occupations: "Occupations",
-  subjects: "Things interested of",
-  relations: "Relative and acquaintances",
-  genders: "Identity",
-  sameAsRelations: "External Links for other relevant resources",
+  subjects: "Subjects",
+  relations: "Relatives and acquaintances",
+  genders: "Gender",
+  sameAsRelations: "Authority records",
 };
 /**
  *
@@ -140,15 +140,15 @@ const People = (props) => {
 
       //Assume all the text and/or citation has been extracted if exist
       return (
-        <article id="bio">
+        <article id="biography">
           {text.map((part) => (
             <p>{part}</p>
           ))}
-          <figcaption>
+          <footer>
             {citation.map((cite) => (
-              <small style={{ margin: "40px" }}>{cite}</small>
+              <p style={{ textIndent: "40px" }}><small>{cite}</small></p>
             ))}
-          </figcaption>
+          </footer>
         </article>
       );
     }
@@ -167,9 +167,7 @@ const People = (props) => {
         (dep, index) => index !== pieces.length - 1 && dep
       );
       return names.length > 0 ? (
-        <li>
-          <span>{` ${names.join()}; `}</span>
-        </li>
+        <li>{`${names.join()}`}</li>
       ) : null;
     }
   }
@@ -180,10 +178,10 @@ const People = (props) => {
   const renderNameVariants = () => {
     if (nameEntries.length > 1) {
       return (
-        <h6>
-          {`${bioDataLabels.nameEntries}: `}:
+        <div>
+          <h6>{`${bioDataLabels.nameEntries}: `}</h6>
           <ul>{nameEntries.map(renderNameVariant)}</ul>
-        </h6>
+        </div>
       );
     } else {
       return;
@@ -197,23 +195,23 @@ const People = (props) => {
   const renderDates = () => {
     if (dates.length > 1) {
       return (
-        <h6>
-          {`${bioDataLabels.dates}: `}
+        <div>
+          <h6>{`${bioDataLabels.dates}: `}</h6>
           <ul>
-            <li>{`Born: ${dates[0].fromDate}`}</li>
-            <li>{`Decease: ${dates[1].toDate}`}</li>
+            <li>{`Birth: ${dates[0].fromDate}`}</li>
+            <li>{`death: ${dates[1].toDate}`}</li>
           </ul>
-        </h6>
+        </div>
       );
     } else {
       return (
-        <h6>
-          {`${bioDataLabels.dates}: `}
+        <div>
+          <h6>{`${bioDataLabels.dates}: `}</h6>
           <ul>
-            <li>{`Born: ${dates[0].fromDate}`}</li>
-            <li>{`Decease: ${dates[0].toDate}`}</li>
+            <li>{`Birth: ${dates[0].fromDate}`}</li>
+            <li>{`Death: ${dates[0].toDate}`}</li>
           </ul>
-        </h6>
+        </div>
       );
     }
   };
@@ -240,12 +238,12 @@ const People = (props) => {
         if (map) {
           return (
             <li>
-              {`${placeName},${state},${country}  `}
+              <span>{`${placeName}, ${state}, ${country}  `}</span>
               <span>{map ? <a href={map}>map</a> : ""}</span>
             </li>
           );
         } else {
-          return <li>{`${placeName},${state},${country}  `}</li>;
+          return <li>{`${placeName}, ${state}, ${country}  `}</li>;
         }
       } else {
         return;
@@ -262,13 +260,14 @@ const People = (props) => {
   const renderPlaces = () => {
     if (places) {
       return (
-        <h6>
-          {`${bioDataLabels.places}: `}
+        <div>
+          <h6>{`${bioDataLabels.places}: `}</h6>
           <ul>{places.map(renderPlace)}</ul>
-        </h6>
+        </div>
       );
     }
   };
+
 
   /**
    * renders a single occupation from the @occupations done by the current entity
@@ -283,7 +282,6 @@ const People = (props) => {
         return (
           <li>
             {occupationName}
-            {"; "}
           </li>
         );
       }
@@ -296,10 +294,10 @@ const People = (props) => {
   const renderOccupations = () => {
     if (occupations) {
       return (
-        <h6>
-          {`${bioDataLabels.occupations}: `}
+        <div>
+          <h6>{`${bioDataLabels.occupations}: `}</h6>
           <ul>{occupations.map(renderOccupation)}</ul>
-        </h6>
+        </div>
       );
     }
   };
@@ -327,10 +325,11 @@ const People = (props) => {
   const renderSubjects = () => {
     if (subjects) {
       return (
-        <h6>
-          {`${bioDataLabels.subjects}: `}
+        <div>
+          <h6>{`${bioDataLabels.subjects}: `}</h6>
           <ul>{subjects.map(renderSubject)}</ul>
-        </h6>
+         </div>
+
       );
     }
   };
@@ -360,8 +359,10 @@ const People = (props) => {
   const renderSameAsRelations = () => {
     if (sameAsRelations) {
       return (
-        <h6>
-          {`${bioDataLabels.sameAsRelations}`}
+        <div>
+          <h6>
+            {`${bioDataLabels.sameAsRelations}: `}
+          </h6>
           <ul>
             <li>
               <a href={"https://snaccooperative.org/view/" + id}>
@@ -370,7 +371,7 @@ const People = (props) => {
             </li>
             {sameAsRelations.map(renderSameAsRelation)}
           </ul>
-        </h6>
+        </div>
       );
     }
   };
@@ -406,7 +407,11 @@ const People = (props) => {
   const renderGender = () => {
     if (genders) {
       let label = genders[0].term.term;
-      return <p>{`Gender: ${label}`}</p>;
+      return (
+        <div>
+          <h6>{`Gender:`}</h6>
+          <ul style={{ listStyleType: "none" }}>{label}</ul>
+        </div>);
     }
   };
   // /**
