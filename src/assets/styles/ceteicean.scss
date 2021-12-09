@@ -89,9 +89,9 @@ body {
 
 .wrapper .tooltip {
   background: #3E3A39;
-  cursor: pointer;  
+  cursor: pointer;
   position: absolute;
-  font-style: italic;
+//  font-style: italic;
   bottom: 100%;
   width: 15vw;
   height: fit-content;
@@ -131,5 +131,26 @@ body {
   width: 0;
 }
 
+.superscript {
+  vertical-align: super;
+  font-size: 75%;
+}
+
+.teiHead {
+  font-size: 1.25rem
+}
+
+.sum {
+  border-top: 1px solid;
+}
+
+td {
+  padding: 4px 6px;
+  text-align: right;
+}
+
+div {
+  font-weight: 300;
+}
 
 @import "bootstrap";

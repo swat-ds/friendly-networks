@@ -15,25 +15,47 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
 
     const routes = {
-    "tei-teiheader": El.teiHeader,
-    "tei-body": El.Body,
-    "tei-head": El.Head,
-    "tei-pb": El.Pb,
-    "tei-div": El.Entry,
-    "tei-persname": El.Name,
-    "tei-gap": El.Gap,
-    "tei-del": El.Del,
+    "tei-teiheader": El.TeiHeader,
+    //"tei-ab"
     "tei-add": El.Add,
-    "tei-supplied": El.Supplied,
+    "tei-body": El.Body,
+    "tei-cell": El.TableCell,
+    "tei-closer": El.Block,
+    //"tei-damage"
     "tei-dateline": El.Dateline,
-    "tei-p": El.Para,
+    "tei-del": El.Del,
+    "tei-div": El.Entry,
+    //"tei-docTitle"?
+    //"tei-expan"
+    //"tei-figDesc"
+    //"tei-figure"
     "tei-floatingtext": El.FloatingText,
-    "tei-quote": El.Quote,
-    // "tei-l": El.L,
+    "tei-gap": El.Gap,
+    "tei-head": El.Head,
+    "tei-item": El.Item,
+    //"tei-label"
+    //"tei-lb"?
+    "tei-l": El.Line,
+    "tei-lg": El.LineGroup,
+    "tei-list": El.List,
     "tei-note": El.Note,
-    "tei-title": El.Title,
+    "tei-opener": El.Block,
+    "tei-p": El.Para,
+    "tei-pb": El.Pb,
+    "tei-persname": El.Name,
+    "tei-postscript": El.Block,
+    "tei-q": El.Said,
+    "tei-quote": El.Quote,
+    "tei-row": El.TableRow,
+    "tei-rs": El.Name,
     "tei-said": El.Said,
-  }; 
+    "tei-salute": El.Salute,
+    "tei-signed": El.Signed,
+    //"tei-space"
+    "tei-supplied": El.Supplied,
+    "tei-table": El.Table,
+    "tei-title": El.Title, //titlePart?
+  };
   return (
     <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />

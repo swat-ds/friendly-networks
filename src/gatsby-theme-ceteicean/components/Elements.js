@@ -20,11 +20,20 @@ function handleMouseLeave(event) {
   setClick(false);
 }
 
+  let prevNode = props.teiNode?.previousElementSibling;
+
+  while (["tei-note", "tei-p"].includes(prevNode?.localName)) {
+    if (prevNode?.localName === "tei-p" && !(props?.render)){
+      return(<Behavior node={props.teiNode}/>);
+    }
+    prevNode = prevNode?.previousElementSibling
+  }
+
   let noteType = props.teiNode.attributes.getNamedItem("type")?.value || "Note";
   if (noteType === "structure") {
     return (
       <Behavior node={props.teiNode}>
-        <span>{"["} </span>
+        <span>{"["}</span>
         <span style={{ fontStyle: "italic" }}>
           {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
         </span>
@@ -33,8 +42,18 @@ function handleMouseLeave(event) {
     );
   }
   let title = "Note...";
+
+  // Extract a value from @place to display
   if (noteType === "authorial") {
-    title = "marginal note...";
+    let place;
+    place = props.teiNode.attributes.getNamedItem("place")?.value || "margin";
+    place = place.split(" ")[0]
+    if (place === "margin") {
+      title = "marginal note...";
+    } else {
+      title = place + " " + "marginal note...";
+    }
+
   }
   if (noteType === "editorial") {
     title = "editors' note...";
@@ -115,7 +134,7 @@ export const Pb = (props) => {
 };
 
 /**
- * 
+ *
  *  "tei-gap": El.Gap,
     "tei-del": El.Del,
     "tei-add": El.Add,
@@ -126,16 +145,15 @@ export const Supplied = (props) =>{
    return (
       <Behavior node={props.teiNode}>
       <span>
-        {' ['}{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />} {']'}
+        {'['}{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}{']'}
       </span>
     </Behavior>
    )
 }
 export const Add = (props) =>{
-   
   return (
      <Behavior node={props.teiNode}>
-      <span style={{color: "green"}}>
+      {"‸"}<span class="superscript">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </span> {' '}
     </Behavior>
@@ -144,10 +162,8 @@ export const Add = (props) =>{
 export const Del = (props) =>{
     return (
       <Behavior node={props.teiNode}>
-        <span style={{ textDecoration: "line-through", color: "red" }}>
-          <span style={{color: "black"}}>
-            {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-          </span>
+        <span style={{ textDecoration: "line-through" }}>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
         </span>
       </Behavior>
     );
@@ -155,32 +171,27 @@ export const Del = (props) =>{
 export const Gap = (props) =>{
     return (
       <Behavior node={props.teiNode}>
-        <span >[...]</span>
+        {"[...]"}
       </Behavior>
     );
 }
-export const teiHeader = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <p style={{ display: "none" }}>
-        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
-    </Behavior>
-  );
-};
 
 export const Entry = (props) => {
+  let number = props.teiNode.attributes.getNamedItem("n")?.value
+  if (number) {
+    return (
+      <Behavior node={props.teiNode}>
+        <div id={number}>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </div>
+      </Behavior>
+    );
+  }
   return (
     <Behavior node={props.teiNode}>
-      <div>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</div>
-    </Behavior>
-  );
-};
-
-export const Title = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <h1>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</h1>
+      <div>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </div>
     </Behavior>
   );
 };
@@ -201,13 +212,48 @@ export const Body = (props) => {
   );
 };
 
-export const Dateline = (props) => {
+export const Block = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
+      <p>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
     </Behavior>
   );
 };
+
+export const Dateline = (props) => {
+  let nextNode = props.teiNode?.nextElementSibling;
+
+  // Definitely render the dateline if it has a @render attribute
+  if (props?.render) {
+    return (
+        <u>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </u>
+    );
+    // Unclear why, but returning a <Behavior> tag here caused Problems –JT
+  }
+
+  // Return an empty string if this dateline immediately precedes <p>
+  if (nextNode?.localName === "tei-p") {
+    // console.log("In Dateline()")
+    // console.log(<Behavior node={props.teiNode}/>)
+    return("");
+  }
+
+  return (
+    <Behavior node={props.teiNode}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+    </Behavior>
+  );
+};
+
+export const TeiHeader = (props) => {
+  return(
+    <Behavior node={props.teiNode}/>
+  )
+}
 
 export const Para = (props) => {
   // function getBreaks(){
@@ -217,13 +263,32 @@ export const Para = (props) => {
   // }
   // const ref = useRef();
   // console.log(ref.current.nextSibling);
+  // console.log(props);
+
+  let prevNode = props.teiNode?.previousElementSibling;
+  let nextNode = props.teiNode?.nextElementSibling;
+
+  let dateline = (prevNode?.localName === "tei-dateline")
+    ? <Dateline teiNode={prevNode} availableRoutes={props.availableRoutes} render="true"/> :
+    "";
+
+  let followingNotes = [];
+  while (nextNode?.localName === "tei-note") {
+    followingNotes.push(nextNode)
+    nextNode = nextNode?.nextElementSibling
+  }
+
   return (
     <Behavior node={props.teiNode}>
-      <span style={{ marginTop: "0px" }}>
+      <p>
+        {dateline}
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </span>
-      <br />
-      <br />
+        {followingNotes.map((note) =>
+          (
+    <Note teiNode={note} availableRoutes={props.availableRoutes} render="true"/>
+          )
+        )}
+      </p>
     </Behavior>
   );
 };
@@ -231,9 +296,19 @@ export const Para = (props) => {
 export const Head = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <p>
+      <h2 class="teiHead general-text">
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
+      </h2>
+    </Behavior>
+  );
+};
+
+export const Item = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <li>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </li>
     </Behavior>
   );
 };
@@ -247,21 +322,30 @@ export const FloatingText = (props) => {
 };
 
 export const Quote = (props) => {
+
+  let quoteType = props.teiNode.attributes.getNamedItem("type")?.value
+  if (quoteType === "poem") {
+    return (
+      <Behavior node={props.teiNode}>
+        <span>
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </span>
+      </Behavior>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
-      <br />
-      <p className="poem-block">
+      <q>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-      </p>
-      <br />
+      </q>
     </Behavior>
   );
 };
 
-export const L = (props) => {
+export const Line = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <br />
       <i>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </i>
@@ -270,8 +354,116 @@ export const L = (props) => {
   );
 };
 
+export const LineGroup = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <p className="poem-block">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
+    </Behavior>
+  );
+};
 
+export const List = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <ul style={{ listStyleType: "none" }}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </ul>
+    </Behavior>
+  );
+};
 
+export const Salute = (props) => {
+  // Add a linebreak before the Salute if it's in the opener
+  let linebreak = (props.teiNode.parentNode.localName === "tei-opener")?
+    (<br/>):
+    "";
+
+  return(
+    <Behavior node={props.teiNode}>
+      {linebreak}
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+    </Behavior>
+  );
+};
+
+export const Signed = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      <br/>
+      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+    </Behavior>
+  );
+};
+
+export const Table = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <table>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </table>
+      <br/>
+    </Behavior>
+  );
+};
+
+export const TableRow = (props) => {
+  return(
+    <Behavior node={props.teiNode}>
+      <tr>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </tr>
+    </Behavior>
+  );
+};
+
+export const TableCell = (props) => {
+  // Check if the parent <tr> has the "rend" attribute set to "sum"
+  let parent = props.teiNode.parentNode?.attributes?.getNamedItem("rend")?.value
+
+  // Check if the  cell contains any numbers
+  let containsNumber = /\d/.test(props.teiNode?.textContent)
+
+  // Return <td> with className "sum" if both checks are true
+  if (parent === "sum" && containsNumber) {
+    return(
+      <Behavior node={props.teiNode}>
+        <td className="sum">
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </td>
+      </Behavior>
+    );
+  }
+
+  return(
+    <Behavior node={props.teiNode}>
+      <td>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </td>
+    </Behavior>
+  );
+};
+
+export const Title = (props) => {
+  // If <title> is being used to tag document structure:
+  if (props.teiNode.parentNode.localName === "tei-head"){
+    return(
+      <Behavior node={props.teiNode}>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </Behavior>
+    );
+  }
+
+  // If <title> is being used to tag the name of another work:
+  return(
+    <Behavior node={props.teiNode}>
+      <cite>
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </cite>
+    </Behavior>
+  );
+};
 
 // //MNBN
 // export const TEI = (props) => {
