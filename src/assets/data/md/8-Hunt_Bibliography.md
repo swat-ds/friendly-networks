@@ -1,7 +1,7 @@
 ---
-slug: “/background/john-hunt/1-introducing-john-hunt”
-date: “2021-12-07”
-title: “John Hunt material at Friends Historical Library”
+slug: "/background/john-hunt/1-introducing-john-hunt"
+date: "2021-12-07"
+title: "John Hunt material at Friends Historical Library"
 ---
 
 # John Hunt Manuscripts and Publications in the Collections of Friends Historical Library
