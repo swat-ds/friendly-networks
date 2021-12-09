@@ -1,0 +1,11 @@
+import React from 'react'
+
+const BgComponent = ({pageContext}) => {
+    return (
+      <div style={{ color: "black" }}>
+        <span dangerouslySetInnerHTML={{ __html: pageContext.body }}></span>
+      </div>
+    );
+}
+
+export default BgComponent
