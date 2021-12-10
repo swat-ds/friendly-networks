@@ -65,7 +65,11 @@ const People = (props) => {
           if (bio.biogHist) {
             if (bio.biogHist[0].p) {
               for (let p of bio.biogHist[0].p) {
-                text.push(p._);
+                if (p._) {
+                  text.push(p._);
+                } else {
+                  text.push(p);
+                }
               }
             }
 
@@ -74,32 +78,7 @@ const People = (props) => {
                 citation.push(cite._);
               }
             }
-            // if (bio.p) {
-            //   return (
-            //     <article id="bio">
-            //       {bio.p.map((p) => (
-            //         <p>{p._}</p>
-            //       ))}
-            //       <figcaption>
-            //         {bio.citation?.map((c) => (
-            //           <small>{c._}</small>
-            //         ))}
-            //       </figcaption>
-            //     </article>
-            //   );
-            // }
-            // return (
-            //   <article id="bio">
-            //     {bio.biogHist[0].p?.map((p) => (
-            //       <p>{p._}</p>
-            //     ))}
-            //     <figcaption>
-            //       {bio.biogHist[0].citation?.map((c) => (
-            //         <small>{c._}</small>
-            //       ))}
-            //     </figcaption>
-            //   </article>
-            // );
+
           }
           if (bio.p) {
             for (let p of bio.p) {
@@ -109,18 +88,7 @@ const People = (props) => {
                 text.push(p);
               }
             }
-            // return (
-            //   <article id="bio">
-            //     {bio.p.map((p) => (
-            //       <p>{p._}</p>
-            //     ))}
-            //     <figcaption>
-            //       {bio.citation?.map((c) => (
-            //         <small>{c._}</small>
-            //       ))}
-            //     </figcaption>
-            //   </article>
-            // );
+
           }
           if (bio.citation) {
             for (const cite of bio.citation) {
