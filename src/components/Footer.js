@@ -40,24 +40,24 @@ const Footer = () => {
                   </Link>
                 </p>
                 <p>
-                  <Link to={globalVariables.swat} className="g-link ">
+                  <a href={globalVariables.swat} className="g-link ">
                     Swarthmore College
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link to={globalVariables.fhl} className="g-link ">
+                  <a href={globalVariables.fhl} className="g-link ">
                     Friends Historical Library
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link to={globalVariables.lib} className="g-link ">
+                  <a href={globalVariables.lib} className="g-link ">
                     Swarthmore College Libraries
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link to={globalVariables.tricLib} className="g-link ">
+                  <a href={globalVariables.tricLib} className="g-link ">
                     Tri-College Library
-                  </Link>
+                  </a>
                 </p>
               </div>
 

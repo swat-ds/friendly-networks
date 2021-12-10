@@ -314,7 +314,9 @@ const People = (props) => {
       if (sameAsRelationName) {
         return (
           <li>
-            <a href={sameAsRelationName}>{sameAsRelationName}</a>
+            <a href={sameAsRelationName} className="g-link ">
+              {sameAsRelationName}
+            </a>
           </li>
         );
       }
