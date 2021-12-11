@@ -30,7 +30,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
      }
    }, [hasFacsChange]);
 
-    console.log(facs)
+    console.log(me)
 
 
     const routes = {

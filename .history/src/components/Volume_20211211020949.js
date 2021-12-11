@@ -140,7 +140,7 @@ const Volume = (props) => {
   const { pageContext, facs, data, hash } = props;
   // console.log(pageContext.prefixed);
   console.log(facs)
-  let pids = [];
+  let pids = facs;
   let pageBreakIDs = [];
 
   let jsonPrefixed;
@@ -151,7 +151,7 @@ const Volume = (props) => {
 
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
-  pids = pageBreakIDs;
+  // pids = pageBreakIDs;
 
   // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
@@ -292,7 +292,7 @@ const Volume = (props) => {
    }, [scrollNumber]);
 
    function handleWheel(e) {
-    //  console.log("scrolling")
+     console.log("scrolling")
     //  setIsOnWheel(true);
      setScrollNumber(Math.random());
      setPid(visiblePid)

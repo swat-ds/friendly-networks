@@ -6,8 +6,8 @@
 
  export const globalVariables = {
    //Local links
-   about: "/about",
-   doc: "/documentation",
+   about: "/about-project/about",
+   doc: "/about-project/documentation",
    contact: "/contact",
    error: "/404",
    home: "/",

@@ -17,18 +17,16 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
    useEffect(() => {
      if (window !== undefined && document !== undefined) {
-       let els = document.getElementsByTagName("tei-pb");
-       let facsimiles = [];
-       for (let i = 0; i < els.length; i++) {
-         let el = els[i];
-         if (el.attributes.getNamedItem("facs").value !== null) {
-           facsimiles.push(el.attributes.getNamedItem("facs").value);
-         }
-       }
-       console.log(facsimiles);
-       setFacs(facsimiles);
+       let els = document.getElementsByTagName('tei-pb');
+       let facs = [];
+       els.forEach(el => {
+          let fac = el.getAttribute('facs');
+          if (fac !== null) {
+            
+      //  console.log(els)
+       setFacs([...els])
      }
-   }, [hasFacsChange]);
+    }, [hasFacsChange])
 
     console.log(facs)
 
@@ -75,7 +73,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-title": El.Title, //titlePart?
   };
   return (
-    <Volume pageContext={pageContext} facs={facs} data={data} hash={hash}>
+    <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
     </Volume>
   );

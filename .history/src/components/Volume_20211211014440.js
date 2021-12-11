@@ -139,19 +139,19 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 const Volume = (props) => {
   const { pageContext, facs, data, hash } = props;
   // console.log(pageContext.prefixed);
-  console.log(facs)
-  let pids = [];
+  console.log()
+  let pids = facs;
   let pageBreakIDs = [];
 
   let jsonPrefixed;
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
-  // console.log(jsonPrefixed)
+  console.log(jsonPrefixed)
 
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
-  pids = pageBreakIDs;
+  // pids = pageBreakIDs;
 
   // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
   const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
@@ -169,8 +169,8 @@ const Volume = (props) => {
   function getNextCetei() {
     counter += 1;
     setCetei(data.allCetei.nodes[counter].parent.name);
-    // console.log(counter);
-    // console.log(data.allCetei.nodes[counter].parent.name);
+    console.log(counter);
+    console.log(data.allCetei.nodes[counter].parent.name);
   }
 
   //Sets the current cetei to the previous cetei
@@ -207,8 +207,8 @@ const Volume = (props) => {
    * Find and get the index of the next pid relative to th @currentPid
    * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
    */
-//  console.log("Current pid:", currentPid);
-//  console.log("All Pids: ", pids);
+ console.log("Current pid:", currentPid);
+ console.log("All Pids: ", pids);
 
   function getNextImage() {
     let i = pids.indexOf(currentPid);
@@ -247,12 +247,12 @@ const Volume = (props) => {
   const [visiblePid, setVisiblePid] = useState(pids[0])
 
   useEffect(() => {
-    // console.log(jump);
+    console.log(jump);
     scroll(pids[jump])
 
   }, [jump])
 
-  // console.log("Current pid:",  currentPid)
+  console.log("Current pid:",  currentPid)
 
    const [scrollNumber, setScrollNumber] = useState(0);
 
@@ -292,7 +292,7 @@ const Volume = (props) => {
    }, [scrollNumber]);
 
    function handleWheel(e) {
-    //  console.log("scrolling")
+     console.log("scrolling")
     //  setIsOnWheel(true);
      setScrollNumber(Math.random());
      setPid(visiblePid)

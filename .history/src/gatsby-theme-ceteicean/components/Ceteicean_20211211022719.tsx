@@ -14,21 +14,22 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
   let hash = location.hash;
   const [facs, setFacs] = useState([])
   const [hasFacsChange, setHasFacsChange] = useState(false);
+  let me = "you"
 
    useEffect(() => {
      if (window !== undefined && document !== undefined) {
-       let els = document.getElementsByTagName("tei-pb");
+       let els = document.getElementsByTagName('tei-pb');
        let facsimiles = [];
-       for (let i = 0; i < els.length; i++) {
-         let el = els[i];
-         if (el.attributes.getNamedItem("facs").value !== null) {
-           facsimiles.push(el.attributes.getNamedItem("facs").value);
-         }
-       }
+        for (let i = 0; i < els.length; i++) {
+          let el = els[i];
+          if (el.attributes.getNamedItem("facs").value !== null) {
+            facsimiles.push(el.attributes.getNamedItem("facs").value);
+          }
+        }
        console.log(facsimiles);
        setFacs(facsimiles);
      }
-   }, [hasFacsChange]);
+    }, [hasFacsChange])
 
     console.log(facs)
 
