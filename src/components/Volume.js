@@ -72,10 +72,60 @@ if(header && "tei-fileDesc" in header){
 
 }
 
-function getPbsWithRegex(xmlText){
-  let pattern = /(?<=facs=")\w+?(?=")/g; // Define RegEx pattern
-  let results = xmlText.match(pattern); // Execute RegEx
-  return results;
+function getDivBreaks(divList) {
+  let divBreaks = [];
+  divList.forEach((div) => {
+    if ("tei-pb" in div) {
+      div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
+    }
+  });
+  return divBreaks;
+}
+
+function getALlPageBreaks(jsonPrefixed) {
+  let pageBreakIDs = [];
+  if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
+    let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
+    if ("tei-pb" in front) {
+      front["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
+    if ("tei-div" in front) {
+      pageBreakIDs.push(...getDivBreaks(front["tei-div"]));
+    }
+  }
+
+  //Get the ones that are body's children
+  if ("tei-body" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
+    let body = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-body"][0];
+    //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
+    //     pageBreakIDs.push(pid.$.facs);
+    //   }
+    if ("tei-pb" in body) {
+      body["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
+
+    if ("tei-div" in body) {
+      pageBreakIDs.push(...getDivBreaks(body["tei-div"]));
+    }
+  }
+
+  if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
+    let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
+
+    if ("tei-pb" in back) {
+      back["tei-pb"].forEach((pb) => {
+        pageBreakIDs.push(pb?.$?.facs);
+      });
+    }
+    if ("tei-div" in back) {
+      pageBreakIDs.push(...getDivBreaks(back["tei-div"]));
+    }
+  }
+  return pageBreakIDs;
 }
 
 let counter = 0; // counter for to tract the index of each transcript (cetei)
@@ -93,13 +143,12 @@ const Volume = (props) => {
   let pageBreakIDs = [];
 
   let jsonPrefixed;
-  let xmlText = pageContext.prefixed
-
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
+  console.log(jsonPrefixed)
 
-  pageBreakIDs = getPbsWithRegex(xmlText);
+  pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
   pids = pageBreakIDs;
 
