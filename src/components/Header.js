@@ -11,8 +11,8 @@ import { Row, Col, Dropdown} from "react-bootstrap";
 
 
 /**
- * 
- * @param {*} props contains all the properties that maybe passed to Footer. 
+ *
+ * @param {*} props contains all the properties that maybe passed to Footer.
  * @returns a @Row element containing a @Col which contains multiple @GatsbyJS @Links
  */
 const Header = (props) => {
@@ -61,7 +61,7 @@ const Header = (props) => {
                 className="g-link dropdown-link"
                 to={globalVariables.author_bg}
               >
-                john Hunt
+                John Hunt
               </Link>
             </Dropdown.Item>
             <Dropdown.Item

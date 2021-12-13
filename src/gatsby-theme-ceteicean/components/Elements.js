@@ -122,13 +122,13 @@ export const Pb = (props) => {
   // }
   return (
     <Behavior node={props.teiNode}>
-      <span>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</span>
+      <span>
       <hr
         className="page-line"
         id={props.teiNode.attributes.getNamedItem("facs").value}
         style={{ height: 4}}
         // ref={ref}
-      />
+      /></span>
     </Behavior>
   );
 };

@@ -148,7 +148,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
 const Volume = (props) => {
   const { pageContext, data, hash } = props;
-  // console.log(pageContext.prefixed);
   let pids = [];
   let pageBreakIDs = [];
 
@@ -156,7 +155,6 @@ const Volume = (props) => {
   parseString(pageContext.prefixed, function (err, result) {
     jsonPrefixed = result;
   });
-  console.log(jsonPrefixed)
 
   pageBreakIDs = getALlPageBreaks(jsonPrefixed);
 
@@ -179,7 +177,7 @@ const Volume = (props) => {
     counter += 1;
     setCetei(data.allCetei.nodes[counter].parent.name);
     console.log(counter);
-    console.log(data.allCetei.nodes[counter].parent.name);
+    // console.log(data.allCetei.nodes[counter].parent.name);
   }
 
   //Sets the current cetei to the previous cetei
@@ -217,7 +215,6 @@ const Volume = (props) => {
    * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
    */
  console.log("Current pid:", currentPid);
- console.log("All Pids: ", pids);
 
   function getNextImage() {
     let i = pids.indexOf(currentPid);
