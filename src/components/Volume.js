@@ -78,6 +78,16 @@ function getDivBreaks(divList) {
     if ("tei-pb" in div) {
       div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
     }
+
+    // Check each para in the div for <pb>; add facs to divBreaks if found
+    if ("tei-p" in div) {
+      let paraList = div["tei-p"];
+      paraList.forEach((para) => {
+        if ("tei-pb" in para){
+          para["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
+        }
+      });
+    }
   });
   return divBreaks;
 }
