@@ -11,24 +11,10 @@ const home = ({location}) => {
   console.log(location);
   return (
     <Layout>
-      <br />
+      <h1 className="general-text">Our Beloved Friend: The Journals of John Hunt</h1>
       <p className="general-text">
-        The essence of the Quakers Quakers believe that there is something of
-        God in everybody and that each human being is of unique worth. This is
-        why Quakers value all people equally, and oppose anything that may harm
-        or threaten them. Quakers seek religious truth in inner experience, and
-        place great reliance on conscience as the basis of morality. They
-        emphasise direct experience of God rather than ritual and ceremony. They
-        believe that priests and rituals are an unnecessary obstruction between
-        the believer and God. Quakers integrate religion and everyday life. They
-        believe God can be found in the middle of everyday life and human
-        relationships, as much as during a meeting for worship. What Quakers
-        believe Among key Quaker beliefs are: God is love the light of God is in
-        every single person a person who lets their life be guided by that light
-        will achieve a full relationship with God everyone can have a direct,
-        personal relationship with God without involving a priest or minister
-        redemption and the Kingdom of Heaven are to be experienced now, in this
-        world Quakers want to make this a better world
+      Since its origins in the 1650s, the Quaker community has encompassed a densely interconnected transatlantic network. Friendly Networks explores ways to describe Quaker identities, outline Quaker social networks, and connect them to archival sources, with a focus on the journals of New Jersey minister John Hunt (1740-1824). These journals, kept from 1770 to 1824, document not only Hunt’s daily activities and religious life but also his advocacy for non-violence, the end of slavery, and the fair treatment of Native Americans and African Americans.
+
       </p>
     </Layout>
   );

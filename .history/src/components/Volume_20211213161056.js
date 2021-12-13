@@ -176,7 +176,11 @@ const Volume = (props) => {
   function getNextCetei() {
     counter += 1;
     setCetei(data.allCetei.nodes[counter].parent.name);
+<<<<<<< HEAD
+    // console.log(counter);
+=======
     console.log(counter);
+>>>>>>> ddffcd4518a486c5af929f4be3b5c7120ea35256
     // console.log(data.allCetei.nodes[counter].parent.name);
   }
 
@@ -214,7 +218,12 @@ const Volume = (props) => {
    * Find and get the index of the next pid relative to th @currentPid
    * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
    */
+<<<<<<< HEAD
+//  console.log("Current pid:", currentPid);
+//  console.log("All Pids: ", pids);
+=======
  console.log("Current pid:", currentPid);
+>>>>>>> ddffcd4518a486c5af929f4be3b5c7120ea35256
 
   function getNextImage() {
     let i = pids.indexOf(currentPid);
