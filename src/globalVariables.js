@@ -1,4 +1,4 @@
- 
+
  /**
   * This objects contains the VALID and EXISTING pages that are navigable
   * Each of this page can be found under the 'pages' folder, a direct child of the 'src'
@@ -15,7 +15,7 @@
    network: "/network",
    people: "/people",
 
-   author_bg: "/background/author-bg/author-bg",
+   author_bg: "/background/author-bg",
    quaker_bg: "/background/quaker-bg",
    background: "/background/background",
 
