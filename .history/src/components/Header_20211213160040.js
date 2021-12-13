@@ -28,17 +28,17 @@ const Header = (props) => {
 
         <Link className="g-link" to={globalVariables.journals}>
           <div className="d-flex header-item" id="header-journal">
-            <h4>Journals</h4>
+            <h>Journals</h>
           </div>
         </Link>
         <Link className="g-link" to={globalVariables.people}>
           <div className="d-flex header-item" id="header-relative">
-            <h4>People</h4>
+            <h>People</h>
           </div>
         </Link>
         <Link className="g-link" to={globalVariables.network}>
           <div className="d-flex header-item" id="header-network">
-            <h4>Network</h4>
+            <h>Network</h>
           </div>
         </Link>
         <Dropdown>

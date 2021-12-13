@@ -26,15 +26,15 @@
         transition: all 1s ease-out;
     }
     .header-dropdown{
-        display: inherit;
+        // display: flex;
         margin-left: 5px;
-        margin-top: 15px;
+        margin-top: 18px;
     }
 
-    //  #header-journal{
-    //      margin-left: 5px;
-    //         background-color: #808b42;
-    //     }
+     #header-journal{
+         margin-left: 5px;
+            background-color: #808b42;
+        }
      #header-journal:hover,#header-journal:active{
             background-color: white;
             color: #808B42;

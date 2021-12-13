@@ -30,6 +30,7 @@ const home = ({location}) => {
         redemption and the Kingdom of Heaven are to be experienced now, in this
         world Quakers want to make this a better world
       </p>
+      
     </Layout>
   );
 };
