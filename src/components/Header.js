@@ -41,14 +41,12 @@ const Header = (props) => {
             <h4>Network</h4>
           </div>
         </Link>
-        <Dropdown>
+        <Dropdown className="g-link">
           <Dropdown.Toggle
-            style={{ height: "6vh" }}
-            className="header-dropdown"
-            variant="outline-success"
-            id="dropdown-basic"
+            className="header-dropdown header-item"
+            id="dropdown-background"
           >
-            Background
+            <h4>Context</h4>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -79,14 +77,12 @@ const Header = (props) => {
           </Dropdown.Menu>
         </Dropdown>
 
-        <Dropdown>
+        <Dropdown className="g-link">
           <Dropdown.Toggle
-            style={{ height: "6vh" }}
-            className="header-dropdown"
-            variant="outline-success"
-            id="dropdown-basic"
+            className="header-dropdown header-item"
+            id="dropdown-about"
           >
-            About
+            <h4>About</h4>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -96,7 +92,7 @@ const Header = (props) => {
               href=""
             >
               <Link className="g-link dropdown-link" to={globalVariables.about}>
-                about
+                About
               </Link>
             </Dropdown.Item>
             <Dropdown.Item
@@ -108,7 +104,7 @@ const Header = (props) => {
                 className="g-link dropdown-link"
                 to={globalVariables.contact}
               >
-                contact
+                Contact
               </Link>
             </Dropdown.Item>
           </Dropdown.Menu>
