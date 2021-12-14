@@ -163,14 +163,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
-      // .style("stroke", "#bd0fdb")
-      // .style("stroke-width", 1)
+      .style("stroke", "#bd0fdb")
+      .style("stroke-width", 1)
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           return "#808b42";
         }
-        return "#034d81";
+        return "";
       });
 
     const tooltip = d3
@@ -278,7 +278,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         <Col>
           {/* return "#808b42";
         }
-        return "#034d81"; */}
+        return ""; */}
           <div
             style={{
               height: "30px",
@@ -295,7 +295,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               height: "30px",
               width: "30px",
               borderRadius: "50%",
-              backgroundColor: "#034d81",
+              backgroundColor: "",
             }}
           ></div>
           <span className="general-text">Other</span>

@@ -163,8 +163,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
-      // .style("stroke", "#bd0fdb")
-      // .style("stroke-width", 1)
+      .style("stroke", "#bd0fdb")
+      .style("stroke-width", 1)
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {

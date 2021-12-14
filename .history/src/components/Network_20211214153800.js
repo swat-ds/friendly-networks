@@ -80,14 +80,15 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   const svgRef = useRef(); // A reference to refer to the SVG element
   let width = 600,
-    height = 800; //height of the svg
-
+    height = 1200; //height of the svg
+const svg = d3.select(svgRef.current);
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
-
-  function draw() {
-    const svg = d3
-      .select(svgRef.current)
+  // function draw() {
+    
+  // }
+  useEffect(() => {
+     svg
       .attr("width", width)
       .attr("height", height)
       .call(
@@ -100,8 +101,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-1000))
-      .force("collide", d3.forceCollide().radius(90).iterations(2))
+      .force("charge", d3.forceManyBody().strength(-3000))
       .force(
         "link",
         d3
@@ -118,7 +118,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       simulation.alpha(0.2);
       simulation.restart();
     });
-
     //Bind a line to each link
     const lines = svg
       .append("g")
@@ -163,14 +162,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
-      // .style("stroke", "#bd0fdb")
-      // .style("stroke-width", 1)
+      .style("stroke", "#bd0fdb")
+      .style("stroke-width", 1)
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           return "#808b42";
         }
-        return "#034d81";
+        return "#10A8EC";
       });
 
     const tooltip = d3
@@ -236,12 +235,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         .attr("y2", (link) => link.target.y);
     });
     return svg;
-  }
-  useEffect(() => {
-    const svg = draw();
-    return () => {
-      svg.remove();
-    };
+    // return () => {
+    //   svg.remove();
+    // };
   }, [nodes, links, removeHunt]); //End of useEffect()
 
   // function removeCenter(){
@@ -261,78 +257,24 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   // }
 
   return (
-    <>
-      <Row id="main-row">
-        <Col>
-          <Button
-            variant={removeHunt ? "success" : "danger"}
-            onClick={() => setRemoveHunt(!removeHunt)}
-            style={{ margin: "2px" }}
-          >
-            <span className="general-text">
-              {removeHunt ? "Add Hunt" : "Remove Hunt"}
-            </span>
-          </Button>
-          {/* <div style={{display}}></div> */}
-        </Col>
-        <Col>
-          {/* return "#808b42";
-        }
-        return "#034d81"; */}
-          <div
-            style={{
-              height: "30px",
-              width: "30px",
-              borderRadius: "50%",
-              backgroundColor: "#808b42",
-            }}
-          ></div>
-          <span className="general-text">Ministers</span>
-        </Col>
-        <Col>
-          <div
-            style={{
-              height: "30px",
-              width: "30px",
-              borderRadius: "50%",
-              backgroundColor: "#034d81",
-            }}
-          ></div>
-          <span className="general-text">Other</span>
-        </Col>
-
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#A7026A",
-            }}
-          ></div>
-          <span className="general-text">Family Relations</span>
-        </Col>
-
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#03AC93",
-            }}
-          ></div>
-          <span className="general-text">Acquaintances, Associated With </span>
-        </Col>
-      </Row>
-      <Row>
-        <Col id="mainContainer">
-          <svg
-            style={{ backgroundColor: "#342E37" }}
-            id="network-svg"
-            ref={svgRef}
-          ></svg>
-        </Col>
-      </Row>
-    </>
+    <Row id="main-row">
+      <Col id="mainContainer">
+        <Button
+          variant={removeHunt ? "success" : "danger"}
+          onClick={() => setRemoveHunt(!removeHunt)}
+          style={{ margin: "2px"}}
+        >
+          <span className="general-text">
+            {removeHunt ? "Add Hunt" : "Remove Hunt"}
+          </span>
+        </Button>
+        <svg
+          style={{ backgroundColor: "#111420" }}
+          id="network-svg"
+          ref={svgRef}
+        ></svg>
+      </Col>
+    </Row>
   );
 };
 

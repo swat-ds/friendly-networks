@@ -163,14 +163,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
-      // .style("stroke", "#bd0fdb")
-      // .style("stroke-width", 1)
+      .style("stroke", "#bd0fdb")
+      .style("stroke-width", 1)
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           return "#808b42";
         }
-        return "#034d81";
+        return "#10A8EC";
       });
 
     const tooltip = d3
@@ -276,61 +276,23 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           {/* <div style={{display}}></div> */}
         </Col>
         <Col>
-          {/* return "#808b42";
-        }
-        return "#034d81"; */}
           <div
             style={{
               height: "30px",
               width: "30px",
               borderRadius: "50%",
-              backgroundColor: "#808b42",
+              backgroundColor: "blue",
             }}
           ></div>
-          <span className="general-text">Ministers</span>
-        </Col>
-        <Col>
-          <div
-            style={{
-              height: "30px",
-              width: "30px",
-              borderRadius: "50%",
-              backgroundColor: "#034d81",
-            }}
-          ></div>
-          <span className="general-text">Other</span>
-        </Col>
-
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#A7026A",
-            }}
-          ></div>
-          <span className="general-text">Family Relations</span>
-        </Col>
-
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#03AC93",
-            }}
-          ></div>
-          <span className="general-text">Acquaintances, Associated With </span>
+          <span>Minister</span>
         </Col>
       </Row>
       <Row>
-        <Col id="mainContainer">
-          <svg
-            style={{ backgroundColor: "#342E37" }}
-            id="network-svg"
-            ref={svgRef}
-          ></svg>
-        </Col>
+        <svg
+          style={{ backgroundColor: "#111420" }}
+          id="network-svg"
+          ref={svgRef}
+        ></svg>
       </Row>
     </>
   );
