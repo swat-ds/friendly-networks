@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/friendly-networks`,
+  pathPrefix: `friendly-networks`,
   siteMetadata: {
     title: "obf",
   },

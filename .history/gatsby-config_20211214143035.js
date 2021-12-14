@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/friendly-networks`,
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: "obf",
   },
@@ -43,9 +43,9 @@ module.exports = {
               showCaptions: true,
               quality: 100,
               linkImagesToOriginal: false,
-              showCaptions: ["title", "alt"],
+              showCaptions: ['title', 'alt'],
               withWebp: true,
-              tracedSVG: { color: "#F00", turnPolicy: "TURNPOLICY_MAJORITY" },
+              tracedSVG: { color: '#F00', turnPolicy: 'TURNPOLICY_MAJORITY' },
             },
           },
         ],
