@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { FaBars } from "react-icons/fa";
 import "../styles/styles.scss";
 import "../styles/nav.scss";
-import logo from "../../content/assets/images/HuntLogo_withShadow.png";
+import logo from "../../content/assets/images/Logo.png";
 import background from "../../content/assets/images/HuntSiteHeader.jpg";
 import { globalVariables } from "../globalVariables";
 
