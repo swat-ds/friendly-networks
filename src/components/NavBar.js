@@ -69,7 +69,7 @@ const NavBar = (props) => {
               aria-label="Search"
               onChange={handleChange}
             />
-            <Button type="submit" variant="success">
+            <Button type="submit" className="g-link" id="search-button">
               Search
             </Button>
           </Form>
