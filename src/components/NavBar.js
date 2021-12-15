@@ -1,11 +1,12 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { Link, navigate } from "gatsby";
+import { Link, navigate, withPrefix } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
 import { FaBars } from "react-icons/fa";
 import "../styles/styles.scss";
 import "../styles/nav.scss";
 import logo from "../../content/assets/images/HuntLogo_withShadow.png";
+import background from "../../content/assets/images/HuntSiteHeader.jpg";
 import { globalVariables } from "../globalVariables";
 
 import {
@@ -32,9 +33,9 @@ const NavBar = (props) => {
 
 
  //the state that will be passed to search page upon the click of the Link
- //the 'searchQuery' is being destructured in the search.js 
+ //the 'searchQuery' is being destructured in the search.js
   const [query, setQuery] = useState("");
-  //to refer to the Link to trigger click when pressed Enter key. 
+  //to refer to the Link to trigger click when pressed Enter key.
   const linkRef = useRef();
 
   //takes the input value and set it to be the value of property 'searchQuery' in the state
@@ -51,9 +52,11 @@ const NavBar = (props) => {
 
   }
 
+  const bgStyle = {backgroundImage: 'url(' + background + ')',};
+
   return (
     <>
-      <Row id="nav-image">
+      <Row id="nav-image" style={bgStyle}>
         <Col>
           <img id="logo" src={logo}></img>
         </Col>

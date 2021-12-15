@@ -9,7 +9,6 @@
 #nav-image{
   height: 15vh;
   width: 100vw;
-  background-image: url("../../content/assets/images/HuntSiteHeader.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,8 +18,8 @@
 
 #logo{
 margin-left: 0;
- width:70%; 
- height:auto; 
+ width:70%;
+ height:auto;
  display: flex;
  justify-content: left;
  max-width:200px;
