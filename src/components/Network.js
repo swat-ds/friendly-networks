@@ -100,7 +100,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-1000))
+      .force("charge", d3.forceManyBody().strength(-2300))
       .force("collide", d3.forceCollide().radius(90).iterations(2))
       .force(
         "link",
@@ -160,7 +160,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("class", "node")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        return node.id == centralFigure ? 60 : Math.log(node.degree) * 10 + 20; //Accentuates the centralFigure with bigger radius
+        const radius = Math.log(node.degree + 1) * 10 + 20;
+        return node.id == centralFigure ? 60 : radius //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
