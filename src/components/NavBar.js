@@ -109,14 +109,12 @@ const NavBar = (props) => {
                     Network
                   </div>
                 </Link>
-                <Dropdown>
+                <Dropdown className="g-link">
                   <Dropdown.Toggle
-                    style={{ height: "5vh" }}
-                    className="header-dropdown"
-                    variant="outline-success"
-                    id="dropdown-basic"
+                    className="header-dropdown header-item"
+                    id="dropdown-background"
                   >
-                    Background
+                    Context
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
@@ -129,7 +127,7 @@ const NavBar = (props) => {
                         className="g-link dropdown-link"
                         to={globalVariables.author_bg}
                       >
-                        john Hunt
+                        John Hunt
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item
@@ -147,12 +145,10 @@ const NavBar = (props) => {
                   </Dropdown.Menu>
                 </Dropdown>
 
-                <Dropdown>
+                <Dropdown className="g-link">
                   <Dropdown.Toggle
-                    style={{ height: "6vh" }}
-                    className="header-dropdown"
-                    variant="outline-success"
-                    id="dropdown-basic"
+                    className="header-dropdown header-item"
+                    id="dropdown-about"
                   >
                     About
                   </Dropdown.Toggle>
@@ -167,7 +163,7 @@ const NavBar = (props) => {
                         className="g-link dropdown-link"
                         to={globalVariables.about}
                       >
-                        about
+                        About
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item
@@ -179,7 +175,7 @@ const NavBar = (props) => {
                         className="g-link dropdown-link"
                         to={globalVariables.contact}
                       >
-                        contact
+                        Contact
                       </Link>
                     </Dropdown.Item>
                   </Dropdown.Menu>

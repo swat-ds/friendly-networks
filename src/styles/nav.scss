@@ -92,37 +92,36 @@ margin-left: 0;
       border-radius: 3px;
       color: white;
       transition: all 1s ease-out;
-    }
-
-    #header-journal-mobile {
       background-color: #808B42;
     }
-    #header-journal-mobile:hover,
-    #header-journal-mobile:active {
+
+    .header-item:hover, header-item:active{
       background-color: white;
       color: #808B42;
       border: thin solid #808B42;
     }
 
-    #header-relative-mobile {
-      background-color:#808b42;
-    }
-    #header-relative-mobile:hover,
-    #header-relative:active {
-      background-color: white;
-      color:#808b42;
-      border: thin solid#808b42;
-    }
-    #header-network-mobile {
-      background-color: #808b42;
-    }
-    #header-network-mobile:hover,
-    #header-network-mobile:active {
-      background-color: white;
-      color: #808b42;
-      border: thin solid #808b42;
+    .g-link {
+      border-bottom: 1px solid transparent;
     }
 
+ #dropdown-about, #dropdown-background {
+   display: inline-block;
+   justify-content: center;
+   padding: 4px;
+   margin-top: 8px;
+   border-radius: 3px;
+   color: white;
+   transition: all 1s ease-out;
+   background-color: #808B42;
+   border: none;
+ }
+
+ #dropdown-about:hover, #dropdown-background:hover, #dropdown-about:active, #dropdown-background:active {
+   background-color: white;
+   color: #808B42;
+   border: thin solid #808B42;
+ }
 
  #header-background-mobile{
         background-color: #808B42;
