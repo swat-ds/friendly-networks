@@ -169,7 +169,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
-          return "#808b42";
+          return "#505A34";
         }
         return "#034d81";
       });
@@ -277,7 +277,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           {/* <div style={{display}}></div> */}
         </Col>
         <Col>
-          {/* return "#808b42";
+          {/* return "#505A34";
         }
         return "#034d81"; */}
           <div
@@ -285,7 +285,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               height: "30px",
               width: "30px",
               borderRadius: "50%",
-              backgroundColor: "#808b42",
+              backgroundColor: "#505A34",
             }}
           ></div>
           <span className="general-text">Ministers</span>

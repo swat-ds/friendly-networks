@@ -41,7 +41,7 @@
     &:hover{
     cursor: pointer;
     border-width: 2vh 2.5vw 2vh 0vw;
-    border-color: transparent #808B42 transparent transparent;
+    border-color: transparent #505A34 transparent transparent;
     }
   }
 
@@ -58,7 +58,7 @@
      &:hover{
         cursor: pointer;
       border-width: 2vh 0vw 2vh 2.5vw;
-      border-color: transparent transparent transparent #808B42;
+      border-color: transparent transparent transparent #505A34;
      }
     
    
@@ -70,10 +70,10 @@
   flex-direction: row;
   justify-content: center;
   height: 85vh;
-  border-left: 0.5px solid #808B42;
-  border-right: 5px solid #808B42;
-  border-top: 0.5px solid #808B42;
-  border-bottom: 0.5px solid #808B42;
+  border-left: 0.5px solid #505A34;
+  border-right: 5px solid #505A34;
+  border-top: 0.5px solid #505A34;
+  border-bottom: 0.5px solid #505A34;
 }
 
 
@@ -107,10 +107,10 @@
   height: 85vh;
   overflow: scroll;
   padding: 2em;
-  border-left: 5px solid #808B42;
-  border-right: 0.5px solid #808B42;
-  border-top: 0.5px solid #808B42;
-  border-bottom: 0.5px solid #808B42;
+  border-left: 5px solid #505A34;
+  border-right: 0.5px solid #505A34;
+  border-top: 0.5px solid #505A34;
+  border-bottom: 0.5px solid #505A34;
   color: hsl(0, 7%, 83%);
 }
 

@@ -21,7 +21,7 @@
         width: 10vw;
         color: white;
         font-size: clamp(0.6em, 4vh, 1.2em);
-        background-color: #808b42;
+        background-color: #505A34;
         transition: all 1s ease-out;
     }
 
@@ -44,49 +44,49 @@
 
     #dropdown-about:hover, #dropdown-about:active, #dropdown-background:hover, #dropdown-background:active {
       background-color: white;
-      color: #808B42;
-      border: thin solid #808B42;
+      color: #505A34;
+      border: thin solid #505A34;
     }
 
     //  #header-journal{
     //      margin-left: 5px;
-    //         background-color: #808b42;
+    //         background-color: #505A34;
     //     }
      #header-journal:hover,#header-journal:active{
             background-color: white;
-            color: #808B42;
-            border: thin solid #808B42;
+            color: #505A34;
+            border: thin solid #505A34;
     }
 
      #header-relative{
-            background-color: #808b42;
+            background-color: #505A34;
         }
      #header-relative:hover, #header-relative:active{
             background-color: white;
-            color: #808b42;
-            border: thin solid #808b42;
+            color: #505A34;
+            border: thin solid #505A34;
     }
     #header-network{
-            background-color: #808b42;
+            background-color: #505A34;
         }
      #header-network:hover, #header-network:active{
             background-color: white;
-            color: #808b42;
-            border: thin solid #808b42;
+            color: #505A34;
+            border: thin solid #505A34;
     }
 
      #header-background{
          margin-right: 5px;
-        background-color: #808B42;
+        background-color: #505A34;
           .dropdown-link{
             color: white;
         }
         }
      #header-background:hover, #header-background:active{
             background-color: white;
-            border: thin solid  #808B42;
+            border: thin solid  #505A34;
               .dropdown-link{
-            color:  #808B42;
+            color:  #505A34;
         }
     }
 
