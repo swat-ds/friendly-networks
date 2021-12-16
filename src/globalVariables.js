@@ -7,8 +7,9 @@
  export const globalVariables = {
    //Local links
    about: "/about",
-   doc: "/documentation",
    contact: "/contact",
+   credits: "/credits",
+   doc: "/documentation",
    error: "/404",
    home: "/",
    journals: "/journals",
@@ -20,7 +21,7 @@
    background: "/background/background",
 
    //Links to background pages.
-   timeline: "/background/author-background/timeline",
+   timeline: "/background/timeline",
    bookshelf: "/background/john-hunt/7-bookshelf",
    form_of_the_journal: "/background/quaker-bg/0-Form_of_the_Journal",
    introduction: "/background/john-hunt/1-introducing-john-hunt",
@@ -29,9 +30,9 @@
    whyKeep: "/background/john-hunt/2-why-keep-a-journal",
    bibliography: "/background/john-hunt/8-Hunt-bibliography",
    quaker_world: "/background/john-hunt/4-quaker-world",
+   testimonies: "/background/john-hunt/6-quaker-testimonies",
 
    glossary: "/background/quaker-bg/glossary",
-   testimonies: "/background/john-hunt/6-quaker-testimonies",
    quaker_meeting_structure: "/background/quaker-bg/structure-society-friends",
    all_in_one: "/background/allInOne",
 

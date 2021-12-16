@@ -173,9 +173,9 @@ const NavBar = (props) => {
                     >
                       <Link
                         className="g-link dropdown-link"
-                        to={globalVariables.contact}
+                        to={globalVariables.credits}
                       >
-                        Contact
+                        Credits
                       </Link>
                     </Dropdown.Item>
                   </Dropdown.Menu>
