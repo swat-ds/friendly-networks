@@ -1,12 +1,19 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import {Row} from "react-bootstrap";
+
 const contact = () => {
     return (
-        <Layout>
+      <Layout>
+          <Row className="general-text">
             <h1>
-                The Contact page of this project
+                Contact
             </h1>
-        </Layout>
+            <p>
+              Coming soon.
+            </p>
+          </Row>
+      </Layout>
     )
 }
 
