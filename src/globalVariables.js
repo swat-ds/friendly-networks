@@ -45,20 +45,19 @@
  };
 
  export const contacts = {
-   swat: {
-     address: "500 College Ave, Swarthmore, PA 19081",
-     phone: " (610) 328-8000",
-     email: "admissions@swarthmore.edu",
-   },
    fhl: {
-     address: "500 College Ave, Swarthmore, PA 19081",
-     phone: " (610) 328-8496",
-     email: "friends@swarthmore.edu",
+     name: "Friends Historical Library",
+     address1: "Swarthmore College",
+     address2: "500 College Ave",
+     address3: "Swarthmore, PA 19081",
+     website: "https://www.swarthmore.edu/friends-historical-library",
    },
-   library: {
-     address: "500 College Ave, Swarthmore, PA 19081",
-     phone: " (610) 328-8477",
-     email: "circ@swarthmore.edu",
+   ds: {
+     name: "Digital Scholarship",
+     address1: "Swarthmore College",
+     address2: "500 College Ave",
+     address3: "Swarthmore, PA 19081",
+     website: "https://www.swarthmore.edu/libraries/digital-scholarship",
    },
  };
 
