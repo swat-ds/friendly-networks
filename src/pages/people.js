@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Link, graphql } from "gatsby";
-import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
+import { graphql } from "gatsby";
 import EntityCardDeck from  "../components/EntityCardDeck"
 
 const people = ({ data }) => {
@@ -31,4 +30,3 @@ export default people;
     }
   }
 `;
-

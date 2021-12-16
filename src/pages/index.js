@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { scroller } from "react-scroll";
 import Layout from "../components/Layout";
 import { Row, Col } from "react-bootstrap";
 import "../styles/styles.scss";

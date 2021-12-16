@@ -2,12 +2,9 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
-import { IconContext } from "react-icons";
-import { BsArrowRight, BsArrowLeft, BsTriangleFill } from "react-icons/bs";
-import { Container, Row, Button, Col, Collapse, Form, InputGroup } from "react-bootstrap";
+import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
-import JournalImage from "./JournalImage";
 import Viewer from "./Viewer";
 import { months } from "../globalVariables";
 
@@ -17,7 +14,7 @@ const parseString = require("xml2js").parseString;
 
 function getTitle(journal){
 
-let header  = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
+let header = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
 
 if(header && "tei-fileDesc" in header){
 
@@ -42,18 +39,18 @@ if(header && "tei-fileDesc" in header){
   let endingDate =
     detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
 
-  let beginningYear = beginningDate[0] != undefined ? beginningDate[0] : "";
+  let beginningYear = beginningDate[0] !== undefined ? beginningDate[0] : "";
 
-  let beginningMonth = beginningDate[1] != undefined ? beginningDate[1] : "";
+  let beginningMonth = beginningDate[1] !== undefined ? beginningDate[1] : "";
   beginningMonth =
-    beginningMonth != undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
+    beginningMonth !== undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
 
-  let beginningDay = beginningDate[2] != undefined ? beginningDate[2] : "";
+  let beginningDay = beginningDate[2] !== undefined ? beginningDate[2] : "";
 
-  let endingYear = endingDate[0] != undefined ? endingDate[0] : "";
-  let endingMonth = endingDate[1] != undefined ? endingDate[1] : "";
-  endingMonth = endingMonth != undefined ? endingMonth.slice(0, -3) : "";
-  let endingDay = endingDate[2] != undefined ? endingDate[2] : "";
+  let endingYear = endingDate[0] !== undefined ? endingDate[0] : "";
+  let endingMonth = endingDate[1] !== undefined ? endingDate[1] : "";
+  endingMonth = endingMonth !== undefined ? endingMonth.slice(0, -3) : "";
+  let endingDay = endingDate[2] !== undefined ? endingDate[2] : "";
 
   return {
     title: title,
@@ -205,7 +202,7 @@ const Volume = (props) => {
    * 2. http://localhost:8000/sc203246/#pid=sc203683
    * Nothing needs to be changed for the scrolling whatsoever, both works.
    */
-  if (hash != "") {
+  if (hash !== "") {
     let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
     scroll(hashPid);
   }
@@ -228,7 +225,7 @@ const Volume = (props) => {
    * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
    */
 
-  const [isOnWheel, setIsOnWheel] = useState(false)
+  // const [isOnWheel, setIsOnWheel] = useState(false)
 
   function getPrevImage() {
       let i = pids.indexOf(currentPid);
@@ -330,7 +327,7 @@ function renderTitle(journalMetadata){
         ) : (
           ""
         )}
-        {journalMetadata.startYear != undefined ? <span>  to {` `}</span> : ""}
+        {journalMetadata.startYear !== undefined ? <span>  to {` `}</span> : ""}
         {journalMetadata.endMonth ? (
           <span >{`${
             months[journalMetadata.endMonth - 1].name

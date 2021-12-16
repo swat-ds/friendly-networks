@@ -1,7 +1,6 @@
 //Package imports
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Link } from "gatsby";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from "./RelationCardDeck";
@@ -269,8 +268,6 @@ const People = (props) => {
       );
     }
   };
-
-  const renderNote = () => {};
 
   /**
    * Render a single subject from the @subjects

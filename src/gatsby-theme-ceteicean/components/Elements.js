@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useState, useRef} from "react";
 import { TEINodes } from "react-teirouter";
 // import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
 import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
@@ -94,6 +94,7 @@ export const Name = (props) => {
   );
 };
 
+/*
 function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -111,6 +112,7 @@ function useOnScreen(ref) {
 
   return isIntersecting;
 }
+*/
 
 export const Pb = (props) => {
 

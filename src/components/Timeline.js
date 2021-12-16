@@ -11,7 +11,7 @@ const Timeline = (props) => {
     console.log(typeof timelineData);
 
     const renderEvent = (moment, index)=>{
-  
+
        let dateParts = moment.Date.split("-");
        //Not assumed if any of the date parts exists.
        let year = dateParts.length > 0 ? dateParts[0] : "";
@@ -21,7 +21,7 @@ const Timeline = (props) => {
        let tentativeComma = month && day? ',': ''
        let monthIndex = null;
        if(month !==""){
-         monthIndex = month.charAt(0) == '0'? month.charAt(1): month;
+         monthIndex = month.charAt(0) === '0'? month.charAt(1): month;
        }
        return (
          <div class="timeline">
@@ -53,7 +53,7 @@ const Timeline = (props) => {
        );
     }
   return (
-    
+
     <Row id="timeline-row">
       <Col id="timeline-col">
         <h4 className="general-text">Visualization of the events</h4>

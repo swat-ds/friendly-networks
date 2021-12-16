@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import JournalCard from "../components/JournalCard";
-import { Button, Card, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "../styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;
@@ -44,18 +44,18 @@ const parseString = require("xml2js").parseString;
     let endingDate =
       detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
 
-    let beginningYear = beginningDate[0] != undefined ? beginningDate[0] : "";
+    let beginningYear = beginningDate[0] !== undefined ? beginningDate[0] : "";
 
-    let beginningMonth = beginningDate[1] != undefined ? beginningDate[1] : "";
+    let beginningMonth = beginningDate[1] !== undefined ? beginningDate[1] : "";
     beginningMonth =
-      beginningMonth != undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
+      beginningMonth !== undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
     // beginningMonth = beginningMonth != ""? months[parseInt(beginningMonth)].abbr : "";
-    let beginningDay = beginningDate[2] != undefined ? beginningDate[2] : "";
+    let beginningDay = beginningDate[2] !== undefined ? beginningDate[2] : "";
 
-    let endingYear = endingDate[0] != undefined ? endingDate[0] : "";
-    let endingMonth = endingDate[1] != undefined ? endingDate[1] : "";
-    endingMonth = endingMonth != undefined ? endingMonth.slice(0, -3) : "";
-    let endingDay = endingDate[2] != undefined ? endingDate[2] : "";
+    let endingYear = endingDate[0] !== undefined ? endingDate[0] : "";
+    let endingMonth = endingDate[1] !== undefined ? endingDate[1] : "";
+    endingMonth = endingMonth !== undefined ? endingMonth.slice(0, -3) : "";
+    let endingDay = endingDate[2] !== undefined ? endingDate[2] : "";
 
     let text =
       header["tei-teiHeader"]["tei-fileDesc"][0]["tei-seriesStmt"][0][
@@ -91,7 +91,7 @@ const journals = ({ data }) => {
 
   // preparedNodes.forEach((node) => console.log(node.detailedDateStr));
   const renderJournals = (node, index)=>{
-    
+
     return (
       <Col style={{ border: "0.1px solid gray" }}>
         <JournalCard

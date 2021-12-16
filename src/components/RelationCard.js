@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import {Card, Col, Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 import "../styles/styles.scss";
 import "../styles/card.scss";
 import {BsBoxArrowRight} from 'react-icons/bs'

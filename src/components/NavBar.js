@@ -1,8 +1,6 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
-import { Link, navigate, withPrefix } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
-import { FaBars } from "react-icons/fa";
+import { useState } from "react";
+import { Link, navigate } from "gatsby";
 import "../styles/styles.scss";
 import "../styles/nav.scss";
 import logo from "../../content/assets/images/Logo.png";
@@ -12,11 +10,9 @@ import { globalVariables } from "../globalVariables";
 import {
   Form,
   FormControl,
-  Container,
   Button,
   Row,
   Col,
-  Image,
   Navbar,
   Nav,
   NavDropdown,
@@ -35,8 +31,6 @@ const NavBar = (props) => {
  //the state that will be passed to search page upon the click of the Link
  //the 'searchQuery' is being destructured in the search.js
   const [query, setQuery] = useState("");
-  //to refer to the Link to trigger click when pressed Enter key.
-  const linkRef = useRef();
 
   //takes the input value and set it to be the value of property 'searchQuery' in the state
   const handleChange = (e) => {
@@ -58,7 +52,7 @@ const NavBar = (props) => {
     <>
       <Row id="nav-image" style={bgStyle}>
         <Col>
-          <img id="logo" src={logo}></img>
+          <img id="logo" src={logo} alt="Friendly Networks logo"></img>
         </Col>
         <Col className="search-form">
           <Form className="d-flex" onSubmit={handleSubmit}>

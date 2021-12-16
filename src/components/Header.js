@@ -1,7 +1,6 @@
 import React from "react";
 import {useState} from 'react'
 import { Link } from "gatsby";
-import { FaBars } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import { globalVariables } from "../globalVariables";
 import "../styles/styles.scss";
@@ -17,7 +16,6 @@ import { Row, Col, Dropdown} from "react-bootstrap";
  */
 const Header = (props) => {
   const [dropdown, setDropdown] = useState(false);
-  const toggleOpen = () => setDropdown(!dropdown);
 
   return (
     <Row id="header-row">

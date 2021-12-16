@@ -1,10 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import { Link, graphql } from "gatsby";
-import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
+import { Link } from "gatsby";
+import { Row } from "react-bootstrap";
 import "../styles/entity.scss";
-import RelationCard from "./RelationCard";
-
 
 
 const RelationCardDeck = ({ relationDeck }) => {
@@ -25,26 +22,21 @@ const RelationCardDeck = ({ relationDeck }) => {
       type = relation.type?.term ? relation.type?.term : type;
       content = relation.content ? relation.content : content;
       arkId = relation.targetArkID.split("/").pop();
-      if (content != "unknown") {
+      if (content !== "unknown") {
         content = content.split(",");
         date = content.pop();
         name = content.join(",");
       }
     }
-    
+
     return (
-      <tr scope="row">
+      <tr>
         <td>{date}</td>
         <td>
             <Link className="g-link" to={"/entities/" + arkId}>{name}</Link>
         </td>
         <td>{type}</td>
         <td>{note}</td>
-        <td>
-          <a href="#" class="more">
-            SNACC Link
-          </a>
-        </td>
       </tr>
     );
   };
@@ -76,7 +68,6 @@ const RelationCardDeck = ({ relationDeck }) => {
               <th scope="col">Name</th>
               <th scope="col">Relation Type</th>
               <th scope="col">Note</th>
-              <th scope="col">External Source</th>
               {/* <th scope="col">Link</th> */}
             </tr>
           </thead>

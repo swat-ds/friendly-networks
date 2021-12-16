@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link, graphql } from "gatsby";
 import Fuse from "fuse.js";
 import Layout from "../components/Layout";
-import { Form, Button, Card, Row, Col, FormControl } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 
 import "../styles/styles.scss";
 
@@ -59,7 +59,6 @@ const search = ({ location, data }) => {
       query = location.search.slice(3);
     }
     let baseKey = "text.tei-TEI.tei-text.tei-body.tei-div";
-    let baseKey2 = "text.tei-TEI.tei-text.tei-front";
     const journalFuse = new Fuse(parsedJournals, {
       includeMatches: true,
       includeScore: true,
@@ -74,7 +73,6 @@ const search = ({ location, data }) => {
         `${baseKey}.tei-dateline.tei-date._`,
         // `${baseKey}.tei-p.tei-note._`,
         // `${baseKey}.tei-p.tei-note.tei-q._`,
-        // `${baseKey2}.tei-docTitle.tei-titlePart._`,
       ],
     });
 

@@ -39,7 +39,7 @@ const JournalCard = ({ node, index, size }) => {
               ""
             )}
             <br />
-            {node.startYear != undefined ? <span>to {` `}</span> : ""}
+            {node.startYear !== undefined ? <span>to {` `}</span> : ""}
             {node.endMonth ? (
               <span className="date">{`${months[node.endMonth - 1].name} `}</span>
             ) : (
