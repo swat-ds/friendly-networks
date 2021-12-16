@@ -1,9 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import { Link, graphql } from "gatsby";
-import { Card, CardGroup, Button, Row, Col } from "react-bootstrap";
+import { Link } from "gatsby";
+import { Row, Table } from "react-bootstrap";
 import "../styles/entity.scss";
-import EntityCard from "./EntityCard";
 
 
 const EntityCardDeck = ({entityDeck}) => {
@@ -42,18 +40,13 @@ const EntityCardDeck = ({entityDeck}) => {
   }
 
      return (
-       <tr scope="row">
-         <td>{date}</td>
+       <tr>
          <td>
            <Link className="g-link" to={"/entities/" + entity.arkId}>
-             {name}
+           {name}
            </Link>
          </td>
-         <td>
-           <a href={"http://n2t.net/ark:/99166/" + entity.arkId} class="more">
-            SNACC link
-           </a>
-         </td>
+         <td>{date}</td>
        </tr>
      );
    };
@@ -65,15 +58,14 @@ const EntityCardDeck = ({entityDeck}) => {
         <table class="table table-striped custom-table">
           <thead>
             <tr>
+            <th scope="col">Name</th>
               <th scope="col">Date</th>
-              <th scope="col">Name</th>
-              <th scope="col">External Source</th>
             </tr>
           </thead>
           <tbody>{entityDeck.map(renderEntityRow)}</tbody>
         </table>
-      </div>
-    </Row>
+       </div>
+     </Row>
   );
 };
 
