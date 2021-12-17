@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useState, useEffect, useLayoutEffect, useMemo } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import * as d3 from "d3";
 import {
   Row,
@@ -7,8 +7,6 @@ import {
   OverlayTrigger,
   Tooltip,
   Button,
-  ToggleButton,
-  Popover,
 } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
 import "../styles/network.scss";
@@ -128,17 +126,17 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label == "acquaintanceOf" ||
-          link.label == "correspondedWith" ||
-          link.label == "associatedWith"
+        return link.label === "acquaintanceOf" ||
+          link.label === "correspondedWith" ||
+          link.label === "associatedWith"
           ? "#03AC93"
           : "#A7026A"; //purple
       })
       .attr("stroke-width", (link) => {
         if (
-          link.label == "acquaintanceOf" ||
-          link.label == "correspondedWith" ||
-          link.label == "associatedWith"
+          link.label === "acquaintanceOf" ||
+          link.label === "correspondedWith" ||
+          link.label === "associatedWith"
         ) {
           return 4;
         }
@@ -162,13 +160,13 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("r", (node) => {
         //John Hunt has 2 records;
         const radius = Math.log(node.degree + 1) * 10 + 20;
-        return node.id == centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
+        return node.id === centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
       // .style("stroke-width", 1)
       .style("fill", (node) => {
-        if (node.id == centralFigure) return "#FF8C00";
+        if (node.id === centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           if(highlightMinister){
             return "#505A34";
