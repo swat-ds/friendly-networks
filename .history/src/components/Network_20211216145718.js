@@ -24,27 +24,27 @@ import "../styles/network.scss";
  */
 
 function getNodesWithoutHunt(nodes, links, removingNode) {
-  let filteredNodes = nodes.filter((node) => {
-    return node.id !== removingNode;
-  });
+   let filteredNodes = nodes.filter((node) => {
+     return node.id !== removingNode;
+   });
 
-  let filteredLinks = links.filter((link) => {
-    return (
-      (link.source.id !== removingNode) & (link.target.id !== removingNode)
-    );
-  });
+   let filteredLinks = links.filter((link) => {
+     return (
+       (link.source.id !== removingNode) & (link.target.id !== removingNode)
+     );
+   });
   return {
     filteredNodes: filteredNodes,
-    filteredLinks: filteredLinks,
+    filteredLinks: filteredLinks
   };
 }
 
 const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //states to changes nodes and links if needed
 
-  const { filteredNodes, filteredLinks } = useMemo(() => {
-    return getNodesWithoutHunt(nodesInJSON, linksInJSON, centralFigure);
-  }, [centralFigure]);
+ const { filteredNodes, filteredLinks } = useMemo(() => {
+   return getNodesWithoutHunt(nodesInJSON, linksInJSON, centralFigure);
+ }, [centralFigure]);
 
   //  console.log("nodes in json length:", nodesInJSON.length);
   //   console.log("links in json length:", linksInJSON.length);
@@ -52,7 +52,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //   console.log("no Hunt links :", noHuntLinks.length);
 
   const [nodes, setNodes] = useState(nodesInJSON);
-  const [highlightMinister, setHighlightMinister] = useState(false);
 
   const [links, setLinks] = useState(linksInJSON);
   const [removeHunt, setRemoveHunt] = useState(false);
@@ -162,7 +161,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("r", (node) => {
         //John Hunt has 2 records;
         const radius = Math.log(node.degree + 1) * 10 + 20;
-        return node.id == centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
+        return node.id == centralFigure ? 60 : radius //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
@@ -170,9 +169,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
-          if(highlightMinister){
-            return "#505A34";
-          }
+          return "#505A34";
         }
         return "#034d81";
       });
@@ -246,7 +243,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
+  }, [nodes, links, removeHunt]); //End of useEffect()
 
   // function removeCenter(){
   //   setRemoveHunt(!removeHunt)
@@ -263,10 +260,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //   setLinks(filteredLinks);
   //   console.log(filteredNodes.length, filteredLinks.length);
   // }
+  const [highlightMinister, setHighlightMinister] = useState(false)
 
 
-  function highlightMinisterHandler(e) {
-    setHighlightMinister(!highlightMinister);
+  function highlightMinister(e) {
+    consol
   }
   return (
     <>
@@ -281,23 +279,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               {removeHunt ? "Add Hunt" : "Remove Hunt"}
             </span>
           </Button>
+          
         </Col>
         <Col>
           <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="flexSwitchCheckDefault"
-              onChange={highlightMinisterHandler}
-            />
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={handleMinisterHighlight}/>
 
-            <label
-              class="form-check-label general-text"
-              for="flexSwitchCheckDefault"
-            >
-              Highlight ministers
-            </label>
-          </div>
+    <label class="form-check-label general-text" for="flexSwitchCheckDefault">Highlight ministers</label>
+  </div>
         </Col>
         <Col>
           {/* return "#505A34";
@@ -309,15 +298,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#505A34",
-              display: highlightMinister ? "inherit" : "none",
             }}
           ></div>
-          <span
-            className="general-text"
-            style={{ display: highlightMinister ? "inline" : "none" }}
-          >
-            Ministers
-          </span>
+          <span className="general-text">Ministers</span>
         </Col>
         <Col>
           <div

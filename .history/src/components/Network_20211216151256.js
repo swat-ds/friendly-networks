@@ -246,7 +246,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
+  }, [nodes, links, removeHunt, high]); //End of useEffect()
 
   // function removeCenter(){
   //   setRemoveHunt(!removeHunt)

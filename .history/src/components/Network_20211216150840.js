@@ -173,6 +173,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           if(highlightMinister){
             return "#505A34";
           }
+          else{
+            return "#034d81";
+          }
         }
         return "#034d81";
       });
@@ -246,7 +249,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
+  }, [nodes, links, removeHunt]); //End of useEffect()
 
   // function removeCenter(){
   //   setRemoveHunt(!removeHunt)
@@ -309,7 +312,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#505A34",
-              display: highlightMinister ? "inherit" : "none",
+              display: highlightMinister ? "inline" : "none",
             }}
           ></div>
           <span

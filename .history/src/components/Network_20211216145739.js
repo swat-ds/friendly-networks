@@ -52,7 +52,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //   console.log("no Hunt links :", noHuntLinks.length);
 
   const [nodes, setNodes] = useState(nodesInJSON);
-  const [highlightMinister, setHighlightMinister] = useState(false);
 
   const [links, setLinks] = useState(linksInJSON);
   const [removeHunt, setRemoveHunt] = useState(false);
@@ -170,9 +169,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .style("fill", (node) => {
         if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
-          if(highlightMinister){
-            return "#505A34";
-          }
+          return "#505A34";
         }
         return "#034d81";
       });
@@ -246,7 +243,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
+  }, [nodes, links, removeHunt]); //End of useEffect()
 
   // function removeCenter(){
   //   setRemoveHunt(!removeHunt)
@@ -263,10 +260,10 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //   setLinks(filteredLinks);
   //   console.log(filteredNodes.length, filteredLinks.length);
   // }
+  const [highlightMinister, setHighlightMinister] = useState(false);
 
-
-  function highlightMinisterHandler(e) {
-    setHighlightMinister(!highlightMinister);
+  function highlightMinister(e) {
+    console.log("highlight is functional");
   }
   return (
     <>
@@ -288,7 +285,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               class="form-check-input"
               type="checkbox"
               id="flexSwitchCheckDefault"
-              onChange={highlightMinisterHandler}
+              onClick={handleMinisterHighlight}
             />
 
             <label
@@ -309,15 +306,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#505A34",
-              display: highlightMinister ? "inherit" : "none",
             }}
           ></div>
-          <span
-            className="general-text"
-            style={{ display: highlightMinister ? "inline" : "none" }}
-          >
-            Ministers
-          </span>
+          <span className="general-text">Ministers</span>
         </Col>
         <Col>
           <div
