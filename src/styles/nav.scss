@@ -94,6 +94,7 @@ margin-left: 0;
       color: white;
       transition: all 1s ease-out;
       background-color: #505A34;
+      border: thin solid #505A34;
     }
 
     .header-item:hover, header-item:active{
@@ -115,7 +116,7 @@ margin-left: 0;
    color: white;
    transition: all 1s ease-out;
    background-color: #505A34;
-   border: none;
+   border: thin solid #505A34;
  }
 
  #dropdown-about:hover, #dropdown-background:hover, #dropdown-about:active, #dropdown-background:active {

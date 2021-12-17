@@ -23,6 +23,7 @@
         font-size: clamp(0.6em, 4vh, 1.2em);
         background-color: #505A34;
         transition: all 1s ease-out;
+        border: thin solid #505A34;
     }
 
     h4{
@@ -36,10 +37,6 @@
       text-align: center;
       text-decoration-thickness: auto;
       white-space: normal;
-
-      border-color: inherit;
-      border-style: none;
-      border-width: 0px;
     }
 
     #dropdown-about:hover, #dropdown-about:active, #dropdown-background:hover, #dropdown-background:active {
