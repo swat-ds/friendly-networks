@@ -1,16 +1,14 @@
 import React from "react";
-import {
-  useRef,
-  useState,
-  useEffect,
-  useMemo
-} from "react";
+import { useRef, useState, useEffect, useLayoutEffect, useMemo } from "react";
 import * as d3 from "d3";
 import {
   Row,
   Col,
+  OverlayTrigger,
   Tooltip,
   Button,
+  ToggleButton,
+  Popover,
 } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
 import "../styles/network.scss";
@@ -42,17 +40,9 @@ function getNodesWithoutHunt(nodes, links, removingNode) {
 }
 
 const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
-const Network = ({
-  nodesInJSON,
-  linksInJSON,
-  centralFigure
-}) => {
   //states to changes nodes and links if needed
 
-  const {
-    filteredNodes,
-    filteredLinks
-  } = useMemo(() => {
+  const { filteredNodes, filteredLinks } = useMemo(() => {
     return getNodesWithoutHunt(nodesInJSON, linksInJSON, centralFigure);
   }, [centralFigure]);
 
@@ -116,9 +106,9 @@ const Network = ({
       .force(
         "link",
         d3
-        .forceLink(links)
-        .distance(50)
-        .id((node) => node.id)
+          .forceLink(links)
+          .distance(50)
+          .id((node) => node.id)
       )
       .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -138,17 +128,17 @@ const Network = ({
       .enter()
       .append("line")
       .style("stroke", (link) => {
-        return link.label === "acquaintanceOf" ||
-          link.label === "correspondedWith" ||
-          link.label === "associatedWith" ?
-          "#03AC93" :
-          "#A7026A"; //purple
+        return link.label == "acquaintanceOf" ||
+          link.label == "correspondedWith" ||
+          link.label == "associatedWith"
+          ? "#03AC93"
+          : "#A7026A"; //purple
       })
       .attr("stroke-width", (link) => {
         if (
-          link.label === "acquaintanceOf" ||
-          link.label === "correspondedWith" ||
-          link.label === "associatedWith"
+          link.label == "acquaintanceOf" ||
+          link.label == "correspondedWith" ||
+          link.label == "associatedWith"
         ) {
           return 4;
         }
@@ -172,16 +162,15 @@ const Network = ({
       .attr("r", (node) => {
         //John Hunt has 2 records;
         const radius = Math.log(node.degree + 1) * 10 + 20;
-        //Accentuate the centralFigure with bigger radius
-        return node.id === centralFigure ? 60 : radius;
+        return node.id == centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
       // .style("stroke-width", 1)
       .style("fill", (node) => {
-        if (node.id === centralFigure) return "#FF8C00";
+        if (node.id == centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
-          if (highlightMinister) {
+          if(highlightMinister){
             return "#505A34";
           }
         }
@@ -196,7 +185,7 @@ const Network = ({
       .attr("id", "node-tooltip")
       .style("opacity", 0); //
 
-    nodeWrapper.on("mouseover", function(event, d) {
+    nodeWrapper.on("mouseover", function (event, d) {
       tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
       tooltip
         .html(d.label)
@@ -232,9 +221,9 @@ const Network = ({
         let nameParts = node.label.split(",");
         let lastName = nameParts[0];
         let firstName =
-          nameParts.length > 2 ?
-          nameParts[nameParts.length - 2] :
-          nameParts[nameParts.length - 1];
+          nameParts.length > 2
+            ? nameParts[nameParts.length - 2]
+            : nameParts[nameParts.length - 1];
         let fullName = `${firstName} ${lastName}`;
         return fullName;
       })
