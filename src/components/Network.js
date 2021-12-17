@@ -4,8 +4,6 @@ import * as d3 from "d3";
 import {
   Row,
   Col,
-  OverlayTrigger,
-  Tooltip,
   Button,
 } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
@@ -184,7 +182,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .style("opacity", 0); //
 
     nodeWrapper.on("mouseover", function (event, d) {
-      tooltip.transition().duration(300).style("opacity", 1); // show the tooltip
+      // show the tooltip
+      tooltip.transition().duration(300).style("opacity", 1);
       tooltip
         .html(d.label)
         .style(
@@ -195,6 +194,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           "top",
           event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
         );
+
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
