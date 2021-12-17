@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Viewer = ({ imageId }) => {
   // console.log(imageId);
-  const baseURl = "https://digitalcollections.tricolib.brynmawr.edu/iiif/2/";
+  const baseURl = "https://web.tricolib.brynmawr.edu/digitalcollections/iiif/2/";
   const postFix = "~JP2~/info.json";
   let idWithColon = imageId.slice(0, 2) + ":" + imageId.slice(2);
   let url = baseURl + idWithColon + postFix;
@@ -36,7 +36,7 @@ const Viewer = ({ imageId }) => {
             tileSources: tileSources,
             showNavigator: true,
             // Initial rotation angle
-  
+
             // Show rotation buttons
             showRotationControl: true,
             prefixUrl: "//openseadragon.github.io/openseadragon/images/",

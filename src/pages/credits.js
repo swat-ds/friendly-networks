@@ -15,12 +15,12 @@ const credits = () => {
 
                 <h2>Staff</h2>
 
-                <h3>Project Manager (2021-2023)</h3>
+                <h3>Project Manager (2021–2023)</h3>
                 <ul style={{listStyleType: "none"}}>
                   <li>James Truitt, Archives Technician</li>
                 </ul>
 
-                <h3>Supporting Staff (2003-2023)</h3>
+                <h3>Supporting Staff (2003–2023)</h3>
                 <ul style={{listStyle: "none"}}>
                   <li>Celia Caust-Ellenbogen, Archivist</li>
                   <li>Chris Densmore, Curator of Friends Historical Library</li>
