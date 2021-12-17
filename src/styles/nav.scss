@@ -14,16 +14,23 @@
 }
 
 #logo{
-margin-left: 0;
- width:70%;
- height:auto;
- display: flex;
- justify-content: left;
- max-width:300px;
+  margin-left: 0;
+  justify-content: left;
+  width:70%;
+  display: flex;
+  max-width:300px;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center left;
 
  @media screen and (max-height: 700px) {
 
 }
+}
+
+.col {
+  height: 100%;
 }
 
 .search-form{
@@ -76,7 +83,6 @@ margin-left: 0;
 @media only screen and (max-width: 990px) {
   #nav-row{
   display: flex;
-  background-color: #2F3242;
 }
   #brand{
   color: hsl(0, 10%, 88%);
