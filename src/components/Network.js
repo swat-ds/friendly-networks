@@ -214,6 +214,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .append("text")
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
+      .attr("font-size", "small")
       .style("pointer-events", "none")
       .text((node) => {
         let nameParts = node.label.split(",");
@@ -225,7 +226,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         let fullName = `${firstName} ${lastName}`;
         return fullName;
       })
-      .style("fill", "#9bc9c9");
+      .style("fill", "#FBFAD8");
 
     //Render the simulation
     simulation.on("tick", () => {
@@ -337,7 +338,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               backgroundColor: "#A7026A",
             }}
           ></div>
-          <span className="general-text">Family Relations</span>
+          <span className="general-text">Relatives</span>
         </Col>
 
         <Col>
@@ -348,7 +349,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               backgroundColor: "#03AC93",
             }}
           ></div>
-          <span className="general-text">Acquaintances, Associated With </span>
+          <span className="general-text">Acquaintances</span>
         </Col>
       </Row>
       <Row>
