@@ -16,7 +16,7 @@
 #logo{
   margin-left: 0;
   justify-content: left;
-  width:70%;
+  width:100%;
   display: flex;
   max-width:300px;
   height: 100%;
@@ -43,7 +43,7 @@
 
   .form-box{
     width: 20vw;
-     height:5vh;
+     // height:5vh;
      border-top-right-radius: 0px;
      border-bottom-right-radius: 0px;
      border-color: #505A34;
