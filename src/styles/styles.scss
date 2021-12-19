@@ -6,8 +6,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  color: #FAF8D6
+}
+
+p {
+  text-align: justify;
+}
+
 #main-container{
   background-color: #342E37;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #image{
@@ -24,6 +34,10 @@ body {
 //   width: 30vw;
 // }
 
+#homepage-text {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
 
   .g-link {
   padding: 5px;
@@ -77,9 +91,9 @@ body {
 
 // change the theme
 $theme-colors: (
-  "primary": #505A34,
-  "danger": #ff4136,
-  "secondary": #000
+  "primary": #636B42,
+  "danger": #A27365,
+  "secondary": #FAF8D6
 );
 
 // Import Bootstrap and its default variables

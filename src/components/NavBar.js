@@ -63,7 +63,7 @@ const NavBar = (props) => {
               aria-label="Search"
               onChange={handleChange}
             />
-            <Button type="submit" className="g-link" id="search-button">
+            <Button type="submit" variant="primary" className="g-link" id="search-button">
               Search
             </Button>
           </Form>
@@ -71,7 +71,7 @@ const NavBar = (props) => {
       </Row>
       <Row id="nav-row">
         <Col>
-          <Navbar expand="lg">
+          <Navbar expand="lg" variant="primary">
             <Navbar.Brand id="brand">Menu</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
