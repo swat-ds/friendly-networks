@@ -57,7 +57,7 @@ display: flex;
     bottom: 0;
     right: 0;
     transform: translate(0, 10px);
-    
+
 }
 
 .main-timeline .icon:before,
@@ -167,13 +167,13 @@ display: flex;
     left: 15px;
     background-color: #128DE5;
     border: 2px dotted #505A34
-    
+
 }
 
 .main-timeline .timeline:hover .date-outer:after {
     left: -15px;
     border: 2px solid #505A34
-    
+
     // background-color: #505A34
 }
 
@@ -216,7 +216,7 @@ display: flex;
 .main-timeline .timeline:nth-child(odd) .timeline-content {
      padding: 10px 0px 10px 20px;
     border-right: 2px solid #505A34;
-     
+
 }
 
 .main-timeline .description {
@@ -225,7 +225,7 @@ display: flex;
 
 .main-timeline .timeline:nth-child(2n) .date-content {
     float: right;
-    
+
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content:before {
@@ -299,6 +299,3 @@ display: flex;
         margin-bottom: 10px
     }
 }
-
-
-@import "bootstrap";

@@ -107,7 +107,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
-    margin: 20px;  
+    margin: 20px;
     transition: all 1s ease-in-out;
 
     &:hover{
@@ -127,8 +127,3 @@ body {
 .blue{
   border-top: 3px solid var(--blue);
 }
-
-
-
-
-@import 'bootstrap';

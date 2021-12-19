@@ -54,10 +54,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
+        implementation: require("sass"),
         sassOptions: {
           includePaths: [
             "./src",
-            "/Users/zakirhossain/FriendProject/obf/node_modules/bootstrap/scss",
+            "node_modules/bootstrap/scss",
           ],
         },
       },
