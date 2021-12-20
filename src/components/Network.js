@@ -173,26 +173,26 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return "#034d81";
       });
 
-    const tooltip = d3
+    const d3Tooltip = d3
       .select("#mainContainer")
       .append("div")
-      .classed("tooltip", true)
+      .classed("d3Tooltip", true)
       .classed("general-text", true)
-      .attr("id", "node-tooltip")
+      .attr("id", "node-d3Tooltip")
       .style("opacity", 0); //
 
     nodeWrapper.on("mouseover", function (event, d) {
       // show the tooltip
-      tooltip.transition().duration(300).style("opacity", 1);
-      tooltip
+      d3Tooltip.transition().duration(300).style("opacity", 1);
+      d3Tooltip
         .html(d.label)
         .style(
           "left",
-          event.pageX - d3.select(".tooltip").node().offsetWidth - 5 + "px"
+          event.pageX - d3.select(".d3Tooltip").node().offsetWidth - 5 + "px"
         )
         .style(
           "top",
-          event.pageY - d3.select(".tooltip").node().offsetHeight + "px"
+          event.pageY - d3.select(".d3Tooltip").node().offsetHeight + "px"
         );
 
 
@@ -202,7 +202,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     });
 
     nodeWrapper.on("mouseleave", (event, d) => {
-      tooltip.transition().duration(1000).style("opacity", 0); //
+      d3Tooltip.transition().duration(1000).style("opacity", 0); //
     });
 
     //Bind the name of each person to the corresponding node
