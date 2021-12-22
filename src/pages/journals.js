@@ -29,9 +29,15 @@ const parseString = require("xml2js").parseString;
         "tei-title"
       ][0]._.split(":")[0];
 
+    let detailedDateStr =
+      header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
+        "tei-title"
+      ][0]._.split(":")[0].split(",")[1];
+
     let preparedNode = {
       route: route ,
-      title: title
+      title: title,
+      detailedDateStr: detailedDateStr
     };
 
     return preparedNode;
