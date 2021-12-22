@@ -20,11 +20,22 @@ export default people;
       nodes {
         id
         arkId
+        imageSrc
         entityType {
           term
         }
         nameEntries {
           original
+        }
+        genders {
+          term {
+            term
+          }
+        }
+        occupations {
+          term {
+            term
+          }
         }
       }
     }

@@ -6,7 +6,7 @@ const bgComponent = require.resolve(`./src/templates/BgComponent.js`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
 
-//Creates nodes for the markdown, which are used later to create pages. 
+//Creates nodes for the markdown, which are used later to create pages.
 exports.onCreateNode = ({ node, getNode, actions }) => {
   //called when node created/updated
   const { createNodeField } = actions;
@@ -66,10 +66,11 @@ console.log(x);
       },
       children: [],
 
-      //     // Other fields that you want to query with graphQl
+      // Other fields that you want to query with graphQl
       arkId: constellation.ark.split("/").pop() || null,
       triCoID: constellationData[i]["TriCo ID"] || null,
       mentions: parseInt(constellationData[i]["Mntns"]) || 0,
+      imageSrc: constellationData[i]["ImgSrc"] || null,
       entityType: constellation.entityType || null,
       sources: constellation.sources || null,
       nameEntries: constellation.nameEntries || null,
@@ -100,7 +101,7 @@ console.log(x);
 //Create pages for each entity, depends on the creation of entity nodes above
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  
+
 
   const result = await graphql(`
     query Constellations {
@@ -157,7 +158,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             targetArkID
             sourceConstellation
             targetConstellation
-            
+
             type {
               term
             }
@@ -245,7 +246,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         createPage({
           path: node.frontmatter.slug,
           component: bgComponent,
-          context: 
+          context:
           { body: node.html,
             rawBody: node.rawMarkdownBody
           }, // additional data can be passed via context
