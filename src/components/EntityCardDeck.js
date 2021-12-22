@@ -41,11 +41,20 @@ const EntityCardDeck = ({entityDeck}) => {
     else*/ if (entity?.occupations?.some(x => x.term.term === "Quakers")){
       if (entity?.genders.some(x => x.term.term === "Male")) {
         image = (
-          <Card.Img src={hat} variant="top" alt="Mannequin in top hat"/>
+          <Card.Img
+            src={hat}
+            variant="top"
+            alt="Mannequin in top hat"
+          />
         );
+
       } else if (entity?.genders.some(x => x.term.term === "Female")) {
         image = (
-          <Card.Img src={bonnet} variant="top" alt="Mannequin in bonnet"/>
+          <Card.Img
+            src={bonnet}
+            variant="top"
+            alt="Mannequin in bonnet"
+          />
         );
       }
     }
