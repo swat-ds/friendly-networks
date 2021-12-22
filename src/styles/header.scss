@@ -6,10 +6,12 @@
 
 #home-icon{
     margin-top: 10px;
+    color: var(--bs-primary) !important;
 }
 .header-items{
     display: flex;
     justify-content:space-evenly;
+    color:inherit;
 
     .header-item, #dropdown-about, #dropdown-background {
         display: inline;
@@ -41,35 +43,22 @@
 
     #dropdown-about:hover, #dropdown-about:active, #dropdown-background:hover, #dropdown-background:active {
       background-color: white;
-      color: #505A34;
-      border: thin solid #505A34;
+      color: var(--bs-primary) !important;
+      border: thin solid var(--bs-primary);
     }
 
     //  #header-journal{
     //      margin-left: 5px;
     //         background-color: #505A34;
     //     }
-     #header-journal:hover,#header-journal:active{
+
+     .header-item:hover, .header-item:active, {
             background-color: white;
-            color: #505A34;
-            border: thin solid #505A34;
+            border: thin solid var(--bs-primary);
     }
 
-     #header-relative{
-            background-color: #505A34;
-        }
-     #header-relative:hover, #header-relative:active{
-            background-color: white;
-            color: #505A34;
-            border: thin solid #505A34;
-    }
-    #header-network{
-            background-color: #505A34;
-        }
-     #header-network:hover, #header-network:active{
-            background-color: white;
-            color: #505A34;
-            border: thin solid #505A34;
+    .header-item:hover *, .header-item:active * {
+      color: var(--bs-primary);
     }
 
      #header-background{
@@ -77,13 +66,14 @@
         background-color: #505A34;
           .dropdown-link{
             color: white;
+          }
         }
-        }
+
      #header-background:hover, #header-background:active{
             background-color: white;
-            border: thin solid  #505A34;
+            border: thin solid  var(--bs-primary);
               .dropdown-link{
-            color:  #505A34;
+            color:  var(--bs-primary);
         }
     }
 
