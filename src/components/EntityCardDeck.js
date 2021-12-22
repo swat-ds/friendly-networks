@@ -12,18 +12,6 @@ const EntityCardDeck = ({entityDeck}) => {
 
   // Sort Objects Alphabetically
 
-  // const renderCard = (Card, index) => {
-  //   return (
-  //     <Col style={{ border: "0.1px solid gray" }}>
-  //       <EntityCard
-  //         entity={Card}
-  //         index={index}
-  //         size={entityDeck.length}
-  //       ></EntityCard>
-  //     </Col>
-  //   );
-  // };
-
    const renderEntityRow = (entity, index) => {
 
   let name = "unknown";

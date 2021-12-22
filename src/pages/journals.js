@@ -27,55 +27,11 @@ const parseString = require("xml2js").parseString;
     let title =
       header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
         "tei-title"
-      ][0]._.split(":")[0].split(",")[0] || "John Hunt Journal";
-
-    // let date =
-    //   header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
-    //     "tei-date"
-    //   ][0]._.split("-") || "";
-
-    let detailedDateStr =
-      header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
-        "tei-title"
-      ][0]._.split(":")[0].split(",")[1];
-
-    let detailedDate = detailedDateStr.split("-");
-    let beginningDate = detailedDate[0].trim().split(/\s+/);
-    let endingDate =
-      detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
-
-    let beginningYear = beginningDate[0] !== undefined ? beginningDate[0] : "";
-
-    let beginningMonth = beginningDate[1] !== undefined ? beginningDate[1] : "";
-    beginningMonth =
-      beginningMonth !== undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
-    // beginningMonth = beginningMonth != ""? months[parseInt(beginningMonth)].abbr : "";
-    let beginningDay = beginningDate[2] !== undefined ? beginningDate[2] : "";
-
-    let endingYear = endingDate[0] !== undefined ? endingDate[0] : "";
-    let endingMonth = endingDate[1] !== undefined ? endingDate[1] : "";
-    endingMonth = endingMonth !== undefined ? endingMonth.slice(0, -3) : "";
-    let endingDay = endingDate[2] !== undefined ? endingDate[2] : "";
-
-    let text =
-      header["tei-teiHeader"]["tei-fileDesc"][0]["tei-seriesStmt"][0][
-        "tei-title"
-      ][0]["tei-title"][1]._ || "";
-
+      ][0]._.split(":")[0];
 
     let preparedNode = {
       route: route ,
-      title: title ,
-      startMonth: beginningMonth ,
-      startDay: beginningDay,
-      startYear: beginningYear,
-
-      endMonth: endingMonth ,
-      endDay: endingDay ,
-      endYear: endingYear ,
-
-      description: text,
-      detailedDateStr: detailedDateStr
+      title: title
     };
 
     return preparedNode;
@@ -93,7 +49,7 @@ const journals = ({ data }) => {
   const renderJournals = (node, index)=>{
 
     return (
-      <Col style={{ border: "0.1px solid gray" }}>
+      <Col className="journal-card-col">
         <JournalCard
         node={node}
         index={index}
@@ -105,7 +61,7 @@ const journals = ({ data }) => {
 
   return (
       <Layout>
-       <Row md={4} id="main-row">
+       <Row xs={2} small={3} md={4} lg={6} xl={8} id="main-row" className="journal-card-row">
          {preparedNodes.map(renderJournals)}
        </Row>
       </Layout>
@@ -128,4 +84,5 @@ export const data = graphql`
     }
   }
 `;
+
 export default journals;

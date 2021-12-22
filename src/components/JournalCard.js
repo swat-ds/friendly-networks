@@ -2,64 +2,39 @@ import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
 import { months } from "../globalVariables";
-import {Button } from 'react-bootstrap'
-import {BsBoxArrowRight} from 'react-icons/bs'
+import {Button, Card} from 'react-bootstrap'
 
 
 
 const JournalCard = ({ node, index, size }) => {
+  const titleArray = node.title.split(", ");
+  const title = titleArray[0];
+  const subtitle = titleArray[1];
 
-  return (
-    <Link className="g-link" to={node.route}>
-      <div className="card journal-card">
-        <div className="card-body">
-          <h5 className="card-title">
-            {`${node.title}`}
-            <br />
-          </h5>
-          <hr class="card-hr" />
-          <p className="card-subtitle mb-2">
-            {/* `{}` */}
-            <span>from {` `}</span>
-            {node.startMonth ? (
-              <span className="date">{`${
-                months[node.startMonth - 1].name
-              } `}</span>
-            ) : (
-              ""
-            )}
-            {node.startDay ? (
-              <span className="date">{`${node.startDay}, `}</span>
-            ) : (
-              ""
-            )}
-            {node.startYear ? (
-              <span className="date">{`${node.startYear}`}</span>
-            ) : (
-              ""
-            )}
-            <br />
-            {node.startYear !== undefined ? <span>to {` `}</span> : ""}
-            {node.endMonth ? (
-              <span className="date">{`${months[node.endMonth - 1].name} `}</span>
-            ) : (
-              ''
-            )}
-            {node.endDay ? <span className="date">{`${node.endDay}, `}</span> : ""}
-            {node.endYear ? <span className="date">{`${node.endYear}`}</span> : "Unknown"}
-            {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
-          </p>
-          <p className="card-text">{node.description}</p>
-          <div className="card-footer">
-            <small
-              id="journal-card-footer-index"
-              className="text-muted"
-            >{`${index+1} out of ${size}`}</small>
-            <Button variant="outline-success"><BsBoxArrowRight/></Button>
-          </div>
-        </div>
-      </div>
-    </Link>
+  // Construct urls of thumbnail images held in Islandora
+  const thumbnailUrl = "https://digitalcollections.tricolib"
+    + ".brynmawr.edu/islandora/object/sc:"
+    + node.route.substring(3)
+    + "/datastream/TN";
+
+  return(
+    <Card bg="primary" className="journal-card">
+      <Link to={node.route}>
+        <Card.Img
+          src={thumbnailUrl}
+          alt="First page of journal"
+          rounded
+        />
+        <Card.Body>
+          <Card.Subtitle>
+            {title}
+          </Card.Subtitle>
+          <Card.Title>
+            {subtitle}
+          </Card.Title>
+        </Card.Body>
+      </Link>
+    </Card>
   );
 };
 
