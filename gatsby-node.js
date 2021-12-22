@@ -1,6 +1,6 @@
 const axios = require("axios");
 const constellationData = require("./content/constellationsForInclusion.json");
-const PeopleComponent = require.resolve(`./src/components/People.js`);
+const PeopleComponent = require.resolve(`./src/components/Person.js`);
 const bgComponent = require.resolve(`./src/templates/BgComponent.js`);
 
 const { createFilePath } = require(`gatsby-source-filesystem`);

@@ -29,7 +29,7 @@ const bioDataLabels = {
  * gatsby-node.js. This component has been passed for those page creations
  * @returns the page for each entity with curated data
  */
-const People = (props) => {
+const Person = (props) => {
   const {
     id,
     arkId,
@@ -464,4 +464,4 @@ const People = (props) => {
     </Layout>
   );
 };
-export default People;
+export default Person;
