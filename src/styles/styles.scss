@@ -11,6 +11,11 @@ p {
   text-align: justify;
 }
 
+a {
+  color: var(--bs-info) !important;
+  text-decoration-color: var(--bs-info) !important;
+}
+
 #main-row{
   padding-left: 5vw;
   padding-right: 5vw;

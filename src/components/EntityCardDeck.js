@@ -69,7 +69,7 @@ const EntityCardDeck = ({entityDeck}) => {
                 {name}
               </Card.Title>
               <Card.Subtitle>
-                {date }
+                {date}
               </Card.Subtitle>
             </Card.Body>
           </Link>

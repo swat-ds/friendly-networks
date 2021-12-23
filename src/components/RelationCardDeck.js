@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Row } from "react-bootstrap";
+import { graphql, Link } from "gatsby";
+import { Table } from "react-bootstrap";
 import "../styles/entity.scss";
 
 
@@ -43,25 +43,9 @@ const RelationCardDeck = ({ relationDeck }) => {
 
 
   return (
-    <Row id="main-row">
-      {/* <Col id="left-arrow-col">
-        <div
-          id="left-triangle-arrow"
-          onClick={() => handleLeftArrowClick()}
-        ></div>
-        <span id="left-counter"></span>
-      </Col>
-      {renderDeck()}
-      <Col id="right-arrow-col">
-        <span id="right-counter"></span>
-        <div
-          id="right-triangle-arrow"
-          onClick={() => handleRightArrowClick()}
-        ></div>
-      </Col> */}
-
-      <div class="table-responsive">
-        <table class="table table-striped custom-table">
+        <Table striped bordered hover
+          style={{color:"var(--bs-secondary)", borderColor:"var(--bs-secondary)"}}
+        >
           <thead>
             <tr>
               <th scope="col">Date</th>
@@ -74,10 +58,36 @@ const RelationCardDeck = ({ relationDeck }) => {
           <tbody>
             {relationDeck.map(renderEntityRow)}
           </tbody>
-        </table>
-      </div>
-    </Row>
+        </Table>
   );
 };
 
 export default RelationCardDeck;
+
+export const query = graphql`
+ {
+   allConstellation {
+     nodes {
+       id
+       arkId
+       imageSrc
+       entityType {
+         term
+       }
+       nameEntries {
+         original
+       }
+       genders {
+         term {
+           term
+         }
+       }
+       occupations {
+         term {
+           term
+         }
+       }
+     }
+   }
+ }
+`;

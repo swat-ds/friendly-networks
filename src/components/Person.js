@@ -1,6 +1,6 @@
 //Package imports
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from "./RelationCardDeck";
@@ -319,29 +319,6 @@ const Person = (props) => {
       }
     }
   };
-  /**
-   * Render a uri for each of @sameAsRelations
-   * @returns the uri for each of @sameAsRelations
-   */
-  const renderSameAsRelations = () => {
-    if (sameAsRelations) {
-      return (
-        <div>
-          <h6>
-            {`${bioDataLabels.sameAsRelations}: `}
-          </h6>
-          <ul>
-            <li>
-              <a href={"https://snaccooperative.org/view/" + id}>
-                snaccooperative.org
-              </a>
-            </li>
-            {sameAsRelations.map(renderSameAsRelation)}
-          </ul>
-        </div>
-      );
-    }
-  };
 
   /**
    * Render a single relation from the @relations with the component of RelativeCard
@@ -381,86 +358,53 @@ const Person = (props) => {
         </div>);
     }
   };
-  // /**
-  //  * Constructs nodes and links from the @relations
-  //  * The @nodes contains an object for each relation, INCLUDING the self
-  //  * Each object in the @nodes contains an @id and a @label (name) of the entity
-  //  *
-  //  * The @links contains an object for each relation
-  //  * Each object in the @links contains a @source a @label (name) and a @target
-  //  *
-  //  * @returns the @nodes and the @links
-  //  */
-  // const createRelationData = () => {
-  //   let nodes = [];
-  //   let links = [];
-  //   //Insert self first
-  //   let self = {
-  //     id: id,
-  //     label: nameEntries[0].original,
-  //   };
-  //   nodes.push(self);
 
-  //   //Insert the relatives to the nodes and construct the links
-  //   if (relations) {
-  //     for (const relation of relations) {
-  //       //For nodes
-  //       let contentParts = relation.content.split(",");
-  //       let node = {
-  //         id: relation.id,
-  //         label: relation.content,
-  //       };
-  //       nodes.push(node);
-
-  //       // for links
-  //       const link = {
-  //         source: id,
-  //         label: relation.type?.term || null,
-  //         target: relation.id,
-  //       };
-  //       links.push(link);
-  //     }
-  //   }
-  //   return [nodes, links];
-  // };
-
-  // const [nodes, links] = createRelationData();
-
-  return (
+  return(
     <Layout>
-      <Row>
-        <Col id="entity-name">
-          <h1 className="general-text">{nameEntries[0].original}</h1>
-        </Col>
+      <Row id="titleRow" style={{justifyContent:"center", border:"1px white dashed"}}>
+        <h1 style={{textAlign:"center"}}>{nameEntries[0].original}</h1>
       </Row>
       <Row>
-        <Col>
-          <div className="general-text" id="bio-data-container">
-            {renderNameVariants()}
-            {renderDates()}
-            {renderPlaces()}
-            {renderOccupations()}
-            {renderSubjects()}
-            {renderSameAsRelations()}
-            {renderGender()}
-          </div>
+        <Col style={{border:"1px white dashed"}}>
+          <Card bg="primary">
+            <Card.Body>
+              <Card.Text>
+                {renderNameVariants()}
+                {renderDates()}
+                {renderGender()}
+                {renderPlaces()}
+                {renderOccupations()}
+                {renderSubjects()}
+              </Card.Text>
+              <Card.Link href={"snaccooperative.org/view/" + id}>
+                SNAC Record
+              </Card.Link>
+            </Card.Body>
+          </Card>
         </Col>
-        <Col>
-          <div className="general-text" id="bio-container">
-            {renderBio()}
-          </div>
+        <Col style={{border:"1px white dashed", flexGrow:"2"}}>
+          <Row style={{border:"1px white dashed"}}>
+            <Card bg="primary">
+              <Card.Body>
+                <Card.Title as="h2">Biography</Card.Title>
+                <Card.Text>
+                  {renderBio()}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
+          <Row style={{border:"1px white dashed", marginTop:"12px"}}>
+            <Card bg="primary">
+              <Card.Body>
+                <Card.Title as="h2">Relatives & Acquaintances</Card.Title>
+                <Card.Text>
+                  {renderRelatives()}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
         </Col>
       </Row>
-      <Row>
-        <br />
-        <h4 className="general-text">{`${bioDataLabels.relations}: `}</h4>
-      </Row>
-      {renderRelatives()}
-      {/* <Network
-          nodesInJSON={nodes}
-          linksInJSON={links}
-          centralFigure={id}
-        ></Network> */}
     </Layout>
   );
 };
