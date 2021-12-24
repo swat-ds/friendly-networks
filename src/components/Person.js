@@ -155,6 +155,18 @@ const Person = (props) => {
     }
   };
 
+  const renderBirth = () => {
+    const hasBirthDate = dates && dates[0]?.fromType?.term === "Birth";
+    const birthPlaceIndex = places.findIndex((x) => x?.role?.term === "Birth");
+    console.log("birthPlaceIndex: ", birthPlaceIndex);
+  }
+
+  const renderDeath = () => {
+    const hasDeathDate = dates && dates[0]?.fromType?.term === "Death";
+    const deathPlaceIndex = places.findIndex((x) => x?.role?.term === "Death");
+    console.log("deathPlaceIndex: ", deathPlaceIndex);
+  }
+
   /**
    * Extracts the data from the @dates object
    * @returns The birth and decease death of the current entity
@@ -374,6 +386,8 @@ const Person = (props) => {
               <Card.Title as="h2">Details</Card.Title>
               <Card.Text as="div">
                 {renderDates()}
+                {renderBirth()}
+                {renderDeath()}
                 {renderGender()}
                 {renderNameVariants()}
                 {renderPlaces()}
