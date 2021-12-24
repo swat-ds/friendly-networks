@@ -1,26 +1,3 @@
-
-
-#bio-container{
-  height: fit-content;
-  overflow: scroll;
-  padding: 2em;
-  border-left: 5px solid #505A34;
-  border-right: 0.5px solid #505A34;
-  border-top: 0.5px solid #505A34;
-  border-bottom: 0.5px solid #505A34;
-
-}
-#bio-data-container{
-  height: fit-content;
-  overflow: scroll;
-  padding: 2em;
-  border-right: 5px solid #505A34;
-  border-left: 0.5px solid #505A34;
-  border-top: 0.5px solid #505A34;
-  border-bottom: 0.5px solid #505A34;
-  // color: rgb(214, 208, 208);
-}
-
 #entity-name{
   display: flex;
   flex-direction: row;
@@ -29,21 +6,54 @@
 }
 
 
-
-
-.card-entity-col{
-    display: flex;
-    flex-direction: row;
-    // height: 70vh;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    // border: 2px solid #128DE5;
-    transition: filter ease-in-out 5s;
+#person-col-right{
+  flex-grow: 3;
 }
 
-//select all @card children of @card-entity when hovered on it. If the hovered cursor on a particular @card ignore that one
-.card-entity-col:hover  .card:not(:hover){
-    // filter: blur(2px);
-    filter: opacity(60%)
+.row#relations-row, .row#bio-row, .row#person-main-row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+// Add padding around cards
+.row#relations-row, .row#bio-row, .col#person-col-left {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height:auto;
+}
+
+#person-main-row .card-body{
+  height: auto;
+}
+
+#bio-row > .card > .card-body, #relations-row > .card > .card-body {
+  padding: 1rem !important;
+}
+
+table, table *{
+  color: revert;
+}
+
+table#relations-table {
+  border-color: var(--bs-secondary);
+}
+
+table#relations-table, table#relations-table *{
+  color: var(--bs-secondary);
+}
+
+.rel-col, .name-col{
+  width: fit-content;
+}
+
+table#relations-table td {
+  text-align: left !important;
+}
+
+td.name-col{
+  text-indent: 0px;
+}
+
+table#relations-table td > * {
+  padding: 0px;
 }

@@ -113,7 +113,7 @@ const Person = (props) => {
           ))}
           <footer>
             {citation.map((cite) => (
-              <p style={{ textIndent: "40px" }}><small>{cite}</small></p>
+              <p><small>{cite}</small></p>
             ))}
           </footer>
         </article>
@@ -146,7 +146,7 @@ const Person = (props) => {
     if (nameEntries.length > 1) {
       return (
         <div>
-          <h6>{`${bioDataLabels.nameEntries}: `}</h6>
+          <h5>{`${bioDataLabels.nameEntries}`}</h5>
           <ul>{nameEntries.map(renderNameVariant)}</ul>
         </div>
       );
@@ -160,21 +160,24 @@ const Person = (props) => {
    * @returns The birth and decease death of the current entity
    */
   const renderDates = () => {
+    // Case where we have two or more date objects
     if (dates.length > 1) {
       return (
         <div>
-          <h6>{`${bioDataLabels.dates}: `}</h6>
-          <ul>
+          <h5>{`${bioDataLabels.dates}`}</h5>
+          <ul style={{ listStyleType: "none" }}>
             <li>{`Birth: ${dates[0].fromDate}`}</li>
             <li>{`death: ${dates[1].toDate}`}</li>
           </ul>
         </div>
       );
+
+     // Case where we only have one date
     } else {
       return (
         <div>
-          <h6>{`${bioDataLabels.dates}: `}</h6>
-          <ul>
+          <h5>{`${bioDataLabels.dates}`}</h5>
+          <ul style={{ listStyleType: "none" }}>
             <li>{`Birth: ${dates[0].fromDate}`}</li>
             <li>{`Death: ${dates[0].toDate}`}</li>
           </ul>
@@ -228,7 +231,7 @@ const Person = (props) => {
     if (places) {
       return (
         <div>
-          <h6>{`${bioDataLabels.places}: `}</h6>
+          <h5>{`${bioDataLabels.places}`}</h5>
           <ul>{places.map(renderPlace)}</ul>
         </div>
       );
@@ -262,7 +265,7 @@ const Person = (props) => {
     if (occupations) {
       return (
         <div>
-          <h6>{`${bioDataLabels.occupations}: `}</h6>
+          <h5>{`${bioDataLabels.occupations}`}</h5>
           <ul>{occupations.map(renderOccupation)}</ul>
         </div>
       );
@@ -291,7 +294,7 @@ const Person = (props) => {
     if (subjects) {
       return (
         <div>
-          <h6>{`${bioDataLabels.subjects}: `}</h6>
+          <h5>{`${bioDataLabels.subjects}`}</h5>
           <ul>{subjects.map(renderSubject)}</ul>
          </div>
 
@@ -353,7 +356,7 @@ const Person = (props) => {
       let label = genders[0].term.term;
       return (
         <div>
-          <h6>{`Gender:`}</h6>
+          <h5>{`Gender`}</h5>
           <ul style={{ listStyleType: "none" }}>{label}</ul>
         </div>);
     }
@@ -361,17 +364,18 @@ const Person = (props) => {
 
   return(
     <Layout>
-      <Row id="titleRow" style={{justifyContent:"center", border:"1px white dashed"}}>
+      <Row id="titleRow" style={{justifyContent:"center"}}>
         <h1 style={{textAlign:"center"}}>{nameEntries[0].original}</h1>
       </Row>
-      <Row>
-        <Col style={{border:"1px white dashed"}}>
+      <Row id="person-main-row">
+        <Col id="person-col-left">
           <Card bg="primary">
             <Card.Body>
-              <Card.Text>
-                {renderNameVariants()}
+              <Card.Title as="h2">Details</Card.Title>
+              <Card.Text as="div">
                 {renderDates()}
                 {renderGender()}
+                {renderNameVariants()}
                 {renderPlaces()}
                 {renderOccupations()}
                 {renderSubjects()}
@@ -382,8 +386,8 @@ const Person = (props) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col style={{border:"1px white dashed", flexGrow:"2"}}>
-          <Row style={{border:"1px white dashed"}}>
+        <Col id="person-col-right">
+          <Row id="bio-row">
             <Card bg="primary">
               <Card.Body>
                 <Card.Title as="h2">Biography</Card.Title>
@@ -393,12 +397,13 @@ const Person = (props) => {
               </Card.Body>
             </Card>
           </Row>
-          <Row style={{border:"1px white dashed", marginTop:"12px"}}>
+          <Row id="relations-row">
             <Card bg="primary">
               <Card.Body>
                 <Card.Title as="h2">Relatives & Acquaintances</Card.Title>
                 <Card.Text>
                   {renderRelatives()}
+                  <small>Only relationships to other people within <i>Friendly Networks</i> are listed.</small>
                 </Card.Text>
               </Card.Body>
             </Card>

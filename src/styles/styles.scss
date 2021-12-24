@@ -48,15 +48,13 @@ a {
 
   .g-link {
   padding: 5px;
-  color: #505A34;
+  color: var(--bs-info);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
   transition: all ease-in-out 0.5s;
 
 }
   .g-link:hover{
-  color: hsl(0, 27%, 94%);
-  border-color: #505A34;
+  text-decoration: underline var(--bs-info);
 }
 
   .g-link2 {

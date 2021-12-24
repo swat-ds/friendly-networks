@@ -1,57 +1,89 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { Table } from "react-bootstrap";
 import "../styles/entity.scss";
 
 
 const RelationCardDeck = ({ relationDeck }) => {
 
+  const data = useStaticQuery(graphql`
+    query {
+      allConstellation {
+        nodes {
+          arkId
+          nameEntries {
+            original
+          }
+        }
+      }
+    }
+  `);
+
+  // Get an object w/ entries of form {arkId: name}
+  const arkToNameMap = Object.assign(
+    {}, ...(data.allConstellation.nodes.map(item => ({
+      [item.arkId]: item.nameEntries[0].original
+    }) ))
+  );
+
+  const fullRelationTags ={
+    "acquaintanceOf": "Acquaintance of",
+    "associatedWith": "Associated with",
+    "auntOrUncleOf": "Aunt or uncle of",
+    "childOf": "Child of",
+    "child-in-law of": "Child-in-law of",
+    "correspondedWith": "Corresponded with",
+    "grandchildOf": "Grandchild of",
+    "grandparentOf": "Grandparent of",
+    "nieceOrNephewOf": "Niece or nephew of",
+    "ownedBy": "Enslaved by",
+    "ownerOf": "Enslaver of",
+    "parent-in-law of": "Parent-in-law of",
+    "parentOf": "Parent of",
+    "relativeOf": "Relative of",
+    "siblingOf": "Sibling of",
+    "sibling-in-law of": "Sibling-in-law of",
+    "spouseOf": "Spouse of",
+  }
 
   const renderEntityRow = (relation, index) => {
 
     let type = "unknown";
     let note = "unknown";
     let name = "unknown";
-    let date = "unknown";
     let arkId = "";
     if ("note" in relation) {
       note = relation.note;
     }
-    let content = "";
     if (relation) {
-      type = relation.type?.term ? relation.type?.term : type;
-      content = relation.content ? relation.content : content;
+      type = relation.type?.term
+        ? fullRelationTags[relation.type.term]
+        : type;
       arkId = relation.targetArkID.split("/").pop();
-      if (content !== "unknown") {
-        content = content.split(",");
-        date = content.pop();
-        name = content.join(",");
-      }
+      name = arkToNameMap[arkId];
     }
 
     return (
       <tr>
-        <td>{date}</td>
-        <td>
+        <td className="rel-col">{type}</td>
+        <td className="name-col">
             <Link className="g-link" to={"/entities/" + arkId}>{name}</Link>
         </td>
-        <td>{type}</td>
-        <td>{note}</td>
+        <td className="note-col">{note}</td>
       </tr>
     );
   };
 
 
   return (
-        <Table striped bordered hover
-          style={{color:"var(--bs-secondary)", borderColor:"var(--bs-secondary)"}}
-        >
+        <Table striped bordered id="relations-table">
           <thead>
             <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Name</th>
-              <th scope="col">Relation Type</th>
-              <th scope="col">Note</th>
+              <th scope="col" className="rel-col table-header">
+                Relationship
+              </th>
+              <th scope="col" className="name-col table-header">Name</th>
+              <th scope="col" className="note-col table-header">Note</th>
               {/* <th scope="col">Link</th> */}
             </tr>
           </thead>
@@ -63,31 +95,3 @@ const RelationCardDeck = ({ relationDeck }) => {
 };
 
 export default RelationCardDeck;
-
-export const query = graphql`
- {
-   allConstellation {
-     nodes {
-       id
-       arkId
-       imageSrc
-       entityType {
-         term
-       }
-       nameEntries {
-         original
-       }
-       genders {
-         term {
-           term
-         }
-       }
-       occupations {
-         term {
-           term
-         }
-       }
-     }
-   }
- }
-`;
