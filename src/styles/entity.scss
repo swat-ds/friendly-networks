@@ -30,6 +30,10 @@
   padding: 1rem !important;
 }
 
+#person-col-left > .card, #bio-row > .card, #relations-row > .card {
+  display: flex;
+}
+
 table, table *{
   color: revert;
 }

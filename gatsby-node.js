@@ -152,6 +152,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               name
               uri
             }
+            role {
+              term
+            }
           }
           relations {
             sourceArkID

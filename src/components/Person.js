@@ -158,13 +158,11 @@ const Person = (props) => {
   const renderBirth = () => {
     const hasBirthDate = dates && dates[0]?.fromType?.term === "Birth";
     const birthPlaceIndex = places.findIndex((x) => x?.role?.term === "Birth");
-    console.log("birthPlaceIndex: ", birthPlaceIndex);
   }
 
   const renderDeath = () => {
     const hasDeathDate = dates && dates[0]?.fromType?.term === "Death";
     const deathPlaceIndex = places.findIndex((x) => x?.role?.term === "Death");
-    console.log("deathPlaceIndex: ", deathPlaceIndex);
   }
 
   /**
@@ -394,7 +392,10 @@ const Person = (props) => {
                 {renderOccupations()}
                 {renderSubjects()}
               </Card.Text>
-              <Card.Link href={"snaccooperative.org/view/" + id}>
+              <Card.Link
+                href={"https://snaccooperative.org/view/" + id}
+                target="_blank"
+              >
                 SNAC Record
               </Card.Link>
             </Card.Body>

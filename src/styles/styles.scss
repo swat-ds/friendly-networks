@@ -83,6 +83,34 @@ a {
 
 }
 
+.homepage-card-image{
+  object-fit: cover;
+}
+
+.homepage-card{
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.homepage-card:hover{
+  box-shadow: 0 0px 15px var(--bs-secondary);
+}
+
+.homepage-card-col{
+  padding: 16px !important;
+  width: auto;
+}
+
+#homepage-card-row{
+  justify-content: center;
+  width: 100% !important;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
 #result-card{
   transform: none;
   transition: none;

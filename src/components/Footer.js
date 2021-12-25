@@ -17,7 +17,9 @@ const Footer = () => {
       <br/>{contactJson.address1}
       <br/>{contactJson.address2}
       <br/>{contactJson.address3}
-      <br/><a href={contactJson.website}>{contactJson.name} Website</a>
+      <br/><a target="_blank" href={contactJson.website}>
+        {contactJson.name} Website
+      </a>
       </p>
     );
   };
