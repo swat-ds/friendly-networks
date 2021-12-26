@@ -20,7 +20,7 @@ const author_bg = () => {
       <Row id="main-row">
         <Col id="bg-col">
           <h2>Backgrounds of John Hunt</h2>
-          <Link className="g-link2" to={globalVariables.timeline}>
+          <Link className="g-link2" to=">
             <div className="box cyan">
               <h2>Timeline</h2>
               <p>
