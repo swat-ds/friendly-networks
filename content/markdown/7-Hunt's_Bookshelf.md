@@ -1,7 +1,7 @@
 ---
 slug: "/background/john-hunt/7-bookshelf"
 date: "2021-11-19"
-title: "# Hunt’s Bookshelf"
+title: "Hunt’s Bookshelf"
 ---
 
 # Hunt’s Bookshelf
