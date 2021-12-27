@@ -32,12 +32,12 @@ const buildCard = (entity, index) => {
 }
 
 
-const HomepageCards = (props) => {
+const homepageCards = (cardArray) => {
   return (
     <Row xs={1} sm={1} md={2} lg={2} xl={2} id="homepage-card-row">
-      {props.cardArray.map(buildCard)}
+      {cardArray.map(buildCard)}
     </Row>
   );
 };
 
-export default HomepageCards;
+export default homepageCards;

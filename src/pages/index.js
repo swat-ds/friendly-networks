@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-import HomepageCards from "../components/HomepageCards"
+import homepageCards from "../components/HomepageCards"
 import { Row, Col, Card } from "react-bootstrap";
 import "../styles/styles.scss";
 
@@ -56,7 +56,7 @@ const home = ({location}) => {
         <p>
         This website and the research behind it are made possible with support from the H. David and Joyce E. Hunt Family Foundation Special Projects Fund.
         </p>
-        <HomepageCards cardArray={homepageCardData}/>
+        {homepageCards(homepageCardData)}
       </Row>
     </Layout>
   );
