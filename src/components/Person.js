@@ -156,14 +156,71 @@ const Person = (props) => {
   };
 
   const renderBirth = () => {
-    const hasBirthDate = dates && dates[0]?.fromType?.term === "Birth";
-    const birthPlaceIndex = places.findIndex((x) => x?.role?.term === "Birth");
-  }
+
+    // Check if birthdate present; assign if found
+    const dateString = dates && dates[0]?.fromType?.term === "Birth"
+        ? dates[0].fromDate
+        : null;
+
+        console.log("Dates: ", dates);
+        console.log("fromtype: ", dates[0]?.fromType?.term);
+
+    const placeIndex = places.findIndex((x) => x?.role?.term === "Birth");
+    const placeString = (placeIndex > -1)
+        ? renderPlace(places[placeIndex])
+        : null;
+
+    var birthString;
+    if (!(dateString || placeString)) {
+        birthString = "Unknown";
+    }
+    else if (dateString && placeString) {
+        birthString = dateString + " in " + placeString;
+    }
+    else {
+        birthString = dateString
+            ? dateString
+            : placeString;
+    }
+    return (
+        <div>
+          <h5>Birth</h5>
+          <ul style={{ listStyleType: "none" }}>{birthString}</ul>
+        </div>);
+  };
 
   const renderDeath = () => {
-    const hasDeathDate = dates && dates[0]?.fromType?.term === "Death";
-    const deathPlaceIndex = places.findIndex((x) => x?.role?.term === "Death");
-  }
+      // Check if deathdate present; assign if found
+      const dateString = dates && dates[0]?.fromType?.term === "Death"
+          ? dates[0].fromDate
+          : null;
+
+          console.log("Dates: ", dates);
+          console.log("fromtype: ", dates[0]?.fromType?.term);
+
+      const placeIndex = places.findIndex((x) => x?.role?.term === "Death");
+      const placeString = (placeIndex > -1)
+          ? renderPlace(places[placeIndex])
+          : null;
+
+      var deathString;
+      if (!(dateString || placeString)) {
+          deathString = "Unknown";
+      }
+      else if (dateString && placeString) {
+          deathString = dateString + " in " + placeString;
+      }
+      else {
+          deathString = dateString
+              ? dateString
+              : placeString;
+      }
+      return (
+          <div>
+            <h5>Death</h5>
+            <ul style={{ listStyleType: "none" }}>{deathString}</ul>
+          </div>);
+};
 
   /**
    * Extracts the data from the @dates object
@@ -239,6 +296,7 @@ const Person = (props) => {
    */
   const renderPlaces = () => {
     if (places) {
+        // TODO: Screen out birth and death places (already displayed elsewhere)
       return (
         <div>
           <h5>{`${bioDataLabels.places}`}</h5>
