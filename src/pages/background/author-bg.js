@@ -100,7 +100,7 @@ const author_bg = () => {
 
     return (
         <Layout>
-            <Row>
+            <Row id="main-row" className="background-jh" >
                 <h1>Background: John Hunt</h1>
                 {homepageCards(pageCardData)}
             </Row>

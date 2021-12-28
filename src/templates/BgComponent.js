@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import {Row, Col} from 'react-bootstrap'
+import {Row, Col, Card} from 'react-bootstrap'
 import "../styles/styles.scss"
 import "../styles/background.scss";
 
@@ -9,10 +9,10 @@ const BgComponent = ({pageContext}) => {
       <Layout>
         <Row>
           <Col className="background-col">
-            <div
+            <Card bg="primary"
               className="general-text background"
               dangerouslySetInnerHTML={{ __html: pageContext.body }}
-            ></div>
+            ></Card>
           </Col>
         </Row>
       </Layout>
