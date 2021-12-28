@@ -162,63 +162,61 @@ const Person = (props) => {
         ? dates[0].fromDate
         : null;
 
-        console.log("Dates: ", dates);
-        console.log("fromtype: ", dates[0]?.fromType?.term);
-
     const placeIndex = places.findIndex((x) => x?.role?.term === "Birth");
-    const placeString = (placeIndex > -1)
-        ? renderPlace(places[placeIndex])
+    const placeSpan = (placeIndex > -1)
+        ? renderPlace(places[placeIndex]).props.children
         : null;
 
-    var birthString;
-    if (!(dateString || placeString)) {
-        birthString = "Unknown";
+    var birthSpan;
+    if (!(dateString || placeSpan)) {
+        birthSpan = "Date uncertain";
     }
-    else if (dateString && placeString) {
-        birthString = dateString + " in " + placeString;
+    else if (dateString && placeSpan) {
+        birthSpan = [(<>{dateString}<br/></>), placeSpan];
     }
     else {
-        birthString = dateString
-            ? dateString
-            : placeString;
+        birthSpan = dateString
+            ? (<>{dateString}</>)
+            : [<>Date uncertain<br/></>,placeSpan];
     }
     return (
         <div>
           <h5>Birth</h5>
-          <ul style={{ listStyleType: "none" }}>{birthString}</ul>
+          <ul style={{ listStyleType: "none" }}><li>{birthSpan}</li></ul>
         </div>);
   };
 
   const renderDeath = () => {
+      console.log("Date: ", dates);
       // Check if deathdate present; assign if found
-      const dateString = dates && dates[0]?.fromType?.term === "Death"
-          ? dates[0].fromDate
+      const dateString = dates
+        && (dates[0]?.toType?.term || dates[0]?.fromType?.term) === "Death"
+          ? dates[0].toDate || dates[0].fromDate
           : null;
 
-          console.log("Dates: ", dates);
-          console.log("fromtype: ", dates[0]?.fromType?.term);
+        console.log(dateString);
 
       const placeIndex = places.findIndex((x) => x?.role?.term === "Death");
-      const placeString = (placeIndex > -1)
-          ? renderPlace(places[placeIndex])
+      const placeSpan = (placeIndex > -1)
+          ? renderPlace(places[placeIndex]).props.children
           : null;
 
-      var deathString;
-      if (!(dateString || placeString)) {
-          deathString = "Unknown";
+      var deathSpan;
+      if (!(dateString || placeSpan)) {
+          deathSpan = "Date uncertain";
       }
-      else if (dateString && placeString) {
-          deathString = dateString + " in " + placeString;
+      else if (dateString && placeSpan) {
+          deathSpan = [(<>{dateString}<br/></>), placeSpan];
       }
       else {
-          deathString = dateString
-              ? dateString
-              : placeString;
+          deathSpan = dateString
+              ? (<>{dateString}</>)
+              : [<>Date uncertain<br/></>,placeSpan];
       }
       return (
           <div>
             <h5>Death</h5>
-            <ul style={{ listStyleType: "none" }}>{deathString}</ul>
+            <ul style={{ listStyleType: "none" }}><li>{deathSpan}</li></ul>
           </div>);
 };
 
@@ -226,39 +224,39 @@ const Person = (props) => {
    * Extracts the data from the @dates object
    * @returns The birth and decease death of the current entity
    */
-  const renderDates = () => {
-    // Case where we have two or more date objects
-    if (dates.length > 1) {
-      return (
-        <div>
-          <h5>{`${bioDataLabels.dates}`}</h5>
-          <ul style={{ listStyleType: "none" }}>
-            <li>{`Birth: ${dates[0].fromDate}`}</li>
-            <li>{`death: ${dates[1].toDate}`}</li>
-          </ul>
-        </div>
-      );
-
-     // Case where we only have one date
-    } else {
-      return (
-        <div>
-          <h5>{`${bioDataLabels.dates}`}</h5>
-          <ul style={{ listStyleType: "none" }}>
-            <li>{`Birth: ${dates[0].fromDate}`}</li>
-            <li>{`Death: ${dates[0].toDate}`}</li>
-          </ul>
-        </div>
-      );
-    }
-  };
-
-  /**
-   * renders a single place of the @places visited by the current entity
-   * @param {*} place the place to be rendered
-   * @param {*} _ the index is ignored
-   * @returns returns a single place name in the form of city/town, state, country
-   */
+  // const renderDates = () => {
+  //   // Case where we have two or more date objects
+  //   if (dates.length > 1) {
+  //     return (
+  //       <div>
+  //         <h5>{`${bioDataLabels.dates}`}</h5>
+  //         <ul style={{ listStyleType: "none" }}>
+  //           <li>{`Birth: ${dates[0].fromDate}`}</li>
+  //           <li>{`death: ${dates[1].toDate}`}</li>
+  //         </ul>
+  //       </div>
+  //     );
+  //
+  //    // Case where we only have one date
+  //   } else {
+  //     return (
+  //       <div>
+  //         <h5>{`${bioDataLabels.dates}`}</h5>
+  //         <ul style={{ listStyleType: "none" }}>
+  //           <li>{`Birth: ${dates[0].fromDate}`}</li>
+  //           <li>{`Death: ${dates[0].toDate}`}</li>
+  //         </ul>
+  //       </div>
+  //     );
+  //   }
+  // };
+  //
+  // /**
+  //  * renders a single place of the @places visited by the current entity
+  //  * @param {*} place the place to be rendered
+  //  * @param {*} _ the index is ignored
+  //  * @returns returns a single place name in the form of city/town, state, country
+  //  */
 
   const renderPlace = (place, _) => {
     if (place) {
@@ -296,11 +294,18 @@ const Person = (props) => {
    */
   const renderPlaces = () => {
     if (places) {
-        // TODO: Screen out birth and death places (already displayed elsewhere)
+        // Screen out birth and death places (already displayed elsewhere)
+        var placesToDisplay = [];
+        places.forEach((place) => {
+            if (! ["Birth", "Death"].includes(place?.role?.term)) {
+                placesToDisplay.push(place)
+            }
+        });
+
       return (
         <div>
           <h5>{`${bioDataLabels.places}`}</h5>
-          <ul>{places.map(renderPlace)}</ul>
+          <ul>{placesToDisplay.map(renderPlace)}</ul>
         </div>
       );
     }
@@ -441,7 +446,6 @@ const Person = (props) => {
             <Card.Body>
               <Card.Title as="h2">Details</Card.Title>
               <Card.Text as="div">
-                {renderDates()}
                 {renderBirth()}
                 {renderDeath()}
                 {renderGender()}

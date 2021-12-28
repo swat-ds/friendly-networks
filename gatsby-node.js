@@ -186,8 +186,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           dates {
             fromDate
             fromDateOriginal
+            fromType {
+                term
+            }
             toDate
             toDateOriginal
+            toType {
+                term
+            }
           }
         }
       }
