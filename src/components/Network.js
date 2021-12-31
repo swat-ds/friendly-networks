@@ -116,6 +116,10 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       simulation.restart();
     });
 
+    // Define color variables to be used in visualization
+    const assocColor = "#03AC93";
+    const famColor = "#A7026A";
+
     //Bind a line to each link
     const lines = svg
       .append("g")
@@ -123,24 +127,29 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .data(links)
       .enter()
       .append("line")
+      .attr("id", function(line){
+          return (line.source.id + "-" + line.target.id);
+      })
       .style("stroke", (link) => {
         return link.label === "acquaintanceOf" ||
           link.label === "correspondedWith" ||
           link.label === "associatedWith"
-          ? "#03AC93"
-          : "#A7026A"; //purple
+          ? assocColor
+          : famColor; //purple
       })
+      // Set line width based on relationship type
       .attr("stroke-width", (link) => {
         if (
           link.label === "acquaintanceOf" ||
           link.label === "correspondedWith" ||
           link.label === "associatedWith"
         ) {
-          return 4;
+          return 6;
         }
         return 2;
       });
     // .style("stroke-dasharray", "3, 3");
+    console.log("Lines:", lines); // TODO: delete this
 
     //Bind a circle to each node
     const nodeWrapper = svg
@@ -150,7 +159,24 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .data(nodes)
       .enter()
       .append("g")
-      .attr("class", "nodeWrapper");
+      .attr("class", "nodeWrapper")
+      .attr("class", (node) => {
+          const ark = node.id;
+          const tgtArray = d3.selectAll("line") // All lines
+            .filter(line => line.source.id === ark) // w/ matching src
+            .data() // Get data array
+            .map(line => "linkedTO" + line.target.id); // get target ids
+
+          const srcArray = d3.selectAll("line") // All lines
+            .filter(line => line.target.id === ark) // w/ matching tgt
+            .data() // Get data array
+            .map(line => "linkedTO" + line.source.id); // get src ids
+
+          // Join contents of src & tgt arrays w/ spaces; return resulting str
+          return ([srcArray.join(" "), tgtArray.join(" ")].join(" "));
+      });
+
+    // Add classes
 
     const circles = nodeWrapper
       .append("circle")
@@ -173,15 +199,23 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return "#034d81";
       });
 
-    const d3Tooltip = d3
-      .select("#mainContainer")
-      .append("div")
-      .classed("d3Tooltip", true)
-      .classed("general-text", true)
-      .attr("id", "node-d3Tooltip")
-      .style("opacity", 0); //
+      const d3Tooltip = d3
+          .select("#mainContainer")
+          .append("div")
+          .classed("d3Tooltip", true)
+          .classed("general-text", true)
+          .attr("id", "node-d3Tooltip")
+          .style("opacity", 0);
+
+
+       console.log("Data:",
+           d3.selectAll(lines).data()
+       );
+
 
     nodeWrapper.on("mouseover", function (event, d) {
+      console.log("Hovered Node", this);
+
       // show the tooltip
       d3Tooltip.transition().duration(300).style("opacity", 1);
       d3Tooltip
@@ -195,14 +229,67 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           event.pageY - d3.select(".d3Tooltip").node().offsetHeight + "px"
         );
 
+      // Highlight hovered node
+      d3.select(this)
+        .style("stroke-opacity", 1.0)
+        .style("stroke", "white")
+        .style("stroke-width", "3px")
+
+      // Get arkId of hovered node
+      const currentArk = d3.select(this)._groups[0][0].__data__.id;
+
+      // Highlight adjacent lines
+      d3.selectAll("line")           // Get array of all lines
+        .filter(function(l) {       // filter for lines w/ appropriate data
+            return (
+                l.source.id === currentArk ||
+                l.target.id === currentArk
+            );
+        })
+        .style("stroke", "white")  // Apply style
+
+      // Highlight adjacent nodes
+      d3.selectAll(".linkedTO" + currentArk)
+        .style("stroke-opacity", 1.0)
+        .style("stroke", "white")
+        .style("stroke-width", "3px");
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
       //   .html("click")
     });
 
+    nodeWrapper.on("mouseout", function (event, d) {
+        // Remove highlight on current node
+        d3.select(this).style("stroke-opacity", 0.0)
+
+        // Get arkId of hovered node
+        const currentArk = d3.select(this)._groups[0][0].__data__.id;
+
+        // Restore links to normal color
+        d3.selectAll("line")           // Get array of all lines
+          .filter(function(l) {       // filter for lines w/ appropriate data
+              return (
+                  l.source.id === currentArk ||
+                  l.target.id === currentArk
+              );
+          })
+          .style("stroke", (link) => {
+              return link.label === "acquaintanceOf" ||
+                link.label === "correspondedWith" ||
+                link.label === "associatedWith"
+                ? assocColor
+                : famColor; //purple
+          })
+
+        // Remove highlight on neighbors
+        d3.selectAll(".linkedTO" + currentArk).style("stroke-opacity", 0.0)
+
+    });
+
     nodeWrapper.on("mouseleave", (event, d) => {
-      d3Tooltip.transition().duration(1000).style("opacity", 0); //
+      // Remove tooltip
+      d3Tooltip.transition().duration(1000).style("opacity", 0);
     });
 
     //Bind the name of each person to the corresponding node

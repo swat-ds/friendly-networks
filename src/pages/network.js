@@ -10,7 +10,7 @@ import { graphql } from "gatsby";
 // let d3Links = [];
 
 /**
- * 
+ *
  *
   {
     "id": "w6tq8ftp",
@@ -73,7 +73,8 @@ const network = ({ data }) => {
   let constellations = data.allConstellation.nodes;
   console.log("Size of entities:", constellations.length);
   let arkIds = [];
-  constellations.forEach((c) => arkIds.push(c.arkId));
+  constellations
+    .forEach((c) => arkIds.push(c.arkId));
   console.log("arkIds: ", arkIds);
 
   d3Nodes.push(...createD3Nodes(constellations));

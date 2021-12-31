@@ -67,8 +67,14 @@ const journals = ({ data }) => {
 
   return (
       <Layout>
-       <Row xs={2} small={3} md={4} lg={6} xl={8} id="main-row" className="journal-card-row">
-         {preparedNodes.map(renderJournals)}
+       <Row id="main-row">
+         <h1>Journals</h1>
+         <p>
+            Click on a journal to browse page scans and transcripts from it.
+        </p>
+         <Row xs={2} small={3} md={4} lg={6} xl={8} className="journal-card-row">
+            {preparedNodes.map(renderJournals)}
+         </Row>
        </Row>
       </Layout>
   );
