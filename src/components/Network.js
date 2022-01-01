@@ -119,6 +119,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     // Define color variables to be used in visualization
     const assocColor = "#03AC93";
     const famColor = "#A7026A";
+    const offWhite = "#FAF8D6";
 
     //Bind a line to each link
     const lines = svg
@@ -232,8 +233,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       // Highlight hovered node
       d3.select(this)
         .style("stroke-opacity", 1.0)
-        .style("stroke", "white")
-        .style("stroke-width", "3px")
+        .style("stroke", offWhite)
+        .style("stroke-width", "6px")
 
       // Get arkId of hovered node
       const currentArk = d3.select(this)._groups[0][0].__data__.id;
@@ -246,13 +247,13 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
                 l.target.id === currentArk
             );
         })
-        .style("stroke", "white")  // Apply style
+        .style("stroke", offWhite)  // Apply style
 
       // Highlight adjacent nodes
       d3.selectAll(".linkedTO" + currentArk)
         .style("stroke-opacity", 1.0)
-        .style("stroke", "white")
-        .style("stroke-width", "3px");
+        .style("stroke", offWhite)
+        .style("stroke-width", "6px");
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
