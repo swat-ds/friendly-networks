@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import {Container} from "react-bootstrap"
 import "../styles/styles.scss";
 import NavBar from './NavBar';
@@ -14,8 +13,7 @@ import Footer from './Footer';
 const Layout = (props) => {
   return (
     <Container id="main-container" fluid>
-        <NavBar></NavBar>
-        <Header></Header>
+        <NavBar/>
         {props.children}
         <Footer></Footer>
     </Container>

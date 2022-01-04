@@ -1,9 +1,11 @@
-#nav-row {
-	// display: none;
-	// background-color: #2F3242;
-	box-shadow: 0 8px 10px -6px rgba(black, 1);
-	margin-bottom: 3vh;
+#nav-image .col,
+#nav-row .col {
+  height: 100%;
 }
+
+//////////////////////////////////
+///////////// NavImg /////////////
+//////////////////////////////////
 
 #nav-image {
 	height: 15vh;
@@ -25,10 +27,6 @@
 	object-position: center left;
 }
 
-#nav-image .col,
-#nav-row .col {
-	height: 100%;
-}
 
 .search-form {
 	display: flex;
@@ -47,29 +45,22 @@
 	}
 }
 
-#nav-items {
-	// border: thin solid blue;
-	width: 60%;
-	height: 50%;
-	margin-bottom: 5px;
-}
-
 #search-button {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-}
-// #explore{
-//     display: flex;
-//     justify-content: space-evenly;
-// }
-
-#alink {
-	display: none;
 }
 
 //////////////////////////////////
 ///////////// NavBar /////////////
 //////////////////////////////////
+
+#nav-row {
+	// display: none;
+	// background-color: #2F3242;
+	box-shadow: 0 8px 10px -6px rgba(black, 1);
+	margin-bottom: 3vh;
+}
+
 
 #brand {
   background-color: var(--bs-primary);
@@ -133,6 +124,10 @@
     border: none;
     font-size: large;
   }
+
+  #navbar .show{
+    margin-top: -1px;
+  }
 }
 
 // When menu is not collapsed
@@ -164,94 +159,4 @@
     text-decoration-color: var(--bs-primary) !important;
   }
 
-}
-
-////////////////////////////////////////
-///////////// Outdated CSS /////////////
-////////////////////////////////////////
-
-
-// Should be able to delete all of this w/o issue
-
-.header-items-mobile {
-	display: none;
-}
-
-
-@media only screen and (max-width: 600px) {
-	#nav-row {
-		display: flex;
-	}
-
-	.header-items-mobile {
-		display: flex;
-		justify-content: space-evenly;
-
-		.header-item {
-			display: flex;
-			justify-content: center;
-			padding: 4px;
-			margin-top: 8px;
-			border-radius: 3px;
-			color: white;
-			transition: all 1s ease-out;
-			background-color: #505A34;
-			border: thin solid #505A34;
-		}
-
-		.header-item:hover,
-		.header-item:active {
-			background-color: white;
-			color: #505A34;
-			border: thin solid #505A34;
-		}
-
-		.g-link {
-			border-bottom: 1px solid transparent;
-		}
-
-		#dropdown-about,
-		#dropdown-background {
-			display: inline-block;
-			justify-content: center;
-			padding: 4px;
-			margin-top: 8px;
-			border-radius: 3px;
-			color: white;
-			transition: all 1s ease-out;
-			background-color: #505A34;
-			border: thin solid #505A34;
-		}
-
-		#dropdown-about:active,
-		#dropdown-about:hover,
-		#dropdown-background:active,
-		#dropdown-background:hover {
-			background-color: white;
-			color: #505A34;
-			border: thin solid #505A34;
-		}
-
-		#header-background-mobile {
-			background-color: #505A34;
-
-			.dropdown-link {
-				color: white;
-			}
-		}
-
-		.header-dropdown {
-			margin-top: 10px;
-		}
-
-		#header-background-mobile:active,
-		#header-background-mobile:hover {
-			background-color: white;
-			border: thin solid #505A34;
-
-			.dropdown-link {
-				color: #505A34;
-			}
-		}
-	}
 }

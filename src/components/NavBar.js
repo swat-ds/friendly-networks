@@ -72,7 +72,7 @@ const NavBar = (props) => {
         </Col>
       </Row>
       <Row id="nav-row">
-        <Navbar expand="md" variant="dark" >
+        <Navbar expand="md" variant="dark" id="navbar" >
             <Navbar.Brand id="brand" href="/" className="header-item">
               <AiOutlineHome id="home-icon" size={40}/>
             </Navbar.Brand>
@@ -107,140 +107,6 @@ const NavBar = (props) => {
               </Nav>
             </Navbar.Collapse>
         </Navbar>
-      </Row>
-    </>
-  );
-
-  return (
-    <>
-      <Row id="nav-image" style={bgStyle}>
-        <Col>
-          <img id="logo" src={logo} alt="Friendly Networks logo"></img>
-        </Col>
-        <Col className="search-form">
-          <Form className="d-flex" onSubmit={handleSubmit}>
-            <FormControl
-              type="search"
-              placeholder="Search"
-              className=" form-box mr-2"
-              aria-label="Search"
-              onChange={handleChange}
-            />
-            <Button type="submit" variant="primary" className="g-link" id="search-button">
-              Search
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-      <Row id="nav-row">
-        <Col>
-          <Navbar expand="lg" variant="primary">
-            <Navbar.Brand id="brand">Menu</Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              {/* <Form className="d-flex">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="mr-2"
-                  aria-label="Search"
-                  onChange={handleChange}
-                />
-                <Link to={"/search"} state={{ searchQuery: query }}>
-                  <Button variant="outline-success">Search</Button>
-                </Link>
-              </Form> */}
-              <div className="header-items-mobile">
-                <Link className="g-link" to={globalVariables.journals}>
-                  <div className="header-item" id="header-journal-mobile">
-                    Journal
-                  </div>
-                </Link>
-                <Link className="g-link" to={globalVariables.people}>
-                  <div className="header-item" id="header-relative-mobile">
-                    People
-                  </div>
-                </Link>
-                <Link className="g-link" to={globalVariables.network}>
-                  <div className="header-item" id="header-network-mobile">
-                    Network
-                  </div>
-                </Link>
-                <Dropdown className="g-link">
-                  <Dropdown.Toggle
-                    className="header-dropdown header-item"
-                    id="dropdown-background"
-                  >
-                    Context
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item
-                      className="d-flex header-item"
-                      id="header-background-mobile"
-                      href=""
-                    >
-                      <Link
-                        className="g-link dropdown-link"
-                        to={globalVariables.author_bg}
-                      >
-                        John Hunt
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      className="d-flex header-item"
-                      id="header-background-mobile"
-                      href=""
-                    >
-                      <Link
-                        className="g-link dropdown-link"
-                        to={globalVariables.quaker_bg}
-                      >
-                        Quakers
-                      </Link>
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-
-                <Dropdown className="g-link">
-                  <Dropdown.Toggle
-                    className="header-dropdown header-item"
-                    id="dropdown-about"
-                  >
-                    About
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item
-                      className="d-flex header-item"
-                      id="header-background-mobile"
-                      href=""
-                    >
-                      <Link
-                        className="g-link dropdown-link"
-                        to={globalVariables.about}
-                      >
-                        About
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      className="d-flex header-item"
-                      id="header-background-mobile"
-                      href=""
-                    >
-                      <Link
-                        className="g-link dropdown-link"
-                        to={globalVariables.credits}
-                      >
-                        Credits
-                      </Link>
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
-            </Navbar.Collapse>
-          </Navbar>
-        </Col>
       </Row>
     </>
   );
