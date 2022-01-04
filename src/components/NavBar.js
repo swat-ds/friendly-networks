@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link, navigate } from "gatsby";
+import { AiOutlineHome } from "react-icons/ai";
 import "../styles/styles.scss";
 import "../styles/nav.scss";
 import logo from "../../content/assets/images/Logo.png";
@@ -16,7 +17,8 @@ import {
   Navbar,
   Nav,
   NavDropdown,
-  Dropdown
+  Dropdown,
+  Container
 } from "react-bootstrap";
 
 //style={{display:"flex", flexDirection: "row", justifyContent: "space-between" }}
@@ -47,6 +49,67 @@ const NavBar = (props) => {
   }
 
   const bgStyle = {backgroundImage: 'url(' + background + ')',};
+
+  return (
+    <>
+      <Row id="nav-image" style={bgStyle}>
+        <Col>
+          <img id="logo" src={logo} alt="Friendly Networks logo"></img>
+        </Col>
+        <Col className="search-form">
+          <Form className="d-flex" onSubmit={handleSubmit}>
+            <FormControl
+              type="search"
+              placeholder="Search"
+              className=" form-box mr-2"
+              aria-label="Search"
+              onChange={handleChange}
+            />
+            <Button type="submit" variant="primary" className="g-link" id="search-button">
+              Search
+            </Button>
+          </Form>
+        </Col>
+      </Row>
+      <Row id="nav-row">
+        <Navbar expand="md" variant="dark" >
+            <Navbar.Brand id="brand" href="/" className="header-item">
+              <AiOutlineHome id="home-icon" size={40}/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbar-collapse" />
+            <Navbar.Collapse id="navbar-collapse">
+              <Nav className="justify-content-around nav-nav">
+                <Nav.Item>
+                  <Nav.Link href="/journals">Journals</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/people">People</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/network">Network</Nav.Link>
+                </Nav.Item>
+                <NavDropdown title="Background" id="background-dropdown">
+                  <NavDropdown.Item href="/background/author-bg">
+                    John Hunt
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/background/quaker-bg">
+                    Quakers
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Project" id="about-dropdown">
+                  <NavDropdown.Item href="/about">
+                    About
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/credits">
+                    Credits
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+      </Row>
+    </>
+  );
 
   return (
     <>

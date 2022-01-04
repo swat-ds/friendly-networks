@@ -2,12 +2,14 @@
     margin-bottom: 3vh;
     box-shadow: 0 8px 10px -6px rgba(black, 1);
     height: auto;
+
+    display: none;
 }
 
-#home-icon{
-    margin-top: 10px;
-    color: var(--bs-primary) !important;
-}
+// #home-icon{
+//     margin-top: 10px;
+//     color: var(--bs-primary) !important;
+// }
 .header-items{
     display: flex;
     justify-content:space-evenly;
@@ -79,7 +81,7 @@
 
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 600px) {
     #header-row{
         display: none;
     }
