@@ -14,7 +14,7 @@ const JournalCard = ({ node, index, size }) => {
   // Construct urls of thumbnail images held in Islandora
   const thumbnailUrl = "https://digitalcollections.tricolib"
     + ".brynmawr.edu/islandora/object/sc:"
-    + node.route.substring(3)
+    + node.route.split("sc").pop()
     + "/datastream/TN";
 
   return(

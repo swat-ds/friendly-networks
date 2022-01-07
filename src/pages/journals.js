@@ -22,7 +22,7 @@ const parseString = require("xml2js").parseString;
     });
     // console.log(header);
 
-    let route = "/" + node.parent.name;
+    let route = "/journals/" + node.parent.name;
 
     let title =
       header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][

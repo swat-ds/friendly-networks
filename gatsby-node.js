@@ -23,11 +23,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // Pull in constellation data and add to GraphQL
 let constellations = [];
-exports.sourceNodes = async ({
-  actions,
-  createNodeId,
-  createContentDigest,
-}) => {
+exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
   const { createNode } = actions;
   console.log("(1)", "read");
 
@@ -46,9 +42,8 @@ exports.sourceNodes = async ({
       }
   }
 
-
-console.log(constellations.length)
-console.log(x);
+  console.log(constellations.length)
+  console.log(x);
 
   //Assumed data is retrieved
   console.log("(2)", "retrieved");
@@ -105,6 +100,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     query Constellations {
+      allCetei {
+        nodes {
+          prefixed
+          elements
+          parent {
+            ... on File {
+              name
+            }
+          }
+        }
+      }
       allConstellation {
         nodes {
           id
@@ -204,36 +210,58 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
+  /////////// Create entity pages ///////////
+
   let arks = []
   for (const node of result.data.allConstellation.nodes){
     arks.push(node.arkId);
   }
   console.log(arks.length);
-    for (const node of result.data.allConstellation.nodes) {
-      createPage({
-        path: `people/${node.arkId}`,
-        component: PeopleComponent,
-        context: {
-          id: node.id,
-          arkId: node.arkId,
-          nameEntries: node.nameEntries,
-          occupations: node.occupations,
-          entityType: node.entityType,
-          biogHists: node.biogHists,
-          places: node.places,
-          relations: node.relations,
-          sameAsRelations: node.sameAsRelations,
-          resourceRelations: node.resourceRelations,
-          subjects: node.subjects,
-          genders: node.genders,
-          dates: node.dates,
-          allArks: arks,
-      });
-    }
+  for (const node of result.data.allConstellation.nodes) {
+    createPage({
+      path: `people/${node.arkId}`,
+      component: PeopleComponent,
+      context: {
+        id: node.id,
+        arkId: node.arkId,
+        nameEntries: node.nameEntries,
+        occupations: node.occupations,
+        entityType: node.entityType,
+        biogHists: node.biogHists,
+        places: node.places,
+        relations: node.relations,
+        sameAsRelations: node.sameAsRelations,
+        resourceRelations: node.resourceRelations,
+        subjects: node.subjects,
+        genders: node.genders,
+        dates: node.dates,
+        allArks: arks,
+        tei: result.data.allCetei.nodes.filter(
+          x => x.prefixed.search(node.arkId) > -1
+        ),
+      },
+    });
+  }
 
+  /////////// Create journal pages ///////////
+  const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
+  for (const node of result.data.allCetei.nodes) {
+    const name = "journals/" + node.parent.name;
+    createPage({
+      path: name,
+      component,
+      context: {
+        name,
+        prefixed: node.prefixed,
+        elements: node.elements
+      }
+    })
+  }
 
+  /////////// Create Markdown pages ///////////
 
-    return graphql(`
+  return (
+    graphql(`
       {
         allMarkdownRemark {
           edges {
@@ -261,43 +289,44 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }, // additional data can be passed via context
         });
       });
-    });
+    })
+  );
 };
 
-// Create page for each TEI file (code from gatsby-theme-ceteicean/gatsby-node)
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-  const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
-
-  const result = await graphql(`
-    query {
-      allCetei {
-        nodes {
-          prefixed
-          elements
-          parent {
-            ... on File {
-              name
-            }
-          }
-        }
-      }
-    }
-  `)
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  for (const node of result.data.allCetei.nodes) {
-    const name = node.parent.name;
-    createPage({
-      path: name,
-      component,
-      context: {
-        name,
-        prefixed: node.prefixed,
-        elements: node.elements
-      }
-    })
-  }
-}
+// // Create page for each TEI file (code from gatsby-theme-ceteicean/gatsby-node)
+// exports.createPages = async ({ actions, graphql, reporter }) => {
+//   const { createPage } = actions
+//   const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
+//
+//   const result = await graphql(`
+//     query {
+//       allCetei {
+//         nodes {
+//           prefixed
+//           elements
+//           parent {
+//             ... on File {
+//               name
+//             }
+//           }
+//         }
+//       }
+//     }
+//   `)
+//   if (result.errors) {
+//     reporter.panicOnBuild(`Error while running GraphQL query.`)
+//     return
+//   }
+//   for (const node of result.data.allCetei.nodes) {
+//     const name = "journals/" + node.parent.name;
+//     createPage({
+//       path: name,
+//       component,
+//       context: {
+//         name,
+//         prefixed: node.prefixed,
+//         elements: node.elements
+//       }
+//     })
+//   }
+// }
