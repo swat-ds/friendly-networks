@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/friendly-networks`,
   siteMetadata: {
-    title: "obf",
+    title: "Friendly Networks",
   },
   plugins: [
     {
@@ -14,7 +14,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    "gatsby-theme-ceteicean",
+    "gatsby-transformer-ceteicean",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -45,7 +45,7 @@ module.exports = {
               linkImagesToOriginal: false,
               showCaptions: ["title", "alt"],
               withWebp: true,
-              tracedSVG: { color: "#F00", turnPolicy: "TURNPOLICY_MAJORITY" },
+              tracedSVG: { color: "#555", turnPolicy: "TURNPOLICY_MAJORITY" },
             },
           },
         ],
