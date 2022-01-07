@@ -62,7 +62,7 @@ const EntityCardDeck = ({entityDeck}) => {
     return(
       <Col className="entity-card-col">
         <Card bg="primary" text="secondary" className="entity-card">
-          <Link to={"/entities/" + entity.arkId}>
+          <Link to={"/people/" + entity.arkId}>
             {image}
             <Card.Body>
               <Card.Title as="h6">

@@ -21,8 +21,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
+// Pull in constellation data and add to GraphQL
 let constellations = [];
-
 exports.sourceNodes = async ({
   actions,
   createNodeId,
@@ -203,6 +203,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
+
   let arks = []
   for (const node of result.data.allConstellation.nodes){
     arks.push(node.arkId);
@@ -210,7 +211,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   console.log(arks.length);
     for (const node of result.data.allConstellation.nodes) {
       createPage({
-        path: `entities/${node.arkId}`,
+        path: `people/${node.arkId}`,
         component: PeopleComponent,
         context: {
           id: node.id,
@@ -227,7 +228,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           genders: node.genders,
           dates: node.dates,
           allArks: arks,
-        },
       });
     }
 

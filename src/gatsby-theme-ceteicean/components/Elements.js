@@ -78,7 +78,8 @@ export const Name = (props) => {
       <Link
         class="name-g-link"
         id={props.teiNode.attributes.getNamedItem("key").value}
-        to={"/entities/" + props.teiNode.attributes.getNamedItem("key").value}
+        to={"/people/" + props.teiNode.attributes.getNamedItem("key").value}
+        target="_blank"
       >
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </Link>
