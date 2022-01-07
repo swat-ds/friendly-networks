@@ -246,9 +246,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   /////////// Create journal pages ///////////
   const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
   for (const node of result.data.allCetei.nodes) {
-    const name = "journals/" + node.parent.name;
+    const name = node.parent.name;
     createPage({
-      path: name,
+      path: "journals/" + name,
       component,
       context: {
         name,

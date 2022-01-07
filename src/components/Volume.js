@@ -350,7 +350,7 @@ const Volume = (props) => {
     </h1>
   );
 }
-  
+
   return (
     <Layout>
       <Row style={{fontSize: "15px", padding:"10px"}}>{renderTitle(getTitle(jsonPrefixed))}</Row>
@@ -411,7 +411,7 @@ const Volume = (props) => {
             <Link
               style={{ color: "white" }}
               className="btn-g-link"
-              to={"/" + cetei}
+              to={"/journals/" + cetei}
             >
               Previous Journal
             </Link>
@@ -424,7 +424,7 @@ const Volume = (props) => {
             <Link
               style={{ color: "white" }}
               className="btn-g-link"
-              to={"/" + cetei}
+              to={"/journals/" + cetei}
             >
               Next Journal
             </Link>
