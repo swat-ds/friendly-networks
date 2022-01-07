@@ -16,14 +16,6 @@ import six from "../../../content/markdown/images/image6.jpg";
 import nine from "../../../content/markdown/images/image9.jpg";
 import ten from "../../../content/markdown/images/image10.jpg";
 
-  //  timeline: "/background/author-background/timeline",
-  //  bookshelf: "/background/john-hunt/7-bookshelf",
-  //  form_of_the_journal: "/background/quaker-bg/0-Form_of_the_Journal",
-  //  introduction: "/background/john-hunt/1-introducing-john-hunt",
-  //  family: "/background/john-hunt/3-family",
-  //  mentors_role_models: "/background/john-hunt/5-mentors-role-models",
-  //  bibliography: "/background/author-background/bibliography",
-
 const author_bg = () => {
     const pageCardData = [
         {

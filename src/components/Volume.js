@@ -301,7 +301,7 @@ const Volume = (props) => {
      setPid(visiblePid)
    }
 
-function renderTitle(journalMetadata){
+  function renderTitle(journalMetadata){
   return (
     <h1 className="general-text header3">
       <span >
@@ -350,6 +350,7 @@ function renderTitle(journalMetadata){
     </h1>
   );
 }
+  
   return (
     <Layout>
       <Row style={{fontSize: "15px", padding:"10px"}}>{renderTitle(getTitle(jsonPrefixed))}</Row>
