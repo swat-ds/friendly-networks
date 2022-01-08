@@ -49,14 +49,17 @@ const home = ({location}) => {
   return (
     <Layout>
       <Row className="general-text" id="homepage-text">
-        <h1>Our Beloved Friend: The Journals of John Hunt</h1>
-        <p>
-        Since its origins in the 1650s, the Quaker community has encompassed a densely interconnected transatlantic network. Friendly Networks explores ways to describe Quaker identities, outline Quaker social networks, and connect them to archival sources, with a focus on the journals of New Jersey minister John Hunt (1740-1824). These journals, kept from 1770 to 1824, document not only Hunt’s daily activities and religious life but also his advocacy for non-violence, the end of slavery, and the fair treatment of Native Americans and African Americans.
-        </p>
-        <p>
-        This website and the research behind it are made possible with support from the H. David and Joyce E. Hunt Family Foundation Special Projects Fund.
-        </p>
+        <h1>Friendly Networks</h1>
+        <p><cite>Friendly Networks</cite> explores ways to describe Quaker identities, outline Quaker social networks, and connect them to archival sources. Since its origins in the 1650s, the Quaker community has encompassed a densely interconnected transatlantic network. Quakers excelled in creating and maintaining connections with scattered Friends and the resulting relationships allow us to trace the movement of ideas throughout the Quaker world.</p>
+        <p>This website and the research behind it are made possible with support from the H. David and Joyce E. Hunt Family Foundation Special Projects Fund.</p>
+        <h2>Our Beloved Friend: The Journals of John Hunt</h2>
+        <p>The current stage of <cite>Friendly Networks</cite> focuses on the journals of New Jersey minister John Hunt (1740-1824). These journals, kept from 1770 to 1824, document Hunt’s daily activities, religious life, and advocacy for non-violence, the end of slavery, and the fair treatment of Native Americans.</p>
         {homepageCards(homepageCardData)}
+        <h2>
+          <br/>
+          As Bread Cast on the Waters
+        </h2>
+        <p>The journals of <Link to="/people/w6c82qz0">Joshua Evans</Link>, coming in 2023</p>
       </Row>
     </Layout>
   );
