@@ -87,7 +87,7 @@
   width: 100%;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   color: var(--bs-secondary) !important;
 }
 
@@ -99,9 +99,14 @@
 
 .dropdown-item:hover,
 .dropdown-item:active,
-.dropdown-item:focus{
+.dropdown-item:focus,
+.dropdown-item.active {
   background-color: var(--bs-secondary);
   color: var(--bs-primary) !important;
+}
+
+.nav-link.active {
+  text-decoration: underline var(--bs-info);
 }
 
 // When menu is collapsed
@@ -152,6 +157,7 @@
   	outline: 2px solid var(--bs-primary);
   }
 
+  .nav-item:active > a,
   .nav-item:active > a,
   .nav-item:hover > a {
   	color: var(--bs-primary) !important;

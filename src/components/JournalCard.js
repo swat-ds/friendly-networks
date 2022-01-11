@@ -23,7 +23,6 @@ const JournalCard = ({ node, index, size }) => {
         <Card.Img
           src={thumbnailUrl}
           alt="First page of journal"
-          rounded
         />
         <Card.Body>
           <Card.Subtitle>

@@ -80,27 +80,57 @@ const NavBar = (props) => {
             <Navbar.Collapse id="navbar-collapse">
               <Nav className="justify-content-around nav-nav">
                 <Nav.Item>
-                  <Nav.Link href="/journals">Journals</Nav.Link>
+                  <Nav.Link as={Link}
+                    to="/journals"
+                    activeClassName="active"
+                    partiallyActive={true}
+                  >
+                    Journals
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/people">People</Nav.Link>
+                  <Nav.Link as={Link}
+                    to="/people"
+                    activeClassName="active"
+                    partiallyActive={true}
+                  >
+                    People
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/network">Network</Nav.Link>
+                  <Nav.Link as={Link} to="/network" activeClassName="active">
+                    Network
+                  </Nav.Link>
                 </Nav.Item>
                 <NavDropdown title="Background" id="background-dropdown">
-                  <NavDropdown.Item href="/background/author-bg">
+                  <NavDropdown.Item
+                    as={Link}
+                    activeClassName="active"
+                    to="/background/author-bg"
+                  >
                     John Hunt
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/background/quaker-bg">
+                  <NavDropdown.Item
+                    as={Link}
+                    activeClassName="active"
+                    to="/background/quaker-bg"
+                  >
                     Quakers
                   </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Project" id="about-dropdown">
-                  <NavDropdown.Item href="/about">
+                  <NavDropdown.Item
+                    as={Link}
+                    activeClassName="active"
+                    to="/about"
+                  >
                     About
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/credits">
+                  <NavDropdown.Item
+                    as={Link}
+                    activeClassName="active"
+                    to="/credits"
+                  >
                     Credits
                   </NavDropdown.Item>
                 </NavDropdown>

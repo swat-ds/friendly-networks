@@ -92,63 +92,6 @@ const network = ({ data }) => {
     }
   }
 
-  // let sourceNotInNodes =[]
-  // let targetNotInNodes = [];
-
-  //  for (let index = 0; index < d3Links.length; index++) {
-  //    let sourceFound = false;
-  //    loop2: for(let node = 0; node < d3Nodes.length; node++){
-  //      if(d3Links[index].source  == d3Nodes[node].id){
-  //        sourceFound = true;
-  //       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-  //        break loop2;
-  //      }
-  //    }
-  //     if (sourceFound == false) {
-  //       // console.log(`${d3Links[index].source} is not in any of the node ids`);
-  //       sourceNotInNodes.push(d3Links[index].source);
-  //     }
-  //  }
-
-  //  console.log("source not found:" ,sourceNotInNodes)
-
-  //  let removableIndices = []
-  //  let removableLinks = []
-  //   for (let index = 0; index < d3Links.length; index++) {
-  //     let targetFound = false;
-  //     loop2: for (let node = 0; node < d3Nodes.length; node++) {
-  //       if (d3Links[index].target == d3Nodes[node].id) {
-  //         targetFound = true;
-  //         //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-  //         break loop2;
-  //       }
-  //     }
-  //     if (targetFound == false) {
-  //       // console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
-  //       removableLinks.push(d3Links[index])
-  //       removableIndices.push(index);
-  //     }
-  //   }
-  //  console.log("removable links", removableLinks);
-  //  console.log("removable indices", removableIndices);
-
-  //  let  i = 0
-  // for (let index = 0; index < d3Links.length; index++) {
-  //   let targetFound = false;
-  //   loop2: for (let node = 0; node < d3Nodes.length; node++) {
-  //     if (d3Links[index].target == d3Nodes[node].id) {
-  //       targetFound = true;
-  //       //  console.log(`Found it: ${d3Links[index].source} => ${d3Nodes[node].id}`);
-  //       break loop2;
-  //     }
-  //   }
-  //   if (targetFound == false) {
-  //     i++;
-  //     console.log(`For source ${d3Links[index].source}: ${d3Links[index].target} is not found`);
-  //     // d3Links.splice(index, 1);
-  //   }
-  // }
-
   return (
     <Layout>
       {/* <Vis nodesInJSON={d3Nodes} linksInJSON={d3Links}></Vis> */}

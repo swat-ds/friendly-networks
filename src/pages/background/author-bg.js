@@ -1,17 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../../components/Layout";
-import { globalVariables } from "../../globalVariables";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import "../../styles/pageStyles.scss";
 import homepageCards from "../../components/HomepageCards"
 
 // Image imports
 import one from "../../../content/markdown/images/image1.jpg";
 import two from "../../../content/markdown/images/image2.jpg";
-import three from "../../../content/markdown/images/image3.jpg";
 import four from "../../../content/markdown/images/image4.jpg";
-import five from "../../../content/markdown/images/image5.jpg";
 import six from "../../../content/markdown/images/image6.jpg";
 import nine from "../../../content/markdown/images/image9.jpg";
 import ten from "../../../content/markdown/images/image10.jpg";

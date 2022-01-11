@@ -72,7 +72,7 @@ const journals = ({ data }) => {
          <p>
             Click on a journal to browse page scans and transcripts from it.
         </p>
-         <Row xs={2} small={3} md={4} lg={6} xl={8} className="journal-card-row">
+         <Row xs={2} small={3} md={4} lg={5} xl={8} className="journal-card-row">
             {preparedNodes.map(renderJournals)}
          </Row>
        </Row>
