@@ -14,7 +14,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    "gatsby-transformer-ceteicean",
+    "gatsby-theme-ceteicean",
     {
       resolve: "gatsby-source-filesystem",
       options: {
