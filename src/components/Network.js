@@ -5,6 +5,7 @@ import {
   Row,
   Col,
   Button,
+  Card
 } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
 import "../styles/network.scss";
@@ -53,6 +54,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   const [links, setLinks] = useState(linksInJSON);
   const [removeHunt, setRemoveHunt] = useState(false);
 
+  const [selectedNode, setSelectedNode] = useState(null)
+
   useEffect(() => {
     if (removeHunt) {
       let filteredNodes = nodesInJSON.filter((node) => {
@@ -92,7 +95,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           svg.attr("transform", event.transform);
         })
       )
-      .append("g"); //'g' is an encompassing tag that groups elements inside an svg
+      .append("g");
+      //'g' is an encompassing tag that groups elements inside an svg
+
+      console.log("svgRef", svgRef);
+      console.log("svg", svg);
 
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
@@ -161,6 +168,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .enter()
       .append("g")
       .attr("class", "nodeWrapper")
+      // Give node a class to represent each neighbor
       .attr("class", (node) => {
           const ark = node.id;
           const tgtArray = d3.selectAll("line") // All lines
@@ -169,7 +177,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
             .map(line => "linkedTO" + line.target.id); // get target ids
 
           const srcArray = d3.selectAll("line") // All lines
-            .filter(line => line.target.id === ark) // w/ matching tgt
+            .filter(line => line.target.id === ark) // w/ matching target
             .data() // Get data array
             .map(line => "linkedTO" + line.source.id); // get src ids
 
@@ -201,21 +209,15 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       });
 
       const d3Tooltip = d3
-          .select("#mainContainer")
+          .select("#main-container")
           .append("div")
-          .classed("d3Tooltip", true)
+          .attr("class", "d3Tooltip")
           .classed("general-text", true)
           .attr("id", "node-d3Tooltip")
           .style("opacity", 0);
 
 
-       console.log("Data:",
-           d3.selectAll(lines).data()
-       );
-
-
     nodeWrapper.on("mouseover", function (event, d) {
-      console.log("Hovered Node", this);
 
       // show the tooltip
       d3Tooltip.transition().duration(300).style("opacity", 1);
@@ -248,6 +250,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
             );
         })
         .style("stroke", offWhite)  // Apply style
+        .raise(); // Bring to front
 
       // Highlight adjacent nodes
       d3.selectAll(".linkedTO" + currentArk)
@@ -292,6 +295,24 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       // Remove tooltip
       d3Tooltip.transition().duration(1000).style("opacity", 0);
     });
+
+    // Click a node to pull up its information
+    nodeWrapper.on("click", function (event, d) {
+      console.log(d3.select(this).data());
+      // Set selectedNode useState to data of clicked node
+      setSelectedNode(d3.select(this).data());
+      // Prevent click from registering with svg.on("click")
+      event.stopPropagation();
+    });
+
+    // Click the background to dismiss any pulled-up information
+    const deselectNode = () => {
+      console.log("SVG click");
+      setSelectedNode(null);
+    };
+    d3.select(svgRef.current).on("click", deselectNode);
+
+
 
     //Bind the name of each person to the corresponding node
     const text = svg
@@ -356,8 +377,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     setHighlightMinister(!highlightMinister);
   }
   return (
-    <>
-      <Row id="main-row">
+    <Row id="main-row" className="network-page">
+      <Row id="legend-row">
         <Col>
           <Button
             variant={removeHunt ? "success" : "danger"}
@@ -440,16 +461,32 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           <span className="general-text">Acquaintances</span>
         </Col>
       </Row>
-      <Row>
-        <Col id="mainContainer">
+      <Row id="container-row" xs={1} md={4}>
+        <Col id="main-container">
           <svg
             style={{ backgroundColor: "#342E37" }}
             id="network-svg"
             ref={svgRef}
           ></svg>
         </Col>
+        <Col id="info-box">
+          <Card bg="primary" id="info-card">
+            <Card.Body>
+              <Card.Title>Information</Card.Title>
+              <Card.Text
+                id="inactive-text"
+                style={selectedNode ? {display: "none"} : {}}
+              ><p>
+                Click on a person's node to display their biographical details.
+              </p></Card.Text>
+              <Card.Text style={selectedNode ? {} : {display: "none"}}>
+                <p> Hello!!!</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
-    </>
+    </Row>
   );
 };
 
