@@ -43,6 +43,12 @@ const createD3Nodes = (constellations) => {
           let subjectLabel = subject.term?.term ? subject.term.term + "; " : "";
           return labels + subjectLabel;
         }, "") || null, ///=> label; lable2; lable3
+      bio:
+        constellation?.biogHists?.[0]?.text
+          .replaceAll(/<citation.*?>/g, "\nSource: ")
+          .replaceAll(/<.+?>/g, "")
+          .replaceAll(/WorldCat record id:.*/g, "")
+          .replaceAll(/&amp;/g, "and")
     };
 
     if (node.id != null) {

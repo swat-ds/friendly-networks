@@ -8,18 +8,55 @@
   margin-bottom: 12px;
 }
 
-#info-box{
-  // width: 100%;
+#to-profile {
+  color: var(--bs-secondary);
+}
+
+#remove-hunt {
+   margin: "2px";
+   color: var(--bs-secondary);
+}
+
+#remove-hunt-col {
+  align-self: center;
 }
 
 #info-card{
   height: 100%;
   width: 100%;
   border-radius: 10px;
-
+  max-height: 80vh;
 }
 
-.network-page .card-text#inactive-text{
+#info-card .card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#info-card #inactive-text * {
+  text-align: center;
+}
+
+#bio-snippet {
+  hyphens: auto;
+  margin-top: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 18;
+  overflow: hidden;
+}
+
+#legend-row {
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+#legend-row > .col {
+  align-items: center;
+}
+
+.network-page .card-body#inactive-text{
   height: 100%;
   display: flex;
   opacity: 50%;

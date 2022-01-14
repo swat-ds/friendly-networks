@@ -1,12 +1,7 @@
 import React from "react";
 import { useRef, useState, useEffect, useMemo } from "react";
 import * as d3 from "d3";
-import {
-  Row,
-  Col,
-  Button,
-  Card
-} from "react-bootstrap";
+import { Row, Col, Button, Card } from "react-bootstrap";
 // import "../assets/styles/styles.scss";
 import "../styles/network.scss";
 
@@ -98,8 +93,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .append("g");
       //'g' is an encompassing tag that groups elements inside an svg
 
-      console.log("svgRef", svgRef);
-      console.log("svg", svg);
 
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
@@ -157,7 +150,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         return 2;
       });
     // .style("stroke-dasharray", "3, 3");
-    console.log("Lines:", lines); // TODO: delete this
 
     //Bind a circle to each node
     const nodeWrapper = svg
@@ -236,7 +228,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       d3.select(this)
         .style("stroke-opacity", 1.0)
         .style("stroke", offWhite)
-        .style("stroke-width", "6px")
+        .style("stroke-width", "3px")
 
       // Get arkId of hovered node
       const currentArk = d3.select(this)._groups[0][0].__data__.id;
@@ -256,7 +248,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       d3.selectAll(".linkedTO" + currentArk)
         .style("stroke-opacity", 1.0)
         .style("stroke", offWhite)
-        .style("stroke-width", "6px");
+        .style("stroke-width", "3px");
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
@@ -307,7 +299,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
     // Click the background to dismiss any pulled-up information
     const deselectNode = () => {
-      console.log("SVG click");
       setSelectedNode(null);
     };
     d3.select(svgRef.current).on("click", deselectNode);
@@ -378,52 +369,48 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   }
   return (
     <Row id="main-row" className="network-page">
+      <Row id="instructions-row">
+        <h1>Network</h1>
+      </Row>
       <Row id="legend-row">
-        <Col>
+        <Col id="remove-hunt-col">
           <Button
-            variant={removeHunt ? "success" : "danger"}
+            id="remove-hunt"
+            variant={removeHunt ? "primary" : "danger"}
             onClick={() => setRemoveHunt(!removeHunt)}
-            style={{ margin: "2px" }}
           >
-            <span className="general-text">
-              {removeHunt ? "Add Hunt" : "Remove Hunt"}
-            </span>
+            {removeHunt ? "Add Hunt" : "Remove Hunt"}
           </Button>
         </Col>
         <Col>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               id="flexSwitchCheckDefault"
               onChange={highlightMinisterHandler}
             />
 
             <label
-              class="form-check-label general-text"
+              className="form-check-label general-text"
               for="flexSwitchCheckDefault"
             >
               Highlight ministers
             </label>
           </div>
         </Col>
-        <Col>
-          {/* return "#505A34";
-        }
-        return "#034d81"; */}
+        <Col
+          style={highlightMinister ? {} : {display: "none"}}
+        >
           <div
             style={{
               height: "30px",
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#505A34",
-              display: highlightMinister ? "inherit" : "none",
             }}
-          ></div>
-          <span
-            className="general-text"
-            style={{ display: highlightMinister ? "inline" : "none" }}
-          >
+          />
+          <span className="general-text">
             Ministers
           </span>
         </Col>
@@ -435,10 +422,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               borderRadius: "50%",
               backgroundColor: "#034d81",
             }}
-          ></div>
+          />
           <span className="general-text">Other</span>
         </Col>
-
         <Col>
           <div
             style={{
@@ -446,10 +432,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
               width: "30px",
               backgroundColor: "#A7026A",
             }}
-          ></div>
+          />
           <span className="general-text">Relatives</span>
         </Col>
-
         <Col>
           <div
             style={{
@@ -461,7 +446,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           <span className="general-text">Acquaintances</span>
         </Col>
       </Row>
-      <Row id="container-row" xs={1} md={4}>
+
+
+      <Row id="container-row" xs={1} lg={4}>
         <Col id="main-container">
           <svg
             style={{ backgroundColor: "#342E37" }}
@@ -471,18 +458,39 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         </Col>
         <Col id="info-box">
           <Card bg="primary" id="info-card">
-            <Card.Body>
-              <Card.Title>Information</Card.Title>
-              <Card.Text
-                id="inactive-text"
-                style={selectedNode ? {display: "none"} : {}}
-              ><p>
+            <Card.Body
+              id="inactive-text"
+              style={selectedNode ? {display: "none"} : {}}
+            >
+              <Card.Text>
                 Click on a person's node to display their biographical details.
-              </p></Card.Text>
-              <Card.Text style={selectedNode ? {} : {display: "none"}}>
-                <p> Hello!!!</p>
               </Card.Text>
             </Card.Body>
+            <Card.Body style={selectedNode ? {} : {display: "none"}}>
+              <Card.Title>
+                { // Get name
+                  selectedNode?.[0]?.label.split(",")
+                    .slice(0,2).reverse().join(" ")
+                }
+              </Card.Title>
+              <Card.Subtitle>
+                {selectedNode?.[0]?.label.split(",").pop()}
+              </Card.Subtitle>
+              <Card.Text id="bio-snippet">
+                {selectedNode?.[0]?.bio}
+            </Card.Text>
+            </Card.Body>
+            <Card.Footer style={selectedNode ? {} :{display: "none"} }>
+              <Button
+                variant="info"
+                size="lg"
+                id="to-profile"
+                href={"/people/" + selectedNode?.[0]?.id}
+                disabled={selectedNode ? false : true}
+              >
+              Go to profile
+              </Button>
+            </Card.Footer>
           </Card>
         </Col>
       </Row>
