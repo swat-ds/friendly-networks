@@ -70,5 +70,11 @@ module.exports = {
         offset: -100,
       },
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    }
   ],
 };
