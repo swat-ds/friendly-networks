@@ -44,6 +44,7 @@ const Person = (props) => {
     genders,
     sameAsRelations,
     allArks,
+    tei,
   } = props.pageContext;
 
   /**
@@ -162,8 +163,8 @@ const Person = (props) => {
         ? dates[0].fromDate
         : null;
 
-    const placeIndex = places.findIndex((x) => x?.role?.term === "Birth");
-    const placeSpan = (placeIndex > -1)
+    const placeIndex = places?.findIndex((x) => x?.role?.term === "Birth");
+    const placeSpan = placeIndex && (placeIndex > -1)
         ? renderPlace(places[placeIndex]).props.children
         : null;
 
@@ -196,8 +197,8 @@ const Person = (props) => {
 
         console.log(dateString);
 
-      const placeIndex = places.findIndex((x) => x?.role?.term === "Death");
-      const placeSpan = (placeIndex > -1)
+      const placeIndex = places?.findIndex((x) => x?.role?.term === "Death");
+      const placeSpan = (placeIndex && placeIndex > -1)
           ? renderPlace(places[placeIndex]).props.children
           : null;
 
@@ -434,6 +435,7 @@ const Person = (props) => {
         </div>);
     }
   };
+
 
   return(
     <Layout>
