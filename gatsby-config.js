@@ -64,13 +64,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        duration: 1000,
-        offset: -100,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'en'
