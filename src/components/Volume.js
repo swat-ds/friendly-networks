@@ -127,8 +127,11 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			jsonPrefixed = result;
  		});
 
-    console.log("Volume facs", facs);
-    const pids = facs;
+    // console.log("Volume facs", facs);
+    const pids = getAllPageBreaks(jsonPrefixed);
+    console.log("volume pids", pids);
+
+    if (pids.length === 0) {pids.push("sc203351")}
 
  		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
  		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
@@ -165,10 +168,16 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     const [halfHeight, setHalfHeight] = useState(0);
 
     // Initialize state to track distances between .tei-pb elements
-    const [distances, setDistances] = useState();
+    const [distances, setDistances] = useState([0]);
 
     const handleResize = useCallback(() => {
-      if (containerRef.current !== null) {return;}
+      console.log("In handleResize");
+
+      // Don't do anything if the ref's DOM node hasn't loaded yet
+      if (containerRef.current === null) {
+        console.log("Ref is null");
+        return;
+      }
 
       // Get half the height of the container
       setHalfHeight(containerRef.current.clientHeight/2)
@@ -195,6 +204,8 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     }, [pids])
 
     useEffect(() => {
+      console.log("In resize useEffect");
+
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, [halfHeight, handleResize, distances]);
@@ -205,10 +216,25 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
     function handleWheel(e) {
       if (! halfHeight || halfHeight === 0) {
+
         handleResize();
       }
 
-      console.log("scrolling");
+      // No point checking scroll to see what page we're on if there's only 1 pg
+      if (pids.length < 2) {return;}
+
+      // Find the line dividing content above vs below scrollbox midpoint
+      const scrollTop = e.currentTarget.scrollTop;
+      const divider = scrollTop + halfHeight;
+      // console.log("divider", divider, "3rd break", distances[2]);
+
+      // Check how many pagebreaks are above divider
+      const pageNum = distances.filter(pos => pos < divider).length - 1;
+      console.log("Page Number", pageNum + 1);
+
+      // Set currentPid useEffect, if not already at appropriate value
+      console.log("pid", pids[pageNum]);
+      setPid(pids[pageNum])
 
     }
 
