@@ -18,72 +18,6 @@ function getTitle(journal){
     );
 }
 
-function getDivBreaks(divList) {
-  let divBreaks = [];
-  divList.forEach((div) => {
-    if ("tei-pb" in div) {
-      div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
-    }
-
-    // Check each para in the div for <pb>; add facs to divBreaks if found
-    if ("tei-p" in div) {
-      let paraList = div["tei-p"];
-      paraList.forEach((para) => {
-        if ("tei-pb" in para){
-          para["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
-        }
-      });
-    }
-  });
-  return divBreaks;
-}
-
-function getAllPageBreaks(jsonPrefixed) {
-  let pageBreakIDs = [];
-  if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
-    if ("tei-pb" in front) {
-      front["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
-    if ("tei-div" in front) {
-      pageBreakIDs.push(...getDivBreaks(front["tei-div"]));
-    }
-  }
-
-  //Get the ones that are body's children
-  if ("tei-body" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let body = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-body"][0];
-    //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
-    //     pageBreakIDs.push(pid.$.facs);
-    //   }
-    if ("tei-pb" in body) {
-      body["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
-
-    if ("tei-div" in body) {
-      pageBreakIDs.push(...getDivBreaks(body["tei-div"]));
-    }
-  }
-
-  if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
-
-    if ("tei-pb" in back) {
-      back["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
-    if ("tei-div" in back) {
-      pageBreakIDs.push(...getDivBreaks(back["tei-div"]));
-    }
-  }
-  return pageBreakIDs;
-}
-
 function getAllFacs(xmlString) {
   const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
   // ex: <tei-pb n="1" facs="(sc123)">
@@ -129,6 +63,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			data,
  			hash
  		} = props;
+
  		let jsonPrefixed;
  		parseString(pageContext.prefixed, function(err, result) {
  			jsonPrefixed = result;
@@ -175,11 +110,9 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     const [distances, setDistances] = useState([0]);
 
     const handleResize = useCallback(() => {
-      console.log("In handleResize");
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
       if (containerRef.current === null) {
-        console.log("Ref is null");
         return;
       }
 
@@ -216,9 +149,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       return () => window.removeEventListener('resize', handleResize);
     }, [halfHeight, handleResize, distances]);
 
-    console.log("halfHeight", halfHeight);
-    console.log("breaks", distances);
-
 
     function handleWheel(e) {
       // We can't do anything if our landmarks haven't been set yet
@@ -236,15 +166,13 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       // Find the line dividing content above vs below scrollbox midpoint
       const scrollTop = e.currentTarget.scrollTop;
       const divider = scrollTop + halfHeight;
-      console.log("divider", divider, "First 5 breaks", distances.slice(0,6));
 
       // Check how many pagebreaks are above divider
       const pageNum = distances.filter(pos => pos <= divider).length - 1;
-      console.log("Page Number", pageNum + 1);
 
       // Set currentPid useEffect, if not already at appropriate value
-      console.log("pid", pids[pageNum]);
       if (pids[pageNum] !== currentPid) {
+
         setPid(pids[pageNum])
       }
 

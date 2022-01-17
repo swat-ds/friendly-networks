@@ -13,35 +13,8 @@ import "../../styles/styles.scss";
 const ShadowedCeteicean = ({pageContext, data, location}) => {
 
   let hash = location.hash;
-  const [facs, setFacs] = useState([])
-  const [hasFacsChange, setHasFacsChange] = useState(false);
 
-   useEffect(() => {
-     if (window !== undefined && document !== undefined) {
-       let elements = document.getElementsByTagName("tei-pb");
-       let facsimiles = [];
-       for (let i = 0; i < elements.length; i++) {
-         let element = elements[i];
-         if (element.attributes.getNamedItem("facs").value !== null) {
-           facsimiles.push(element.attributes.getNamedItem("facs").value);
-         }
-       }
-
-       const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
-       // ex: <tei-pb n="1" facs="(sc123)">
-       const matches = pageContext.prefixed.matchAll(rgx);
-       const facses = Array.from(matches, m => m[1]) // Get array of capture grps
-       // console.log("JT Facs", facses);
-
-       // console.log("facsimiles", facsimiles);
-       setFacs(facsimiles);
-     }
-   }, [hasFacsChange]);
-
-    console.log("facs", facs)
-
-
-    const routes = {
+  const routes = {
     "tei-teiheader": El.TeiHeader,
     //"tei-ab"
     "tei-add": El.Add,
@@ -82,8 +55,9 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-table": El.Table,
     "tei-title": El.Title, //titlePart?
   };
+
   return (
-    <Volume pageContext={pageContext} facs={facs} data={data} hash={hash}>
+    <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
     </Volume>
   );
