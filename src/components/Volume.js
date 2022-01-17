@@ -84,7 +84,14 @@ function getAllPageBreaks(jsonPrefixed) {
   return pageBreakIDs;
 }
 
-
+function getAllFacs(xmlString) {
+  const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
+  // ex: <tei-pb n="1" facs="(sc123)">
+  const matches = xmlString.matchAll(rgx);
+  const facses = Array.from(matches, m => m[1]) // Get array of capture grps
+  // console.log("faces", facses);
+  return facses;
+}
 
 function spaceBreakPair([breakNode1, breakNode2]){
   // TODO: Implement
@@ -127,11 +134,8 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			jsonPrefixed = result;
  		});
 
-    // console.log("Volume facs", facs);
-    const pids = getAllPageBreaks(jsonPrefixed);
-    console.log("volume pids", pids);
-
-    if (pids.length === 0) {pids.push("sc203351")}
+    const prefixed = pageContext.prefixed;
+    const pids = getAllFacs(prefixed)
 
  		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
  		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
@@ -204,7 +208,9 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     }, [pids])
 
     useEffect(() => {
-      console.log("In resize useEffect");
+      console.log("In useEffect");
+      // TODO: Consider running handleResize whenever we're here, depending on
+        // How often this useEffect is called
 
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
@@ -215,9 +221,13 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
 
     function handleWheel(e) {
-      if (! halfHeight || halfHeight === 0) {
-
+      // We can't do anything if our landmarks haven't been set yet
+      if ((! halfHeight) || halfHeight === 0) {
+        // So set them
         handleResize();
+
+        // And try again next render
+        return;
       }
 
       // No point checking scroll to see what page we're on if there's only 1 pg
@@ -226,35 +236,19 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       // Find the line dividing content above vs below scrollbox midpoint
       const scrollTop = e.currentTarget.scrollTop;
       const divider = scrollTop + halfHeight;
-      // console.log("divider", divider, "3rd break", distances[2]);
+      console.log("divider", divider, "First 5 breaks", distances.slice(0,6));
 
       // Check how many pagebreaks are above divider
-      const pageNum = distances.filter(pos => pos < divider).length - 1;
+      const pageNum = distances.filter(pos => pos <= divider).length - 1;
       console.log("Page Number", pageNum + 1);
 
       // Set currentPid useEffect, if not already at appropriate value
       console.log("pid", pids[pageNum]);
-      setPid(pids[pageNum])
+      if (pids[pageNum] !== currentPid) {
+        setPid(pids[pageNum])
+      }
 
     }
-
-    // Create a ResizeObserver to update landmarks on container resize
-   /* useEffect(()=> {
-      const observer = new ResizeObserver(entries => {
-        const entry = entries[0] // We should only ever have one entry
-        console.log(entry);
-        // if browser supports newer API property contentBoxSize
-        if (entry?.contentBoxSize) {
-          setHalfHeight(entry.contentBoxSize[0].blockSize)
-          console.log("halfHeight: ", halfHeight);
-        }
-      });
-      observer.observe(container.current);
-      return function cleanup() {
-        observer.disconnect();
-      };
-    },[container.current]);
-    */
 
 
  		// /**
@@ -446,7 +440,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
               className="general-text"
               id="journal-transcript"
               ref={containerRef}
-              onWheel={handleWheel}
+              onScroll={handleWheel}
             >
               {props.children}
             </div>

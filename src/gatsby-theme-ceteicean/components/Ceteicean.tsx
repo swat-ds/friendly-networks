@@ -31,9 +31,9 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
        // ex: <tei-pb n="1" facs="(sc123)">
        const matches = pageContext.prefixed.matchAll(rgx);
        const facses = Array.from(matches, m => m[1]) // Get array of capture grps
-       console.log("JT Facs", facses);
+       // console.log("JT Facs", facses);
 
-       console.log("facsimiles", facsimiles);
+       // console.log("facsimiles", facsimiles);
        setFacs(facsimiles);
      }
    }, [hasFacsChange]);
