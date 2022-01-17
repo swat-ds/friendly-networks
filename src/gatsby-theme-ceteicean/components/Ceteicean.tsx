@@ -18,20 +18,18 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
 
    useEffect(() => {
      if (window !== undefined && document !== undefined) {
-       let elements = document.getElementsByTagName("tei-pb");
-       let facsimiles = [];
-       for (let i = 0; i < elements.length; i++) {
-         let element = elements[i];
-         if (element.attributes.getNamedItem("facs").value !== null) {
-           facsimiles.push(element.attributes.getNamedItem("facs").value);
-         }
-       }
-       console.log(facsimiles);
-       setFacs(facsimiles);
+
+       const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
+       // ex: <tei-pb n="1" facs="(sc123)">
+       const matches = pageContext.prefixed.matchAll(rgx);
+       const facses = Array.from(matches, m => m[1]) // Get array of capture grps
+       console.log("JT Facs", facses);
+
+       setFacs(facses);
      }
    }, [hasFacsChange]);
 
-    console.log(facs)
+    console.log("facs", facs)
 
 
     const routes = {

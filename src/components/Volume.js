@@ -1,72 +1,21 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
 // import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
-import { months } from "../globalVariables";
 
 import { scroller } from "react-scroll";
 
 const parseString = require("xml2js").parseString;
 
 function getTitle(journal){
-
-let header = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
-
-if(header && "tei-fileDesc" in header){
-
-  let title =
-    header["tei-fileDesc"][0]["tei-titleStmt"][0][
-      "tei-title"
-    ][0]._.split(":")[0].split(",")[0] || "John Hunt Journal";
-
-  // let date =
-  //   header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
-  //     "tei-date"
-  //   ][0]._.split("-") || "";
-
-  let detailedDateStr =
-    header["tei-fileDesc"][0]["tei-titleStmt"][0][
-      "tei-title"
-    ][0]._.split(":")[0].split(",")[1];
-
-  let detailedDate = detailedDateStr.split("-");
-  let beginningDate = detailedDate[0].trim().split(/\s+/);
-
-  let endingDate =
-    detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
-
-  let beginningYear = beginningDate[0] !== undefined ? beginningDate[0] : "";
-
-  let beginningMonth = beginningDate[1] !== undefined ? beginningDate[1] : "";
-  beginningMonth =
-    beginningMonth !== undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
-
-  let beginningDay = beginningDate[2] !== undefined ? beginningDate[2] : "";
-
-  let endingYear = endingDate[0] !== undefined ? endingDate[0] : "";
-  let endingMonth = endingDate[1] !== undefined ? endingDate[1] : "";
-  endingMonth = endingMonth !== undefined ? endingMonth.slice(0, -3) : "";
-  let endingDay = endingDate[2] !== undefined ? endingDate[2] : "";
-
-  return {
-    title: title,
-    startMonth: beginningMonth,
-    startDay: beginningDay,
-    startYear: beginningYear,
-
-    endMonth: endingMonth,
-    endDay: endingDay,
-    endYear: endingYear,
-    detailedDateStr: detailedDateStr,
-  };
-
-}
-  return null;
-
+  return (
+    journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+      ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
+    );
 }
 
 function getDivBreaks(divList) {
@@ -89,7 +38,7 @@ function getDivBreaks(divList) {
   return divBreaks;
 }
 
-function getALlPageBreaks(jsonPrefixed) {
+function getAllPageBreaks(jsonPrefixed) {
   let pageBreakIDs = [];
   if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
     let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
@@ -135,6 +84,29 @@ function getALlPageBreaks(jsonPrefixed) {
   return pageBreakIDs;
 }
 
+
+
+function spaceBreakPair([breakNode1, breakNode2]){
+  // TODO: Implement
+}
+
+// TODO: Add documentation explaining why this exists
+// Also, explain that it targets <hr> elements or single-line spans
+function spacePageBreaks(node) { // TODO: Finish
+  // Get an array of all descendant .pb nodes
+  const breakNodes = Array.from(node.querySelectorAll(".tei-pb"))
+
+  // Case if there is 1 page
+  if (breakNodes.length === 0) {return}
+
+  // If there are at least 2 pages
+  spaceBreakPair(breakNodes[0], breakNodes[1])
+
+  // Case if there are 3 or more pages
+
+};
+
+
 let counter = 0; // counter for to tract the index of each transcript (cetei)
 
 /**
@@ -143,296 +115,345 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
 
-const Volume = (props) => {
-  const { pageContext, data, hash } = props;
-  let pids = [];
-  let pageBreakIDs = [];
+ const Volume = (props) => {
+ 		const {
+ 			pageContext,
+ 			facs,
+ 			data,
+ 			hash
+ 		} = props;
+ 		let jsonPrefixed;
+ 		parseString(pageContext.prefixed, function(err, result) {
+ 			jsonPrefixed = result;
+ 		});
 
-  let jsonPrefixed;
-  parseString(pageContext.prefixed, function (err, result) {
-    jsonPrefixed = result;
-  });
+    console.log("Volume facs", facs);
+    const pids = facs;
 
-  pageBreakIDs = getALlPageBreaks(jsonPrefixed);
+ 		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
+ 		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
-  pids = pageBreakIDs;
+ 		/**
+ 		 * Handle the change when a new value is entered on the input
+ 		 * @param {*} e the event
+ 		 */
 
-  // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
-  const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
-  const ref = useRef();
+ 		//State to set pid (constellation id)
+ 		const [currentPid, setPid] = useState(pids[0]);
 
-  /**
-   * Handle the change when a new value is entered on the input
-   * @param {*} e the event
-   */
+ 		//Sets the current cetei with the next cetei
+ 		function getNextCetei() {
+ 			counter += 1;
+ 			setCetei(data.allCetei.nodes[counter].parent.name);
+ 			console.log(counter);
+ 			// console.log(data.allCetei.nodes[counter].parent.name);
+ 		}
 
-  //State to set pid (constellation id)
-  const [currentPid, setPid] = useState(pids[0]);
+ 		//Sets the current cetei to the previous cetei
+ 		function getPrevCetei() {
+ 			setCetei(data.allCetei.nodes[counter--].parent.name);
+ 		}
 
-  //Sets the current cetei with the next cetei
-  function getNextCetei() {
-    counter += 1;
-    setCetei(data.allCetei.nodes[counter].parent.name);
-    console.log(counter);
-    // console.log(data.allCetei.nodes[counter].parent.name);
-  }
+    function getPrevImage() {};
 
-  //Sets the current cetei to the previous cetei
-  function getPrevCetei() {
-    setCetei(data.allCetei.nodes[counter--].parent.name);
-  }
+    function getNextImage() {};
 
-  /**
-   * Implements the scroll functionality for th transcript
-   * @param {*} page the page to be scrolled to
-   */
-  function scroll(page) {
-    scroller.scrollTo(page, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-      containerId: "journal-transcript",
-    });
-    setPid(page)
-  }
+    // Get reference to transcript container div using useRef
+    const containerRef = useRef(null);
 
-  /**
-   * Possible patterns:
-   * 1. http://localhost:8000/sc203246?/#pid=sc203683
-   * 2. http://localhost:8000/sc203246/#pid=sc203683
-   * Nothing needs to be changed for the scrolling whatsoever, both works.
-   */
-  if (hash !== "") {
-    let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
-    scroll(hashPid);
-  }
+    // Initialize state to track midpoint of container
+    const [halfHeight, setHalfHeight] = useState(0);
 
-  /**
-   * Find and get the index of the next pid relative to th @currentPid
-   * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
-   */
- console.log("Current pid:", currentPid);
+    // Initialize state to track distances between .tei-pb elements
+    const [distances, setDistances] = useState();
 
-  function getNextImage() {
-    let i = pids.indexOf(currentPid);
-    if (i < pids.length - 1) {
-       scroll(pids[i + 1]);
+    const handleResize = useCallback(() => {
+      if (containerRef.current !== null) {return;}
+
+      // Get half the height of the container
+      setHalfHeight(containerRef.current.clientHeight/2)
+
+      // Adjust pagebreak spacing, if necessary
+      spacePageBreaks(containerRef.current)
+
+      ////// Get distances between pagebreaks and top of container /////
+
+      // Get coords of first pagebreak
+      const firstPb = containerRef.current?.querySelector("#" + pids[0]);
+      const start = firstPb?.getBoundingClientRect().top;
+
+      // Get distances by looping over list of pids
+      const dists = pids.map(pid => {
+        const node = containerRef.current.querySelector("#" + pid);
+        if (!node) {console.log("Cannot find element with @id " + pid);}
+        return node ? node.getBoundingClientRect().top - start : null;
+      })
+
+      // Write distances to useState
+      setDistances(dists)
+
+    }, [pids])
+
+    useEffect(() => {
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, [halfHeight, handleResize, distances]);
+
+    console.log("halfHeight", halfHeight);
+    console.log("breaks", distances);
+
+
+    function handleWheel(e) {
+      if (! halfHeight || halfHeight === 0) {
+        handleResize();
+      }
+
+      console.log("scrolling");
+
     }
-  }
 
-  /**
-   * Find and get the index of the previous pid relative to th @currentPid
-   * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
-   */
-
-  // const [isOnWheel, setIsOnWheel] = useState(false)
-
-  function getPrevImage() {
-      let i = pids.indexOf(currentPid);
-      if (i > 0) {
-        scroll(pids[i-1]);
-      }
-  }
-
-
-  const [jump, setJump] = useState(0);
-
-  function handleKeyDown(e) {
-     if (e.key === "Enter") {
-       let val = e.target.value
-      if(val !== '' && val%1 === 0 && val <= pids.length && val >=1){
-        setJump(e.target.value-1);
-      }
-
-     }
-  }
-
-  const [visiblePid, setVisiblePid] = useState(pids[0])
-
-  useEffect(() => {
-    // console.log(jump);
-    scroll(pids[jump])
-
-  }, [jump])
-
-  // console.log("Current pid:",  currentPid)
-
-   const [scrollNumber, setScrollNumber] = useState(0);
-
-   useEffect(() => {
-     if (window !== undefined && document !== undefined) {
-        let options = {
-          root: document.getElementById("journal-transcript"),
-          rootMargin: "0px",
-          threshold: 0,
-        };
-
-       let callback = (entries, observer) => {
-         entries.forEach((entry) => {
-           if (entry.isIntersecting) {
-             let visiblePid = entry.target.getAttribute("id");
-            //  if(isOnWheel){
-               setVisiblePid(visiblePid);
-            //  }
-            //  setIsOnWheel(!isOnWheel)
-           }
+    // Create a ResizeObserver to update landmarks on container resize
+   /* useEffect(()=> {
+      const observer = new ResizeObserver(entries => {
+        const entry = entries[0] // We should only ever have one entry
+        console.log(entry);
+        // if browser supports newer API property contentBoxSize
+        if (entry?.contentBoxSize) {
+          setHalfHeight(entry.contentBoxSize[0].blockSize)
+          console.log("halfHeight: ", halfHeight);
+        }
+      });
+      observer.observe(container.current);
+      return function cleanup() {
+        observer.disconnect();
+      };
+    },[container.current]);
+    */
 
 
-         });
-       };
+ 		// /**
+ 		//  * Implements the scroll functionality for th transcript
+ 		//  * @param {*} page the page to be scrolled to
+ 		//  */
+ 		// function scroll(page) {
+ 		// 	scroller.scrollTo(page, {
+ 		// 		duration: 800,
+ 		// 		delay: 0,
+ 		// 		smooth: "easeInOutQuart",
+ 		// 		containerId: "journal-transcript",
+ 		// 	});
+ 		// 	setPid(page)
+ 		// }
+    //
+    // /////////////////////////////////////////////////////////
+ 		// /**
+ 		//  * Possible patterns:
+ 		//  * 1. http://localhost:8000/sc203246?/#pid=sc203683
+ 		//  * 2. http://localhost:8000/sc203246/#pid=sc203683
+ 		//  * Nothing needs to be changed for the scrolling whatsoever, both works.
+ 		//  */
+ 		// // if (hash !== "") {
+    // //   // If current hash doesn't match current pid's place in list of pids
+    // //   if ("#" + toString(pids.indexOf(currentPid)) !== window.location.hash){
+    // //     let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
+   	// // 		scroll(hashPid);
+    // //   }
+ 		// // }
+    // ///////////////////////////////////////////////////////
+ 		// /**
+ 		//  * Find and get the index of the next pid relative to th @currentPid
+ 		//  * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
+ 		//  */
+ 		// console.log("Current pid:", currentPid);
+    //
+ 		// function getNextImage() {
+ 		// 	let i = pids.indexOf(currentPid);
+ 		// 	if (i < pids.length - 1) {
+ 		// 		scroll(pids[i + 1]);
+ 		// 	}
+ 		// }
+    //
+ 		// /**
+ 		//  * Find and get the index of the previous pid relative to th @currentPid
+ 		//  * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
+ 		//  */
+    //
+ 		// // const [isOnWheel, setIsOnWheel] = useState(false)
+    //
+ 		// function getPrevImage() {
+ 		// 	let i = pids.indexOf(currentPid);
+ 		// 	if (i > 0) {
+ 		// 		scroll(pids[i - 1]);
+ 		// 	}
+ 		// }
+    //
+    //
+ 		// const [jump, setJump] = useState(0);
 
-       pids.forEach((pid) => {
-         let target = document.getElementById(pid);
-         const observer = new IntersectionObserver((entries) => {
-           callback(entries, observer);
-         }, options);
-         observer.observe(target);
-       });
-     }
-    //  return () => {
+ 		function handleKeyDown(e) {
+ 			// if (e.key === "Enter") {
+ 			// 	let val = e.target.value
+ 			// 	if (val !== '' && val % 1 === 0 && val <= pids.length && val >= 1) {
+ 			// 		setJump(e.target.value - 1);
+ 			// 	}
+      //
+ 			// }
+ 		}
 
-    //  }
-   }, [scrollNumber]);
+ 		// const [visiblePid, setVisiblePid] = useState(pids[0])
+    //
+ 		// useEffect(() => {
+ 		// 	// console.log(jump);
+ 		// 	scroll(pids[jump])
+    //
+ 		// }, [jump])
+    //
+ 		// // console.log("Current pid:",  currentPid)
+    //
+ 		// const [scrollNumber, setScrollNumber] = useState(0);
+    //
+ 		// useEffect(() => {
+ 		// 	if (window !== undefined && document !== undefined) {
+    //
+    //     // Define options to be used by IntersectionObserver
+ 		// 		let options = {
+ 		// 			root: document.getcontainer.currentById("journal-transcript"),
+ 		// 			rootMargin: "0px",
+ 		// 			threshold: 1,
+ 		// 		};
+    //
+    //     // Define fx to be used by IntersectionObserver
+ 		// 		let callback = (entries, observer) => {
+ 		// 			entries.forEach(entry => {
+ 		// 				if (entry.isIntersecting) {
+ 		// 					let visiblePid = entry.target.getAttribute("id");
+ 		// 					//  if(isOnWheel){
+ 		// 					setVisiblePid(visiblePid);
+ 		// 					//  }
+ 		// 					//  setIsOnWheel(!isOnWheel)
+ 		// 				}
+    //
+    //
+ 		// 			});
+ 		// 		};
+    //
+ 		// 		pids.forEach(pid => {
+ 		// 			let target = document.getcontainer.currentById(pid);
+ 		// 			const observer = new IntersectionObserver(entries => {
+ 		// 				callback(entries, observer);
+ 		// 			}, options);
+ 		// 			observer.observe(target);
+ 		// 		});
+ 		// 	}
+ 		// 	//  return () => {
+    //
+ 		// 	//  }
+ 		// }, [scrollNumber]);
+    //
+ 		// function handleWheel(e) {
+ 		// 	 console.log("scrolling")
+ 		// 	//  setIsOnWheel(true);
+ 		// 	setScrollNumber(Math.random());
+ 		// 	setPid(visiblePid)
+    //
+    //   let hrs = pids.map(pid => {
+    //     return document.getcontainer.currentById(pid).getBoundingClientRect().top;
+    //   });
+    //   console.log("Pagebreak positions:", hrs.slice(0,9));
+    //
+    //
+    //   // Change URL to reflect current page
+    //   const pathname = document.location.pathname.slice(-1) === "/"
+    //     ? document.location.pathname.slice(0, -1) // remove trailing / if found
+    //     : document.location.pathname;
+    //   const newHash = "#" + (pids.indexOf(currentPid) + 1).toString();
+    //   window.history.replaceState(null, "",  pathname + newHash);
+ 		// }
 
-   function handleWheel(e) {
-    //  console.log("scrolling")
-    //  setIsOnWheel(true);
-     setScrollNumber(Math.random());
-     setPid(visiblePid)
-   }
-
-  function renderTitle(journalMetadata){
-  return (
-    <h1 className="general-text header3">
-      <span >
-        {`${journalMetadata.title}`}
-      </span>
-      <span >
-        {/* `{}` */}
-        <span >      from {` `}</span>
-        {journalMetadata.startMonth ? (
-          <span >{`${
-            months[journalMetadata.startMonth - 1].name
-          } `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startDay ? (
-          <span >{`${journalMetadata.startDay}, `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startYear ? (
-          <span >{`${journalMetadata.startYear}`}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startYear !== undefined ? <span>  to {` `}</span> : ""}
-        {journalMetadata.endMonth ? (
-          <span >{`${
-            months[journalMetadata.endMonth - 1].name
-          } `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.endDay ? (
-          <span >{`${journalMetadata.endDay}, `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.endYear ? (
-          <span >{`${journalMetadata.endYear}`}</span>
-        ) : (
-          "Unknown"
-        )}
-        {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
-      </span>
-    </h1>
-  );
-}
-
-  return (
-    <Layout>
-      <Row style={{fontSize: "15px", padding:"10px"}}>{renderTitle(getTitle(jsonPrefixed))}</Row>
-      <Row id="main-row">
-        <div id="image-tool">
-          {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-          <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
-          <InputGroup hasValidation style={{ width: "15vw" }}>
-            <Form.Control
-              required
+ 		return (
+      <Layout>
+        <Row style={{fontSize: "15px",padding:"10px"}}>
+          <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
+        </Row>
+        <Row id="main-row">
+          <div id="image-tool">
+            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+            <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
+            <InputGroup hasValidation style={{ width: "15vw" }}>
+              <Form.Control
+                required
+                size="sm"
+                type="number"
+                placeholder="jump to "
+                onKeyDown={handleKeyDown}
+              ></Form.Control>
+              <Form.Control.Feedback type="invalid">
+                Invalid type
+              </Form.Control.Feedback>
+            </InputGroup>
+            {/* <Form.Control
               size="sm"
               type="number"
               placeholder="jump to "
               onKeyDown={handleKeyDown}
-            ></Form.Control>
-            <Form.Control.Feedback type="invalid">
-              Invalid type
-            </Form.Control.Feedback>
-          </InputGroup>
-          {/* <Form.Control
-            size="sm"
-            type="number"
-            placeholder="jump to "
-            onKeyDown={handleKeyDown}
-            style={{ width: "15vw" }}
-          ></Form.Control> */}
-          {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
-          <span class="general-text">
-            Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
-          </span>
-          <div
-            id="right-arrow-icon"
-            size={28}
-            onClick={() => getNextImage()}
-          ></div>
-          {/* </IconContext.Provider> */}
-        </div>
-        <Col id="image-col">
-          <div id="journal-image">
-            <Viewer imageId={currentPid}></Viewer>
+              style={{ width: "15vw" }}
+            ></Form.Control> */}
+            {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
+            <span class="general-text">
+              Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
+            </span>
+            <div
+              id="right-arrow-icon"
+              size={28}
+              onClick={() => getNextImage()}
+            ></div>
+            {/* </IconContext.Provider> */}
           </div>
-        </Col>
+          <Col id="image-col">
+            <div id="journal-image">
+              <Viewer imageId={currentPid}></Viewer>
+            </div>
+          </Col>
 
-        <Col id="journal-col">
-          <div
-            className="general-text"
-            id="journal-transcript"
-            ref={ref}
-            onWheel={handleWheel}
-          >
-            {props.children}
-          </div>
-        </Col>
-      </Row>
-      <Row id="journal-pagination-row">
-        <Col>
-          <Button variant="outline-warning" onClick={() => getPrevCetei()}>
-            <Link
-              style={{ color: "white" }}
-              className="btn-g-link"
-              to={"/journals/" + cetei}
+          <Col id="journal-col">
+            <div
+              className="general-text"
+              id="journal-transcript"
+              ref={containerRef}
+              onWheel={handleWheel}
             >
-              Previous Journal
-            </Link>
-          </Button>
-          <Button
-            id="next-journal"
-            variant="outline-warning"
-            onClick={() => getNextCetei()}
-          >
-            <Link
-              style={{ color: "white" }}
-              className="btn-g-link"
-              to={"/journals/" + cetei}
+              {props.children}
+            </div>
+          </Col>
+        </Row>
+        <Row id="journal-pagination-row">
+          <Col>
+            <Button variant="outline-warning" onClick={() => getPrevCetei()}>
+              <Link
+                style={{ color: "white" }}
+                className="btn-g-link"
+                to={"/journals/" + cetei}
+              >
+                Previous Journal
+              </Link>
+            </Button>
+            <Button
+              id="next-journal"
+              variant="outline-warning"
+              onClick={() => getNextCetei()}
             >
-              Next Journal
-            </Link>
-          </Button>
-        </Col>
-      </Row>
-    </Layout>
+              <Link
+                style={{ color: "white" }}
+                className="btn-g-link"
+                to={"/journals/" + cetei}
+              >
+                Next Journal
+              </Link>
+            </Button>
+          </Col>
+        </Row>
+      </Layout>
   );
-};;
+};
 
 export default Volume;
