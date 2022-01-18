@@ -119,9 +119,7 @@ export const Pb = (props) => {
     <Behavior node={props.teiNode}>
       <hr
         className="page-line tei-pb"
-        id={props.teiNode.attributes.getNamedItem("facs").value}
-        style={{ height: 4}}
-        // ref={ref}
+        id={"page" + props.teiNode.attributes.getNamedItem("n").value}
       />
     </Behavior>
   );

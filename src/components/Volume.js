@@ -64,6 +64,13 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			hash
  		} = props;
 
+    // Redirect from /[pid] to /journals/[pid]
+    useEffect(() => {
+      if (document && ! document.location.pathname.includes("journal")) {
+        document.location.replace("/journals" + document.location.pathname);
+      }
+    }, [])
+
  		let jsonPrefixed;
  		parseString(pageContext.prefixed, function(err, result) {
  			jsonPrefixed = result;
@@ -176,8 +183,14 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
         setPid(pids[pageNum])
       }
 
-    }
+    };
 
+    // useEffect to handle updating hash
+    useEffect(() => {
+      console.log("In updateHash useEffect");
+      const pageNum = String(pids.indexOf(currentPid)+1).padStart(3, "0");
+      window.location.replace("#page" + pageNum);
+    }, [currentPid])
 
  		// /**
  		//  * Implements the scroll functionality for th transcript
