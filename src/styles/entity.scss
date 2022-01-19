@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+#person-main-row .card-body{
+  height: auto;
+}
+
+div#person-main-row div a {
+  color: var(--bs-info);
+  text-decoration-color: var(--bs-info);
+}
 
 #person-col-right{
   flex-grow: 3;
@@ -22,9 +30,6 @@
   height:auto;
 }
 
-#person-main-row .card-body{
-  height: auto;
-}
 
 #bio-row > .card > .card-body, #relations-row > .card > .card-body {
   padding: 1rem !important;
@@ -34,15 +39,18 @@
   display: flex;
 }
 
-table, table *{
-  color: revert;
-}
-
 table#relations-table {
   border-color: var(--bs-secondary);
 }
 
-table#relations-table, table#relations-table *{
+// table#relations-table tr td:first-of-type {
+//   border-left-width: 1px;
+// }
+// table#relations-table tr td:last-of-type {
+//   border-right-width: 1px;
+// }
+
+table#relations-table *{
   color: var(--bs-secondary);
 }
 
@@ -51,7 +59,7 @@ table#relations-table, table#relations-table *{
 }
 
 table#relations-table td {
-  text-align: left !important;
+  text-align: left;
 }
 
 td.name-col{
