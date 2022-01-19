@@ -67,7 +67,7 @@ const RelationCardDeck = ({ relationDeck }) => {
       <tr>
         <td className="rel-col">{type}</td>
         <td className="name-col">
-            <Link className="g-link" to={"/entities/" + arkId}>{name}</Link>
+            <Link className="g-link" to={"/people/" + arkId}>{name}</Link>
         </td>
         <td className="note-col">{note}</td>
       </tr>

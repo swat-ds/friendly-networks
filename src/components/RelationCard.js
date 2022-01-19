@@ -28,7 +28,7 @@ const RelationCard = ({relation, index, size }) => {
         content = relation.content ? relation.content : content;
     }
     return (
-      <Link className="g-link" to={"/entities/" + arkId}>
+      <Link className="g-link" to={"/people/" + arkId}>
         <div className="card relative-card">
           <div className="card-body">
             <h5 className="card-title" style={{ textDecoration: "none" }}>

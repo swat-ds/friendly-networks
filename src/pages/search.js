@@ -140,7 +140,7 @@ const search = ({ location, data }) => {
     return (
       <Row>
         <Col>
-          <Link to={"/entities/" + result.item.arkId}>
+          <Link to={"/people/" + result.item.arkId}>
             <Card id="result-card" border="success">
               <Card.Header>Journal Results</Card.Header>
               <Card.Body>
