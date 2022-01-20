@@ -18,7 +18,6 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-teiheader": El.TeiHeader,
     //"tei-ab"
     "tei-add": El.Add,
-    "tei-body": El.Body,
     "tei-cell": El.TableCell,
     "tei-closer": El.Block,
     //"tei-damage"
@@ -53,6 +52,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     //"tei-space"
     "tei-supplied": El.Supplied,
     "tei-table": El.Table,
+    "tei-text": El.Text,
     "tei-title": El.Title, //titlePart?
   };
 

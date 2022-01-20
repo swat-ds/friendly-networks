@@ -197,14 +197,6 @@ export const Said = (props) => {
   );
 };
 
-export const Body = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <main>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</main>
-    </Behavior>
-  );
-};
-
 export const Block = (props) => {
   return (
     <Behavior node={props.teiNode}>
@@ -309,7 +301,7 @@ export const Item = (props) => {
 export const FloatingText = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <text>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</text>
+      <floatingText>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</floatingText>
     </Behavior>
   );
 };
@@ -434,6 +426,14 @@ export const TableCell = (props) => {
       <td>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </td>
+    </Behavior>
+  );
+};
+
+export const Text = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+    <main>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</main>
     </Behavior>
   );
 };

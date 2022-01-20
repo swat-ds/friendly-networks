@@ -58,7 +58,9 @@ function spacePageBreaks(node) {
   //----------- Handle space btwn last pb & bottom of container -----------//
   // Get DOM nodes
   const last = breakNodes[breakNodes.length-1];
-  const main = node.querySelector("main");
+  const mainList = node.querySelectorAll("main");
+  // (^ Handles multiple <tei-text> elements in one doc)
+  const main = mainList[mainList.length-1];
 
   // Strip existing inline styling from main (to properly assess distance)
   if (main.hasAttribute("style")) {
@@ -68,6 +70,8 @@ function spacePageBreaks(node) {
   const lastBottom = last.getBoundingClientRect().bottom;
   const mainBottom = main.getBoundingClientRect().bottom;
   dist = mainBottom - lastBottom;
+
+  console.log(dist, "dist", halfHeight, "halfHeight");
 
   // Ensure distance >= halfHeight by adjusting main's bottom padding
   if (dist < halfHeight) {
