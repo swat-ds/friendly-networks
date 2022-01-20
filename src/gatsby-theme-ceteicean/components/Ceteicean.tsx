@@ -13,32 +13,11 @@ import "../../styles/styles.scss";
 const ShadowedCeteicean = ({pageContext, data, location}) => {
 
   let hash = location.hash;
-  const [facs, setFacs] = useState([])
-  const [hasFacsChange, setHasFacsChange] = useState(false);
 
-   useEffect(() => {
-     if (window !== undefined && document !== undefined) {
-       let elements = document.getElementsByTagName("tei-pb");
-       let facsimiles = [];
-       for (let i = 0; i < elements.length; i++) {
-         let element = elements[i];
-         if (element.attributes.getNamedItem("facs").value !== null) {
-           facsimiles.push(element.attributes.getNamedItem("facs").value);
-         }
-       }
-       console.log(facsimiles);
-       setFacs(facsimiles);
-     }
-   }, [hasFacsChange]);
-
-    console.log(facs)
-
-
-    const routes = {
+  const routes = {
     "tei-teiheader": El.TeiHeader,
     //"tei-ab"
     "tei-add": El.Add,
-    "tei-body": El.Body,
     "tei-cell": El.TableCell,
     "tei-closer": El.Block,
     //"tei-damage"
@@ -73,10 +52,12 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     //"tei-space"
     "tei-supplied": El.Supplied,
     "tei-table": El.Table,
+    "tei-text": El.Text,
     "tei-title": El.Title, //titlePart?
   };
+
   return (
-    <Volume pageContext={pageContext} facs={facs} data={data} hash={hash}>
+    <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
     </Volume>
   );

@@ -1,139 +1,80 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
-// import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
-import { months } from "../globalVariables";
 
-import { scroller } from "react-scroll";
 
 const parseString = require("xml2js").parseString;
 
 function getTitle(journal){
-
-let header = journal["tei-TEI"]["tei-teiHeader"][0] || undefined;
-
-if(header && "tei-fileDesc" in header){
-
-  let title =
-    header["tei-fileDesc"][0]["tei-titleStmt"][0][
-      "tei-title"
-    ][0]._.split(":")[0].split(",")[0] || "John Hunt Journal";
-
-  // let date =
-  //   header["tei-teiHeader"]["tei-profileDesc"][0]["tei-creation"][0][
-  //     "tei-date"
-  //   ][0]._.split("-") || "";
-
-  let detailedDateStr =
-    header["tei-fileDesc"][0]["tei-titleStmt"][0][
-      "tei-title"
-    ][0]._.split(":")[0].split(",")[1];
-
-  let detailedDate = detailedDateStr.split("-");
-  let beginningDate = detailedDate[0].trim().split(/\s+/);
-
-  let endingDate =
-    detailedDate.length > 1 ? detailedDate[1].trim().split(/\s+/) : "";
-
-  let beginningYear = beginningDate[0] !== undefined ? beginningDate[0] : "";
-
-  let beginningMonth = beginningDate[1] !== undefined ? beginningDate[1] : "";
-  beginningMonth =
-    beginningMonth !== undefined ? parseInt(beginningMonth.slice(0, -3)) : "";
-
-  let beginningDay = beginningDate[2] !== undefined ? beginningDate[2] : "";
-
-  let endingYear = endingDate[0] !== undefined ? endingDate[0] : "";
-  let endingMonth = endingDate[1] !== undefined ? endingDate[1] : "";
-  endingMonth = endingMonth !== undefined ? endingMonth.slice(0, -3) : "";
-  let endingDay = endingDate[2] !== undefined ? endingDate[2] : "";
-
-  return {
-    title: title,
-    startMonth: beginningMonth,
-    startDay: beginningDay,
-    startYear: beginningYear,
-
-    endMonth: endingMonth,
-    endDay: endingDay,
-    endYear: endingYear,
-    detailedDateStr: detailedDateStr,
-  };
-
-}
-  return null;
-
+  return (
+    journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+      ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
+    );
 }
 
-function getDivBreaks(divList) {
-  let divBreaks = [];
-  divList.forEach((div) => {
-    if ("tei-pb" in div) {
-      div["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
-    }
-
-    // Check each para in the div for <pb>; add facs to divBreaks if found
-    if ("tei-p" in div) {
-      let paraList = div["tei-p"];
-      paraList.forEach((para) => {
-        if ("tei-pb" in para){
-          para["tei-pb"].forEach((pb) => divBreaks.push(pb.$.facs));
-        }
-      });
-    }
-  });
-  return divBreaks;
+function getAllFacs(xmlString) {
+  const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
+  // ex: <tei-pb n="1" facs="(sc123)">
+  const matches = xmlString.matchAll(rgx);
+  const facses = Array.from(matches, m => m[1]) // Get array of capture grps
+  return facses;
 }
 
-function getALlPageBreaks(jsonPrefixed) {
-  let pageBreakIDs = [];
-  if ("tei-front" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let front = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-front"][0];
-    if ("tei-pb" in front) {
-      front["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
-    if ("tei-div" in front) {
-      pageBreakIDs.push(...getDivBreaks(front["tei-div"]));
-    }
+
+// TODO: Add documentation explaining why this exists
+// Also, explain that it targets <hr> elements or single-line spans
+function spacePageBreaks(node) {
+  // Get an array of all descendant .pb nodes
+  const breakNodes = Array.from(node.querySelectorAll(".tei-pb"));
+
+  // Get half of node's height
+  const halfHeight = node.clientHeight/2;
+
+  //---------------- Handle space btwn 1st and 2nd pb ----------------//
+  // Get DOM nodes
+  const [one, two] = [ breakNodes[0], breakNodes[1] ];
+
+  // Strip existing inline styling from 2nd pb (to properly assess distance)
+  if (two.hasAttribute("style")) {
+    two.removeAttribute("style");
+  }
+  // Get node positions
+  const [pos1, pos2] = [one, two].map(x => x.getBoundingClientRect().top);
+
+  // Check distance between 1st and 2nd pb
+  var dist = pos2 - pos1;
+
+  // Ensure distance >= halfHeight by adjusting 2nd pb's top margin if needed
+  if (dist < halfHeight) {
+    two.setAttribute("style", `margin-top: ${halfHeight*1.2-dist}px;`)
   }
 
-  //Get the ones that are body's children
-  if ("tei-body" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let body = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-body"][0];
-    //   for (const pid of jsonPrefixed.TEI?.text[0]?.body[0]?.pb) {
-    //     pageBreakIDs.push(pid.$.facs);
-    //   }
-    if ("tei-pb" in body) {
-      body["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
+  //----------- Handle space btwn last pb & bottom of container -----------//
+  // Get DOM nodes
+  const last = breakNodes[breakNodes.length-1];
+  const mainList = node.querySelectorAll("main");
+  // (^ Handles multiple <tei-text> elements in one doc)
+  const main = mainList[mainList.length-1];
 
-    if ("tei-div" in body) {
-      pageBreakIDs.push(...getDivBreaks(body["tei-div"]));
-    }
+  // Strip existing inline styling from main (to properly assess distance)
+  if (main.hasAttribute("style")) {
+    main.removeAttribute("style");
   }
+  // Get node positions & check distance between them
+  const lastBottom = last.getBoundingClientRect().bottom;
+  const mainBottom = main.getBoundingClientRect().bottom;
+  dist = mainBottom - lastBottom;
 
-  if ("tei-back" in jsonPrefixed["tei-TEI"]["tei-text"][0]) {
-    let back = jsonPrefixed["tei-TEI"]["tei-text"][0]["tei-back"][0];
-
-    if ("tei-pb" in back) {
-      back["tei-pb"].forEach((pb) => {
-        pageBreakIDs.push(pb?.$?.facs);
-      });
-    }
-    if ("tei-div" in back) {
-      pageBreakIDs.push(...getDivBreaks(back["tei-div"]));
-    }
+  // Ensure distance >= halfHeight by adjusting main's bottom padding
+  if (dist < halfHeight) {
+    main.setAttribute("style", `padding-bottom: ${halfHeight*1.2-dist}px;`)
   }
-  return pageBreakIDs;
-}
+};
+
 
 let counter = 0; // counter for to tract the index of each transcript (cetei)
 
@@ -143,296 +84,246 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  * @returns a component, containing the OpenSeaDragon and transcript, for each journal
  */
 
-const Volume = (props) => {
-  const { pageContext, data, hash } = props;
-  let pids = [];
-  let pageBreakIDs = [];
+ const Volume = (props) => {
+ 		const {
+ 			pageContext,
+ 			facs,
+ 			data,
+ 			hash
+ 		} = props;
 
-  let jsonPrefixed;
-  parseString(pageContext.prefixed, function (err, result) {
-    jsonPrefixed = result;
-  });
-
-  pageBreakIDs = getALlPageBreaks(jsonPrefixed);
-
-  pids = pageBreakIDs;
-
-  // counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
-  const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
-  const ref = useRef();
-
-  /**
-   * Handle the change when a new value is entered on the input
-   * @param {*} e the event
-   */
-
-  //State to set pid (constellation id)
-  const [currentPid, setPid] = useState(pids[0]);
-
-  //Sets the current cetei with the next cetei
-  function getNextCetei() {
-    counter += 1;
-    setCetei(data.allCetei.nodes[counter].parent.name);
-    console.log(counter);
-    // console.log(data.allCetei.nodes[counter].parent.name);
-  }
-
-  //Sets the current cetei to the previous cetei
-  function getPrevCetei() {
-    setCetei(data.allCetei.nodes[counter--].parent.name);
-  }
-
-  /**
-   * Implements the scroll functionality for th transcript
-   * @param {*} page the page to be scrolled to
-   */
-  function scroll(page) {
-    scroller.scrollTo(page, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-      containerId: "journal-transcript",
-    });
-    setPid(page)
-  }
-
-  /**
-   * Possible patterns:
-   * 1. http://localhost:8000/sc203246?/#pid=sc203683
-   * 2. http://localhost:8000/sc203246/#pid=sc203683
-   * Nothing needs to be changed for the scrolling whatsoever, both works.
-   */
-  if (hash !== "") {
-    let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
-    scroll(hashPid);
-  }
-
-  /**
-   * Find and get the index of the next pid relative to th @currentPid
-   * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
-   */
- console.log("Current pid:", currentPid);
-
-  function getNextImage() {
-    let i = pids.indexOf(currentPid);
-    if (i < pids.length - 1) {
-       scroll(pids[i + 1]);
-    }
-  }
-
-  /**
-   * Find and get the index of the previous pid relative to th @currentPid
-   * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
-   */
-
-  // const [isOnWheel, setIsOnWheel] = useState(false)
-
-  function getPrevImage() {
-      let i = pids.indexOf(currentPid);
-      if (i > 0) {
-        scroll(pids[i-1]);
+    // Redirect from /[pid] to /journals/[pid]
+    useEffect(() => {
+      if (document && ! document.location.pathname.includes("journal")) {
+        document.location.replace("/journals" + document.location.pathname);
       }
-  }
+    }, [])
+
+ 		let jsonPrefixed;
+ 		parseString(pageContext.prefixed, function(err, result) {
+ 			jsonPrefixed = result;
+ 		});
+
+    const prefixed = pageContext.prefixed;
+    const pids = getAllFacs(prefixed)
+
+ 		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
+ 		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
+
+ 		//State to set pid (constellation id)
+ 		const [currentPid, setPid] = useState(pids[0]);
+
+ 		//Sets the current cetei with the next cetei
+ 		function getNextCetei() {
+ 			counter += 1;
+ 			setCetei(data.allCetei.nodes[counter].parent.name);
+ 			console.log(counter);
+ 		}
+
+ 		//Sets the current cetei to the previous cetei
+ 		function getPrevCetei() {
+ 			setCetei(data.allCetei.nodes[counter--].parent.name);
+ 		}
 
 
-  const [jump, setJump] = useState(0);
+    // Get reference to transcript container div using useRef
+    const containerRef = useRef(null);
 
-  function handleKeyDown(e) {
-     if (e.key === "Enter") {
-       let val = e.target.value
-      if(val !== '' && val%1 === 0 && val <= pids.length && val >=1){
-        setJump(e.target.value-1);
+    // Initialize state to track midpoint of container
+    const [halfHeight, setHalfHeight] = useState(0);
+
+    // Initialize state to track distances between .tei-pb elements
+    const [distances, setDistances] = useState([0]);
+
+    // Scroll transcript to next pagebreak
+    function getPrevImage() {
+      const currentIndex = pids.indexOf(currentPid);
+      if (currentIndex >= 1) {
+        containerRef.current.scroll(0, distances[currentIndex-1]);
+        // setPid(pids[currentIndex-1]);
+      }
+    };
+
+    // Scroll transcript to next pagebreak
+    function getNextImage() {
+      const currentIndex = pids.indexOf(currentPid);
+      if (currentIndex <= pids.length - 1) {
+        containerRef.current.scroll(0, distances[currentIndex+1]);
+        // setPid(pids[currentIndex+1]);
       }
 
-     }
-  }
+    };
 
-  const [visiblePid, setVisiblePid] = useState(pids[0])
+    const handleResize = useCallback(() => {
+      console.log("In handle resize");
 
-  useEffect(() => {
-    // console.log(jump);
-    scroll(pids[jump])
+      // Don't do anything if the ref's DOM node hasn't loaded yet
+      if (containerRef.current === null) {
+        return;
+      }
 
-  }, [jump])
+      // Get half the height of the container
+      setHalfHeight(containerRef.current.clientHeight/2);
 
-  // console.log("Current pid:",  currentPid)
-
-   const [scrollNumber, setScrollNumber] = useState(0);
-
-   useEffect(() => {
-     if (window !== undefined && document !== undefined) {
-        let options = {
-          root: document.getElementById("journal-transcript"),
-          rootMargin: "0px",
-          threshold: 0,
-        };
-
-       let callback = (entries, observer) => {
-         entries.forEach((entry) => {
-           if (entry.isIntersecting) {
-             let visiblePid = entry.target.getAttribute("id");
-            //  if(isOnWheel){
-               setVisiblePid(visiblePid);
-            //  }
-            //  setIsOnWheel(!isOnWheel)
-           }
+      // Adjust pagebreak spacing, if necessary
+      if (pids.length > 1){
+        spacePageBreaks(containerRef.current);
+      }
 
 
-         });
-       };
+      ////// Get distances between pagebreaks and top of container //////
+      ////// ===================================================== //////
 
-       pids.forEach((pid) => {
-         let target = document.getElementById(pid);
-         const observer = new IntersectionObserver((entries) => {
-           callback(entries, observer);
-         }, options);
-         observer.observe(target);
-       });
-     }
-    //  return () => {
+      // Get coords of first pagebreak
+      const firstPbSelector = "[data-facs=\"" + pids[0] + "\"]";
+      const firstPb = containerRef.current?.querySelector(firstPbSelector);
+      const start = firstPb?.getBoundingClientRect().top;
 
-    //  }
-   }, [scrollNumber]);
+      // Get distances by looping over list of pids
+      const dists = pids.map(pid => {
+        const selector = "[data-facs=\"" + pid + "\"]";
+        const node = containerRef.current.querySelector(selector);
+        if (!node) {
+          console.log("Cannot find element with @data-facs " + pid);
+        }
+        return node ? node.getBoundingClientRect().top - start : null;
+      })
+      // Write distances to useState
+      setDistances(dists)
 
-   function handleWheel(e) {
-    //  console.log("scrolling")
-    //  setIsOnWheel(true);
-     setScrollNumber(Math.random());
-     setPid(visiblePid)
-   }
+    }, [pids])
 
-  function renderTitle(journalMetadata){
-  return (
-    <h1 className="general-text header3">
-      <span >
-        {`${journalMetadata.title}`}
-      </span>
-      <span >
-        {/* `{}` */}
-        <span >      from {` `}</span>
-        {journalMetadata.startMonth ? (
-          <span >{`${
-            months[journalMetadata.startMonth - 1].name
-          } `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startDay ? (
-          <span >{`${journalMetadata.startDay}, `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startYear ? (
-          <span >{`${journalMetadata.startYear}`}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.startYear !== undefined ? <span>  to {` `}</span> : ""}
-        {journalMetadata.endMonth ? (
-          <span >{`${
-            months[journalMetadata.endMonth - 1].name
-          } `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.endDay ? (
-          <span >{`${journalMetadata.endDay}, `}</span>
-        ) : (
-          ""
-        )}
-        {journalMetadata.endYear ? (
-          <span >{`${journalMetadata.endYear}`}</span>
-        ) : (
-          "Unknown"
-        )}
-        {/* {`${beginningMonth} ${beginningDay}, ${beginningYear} to ${endingMonth} ${endingDay}, ${endingYear}`} */}
-      </span>
-    </h1>
-  );
-}
+    // Add resize event listener to window if there's more than 1 page
+    useEffect(() => {
+      if (pids.length > 1) {
 
-  return (
-    <Layout>
-      <Row style={{fontSize: "15px", padding:"10px"}}>{renderTitle(getTitle(jsonPrefixed))}</Row>
-      <Row id="main-row">
-        <div id="image-tool">
-          {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-          <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
-          <InputGroup hasValidation style={{ width: "15vw" }}>
-            <Form.Control
-              required
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }
+    }, [halfHeight, handleResize, distances, pids.length]);
+
+    // Run handleResize once on startup
+    useEffect(() => {
+      handleResize();
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+
+    function handleScroll(e) {
+      // No point tracking page number if there's only 1 pg
+      if (pids.length < 2) {return;}
+
+      // Find the line dividing content above vs below scrollbox midpoint
+      const scrollTop = e.currentTarget.scrollTop;
+      const divider = scrollTop + halfHeight;
+
+      // Check how many pagebreaks are above divider
+      const pageNum = distances.filter(pos => pos <= divider).length - 1;
+
+      // Set currentPid useEffect, if not already at appropriate value
+      if (pids[pageNum] !== currentPid) {
+        setPid(pids[pageNum])
+      }
+
+    };
+
+    /**
+     * Handle the change when a new value is entered on the input
+     * @param {*} e the event
+     */
+ 		function handleKeyDown(e) {
+ 			if (e.key === "Enter") {
+ 				let val = e.target.value
+ 				if (val !== '' && val % 1 === 0 && val <= pids.length && val >= 1) {
+ 					containerRef.current.scroll(0, distances[val-1])
+ 				}
+
+ 			}
+ 		}
+
+ 		return (
+      <Layout>
+        <Row style={{fontSize: "15px",padding:"10px"}}>
+          <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
+        </Row>
+        <Row id="main-row">
+          <div id="image-tool">
+            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+            <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
+            <InputGroup hasValidation style={{ width: "15vw" }}>
+              <Form.Control
+                required
+                size="sm"
+                type="number"
+                placeholder="jump to "
+                onKeyDown={handleKeyDown}
+              ></Form.Control>
+              <Form.Control.Feedback type="invalid">
+                Invalid type
+              </Form.Control.Feedback>
+            </InputGroup>
+            {/* <Form.Control
               size="sm"
               type="number"
               placeholder="jump to "
               onKeyDown={handleKeyDown}
-            ></Form.Control>
-            <Form.Control.Feedback type="invalid">
-              Invalid type
-            </Form.Control.Feedback>
-          </InputGroup>
-          {/* <Form.Control
-            size="sm"
-            type="number"
-            placeholder="jump to "
-            onKeyDown={handleKeyDown}
-            style={{ width: "15vw" }}
-          ></Form.Control> */}
-          {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
-          <span class="general-text">
-            Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
-          </span>
-          <div
-            id="right-arrow-icon"
-            size={28}
-            onClick={() => getNextImage()}
-          ></div>
-          {/* </IconContext.Provider> */}
-        </div>
-        <Col id="image-col">
-          <div id="journal-image">
-            <Viewer imageId={currentPid}></Viewer>
+              style={{ width: "15vw" }}
+            ></Form.Control> */}
+            {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
+            <span class="general-text">
+              Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
+            </span>
+            <div
+              id="right-arrow-icon"
+              size={28}
+              onClick={() => getNextImage()}
+            />
+            {/* </IconContext.Provider> */}
           </div>
-        </Col>
+          <Col id="image-col">
+            <div id="journal-image">
+              <Viewer imageId={currentPid}></Viewer>
+            </div>
+          </Col>
 
-        <Col id="journal-col">
-          <div
-            className="general-text"
-            id="journal-transcript"
-            ref={ref}
-            onWheel={handleWheel}
-          >
-            {props.children}
-          </div>
-        </Col>
-      </Row>
-      <Row id="journal-pagination-row">
-        <Col>
-          <Button variant="outline-warning" onClick={() => getPrevCetei()}>
-            <Link
-              style={{ color: "white" }}
-              className="btn-g-link"
-              to={"/journals/" + cetei}
+          <Col id="journal-col">
+            <div
+              className="general-text"
+              id="journal-transcript"
+              ref={containerRef}
+              onScroll={handleScroll}
             >
-              Previous Journal
-            </Link>
-          </Button>
-          <Button
-            id="next-journal"
-            variant="outline-warning"
-            onClick={() => getNextCetei()}
-          >
-            <Link
-              style={{ color: "white" }}
-              className="btn-g-link"
-              to={"/journals/" + cetei}
+              {props.children}
+            </div>
+          </Col>
+        </Row>
+        <Row id="journal-pagination-row">
+          <Col>
+            <Button variant="outline-warning" onClick={() => getPrevCetei()}>
+              <Link
+                style={{ color: "white" }}
+                className="btn-g-link"
+                to={"/journals/" + cetei}
+              >
+                Previous Journal
+              </Link>
+            </Button>
+            <Button
+              id="next-journal"
+              variant="outline-warning"
+              onClick={() => getNextCetei()}
             >
-              Next Journal
-            </Link>
-          </Button>
-        </Col>
-      </Row>
-    </Layout>
+              <Link
+                style={{ color: "white" }}
+                className="btn-g-link"
+                to={"/journals/" + cetei}
+              >
+                Next Journal
+              </Link>
+            </Button>
+          </Col>
+        </Row>
+      </Layout>
   );
-};;
+};
 
 export default Volume;

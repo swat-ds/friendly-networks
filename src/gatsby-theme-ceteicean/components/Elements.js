@@ -119,9 +119,8 @@ export const Pb = (props) => {
     <Behavior node={props.teiNode}>
       <hr
         className="page-line tei-pb"
-        id={props.teiNode.attributes.getNamedItem("facs").value}
-        style={{ height: 4}}
-        // ref={ref}
+        id={"page" + props.teiNode.attributes.getNamedItem("n").value}
+        data-facs={props.teiNode.attributes.getNamedItem("facs").value}
       />
     </Behavior>
   );
@@ -194,14 +193,6 @@ export const Said = (props) => {
   return (
     <Behavior node={props.teiNode}>
       <q>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</q>
-    </Behavior>
-  );
-};
-
-export const Body = (props) => {
-  return (
-    <Behavior node={props.teiNode}>
-      <main>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</main>
     </Behavior>
   );
 };
@@ -310,7 +301,7 @@ export const Item = (props) => {
 export const FloatingText = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <text>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</text>
+      <floatingText>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</floatingText>
     </Behavior>
   );
 };
@@ -435,6 +426,14 @@ export const TableCell = (props) => {
       <td>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </td>
+    </Behavior>
+  );
+};
+
+export const Text = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+    <main>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</main>
     </Behavior>
   );
 };
