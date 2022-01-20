@@ -30,7 +30,7 @@ const EntityCard = (props) => {
   }
 
   return (
-    <Link className="g-link" to={"/entities/" + entity.arkId}>
+    <Link className="g-link" to={"/people/" + entity.arkId}>
       <div className="card entity-card">
         <div className="card-body">
           <h5 className="card-title">

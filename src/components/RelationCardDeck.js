@@ -42,6 +42,7 @@ const RelationCardDeck = ({ relationDeck }) => {
     "parentOf": "Parent of",
     "relativeOf": "Relative of",
     "siblingOf": "Sibling of",
+    "sibling of": "Sibling of",
     "sibling-in-law of": "Sibling-in-law of",
     "spouseOf": "Spouse of",
   }
@@ -67,7 +68,7 @@ const RelationCardDeck = ({ relationDeck }) => {
       <tr>
         <td className="rel-col">{type}</td>
         <td className="name-col">
-            <Link className="g-link" to={"/entities/" + arkId}>{name}</Link>
+            <Link className="g-link" to={"/people/" + arkId}>{name}</Link>
         </td>
         <td className="note-col">{note}</td>
       </tr>
@@ -76,7 +77,7 @@ const RelationCardDeck = ({ relationDeck }) => {
 
 
   return (
-        <Table striped bordered id="relations-table">
+        <Table striped id="relations-table">
           <thead>
             <tr>
               <th scope="col" className="rel-col table-header">
