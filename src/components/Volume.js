@@ -23,7 +23,6 @@ function getAllFacs(xmlString) {
   // ex: <tei-pb n="1" facs="(sc123)">
   const matches = xmlString.matchAll(rgx);
   const facses = Array.from(matches, m => m[1]) // Get array of capture grps
-  // console.log("faces", facses);
   return facses;
 }
 
@@ -35,13 +34,13 @@ function spaceBreakPair([breakNode1, breakNode2]){
 // Also, explain that it targets <hr> elements or single-line spans
 function spacePageBreaks(node) { // TODO: Finish
   // Get an array of all descendant .pb nodes
-  const breakNodes = Array.from(node.querySelectorAll(".tei-pb"))
+  const breakNodes = Array.from(node.querySelectorAll(".tei-pb"));
 
   // Case if there is 1 page
-  if (breakNodes.length === 0) {return}
+  if (breakNodes.length === 0) {return;}
 
   // If there are at least 2 pages
-  spaceBreakPair(breakNodes[0], breakNodes[1])
+  spaceBreakPair(breakNodes[0], breakNodes[1]);
 
   // Case if there are 3 or more pages
 
@@ -81,11 +80,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
  		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
  		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
-
- 		/**
- 		 * Handle the change when a new value is entered on the input
- 		 * @param {*} e the event
- 		 */
 
  		//State to set pid (constellation id)
  		const [currentPid, setPid] = useState(pids[0]);
@@ -132,13 +126,17 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       ////// Get distances between pagebreaks and top of container /////
 
       // Get coords of first pagebreak
-      const firstPb = containerRef.current?.querySelector("#" + pids[0]);
+      const firstPbSelector = "[data-facs=\"" + pids[0] + "\"]";
+      const firstPb = containerRef.current?.querySelector(firstPbSelector);
       const start = firstPb?.getBoundingClientRect().top;
 
       // Get distances by looping over list of pids
       const dists = pids.map(pid => {
-        const node = containerRef.current.querySelector("#" + pid);
-        if (!node) {console.log("Cannot find element with @id " + pid);}
+        const selector = "[data-facs=\"" + pid + "\"]";
+        const node = containerRef.current.querySelector(selector);
+        if (!node) {
+          console.log("Cannot find element with @data-facs " + pid);
+        }
         return node ? node.getBoundingClientRect().top - start : null;
       })
 
@@ -167,7 +165,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
         return;
       }
 
-      // No point checking scroll to see what page we're on if there's only 1 pg
+      // No point tracking page number if there's only 1 pg
       if (pids.length < 2) {return;}
 
       // Find the line dividing content above vs below scrollbox midpoint
@@ -179,12 +177,12 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
       // Set currentPid useEffect, if not already at appropriate value
       if (pids[pageNum] !== currentPid) {
-
         setPid(pids[pageNum])
       }
 
     };
 
+    /*
     // useEffect to handle updating hash
     useEffect(() => {
       console.log("In updateHash useEffect");
@@ -251,6 +249,10 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     //
  		// const [jump, setJump] = useState(0);
 
+    /**
+     * Handle the change when a new value is entered on the input
+     * @param {*} e the event
+     */
  		function handleKeyDown(e) {
  			// if (e.key === "Enter") {
  			// 	let val = e.target.value

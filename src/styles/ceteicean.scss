@@ -3,10 +3,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.page-line {
+.tei-pb.page-line {
+  height: 4;
   border: 0;
   height: 5px;
   color: #505A34;
+  opacity: 0.75;
   // background-image: linear-gradient(to right, #505A34, #333, #505A34);
   border-radius: 3px;
 }
