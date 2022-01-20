@@ -1,7 +1,3 @@
-
-
-
-
 #image-journal-row{
     height: 90vh;
     display: flex;
@@ -112,6 +108,7 @@
   border-top: 0.5px solid #505A34;
   border-bottom: 0.5px solid #505A34;
   color: hsl(0, 7%, 83%);
+  scroll-behavior: smooth;
 }
 
 #journal-pagination-row{

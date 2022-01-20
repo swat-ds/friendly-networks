@@ -97,9 +97,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			setCetei(data.allCetei.nodes[counter--].parent.name);
  		}
 
-    function getPrevImage() {};
-
-    function getNextImage() {};
 
     // Get reference to transcript container div using useRef
     const containerRef = useRef(null);
@@ -110,6 +107,25 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     // Initialize state to track distances between .tei-pb elements
     const [distances, setDistances] = useState([0]);
 
+    // Scroll transcript to next pagebreak
+    function getPrevImage() {
+      const currentIndex = pids.indexOf(currentPid);
+      if (currentIndex >= 1) {
+        containerRef.current.scroll(0, distances[currentIndex-1]);
+        // setPid(pids[currentIndex-1]);
+      }
+    };
+
+    // Scroll transcript to next pagebreak
+    function getNextImage() {
+      const currentIndex = pids.indexOf(currentPid);
+      if (currentIndex <= pids.length - 1) {
+        containerRef.current.scroll(0, distances[currentIndex+1]);
+        // setPid(pids[currentIndex+1]);
+      }
+
+    };
+
     const handleResize = useCallback(() => {
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
@@ -118,16 +134,21 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       }
 
       // Get half the height of the container
-      setHalfHeight(containerRef.current.clientHeight/2)
+      setHalfHeight(containerRef.current.clientHeight/2);
 
       // Adjust pagebreak spacing, if necessary
-      spacePageBreaks(containerRef.current)
+      spacePageBreaks(containerRef.current);
 
-      ////// Get distances between pagebreaks and top of container /////
+
+      ////// Get distances between pagebreaks and top of container //////
+      ////// ===================================================== //////
 
       // Get coords of first pagebreak
       const firstPbSelector = "[data-facs=\"" + pids[0] + "\"]";
       const firstPb = containerRef.current?.querySelector(firstPbSelector);
+
+      firstPb.setAttribute("style", "color: red;")
+
       const start = firstPb?.getBoundingClientRect().top;
 
       // Get distances by looping over list of pids
@@ -139,12 +160,12 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
         }
         return node ? node.getBoundingClientRect().top - start : null;
       })
-
       // Write distances to useState
       setDistances(dists)
 
     }, [pids])
 
+    // Add resize event listener to window
     useEffect(() => {
       console.log("In useEffect");
       // TODO: Consider running handleResize whenever we're here, depending on
@@ -182,156 +203,19 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
     };
 
-    /*
-    // useEffect to handle updating hash
-    useEffect(() => {
-      console.log("In updateHash useEffect");
-      const pageNum = String(pids.indexOf(currentPid)+1).padStart(3, "0");
-      window.location.replace("#page" + pageNum);
-    }, [currentPid])
-
- 		// /**
- 		//  * Implements the scroll functionality for th transcript
- 		//  * @param {*} page the page to be scrolled to
- 		//  */
- 		// function scroll(page) {
- 		// 	scroller.scrollTo(page, {
- 		// 		duration: 800,
- 		// 		delay: 0,
- 		// 		smooth: "easeInOutQuart",
- 		// 		containerId: "journal-transcript",
- 		// 	});
- 		// 	setPid(page)
- 		// }
-    //
-    // /////////////////////////////////////////////////////////
- 		// /**
- 		//  * Possible patterns:
- 		//  * 1. http://localhost:8000/sc203246?/#pid=sc203683
- 		//  * 2. http://localhost:8000/sc203246/#pid=sc203683
- 		//  * Nothing needs to be changed for the scrolling whatsoever, both works.
- 		//  */
- 		// // if (hash !== "") {
-    // //   // If current hash doesn't match current pid's place in list of pids
-    // //   if ("#" + toString(pids.indexOf(currentPid)) !== window.location.hash){
-    // //     let hashPid = hash.substring(5); // => #pid=sc203683 becomes sc203683
-   	// // 		scroll(hashPid);
-    // //   }
- 		// // }
-    // ///////////////////////////////////////////////////////
- 		// /**
- 		//  * Find and get the index of the next pid relative to th @currentPid
- 		//  * Scroll to the page corresponding to this next pud and set that pid to be the @currentPid
- 		//  */
- 		// console.log("Current pid:", currentPid);
-    //
- 		// function getNextImage() {
- 		// 	let i = pids.indexOf(currentPid);
- 		// 	if (i < pids.length - 1) {
- 		// 		scroll(pids[i + 1]);
- 		// 	}
- 		// }
-    //
- 		// /**
- 		//  * Find and get the index of the previous pid relative to th @currentPid
- 		//  * Scroll to the page corresponding to this previous pud and set that pid to be the @currentPid
- 		//  */
-    //
- 		// // const [isOnWheel, setIsOnWheel] = useState(false)
-    //
- 		// function getPrevImage() {
- 		// 	let i = pids.indexOf(currentPid);
- 		// 	if (i > 0) {
- 		// 		scroll(pids[i - 1]);
- 		// 	}
- 		// }
-    //
-    //
- 		// const [jump, setJump] = useState(0);
-
     /**
      * Handle the change when a new value is entered on the input
      * @param {*} e the event
      */
  		function handleKeyDown(e) {
- 			// if (e.key === "Enter") {
- 			// 	let val = e.target.value
- 			// 	if (val !== '' && val % 1 === 0 && val <= pids.length && val >= 1) {
- 			// 		setJump(e.target.value - 1);
- 			// 	}
-      //
- 			// }
- 		}
+ 			if (e.key === "Enter") {
+ 				let val = e.target.value
+ 				if (val !== '' && val % 1 === 0 && val <= pids.length && val >= 1) {
+ 					containerRef.current.scroll(0, distances[val-1])
+ 				}
 
- 		// const [visiblePid, setVisiblePid] = useState(pids[0])
-    //
- 		// useEffect(() => {
- 		// 	// console.log(jump);
- 		// 	scroll(pids[jump])
-    //
- 		// }, [jump])
-    //
- 		// // console.log("Current pid:",  currentPid)
-    //
- 		// const [scrollNumber, setScrollNumber] = useState(0);
-    //
- 		// useEffect(() => {
- 		// 	if (window !== undefined && document !== undefined) {
-    //
-    //     // Define options to be used by IntersectionObserver
- 		// 		let options = {
- 		// 			root: document.getcontainer.currentById("journal-transcript"),
- 		// 			rootMargin: "0px",
- 		// 			threshold: 1,
- 		// 		};
-    //
-    //     // Define fx to be used by IntersectionObserver
- 		// 		let callback = (entries, observer) => {
- 		// 			entries.forEach(entry => {
- 		// 				if (entry.isIntersecting) {
- 		// 					let visiblePid = entry.target.getAttribute("id");
- 		// 					//  if(isOnWheel){
- 		// 					setVisiblePid(visiblePid);
- 		// 					//  }
- 		// 					//  setIsOnWheel(!isOnWheel)
- 		// 				}
-    //
-    //
- 		// 			});
- 		// 		};
-    //
- 		// 		pids.forEach(pid => {
- 		// 			let target = document.getcontainer.currentById(pid);
- 		// 			const observer = new IntersectionObserver(entries => {
- 		// 				callback(entries, observer);
- 		// 			}, options);
- 		// 			observer.observe(target);
- 		// 		});
- 		// 	}
- 		// 	//  return () => {
-    //
- 		// 	//  }
- 		// }, [scrollNumber]);
-    //
- 		// function handleWheel(e) {
- 		// 	 console.log("scrolling")
- 		// 	//  setIsOnWheel(true);
- 		// 	setScrollNumber(Math.random());
- 		// 	setPid(visiblePid)
-    //
-    //   let hrs = pids.map(pid => {
-    //     return document.getcontainer.currentById(pid).getBoundingClientRect().top;
-    //   });
-    //   console.log("Pagebreak positions:", hrs.slice(0,9));
-    //
-    //
-    //   // Change URL to reflect current page
-    //   const pathname = document.location.pathname.slice(-1) === "/"
-    //     ? document.location.pathname.slice(0, -1) // remove trailing / if found
-    //     : document.location.pathname;
-    //   const newHash = "#" + (pids.indexOf(currentPid) + 1).toString();
-    //   window.history.replaceState(null, "",  pathname + newHash);
- 		// }
+ 			}
+ 		}
 
  		return (
       <Layout>
