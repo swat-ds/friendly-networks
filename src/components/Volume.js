@@ -3,11 +3,9 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
-
 import Layout from "./Layout";
 import Viewer from "./Viewer";
 
-import { scroller } from "react-scroll";
 
 const parseString = require("xml2js").parseString;
 
@@ -71,8 +69,6 @@ function spacePageBreaks(node) {
   const mainBottom = main.getBoundingClientRect().bottom;
   dist = mainBottom - lastBottom;
 
-  console.log(dist, "dist", halfHeight, "halfHeight");
-
   // Ensure distance >= halfHeight by adjusting main's bottom padding
   if (dist < halfHeight) {
     main.setAttribute("style", `padding-bottom: ${halfHeight*1.2-dist}px;`)
@@ -122,7 +118,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  			counter += 1;
  			setCetei(data.allCetei.nodes[counter].parent.name);
  			console.log(counter);
- 			// console.log(data.allCetei.nodes[counter].parent.name);
  		}
 
  		//Sets the current cetei to the previous cetei
@@ -253,7 +248,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
         <Row id="main-row">
           <div id="image-tool">
             {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-            <div id="left-arrow-icon" onClick={() => getPrevImage()}></div>
+            <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
             <InputGroup hasValidation style={{ width: "15vw" }}>
               <Form.Control
                 required
@@ -281,7 +276,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
               id="right-arrow-icon"
               size={28}
               onClick={() => getNextImage()}
-            ></div>
+            />
             {/* </IconContext.Provider> */}
           </div>
           <Col id="image-col">
