@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
-// import  OpenSeadragonViewer  from "./OpenSeadragonViewer";
+
 import Layout from "./Layout";
 import Viewer from "./Viewer";
 
@@ -26,24 +26,53 @@ function getAllFacs(xmlString) {
   return facses;
 }
 
-function spaceBreakPair([breakNode1, breakNode2]){
-  // TODO: Implement
-}
 
 // TODO: Add documentation explaining why this exists
 // Also, explain that it targets <hr> elements or single-line spans
-function spacePageBreaks(node) { // TODO: Finish
+function spacePageBreaks(node) {
   // Get an array of all descendant .pb nodes
   const breakNodes = Array.from(node.querySelectorAll(".tei-pb"));
 
-  // Case if there is 1 page
-  if (breakNodes.length === 0) {return;}
+  // Get half of node's height
+  const halfHeight = node.clientHeight/2;
 
-  // If there are at least 2 pages
-  spaceBreakPair(breakNodes[0], breakNodes[1]);
+  //---------------- Handle space btwn 1st and 2nd pb ----------------//
+  // Get DOM nodes
+  const [one, two] = [ breakNodes[0], breakNodes[1] ];
 
-  // Case if there are 3 or more pages
+  // Strip existing inline styling from 2nd pb (to properly assess distance)
+  if (two.hasAttribute("style")) {
+    two.removeAttribute("style");
+  }
+  // Get node positions
+  const [pos1, pos2] = [one, two].map(x => x.getBoundingClientRect().top);
 
+  // Check distance between 1st and 2nd pb
+  var dist = pos2 - pos1;
+
+  // Ensure distance >= halfHeight by adjusting 2nd pb's top margin if needed
+  if (dist < halfHeight) {
+    two.setAttribute("style", `margin-top: ${halfHeight*1.2-dist}px;`)
+  }
+
+  //----------- Handle space btwn last pb & bottom of container -----------//
+  // Get DOM nodes
+  const last = breakNodes[breakNodes.length-1];
+  const main = node.querySelector("main");
+
+  // Strip existing inline styling from main (to properly assess distance)
+  if (main.hasAttribute("style")) {
+    main.removeAttribute("style");
+  }
+  // Get node positions & check distance between them
+  const lastBottom = last.getBoundingClientRect().bottom;
+  const mainBottom = main.getBoundingClientRect().bottom;
+  dist = mainBottom - lastBottom;
+
+  // Ensure distance >= halfHeight by adjusting main's bottom padding
+  if (dist < halfHeight) {
+    main.setAttribute("style", `padding-bottom: ${halfHeight*1.2-dist}px;`)
+  }
 };
 
 
@@ -127,6 +156,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     };
 
     const handleResize = useCallback(() => {
+      console.log("In handle resize");
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
       if (containerRef.current === null) {
@@ -137,7 +167,9 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       setHalfHeight(containerRef.current.clientHeight/2);
 
       // Adjust pagebreak spacing, if necessary
-      spacePageBreaks(containerRef.current);
+      if (pids.length > 1){
+        spacePageBreaks(containerRef.current);
+      }
 
 
       ////// Get distances between pagebreaks and top of container //////
@@ -146,9 +178,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       // Get coords of first pagebreak
       const firstPbSelector = "[data-facs=\"" + pids[0] + "\"]";
       const firstPb = containerRef.current?.querySelector(firstPbSelector);
-
-      firstPb.setAttribute("style", "color: red;")
-
       const start = firstPb?.getBoundingClientRect().top;
 
       // Get distances by looping over list of pids
@@ -165,27 +194,22 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
 
     }, [pids])
 
-    // Add resize event listener to window
+    // Add resize event listener to window if there's more than 1 page
     useEffect(() => {
-      console.log("In useEffect");
-      // TODO: Consider running handleResize whenever we're here, depending on
-        // How often this useEffect is called
+      if (pids.length > 1) {
 
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, [halfHeight, handleResize, distances]);
-
-
-    function handleWheel(e) {
-      // We can't do anything if our landmarks haven't been set yet
-      if ((! halfHeight) || halfHeight === 0) {
-        // So set them
-        handleResize();
-
-        // And try again next render
-        return;
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
       }
+    }, [halfHeight, handleResize, distances, pids.length]);
 
+    // Run handleResize once on startup
+    useEffect(() => {
+      handleResize();
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+
+    function handleScroll(e) {
       // No point tracking page number if there's only 1 pg
       if (pids.length < 2) {return;}
 
@@ -267,7 +291,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
               className="general-text"
               id="journal-transcript"
               ref={containerRef}
-              onScroll={handleWheel}
+              onScroll={handleScroll}
             >
               {props.children}
             </div>
