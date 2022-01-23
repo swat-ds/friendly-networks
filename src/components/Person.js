@@ -188,14 +188,11 @@ const Person = (props) => {
   };
 
   const renderDeath = () => {
-      console.log("Date: ", dates);
       // Check if deathdate present; assign if found
       const dateString = dates
         && (dates[0]?.toType?.term || dates[0]?.fromType?.term) === "Death"
           ? dates[0].toDate || dates[0].fromDate
           : null;
-
-        console.log(dateString);
 
       const placeIndex = places?.findIndex((x) => x?.role?.term === "Death");
       const placeSpan = (placeIndex && placeIndex > -1)
@@ -225,7 +222,7 @@ const Person = (props) => {
    * Extracts the data from the @dates object
    * @returns The birth and decease death of the current entity
    */
-  // const renderDates = () => {
+  /* const renderDates = () => {
   //   // Case where we have two or more date objects
   //   if (dates.length > 1) {
   //     return (
@@ -404,7 +401,6 @@ const Person = (props) => {
    * @returns the relation from the @relations with the component of RelativeCard
    */
   const renderRelatives = () => {
-    console.log(relations.length);
     let existentRelations = [];
     for (let r of relations) {
       let arkId = r.targetArkID.split("/").pop();
@@ -412,7 +408,6 @@ const Person = (props) => {
         existentRelations.push(r);
       }
     }
-    console.log(existentRelations.length);
     if (existentRelations.length > 0) {
       return (
         <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
