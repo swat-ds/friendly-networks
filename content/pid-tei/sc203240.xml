@@ -49,7 +49,7 @@
         </p>
       </projectDesc>
       <editorialDecl>
-        <p> John Hunt was a good writer, but like most 18th century authors, his punctuation, spelling, and abbreviations were not standardized or necessarily consistent. The goal of the Hunt project was to produce a text accessible to the modern reader, retaining all the words in the order they appear, but with added punctuation and capitalization to make the document readable. Some spelling of surnames and places has been corrected in order to facilitate searching. Any other additions supplied to aid the reader are surrounded by brackets. Archaic forms and spellings of words are also retained. “How art thou feeling” remains as written, not changed to “How are you feeling.” And Hunt frequently used the abbreviation “Do.” for ditto; this has not been changed. The word “sic” means that word or words are transcribed as written. Usually this marks an error in the original text. When identified by the editor, biblical references, all from the King James version, have been identified in notes. Where Hunt himself identified them as such this attribution is retained in the main body of the text.</p>
+        <p> John Hunt was a good writer, but like most 18th century authors, his punctuation, spelling, and abbreviations were not standardized or necessarily consistent. The goal of the Hunt project was to produce a text accessible to the modern reader, retaining all the words in the order they appear, but with added punctuation and capitalization to make the document readable. Some spelling of surnames and places has been corrected in order to facilitate searching. Any other additions supplied to aid the reader are surrounded by brackets. Archaic forms and spellings of words are also retained. “How art thou feeling” remains as written, not changed to “How are you feeling.” The word “sic” means that word or words are transcribed as written. Usually this marks an error in the original text. When identified by the editor, biblical references, all from the King James version, have been identified in notes. Where Hunt himself identified them as such this attribution is retained in the main body of the text.</p>
         <p>Hunt consistently used Quaker-style plain dating, avoiding the names of the months and the names of days of the week. “Monday, October 9th,” for instance, is written as “Second Day, Ninth of the Tenth Month.” The headings dividing the texts were added by the editors, using the standard names for the months, again for ease of reading.</p>
         <p>Hunt had a practice of regularly adding to a series of bound journals when he was at home, but usually recorded entries while he was at Yearly Meeting or travelling in the ministry on single sheets of paper. In publishing the entirety of the journal we have added “loose” sections where they fit chronologically.  </p>
       </editorialDecl>
@@ -80,7 +80,7 @@
 <body>
 <pb n="001" facs="sc203330"/>
 <div type="entry" n="1773-03-01"><head><supplied>March 1773</supplied></head><dateline><date when="1773-03-01">1st of Third Month, 1773.</date></dateline><p> About home mending etc.</p></div>
-<div type="entry" n="1773-03-02"><dateline><date when="1773-03-02">2.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1773-03-02"><dateline><date when="1773-03-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-03-03"><dateline><date when="1773-03-03">3.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1773-03-04"><dateline><date when="1773-03-04">4.</date></dateline><p> Went to Monthly Meeting. Benjamin Haris wife was buried.</p>
 <note type="authorial" place="left margin"> fine moderate weather</note></div>
@@ -96,8 +96,8 @@
 <note type="authorial" place="left margin"> moderate</note>
 <note type="authorial" place="right margin"> P<supplied>oor</supplied> P<supplied>oor</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1773-03-09"><dateline><date when="1773-03-09">9.</date></dateline><p> Trimming apple trees.</p></div>
-<div type="entry" n="1773-03-10"><dateline><date when="1773-03-10">10.</date></dateline><p> Do Do.</p></div>
-<div type="entry" n="1773-03-11"><dateline><date when="1773-03-11">11.</date></dateline><p> Do and went to our meeting.</p>
+<div type="entry" n="1773-03-10"><dateline><date when="1773-03-10">10.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-03-11"><dateline><date when="1773-03-11">11.</date></dateline><p> D<supplied>itt</supplied>o and went to our meeting.</p>
 <note type="authorial" place="left margin"> weather moderate</note>
 <note type="authorial" place="right margin"> O T P</note></div>
 <div type="entry" n="1773-03-12"><dateline><date when="1773-03-12">12.</date></dateline><p> At home finishing <persName key="w6427ngj">George Dillwyn's</persName> pump and went to carry it home. Lodged at <persName key="w6427ngj">Dillwyn's</persName>. Brother <persName key="w66b7v5c">Robert</persName> was with me. <persName key="w6427ngj">George</persName> spoke very prettily at the table at suppertime.</p></div>
@@ -117,7 +117,7 @@
 <div type="entry" n="1773-03-20"><dateline><date when="1773-03-20">20.</date></dateline><p> Finishing the bedstead and took it home went up to <persName key="w6hv3dtz">Caleb Evins's</persName> to see them.</p></div>
 <div type="entry" n="1773-03-21"><dateline><date when="1773-03-21">21.</date></dateline><p> At <persName key="w6hv3dtz">Caleb Evins's</persName>, a violent stormy day.</p>
 <note type="authorial" place="left margin"> First Day</note></div>
-<div type="entry" n="1773-03-22"><dateline><date when="1773-03-22">22.</date></dateline><p> At Do. Dreadful stormy snow and hail and rain clears up this afternoon and we came home.</p></div>
+<div type="entry" n="1773-03-22"><dateline><date when="1773-03-22">22.</date></dateline><p> At d<supplied>itt</supplied>o. Dreadful stormy snow and hail and rain clears up this afternoon and we came home.</p></div>
 <div type="entry" n="1773-03-23"><dateline><date when="1773-03-23">23.</date></dateline><p> At home trimming apple trees. Went a little bit to William Downs' vendue.</p>
 <note type="authorial" place="left margin"> a very fine day</note></div>
 <pb n="002" facs="sc203331"/>
@@ -144,7 +144,7 @@
 <div type="entry" n="1773-04-03"><dateline><date when="1773-04-03">3.</date></dateline><p> <rs key="w6wx87x7">My wife</rs> and I went up to uncle <persName key="w6z71dmb">John Harvey's</persName> in the wagon and from there to Henry Clark's to get one of his sons and we brought the boy home with us the same day.</p></div>
 <div type="entry" n="1773-04-04"><dateline><date when="1773-04-04">4.</date></dateline><p> Went to our meeting <persName key="w6ph2gz9">Rebekah Roberts</persName> appeared.</p></div>
 <div type="entry" n="1773-04-05"><dateline><date when="1773-04-05">5.</date></dateline><p> About home hauling out dung etc.</p></div>
-<div type="entry" n="1773-04-06"><dateline><date when="1773-04-06">6.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-04-06"><dateline><date when="1773-04-06">6.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-04-07"><dateline><date when="1773-04-07">7.</date></dateline><p> At do etc.</p></div>
 <div type="entry" n="1773-04-08"><dateline><date when="1773-04-08">8.</date></dateline><p> Went to Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> spoke very notably.</p>
 <note type="authorial" place="right margin"> I Though<supplied>t</supplied> I Felt S<supplied>omewhat</supplied> Mor<supplied>e</supplied> St<supplied>rong</supplied> and Bet<supplied>ter</supplied> Comp<supplied>o</supplied>s<supplied>ed</supplied> Th<supplied>an</supplied> Com<supplied>mon</supplied></note></div>
@@ -154,17 +154,17 @@
 <note type="authorial" place="right margin"> in very Grt Str a Sp one Thing have I desired and That will I seek after</note></div>
 <div type="entry" n="1773-04-12"><dateline><date when="1773-04-12">12.</date></dateline><p> Mending fence and making bars.</p></div>
 <div type="entry" n="1773-04-13"><dateline><date when="1773-04-13">13.</date></dateline><p> Plowing for Indian Corn.</p></div>
-<div type="entry" n="1773-04-14"><dateline><date when="1773-04-14">14.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-04-14"><dateline><date when="1773-04-14">14.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-04-15"><dateline><date when="1773-04-15">15.</date></dateline><p> Went to our meeting. Was youth's meeting. <persName key="w63z8z1g">Isaac Andrews</persName> was there and spoke very notably. He signified a sympathy with someone present that was left so poor that they had hardly strength to keep awake, yet spoke encouragingly and said it was in order that they might be thoroughly proved and spoke very closely to the youth at the close of the meeting. Advised them to frequently read the Holy Scriptures and the experienced others of Friends' books. He reminded us of the <supplied>text?</supplied> Woe to the crown of pride and to the drunkards he spoke very closely.<note type="editorial">Isaiah 28:1?</note> I thought we seemed to have a very extraordinary meeting.</p>
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> D<supplied>ull</supplied> T<supplied>ime</supplied> W<supplied>ith</supplied> M<supplied>e</supplied></note></div>
 <div type="entry" n="1773-04-16"><dateline><date when="1773-04-16">16.</date></dateline><p> Plowing.</p></div>
-<div type="entry" n="1773-04-17"><dateline><date when="1773-04-17">17.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1773-04-17"><dateline><date when="1773-04-17">17.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <pb n="003" facs="sc203332"/>
 <div type="entry" n="1773-04-18"><dateline><date when="1773-04-18">18th Fourth Month, 1773.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> I GSA <damage><gap/></damage> a f<supplied>ew</supplied> W<supplied>ords</supplied></note></div>
 <div type="entry" n="1773-04-19"><dateline><date when="1773-04-19">19.</date></dateline><p> Went to <persName key="w6cp7vj9">Samuel Stokes's</persName> the elder to take up his old pump.</p></div>
 <div type="entry" n="1773-04-20"><dateline><date when="1773-04-20">20.</date></dateline><p> Went down to John Branson's to make a pump 23 feet <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1773-04-21"><dateline><date when="1773-04-21">21.</date></dateline><p> At do do. Finished. Came home.</p></div>
+<div type="entry" n="1773-04-21"><dateline><date when="1773-04-21">21.</date></dateline><p> At d<supplied>itt</supplied>o d<supplied>itt</supplied>o. Finished. Came home.</p></div>
 <div type="entry" n="1773-04-22"><dateline><date when="1773-04-22">22.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> appeared.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> Poor at first yet felt as I <damage><gap></gap></damage> Some Ability to S<supplied>peak</supplied> and at the close of the M<supplied>eeting</supplied> G<supplied>ave</supplied> U<supplied>p</supplied> to D<supplied>eliver</supplied> a few wo<supplied>rds</supplied> which I hope and believe had no tendency to hurt anyone</note></div>
 <div type="entry" n="1773-04-23"><dateline><date when="1773-04-23">23.</date></dateline><p> About home dressing calf etc.</p></div>
@@ -181,7 +181,7 @@
 <note type="authorial" place="right margin"> exceeding dull and stupid. Hard beset to keep awake.</note></div>
 <div type="entry" n="1773-05-03"><dateline><date when="1773-05-03">3.</date></dateline><p> Went to Cinnaminson to get fish with <persName key="w6xx5995">John Roberts</persName>.</p></div>
 <div type="entry" n="1773-05-04"><dateline><date when="1773-05-04">4.</date></dateline><p> Planting corn.</p></div>
-<div type="entry" n="1773-05-05"><dateline><date when="1773-05-05">5.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1773-05-05"><dateline><date when="1773-05-05">5.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-05-06"><dateline><date when="1773-05-06">6.</date></dateline><p> Went to Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> was there and spoke very notably and particular to someone concerning their reasoning and reasoning and suffering with the seed and said if we were willing to suffer we should in his time reign, and advised not <supplied>to</supplied> keep that back that belonged to the church, whether in discipline or more weighty matters.</p>
 <note type="authorial" place="right margin"> Very poor till <persName key="w65v49t0">Hannah Foster</persName> spoke and after I had a very satisfying meeting which tended to some encouragement.</note></div>
 <div type="entry" n="1773-05-07"><dateline><date when="1773-05-07">7.</date></dateline><p> Went down to John Huggins's to take a colt to pasture.</p></div>
@@ -208,39 +208,39 @@
 <note type="authorial" place="right margin"> A very instructing time with me.</note></div>
 <div type="entry" n="1773-05-20"><dateline><date when="1773-05-20">20.</date></dateline><p> At home unwell. Went to Isa Burros to take the O E Ma T Ho.</p></div>
 <div type="entry" n="1773-05-21"><dateline><date when="1773-05-21">21.</date></dateline><p> Went to Ann Stokes's to make a pump 23 <supplied>feet</supplied> long. </p></div>
-<div type="entry" n="1773-05-22"><dateline><date when="1773-05-22">22.</date></dateline><p> At do. Finished and came home.</p></div>
+<div type="entry" n="1773-05-22"><dateline><date when="1773-05-22">22.</date></dateline><p> At d<supplied>itt</supplied>o. Finished and came home.</p></div>
   <div type="entry" n="1773-05-23"><dateline><date when="1773-05-23">23.</date></dateline><p> Went to our meeting. <persName key="w6427ngj">George Dillwyn</persName> was there and had pretty deal to say and it seemed to me the last time he appeared was chiefly for me. He advised us not to despise the day of small things the kingdom of heaven was compared to a grain of mustard seed<note type="editorial"> Luke 13:19, Matthew 13:31, Mark 4:31</note> etc. and the fearful and unbelieving was to have their portion with hypocrites and advised to faithfulness in small things.</p></div>
 <pb n="005" facs="sc203334"/>
 <div type="entry" n="1773-05-24"><dateline><date when="1773-05-24">24th of the Fifth Month, 1773.</date></dateline><p> Went to work at David Davis's.</p></div>
-<div type="entry" n="1773-05-24"><dateline><date when="1773-05-24">24.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-05-25"><dateline><date when="1773-05-25">25.</date></dateline><p> At do.</p>
+<div type="entry" n="1773-05-24"><dateline><date when="1773-05-24">24.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-05-25"><dateline><date when="1773-05-25">25.</date></dateline><p> At d<supplied>itt</supplied>o.</p>
 <note type="authorial" place="left margin"> a hard thundershower</note></div>
-<div type="entry" n="1773-05-26"><dateline><date when="1773-05-26">26.</date></dateline><p> At do. Heard of a barn being burned with the lightning and two horses burned in it.</p></div>
+<div type="entry" n="1773-05-26"><dateline><date when="1773-05-26">26.</date></dateline><p> At d<supplied>itt</supplied>o. Heard of a barn being burned with the lightning and two horses burned in it.</p></div>
 <div type="entry" n="1773-05-27"><dateline><date when="1773-05-27">27.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Re. Roberts</persName> appeared.</p></div>
 <div type="entry" n="1773-05-28"><dateline><date when="1773-05-28">28.</date></dateline><p> At Davis at work.</p></div>
 <div type="entry" n="1773-05-29"><dateline><date when="1773-05-29">29.</date></dateline><p> At Davis at work.</p></div>
-<div type="entry" n="1773-05-30"><dateline><date when="1773-05-30">30.</date></dateline><p> At do. Went to our meeting.</p></div>
+<div type="entry" n="1773-05-30"><dateline><date when="1773-05-30">30.</date></dateline><p> At d<supplied>itt</supplied>o. Went to our meeting.</p></div>
 <div type="entry" n="1773-05-31"><dateline><date when="1773-05-31">31.</date></dateline><p> Went to work at David Davis's.</p></div>
 <div type="entry" n="1773-06-01"><head><supplied>June 1773</supplied></head><dateline><date when="1773-06-01">1st of the Sixth Month, 1773.</date></dateline><p> At Davis's to work.</p></div>
-<div type="entry" n="1773-06-02"><dateline><date when="1773-06-02">2.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-06-02"><dateline><date when="1773-06-02">2.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-06-03"><dateline><date when="1773-06-03">3.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1773-06-04"><dateline><date when="1773-06-04">4.</date></dateline><p> Went home with <persName key="w6j49htj">John Lippincott</persName> to settle with him and went to mend a pump for William Rudrow.</p>
   <note type="authorial" place="right margin"> I thought I was N<supplied>ot</supplied> S<supplied>o</supplied> P<supplied>oor</supplied> as at So<damage><supplied>me</supplied></damage> Ti<supplied>mes</supplied> In Th and <damage><gap/></damage></note></div>
 <div type="entry" n="1773-06-04"><dateline><date when="1773-06-04">4.</date></dateline><p> Went to David Davis's to work.</p></div>
-<div type="entry" n="1773-06-05"><dateline><date when="1773-06-05">5.</date></dateline><p> At do.</p>
+<div type="entry" n="1773-06-05"><dateline><date when="1773-06-05">5.</date></dateline><p> At d<supplied>itt</supplied>o.</p>
 <note type="authorial" place="left margin"> rain</note></div>
 <div type="entry" n="1773-06-06"><dateline><date when="1773-06-06">6.</date></dateline><p> Went to our meeting.</p>
   <note type="authorial" place="right margin"> I very G S <damage><gap/></damage> Ab<supplied>out</supplied> S <damage><gap/></damage> B <damage><gap/></damage></note></div>
 <div type="entry" n="1773-06-07"><dateline><date when="1773-06-07">7.</date></dateline><p> Went to work at David Davis's.</p></div>
 <div type="entry" n="1773-06-08"><dateline><date when="1773-06-08">8.</date></dateline><p> At home plowing corn.</p></div>
-<div type="entry" n="1773-06-09"><dateline><date when="1773-06-09">9.</date></dateline><p> At do. do.</p></div>
+<div type="entry" n="1773-06-09"><dateline><date when="1773-06-09">9.</date></dateline><p> At d<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-06-10"><dateline><date when="1773-06-10">10.</date></dateline><p> Went to our Monthly Meeting. <persName key="w6cr7rz4">James Thorington</persName> was there and preach<supplied>ed</supplied> very notably. <persName key="w6c82qz0">Joshua Evans</persName> like<add>wise</add> dropped pretty pearl of advice to be moderate at harvest and spoke very notably. William <add>Brown</add> also was there and spoke very notably. <persName key="w6b38kp0">Thomas Ross</persName> and <persName key="w64r0gvn">Josiah White</persName> also was there and we seemed to be favored with a very lively ministry.</p></div>
 <div type="entry" n="1773-06-11"><dateline><date when="1773-06-11">11.</date></dateline><p> About home harrowing corn.</p></div>
 <div type="entry" n="1773-06-12"><dateline><date when="1773-06-12">12.</date></dateline><p> I went up to the sawmill for a load of boards.</p></div>
   <div type="entry" n="1773-06-13"><dateline><date when="1773-06-13">13.</date></dateline><p> Went to our meeting. <persName key="w64r0gvn">Josiah White</persName> was there and spoke very notably. I went down to Haddonfield afternoon meeting with <persName key="w64r0gvn">Josiah White</persName>. <persName key="w63z8z1g">Isaac Andrews</persName> spoke very notably concerning the man that was going from Jericho and fell amongst thieves etc.<note type="editorial">Luke 10: 30-36</note> He spoke very pretty.</p></div>
 <pb n="006" facs="sc203335"/>
 <div type="entry" n="1773-06-14"><dateline><date when="1773-06-14">14th of the Sixth Month 1773.</date></dateline><p> I went to <persName key="w6bv9xp3">Joseph Warrington's</persName> to work making sash.</p></div>
-<div type="entry" n="1773-06-15"><dateline><date when="1773-06-15">15.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-06-15"><dateline><date when="1773-06-15">15.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-06-16"><dateline><date when="1773-06-16">16.</date></dateline><p> At do making a pump 33 <supplied>feet</supplied> long.</p>
 <note type="authorial" place="left margin"> very hot</note></div>
 <div type="entry" n="1773-06-17"><dateline><date when="1773-06-17">17.</date></dateline><p> At do went to our meeting.</p></div>
@@ -251,7 +251,7 @@
 <div type="entry" n="1773-06-20"><dateline><date when="1773-06-20">20.</date></dateline><p> Was First Day. Went to our meeting.</p></div>
 <div type="entry" n="1773-06-21"><dateline><date when="1773-06-21">21.</date></dateline><p> Went to Abraham Edlrige's to make a cheese press.</p>
 <note type="authorial" place="left margin"> dry cool</note></div>
-<div type="entry" n="1773-06-22"><dateline><date when="1773-06-22">22.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-06-22"><dateline><date when="1773-06-22">22.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-06-23"><dateline><date when="1773-06-23">23.</date></dateline><p> Went to Thomas Smith's to make a cheese press.</p></div>
 <div type="entry" n="1773-06-24"><dateline><date when="1773-06-24">24.</date></dateline><p> Went to our meeting to Smith's afternoon.</p></div>
 <div type="entry" n="1773-06-25"><dateline><date when="1773-06-25">25.</date></dateline><p> Went to our meeting appointed for <persName key="w6cg1kgr">John Churchman</persName> from Pennsylvania and we were favored with a most precious meeting. He spoke very encouragingly to some present and very affectionately to us all. He hinted of some that might be nearer their latter end than they were aware of, he advised us not entertain hard thoughts of one another. They that did he said entertained enemies of Christ.</p>
@@ -261,17 +261,17 @@
 <note type="authorial" place="right margin"> I got S A<damage><gap/></damage> <persName key="w6ph2gz9">Reb Ro</persName> fi by wh<damage><supplied>ich</supplied></damage> I T<supplied>hought</supplied> I was S<supplied>omewhat</supplied> conf<supplied>used</supplied> <add>th<supplied>ough</supplied></add> bein fresh in my mind Str <damage><gap/></damage> A T S</note></div>
 <div type="entry" n="1773-06-28"><dateline><date when="1773-06-28">28.</date></dateline><p> Went to David Davis's to joint the plank for barn floor.</p></div>
 <div type="entry" n="1773-06-29"><dateline><date when="1773-06-29">29.</date></dateline><p> Went to mowing at home.</p></div>
-<div type="entry" n="1773-06-30"><dateline><date when="1773-06-30">30.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-06-30"><dateline><date when="1773-06-30">30.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-07-01"><head><supplied>July 1773</supplied></head><dateline><date when="1773-07-01">1st of the Seventh Month, 1773.</date></dateline><p> Went to our preparative meeting and at home about hay.</p></div>
 <div type="entry" n="1773-07-02"><dateline><date when="1773-07-02">2.</date></dateline><p> Went to David Davis's reaping.</p></div>
-<div type="entry" n="1773-07-03"><dateline><date when="1773-07-03">3.</date></dateline><p> At do. laying the barn floor.</p></div>
+<div type="entry" n="1773-07-03"><dateline><date when="1773-07-03">3.</date></dateline><p> At d<supplied>itt</supplied>o laying the barn floor.</p></div>
 <div type="entry" n="1773-07-04"><dateline><date when="1773-07-04">4.</date></dateline><p> Was First Day I went to our meeting.</p>
 <note type="authorial" place="right margin"> Bu<supplied>t</supplied> in<supplied>different</supplied> went to J. Warrington's af<supplied>terward</supplied>. I had a sad unhappy time this week I though<supplied>t</supplied> I gr<supplied>ew</supplied> d<supplied>ail</supplied>e w<supplied>orse</supplied> instead of bett<supplied>er</supplied>.</note></div>
 <div type="entry" n="1773-07-05"><dateline><date when="1773-07-05">5.</date></dateline><p> Reaping at home.</p></div>
 <div type="entry" n="1773-07-06"><dateline><date when="1773-07-06">6.</date></dateline><p> Hauling in corn.</p></div>
 <div type="entry" n="1773-07-07"><dateline><date when="1773-07-07">7.</date></dateline><p> Went to moving.</p></div>
 <div type="entry" n="1773-07-08"><dateline><date when="1773-07-08">8.</date></dateline><p> At do went to our Monthly Meeting.</p></div>
-<div type="entry" n="1773-07-09"><dateline><date when="1773-07-09">9.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-07-09"><dateline><date when="1773-07-09">9.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-07-10"><dateline><date when="1773-07-10">10.</date></dateline><p> About hay.</p></div>
 <div type="entry" n="1773-07-11"><dateline><date when="1773-07-11">11.</date></dateline><p> Was First Day. Went to Evesham meeting. <persName key="w65v49t0">Hannah Foster</persName> spoke very notably and <persName key="w6rg6kjz">Thomas Evans</persName> spoke.</p>
 <note type="authorial" place="right margin"> Rat<supplied>her</supplied> bet<supplied>ter</supplied></note></div>
@@ -296,20 +296,20 @@
 <div type="entry" n="1773-07-25"><dateline><date when="1773-07-25">25.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> p<supplied>oor</supplied> t<supplied>ime</supplied></note></div>
 <div type="entry" n="1773-07-26"><dateline><date when="1773-07-26">26.</date></dateline><p> Went to <persName key="w6bv9xp3">Joseph Warrington's</persName> to work at the windows of his house.</p></div>
-<div type="entry" n="1773-07-27"><dateline><date when="1773-07-27">27.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-07-28"><dateline><date when="1773-07-28">28.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-07-27"><dateline><date when="1773-07-27">27.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-07-28"><dateline><date when="1773-07-28">28.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-07-29"><dateline><date when="1773-07-29">29.</date></dateline><p> Went to <persName key="w6j49htj">John Lippincott's</persName> to splice his pump. Put a piece to it 16 feet long.</p></div>
-  <div type="entry" n="1773-07-30"><dateline><date when="1773-07-30">30</date></dateline><p> At do.</p></div>
+  <div type="entry" n="1773-07-30"><dateline><date when="1773-07-30">30</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-07-31"><dateline><date when="1773-07-31">31.</date></dateline><p> At home making a cheesefat etc.</p></div>
 <div type="entry" n="1773-08-01"><head><supplied>August 1773</supplied></head><dateline><date when="1773-08-01">1 of Eighth Month.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> B<supplied>ut</supplied> p<supplied>oor</supplied> d<supplied>ull</supplied> t<supplied>ime</supplied></note></div>
 <div type="entry" n="1773-08-02"><dateline><date when="1773-08-02">2.</date></dateline><p> At work at David Davis's</p></div>
-<div type="entry" n="1773-08-03"><dateline><date when="1773-08-03">3.</date></dateline><p> At do.</p>
+<div type="entry" n="1773-08-03"><dateline><date when="1773-08-03">3.</date></dateline><p> At d<supplied>itt</supplied>o.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> p<supplied>oor</supplied> t<supplied>ime</supplied></note></div>
 <div type="entry" n="1773-08-04"><dateline><date when="1773-08-04">4.</date></dateline><p> Went to work at <persName key="w6mk6p7z">Thomas Thorn's</persName>.</p></div>
 <div type="entry" n="1773-08-05"><dateline><date when="1773-08-05">5.</date></dateline><p> Went to Monthly Meeting.</p></div>
 <div type="entry" n="1773-08-06"><dateline><date when="1773-08-06">6.</date></dateline><p> Went to Thorn's to work.</p></div>
-<div type="entry" n="1773-08-07"><dateline><date when="1773-08-07">7.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-08-07"><dateline><date when="1773-08-07">7.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-08-08"><dateline><date when="1773-08-08">8.</date></dateline><p> Went to our meeting. Esther Eldrige spoke I thought pretty well.</p>
 <note type="authorial" place="right margin"> B L T P<supplied>oor</supplied> T<supplied>ime</supplied></note></div>
 <div type="entry" n="1773-08-09"><dateline><date when="1773-08-09">9.</date></dateline><p> Went to <persName key="w6hv3dtz">Caleb Evan's</persName> after a load of bricks.</p></div>
@@ -319,29 +319,29 @@
 <p>After this meeting was over a committee appointed from our Monthly Meeting stayed to gather to consider the case of those children amongst us whose parents one had a right and the other none, who unanimously agreed that we ought to observe the words of the minute of the Yearly Meeting made in the year 1772. It was a very satisfactory time with me.</p></div>
 <div type="entry" n="1773-08-13"><dateline><date when="1773-08-13">13.</date></dateline><p> At work at Thorn's.</p>
 <note type="authorial" place="left margin"> A pretty rain</note></div>
-<div type="entry" n="1773-08-14"><dateline><date when="1773-08-14">14.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1773-08-14"><dateline><date when="1773-08-14">14.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <pb n="008" facs="sc203337"/>
 <div type="entry" n="1773-08-15"><dateline><date when="1773-08-15">15th of Eighth Month, 1773.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1773-08-16"><dateline><date when="1773-08-16">16.</date></dateline><p> Went to <persName key="w6mk6p7z">Thomas Thorn's</persName> to work hewing timber.</p></div>
-<div type="entry" n="1773-08-17"><dateline><date when="1773-08-17">17.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-08-18"><dateline><date when="1773-08-18">18.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-08-17"><dateline><date when="1773-08-17">17.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-08-18"><dateline><date when="1773-08-18">18.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-08-19"><dateline><date when="1773-08-19">19.</date></dateline><p> I went to Haddonfield meeting. Rachel Linsey appeared in <supplied>testimony</supplied> and old <persName key="w6d902xk">Ephraim Tomlinson</persName> appeared under a great exercise. He said he had the closest longest trial that ever he had in all his life but the Lord had shewed him favor, which he spoke of in a solemn manner. He seemed uncommonly exercised and got up several times and said to us that may have to speak to the people let us not be too forward nor too backward but if it is laid upon us to speak let us do it in the best manner we can. This he repeated twice over.</p></div>
   <div type="entry" n="1773-08-20"><dateline><date when="1773-08-20">20</date></dateline><p> About home getting timber for Joseph Morgan's applemill.</p></div>
   <div type="entry" n="1773-08-21"><dateline><date when="1773-08-21">21</date></dateline><p> At home M<supplied>y</supplied> wi<supplied>fe</supplied> was br<supplied>ought</supplied> to b<supplied>ed</supplied> wi<supplied>th</supplied> a d<supplied>aughter</supplied> a<supplied>t</supplied> 12 o'c<supplied>lock</supplied> </p></div>
 <div type="entry" n="1773-08-22"><dateline><date when="1773-08-22">22.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> B P a T</note></div>
 <div type="entry" n="1773-08-23"><dateline><date when="1773-08-23">23.</date></dateline><p> Went to <persName key="w6mk6p7z">Thomas Thorn's</persName> to work.</p></div>
-<div type="entry" n="1773-08-24"><dateline><date when="1773-08-24">24.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-08-24"><dateline><date when="1773-08-24">24.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-08-25"><dateline><date when="1773-08-25">25.</date></dateline><p> Came home to finish Joseph Morgan's applemill.</p></div>
 <div type="entry" n="1773-08-26"><dateline><date when="1773-08-26">26.</date></dateline><p> I went to Evesham meeting. <persName key="w65v49t0">Hannah Foster</persName> pray<supplied>ed</supplied> notably.</p>
 <note type="authorial" place="right margin"> I was in gr<supplied>eat</supplied> str<supplied>ess</supplied> a<supplied>bout</supplied> s<supplied>ome</supplied> b<supplied>usiness</supplied> it quite a way til the Mee<supplied>ting</supplied> B after Mee<supplied>ting</supplied> Thomas E came to me and asked me if <supplied>I</supplied> had been honest today. I told him [illegible] not [illegible] would not [illegible] Said he should be glad of more of my company</note></div>
 <div type="entry" n="1773-08-27"><dateline><date when="1773-08-27">27.</date></dateline><p> At work at Joseph Morgan's applemill.</p></div>
-<div type="entry" n="1773-08-28"><dateline><date when="1773-08-28">28.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-08-28"><dateline><date when="1773-08-28">28.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-08-29"><dateline><date when="1773-08-29">29.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> G<supplied>ave</supplied> u<supplied>p</supplied> t<supplied>o</supplied> s<supplied>peak</supplied> again. I thought I f<supplied>elt</supplied> a g<supplied>ood</supplied> d<supplied>eal</supplied> month Se and better</note></div>
 <div type="entry" n="1773-08-30"><dateline><date when="1773-08-30">30.</date></dateline><p> At home at work at Joseph M<supplied>o</supplied>r<supplied>gan's</supplied> applemill.</p></div>
 <div type="entry" n="1773-08-31"><dateline><date when="1773-08-31">31.</date></dateline><p> Went to Thorn's to work.</p></div>
-<div type="entry" n="1773-09-01"><head><supplied>September 1773</supplied></head><dateline><date when="1773-09-01">1 of the Ninth Month, 1773.</date></dateline><p> At work at do.</p></div>
+<div type="entry" n="1773-09-01"><head><supplied>September 1773</supplied></head><dateline><date when="1773-09-01">1 of the Ninth Month, 1773.</date></dateline><p> At work at d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-09-02"><dateline><date when="1773-09-02">2.</date></dateline><p> Went to our preparative meeting.</p>
 <note type="authorial" place="right margin"> Had a very satisfact<supplied>ory</supplied> meeting and ha<supplied>d</supplied> a g<supplied>ood</supplied> d<supplied>eal</supplied> to s<supplied>ay</supplied> to the bu<supplied>siness</supplied></note></div>
 <div type="entry" n="1773-09-03"><dateline><date when="1773-09-03">3.</date></dateline><p> Went to work at Thorn's.</p></div>
@@ -369,9 +369,9 @@
 <note type="authorial" place="right margin"> B<supplied>ut</supplied> p<supplied>oor</supplied></note></div>
 <pb n="009" facs="sc203338"/>
 <div type="entry" n="1773-09-20"><dateline><date when="1773-09-20">20th of the Ninth Month, 1773.</date></dateline><p> I went to <persName key="w6jj4bpx">Jacob Hollinshead</persName> to make a pump 41.</p></div>
-<div type="entry" n="1773-09-21"><dateline><date when="1773-09-21">21.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-09-22"><dateline><date when="1773-09-22">22.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-09-23"><dateline><date when="1773-09-23">23.</date></dateline><p> At do. I heard of the death of Joseph Smith's wife which put me in mind of <persName key="w6cg1kgr">John Churchman's</persName> words when at our meeting. Note the 25th of the Sixth Month back.</p></div>
+<div type="entry" n="1773-09-21"><dateline><date when="1773-09-21">21.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-09-22"><dateline><date when="1773-09-22">22.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-09-23"><dateline><date when="1773-09-23">23.</date></dateline><p> At d<supplied>itt</supplied>o. I heard of the death of Joseph Smith's wife which put me in mind of <persName key="w6cg1kgr">John Churchman's</persName> words when at our meeting. Note the 25th of the Sixth Month back.</p></div>
 <div type="entry" n="1773-09-24"><dateline><date when="1773-09-24">24.</date></dateline><p> I went to our quarterly meeting. <persName key="w6md3mdh">Robert Walker</persName> from Old England was there whose testimony was very searching lively and large. Susannah Lightfoot and <persName key="w63z8z1g">Isaac Andrews</persName> appeared in prayer very notable. A lively meeting.</p>
 <note type="authorial" place="right margin"> Dull at first. At last I thought was favored to partake with th had a fews words to say in meeting of business which several Friends expressed a satisfaction</note></div>
 <div type="entry" n="1773-09-25"><dateline><date when="1773-09-25">25.</date></dateline><p> About home cleaning out the well etc.</p></div>
@@ -397,13 +397,13 @@
 <div type="entry" n="1773-10-12"><dateline><date when="1773-10-12">12.</date></dateline><p> We went to our meeting appointed for Comfort Hoage and her companion. Her companion spoke three times and that very well. The last time she directed her words to someone in particular and spoke very encouraging though they might be tossed as with a tempest yet if they held on they would make a most glorious and happy end and death would have not terrors over them. Comfort also appeared very deeply concerned that we might grow and know an increase in the truth. <persName key="w6zk9cxf">Benjamin Swett</persName> from Burlington also spoke twice, the last time was to the Negroes in particular. Comfort appeared very notable in prayer.</p></div>
 <div type="entry" n="1773-10-13"><dateline><date when="1773-10-13">13.</date></dateline><p> I went to Noah Garwood's to make three pumps. One was 20 <supplied>feet</supplied> long, one 16 <supplied>feet</supplied> long and one 14 <supplied>feet</supplied> long. The one 16 was for a schoolhouse.</p></div>
 <div type="entry" n="1773-10-14"><dateline><date when="1773-10-14">14.</date></dateline><p> At Garwood's at work at the pumps.</p></div>
-<div type="entry" n="1773-10-15"><dateline><date when="1773-10-15">15.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-10-15"><dateline><date when="1773-10-15">15.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-10-16"><dateline><date when="1773-10-16">16.</date></dateline><p> At do finished and came home.</p></div>
 <div type="entry" n="1773-10-17"><dateline><date when="1773-10-17">17.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1773-10-18"><dateline><date when="1773-10-18">18.</date></dateline><p> About home turning etc.</p></div>
 <div type="entry" n="1773-10-19"><dateline><date when="1773-10-19">19.</date></dateline><p> Went to Moorestown to make a pump for Reece Edwards 25 <supplied>feet</supplied> 6 inches long.</p></div>
 <div type="entry" n="1773-10-20"><dateline><date when="1773-10-20">20.</date></dateline><p> At do</p></div>
-<div type="entry" n="1773-10-21"><dateline><date when="1773-10-21">21.</date></dateline><p> At do. Went to our youth's meeting. At our meeting <persName key="w6rg6kjz">Thomas Evans</persName> and Thomas Willis spoke.</p>
+<div type="entry" n="1773-10-21"><dateline><date when="1773-10-21">21.</date></dateline><p> At d<supplied>itt</supplied>o. Went to our youth's meeting. At our meeting <persName key="w6rg6kjz">Thomas Evans</persName> and Thomas Willis spoke.</p>
 <note type="authorial" place="right margin"> I was under g<supplied>reat</supplied> Re ag<supplied>ain</supplied> ab<supplied>out</supplied> s<supplied>peaking</supplied></note></div>
 <div type="entry" n="1773-10-22"><dateline><date when="1773-10-22">22.</date></dateline><p> At home gathering winter apples etc.</p></div>
 <div type="entry" n="1773-10-23"><dateline><date when="1773-10-23">23.</date></dateline><p> I went down to William Cooper's to splice a pump.</p></div>
@@ -416,7 +416,7 @@
 <div type="entry" n="1773-10-28"><dateline><date when="1773-10-28">28.</date></dateline><p> At Thorn's and went to our preparative meeting. <persName key="w6c82qz0">Joshua Evans</persName> was there <supplied>and</supplied> spoke very notably. We had I thought a very good meeting.</p>
 <note type="authorial" place="right margin"> I G U I N I f A G B N C</note></div>
 <div type="entry" n="1773-10-29"><dateline><date when="1773-10-29">29.</date></dateline><p> At Thorn's.</p></div>
-<div type="entry" n="1773-10-30"><dateline><date when="1773-10-30">30.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-10-30"><dateline><date when="1773-10-30">30.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-10-31"><dateline><date when="1773-10-31">31.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> D<supplied>ull</supplied> </note></div>
 <div type="entry" n="1773-11-01"><head><supplied>November 1773</supplied></head><dateline><date when="1773-11-01">1 of Eleventh Month.</date></dateline><p> At Thorn's at work.</p></div>
@@ -438,7 +438,7 @@
 <div type="entry" n="1773-11-14"><dateline><date when="1773-11-14">14.</date></dateline><p> The time of Salem Quarterly Meeting. I was at our meeting.</p></div>
 <div type="entry" n="1773-11-15"><dateline><date when="1773-11-15">15.</date></dateline><p> I went down to the widow Tomkins's to mend a pump.</p></div>
 <div type="entry" n="1773-11-16"><dateline><date when="1773-11-16">16.</date></dateline><p> Went to William Higbee's vendue.</p></div>
-<div type="entry" n="1773-11-17"><dateline><date when="1773-11-17">17.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-11-17"><dateline><date when="1773-11-17">17.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-11-18"><dateline><date when="1773-11-18">18.</date></dateline><p> I went to our meeting.</p></div>
 <div type="entry" n="1773-11-19"><dateline><date when="1773-11-19">19.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1773-11-20"><dateline><date when="1773-11-20">20.</date></dateline><p> At do mending fence and making a pen for fattening hogs.</p></div>
@@ -446,24 +446,24 @@
 <note type="authorial" place="right margin"> I Had Just Con<supplied>cluded</supplied> to S<supplied>peak</supplied> as the M<supplied>eeting</supplied> B<supplied>roke</supplied> U<supplied>p</supplied></note></div>
 <div type="entry" n="1773-11-22"><dateline><date when="1773-11-22">22.</date></dateline><p> At home with my friends.</p></div>
 <div type="entry" n="1773-11-23"><dateline><date when="1773-11-23">23.</date></dateline><p> I went to Jacob Evans' to make a pump 21 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1773-11-24"><dateline><date when="1773-11-24">24.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-11-25"><dateline><date when="1773-11-25">25.</date></dateline><p> At do. Finished and came home.</p></div>
+<div type="entry" n="1773-11-24"><dateline><date when="1773-11-24">24.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-11-25"><dateline><date when="1773-11-25">25.</date></dateline><p> At d<supplied>itt</supplied>o. Finished and came home.</p></div>
 <div type="entry" n="1773-11-26"><dateline><date when="1773-11-26">26.</date></dateline><p> I went down to Haddonfield to make a pump 23 <supplied>feet</supplied> long for John Hinchman.</p></div>
 <div type="entry" n="1773-11-27"><dateline><date when="1773-11-27">27.</date></dateline><p> At do finished and came home.</p></div>
 <div type="entry" n="1773-11-28"><dateline><date when="1773-11-28">28.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> I G<supplied>ave</supplied> U<supplied>p</supplied> T<supplied>o</supplied> S<supplied>ay</supplied> A X</note></div>
 <div type="entry" n="1773-11-29"><dateline><date when="1773-11-29">29.</date></dateline><p> At home about altering my chimneys.</p></div>
-<div type="entry" n="1773-11-30"><dateline><date when="1773-11-30">30.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1773-12-01"><head><supplied>December 1773</supplied></head><dateline><date when="1773-12-01">1 Twelfth Month.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-11-30"><dateline><date when="1773-11-30">30.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1773-12-01"><head><supplied>December 1773</supplied></head><dateline><date when="1773-12-01">1 Twelfth Month.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-12-02"><dateline><date when="1773-12-02">2.</date></dateline><p> I went to <persName key="w6rg6kkd">Samuel Burrough's</persName> to make a pump 22 <supplied>feet</supplied> long and was at our preparative meeting.</p></div>
-<div type="entry" n="1773-12-03"><dateline><date when="1773-12-03">3.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-12-03"><dateline><date when="1773-12-03">3.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-12-04"><dateline><date when="1773-12-04">4.</date></dateline><p> I went to <persName key="w6r31rzq">Joseph Burrough's</persName> to make a pump 22 <supplied>feet</supplied> long, finished and came home</p></div>
 <pb n="012" facs="sc203341"/>
 <div type="entry" n="1773-12-05"><dateline><date when="1773-12-05">5.</date></dateline><p> I went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke</p>
 <note type="authorial" place="right margin"> I G<supplied>ave</supplied> U<supplied>p</supplied></note></div>
 <div type="entry" n="1773-12-06"><dateline><date when="1773-12-06">6.</date></dateline><p> At home killing a beef.</p></div>
 <div type="entry" n="1773-12-07"><dateline><date when="1773-12-07">7.</date></dateline><p> I went to <persName key="w6165774">John Collins'</persName> to make a pump 44 feet long.</p></div>
-<div type="entry" n="1773-12-08"><dateline><date when="1773-12-08">8.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-12-08"><dateline><date when="1773-12-08">8.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-12-09"><dateline><date when="1773-12-09">9.</date></dateline><p> I went to Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> spoke very notably. She said she thought she could hardly make her friends sensible of the difficulty she apprehended there was in speaking in our meetings, either to our business or in the way of the ministry. She said we should travel as in the deeps that we might bring memorials from thence. My sister-in-law Esther pass meeting.</p></div>
 <div type="entry" n="1773-12-10"><dateline><date when="1773-12-10">10.</date></dateline><p> I went to <persName key="w6165774">Collins'</persName> again.</p></div>
 <div type="entry" n="1773-12-11"><dateline><date when="1773-12-11">11.</date></dateline><p> We finished and came home.</p></div>
@@ -486,14 +486,14 @@
 <div type="entry" n="1773-12-23"><dateline><date when="1773-12-23">23.</date></dateline><p> I went down to Haddonfield. <persName key="w6c82qz0">Joshua Evans</persName> spoke very extraordin<supplied>arily</supplied> that it was a very strengthening time to me. He spoke about being loyal to the king.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1773-12-24"><dateline><date when="1773-12-24">24.</date></dateline><p> At work at David Davis's.</p></div>
-<div type="entry" n="1773-12-25"><dateline><date when="1773-12-25">25.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1773-12-25"><dateline><date when="1773-12-25">25.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-12-26"><dateline><date when="1773-12-26">26.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> I <supplied>said</supplied> a f<supplied>ew</supplied> w<supplied>ords</supplied> </note></div>
 <pb n="013" facs="sc203342"/>
 <div type="entry" n="1773-12-27"><dateline><date when="1773-12-27">27th of the Twelfth Month, 1773.</date></dateline><p> About home getting firewood.</p>
 <note type="authorial" place="left margin">a very great snow</note></div>
 <div type="entry" n="1773-12-28"><dateline><date when="1773-12-28">28.</date></dateline><p> About home turning and so forth.</p></div>
-<div type="entry" n="1773-12-29"><dateline><date when="1773-12-29">29.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1773-12-29"><dateline><date when="1773-12-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1773-12-30"><dateline><date when="1773-12-30">30.</date></dateline><p> Went to our preparative meeting.</p></div>
 <div type="entry" n="1773-12-31"><dateline><date when="1773-12-31">31.</date></dateline><p> I went to Abel Lippincott's to make a pump.</p></div>
   <div type="entry" n="1774-01-01"><head><supplied>January 1774</supplied></head><dateline><date when="1774-01-01">1 First Month, 1774.</date></dateline><p> Was First Day. I went to our meeting. Joseph <damage><gap/></damage></p></div>
@@ -503,7 +503,7 @@
 <div type="entry" n="1774-01-06"><dateline><date when="1774-01-06">6.</date></dateline><p> I went to Monthly Meeting Hette passed her last [illegible]</p>
 <note type="authorial" place="right margin"> B P a f I N T J P B S S N th B which I S V W S</note></div>
 <div type="entry" n="1774-01-07"><dateline><date when="1774-01-07">7.</date></dateline><p> I went <supplied>to</supplied> Willis's again.</p></div>
-<div type="entry" n="1774-01-08"><dateline><date when="1774-01-08">8.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-01-08"><dateline><date when="1774-01-08">8.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-01-09"><dateline><date when="1774-01-09">9.</date></dateline><p> Went to our meeting went over to <persName key="w6qj854r">Joseph Busby's</persName>.</p>
 <note type="authorial" place="left margin"> exceeding cold</note></div>
 <div type="entry" n="1774-01-10"><dateline><date when="1774-01-10">10.</date></dateline><p> I went to Jacob Wills's to finish his pump.</p></div>
@@ -528,18 +528,18 @@
 <div type="entry" n="1774-01-26"><dateline><date when="1774-01-26"><supplied>26</supplied> of the First Month, 1774.</date></dateline><p> I went to John Stone's to hew a pump.</p></div>
 <div type="entry" n="1774-01-27"><dateline><date when="1774-01-27">27.</date></dateline><p> I went to our meeting the time John Maxfield was married. <persName key="w65v49t0">Hannah Foster</persName> was there and was favored with a very lively testimony.</p></div>
 <div type="entry" n="1774-01-28"><dateline><date when="1774-01-28">28.</date></dateline><p> I went to Thomas Stokes's to mend pump had a very troublesome time with it.</p></div>
-<div type="entry" n="1774-01-29"><dateline><date when="1774-01-29">29.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-01-29"><dateline><date when="1774-01-29">29.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-01-30"><dateline><date when="1774-01-30">30.</date></dateline><p> I went to our meeting <persName key="w63z8z1g">Isaac Andrews</persName> was there and spoke powerful and affecting and very encouragingly to us and spoke powerful and we were undoubtedly favored with a very extraordinary meeting. He told us to treasure up such visitations.</p>
 <note type="authorial" place="left margin"> A stormy day</note></div>
 <div type="entry" n="1774-01-31"><dateline><date when="1774-01-31">31.</date></dateline><p> About home making a wood sled for myself.</p></div>
-<div type="entry" n="1774-02-01"><head><supplied>February 1774</supplied></head><dateline><date when="1774-02-01">1-2.</date></dateline><p> do. do.</p></div>
-<div type="entry" n="1774-02-02"><dateline><date when="1774-02-02">2.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-02-01"><head><supplied>February 1774</supplied></head><dateline><date when="1774-02-01">1-2.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-02-02"><dateline><date when="1774-02-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-02-03"><dateline><date when="1774-02-03">3.</date></dateline><p> Getting firewood and went to our preparative meeting which was considerably satisfactory in the end</p></div>
 <div type="entry" n="1774-02-04"><dateline><date when="1774-02-04">4.</date></dateline><p> Went to hew a pump for <persName key="w6vr3t5g">Charles French</persName>.</p></div>
 <div type="entry" n="1774-02-05"><dateline><date when="1774-02-05">5.</date></dateline><p> I went down to Burough's mill.</p></div>
 <div type="entry" n="1774-02-06"><dateline><date when="1774-02-06">6.</date></dateline><p> Was First Day we went to our meeting. <persName key="w6kf2pgw">John Sleeper</persName> was there and he was favored in almost an uncommon manner and had a great deal to say. His first words was how much owest thou to My Lord and most exceeding notable sermon he made. We went to <persName key="w6bv9xp3">Joseph Warrington's</persName> in the afternoon.</p></div>
 <div type="entry" n="1774-02-07"><dateline><date when="1774-02-07">7.</date></dateline><p> I went to John Stone's to make a pump 17 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1774-02-08"><dateline><date when="1774-02-08">8.</date></dateline><p> At do. Finished and came home.</p></div>
+<div type="entry" n="1774-02-08"><dateline><date when="1774-02-08">8.</date></dateline><p> At d<supplied>itt</supplied>o. Finished and came home.</p></div>
 <div type="entry" n="1774-02-09"><dateline><date when="1774-02-09">9.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1774-02-10"><dateline><date when="1774-02-10">10.</date></dateline><p> I went to our Monthly Meeting which was some easement to my mind. <persName key="w65v49t0">Hannah Foster</persName> appeared in a lively manner.</p></div>
 <div type="entry" n="1774-02-11"><dateline><date when="1774-02-11">11.</date></dateline><p> I went to French's to make a pump was called home.</p></div>
@@ -592,7 +592,7 @@
 <div type="entry" n="1774-03-20"><dateline><date when="1774-03-20"><supplied>20</supplied>.</date></dateline><p> Went to our meeting</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1774-03-21"><dateline><date when="1774-03-21"><supplied>21.</supplied></date></dateline><p> About home</p></div>
-<div type="entry" n="1774-03-22"><dateline><date when="1774-03-22"><supplied>22.</supplied></date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-03-22"><dateline><date when="1774-03-22"><supplied>22.</supplied></date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-03-23"><dateline><date when="1774-03-23"><supplied>23.</supplied></date></dateline><p> Went to market</p></div>
 <div type="entry" n="1774-03-24"><dateline><date when="1774-03-24">24.</date></dateline><p> Went to help move Duch Phillip.</p></div>
 <div type="entry" n="1774-03-25"><dateline><date when="1774-03-25">25.</date></dateline><p> Went to Quarterly Meeting of Haddonfield. James Daniel spoke very notably and Phillip Dennis and <persName key="w6x16z80">John Reeves</persName> and several more. I thought it was a very good meeting and instructing though a very poor T<supplied>ime</supplied> W<supplied>ith</supplied> me.</p></div>
@@ -617,8 +617,8 @@
 <div type="entry" n="1774-04-10"><dateline><date when="1774-04-10">10.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> Worse and worse</note></div>
 <div type="entry" n="1774-04-11"><dateline><date when="1774-04-11">11.</date></dateline><p> About at work </p></div>
-<div type="entry" n="1774-04-12"><dateline><date when="1774-04-12">12.</date></dateline><p> Do </p></div>
-<div type="entry" n="1774-04-13"><dateline><date when="1774-04-13">13.</date></dateline><p> Do Do</p></div>
+<div type="entry" n="1774-04-12"><dateline><date when="1774-04-12">12.</date></dateline><p> D<supplied>itt</supplied>o. </p></div>
+<div type="entry" n="1774-04-13"><dateline><date when="1774-04-13">13.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-04-14"><dateline><date when="1774-04-14">14.</date></dateline><p> Went to John Stone's to work and went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied> and D<supplied>ull</supplied> indeed</note></div>
 <div type="entry" n="1774-04-15"><dateline><date when="1774-04-15">15.</date></dateline><p> At Stone at work at his barn.</p></div>
@@ -626,24 +626,24 @@
 <note type="authorial" place="left margin"> very warm weather the spring very uncommonly forward</note></div>
 <div type="entry" n="1774-04-17"><dateline><date when="1774-04-17">17, Went to our meeting and down to</date></dateline><p> J. Warrington's. Met with som<supplied>e</supplied> trials with my boys.</p></div>
 <div type="entry" n="1774-04-18"><dateline><date when="1774-04-18">18.</date></dateline><p> I went to John Stone's to work at the barn.</p></div>
-<div type="entry" n="1774-04-19"><dateline><date when="1774-04-19">19.</date></dateline><p> At do. under temptations and provocations.</p></div>
-<div type="entry" n="1774-04-20"><dateline><date when="1774-04-20">20.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1774-04-21"><dateline><date when="1774-04-21">21.</date></dateline><p> At do. I went to our youth's meeting. Jacob Andrews was there and spoke very notably I thought and <persName key="w65v49t0">Hannah Foster</persName> also spoke in a very lively manner. <persName key="w6rg6kjz">Thomas Evans</persName> also appeared and I thought we seemed to be favored with a very lively fine meeting.</p>
+<div type="entry" n="1774-04-19"><dateline><date when="1774-04-19">19.</date></dateline><p> At d<supplied>itt</supplied>o under temptations and provocations.</p></div>
+<div type="entry" n="1774-04-20"><dateline><date when="1774-04-20">20.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-04-21"><dateline><date when="1774-04-21">21.</date></dateline><p> At d<supplied>itt</supplied>o. I went to our youth's meeting. Jacob Andrews was there and spoke very notably I thought and <persName key="w65v49t0">Hannah Foster</persName> also spoke in a very lively manner. <persName key="w6rg6kjz">Thomas Evans</persName> also appeared and I thought we seemed to be favored with a very lively fine meeting.</p>
 <note type="authorial" place="right margin"> not so poor as sometime past I G<supplied>ave</supplied> U<supplied>p</supplied> Sa<supplied>y</supplied> S<supplied>omething</supplied> A<supplied>nd</supplied> f<supplied>elt</supplied> a great deal better I T a time of favor I really thin<supplied>k</supplied></note></div>
 <div type="entry" n="1774-04-22"><dateline><date when="1774-04-22">22.</date></dateline><p> At work at Stone's barn.</p></div>
-<div type="entry" n="1774-04-23"><dateline><date when="1774-04-23">23.</date></dateline><p> At do. Raised the barn and a very clever raising I think we had.</p></div>
+<div type="entry" n="1774-04-23"><dateline><date when="1774-04-23">23.</date></dateline><p> At d<supplied>itt</supplied>o. Raised the barn and a very clever raising I think we had.</p></div>
 <div type="entry" n="1774-04-24"><dateline><date when="1774-04-24">24.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note>
 <note type="authorial" place="left margin"> very warm</note></div>
 <div type="entry" n="1774-04-25"><dateline><date when="1774-04-25">25.</date></dateline><p> Plowing for corn.</p></div>
-<div type="entry" n="1774-04-26"><dateline><date when="1774-04-26">26.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1774-04-27"><dateline><date when="1774-04-27">27.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-04-26"><dateline><date when="1774-04-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-04-27"><dateline><date when="1774-04-27">27.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <pb n="017" facs="sc203346"/>
 <div type="entry" n="1774-04-28"><dateline><date when="1774-04-28">28th of the Fourth Month, 1774.</date></dateline><p> Went to our preparative meeting. Some who <damage><gap/></damage>.</p></div>
 <div type="entry" n="1774-04-29"><dateline><date when="1774-04-29">29.</date></dateline><p> About home plowing for corn.</p></div>
-  <div type="entry" n="1774-04-30"><dateline><date when="1774-04-30">30</date></dateline><p> Do</p></div>
+  <div type="entry" n="1774-04-30"><dateline><date when="1774-04-30">30</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
   <div type="entry" n="1774-05-01"><head><supplied>May 1774</supplied></head><dateline><date when="1774-05-01">1st of the Fifth Month 1774</date></dateline><p> went to planting corn</p></div>
-<div type="entry" n="1774-05-02"><dateline><date when="1774-05-02">2.</date></dateline><p> At do. At night there came on a violent cold storm of s<supplied>now</supplied></p></div>
+<div type="entry" n="1774-05-02"><dateline><date when="1774-05-02">2.</date></dateline><p> At d<supplied>itt</supplied>o. At night there came on a violent cold storm of s<supplied>now</supplied></p></div>
 <div type="entry" n="1774-05-03"><dateline><date when="1774-05-03">3.</date></dateline><p> A very stormy cold snowy morning.</p></div>
 <div type="entry" n="1774-05-04"><dateline><date when="1774-05-04">4.</date></dateline><p> About home</p></div>
 <div type="entry" n="1774-05-05"><dateline><date when="1774-05-05">5.</date></dateline><p> Went to our Monthly Meeting</p>
@@ -653,11 +653,11 @@
   <div type="entry" n="1774-05-08"><dateline><date when="1774-05-08">8.</date></dateline><p> Went to our meeting. <persName key="w6qj854r">Joseph Buzby</persName> and <rs key="w6tq8ftp">wife</rs> and Rachel and E<damage><gap/></damage> Hans was there.</p>
     <note type="authorial" place="right margin"> I G<supplied>ave</supplied> U<supplied>p</supplied> <damage><gap/></damage> S<supplied>peak</supplied> A<supplied>gain</supplied></note></div>
 <div type="entry" n="1774-05-09"><dateline><date when="1774-05-09">9.</date></dateline><p> At home planting corn.</p></div>
-<div type="entry" n="1774-05-10"><dateline><date when="1774-05-10">10.</date></dateline><p> At do. </p></div>
+<div type="entry" n="1774-05-10"><dateline><date when="1774-05-10">10.</date></dateline><p> At d<supplied>itt</supplied>o. </p></div>
 <div type="entry" n="1774-05-11"><dateline><date when="1774-05-11">11.</date></dateline><p> About home planting garden truk.</p></div>
-<div type="entry" n="1774-05-12"><dateline><date when="1774-05-12">12.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-05-12"><dateline><date when="1774-05-12">12.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-05-13"><dateline><date when="1774-05-13">13.</date></dateline><p> About home</p></div>
-<div type="entry" n="1774-05-14"><dateline><date when="1774-05-14">14.</date></dateline><p> Do.</p>
+<div type="entry" n="1774-05-14"><dateline><date when="1774-05-14">14.</date></dateline><p> D<supplied>itt</supplied>o.</p>
 <p>A remark: Learn to hold thy tongue, five words cost Zacharious 40 weeks silence.<note type="editorial"> Luke 1:5-22.</note></p></div>
 <div type="entry" n="1774-05-15"><dateline><date when="1774-05-15">15.</date></dateline><p> I went down to Upper Greenwich meeting. A very poor dull <supplied>time</supplied>.</p></div>
 <div type="entry" n="1774-05-16"><dateline><date when="1774-05-16">16.</date></dateline><p> Went to Salem Quarterly Meeting. <persName key="w61p2c7g">Robert Voluntine</persName> and divers other very notable Friends was there.</p>
@@ -708,7 +708,7 @@
 <pb n="019" facs="sc203348"/>
 <div type="entry" n="1774-06-19"><dateline><date when="1774-06-19">19th of Sixth Month, 1774.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1774-06-20"><dateline><date when="1774-06-20">20.</date></dateline><p> At home plowing corn.</p></div>
-<div type="entry" n="1774-06-21"><dateline><date when="1774-06-21">21.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-06-21"><dateline><date when="1774-06-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-06-22"><dateline><date when="1774-06-22">22.</date></dateline><p> I went to <persName key="w6mk6p7z">Thomas Thorn</persName>s to lay a corn floor and make cover.</p></div>
 <div type="entry" n="1774-06-23"><dateline><date when="1774-06-23">23.</date></dateline><p> I went to our meeting and went to John Stone's to work.</p>
   <note type="authorial" place="right margin"> Re Pa M A I though I <damage><gap/></damage></note></div>
@@ -717,23 +717,23 @@
 <div type="entry" n="1774-06-26"><dateline><date when="1774-06-26">26.</date></dateline><p> Went to our meeting.</p>
   <note type="authorial" place="right margin"> <persName key="w6ph2gz9">R<supplied>ebekah</supplied> R<supplied>oberts</supplied></persName> S<supplied>poke</supplied> again</note></div>
 <div type="entry" n="1774-06-27"><dateline><date when="1774-06-27">27.</date></dateline><p> At home reaping.</p></div>
-<div type="entry" n="1774-06-28"><dateline><date when="1774-06-28">28.</date></dateline><p> Do. Do.</p></div>
+<div type="entry" n="1774-06-28"><dateline><date when="1774-06-28">28.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-06-29"><dateline><date when="1774-06-29">29.</date></dateline><p> Went to mowing.</p></div>
 <div type="entry" n="1774-06-30"><dateline><date when="1774-06-30">30.</date></dateline><p> Went to our preparative meeting.</p>
 <note type="authorial" place="right margin"> N<supplied>ot</supplied> S<supplied>o</supplied> P<supplied>oor</supplied> as at some times I S A P D N th Ba</note></div>
 <div type="entry" n="1774-07-01"><head><supplied>July 1774</supplied></head><dateline><date when="1774-07-01">1 Seventh Month, 1774.</date></dateline><p> At home mowing.</p></div>
-<div type="entry" n="1774-07-02"><dateline><date when="1774-07-02">2.</date></dateline><p> Do. Do. Went to <persName key="w68x44xw">Elisha Hooton's</persName> and <persName key="w66z02ks">Isaac Borton's</persName>. I borrowed <persName key="w6br9gtg">Thomas Story's</persName> <title>Journal</title>.<note type="editorial"> <persName key="w6br9gtg">Thomas Story</persName>, A Journal of the Life of <persName key="w6br9gtg">Thomas Story</persName> Newcastle upon Tyne: Isaac Thompson, 1747.</note></p></div>
+<div type="entry" n="1774-07-02"><dateline><date when="1774-07-02">2.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o. Went to <persName key="w68x44xw">Elisha Hooton's</persName> and <persName key="w66z02ks">Isaac Borton's</persName>. I borrowed <persName key="w6br9gtg">Thomas Story's</persName> <title>Journal</title>.<note type="editorial"> <persName key="w6br9gtg">Thomas Story</persName>, A Journal of the Life of <persName key="w6br9gtg">Thomas Story</persName> Newcastle upon Tyne: Isaac Thompson, 1747.</note></p></div>
 <div type="entry" n="1774-07-03"><dateline><date when="1774-07-03">3.</date></dateline><p> I went to Evesham Meeting had a very hard dull poor time.</p></div>
 <div type="entry" n="1774-07-04"><dateline><date when="1774-07-04">4.</date></dateline><p> About reaping a very wet time.</p></div>
 <div type="entry" n="1774-07-05"><dateline><date when="1774-07-05">5.</date></dateline><p> Mow, harrowing corn.</p></div>
 <div type="entry" n="1774-07-06"><dateline><date when="1774-07-06">6.</date></dateline><p> Mowing a very wet time. A most dreadful hard thundershower.</p></div>
 <div type="entry" n="1774-07-07"><dateline><date when="1774-07-07">7.</date></dateline><p> Went to Evesham Monthly Meeting which was silent though some satisfactory in the end.</p></div>
 <div type="entry" n="1774-07-08"><dateline><date when="1774-07-08">8.</date></dateline><p> At home about hay.</p></div>
-<div type="entry" n="1774-07-09"><dateline><date when="1774-07-09">9.</date></dateline><p> Do. Do.</p></div>
+<div type="entry" n="1774-07-09"><dateline><date when="1774-07-09">9.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
   <div type="entry" n="1774-07-10"><dateline><date when="1774-07-10">10.</date></dateline><p> Went to our meeting. <persName key="w63z8z1g">Isaac Andrews</persName> was there and preached and p<supplied>rayed</supplied> very extraordinary. I thought it a very great favor to us. He spoke very encouragingly to the sincere seekers with whom he signified a near sympathy with their enquiring minds after this manner by whom shall Jacob arise for he is small and <damage><gap/></damage><note type="editorial">Amos 7:2</note> He had to say to such fear not worry Jacob though thou pass <supplied>through?</supplied> the fire it shall not kindle on thee or this the water it <supplied>shall</supplied> not overwhelm thee, but spoke very smart and close to the ca<damage><gap/></damage>. It was a dull heavy <supplied>time</supplied> with me though I believe <supplied>it was a</supplied> lively meeting to many</p></div>
 <div type="entry" n="1774-07-11"><dateline><date when="1774-07-11">11.</date></dateline><p> About hay.</p></div>
-<div type="entry" n="1774-07-12"><dateline><date when="1774-07-12">12.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1774-07-13"><dateline><date when="1774-07-13">13.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-07-12"><dateline><date when="1774-07-12">12.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-07-13"><dateline><date when="1774-07-13">13.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
   <div type="entry" n="1774-07-14"><dateline><date when="1774-07-14">14.</date></dateline><p> I went to Evesham which was very small dull and heavy yet I said a few words concerning sacrificing our time <damage><gap/></damage> our nets and to our Dr <damage><gap/></damage>.</p></div>
 <pb n="020" facs="sc203349"/>
 <div type="entry" n="1774-07-17"><dateline><date when="1774-07-17">17th of the Seventh Month, 1774.</date></dateline><p> Went to our meeting a very P<supplied>oor</supplied> D<supplied>ull</supplied> H<supplied>eavy</supplied> T<supplied>ime</supplied> W<supplied>ith</supplied> Me. I found an account in the life of <persName key="w6br9gtg">Thomas Story</persName>, page 221 and part in 224 as follows:</p>
@@ -742,7 +742,7 @@
 <p>But the just appeared with open face and walked upright in the street and rejoiced in secret that perfect love that casteth out all fear and sang praises to him who liveth and reigneth and is worthy forever being resigned unto his holy will in all things, saying let it lie as thou will in time and in eternity now and forever. Nor love of the world nor fear of death could hinder their resignation, abridge their confidence or cloud their enjoyments in the Lord.</p>
 <p>This companion of his died in Philadelphia with the fever.</p></div>
 <div type="entry" n="1774-07-18"><dateline><date when="1774-07-18">18.</date></dateline><p> I was about home mowing.</p></div>
-<div type="entry" n="1774-07-19"><dateline><date when="1774-07-19">19.</date></dateline><p> To do. getting in oats etc.</p></div>
+<div type="entry" n="1774-07-19"><dateline><date when="1774-07-19">19.</date></dateline><p> To d<supplied>itt</supplied>o. getting in oats etc.</p></div>
 <div type="entry" n="1774-07-20"><dateline><date when="1774-07-20">20.</date></dateline><p> Finishing a plow.</p></div>
 <div type="entry" n="1774-07-21"><dateline><date when="1774-07-21">21.</date></dateline><p> I went to Evesham Youth's Meeting <persName key="w63z8z1g">Isaac Andrews</persName> was there and <persName key="w6kf2pgw">John Sleeper</persName>. John was silent but Isaac had a great deal to say he expressed a sympathy with someone that was tried with a spirit of drowsiness a heaviness but spoke very encouragingly to them and said it was in order to prove us.</p>
   <note type="authorial" place="right margin"> I spoke first in this meeting against an indolent and rambling spirit then <persName key="w65v49t0">Hannah Foster</persName> and then <persName key="w6rg6kjz">Thomas Evans</persName> appeared. I was under a good deal of concern after the meeting and fear I was not right in speaking and it continued for several days, though I <damage><gap/></damage> to think what Isaac <damage><gap/></damage> my condition pretty <damage><gap/></damage>.</note></div>
@@ -751,15 +751,15 @@
 <pb n="021" facs="sc203350"/>
 <div type="entry" n="1774-07-24"><dateline><date when="1774-07-24">24th of Seventh Month, 1774.</date></dateline><p> At our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke and myself a few words with which I seemed well satisfied. I went down to Haddonfield afternoon meeting. <persName key="w6c82qz0">Joshua Evans</persName> spoke very well I though and I was under a good deal of exercise about speaking but being afraid I should be too forward I put it off even till the meeting broke up.</p></div>
 <div type="entry" n="1774-07-25"><dateline><date when="1774-07-25">25.</date></dateline><p> Plowing corn etc.</p></div>
-<div type="entry" n="1774-07-26"><dateline><date when="1774-07-26">26.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-07-26"><dateline><date when="1774-07-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
   <div type="entry" n="1774-07-27"><dateline><date when="1774-07-27">27</date></dateline><p> Hauling stuff of the new ground.</p></div>
   <div type="entry" n="1774-07-28"><dateline><date when="1774-07-28">28</date></dateline><p> I went to our preparative meeting which was somewhat encouraging and satisfactory. I spoke again and seemed satisfied.</p></div>
 <div type="entry" n="1774-07-29"><dateline><date when="1774-07-29">29.</date></dateline><p> Harrowing corn </p></div>
 <div type="entry" n="1774-07-30"><dateline><date when="1774-07-30">30.</date></dateline><p> I went to Sr. Burrough's to mend his old pump.</p></div>
 <div type="entry" n="1774-07-31"><dateline><date when="1774-07-31">31.</date></dateline><p> Went to our meeting which was quite silent though agreeable. Benjamin Sharpless was there.</p></div>
 <div type="entry" n="1774-08-01"><head><supplied>August 1774</supplied></head><dateline><date when="1774-08-01">1 Eighth Month.</date></dateline><p> Went to John Stone's to work hewing timber for his kitchen.</p></div>
-<div type="entry" n="1774-08-02"><dateline><date when="1774-08-02">2.</date></dateline><p> At do. very warm weather.</p></div>
-<div type="entry" n="1774-08-03"><dateline><date when="1774-08-03">3.</date></dateline><p> At do. do.</p></div>
+<div type="entry" n="1774-08-02"><dateline><date when="1774-08-02">2.</date></dateline><p> At d<supplied>itt</supplied>o very warm weather.</p></div>
+<div type="entry" n="1774-08-03"><dateline><date when="1774-08-03">3.</date></dateline><p> At d<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-08-04"><dateline><date when="1774-08-04">4.</date></dateline><p> I went to Monthly Meeting.</p>
 <note type="authorial" place="right margin"> and I said so much to the business I was afraid I overdid it though I thought these seemed a necessity</note></div>
 <div type="entry" n="1774-08-05"><dateline><date when="1774-08-05">5.</date></dateline><p> I went to John Hinchman's to make a pump 24 <supplied>feet</supplied> long.</p></div>
@@ -775,16 +775,16 @@
 <div type="entry" n="1774-08-14"><dateline><date when="1774-08-14">14.</date></dateline><p> Went to our meeting I thought was some<supplied>what</supplied> better. Went with <persName key="w66r2nv3">Joshua Roberts</persName> and <persName key="w6g55ftx">Edmond Hollinshead</persName> to see Sam Conrow and Thomas Hackney after meeting to little satisfaction. J. Lippincott was with us.</p>
   <note type="authorial" place="right margin"> I Had A f<supplied>ew</supplied> W<supplied>ords</supplied> to S<supplied>ay</supplied> and <persName key="w6ph2gz9">R Robert</persName> spoke very prettily</note></div>
 <div type="entry" n="1774-08-15"><dateline><date when="1774-08-15">15.</date></dateline><p> At work at home at the new ground.</p></div>
-<div type="entry" n="1774-08-16"><dateline><date when="1774-08-16">16.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-08-16"><dateline><date when="1774-08-16">16.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-08-17"><dateline><date when="1774-08-17">17.</date></dateline><p> Making a plow for John Pine.</p></div>
 <div type="entry" n="1774-08-18"><dateline><date when="1774-08-18">18.</date></dateline><p> Went to our meeting. Joshua Gibbs was there and spoke a few words concerning an easy state which I thought very well of and had a sense of the necessity of striving against such a state. His sister <persName key="w6h14ctn">Rebekah Wright</persName> was also there and bang'd us along right smartly.</p>
 <note type="authorial" place="right margin"> In the forepart of the meeting and men<supplied>tioned</supplied> som<supplied>ething</supplied> con<supplied>cerning</supplied> the inha<supplied>bitants</supplied> of Laish and the secure Zidonias that dwelt secure and at ease.<note type="editorial">Judges 18:7 <q>Then the five men departed, and came to Laish, and saw the people that were therein, how they dwelt careless, after the manner of the Zidonians, quiet and secure</q></note></note></div>
 <div type="entry" n="1774-08-19"><dateline><date when="1774-08-19">19.</date></dateline><p> I went to make a top piece for William Vinicomb's pump 14 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1774-08-20"><dateline><date when="1774-08-20">20.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-08-20"><dateline><date when="1774-08-20">20.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-08-21"><dateline><date when="1774-08-21">21.</date></dateline><p> Went to our meeting very poor. Went with E. Hollinshead and J. Roberts and <persName key="w6j49htj">John Lippincott</persName> to see Thomas and Isaac Lippincott concerning their misconduct to some satisfaction.</p></div>
 <div type="entry" n="1774-08-22"><dateline><date when="1774-08-22">22.</date></dateline><p> At home making pump boxes.</p></div>
 <div type="entry" n="1774-08-23"><dateline><date when="1774-08-23">23.</date></dateline><p> Went to W. Vinicomb's to make a pump in the mead<supplied>ow</supplied> 12 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1774-08-24"><dateline><date when="1774-08-24">24.</date></dateline><p> At do. Very rainy weath<supplied>er</supplied>.</p></div>
+<div type="entry" n="1774-08-24"><dateline><date when="1774-08-24">24.</date></dateline><p> At d<supplied>itt</supplied>o. Very rainy weath<supplied>er</supplied>.</p></div>
 <div type="entry" n="1774-08-25"><dateline><date when="1774-08-25">25.</date></dateline><p> Went to our meeting very poor times with me. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke.</p></div>
 <div type="entry" n="1774-08-26"><dateline><date when="1774-08-26">26.</date></dateline><p> About home putting a beam in <persName key="w6x74cd2">Jonas Cattle's</persName> plow and getting a piece of rye sowed.</p></div>
 <div type="entry" n="1774-08-27"><dateline><date when="1774-08-27">27.</date></dateline><p> I went to Jacob Wells's to mend his pump and was <persName key="w68x44xw">Elisha Hooton's</persName> and <persName key="w66z02ks">Isaac Borton's</persName>.</p></div>
@@ -792,7 +792,7 @@
 <div type="entry" n="1774-08-28"><dateline><date when="1774-08-28">28th of the Eighth Month 1774.</date></dateline><p> Was First Day. I went to our meeting.</p>
 <note type="authorial" place="right margin"> Not so P<supplied>oor</supplied> a<supplied>s</supplied> at S<supplied>ome</supplied> T<supplied>imes</supplied> I S<supplied>aid</supplied> A f<supplied>ew</supplied> W<supplied>ords</supplied> with W<supplied>hich</supplied> I S<supplied>eemed</supplied> P<supplied>retty</supplied> W<supplied>ell</supplied> S<supplied>atisfied</supplied></note></div>
 <div type="entry" n="1774-08-29"><dateline><date when="1774-08-29">29.</date></dateline><p> I went to John Stone's to work.</p></div>
-<div type="entry" n="1774-08-30"><dateline><date when="1774-08-30">30.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-08-30"><dateline><date when="1774-08-30">30.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-08-31"><dateline><date when="1774-08-31">31.</date></dateline><p> At home making a plow for <persName key="w6r31rzq">Joseph Burroughs</persName>.</p></div>
 <div type="entry" n="1774-09-01"><head><supplied>September 1774</supplied></head><dateline><date when="1774-09-01">1 of the Ninth Month.</date></dateline><p> Went to our preparative meeting.</p>
 <note type="authorial" place="right margin"> Brother <persName key="w66b7v5c">Robert</persName> affairs con<supplied>cerning</supplied> sel<supplied>ling</supplied> his N<supplied>egr</supplied>o was moved and gave me a G<supplied>ood</supplied> D<supplied>eal</supplied> of Un<supplied>ease</supplied> for S<supplied>everal</supplied> days</note></div>
@@ -807,17 +807,17 @@
 <div type="entry" n="1774-09-10"><dateline><date when="1774-09-10">10.</date></dateline><p> <rs key="w6wx87x7">My wife</rs> and children went to <persName key="w68x44xw">Elisha Hooton's</persName> and to <persName key="w66z02ks">Isaac Borton's</persName> and up in the Barrens to get cranberries. William Bates was there and we killed a deer and got cranberries enough though I thought it seemed lost time to me.</p></div>
 <div type="entry" n="1774-09-11"><dateline><date when="1774-09-11">11.</date></dateline><p> I went to our meeting very drowsy and R Roberts spoke very well which I thought did good but I was all to pieces for my part being hurt with some Monthly Meeting business that was in confusion.</p></div>
 <div type="entry" n="1774-09-12"><dateline><date when="1774-09-12">12.</date></dateline><p> I went to John Stone's to work at a screw cider press.</p></div>
-<div type="entry" n="1774-09-13"><dateline><date when="1774-09-13">13.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1774-09-14"><dateline><date when="1774-09-14">14.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1774-09-15"><dateline><date when="1774-09-15">15.</date></dateline><p> Do I went to our meeting.</p>
+<div type="entry" n="1774-09-13"><dateline><date when="1774-09-13">13.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-09-14"><dateline><date when="1774-09-14">14.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-09-15"><dateline><date when="1774-09-15">15.</date></dateline><p> D<supplied>itt</supplied>o. I went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied> D<supplied>ull</supplied> Time</note></div>
 <div type="entry" n="1774-09-16"><dateline><date when="1774-09-16">16.</date></dateline><p> I went to Seth Lippincott's to hew a pump.</p></div>
 <div type="entry" n="1774-09-17"><dateline><date when="1774-09-17">17.</date></dateline><p> I went to J. Stone's to work again.</p></div>
 <div type="entry" n="1774-09-18"><dateline><date when="1774-09-18">18.</date></dateline><p> I went to our meeting which was silent and V<supplied>ery</supplied> P<supplied>oor</supplied>.</p></div>
 <div type="entry" n="1774-09-19"><dateline><date when="1774-09-19">19.</date></dateline><p> I went to John Stone's and we raised the kitchen <supplied>sic</supplied>.</p></div>
-<div type="entry" n="1774-09-20"><dateline><date when="1774-09-20">20.</date></dateline><p> At work at do.</p></div>
-<div type="entry" n="1774-09-21"><dateline><date when="1774-09-21">21.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1774-09-22"><dateline><date when="1774-09-22">22.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-09-20"><dateline><date when="1774-09-20">20.</date></dateline><p> At work at d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-09-21"><dateline><date when="1774-09-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-09-22"><dateline><date when="1774-09-22">22.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-09-23"><dateline><date when="1774-09-23">23.</date></dateline><p> I went to Quarterly Meeting at Haddonfield. <persName key="w6md3mdh">Robert Walker</persName> and Elizabeth Robinson and Mary Lever from Old England was there. Robert and Elizabeth both spoke very extraordinary and that the chief part of their testimony was against an inordinate love of the world. We were favored with a very good meeting. I thought it did me good.</p></div>
 <div type="entry" n="1774-09-24"><dateline><date when="1774-09-24">24.</date></dateline><p> About home turning some casks etc.</p></div>
 <div type="entry" n="1774-09-25"><dateline><date when="1774-09-25">25.</date></dateline><p> I went to our meeting.</p>
@@ -828,21 +828,21 @@
 <note type="authorial" place="right margin"> N<supplied>ot</supplied> S<supplied>o</supplied> D<supplied>ull</supplied> A<supplied>s</supplied> A<supplied>t</supplied> S<supplied>ome</supplied> T<supplied>ime</supplied> / S<supplied>poke</supplied> A<supplied>gain</supplied></note></div>
 <div type="entry" n="1774-10-03"><dateline><date when="1774-10-03">3.</date></dateline><p> I went to Thorn's to mend an apple mill</p></div>
 <div type="entry" n="1774-10-04"><dateline><date when="1774-10-04">4.</date></dateline><p> Went Seth Lippincott's to make a pump 34 feet long.</p></div>
-<div type="entry" n="1774-10-05"><dateline><date when="1774-10-05">5.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-10-05"><dateline><date when="1774-10-05">5.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-10-06"><dateline><date when="1774-10-06">6.</date></dateline><p> I went to Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> was lively in her testimony and the meeting somewhat satisfactory.</p></div>
 <div type="entry" n="1774-10-07"><dateline><date when="1774-10-07">7.</date></dateline><p> Went to Lippincott's to finish the pump.</p></div>
 <div type="entry" n="1774-10-08"><dateline><date when="1774-10-08">8.</date></dateline><p> About home doing something at my own pump.</p></div>
 <div type="entry" n="1774-10-09"><dateline><date when="1774-10-09">9.</date></dateline><p> I went to Evesham meeting.</p>
 <note type="authorial" place="right margin"> and had so<supplied>mething</supplied> to say with which I felt pretty well satisfied afterwards and an open free cheerfulness</note></div>
 <div type="entry" n="1774-10-10"><dateline><date when="1774-10-10">10.</date></dateline><p> Husking corn.</p></div>
-<div type="entry" n="1774-10-11"><dateline><date when="1774-10-11">11.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1774-10-12"><dateline><date when="1774-10-12">12.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-10-11"><dateline><date when="1774-10-11">11.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-10-12"><dateline><date when="1774-10-12">12.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-10-13"><dateline><date when="1774-10-13">13.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very prettily and her words was in part the very same with mine at Evesham the week before concerning a search with lighted candles.</p></div>
 <div type="entry" n="1774-10-14"><dateline><date when="1774-10-14">14.</date></dateline><p> Husking corn and went to a vendue of cattle.</p></div>
 <div type="entry" n="1774-10-15"><dateline><date when="1774-10-15">15.</date></dateline><p> Getting in winter apples.</p></div>
 <div type="entry" n="1774-10-16"><dateline><date when="1774-10-16">16.</date></dateline><p> I went to our meeting which seemed pretty well I A G at <persName key="w6ph2gz9">Rebekah Roberts</persName> agains but little.</p></div>
 <div type="entry" n="1774-10-17"><dateline><date when="1774-10-17">17.</date></dateline><p> At home hauling corn.</p></div>
-<div type="entry" n="1774-10-18"><dateline><date when="1774-10-18">18.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-10-18"><dateline><date when="1774-10-18">18.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-10-19"><dateline><date when="1774-10-19">19.</date></dateline><p> I went to John Stone's to work. </p></div>
 <div type="entry" n="1774-10-20"><dateline><date when="1774-10-20">20.</date></dateline><p> I went to our Youth meeting. <persName key="w63z8z1g">Isaac Andrews</persName> was there and preached and prayed very notably and <persName key="w65v49t0">Hannah Foster</persName> was pretty lively in the ministry but it was a very poor time with me.</p></div>
 <div type="entry" n="1774-10-21"><dateline><date when="1774-10-21">21.</date></dateline><p> At John Stone's to work.</p></div>
@@ -850,24 +850,24 @@
 <div type="entry" n="1774-10-23"><dateline><date when="1774-10-23">23.</date></dateline><p> Went to our meeting but it was a very poor time with me I having this week met trouble and difficulty and provocation with one of my boys and I wrr'd him away.</p></div>
 <pb n="024" facs="sc203353"/>
 <div type="entry" n="1774-10-24"><dateline><date when="1774-10-24">24th of the Tenth Month 1774.</date></dateline><p> Went to work at John Stone's.</p></div>
-<div type="entry" n="1774-10-25"><dateline><date when="1774-10-25">25.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1774-10-26"><dateline><date when="1774-10-26">26.</date></dateline><p> Do</p></div>
+<div type="entry" n="1774-10-25"><dateline><date when="1774-10-25">25.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-10-26"><dateline><date when="1774-10-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-10-27"><dateline><date when="1774-10-27">27.</date></dateline><p> Went to our meeting. Thomas Say from Philadelphia and his wife elderly though young in the ministry both appeared and very edifying and lively.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied> T<supplied>ime</supplied> w<supplied>ith</supplied> me</note></div>
 <div type="entry" n="1774-10-28"><dateline><date when="1774-10-28">28.</date></dateline><p> At work at Stone's.</p></div>
-<div type="entry" n="1774-10-29"><dateline><date when="1774-10-29">29.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-10-29"><dateline><date when="1774-10-29">29.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-10-30"><dateline><date when="1774-10-30">30 I went to Haddonfield.</date></dateline><p> Sarah Hopkins spoke and I was under some exercise to appear but put it off through doubt first but afterward thought it might have been best to have left what was on my mind.</p></div>
 <div type="entry" n="1774-10-31"><dateline><date when="1774-10-31">31 of Tenth Month, 1774.</date></dateline><p> I went to our meeting appointed for Elizabeth Robinson from Old England whose testimony I thought the most searching that I ever hear in many branches and in particular to the foremost rank concerning treating with offenders in their own strength and own will, and mentioned the passage concerning some that attempted to cast out devils and the evil spirits to fell upon them and tore them and concerning some that assumed offices in the church that had no right. And it came so tight I was almost ready to wish I had never made any pretences to religion and I was somewhat disconsolate for several days but taking up a Bible one evening I opened on this verse: Let the righteous smite me it shall be a kindness: and let him reprove me, it shall be an excellent oil that shall not break my head, for yet my prayer also shall been in their calamities. Psalms the CXLI. 5th verse.<note type="editorial">Psalms 141:5</note> I remembered the wounds of a friend are said to be faithful<note type="editorial">Proverbs 27:6</note> and that them that are loved ones are chastened. After this I thought I was favored to see that this testimony was a favor if rightly minded and my mind was settled under it, and I clearly saw that we stood in great need of it. Her testimony was very close against a worldly spirit. concerning many, nay she said all, was more or less deeply fettered and in the miry stiff clay and that our garments was spotted but that there was some that was endeavoring to have those spots washed out, but some she said was bound down to the world as with iron chains. I was favored to see there was need of getting deeper.</p></div>
 <div type="entry" n="1774-11-01"><head><supplied>November 1774</supplied></head><dateline><date when="1774-11-01">1st of the Eleventh Month 1774.</date></dateline><p> I went to John Stone's to work</p></div>
-<div type="entry" n="1774-11-02"><dateline><date when="1774-11-02">2.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-11-02"><dateline><date when="1774-11-02">2.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-11-03"><dateline><date when="1774-11-03">3.</date></dateline><p> I went to our meeting preparative which was silent went to J Stone's after meeting</p></div>
 <div type="entry" n="1774-11-04"><dateline><date when="1774-11-04">4.</date></dateline><p> At work at Stone's.</p></div>
 <pb n="025" facs="sc203354"/>
 <div type="entry" n="1774-11-05"><dateline><date when="1774-11-05">5th of the Eleventh Month, 1774.</date></dateline><p> Seventh Day of the week. I went to Evesham Meeting appointed for <persName key="w6md3mdh">Robert Walker</persName> from Old England whose testimony was very large and searching in many respects. He told us of the many favors and warnings we had had and that, whether we would choose or refuse, the Lord would have a people; that he would call others in if we refused; and that the day was dawned that would never be totally eclipsed and that the indignation and wrath of the Almighty would be poured out on this land in a great degree if the people did not return; and that God would be clear and his servants would be clear and our blood would be on our own heads and was very close and plain with the foremost ranks and in particular respecting carrying Monthly Meeting business on in their own strength and own wills and I think he hinted that it was too much the cases in general in our land and spoke of many that were wounded and some that were quite dead and reminded us of the many warning that we have had and threatenings of wars and times of trouble and trials times past and of the Indian wars and of the cruel oppression of the Negroes in the southern provinces and that their cries were as ascended to heaven and said an overflowing scourge would come if it did come. </p></div>
 <div type="entry" n="1774-11-06"><dateline><date when="1774-11-06">6th of Eleventh Month.</date></dateline><p> <persName key="w6md3mdh">Robert Walker</persName> was at our meeting and a very great number of people met whose desires were too much after words and I thought we should have had a silent meeting but at length Robert appeared and said he did not expect to say much but reminded us of the many opportunities we have had and of the abundance of labor there had been flowed on us and to how little purpose in the general, and that he thought a famine at time would be best, but spoke very considerable concerning taking heed to the light and I thought his sermon was very suitable to the state of the people.</p></div>
 <div type="entry" n="1774-11-07"><dateline><date when="1774-11-07">7.</date></dateline><p> Eleventh Month, 1774. I went to John Stone's to work.</p></div>
-<div type="entry" n="1774-11-08"><dateline><date when="1774-11-08">8.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1774-11-09"><dateline><date when="1774-11-09">9.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-11-08"><dateline><date when="1774-11-08">8.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-11-09"><dateline><date when="1774-11-09">9.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-11-10"><dateline><date when="1774-11-10">10 I went to our Monthly Meeting.</date></dateline><p> <persName key="w66794np">Mark Reeve</persName> was there had a great deal to sat concerning an easeful state and how dangerous and like the people of Laish this easeful drowsy state was.</p>
 <note type="authorial" place="right margin"> Very poor dull times with me</note></div>
 <div type="entry" n="1774-11-11"><dateline><date when="1774-11-11">11.</date></dateline><p> About home.</p></div>
@@ -877,18 +877,18 @@
 <note type="authorial" place="right margin"> A very dull poor time with me</note></div>
 <div type="entry" n="1774-11-14"><dateline><date when="1774-11-14">14.</date></dateline><p> About home went with <persName key="w66r2nv3">Joshua Roberts</persName> to look at a cow for beef.</p></div>
 <div type="entry" n="1774-11-15"><dateline><date when="1774-11-15">15.</date></dateline><p> About home my eyesight was at this time very much hurt by kindling of fire with some powder being a little burnt and then got cold in them so that I was hardly capable of any business.</p></div>
-<div type="entry" n="1774-11-16"><dateline><date when="1774-11-16">16.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-11-16"><dateline><date when="1774-11-16">16.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-11-17"><dateline><date when="1774-11-17">17.</date></dateline><p> I went to our meeting.</p></div>
 <div type="entry" n="1774-11-18"><dateline><date when="1774-11-18">18.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1774-11-19"><dateline><date when="1774-11-19">19.</date></dateline><p> Do, This was the time friends set off to Salem Quarterly Meeting and I was so bad with my eyes I could not go and a very dull discouraging winter-like sort of a season it was with me both inwardly and outwardly. There seemed a dull poor prospect for me.</p></div>
+<div type="entry" n="1774-11-19"><dateline><date when="1774-11-19">19.</date></dateline><p> D<supplied>itt</supplied>o. This was the time friends set off to Salem Quarterly Meeting and I was so bad with my eyes I could not go and a very dull discouraging winter-like sort of a season it was with me both inwardly and outwardly. There seemed a dull poor prospect for me.</p></div>
 <div type="entry" n="1774-11-20"><dateline><date when="1774-11-20">20.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> P<supplied>oor</supplied> T<supplied>ired?</supplied> D<supplied>ull</supplied> times</note></div>
 <div type="entry" n="1774-11-21"><dateline><date when="1774-11-21">21.</date></dateline><p> I went to John Haines's to do a little work.</p></div>
 <div type="entry" n="1774-11-22"><dateline><date when="1774-11-22">22.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1774-11-23"><dateline><date when="1774-11-23">23.</date></dateline><p> I went to Philadelphia to get something for my eyes.</p></div>
 <div type="entry" n="1774-11-24"><dateline><date when="1774-11-24">24.</date></dateline><p> About home. Making a bedstead for Samuel Collins.</p></div>
-<div type="entry" n="1774-11-25"><dateline><date when="1774-11-25">25.</date></dateline><p> Do Do.</p></div>
-<div type="entry" n="1774-11-26"><dateline><date when="1774-11-26">26.</date></dateline><p> Do Do.</p></div>
+<div type="entry" n="1774-11-25"><dateline><date when="1774-11-25">25.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-11-26"><dateline><date when="1774-11-26">26.</date></dateline><p> D<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-11-27"><dateline><date when="1774-11-27">27.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> I thought not quite so poor as some time before</note></div>
 <div type="entry" n="1774-11-28"><dateline><date when="1774-11-28">28.</date></dateline><p> At home killing a beef etc. </p></div>
@@ -902,7 +902,7 @@
 <div type="entry" n="1774-12-04"><dateline><date when="1774-12-04">4.</date></dateline><p> I went to our meeting <persName key="w6107trk">Hannah Reeve</persName> was there and Esther Davis both spoke Hannah I thought was very notable and lively.</p></div>
 <div type="entry" n="1774-12-05"><dateline><date when="1774-12-05">5.</date></dateline><p> About home salting beef etc.</p></div>
 <div type="entry" n="1774-12-06"><dateline><date when="1774-12-06">6.</date></dateline><p> I went to make a pump for Thomas French.</p></div>
-<div type="entry" n="1774-12-07"><dateline><date when="1774-12-07">7.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1774-12-07"><dateline><date when="1774-12-07">7.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-12-08"><dateline><date when="1774-12-08">8.</date></dateline><p> I went to our Monthly Meeting. Samuel Lippincott was there and <persName key="w6bd4q25">Ebenezer Miller</persName> and <persName key="w6107trk">Hannah Reeve</persName> and all spoke and <persName key="w6c82qz0">Joshua Evans</persName> all very well but I was very poor and seemed to be stripped quite naked. <persName key="w6107trk">Hannah Reeve</persName> I thought touched my condition in her public service.</p></div>
 <div type="entry" n="1774-12-09"><dateline><date when="1774-12-09">9.</date></dateline><p> About home a wet day.</p></div>
 <div type="entry" n="1774-12-10"><dateline><date when="1774-12-10">10.</date></dateline><p> Getting firewood.</p></div>
@@ -916,22 +916,22 @@
 <pb n="028" facs="sc203357"/>
 <div type="entry" n="1774-12-18"><dateline><date when="1774-12-18">18th of the Twelfth Month, 1774.</date></dateline><p> Went to our meeting which was silent. In <persName key="w6br9gtg">Thomas Story's</persName> life I find these verses which he gave to an Irish Papist, page 555: Natural religion was simple first and plain, tales made it mystery, offerings made it gain, sacrifices and shews were at length prepared. The priests eat roast beef and the people star'd.</p></div>
 <div type="entry" n="1774-12-19"><dateline><date when="1774-12-19">19.</date></dateline><p> I went to make a pump for William Edgerton.</p></div>
-<div type="entry" n="1774-12-20"><dateline><date when="1774-12-20">20.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1774-12-21"><dateline><date when="1774-12-21">21.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-12-20"><dateline><date when="1774-12-20">20.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1774-12-21"><dateline><date when="1774-12-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1774-12-22"><dateline><date when="1774-12-22">22.</date></dateline><p> I went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very well and with a true concern.</p></div>
 <div type="entry" n="1774-12-23"><dateline><date when="1774-12-23">23.</date></dateline><p> Was snow<supplied>y</supplied> weather.</p></div>
-<div type="entry" n="1774-12-24"><dateline><date when="1774-12-24">24.</date></dateline><p> Do. At work at a settle for John Haines.</p></div>
+<div type="entry" n="1774-12-24"><dateline><date when="1774-12-24">24.</date></dateline><p> D<supplied>itt</supplied>o. At work at a settle for John Haines.</p></div>
 <div type="entry" n="1774-12-25"><dateline><date when="1774-12-25">25.</date></dateline><p> Went to our meeting which to me was something better though silent.</p></div>
 <div type="entry" n="1774-12-26"><dateline><date when="1774-12-26">26.</date></dateline><p> About home- trying to hire a schoolmaster.</p></div>
 <div type="entry" n="1774-12-27"><dateline><date when="1774-12-27">27.</date></dateline><p> Went to work at Edgerton's pump.</p></div>
 <div type="entry" n="1774-12-28"><dateline><date when="1774-12-28">28.</date></dateline><p> There came a very great snow and beat us off.</p></div>
 <div type="entry" n="1774-12-29"><dateline><date when="1774-12-29">29.</date></dateline><p> I went to preparative meeting which was silent.</p></div>
 <div type="entry" n="1774-12-30"><dateline><date when="1774-12-30">30.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1774-12-31"><dateline><date when="1774-12-31">31.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1774-12-31"><dateline><date when="1774-12-31">31.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-01-01"><head><supplied>January 1775</supplied></head><dateline><date when="1775-01-01">1st of the First Month, 1775.</date></dateline><p> Was at our meeting which was silent.</p></div>
 <div type="entry" n="1775-01-02"><dateline><date when="1775-01-02">2.</date></dateline><p> At home in the morning and went <supplied>to</supplied> hew <supplied>a</supplied> sled for John Haines.</p></div>
 <div type="entry" n="1775-01-03"><dateline><date when="1775-01-03">3.</date></dateline><p> At John Haines at work at his sled</p></div>
-<div type="entry" n="1775-01-04"><dateline><date when="1775-01-04">4.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-01-04"><dateline><date when="1775-01-04">4.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-01-05"><dateline><date when="1775-01-05">5.</date></dateline><p> Went to Monthly Meeting <persName key="w65v49t0">Hannah Foster</persName> and <persName key="w6ph2gz9">Rebekah Roberts</persName> both spoke very well. I was favored to see I stood in great need of learning true stillness.</p></div>
 <div type="entry" n="1775-01-06"><dateline><date when="1775-01-06">6.</date></dateline><p> Finishing Haines sled.</p></div>
 <div type="entry" n="1775-01-07"><dateline><date when="1775-01-07">7.</date></dateline><p> Making a bedstead for Ann Burroughs and went to Haddonfield and to mill afternoon.</p></div>
@@ -962,7 +962,7 @@
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> P<supplied>oor</supplied> H<supplied>eavy</supplied> D<supplied>ul</supplied> M<supplied>eeting</supplied> to me</note></div>
 <div type="entry" n="1775-01-30"><dateline><date when="1775-01-30">30.</date></dateline><p> About home turning pump boxes.</p></div>
 <div type="entry" n="1775-01-31"><dateline><date when="1775-01-31">31.</date></dateline><p> I went to Thomas Bishop's pump again.</p></div>
-<div type="entry" n="1775-02-01"><head><supplied>February 1775</supplied></head><dateline><date when="1775-02-01">1 of the Second Month 1775.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-02-01"><head><supplied>February 1775</supplied></head><dateline><date when="1775-02-01">1 of the Second Month 1775.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-02-02"><dateline><date when="1775-02-02">2.</date></dateline><p> At do I went to our preparative meeting and finished Thomas Bishop's pump- <persName key="w6ph2gz9">Rebecca Roberts</persName> very well.</p>
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> P<supplied>oor</supplied> H<supplied>eavy</supplied> D<supplied>ull</supplied> M<supplied>eeting</supplied> to me</note></div>
 <div type="entry" n="1775-02-03"><dateline><date when="1775-02-03">3.</date></dateline><p> I went to make Toy's pump 23 feet 8.</p></div>
@@ -975,7 +975,7 @@
 <div type="entry" n="1775-02-08"><dateline><date when="1775-02-08">8.</date></dateline><p> At do finished and came home next morning. At Edward French's I seemed to narrowly escape being badly hurt with the kick of a horse.</p></div>
 <div type="entry" n="1775-02-09"><dateline><date when="1775-02-09">9.</date></dateline><p> Went to our Monthly Meeting. <persName key="w63z8z1g">Isaac Andrews</persName>, William and Benjamin Jones was there. Isaac and William was very lively in testimony.</p></div>
 <div type="entry" n="1775-02-10"><dateline><date when="1775-02-10">10.</date></dateline><p> About home turning boxes etc for pumps.</p></div>
-<div type="entry" n="1775-02-11"><dateline><date when="1775-02-11">11.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-02-11"><dateline><date when="1775-02-11">11.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-02-12"><dateline><date when="1775-02-12">12.</date></dateline><p> Went to our meeting. Thomas Say and his wife was there both appeared very well concerned for the future well being of us all.</p></div>
 <div type="entry" n="1775-02-13"><dateline><date when="1775-02-13">13.</date></dateline><p> I went to Haddonfield Monthly Meeting. <persName key="w6912v93">John Tateum</persName> a young man spoke and <persName key="w6c82qz0">Joshua Evans</persName> was remarkable in his testimony against the fashions of the times.</p></div>
 <div type="entry" n="1775-02-14"><dateline><date when="1775-02-14">14.</date></dateline><p> I went to Ephraim Haines's to mend his pumps.</p></div>
@@ -998,7 +998,7 @@
 <div type="entry" n="1775-02-26"><dateline><date when="1775-02-26">26 of the Second Month, 1775.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-02-27"><dateline><date when="1775-02-27">27.</date></dateline><p> Went to <persName key="w61h1brp">Job Coles</persName> to mend his pump.</p></div>
 <div type="entry" n="1775-02-28"><dateline><date when="1775-02-28">28.</date></dateline><p> I went to <persName key="w6wt9jhx">Enoch Evans'</persName> to make a pump 30 feet.</p></div>
-<div type="entry" n="1775-03-01"><head><supplied>March 1775</supplied></head><dateline><date when="1775-03-01">1st Third Month.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-03-01"><head><supplied>March 1775</supplied></head><dateline><date when="1775-03-01">1st Third Month.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-03-02"><dateline><date when="1775-03-02">2nd of the Third Month.</date></dateline><p> Went to our preparative meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1775-03-03"><dateline><date when="1775-03-03">3.</date></dateline><p> About home.</p></div>
@@ -1007,10 +1007,10 @@
 <note type="authorial" place="right margin"> Ver<supplied>y</supplied> P<supplied>oor</supplied> and h<supplied>eavy</supplied> Time</note></div>
 <div type="entry" n="1775-03-06"><dateline><date when="1775-03-06">6.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1775-03-07"><dateline><date when="1775-03-07">7.</date></dateline><p> I went to Reuben Braddock's to make a pump 22 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1775-03-08"><dateline><date when="1775-03-08">8.</date></dateline><p> At do. </p></div>
+<div type="entry" n="1775-03-08"><dateline><date when="1775-03-08">8.</date></dateline><p> At d<supplied>itt</supplied>o. </p></div>
 <div type="entry" n="1775-03-09"><dateline><date when="1775-03-09">9.</date></dateline><p> Went to our Monthly Meeting. <persName key="w6bd4q25">Ebenezer Miller</persName> and <persName key="w6sk2b2m">William Jones</persName> was the and both spoke very lively and <persName key="w65v49t0">Hannah Foster</persName> also appeared but a dead dull heavy distressed dull time it was with me</p></div>
 <div type="entry" n="1775-03-10"><dateline><date when="1775-03-10">10.</date></dateline><p> About home finishing my wagon.</p></div>
-<div type="entry" n="1775-03-11"><dateline><date when="1775-03-11">11.</date></dateline><p> At do. do.</p></div>
+<div type="entry" n="1775-03-11"><dateline><date when="1775-03-11">11.</date></dateline><p> At d<supplied>itt</supplied>o d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-03-12"><dateline><date when="1775-03-12">12.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">R. Roberts</persName> spoke very well.</p></div>
 <div type="entry" n="1775-03-13"><dateline><date when="1775-03-13">13.</date></dateline><p> I went down to Philadelphia to and bought a servant lad off aboard a vessel.</p></div>
 <div type="entry" n="1775-03-14"><dateline><date when="1775-03-14">14.</date></dateline><p> I went to our general town meeting.</p></div>
@@ -1023,7 +1023,7 @@
 <div type="entry" n="1775-03-20"><dateline><date when="1775-03-20">20.</date></dateline><p> We went Ancocas meeting appointed for <persName key="w61p2c7g">Robert Valentine</persName> and he in like manner as at our meetings spoke though more favorable. His business seemed to be to strengthen and encourage the honest hearted and to stir up the slothful and drowsy that were set down at ease. We went to <persName key="w6qj854r">Joseph Busby's</persName> to dine and so home.</p></div>
 <pb n="032" facs="sc203361"/>
 <div type="entry" n="1775-03-21"><dateline><date when="1775-03-21">21st of Third Month, 1775.</date></dateline><p> About home</p></div>
-<div type="entry" n="1775-03-22"><dateline><date when="1775-03-22">22.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-03-22"><dateline><date when="1775-03-22">22.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-03-23"><dateline><date when="1775-03-23">23.</date></dateline><p> Went up to Barton's mill.</p></div>
 <div type="entry" n="1775-03-24"><dateline><date when="1775-03-24">24.</date></dateline><p> We went to Quarterly Meeting at Haddonfield which I believe was a favored meeting. <persName key="w6md3mdh">Robert Walker</persName> was there and Mary Lever both appeared very deeply concerned for the people. Also a man from York spoke in a very extraordinary manner and spoke along time.</p>
 <note type="authorial" place="right margin"> But to me it was a shut up time seemingly</note></div>
@@ -1031,7 +1031,7 @@
 <div type="entry" n="1775-03-26"><dateline><date when="1775-03-26">26.</date></dateline><p> I was at our meeting was very dark and dull.</p></div>
 <div type="entry" n="1775-03-27"><dateline><date when="1775-03-27">27.</date></dateline><p> I went to Philadelphia Spring meeting and went to Pine Street. Joseph Delaplain was there from York and spoke very largely concerning Naaman the leper who was Syrian and he spoke upon that chapter <note type="editorial">2 Kings 5</note> and explained it in a most wonderful manner. He appeared to be a man of a very large gift and very highly favored after him. Ann Moore a choice old Friend from Maryland spoke in a very affecting manner and <persName key="w6cg1kgr">John Churchman</persName> spoke concerning prayer. Very instructing and we seemed to be highly favored with a lively tendering meeting for so it was to me.</p></div>
 <div type="entry" n="1775-03-28"><dateline><date when="1775-03-28">28.</date></dateline><p> About home at work at some plows and at Morgan's pump.</p></div>
-<div type="entry" n="1775-03-29"><dateline><date when="1775-03-29">29.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-03-29"><dateline><date when="1775-03-29">29.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
   <div type="entry" n="1775-03-30"><dateline><date when="1775-03-30">30</date></dateline><p> Went to our meeting preparative.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1775-03-31"><dateline><date when="1775-03-31">31.</date></dateline><p> About home finishing a couple of plows one for <persName key="w6jb6xn6">J. Lippincott</persName> and one for <persName key="w68x44xw">Elisha Hooton</persName>.</p></div>
@@ -1042,13 +1042,13 @@
 <div type="entry" n="1775-04-05"><dateline><date when="1775-04-05">5.</date></dateline><p> At do rainy and did not finish it.</p></div>
 <div type="entry" n="1775-04-06"><dateline><date when="1775-04-06">6.</date></dateline><p> Went to Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> spoke very not<supplied>ably</supplied>.</p></div>
 <div type="entry" n="1775-04-07"><dateline><date when="1775-04-07">7.</date></dateline><p> I went to Jacob Stokes's to put a top piece on his pump 15 and 1/2 <supplied>feet</supplied> long [crossed out]</p></div>
-<div type="entry" n="1775-04-08"><dateline><date when="1775-04-08">8.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-04-08"><dateline><date when="1775-04-08">8.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-04-09"><dateline><date when="1775-04-09">9.</date></dateline><p> Went to our meeting.</p></div>
 <pb n="033" facs="sc203362"/>
 <div type="entry" n="1775-04-10"><dateline><date when="1775-04-10">10th of the Fourth Month, 1775.</date></dateline><p> About home turning pump boxes etc.</p></div>
 <div type="entry" n="1775-04-11"><dateline><date when="1775-04-11">11.</date></dateline><p> I went down to Woodbury to make 2 pumps for Aaron Hews one was 16 <supplied>feet</supplied> long and one 25 <supplied>feet</supplied> long long </p></div>
-<div type="entry" n="1775-04-12"><dateline><date when="1775-04-12">12.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1775-04-13"><dateline><date when="1775-04-13">13.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-04-12"><dateline><date when="1775-04-12">12.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-04-13"><dateline><date when="1775-04-13">13.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-04-14"><dateline><date when="1775-04-14">14.</date></dateline><p> Went to Woodbury meeting. <persName key="w63z8z1g">Isaac Andrews</persName> spoke very extraordinary encouraging to such who had their faces Sion ward. Came home this evening.</p></div>
 <div type="entry" n="1775-04-15"><dateline><date when="1775-04-15">15.</date></dateline><p> About home turning pump boxes.</p></div>
 <div type="entry" n="1775-04-16"><dateline><date when="1775-04-16">16.</date></dateline><p> Went to our meeting.</p></div>
@@ -1061,16 +1061,16 @@
 <div type="entry" n="1775-04-22"><dateline><date when="1775-04-22">22.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1775-04-23"><dateline><date when="1775-04-23">23.</date></dateline><p> Went to our meeting which was very dull and heavy.</p></div>
 <div type="entry" n="1775-04-24"><dateline><date when="1775-04-24">24.</date></dateline><p> Went to plowing.</p></div>
-<div type="entry" n="1775-04-25"><dateline><date when="1775-04-25">25.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-04-25"><dateline><date when="1775-04-25">25.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-04-26"><dateline><date when="1775-04-26">26.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-04-27"><dateline><date when="1775-04-27">27.</date></dateline><p> About home plowing.</p></div>
-<div type="entry" n="1775-04-28"><dateline><date when="1775-04-28">28.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-04-29"><dateline><date when="1775-04-29">29.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-04-28"><dateline><date when="1775-04-28">28.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-04-29"><dateline><date when="1775-04-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-04-30"><dateline><date when="1775-04-30">30.</date></dateline><p> Went to our Monthly Meeting.</p>
 <note type="authorial" place="left margin"> plowing</note></div>
 <div type="entry" n="1775-05-01"><head><supplied>May 1775</supplied></head><dateline><date when="1775-05-01">1st of the Fifth Month, 1775.</date></dateline><p> About home at work.</p></div>
-<div type="entry" n="1775-05-02"><dateline><date when="1775-05-02">2.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-05-03"><dateline><date when="1775-05-03">3.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-05-02"><dateline><date when="1775-05-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-05-03"><dateline><date when="1775-05-03">3.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-05-04"><dateline><date when="1775-05-04">4.</date></dateline><p> Went to our Monthly Meeting. Ann Gaunt from Egg Harbor was there and spoke very notably.</p></div>
 <div type="entry" n="1775-05-05"><dateline><date when="1775-05-05">5.</date></dateline><p> About <persName key="w61h1brp">Job Coles'</persName> pump mending it.</p></div>
 <div type="entry" n="1775-05-06"><dateline><date when="1775-05-06">6.</date></dateline><p> At home plowing.</p></div>
@@ -1078,15 +1078,15 @@
 <div type="entry" n="1775-05-07"><dateline><date when="1775-05-07">7th of the Fifth Month 1775.</date></dateline><p> Went to our meeting <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very well.</p></div>
 <div type="entry" n="1775-05-08"><dateline><date when="1775-05-08">8.</date></dateline><p> I went down to Haddonfield Monthly Meeting. <persName key="w6x16z80">John Reeves</persName> was there and spoke pretty notable.</p></div>
 <div type="entry" n="1775-05-09"><dateline><date when="1775-05-09">9.</date></dateline><p> About home planting corn etc.</p></div>
-<div type="entry" n="1775-05-10"><dateline><date when="1775-05-10">10.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-05-10"><dateline><date when="1775-05-10">10.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-05-11"><dateline><date when="1775-05-11">11.</date></dateline><p> Went to our meeting which was silent and very dull.</p></div>
 <div type="entry" n="1775-05-12"><dateline><date when="1775-05-12">12.</date></dateline><p> At home making fence.</p></div>
 <div type="entry" n="1775-05-13"><dateline><date when="1775-05-13">13.</date></dateline><p> Was at Philadelphia market.</p></div>
 <div type="entry" n="1775-05-14"><dateline><date when="1775-05-14">14.</date></dateline><p> Was at our meeting. <persName key="w6ph2gz9">Rebecca Roberts</persName> spoke.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
 <div type="entry" n="1775-05-15"><dateline><date when="1775-05-15">15.</date></dateline><p> At home mending my wagon.</p></div>
-<div type="entry" n="1775-05-16"><dateline><date when="1775-05-16">16.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-05-17"><dateline><date when="1775-05-17">17.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-05-16"><dateline><date when="1775-05-16">16.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-05-17"><dateline><date when="1775-05-17">17.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-05-18"><dateline><date when="1775-05-18">18.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">R Roberts</persName> spoke.</p></div>
 <div type="entry" n="1775-05-19"><dateline><date when="1775-05-19">19.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1775-05-20"><dateline><date when="1775-05-20">20.</date></dateline><p> Set at for Salem Quarterly Meeting. <rs key="w6wx87x7">My wife</rs> and her sister <persName key="w6hv3dnq">Elizabeth Haines</persName> lodged at <persName key="w6q924kg">Caleb Lippincott's</persName>.</p></div>
@@ -1109,12 +1109,12 @@
 <div type="entry" n="1775-06-04"><dateline><date when="1775-06-04">4.</date></dateline><p> Went to our meeting which was exceeding great confusion seemed to arise in the powers of the Earth and among the people.</p>
 <note type="authorial" place="right margin"> Dark dull and heavy in my apprehension</note></div>
 <div type="entry" n="1775-06-05"><dateline><date when="1775-06-05">5.</date></dateline><p> About home our daughter <persName key="w68x44wf">Abby</persName> was very bad with the flux.</p></div>
-<div type="entry" n="1775-06-06"><dateline><date when="1775-06-06">6.</date></dateline><p> About Do.</p></div>
-<div type="entry" n="1775-06-07"><dateline><date when="1775-06-07">7.</date></dateline><p> About Do.</p></div>
-<div type="entry" n="1775-06-08"><dateline><date when="1775-06-08">8.</date></dateline><p> Do. Was Monthly Meeting. I could not go the child was bad.</p>
+<div type="entry" n="1775-06-06"><dateline><date when="1775-06-06">6.</date></dateline><p> About d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-06-07"><dateline><date when="1775-06-07">7.</date></dateline><p> About d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-06-08"><dateline><date when="1775-06-08">8.</date></dateline><p> D<supplied>itt</supplied>o. Was Monthly Meeting. I could not go the child was bad.</p>
 <note type="authorial" place="right margin"> I T N S T a a S T</note></div>
-<div type="entry" n="1775-06-09"><dateline><date when="1775-06-09">9.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-06-10"><dateline><date when="1775-06-10">10.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-06-09"><dateline><date when="1775-06-09">9.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-06-10"><dateline><date when="1775-06-10">10.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-06-11"><dateline><date when="1775-06-11">11.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-06-12"><dateline><date when="1775-06-12">12.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1775-06-13"><dateline><date when="1775-06-13">13.</date></dateline><p> At work at Morgan's pump.</p></div>
@@ -1140,23 +1140,23 @@
 <div type="entry" n="1775-07-01"><head><supplied>July 1775</supplied></head><dateline><date when="1775-07-01">1 of the Seventh Month.</date></dateline><p> At reaping.</p></div>
 <div type="entry" n="1775-07-02"><dateline><date when="1775-07-02">2.</date></dateline><p> Went to our meeting. I thought it was something more agreeable.</p></div>
 <div type="entry" n="1775-07-03"><dateline><date when="1775-07-03">3.</date></dateline><p> Reaping home.</p></div>
-<div type="entry" n="1775-07-04"><dateline><date when="1775-07-04">4.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-07-05"><dateline><date when="1775-07-05">5.</date></dateline><p> Do rainy day.</p></div>
+<div type="entry" n="1775-07-04"><dateline><date when="1775-07-04">4.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-07-05"><dateline><date when="1775-07-05">5.</date></dateline><p> D<supplied>itt</supplied>o rainy day.</p></div>
 <div type="entry" n="1775-07-06"><dateline><date when="1775-07-06">6.</date></dateline><p> Was Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> was very lively in prayer.</p></div>
 <div type="entry" n="1775-07-07"><dateline><date when="1775-07-07">7.</date></dateline><p> Hauling in our rye and wheat.</p></div>
 <div type="entry" n="1775-07-08"><dateline><date when="1775-07-08">8.</date></dateline><p> I went down to Philadelphia and settled with Benjamin Morgan. His pump iron work all came to £3.5- 6</p></div>
 <div type="entry" n="1775-07-09"><dateline><date when="1775-07-09">9.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-07-10"><dateline><date when="1775-07-10">10.</date></dateline><p> Went to moving.</p></div>
-<div type="entry" n="1775-07-11"><dateline><date when="1775-07-11">11.</date></dateline><p> Do. and making hay.</p></div>
-<div type="entry" n="1775-07-12"><dateline><date when="1775-07-12">12.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-07-11"><dateline><date when="1775-07-11">11.</date></dateline><p> D<supplied>itt</supplied>o and making hay.</p></div>
+<div type="entry" n="1775-07-12"><dateline><date when="1775-07-12">12.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-07-13"><dateline><date when="1775-07-13">13.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-07-14"><dateline><date when="1775-07-14">14.</date></dateline><p> About moving and hay.</p></div>
-<div type="entry" n="1775-07-15"><dateline><date when="1775-07-15">15.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-07-15"><dateline><date when="1775-07-15">15.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-07-16"><dateline><date when="1775-07-16">16.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied> T<supplied>ime</supplied></note></div>
 <div type="entry" n="1775-07-17"><dateline><date when="1775-07-17">17.</date></dateline><p> Met with our Friends to raise money to send to relieve our Friends at Boston.</p></div>
 <div type="entry" n="1775-07-18"><dateline><date when="1775-07-18">18.</date></dateline><p> About hay.</p></div>
-<div type="entry" n="1775-07-19"><dateline><date when="1775-07-19">19.</date></dateline><p> About home Do.</p></div>
+<div type="entry" n="1775-07-19"><dateline><date when="1775-07-19">19.</date></dateline><p> About home d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-07-20"><dateline><date when="1775-07-20">20.</date></dateline><p> I went to our youth's meeting at Evesham. <persName key="w6q924kg">Caleb Lippincott</persName> and Zilpha Shin was married. <persName key="w65v49t0">Hannah Foster</persName> was very lively and notable in ministry.</p>
 <note type="authorial" place="right margin"> A v<supplied>ery</supplied> P<supplied>oor</supplied> H<supplied>eavy</supplied> D<supplied>ul</supplied> Mettin</note></div>
 <div type="entry" n="1775-07-21"><dateline><date when="1775-07-21">21.</date></dateline><p> I went to make a pump for <persName key="w6hv3dtz">Caleb Evans</persName> 23 <supplied>feet</supplied> long.</p></div>
@@ -1164,15 +1164,15 @@
 <div type="entry" n="1775-07-23"><dateline><date when="1775-07-23">23.</date></dateline><p> Went to our meeting. After meeting <persName key="w6jj4bpx">Jacob Holinshad</persName> and myself on appointment from the Monthly Meeting to visit <persName key="w6jx3293">Thomas Lippincott</persName> on account of his drinking to excess to very little satisfaction.</p></div>
 <pb n="037" facs="sc203366"/>
 <div type="entry" n="1775-07-24"><dateline><date when="1775-07-24">24th Seventh Month, 1775.</date></dateline><p> About home making a plow etc.</p></div>
-<div type="entry" n="1775-07-25"><dateline><date when="1775-07-25">25.</date></dateline><p> Do. About home</p></div>
-<div type="entry" n="1775-07-26"><dateline><date when="1775-07-26">26.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-07-25"><dateline><date when="1775-07-25">25.</date></dateline><p> D<supplied>itt</supplied>o. About home</p></div>
+<div type="entry" n="1775-07-26"><dateline><date when="1775-07-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-07-27"><dateline><date when="1775-07-27">27.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied> and D<supplied>ull</supplied> A<supplied>nd</supplied> h<supplied>eavy</supplied></note></div>
 <div type="entry" n="1775-07-28"><dateline><date when="1775-07-28">28.</date></dateline><p> Making an apple mill at home.</p></div>
-<div type="entry" n="1775-07-29"><dateline><date when="1775-07-29">29.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-07-29"><dateline><date when="1775-07-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-07-30"><dateline><date when="1775-07-30">30.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-07-31"><dateline><date when="1775-07-31">31.</date></dateline><p> At home finishing an apple mill.</p></div>
-<div type="entry" n="1775-08-01"><head><supplied>August 1775</supplied></head><dateline><date when="1775-08-01">1.</date></dateline><p> Eighth Month 1775. Do.</p></div>
+<div type="entry" n="1775-08-01"><head><supplied>August 1775</supplied></head><dateline><date when="1775-08-01">1. Eighth Month 1775.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-08-02"><dateline><date when="1775-08-02">2.</date></dateline><p> At work at another apple mill.</p></div>
 <div type="entry" n="1775-08-03"><dateline><date when="1775-08-03">3.</date></dateline><p> I went to our preparative meeting which seemed to me to be chiefly naught.</p></div>
 <div type="entry" n="1775-08-04"><dateline><date when="1775-08-04">4.</date></dateline><p> I went to fix an old pump in a new well for Joy Smith at Moorestown.</p></div>
@@ -1180,11 +1180,11 @@
 <div type="entry" n="1775-08-06"><dateline><date when="1775-08-06">6.</date></dateline><p> We went to Newtown Meeting. A very stormy day. <persName key="w6n69bqr">Isaac Zane</persName> from Philadelphia was there and spoke very well but it was a very dull heavy time with me.</p></div>
 <div type="entry" n="1775-08-07"><dateline><date when="1775-08-07">7.</date></dateline><p> I went to hew a pump for <persName key="w6mk6p7z">Thomas Thorn</persName>.</p></div>
 <div type="entry" n="1775-08-08"><dateline><date when="1775-08-08">8.</date></dateline><p> About home at work at an apple mill for <persName key="w68x44xw">Elisha Hooton</persName> and one for myself.</p></div>
-<div type="entry" n="1775-08-09"><dateline><date when="1775-08-09">9.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-08-09"><dateline><date when="1775-08-09">9.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-08-10"><dateline><date when="1775-08-10">10.</date></dateline><p> Went to our monthly meeting which was silent and P<supplied>oor</supplied> and D<supplied>ull</supplied>.</p></div>
 <div type="entry" n="1775-08-11"><dateline><date when="1775-08-11">11.</date></dateline><p> At home at work at apple mills.</p>
 <note type="authorial" place="right margin"> I thought I felt rather better in my meditations when in my business</note></div>
-<div type="entry" n="1775-08-12"><dateline><date when="1775-08-12">12.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-08-12"><dateline><date when="1775-08-12">12.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-08-13"><dateline><date when="1775-08-13">13.</date></dateline><p> Went to our meeting. <persName key="w6sk2b2m">William Jones</persName> was there and spoke very notable close and plain to the dull drowsy condition of many of us.</p>
 <note type="authorial" place="right margin"> A D<supplied>ull</supplied> D<supplied>rowsy</supplied> H<supplied>eavy</supplied> M<supplied>eeting</supplied> it W<supplied>as</supplied> W<supplied>ith</supplied> me</note></div>
 <div type="entry" n="1775-08-14"><dateline><date when="1775-08-14">14.</date></dateline><p> I went to make a bottom piece to Richard Smith's 22  <supplied>feet</supplied> long.</p></div>
@@ -1195,20 +1195,20 @@
 <div type="entry" n="1775-08-20"><dateline><date when="1775-08-20">20.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke.</p>
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> P<supplied>oor</supplied> T<supplied>ime</supplied> to me</note></div>
 <div type="entry" n="1775-08-21"><dateline><date when="1775-08-21">21.</date></dateline><p> I went to <persName key="w61h1brp">Job Coles</persName> to mend his pump in the morning. Afternoon I went down to Jacob Jennings's to make a screw press and apple mill.</p></div>
-<div type="entry" n="1775-08-22"><dateline><date when="1775-08-22">22.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1775-08-23"><dateline><date when="1775-08-23">23.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-08-22"><dateline><date when="1775-08-22">22.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-08-23"><dateline><date when="1775-08-23">23.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-08-24"><dateline><date when="1775-08-24">24.</date></dateline><p> I went Haddonfield meeting which was silent and very dark and dull.</p></div>
 <div type="entry" n="1775-08-25"><dateline><date when="1775-08-25">25.</date></dateline><p> At work at the press and mill at Jenning's.</p></div>
 <div type="entry" n="1775-08-26"><dateline><date when="1775-08-26">26.</date></dateline><p> At do and took up his pump finished all of came home.</p></div>
 <pb n="038" facs="sc203367"/>
 <div type="entry" n="1775-08-27"><dateline><date when="1775-08-27">27th of the Eighth Month 1775.</date></dateline><p> Went to our meeting. Mary Horner from Burlington Quarter and another woman Friend from Egg Harbor was there. James Willis his wife. They both seemed to have a very clear sight and sense of the easeful poor dwarfish condition of our meeting and seemed very much concerned and both spoke very notable close and plain to the state of our meeting.</p></div>
 <div type="entry" n="1775-08-28"><dateline><date when="1775-08-28">28.</date></dateline><p> I went to work at a screw press for myself.</p></div>
-<div type="entry" n="1775-08-29"><dateline><date when="1775-08-29">29.</date></dateline><p> At do.</p></div>
-<div type="entry" n="1775-08-30"><dateline><date when="1775-08-30">30.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-08-29"><dateline><date when="1775-08-29">29.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-08-30"><dateline><date when="1775-08-30">30.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-08-31"><dateline><date when="1775-08-31">31.</date></dateline><p> I went to our preparative meeting.</p>
 <note type="authorial" place="right margin"> <persName key="w6ph2gz9">R. Roberts</persName> spoke but it was heavy dull times with me</note></div>
 <div type="entry" n="1775-09-01"><head><supplied>September 1775</supplied></head><dateline><date when="1775-09-01">1st of the Ninth Month, 1775.</date></dateline><p> At work at a screw press for myself.</p></div>
-<div type="entry" n="1775-09-02"><dateline><date when="1775-09-02">2.</date></dateline><p> Do. This week I had several fits of something like the fever and ague.</p>
+<div type="entry" n="1775-09-02"><dateline><date when="1775-09-02">2.</date></dateline><p> D<supplied>itt</supplied>o. This week I had several fits of something like the fever and ague.</p>
 <p>This week was very wet and cloudy and Seventh Day night was a most dismal stormy dark rainy night, with great wind rain and thunder which blowed down the corn very flat and some apple trees.</p></div>
 <div type="entry" n="1775-09-03"><dateline><date when="1775-09-03">3.</date></dateline><p> Went to our meeting.</p>
 <note type="authorial" place="right margin"> V<supplied>ery</supplied> P<supplied>oor</supplied></note></div>
@@ -1243,40 +1243,40 @@
 <div type="entry" n="1775-10-01"><head><supplied>October 1775</supplied></head><dateline><date when="1775-10-01">1st of the Tenth Month 1775.</date></dateline><p> I went to our meeting the poorly <persName key="w64r0gvn">Josiah White</persName> and Benjamin Jones was there. <persName key="w64r0gvn">Josiah</persName> spoke pretty notably not so poor as at sometimes. We went to see <persName key="w68x44xw">Elisha Hooton</persName> in the afternoon.</p></div>
 <div type="entry" n="1775-10-02"><dateline><date when="1775-10-02">2.</date></dateline><p> Making cider. Had the Third Day ague.</p></div>
 <div type="entry" n="1775-10-03"><dateline><date when="1775-10-03">3.</date></dateline><p> At home about corn husking.</p></div>
-<div type="entry" n="1775-10-04"><dateline><date when="1775-10-04">4.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-10-04"><dateline><date when="1775-10-04">4.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-10-05"><dateline><date when="1775-10-05">5.</date></dateline><p> I went to our Monthly Meeting. Had the ague again. Ann Jessup and Esther Hunt daughter of Ebenezer Hunt from Carolina was there. Ann spoke very notably which was something tendering.</p></div>
 <div type="entry" n="1775-10-06"><dateline><date when="1775-10-06">6.</date></dateline><p> About home very unwell.</p></div>
 <div type="entry" n="1775-10-07"><dateline><date when="1775-10-07"><supplied>7.</supplied></date></dateline><p> Seventh Day.</p></div>
 <div type="entry" n="1775-10-08"><dateline><date when="1775-10-08">8.</date></dateline><p> Was First Day. I went to our meeting. My friends Ann Jessup and cousin Esther Hunt was there. Ann had but little to say they came home with us and we had a pretty full account from our cousin <persName key="w6dn68k9">William Hunt's</persName> widow and her children which was very satisfactory. I was very bad with the fever and ague when these friends was there which deprived me of their company and they with some friend from Philadelphia went from here to Haddonfield Monthly Meeting.</p></div>
 <div type="entry" n="1775-10-09"><dateline><date when="1775-10-09">9.</date></dateline><p> About home about the Indian Corn.</p></div>
-<div type="entry" n="1775-10-10"><dateline><date when="1775-10-10">10.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-11"><dateline><date when="1775-10-11">11.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-10-10"><dateline><date when="1775-10-10">10.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-11"><dateline><date when="1775-10-11">11.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-10-12"><dateline><date when="1775-10-12">12.</date></dateline><p> Went to our meeting with the children.</p></div>
 <div type="entry" n="1775-10-13"><dateline><date when="1775-10-13">13.</date></dateline><p> About our corn.</p></div>
-<div type="entry" n="1775-10-14"><dateline><date when="1775-10-14">14.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-10-14"><dateline><date when="1775-10-14">14.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-10-15"><dateline><date when="1775-10-15">15.</date></dateline><p> Was at our meeting which was silent.</p></div>
 <div type="entry" n="1775-10-16"><dateline><date when="1775-10-16">16.</date></dateline><p> Went to the burial of Mary Coles <supplied>and</supplied> had a meeting at Haddonfield. <persName key="w6x098rs">Mercy Redman</persName> spoke very notably and <persName key="w63z8z1g">Isaac Andrews</persName> spoke also very smartly to the hypocrites and sinners in Sion.</p></div>
 <div type="entry" n="1775-10-17"><dateline><date when="1775-10-17">17.</date></dateline><p> About home very unwell with the fever and ague every Third Day.</p></div>
-<div type="entry" n="1775-10-18"><dateline><date when="1775-10-18">18.</date></dateline><p> Do. About sowing.</p></div>
+<div type="entry" n="1775-10-18"><dateline><date when="1775-10-18">18.</date></dateline><p> D<supplied>itt</supplied>o. About sowing.</p></div>
 <div type="entry" n="1775-10-19"><dateline><date when="1775-10-19">19.</date></dateline><p> About home very poorly. Gathering winter apples and went to our youth's meeting. <persName key="w6rg6kjz">Thomas Evans</persName> spoke very well.</p></div>
 <div type="entry" n="1775-10-20"><dateline><date when="1775-10-20">20.</date></dateline><p> About home very poorly with the Third Day ague fever.</p>
 <note type="authorial" place="right margin"> and I was U<supplied>nder</supplied> S N A S A f A C Tim<supplied>e</supplied> I thought I Ha<supplied>d</supplied> prety Co B<supplied>ut</supplied> P<supplied>ut</supplied> it of</note></div>
-<div type="entry" n="1775-10-21"><dateline><date when="1775-10-21">21.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-22"><dateline><date when="1775-10-22">22.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-23"><dateline><date when="1775-10-23">23.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-24"><dateline><date when="1775-10-24">24.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-25"><dateline><date when="1775-10-25">25.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-26"><dateline><date when="1775-10-26">26.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-27"><dateline><date when="1775-10-27">27.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-28"><dateline><date when="1775-10-28">28.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-10-21"><dateline><date when="1775-10-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-22"><dateline><date when="1775-10-22">22.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-23"><dateline><date when="1775-10-23">23.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-24"><dateline><date when="1775-10-24">24.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-25"><dateline><date when="1775-10-25">25.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-26"><dateline><date when="1775-10-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-27"><dateline><date when="1775-10-27">27.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-28"><dateline><date when="1775-10-28">28.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <pb n="041" facs="sc203370"/>
 <div type="entry" n="1775-10-29"><dateline><date when="1775-10-29">29 of Tenth Month, 1775.</date></dateline><p> About home very unwell with the fever and ague.</p></div>
-<div type="entry" n="1775-10-30"><dateline><date when="1775-10-30">30.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-10-31"><dateline><date when="1775-10-31">31.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-01"><head><supplied>November 1775</supplied></head><dateline><date when="1775-11-01">1 of the Eleventh Month.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-02"><dateline><date when="1775-11-02">2.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-03"><dateline><date when="1775-11-03">3.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-04"><dateline><date when="1775-11-04">4.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-10-30"><dateline><date when="1775-10-30">30.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-10-31"><dateline><date when="1775-10-31">31.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-01"><head><supplied>November 1775</supplied></head><dateline><date when="1775-11-01">1 of the Eleventh Month.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-02"><dateline><date when="1775-11-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-03"><dateline><date when="1775-11-03">3.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-04"><dateline><date when="1775-11-04">4.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-11-05"><dateline><date when="1775-11-05">5.</date></dateline><p> Went to our meeting which was not so dull to me as at some times.</p></div>
 <div type="entry" n="1775-11-06"><dateline><date when="1775-11-06">6.</date></dateline><p> I went to Joseph Hewlings's to make a pump 18 <supplied>feet</supplied> long. My sister Abigail Evans was there very bad with a fever. I came home.</p></div>
 <div type="entry" n="1775-11-07"><dateline><date when="1775-11-07">7.</date></dateline><p> At home unwell.</p></div>
@@ -1284,7 +1284,7 @@
 <div type="entry" n="1775-11-09"><dateline><date when="1775-11-09">9 We went to our Monthly Meeting.</date></dateline><p> <persName key="w6x16z80">John Reeves</persName> was there and spoke very notably and I thought he touched my condition which afforded some confirmation and encouragement. We went after meeting to see my sister who then lay very ill of a fever.</p></div>
 <div type="entry" n="1775-11-10"><dateline><date when="1775-11-10">10.</date></dateline><p> Came home.</p></div>
   <div type="entry" n="1775-11-11"><dateline><date when="1775-11-11">11</date></dateline><p> About home unwell.</p></div>
-<div type="entry" n="1775-11-12"><dateline><date when="1775-11-12">12.</date></dateline><p> Do went up to Evesham Meeting with <persName key="w6c82qz0">Joshua Evans</persName> who was at our house all Seventh Day night. <persName key="w63z8z1g">Isaac Andrews</persName> was there and <persName key="w6bd4q25">Ebenezer Miller</persName> both preached considerably. Thomas Eves was buried after meeting <persName key="w6c82qz0">Joshua Evans</persName> and I went to see my sister Abby who was then getting better.</p>
+<div type="entry" n="1775-11-12"><dateline><date when="1775-11-12">12.</date></dateline><p> D<supplied>itt</supplied>o. Went up to Evesham Meeting with <persName key="w6c82qz0">Joshua Evans</persName> who was at our house all Seventh Day night. <persName key="w63z8z1g">Isaac Andrews</persName> was there and <persName key="w6bd4q25">Ebenezer Miller</persName> both preached considerably. Thomas Eves was buried after meeting <persName key="w6c82qz0">Joshua Evans</persName> and I went to see my sister Abby who was then getting better.</p>
 <note type="authorial" place="right margin"> A V<supplied>ery</supplied> P<supplied>oor</supplied> D<supplied>ull</supplied> M<supplied>eeting</supplied> to me</note></div>
 <div type="entry" n="1775-11-13"><dateline><date when="1775-11-13">13.</date></dateline><p> I went to Rendal Cales after some sheep which I bought of him.</p></div>
 <div type="entry" n="1775-11-14"><dateline><date when="1775-11-14">14.</date></dateline><p> At Coles mending his pump.</p></div>
@@ -1294,15 +1294,15 @@
 <div type="entry" n="1775-11-18"><dateline><date when="1775-11-18">18.</date></dateline><p> Went up to Borton's frs <supplied>first?</supplied> and I went to mend Daniel Lippincott's pump.</p></div>
 <div type="entry" n="1775-11-19"><dateline><date when="1775-11-19">19.</date></dateline><p> Was First Day and I had the fever and ague again.</p></div>
 <div type="entry" n="1775-11-20"><dateline><date when="1775-11-20">20.</date></dateline><p> At work at the sittle.</p></div>
-<div type="entry" n="1775-11-21"><dateline><date when="1775-11-21">21.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-22"><dateline><date when="1775-11-22">22.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-11-21"><dateline><date when="1775-11-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-22"><dateline><date when="1775-11-22">22.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-11-23"><dateline><date when="1775-11-23">23.</date></dateline><p> I was at our meeting. Hugh Hollinshead and Elener French was married. <persName key="w6x098rs">Mercy Redman</persName> was there and spoke very well. </p></div>
 <div type="entry" n="1775-11-24"><dateline><date when="1775-11-24">24.</date></dateline><p> We went to Burlington to take the settle and safe. Lodged at <persName key="w6qj854r">J. Buzby's</persName>.</p></div>
 <div type="entry" n="1775-11-25"><dateline><date when="1775-11-25">25.</date></dateline><p> We came home.</p></div>
 <div type="entry" n="1775-11-26"><dateline><date when="1775-11-26">26.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1775-11-27"><dateline><date when="1775-11-27">27.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1775-11-28"><dateline><date when="1775-11-28">28.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-11-29"><dateline><date when="1775-11-29">29.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-11-28"><dateline><date when="1775-11-28">28.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-11-29"><dateline><date when="1775-11-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-11-30"><dateline><date when="1775-11-30">30.</date></dateline><p> Was at our preparative meeting.</p></div>
 <pb n="042" facs="sc203371"/>
 <div type="entry" n="1775-12-01"><head><supplied>December 1775</supplied></head><dateline><date when="1775-12-01">1 of the Twelfth Month.</date></dateline><p> About home.</p></div>
@@ -1316,7 +1316,7 @@
 <div type="entry" n="1775-12-09"><dateline><date when="1775-12-09">9.</date></dateline><p> Went to Coles to fetch some sheep I bought of him.</p></div>
 <div type="entry" n="1775-12-10"><dateline><date when="1775-12-10">10.</date></dateline><p> Was at our meeting.</p></div>
 <div type="entry" n="1775-12-11"><dateline><date when="1775-12-11">11.</date></dateline><p> I went to finish a pump for <persName key="w6010spn">Hugh Cowperthwaite</persName> 16</p></div>
-<div type="entry" n="1775-12-12"><dateline><date when="1775-12-12">12.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1775-12-12"><dateline><date when="1775-12-12">12.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-12-13"><dateline><date when="1775-12-13">13.</date></dateline><p> Hauling work at home.</p></div>
 <div type="entry" n="1775-12-14"><dateline><date when="1775-12-14">14.</date></dateline><p> Went to our meeting. <persName key="w64r0gvn">Josiah White</persName> was there and preached very well.</p></div>
 <div type="entry" n="1775-12-15"><dateline><date when="1775-12-15">15.</date></dateline><p> I went to mend a pump for Joseph Hackney.</p></div>
@@ -1324,18 +1324,18 @@
 <div type="entry" n="1775-12-17"><dateline><date when="1775-12-17">17.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very prettily.</p></div>
 <div type="entry" n="1775-12-18"><dateline><date when="1775-12-18">18 Went to our meeting appointed for Elizabeth Brown from Wilmington, <persName key="w65v49t0">Hannah Foster</persName> and Mary both spoke very notably.</date></dateline><p> Mary seemed to have very hard work of it and her testimony was against a worldly spirit that is disposed to lay up treasures on earth. At this time the 17th of this Month and First Day <persName key="w63z8z1g">Isaac Andrews</persName> was buried at Woodbury.</p></div>
 <div type="entry" n="1775-12-19"><dateline><date when="1775-12-19">19.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1775-12-20"><dateline><date when="1775-12-20">20.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-12-21"><dateline><date when="1775-12-21">21.</date></dateline><p> Do Went to our meeting.</p></div>
-<div type="entry" n="1775-12-22"><dateline><date when="1775-12-22">22.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-12-23"><dateline><date when="1775-12-23">23.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-12-20"><dateline><date when="1775-12-20">20.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-12-21"><dateline><date when="1775-12-21">21.</date></dateline><p> D<supplied>itt</supplied>o. Went to our meeting.</p></div>
+<div type="entry" n="1775-12-22"><dateline><date when="1775-12-22">22.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-12-23"><dateline><date when="1775-12-23">23.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-12-24"><dateline><date when="1775-12-24">24.</date></dateline><p> A violent stormy snowy day. I went to our meeting.</p></div>
 <div type="entry" n="1775-12-25"><dateline><date when="1775-12-25">25.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1775-12-26"><dateline><date when="1775-12-26">26.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-12-27"><dateline><date when="1775-12-27">27.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-12-26"><dateline><date when="1775-12-26">26.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-12-27"><dateline><date when="1775-12-27">27.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1775-12-28"><dateline><date when="1775-12-28">28.</date></dateline><p> Was at our preparative meeting.</p></div>
 <div type="entry" n="1775-12-29"><dateline><date when="1775-12-29">29.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1775-12-30"><dateline><date when="1775-12-30">30.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1775-12-31"><dateline><date when="1775-12-31">31.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1775-12-30"><dateline><date when="1775-12-30">30.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1775-12-31"><dateline><date when="1775-12-31">31.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-01-01"><head><supplied>January 1776</supplied></head><dateline><date when="1776-01-01">1 of the First Month 1776.</date></dateline><p> I went to <persName key="w6jb6xn6">Joshua Lippincott's</persName> to mend his pump.</p></div>
 <div type="entry" n="1776-01-02"><dateline><date when="1776-01-02">2.</date></dateline><p> I went to John Pine's to mend his pump 3 about home.</p></div>
 <div type="entry" n="1776-01-04"><dateline><date when="1776-01-04">4.</date></dateline><p> I was at our Monthly Meeting. <persName key="w65v49t0">H Foster</persName> spoke in a very lively manner. <persName key="w64r0gvn">Josiah White</persName> spoke and <persName key="w6rg6kjz">Thomas Evans</persName>.</p></div>
@@ -1344,35 +1344,35 @@
 <div type="entry" n="1776-01-07"><dateline><date when="1776-01-07">7th.</date></dateline><p> I was at our meeting</p></div>
 <div type="entry" n="1776-01-08"><dateline><date when="1776-01-08">8.</date></dateline><p> I went over Ancocas Creek to fetch <persName key="w6wx87x7">my wife's</persName> sister Elizabeth.</p></div>
 <div type="entry" n="1776-01-09"><dateline><date when="1776-01-09">9.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-01-10"><dateline><date when="1776-01-10">10.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-01-10"><dateline><date when="1776-01-10">10.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-01-11"><dateline><date when="1776-01-11">11.</date></dateline><p> This morning <rs key="w6wx87x7">my wife</rs> was brought to bed with a son about three o‘clock.</p></div>
 <div type="entry" n="1776-01-12"><dateline><date when="1776-01-12">12.</date></dateline><p> About mending a pump for Caty Lippincott.</p></div>
 <div type="entry" n="1776-01-13"><dateline><date when="1776-01-13">13.</date></dateline><p> I went to our meeting appointed for Joshua Brown and <persName key="w6d59f93">Thomas Vickers</persName> and they both preached in a very lively and affectionate manner. <persName key="w6d59f93">Thomas</persName> his testimony was much against a worldly spirit that was for laying up treasures on earth but Joshua was concerning the wars and troubles of the times.</p></div>
 <div type="entry" n="1776-01-14"><dateline><date when="1776-01-14">14.</date></dateline><p> I went to Evesham meeting. Joshua and Thomas was there and both preached most exceeding notably lively and powerful.</p></div>
 <div type="entry" n="1776-01-15"><dateline><date when="1776-01-15">15.</date></dateline><p> I went up to <persName key="w6hv3dtz">Caleb Evans'</persName> to hew a pump for <persName key="w6n05cnp">Joshua Hunt</persName>.</p></div>
 <div type="entry" n="1776-01-16"><dateline><date when="1776-01-16">16.</date></dateline><p> At home at work at Joshua's pump.</p></div>
-<div type="entry" n="1776-01-17"><dateline><date when="1776-01-17">17.</date></dateline><p> Do</p></div>
+<div type="entry" n="1776-01-17"><dateline><date when="1776-01-17">17.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-01-18"><dateline><date when="1776-01-18">18.</date></dateline><p> Went to our meeting and was disappointed. It was youth's meeting at Evesham.</p></div>
 <div type="entry" n="1776-01-19"><dateline><date when="1776-01-19">19.</date></dateline><p> About home at work at Joshua's pump 43 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1776-01-20"><dateline><date when="1776-01-20">20</date></dateline><p> Do</p></div>
+<div type="entry" n="1776-01-20"><dateline><date when="1776-01-20">20</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-01-21"><dateline><date when="1776-01-21">21.</date></dateline><p> Went to our meeting was silent.</p></div>
 <div type="entry" n="1776-01-22"><dateline><date when="1776-01-22">22.</date></dateline><p> About home <rs key="w6wx87x7">my wife</rs> was very bad with the pleurisy.</p></div>
 <div type="entry" n="1776-01-23"><dateline><date when="1776-01-23">23.</date></dateline><p> Finishing Joshua's pump.</p></div>
 <div type="entry" n="1776-01-24"><dateline><date when="1776-01-24">24.</date></dateline><p> Went to Moorestown to take the pump at put it in.</p></div>
 <div type="entry" n="1776-01-25"><dateline><date when="1776-01-25">25.</date></dateline><p> Went to our meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very prettily and I thought it seemed for me and it did me good. Her word was concerning the dry bones in the open valley.<note type="editorial">Ezekiel 37:1-2</note> and concerning the live coal from the holy altar<note type="editorial">Isaiah 6:6</note></p></div>
 <div type="entry" n="1776-01-26"><dateline><date when="1776-01-26">26.</date></dateline><p> At home <rs key="w6wx87x7">my wife</rs> was very bad.</p></div>
-<div type="entry" n="1776-01-27"><dateline><date when="1776-01-27">27.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-01-27"><dateline><date when="1776-01-27">27.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-01-28"><dateline><date when="1776-01-28">28.</date></dateline><p> Was at our meeting.</p></div>
 <div type="entry" n="1776-01-29"><dateline><date when="1776-01-29">29.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-01-30"><dateline><date when="1776-01-30">30.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-01-31"><dateline><date when="1776-01-31">31.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-01-30"><dateline><date when="1776-01-30">30.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-01-31"><dateline><date when="1776-01-31">31.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-02-01"><head><supplied>February 1776</supplied></head><dateline><date when="1776-02-01">1 of the Second Month 1776.</date></dateline><p> I was at our preparative meeting.</p></div>
 <div type="entry" n="1776-02-02"><dateline><date when="1776-02-02">2.</date></dateline><p> I went to fetch the doctor for <rs key="w6wx87x7">my wife</rs>.</p></div>
 <div type="entry" n="1776-02-03"><dateline><date when="1776-02-03">3.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1776-02-04"><dateline><date when="1776-02-04">4.</date></dateline><p> Was at our meeting which was silent and very poor.</p></div>
 <div type="entry" n="1776-02-05"><dateline><date when="1776-02-05">5.</date></dateline><p> About. </p></div>
-<div type="entry" n="1776-02-06"><dateline><date when="1776-02-06">6.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-02-07"><dateline><date when="1776-02-07">7.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-02-06"><dateline><date when="1776-02-06">6.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-02-07"><dateline><date when="1776-02-07">7.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-02-08"><dateline><date when="1776-02-08">8.</date></dateline><p> Went to our Monthly Meeting.<note type="editorial">Evesham Monthly Meeting minutes, February 1776.<q> The Case of Slavery coming under Consideration and by a letter from Jonathan Austen signifying he did not Incline to Comply with the Advice of the Committee of the Quarterly Meeting. Therefore <persName key="w6gb275h">William Foster's</persName>, Isaac Evans, Edward Darnell, <persName key="w6j49htj">John Lippincott</persName>, <persName key="w6tz45z2">William Matlack</persName>, and John Hunt, are appointed to Treat with him and any other members that have Slaves, in order if possible, to convince them of the Inconsistency of holding them in Bondage, and Endeavor to procure suitable Learning for those that are Children in order to Qualify them for Freedom Justly Due to them.</q></note> <persName key="w66794np">Mark Reeve</persName> was there and Josiah Miller. Both spoke.</p>
 <note type="authorial" place="right margin"> the meeting was very dull and lifeless to me</note></div>
 <div type="entry" n="1776-02-09"><dateline><date when="1776-02-09">9.</date></dateline><p> I went to mend a pump for John Pine.</p></div>
@@ -1399,7 +1399,7 @@
 <div type="entry" n="1776-02-28"><dateline><date when="1776-02-28">28.</date></dateline><p> I went to Burlington to take <persName key="w6wx87x7">my wife's</persName> sister home.</p></div>
 <div type="entry" n="1776-02-29"><dateline><date when="1776-02-29">29.</date></dateline><p> I was at our preparative meeting R B Sr a cold poor time.</p></div>
 <div type="entry" n="1776-03-01"><head><supplied>March 1776</supplied></head><dateline><date when="1776-03-01">1 of the Third Month.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-03-02"><dateline><date when="1776-03-02">2.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-03-02"><dateline><date when="1776-03-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-03-03"><dateline><date when="1776-03-03">3.</date></dateline><p> Was at our meeting which was silent though not so poor.</p></div>
 <div type="entry" n="1776-03-04"><dateline><date when="1776-03-04">4.</date></dateline><p> I went to William Rudrow's to hew a pump 14 <supplied>feet</supplied> long</p></div>
 <div type="entry" n="1776-03-05"><dateline><date when="1776-03-05">5.</date></dateline><p> I went to the burial of William Hooton. <persName key="w64r0gvn">Josiah White</persName> was there and preached considerably.</p></div>
@@ -1411,7 +1411,7 @@
 <note type="authorial" place="left margin"> Was First Day</note></div>
 <div type="entry" n="1776-03-11"><dateline><date when="1776-03-11">11.</date></dateline><p> Went to mill.</p></div>
 <div type="entry" n="1776-03-12"><dateline><date when="1776-03-12">12.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-03-13"><dateline><date when="1776-03-13">13.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-03-13"><dateline><date when="1776-03-13">13.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-03-14"><dateline><date when="1776-03-14">14.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1776-03-15"><dateline><date when="1776-03-15">15.</date></dateline><p> At home.</p></div>
 <div type="entry" n="1776-03-16"><dateline><date when="1776-03-16">16.</date></dateline><p> Went to splice a pump for James Lippincott.</p></div>
@@ -1420,7 +1420,7 @@
 <div type="entry" n="1776-03-18"><dateline><date when="1776-03-18">18.</date></dateline><p> I went to the blacksmith's.</p></div>
 <div type="entry" n="1776-03-19"><dateline><date when="1776-03-19">19.</date></dateline><p> Went to our meeting. Thomas Gawthrop from Old England was there and spoke very extraordinary. He spoke concerning the rich man and Lazarus<note type="editorial">Luke 16: 19-31</note> and told us we had one that spoke to us that was risen from the dead he appeared exceeding tenderhearted. <persName key="w6028wf4">Nicholas Waln</persName> and <persName key="w66124pd">John Pemberton</persName> also spoke. The meeting seemed pretty tender and open.</p></div>
 <div type="entry" n="1776-03-20"><dateline><date when="1776-03-20">20.</date></dateline><p> About home</p></div>
-<div type="entry" n="1776-03-21"><dateline><date when="1776-03-21">21.</date></dateline><p> Do</p></div>
+<div type="entry" n="1776-03-21"><dateline><date when="1776-03-21">21.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-03-22"><dateline><date when="1776-03-22">22.</date></dateline><p> Went to Quarterly Meeting at Haddonfield. Thomas Gathrop spoke at the latter part of the meeting concerning a garden, a garden enclosed is my sister, my spouse and spoke of several sort of enclosures one was of death and poverty another of the grave and one of faith confidence hope etc. His ministry was exceeding lively and affecting.</p></div>
 <div type="entry" n="1776-03-23"><dateline><date when="1776-03-23">23.</date></dateline><p> About home making a screw press for Thomas Folwel.</p></div>
 <div type="entry" n="1776-03-24"><dateline><date when="1776-03-24">24.</date></dateline><p> Went to our meeting which was silent.</p></div>
@@ -1432,8 +1432,8 @@
 <div type="entry" n="1776-03-31"><dateline><date when="1776-03-31">31.</date></dateline><p> I was at Evesham Meeting which was small and poor, most of the elders being prevented by sickness. After meeting <persName key="w6j49htj">John Lippincott</persName>, <persName key="w6tz45z2">William Matlack</persName> and I went to see Jonathan Ostin on account of a Negro he had. The time not disagreeable.</p>
 <note type="authorial" place="right margin"> Not so dull a time to me as some others</note></div>
 <div type="entry" n="1776-04-01"><head><supplied>April 1776</supplied></head><dateline><date when="1776-04-01">1 of the Fourth Month.</date></dateline><p> About home making plows etc. </p></div>
-<div type="entry" n="1776-04-02"><dateline><date when="1776-04-02">2.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-04-03"><dateline><date when="1776-04-03">3.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-02"><dateline><date when="1776-04-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-04-03"><dateline><date when="1776-04-03">3.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-04-04"><dateline><date when="1776-04-04">4.</date></dateline><p> Went to our Monthly Meeting. <persName key="w6wq14dj">Samuel Emlen</persName> and <persName key="w6x098rs">Mercy Redman</persName> was there and both spoke. The meeting for business was satisfactory and encouraging a little.</p>
 <note type="authorial" place="right margin"> I was with these friends at <persName key="w6hb9wqh">John Evan's</persName> and at Esther Eldrige's and they both spoke</note></div>
 <div type="entry" n="1776-04-05"><dateline><date when="1776-04-05">5.</date></dateline><p> About home.</p></div>
@@ -1445,41 +1445,41 @@
 <div type="entry" n="1776-04-10"><dateline><date when="1776-04-10">10.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1776-04-11"><dateline><date when="1776-04-11">11.</date></dateline><p> Went to our meeting. James Witkins and Ann Holishead was married. <persName key="w6wq14dj">Samuel Emlen</persName> and <persName key="w6x098rs">Mercy Redman</persName> both spoke very notably.</p></div>
 <div type="entry" n="1776-04-12"><dateline><date when="1776-04-12">12.</date></dateline><p> At work at some screws.</p></div>
-<div type="entry" n="1776-04-13"><dateline><date when="1776-04-13">13.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-13"><dateline><date when="1776-04-13">13.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-04-14"><dateline><date when="1776-04-14">14.</date></dateline><p> Was at our meeting <persName key="w6wq14dj">Samuel Emlen</persName> and <persName key="w6x098rs">Mercy Redman</persName> both preached very extraordinary.</p>
 <note type="authorial" place="right margin"> These opportunities was something tendering at home at times but I thought it was like a borrowed loaf or a morning dew which soon passes away.</note></div>
 <div type="entry" n="1776-04-15"><dateline><date when="1776-04-15">15.</date></dateline><p> Making a plow for <persName key="w66z02ks">Isaac Borton</persName>.</p></div>
-<div type="entry" n="1776-04-16"><dateline><date when="1776-04-16">16.</date></dateline><p> Do and about home.</p></div>
+<div type="entry" n="1776-04-16"><dateline><date when="1776-04-16">16.</date></dateline><p> D<supplied>itt</supplied>o and about home.</p></div>
 <div type="entry" n="1776-04-17"><dateline><date when="1776-04-17">17.</date></dateline><p> I went down to Dock Vanleer.</p></div>
 <div type="entry" n="1776-04-18"><dateline><date when="1776-04-18">18.</date></dateline><p> Was at our meeting youth's meeting. <persName key="w65v49t0">Hannah Foster</persName> spoke in a very lively zealous well concerned affecting manner. She reminded us how easy it was for providence to evade the stroke or divert the storm that hangs over us and said she thought these would be some raised to stand for truth's cause whither we chose or refuse.</p>
 <note type="authorial" place="right margin"> A very lively meeting. <persName key="w6ph2gz9">R. Roberts</persName> spoke very prettily.</note></div>
 <div type="entry" n="1776-04-19"><dateline><date when="1776-04-19">19.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-04-20"><dateline><date when="1776-04-20">20.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-20"><dateline><date when="1776-04-20">20.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-04-21"><dateline><date when="1776-04-21">21.</date></dateline><p> Went to our meeting.</p></div>
 <div type="entry" n="1776-04-22"><dateline><date when="1776-04-22">22.</date></dateline><p> Went to plow for corn.</p></div>
-<div type="entry" n="1776-04-23"><dateline><date when="1776-04-23">23.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-04-24"><dateline><date when="1776-04-24">24.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-23"><dateline><date when="1776-04-23">23.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-04-24"><dateline><date when="1776-04-24">24.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-04-25"><dateline><date when="1776-04-25">25.</date></dateline><p> Was at our meeting and hard beset to get along. I was under such discouragement.</p></div>
 <div type="entry" n="1776-04-26"><dateline><date when="1776-04-26">26.</date></dateline><p> Plowing.</p></div>
-<div type="entry" n="1776-04-27"><dateline><date when="1776-04-27">27.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-27"><dateline><date when="1776-04-27">27.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-04-28"><dateline><date when="1776-04-28">28.</date></dateline><p> Was at our meeting.</p></div>
 <div type="entry" n="1776-04-29"><dateline><date when="1776-04-29">29.</date></dateline><p> At plow.</p></div>
-<div type="entry" n="1776-04-30"><dateline><date when="1776-04-30">30.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-04-30"><dateline><date when="1776-04-30">30.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-05-01"><head><supplied>May 1776</supplied></head><dateline><date when="1776-05-01">1 of the Fifth Month 1776.</date></dateline><p> Plowing.</p></div>
 <div type="entry" n="1776-05-02"><dateline><date when="1776-05-02">2.</date></dateline><p> Was at our preparative meeting. <persName key="w65v49t0">Hannah Foster</persName> was there and spoke very extraordinary and a time of favor.</p></div>
 <div type="entry" n="1776-05-03"><dateline><date when="1776-05-03">3.</date></dateline><p> At plow.</p></div>
-<div type="entry" n="1776-05-04"><dateline><date when="1776-05-04">4.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-05-04"><dateline><date when="1776-05-04">4.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-05-05"><dateline><date when="1776-05-05">5.</date></dateline><p> Was at our meeting.</p></div>
 <div type="entry" n="1776-05-06"><dateline><date when="1776-05-06">6.</date></dateline><p> I went to <persName key="w6zd8tgw">William Foster's</persName> to mend his pump.</p></div>
 <pb n="047" facs="sc203376"/>
 <div type="entry" n="1776-05-07"><dateline><date when="1776-05-07">7th.</date></dateline><p> About home getting ready to plant and I went with <persName key="w6c82qz0">Joshua Evans</persName> to see an old Negro woman that was very poorly and he prayed and preached very notably from there to <persName key="w6j20tpc">Thomas Dudley</persName>.</p></div>
-<div type="entry" n="1776-05-08"><dateline><date when="1776-05-08">8.</date></dateline><p> Do. Making a plow for Barzila Coats.</p></div>
+<div type="entry" n="1776-05-08"><dateline><date when="1776-05-08">8.</date></dateline><p> D<supplied>itt</supplied>o. Making a plow for Barzila Coats.</p></div>
 <div type="entry" n="1776-05-09"><dateline><date when="1776-05-09">9.</date></dateline><p> Was at Monthly Meeting. <persName key="w65v49t0">Hannah Foster</persName> prayed very notably.</p></div>
 <div type="entry" n="1776-05-10"><dateline><date when="1776-05-10">10.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1776-05-11"><dateline><date when="1776-05-11">11.</date></dateline><p> Planting.</p></div>
 <div type="entry" n="1776-05-12"><dateline><date when="1776-05-12">12.</date></dateline><p> I went to our meeting.</p></div>
 <div type="entry" n="1776-05-13"><dateline><date when="1776-05-13">13.</date></dateline><p> About home planting etc.</p></div>
-<div type="entry" n="1776-05-14"><dateline><date when="1776-05-14">14.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-05-14"><dateline><date when="1776-05-14">14.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-05-15/1776-05-19"><dateline><date from="1776-05-15" to="1776-05-19">15:16:17:18:19.</date></dateline><p> I set forward for Salem Quarterly Meeting with <persName key="w6165774">John Collins</persName>. We was at Upper Greenwich meeting. Dined at Solomon Lippincott's. I went to <persName key="w6q924kg">Caleb Lippincott's</persName> to lodge.</p>
 <note type="authorial" place="right margin"> the meeting was but dull</note></div>
 <div type="entry" n="1776-05-20"><dateline><date when="1776-05-20">20.</date></dateline><p> Went to Salem Quarterly Meeting. Lodged at Benjamin Wright's.</p></div>
@@ -1487,12 +1487,12 @@
 <div type="entry" n="1776-05-22"><dateline><date when="1776-05-22">22.</date></dateline><p> We came up to John Barn's to lodge and so to Piles Grove Youth's Meeting which was very much favored with a lively edifying ministry and very satisfactory in the end and I came home after M<supplied>eeting</supplied>.</p></div>
 <div type="entry" n="1776-05-23"><dateline><date when="1776-05-23">23.</date></dateline><p> I went to our meeting which was a very tender good meeting to me. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very prettily and about Jonah's troubles and I was favored at that time.</p></div>
 <div type="entry" n="1776-05-24"><dateline><date when="1776-05-24">24.</date></dateline><p> About home.</p></div>
-<div type="entry" n="1776-05-25"><dateline><date when="1776-05-25">25.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-05-25"><dateline><date when="1776-05-25">25.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-05-26"><dateline><date when="1776-05-26">26.</date></dateline><p> Went to our meeting which was indifferent well with me.</p></div>
 <div type="entry" n="1776-05-27"><dateline><date when="1776-05-27">27.</date></dateline><p> About home.</p>
 <note type="authorial" place="right margin"> Felt something more stayed and composed.</note></div>
-<div type="entry" n="1776-05-28"><dateline><date when="1776-05-28">28.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-05-29"><dateline><date when="1776-05-29">29.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-05-28"><dateline><date when="1776-05-28">28.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-05-29"><dateline><date when="1776-05-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-05-30"><dateline><date when="1776-05-30">30.</date></dateline><p> Was at our preparative meeting which was but dull at first.</p></div>
 <div type="entry" n="1776-05-31"><dateline><date when="1776-05-31">31.</date></dateline><p> About home.</p></div>
 <div type="entry" n="1776-06-01"><head><supplied>June 1776</supplied></head><dateline><date when="1776-06-01">1 of the Sixth Month 1776.</date></dateline><p> About home.</p></div>
@@ -1511,9 +1511,9 @@
 <div type="entry" n="1776-06-17"><dateline><date when="1776-06-17">17.</date></dateline><p> Went to William Eldring to hew a pump 17 <supplied>feet long</supplied>. </p></div>
 <div type="entry" n="1776-06-18"><dateline><date when="1776-06-18">18.</date></dateline><p> Mending a pump for <persName key="w6hb9wqh">John Evans</persName>.</p></div>
 <div type="entry" n="1776-06-19"><dateline><date when="1776-06-19">19.</date></dateline><p> Making a pump for Benjamin Haines 14 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1776-06-20"><dateline><date when="1776-06-20">20.</date></dateline><p> Do and was at Evesham Meeting which was small and very dull and heavy.</p></div>
+<div type="entry" n="1776-06-20"><dateline><date when="1776-06-20">20.</date></dateline><p> D<supplied>itt</supplied>o and was at Evesham Meeting which was small and very dull and heavy.</p></div>
 <div type="entry" n="1776-06-21"><dateline><date when="1776-06-21">21.</date></dateline><p> Finishing Eldrigis pump 15 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1776-06-22"><dateline><date when="1776-06-22">22.</date></dateline><p> Do and went to Joseph Bispham's to mend his pump</p></div>
+<div type="entry" n="1776-06-22"><dateline><date when="1776-06-22">22.</date></dateline><p> D<supplied>itt</supplied>o and went to Joseph Bispham's to mend his pump</p></div>
 <pb n="048" facs="sc203377"/>
 <div type="entry" n="1776-06-23"><dateline><date when="1776-06-23">23.</date></dateline><p> Was at our meeting which was silent though not so dull as some.</p></div>
 <div type="entry" n="1776-06-24"><dateline><date when="1776-06-24">24.</date></dateline><p> At home plowing corn.</p></div>
@@ -1521,14 +1521,14 @@
 <div type="entry" n="1776-06-26"><dateline><date when="1776-06-26">26.</date></dateline><p> Finished the pump and came home.</p></div>
 <div type="entry" n="1776-06-27"><dateline><date when="1776-06-27">27.</date></dateline><p> Was at our preparative meeting. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very well.</p></div>
 <div type="entry" n="1776-06-28"><dateline><date when="1776-06-28">28.</date></dateline><p> At home finishing plowing my corn.</p></div>
-<div type="entry" n="1776-06-29"><dateline><date when="1776-06-29">29.</date></dateline><p>. Do.</p></div>
+<div type="entry" n="1776-06-29"><dateline><date when="1776-06-29">29.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-06-30"><dateline><date when="1776-06-30">30.</date></dateline><p> Went to our meeting. <persName key="w6kf2pgw">John Sleeper</persName> was there and preached very notable a long time. His words was close searching and clear. His text was concerning the enemies of our own houses and the present troubles and confusion of the times he much hinted of. A very favored meeting it was.</p></div>
 <div type="entry" n="1776-07-01"><head><supplied>July 1776</supplied></head><dateline><date when="1776-07-01">1 of the Seventh Month.</date></dateline><p> About home mowing etc.</p></div>
-<div type="entry" n="1776-07-02"><dateline><date when="1776-07-02">2.</date></dateline><p> Do.</p></div>
-<div type="entry" n="1776-07-03"><dateline><date when="1776-07-03">3.</date></dateline><p> Do. Reaping.</p></div>
+<div type="entry" n="1776-07-02"><dateline><date when="1776-07-02">2.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
+<div type="entry" n="1776-07-03"><dateline><date when="1776-07-03">3.</date></dateline><p> D<supplied>itt</supplied>o. Reaping.</p></div>
 <div type="entry" n="1776-07-04"><dateline><date when="1776-07-04">4.</date></dateline><p> I went to our Monthly Meeting. <persName key="w6kf2pgw">J. Sleeper</persName> was there and spoke concerning living in the cross of Christ and not living in it -- states as different as death and life. If ye walk after the flesh ye that die etc.<note type="editorial">See Romans 8.</note> A pretty satisfactory meeting. </p></div>
 <div type="entry" n="1776-07-05"><dateline><date when="1776-07-05">5.</date></dateline><p> About hay and reaping etc.</p></div>
-<div type="entry" n="1776-07-06"><dateline><date when="1776-07-06">6.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1776-07-06"><dateline><date when="1776-07-06">6.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-07-07"><dateline><date when="1776-07-07">7.</date></dateline><p> At our meeting. <persName key="w64r0gvn">Josiah White</persName> and <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke.</p></div>
 <div type="entry" n="1776-07-08"><dateline><date when="1776-07-08">8.</date></dateline><p> <rs key="w6wx87x7">My wife</rs> and I went to our meeting.</p>
 <note type="authorial" place="right margin"> which was not very satisfactory in the end</note></div>
@@ -1546,7 +1546,7 @@
 <note type="authorial" place="right margin"> I thought I felt better this week as to the state of my mind, had sincere and strong desires after perfection and to travel in the deeps.</note></div>
 <div type="entry" n="1776-08-04"><dateline><date when="1776-08-04">4.</date></dateline><p> Went to our meeting which was silent and very poor.</p></div>
 <div type="entry" n="1776-08-05"><dateline><date when="1776-08-05">5.</date></dateline><p> About a pump for I. Burros.</p></div>
-<div type="entry" n="1776-08-06"><dateline><date when="1776-08-06">6.</date></dateline><p> Do finished it 22 <supplied>feet</supplied> long.</p></div>
+<div type="entry" n="1776-08-06"><dateline><date when="1776-08-06">6.</date></dateline><p> D<supplied>itt</supplied>o. Finished it 22 <supplied>feet</supplied> long.</p></div>
 <div type="entry" n="1776-08-07"><dateline><date when="1776-08-07">7.</date></dateline><p> Went to hew <persName key="w61h1brp">Job Coles'</persName> pump.</p></div>
 <div type="entry" n="1776-08-08"><dateline><date when="1776-08-08">8.</date></dateline><p> Went to our Monthly Meeting. <persName key="w6tv5gh9">Mark Miller</persName> passed meeting. <persName key="w6x098rs">Mercy Redman</persName> and Benjamin Jones spoke very notably and <persName key="w6bd4q25">Ebr Mill</persName>. <persName key="w6x098rs">Mercy's</persName> words, O this self when will it be enough abased. Benjamin's words concerning shaking the heavens and the earth.</p></div>
 <div type="entry" n="1776-08-09"><dateline><date when="1776-08-09">9.</date></dateline><p> At work at <persName key="w61h1brp">J. Coles'</persName> pump.</p></div>
@@ -1581,7 +1581,7 @@
 <note type="authorial" place="right margin">his F<supplied>irst</supplied> words W<supplied>ere</supplied> V<supplied>ery</supplied> M<supplied>uch</supplied> Ag<supplied>ainst</supplied> an o<supplied>verly?</supplied> f<supplied>orward?</supplied> S<supplied>pirit?</supplied></note></div>
 <div type="entry" n="1776-09-09"><dateline><date when="1776-09-09">9.</date></dateline><p> Finish Thorn's pump 16 1/2 <supplied>feet</supplied> long.</p></div>
 <div type="entry" n="1776-09-10"><dateline><date when="1776-09-10">10.</date></dateline><p> I begun a screw cider press for William Cooper: a ferry.</p></div>
-<div type="entry" n="1776-09-11"><dateline><date when="1776-09-11">11.</date></dateline><p> At work at do.</p></div>
+<div type="entry" n="1776-09-11"><dateline><date when="1776-09-11">11.</date></dateline><p> At work at d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-09-12"><dateline><date when="1776-09-12">12.</date></dateline><p> Was at our meeting at to finish <persName key="w6n05bth">Joseph Roberts</persName> cider press.</p></div>
 <div type="entry" n="1776-09-13/1776-09-14"><dateline><date from="1776-09-13" to="1776-09-14">13 and 14.</date></dateline><p> About home at our meeting. <persName key="w6ph2gz9">R Roberts</persName> spoke very well.</p></div>
 <div type="entry" n="1776-09-16/1776-09-19"><dateline><date from="1776-09-16" to="1776-09-19">16:17:18 and 19.</date></dateline><p> I was at work at Cooper's screw press.</p></div>
@@ -1619,7 +1619,7 @@
 <div type="entry" n="1776-10-27"><dateline><date when="1776-10-27">27.</date></dateline><p> Went to our meeting R S P.</p></div>
 <div type="entry" n="1776-10-28"><dateline><date when="1776-10-28">28.</date></dateline><p> I was amongst our neighbors about laying out a road.</p></div>
 <div type="entry" n="1776-10-29"><dateline><date when="1776-10-29">29.</date></dateline><p> I went to Ebenezer Hopkins to make a pump 20 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1776-10-30"><dateline><date when="1776-10-30">30.</date></dateline><p> At do., finished and came home.</p></div>
+<div type="entry" n="1776-10-30"><dateline><date when="1776-10-30">30.</date></dateline><p> At d<supplied>itt</supplied>o. Finished and came home.</p></div>
 <div type="entry" n="1776-10-31"><dateline><date when="1776-10-31">31.</date></dateline><p> At our preparative meeting.</p></div>
 <div type="entry" n="1776-11-01"><head><supplied>November 1776</supplied></head><dateline><date when="1776-11-01">1 of the Eleventh Month.</date></dateline><p> About home. </p></div>
 <div type="entry" n="1776-11-02"><dateline><date when="1776-11-02">2.</date></dateline><p> About home.</p></div>
@@ -1659,7 +1659,7 @@
 <pb n="052" facs="sc203381"/>
 <div type="entry" n="1776-12-15"><dateline><date when="1776-12-15">15th of the Twelfth Month, 1776.</date></dateline><p> Went to our meeting which was satisfactory. I H<supplied>ad</supplied> S<supplied>omething</supplied> to S<supplied>ay</supplied> C<supplied>oncerning</supplied> Pr<supplied>ayer</supplied>.</p></div>
 <div type="entry" n="1776-12-16"><dateline><date when="1776-12-16">16.</date></dateline><p> Went to Joseph Eves's to finish his pump 22 <supplied>feet</supplied> long.</p></div>
-<div type="entry" n="1776-12-17"><dateline><date when="1776-12-17">17.</date></dateline><p> At do.</p></div>
+<div type="entry" n="1776-12-17"><dateline><date when="1776-12-17">17.</date></dateline><p> At d<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1776-12-18"><dateline><date when="1776-12-18">18.</date></dateline><p> At home.</p></div>
   <div type="entry" n="1776-12-19"><dateline><date when="1776-12-19">19.</date></dateline><p> Went to our meeting. The soldiers had taken our meeting house to lodge in and it was <supplied>so</supplied> thronged that we could not hold our meeting there and so we had a little meeting at <persName key="w6jr1rg4">Joshua Bispham's</persName> which I believe was of service to some though the other room was full of soldiers most of the time. <persName key="w6ph2gz9">Rebekah Roberts</persName> spoke very prettily.<note type="editorial">Notes and Observations continues from description of this event <q>...the other room was full of soldiers most of the time. It was but a week before this time <supplied>12 of 12th month</supplied> that the people of Moorestown were, by reports, in full expectation of seeing the English army come in at the other end of the town; and I did expect it before meeting broke up. Now things begin to rise to most excessive prices, both in town and country. See Jeremiah 50: 22. a sound of battle is in the land, and great destruction.</q> (103-4)</note></p></div>
 <div type="entry" n="1776-12-20/1776-12-21"><dateline><date from="1776-12-20" to="1776-12-21">20:21.</date></dateline><p> About home making a settle for <persName key="w6r525r2">Aaron Wills</persName>.</p></div>
@@ -1673,7 +1673,7 @@
 <div type="entry" n="1777-01-01"><head><supplied>January 1777</supplied></head><dateline><date when="1777-01-01">1 of the First Month 1777.</date></dateline><p> I went with Thomas Hooton to hew a pump 20 <supplied>feet</supplied> long.</p></div>
 <div type="entry" n="1777-01-02"><dateline><date when="1777-01-02">2.</date></dateline><p> I was at our meeting which was something satisfactory.</p></div>
 <div type="entry" n="1777-01-03"><dateline><date when="1777-01-03">3.</date></dateline><p> At work at a pump for Hooton.</p></div>
-<div type="entry" n="1777-01-04"><dateline><date when="1777-01-04">4.</date></dateline><p> Do.</p></div>
+<div type="entry" n="1777-01-04"><dateline><date when="1777-01-04">4.</date></dateline><p> D<supplied>itt</supplied>o.</p></div>
 <div type="entry" n="1777-01-05"><dateline><date when="1777-01-05">5.</date></dateline><p> I was at our meeting.</p></div>
 <div type="entry" n="1777-01-06"><dateline><date when="1777-01-06">6.</date></dateline><p> I was about home making a churn.</p>
 <note type="authorial" place="left margin"> First Day</note></div>
