@@ -81,10 +81,8 @@ const network = ({ data }) => {
   let arkIds = [];
   constellations
     .forEach((c) => arkIds.push(c.arkId));
-  console.log("arkIds: ", arkIds);
 
   d3Nodes.push(...createD3Nodes(constellations));
-  console.log("D3 nodes created:", d3Nodes);
 
   for (const node of constellations) {
     let relations = node.relations ? node.relations : [];
