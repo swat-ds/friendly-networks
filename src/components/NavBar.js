@@ -73,7 +73,12 @@ const NavBar = (props) => {
       </Row>
       <Row id="nav-row">
         <Navbar expand="md" variant="dark" id="navbar" >
-            <Navbar.Brand id="brand" href="/" className="header-item">
+            <Navbar.Brand
+              as={Link}
+              id="brand"
+              to="/"
+              className="header-item"
+            >
               <AiOutlineHome id="home-icon" size={40}/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-collapse" />
