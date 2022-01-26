@@ -223,7 +223,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
       if (pids[pageNum] !== currentPid) {
         setPid(pids[pageNum])
       }
-
     };
 
     /**
@@ -236,7 +235,6 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  				if (val !== '' && val % 1 === 0 && val <= pids.length && val >= 1) {
  					containerRef.current.scroll(0, distances[val-1])
  				}
-
  			}
  		}
 

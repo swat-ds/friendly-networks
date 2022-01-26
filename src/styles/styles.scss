@@ -7,13 +7,21 @@ body {
   color: #FAF8D6
 }
 
-p {
+p, p * {
   text-align: justify;
+  hyphens: auto;
 }
 
-a {
+a,
+p a,
+.background-col a {
   color: var(--bs-info);
   text-decoration-color: var(--bs-info);
+
+  &:hover {
+    color: var(--bs-info);
+    text-decoration-color: var(--bs-info);
+  }
 }
 
 #main-row{

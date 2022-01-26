@@ -69,13 +69,15 @@
 }
 
 #brand:active,
-#brand:hover {
+#brand:hover,
+#brand:focus-within {
   background-color: var(--bs-secondary);
   outline: 3px solid var(--bs-primary);
 }
 
 #brand:active *,
-#brand:hover * {
+#brand:hover *,
+#brand:focus-within * {
   color: var(--bs-primary);
 } // Descendant selector is needed to change color of path
 
@@ -152,13 +154,14 @@
   }
 
   .nav-item:active,
-  .nav-item:hover {
+  .nav-item:hover,
+  .nav-item:focus-within {
   	background-color: var(--bs-secondary);
   	outline: 2px solid var(--bs-primary);
   }
 
   .nav-item:active > a,
-  .nav-item:active > a,
+  .nav-item:focus-within > a,
   .nav-item:hover > a {
   	color: var(--bs-primary) !important;
     text-decoration: underline;
