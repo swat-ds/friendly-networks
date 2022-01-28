@@ -1,9 +1,11 @@
 //Package imports
 import React from "react";
+import {graphql} from "gatsby";
 import { Row, Col, Card } from "react-bootstrap";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from "./RelationCardDeck";
+import { months } from "../globalVariables.js";
 import "../styles/entity.scss";
 
 const parseString = require("xml2js").parseString;
@@ -23,6 +25,19 @@ const bioDataLabels = {
   genders: "Gender",
   sameAsRelations: "Authority records",
 };
+
+/**
+ * @param isoString a date string in ISO format (yyyy-MM-dd)
+ * @returns a string in the format January 1, 1794
+*/
+function formatDate(isoString) {
+  const date = new Date(isoString+"T00:00:00Z");
+  const month = months[date.getUTCMonth()]?.name;
+  const day = date.getUTCDate();
+  const year = date.getUTCFullYear();
+  return `${month} ${day}, ${year}`
+}
+
 /**
  *
  * @param {*} props properties for this component, including the data comping from Page Creation of
@@ -44,8 +59,11 @@ const Person = (props) => {
     genders,
     sameAsRelations,
     allArks,
-    tei,
+    arkRegex,
   } = props.pageContext;
+
+  console.log("data", props.data);
+  const tei = props.data.allCetei.nodes;
 
   /**
    * Extracts the bio of the @biogHist and renders it
@@ -431,6 +449,27 @@ const Person = (props) => {
     }
   };
 
+  const renderTeiLinks = (teiDoc) => {
+    // Parse tei
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(teiDoc.prefixed, "text/xml");
+    const mentions = Array.from(
+      doc.documentElement.querySelectorAll(`[key="${arkId}"]`)
+    );
+    const entries = mentions.map(
+      el => el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
+    ).filter(
+      el => el // Remove nulls
+    ).filter(
+      (item, index, self) => self.indexOf(item) === index // Remove dups
+    );
+    entries.forEach((item, i) => {
+      const dateString = formatDate(item)
+      console.log(item, "\n", dateString);
+    });
+
+    const dates = entries.map(str => Date.parse(str))
+  };
 
   return(
     <Layout>
@@ -450,6 +489,7 @@ const Person = (props) => {
                 {renderPlaces()}
                 {renderOccupations()}
                 {renderSubjects()}
+                {tei.map(x => renderTeiLinks(x))}
               </Card.Text>
               <Card.Link
                 href={"https://snaccooperative.org/view/" + id}
@@ -488,3 +528,19 @@ const Person = (props) => {
   );
 };
 export default Person;
+
+export const query = graphql`
+  query Tei($arkRegex: String) {
+    allCetei(filter: {prefixed: {regex: $arkRegex}}) {
+      nodes {
+        id
+        prefixed
+        parent {
+          ... on File {
+            name
+          }
+        }
+      }
+    }
+  }
+`;

@@ -236,9 +236,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         genders: node.genders,
         dates: node.dates,
         allArks: arks,
-        tei: result.data.allCetei.nodes.filter(
-          x => x.prefixed.search(node.arkId) > -1
-        ),
+        arkRegex: `/${node.arkId}/`, 
       },
     });
   }
