@@ -7,9 +7,8 @@ title: "The Form of the Journal"
 
 # The Form of the Journal
 
-![Illustration in the style of an early-modern woodcut, looking down a wide, tree-lined street. On the left, two men in top hats shake hands in the street. In the middle, a horse-drawn carriage moves down the road away from the viewer. On the far right, a woman in a bonnet walks on the sidewalk, holding the hand of a small child. A picket fence runs down the right side of the street, and several white houses are visible behind it.](./images/image6.jpg " ")
- <figcaption><i>Detail, “View in Moorestown,” as published in </i>Historical Collections of New Jersey<i> by John W.  Barber & Henry Howe (1844).  Courtesy Friends Historical Library of Swarthmore College (A00179830).</i></figcaption>
-
+![Copperplate engraving of a short, stout man in a broad hat, holding a cane, standing in a yard bounded by a rail fence. In the background a cow rests on the ground in front of a two-story farm house and many trees.](./images/image4.jpg " ")
+ <figcaption><i>“A View of the residence of <a href="/people/w6gq882n">Richard Jordan</a> taken from Newtown Meeting House New Jersey,” about 1826. The image was drawn by W. Mason and engraved by Francis Kearny. Jordan was, like John Hunt, a Quaker minister, and had property in what is now Camden. Hunt knew Jordan and the latter is mentioned many times in the journal. This is also one of a very few images of a farm in southern New Jersey in the early 19th century. Courtesy Friends Historical Library of Swarthmore College (A00179829).</i></figcaption>
 <br/>
 
 Following William Penn’s advice, John Hunt kept a journal for over half a century, beginning in 1770 and ending shortly before his death in 1824. This original work, penned in his own hand, is in the collections of Friends Historical Library (hereafter FHL). It survives in eleven separate volumes plus a number of loose sheets. It is lacking the section -- apart from the several loose sheets -- dating between the end of 1800 and the 7th month of 1812.
