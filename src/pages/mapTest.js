@@ -57,7 +57,7 @@ const MapPage = ({ data }) => {
           <Map
             center={[39.856677,-74.90081]}
             maxZoom={11}
-            minZoom={5}
+            minZoom={3}
             startZoom={7}
             json={jsonData}
           />

@@ -449,27 +449,27 @@ const Person = (props) => {
     }
   };
 
-  const renderTeiLinks = (teiDoc) => {
-    // Parse tei
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(teiDoc.prefixed, "text/xml");
-    const mentions = Array.from(
-      doc.documentElement.querySelectorAll(`[key="${arkId}"]`)
-    );
-    const entries = mentions.map(
-      el => el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
-    ).filter(
-      el => el // Remove nulls
-    ).filter(
-      (item, index, self) => self.indexOf(item) === index // Remove dups
-    );
-    entries.forEach((item, i) => {
-      const dateString = formatDate(item)
-      console.log(item, "\n", dateString);
-    });
-
-    const dates = entries.map(str => Date.parse(str))
-  };
+  // const renderTeiLinks = (teiDoc) => {
+  //   // Parse tei
+  //   const parser = new DOMParser();
+  //   const doc = parser.parseFromString(teiDoc.prefixed, "text/xml");
+  //   const mentions = Array.from(
+  //     doc.documentElement.querySelectorAll(`[key="${arkId}"]`)
+  //   );
+  //   const entries = mentions.map(
+  //     el => el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
+  //   ).filter(
+  //     el => el // Remove nulls
+  //   ).filter(
+  //     (item, index, self) => self.indexOf(item) === index // Remove dups
+  //   );
+  //   entries.forEach((item, i) => {
+  //     const dateString = formatDate(item)
+  //     console.log(item, "\n", dateString);
+  //   });
+  //
+  //   const dates = entries.map(str => Date.parse(str))
+  // };
 
   return(
     <Layout>
@@ -489,7 +489,6 @@ const Person = (props) => {
                 {renderPlaces()}
                 {renderOccupations()}
                 {renderSubjects()}
-                {tei.map(x => renderTeiLinks(x))}
               </Card.Text>
               <Card.Link
                 href={"https://snaccooperative.org/view/" + id}
