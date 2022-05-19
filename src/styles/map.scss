@@ -1,0 +1,15 @@
+div.leaflet-popup-content-wrapper, div.leaflet-popup-tip {
+  background-color: var(--bs-primary);
+}
+
+div.leaflet-popup h3 {
+  font-size: 1rem;
+}
+
+div#map-row div.leaflet-bar a {
+  background-color: var(--bs-primary);
+  &:hover, &:hover span, &.leaflet-disabled, &.leaflet-disabled span {
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+  }
+}

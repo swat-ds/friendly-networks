@@ -343,18 +343,7 @@ const Person = (props) => {
     if (! features) {return}
 
     // Wrap GeoJSONs in a FeatureCollection container
-    const geoJson = {"type": "FeatureCollection", "features": features}
-
-    // TODO: Figure out how to call fitBounds on initial render
-    //        (May need to happen in Map component)
-
-    // // Define a small component to call fitBounds
-    // const ZoomMap = (json) => {
-    //   const map = useMap()
-    //   // const group = L.geoJson(json);
-    //   console.log('map layers:', map._layers)
-    //   return null
-    // };
+    const geoJson = {"type": "FeatureCollection", "features": features} 
 
     // Render a map to which the GeoJSONs have been passed
     return (
@@ -396,7 +385,7 @@ const Person = (props) => {
     geoJson.properties.name = snacPlace.geoplace.name;
     geoJson.properties.countryCode = snacPlace.geoplace.countryCode;
     geoJson.properties.adminCode = snacPlace.geoplace.administrationCode;
-    geoJson.properties.role = snacPlace.role.term || "Associated Place";
+    geoJson.properties.role = snacPlace.role?.term || "Associated Place";
 
     return geoJson
 
@@ -599,9 +588,7 @@ const Person = (props) => {
             <Card bg="primary">
               <Card.Body>
                 <Card.Title as="h2">Map</Card.Title>
-                <Card.Text>
                   {renderMap()}
-                </Card.Text>
               </Card.Body>
             </Card>
           </Row>

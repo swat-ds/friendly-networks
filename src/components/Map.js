@@ -3,7 +3,8 @@ import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
 import { Marker, Popup, GeoJSON, useMap } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
+
+import "../styles/map.scss";
 
 const Map = (props) => {
 
@@ -14,7 +15,7 @@ const Map = (props) => {
   // (this extracts the name from a feature to display in a pop-up)
   const addPopup = (feature, layer) => {
     if (feature.properties && feature.properties.name) {
-      layer.bindPopup(`<p>${feature.properties.name}</p>`);
+      layer.bindPopup(`<h3>${feature.properties.name}</h3>`);
     }
   }
 
@@ -45,11 +46,6 @@ const Map = (props) => {
           minZoom={minZoom}
         />
         <GeoJSON data={json} onEachFeature={addPopup}/>
-        <Marker position={center}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
         <MapZoomer data={json}/>
         {props.children}
       </MapContainer>
