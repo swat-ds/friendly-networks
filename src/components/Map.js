@@ -2,11 +2,13 @@ import React from "react";
 import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-import { useMap } from 'react-leaflet/hooks'
-import { Marker, Popup, GeoJSON } from 'react-leaflet'
+import { Marker, Popup, GeoJSON, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
-const Map = ({center, maxZoom, minZoom, startZoom, json}) => {
+const Map = (props) => {
+
+  // Unpack props
+  const {center, maxZoom, minZoom, startZoom, json} = props;
 
   // Create function for onEachFeature
   // (this extracts the name from a feature to display in a pop-up)
@@ -15,6 +17,17 @@ const Map = ({center, maxZoom, minZoom, startZoom, json}) => {
       layer.bindPopup(`<p>${feature.properties.name}</p>`);
     }
   }
+
+  // Define a small component to call fitBounds
+  // (This way all points in geoJson start out visible)
+  const MapZoomer = (data) => {
+    const map = useMap() // Get reference to the current map
+    if (data) {
+      const bounds = L.geoJson(json).getBounds(); // Get bounds of geoJson
+      map.fitBounds(bounds, {padding: [20, 20]}); // Fit map to those bounds
+    }
+    return null
+  };
 
   if (typeof window !== 'undefined') {
     return (
@@ -37,6 +50,8 @@ const Map = ({center, maxZoom, minZoom, startZoom, json}) => {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        <MapZoomer data={json}/>
+        {props.children}
       </MapContainer>
     );
   }

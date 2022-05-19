@@ -2,8 +2,10 @@
 import React from "react";
 import {graphql} from "gatsby";
 import { Row, Col, Card } from "react-bootstrap";
+
 //Local imports
 import Layout from "./Layout";
+import Map from "./Map";
 import RelationCardDeck from "./RelationCardDeck";
 import { months } from "../globalVariables.js";
 import "../styles/entity.scss";
@@ -62,7 +64,7 @@ const Person = (props) => {
     arkRegex,
   } = props.pageContext;
 
-  console.log("data", props.data);
+  // console.log("data", props.data);
   const tei = props.data.allCetei.nodes;
 
   /**
@@ -329,6 +331,78 @@ const Person = (props) => {
 
 
   /**
+   * renders a map of the @places related to the current entity
+   * @returns returns a Map component with relevant places marked
+   */
+  const renderMap = () => {
+
+    // Convert SNAC place JSONs to GeoJSONs, filtering out failed conversions
+    const features = places.map(convertToGeoJson).filter(i => i);
+
+    // Abort if there are no successfully converted GeoJSONs
+    if (! features) {return}
+
+    // Wrap GeoJSONs in a FeatureCollection container
+    const geoJson = {"type": "FeatureCollection", "features": features}
+
+    // TODO: Figure out how to call fitBounds on initial render
+    //        (May need to happen in Map component)
+
+    // // Define a small component to call fitBounds
+    // const ZoomMap = (json) => {
+    //   const map = useMap()
+    //   // const group = L.geoJson(json);
+    //   console.log('map layers:', map._layers)
+    //   return null
+    // };
+
+    // Render a map to which the GeoJSONs have been passed
+    return (
+      <Map
+        center={[39.856677,-74.90081]}
+        maxZoom={11}
+        minZoom={3}
+        startZoom={7}
+        json={geoJson}
+      >
+      </Map>
+    );
+  };
+
+  /**
+   * Turns a SNAC place JSON into a GeoJson
+   * @returns returns a Feature GeoJson
+   */
+  const convertToGeoJson = (snacPlace) => {
+
+    // Check for well-formedness of SNAC place json
+    if (! snacPlace?.confirmed) {return;}
+
+    // Initialize the GeoJson
+    let geoJson = {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point"
+      },
+      "properties": {}
+    }
+
+    // Add coordinates
+    geoJson.geometry.coordinates = [
+      snacPlace.geoplace.longitude, snacPlace.geoplace.latitude
+    ];
+
+    // Store the properties
+    geoJson.properties.name = snacPlace.geoplace.name;
+    geoJson.properties.countryCode = snacPlace.geoplace.countryCode;
+    geoJson.properties.adminCode = snacPlace.geoplace.administrationCode;
+    geoJson.properties.role = snacPlace.role.term || "Associated Place";
+
+    return geoJson
+
+  }
+
+  /**
    * renders a single occupation from the @occupations done by the current entity
    * @param {*} occupation the occupation to be rendered
    * @param {*} _ the index is ignored
@@ -465,7 +539,7 @@ const Person = (props) => {
   //   );
   //   entries.forEach((item, i) => {
   //     const dateString = formatDate(item)
-  //     console.log(item, "\n", dateString);
+  //     console.(item, "\n", dateString);
   //   });
   //
   //   const dates = entries.map(str => Date.parse(str))
@@ -517,6 +591,16 @@ const Person = (props) => {
                 <Card.Text>
                   {renderRelatives()}
                   <small>Only relationships to other people within <i>Friendly Networks</i> are listed.</small>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
+          <Row id="map-row">
+            <Card bg="primary">
+              <Card.Body>
+                <Card.Title as="h2">Map</Card.Title>
+                <Card.Text>
+                  {renderMap()}
                 </Card.Text>
               </Card.Body>
             </Card>
