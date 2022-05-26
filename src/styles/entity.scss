@@ -1,48 +1,53 @@
-#entity-name{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+#entity-name {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-#person-main-row .card-body{
-  height: auto;
+#person-main-row .card-body {
+	height: auto;
 }
 
 div#person-main-row div a {
-  color: var(--bs-info);
-  text-decoration-color: var(--bs-info);
+	color: var(--bs-info);
+	text-decoration-color: var(--bs-info);
 }
 
-#person-col-right{
-  flex-grow: 3;
+#person-col-center {
+	flex-grow: 3;
 }
 
-.row#relations-row, .row#bio-row, .row#person-main-row{
-  margin-left: 0px;
-  margin-right: 0px;
+.row#bio-row,
+.row#person-main-row,
+.row#relations-row {
+	margin-left: 0;
+	margin-right: 0;
 }
-
 // Add padding around cards
-.row#relations-row, .row#bio-row, .col#person-col-left {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  height:auto;
+.col#person-col-left,
+.col#person-col-right,
+.row#bio-row,
+.row#relations-row {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	height: auto;
 }
 
-
-#bio-row > .card > .card-body, #relations-row > .card > .card-body {
-  padding: 1rem !important;
+#bio-row > .card > .card-body,
+#relations-row > .card > .card-body {
+	padding: 1rem !important;
 }
 
-#person-col-left > .card, #bio-row > .card, #relations-row > .card {
-  display: flex;
+#bio-row > .card,
+#person-col-left > .card,
+#relations-row > .card {
+	display: flex;
 }
 
 table#relations-table {
-  border-color: var(--bs-secondary);
+	border-color: var(--bs-secondary);
 }
-
 // table#relations-table tr td:first-of-type {
 //   border-left-width: 1px;
 // }
@@ -50,22 +55,51 @@ table#relations-table {
 //   border-right-width: 1px;
 // }
 
-table#relations-table *{
-  color: var(--bs-secondary);
+table#relations-table * {
+	color: var(--bs-secondary);
 }
 
-.rel-col, .name-col{
-  width: fit-content;
+.name-col,
+.rel-col {
+	width: fit-content;
 }
 
 table#relations-table td {
-  text-align: left;
+	text-align: left;
 }
 
-td.name-col{
-  text-indent: 0px;
+td.name-col {
+	text-indent: 0;
 }
 
 table#relations-table td > * {
-  padding: 0px;
+	padding: 0;
+}
+
+#person-col-right .accordion {
+  background-color: inherit;
+  color: var(--bs-secondary);
+
+  * {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  a {
+    color: var(--bs-info)
+  }
+
+  .accordion-button {
+    padding: 8px 0px;
+  }
+
+  ul.accordion-body {
+    margin: 0;
+    padding: 0px 16px;
+  }
+
+  .badge {
+    color: var(--bs-primary);
+    margin: 0px 2px;
+  }
 }

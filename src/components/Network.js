@@ -36,7 +36,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   const { filteredNodes, filteredLinks } = useMemo(() => {
     return getNodesWithoutHunt(nodesInJSON, linksInJSON, centralFigure);
-  }, [centralFigure]);
+  }, [centralFigure, linksInJSON, nodesInJSON]);
 
   //  console.log("nodes in json length:", nodesInJSON.length);
   //   console.log("links in json length:", linksInJSON.length);
@@ -71,7 +71,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       setNodes(nodesInJSON);
       setLinks(linksInJSON);
     }
-  }, [removeHunt]);
+  }, [removeHunt, centralFigure, linksInJSON, nodesInJSON]);
 
   const svgRef = useRef(); // A reference to refer to the SVG element
   let width = 600,
@@ -345,7 +345,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
+  }, [nodes, links, removeHunt, highlightMinister, draw]);
 
   // function removeCenter(){
   //   setRemoveHunt(!removeHunt)

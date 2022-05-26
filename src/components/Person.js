@@ -1,7 +1,7 @@
 //Package imports
 import React from "react";
-import {graphql} from "gatsby";
-import { Row, Col, Card } from "react-bootstrap";
+import {graphql, Link} from "gatsby";
+import { Row, Col, Card, Accordion, Badge } from "react-bootstrap";
 //Local imports
 import Layout from "./Layout";
 import RelationCardDeck from "./RelationCardDeck";
@@ -32,8 +32,8 @@ const bioDataLabels = {
 */
 function formatDate(isoString) {
   const date = new Date(isoString+"T00:00:00Z");
-  const month = months[date.getUTCMonth()]?.name;
-  const day = date.getUTCDate();
+  const month = months[date.getUTCMonth()]?.abbr;
+  const day = date.getUTCDate().toString().padStart(2, "0");
   const year = date.getUTCFullYear();
   return `${month} ${day}, ${year}`
 }
@@ -62,8 +62,90 @@ const Person = (props) => {
     arkRegex,
   } = props.pageContext;
 
-  console.log("data", props.data);
-  const tei = props.data.allCetei.nodes;
+  // Initialize empty arrays to hold mentions
+  const [huntDated, huntUndated, evansDated, evansUndated] = [[],[],[],[]]
+
+  function processTei (teiDoc) {
+    // Parse tei
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(teiDoc.prefixed, "text/xml");
+
+    // Get journal title
+    const title = doc.querySelector("tei-title").textContent.split(":")[0];
+
+    // Get journal start date
+    const startNode = doc.querySelector("tei-profileDesc tei-date")
+    const start = startNode.hasAttribute("from")
+      ? startNode.getAttribute("from")
+      : startNode.getAttribute("when");
+
+    // Get mentions
+    const mentions = Array.from(
+      doc.documentElement.querySelectorAll(`[key="${arkId}"]`)
+    );
+
+    mentions.forEach(el => {
+      // Get value of @n of enclosing <div>, if there is a <div> w/ @n
+      // (if @n exists, its value is an ISO-formatted date (yyyy-MM-dd))
+      const date = el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
+
+      // -------- Handle mentions in dated entries --------
+      if (date) {
+        // Create an object containing the date and a link to the entry
+        const entryObj = {
+          entryDate: date,
+          href: `/journals/${teiDoc.parent.name}#${date}`
+        };
+
+        // Check journal title and add object to appropriate array
+        if (title.includes("Hunt")) {huntDated.push(entryObj)}
+        if (title.includes("Evans")) {evansDated.push(entryObj)}
+
+      // -------- Handle mentions not in dated entries --------
+      } else {
+        // ---- Determine page number (by finding previous <tei-pb>) ----
+
+        // Replace contents of mention with a unique search target
+        el.innerHTML = "TEFLON TELEPHONE"
+
+        // Walk back & up through DOM, running regEx search till it matches
+        var currEl = el.parentElement;
+        while (! currEl.innerHTML.match(/<tei-pb.+TEFLON TELEPHONE/s)) {
+          // Set currEl to prev sibling if one exists, else to parent
+          currEl = currEl.previousElementSibling || currEl.parentElement;
+        }
+        // Get index of start of mention w/in innerHTML
+
+        // Trim innerHTML str to start of mention
+
+        // Find last <tei-pb> w/in trimmed innerHTML
+
+      }
+    })
+
+    // Map mentions to entries containing mentions
+    const entries = mentions.map(
+      el => el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
+    ).filter(
+      el => el // Remove nulls
+    ).filter(
+      (item, index, self) => self.indexOf(item) === index // Remove dups
+    );
+
+    if (entries.length > 0) {
+      return {
+        title: title,
+        date: start,
+        mentions: entries.map(entryDate => ({
+          isoString: entryDate,
+          link: `/journals/${teiDoc.parent.name}#${entryDate}`,
+          dateString: formatDate(entryDate)
+        }))
+      };
+    }
+    return null;
+  };
+
 
   /**
    * Extracts the bio of the @biogHist and renders it
@@ -449,27 +531,41 @@ const Person = (props) => {
     }
   };
 
-  const renderTeiLinks = (teiDoc) => {
-    // Parse tei
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(teiDoc.prefixed, "text/xml");
-    const mentions = Array.from(
-      doc.documentElement.querySelectorAll(`[key="${arkId}"]`)
+  const renderRelText = text => {
+    if (! text) {return "";} // Return empty string if passed a falsy arg
+    return (
+      <Accordion flush>
+        <Accordion.Item eventKey="{text.date}">
+          <Accordion.Header>
+            {text.title}
+            <Badge bg="secondary" pill>{text.mentions.length}</Badge>
+          </Accordion.Header>
+          <Accordion.Body as="ul" style={{ listStyleType: "none" }}>
+            {text.mentions.map(x=>
+              <li>
+                <Link to={x.link} class="g-link">{x.dateString}</Link>
+              </li>
+            )}
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     );
-    const entries = mentions.map(
-      el => el.closest("tei-div[n]")?.getAttribute("n").split("/")[0]
-    ).filter(
-      el => el // Remove nulls
-    ).filter(
-      (item, index, self) => self.indexOf(item) === index // Remove dups
-    );
-    entries.forEach((item, i) => {
-      const dateString = formatDate(item)
-      console.log(item, "\n", dateString);
-    });
+  }
 
-    const dates = entries.map(str => Date.parse(str))
-  };
+  const renderRelTexts = () => {
+    const mentionTexts = props.data.allCetei.nodes.map(processTei).sort(
+      (a, b) => (a?.date < b?.date) ? -1 : 1 // sort journals by date
+    );
+    console.log(mentionTexts);
+
+      return (<>
+        <h5>Mentioned in</h5>
+        {mentionTexts.length > 0
+          ? <Col>{mentionTexts.map(renderRelText)}</Col>
+          : <p id="no-mentions">No mentions found</p>
+        }
+      </>)
+  }
 
   return(
     <Layout>
@@ -489,7 +585,6 @@ const Person = (props) => {
                 {renderPlaces()}
                 {renderOccupations()}
                 {renderSubjects()}
-                {tei.map(x => renderTeiLinks(x))}
               </Card.Text>
               <Card.Link
                 href={"https://snaccooperative.org/view/" + id}
@@ -500,7 +595,7 @@ const Person = (props) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col id="person-col-right">
+        <Col id="person-col-center">
           <Row id="bio-row">
             <Card bg="primary">
               <Card.Body>
@@ -515,13 +610,19 @@ const Person = (props) => {
             <Card bg="primary">
               <Card.Body>
                 <Card.Title as="h2">Relatives & Acquaintances</Card.Title>
-                <Card.Text>
                   {renderRelatives()}
-                  <small>Only relationships to other people within <i>Friendly Networks</i> are listed.</small>
+                  <Card.Text>
+                    <small>Only relationships to other people within <cite>Friendly Networks</cite> are listed.</small>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Row>
+        </Col>
+        <Col id="person-col-right">
+          <Card bg="primary"><Card.Body>
+            <Card.Title as="h2">Related Texts</Card.Title>
+            {renderRelTexts()}
+          </Card.Body></Card>
         </Col>
       </Row>
     </Layout>
