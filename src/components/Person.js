@@ -339,8 +339,9 @@ const Person = (props) => {
     // Convert SNAC place JSONs to GeoJSONs, filtering out failed conversions
     const features = places?.map(convertToGeoJson).filter(i => i);
 
+
     // Abort if there are no successfully converted GeoJSONs
-    if (! features) {return}
+    if (features.length < 1) {return;}
 
     // Wrap GeoJSONs in a FeatureCollection container
     const geoJson = {"type": "FeatureCollection", "features": features}
