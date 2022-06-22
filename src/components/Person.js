@@ -341,7 +341,7 @@ const Person = (props) => {
 
 
     // Abort if there are no successfully converted GeoJSONs
-    if (features.length < 1) {return;}
+    if ((!features) || (features.length < 1)) {return;}
 
     // Wrap GeoJSONs in a FeatureCollection container
     const geoJson = {"type": "FeatureCollection", "features": features}
@@ -585,7 +585,7 @@ const Person = (props) => {
               </Card.Body>
             </Card>
           </Row>
-          <Row id="map-row">
+          <Row id="map-row" style={renderMap() ? {} : {"display": "none"}}>
             <Card bg="primary">
               <Card.Body>
                 <Card.Title as="h2">Map</Card.Title>
