@@ -15,7 +15,10 @@ const Map = (props) => {
   // (this extracts the name from a feature to display in a pop-up)
   const addPopup = (feature, layer) => {
     if (feature.properties && feature.properties.name) {
-      layer.bindPopup(`<h3>${feature.properties.name}</h3>`);
+      const state = feature.properties?.countryCode === "US"
+        ? ", " + feature.properties.adminCode
+        : "";
+      layer.bindPopup(`<h3>${feature.properties.name + state}</h3>`);
     }
   }
 
