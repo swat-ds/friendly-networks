@@ -120,10 +120,9 @@ const search = ({ location, data }) => {
   function renderJResult(result, index) {
     return (
       <Row>
-        <Col>
-          <Link to={"/" + result.item.name}>
-            <Card id="result-card" border="success">
-              <Card.Header>Journal Results</Card.Header>
+          <Link to={"/" + result.item.name} className="result-link">
+            <Card bg="primary" className="result-card">
+              <Card.Header>Journal Result</Card.Header>
               <Card.Body>
                 <Card.Text>
                   {getHighlightedText(result.matches[0].value, query)}
@@ -131,18 +130,16 @@ const search = ({ location, data }) => {
               </Card.Body>
             </Card>
           </Link>
-        </Col>
-      </Row>
+    </Row>
     );
   }
 
   function renderCResult(result, index) {
     return (
       <Row>
-        <Col>
-          <Link to={"/people/" + result.item.arkId}>
-            <Card id="result-card" border="success">
-              <Card.Header>Journal Results</Card.Header>
+          <Link to={"/people/" + result.item.arkId} className="result-link">
+            <Card bg="primary" className="result-card">
+              <Card.Header>Person Result</Card.Header>
               <Card.Body>
                 <Card.Text>
                   {getHighlightedText(result.matches[0].value, query)}
@@ -150,24 +147,26 @@ const search = ({ location, data }) => {
               </Card.Body>
             </Card>
           </Link>
-        </Col>
       </Row>
     );
   }
   return (
     <Layout>
-      <h4 className="general-text">
-        {constellationResult.length + journalResult.length} results for "{query}
-        "
-      </h4>
+      <Row id="main-row">
+        <h4 className="general-text">
+          {constellationResult.length + journalResult.length} results for "{query}
+          "
+        </h4>
 
-      <br />
-      <h6 className="general-text">Journal Results</h6>
+        <br />
+        <Col>
+          <h6 className="general-text">Journal Results</h6>
+          {journalResult.map(renderJResult)}
 
-      {journalResult.map(renderJResult)}
-
-      <h6 className="general-text">People Results</h6>
-      {constellationResult.map(renderCResult)}
+          <h6 className="general-text">People Results</h6>
+          {constellationResult.map(renderCResult)}
+        </Col>
+      </Row>
     </Layout>
   );
 };

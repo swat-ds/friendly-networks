@@ -119,15 +119,24 @@ strong {
   font-weight: bold !important;
 }
 
-#result-card{
+div.result-card{
   transform: none;
   transition: none;
   animation: none;
   width: 90vw;
   height: fit-content;
+  padding: 0px;
 
   margin-bottom: 3vh;
 
+  mark {color: var(--bs-primary)}
+}
+
+.result-link {
+  text-decoration: none;
+}
+.result-link:hover, .result-link:focus {
+  .result-card {outline: 2px solid var(--bs-secondary)}
 }
 
 // change the theme
