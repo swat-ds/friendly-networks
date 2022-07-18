@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Fuse from "fuse.js";
 import Layout from "../components/Layout";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Tab, Tabs, Badge } from "react-bootstrap";
 
 import "../styles/styles.scss";
 
@@ -27,25 +27,25 @@ function getHighlightedText(text, highlight) {
 const search = ({ location, data }) => {
   let parsedJournals = [];
 
-  data.journals.nodes.forEach((journal) => {
-
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(journal.prefixed, "text/xml");
-    const rawDivs = Array.from(doc.documentElement.querySelectorAll("tei-div"))
-    const divs = rawDivs.map(div => { return{
-      text: div.textContent,
-      name: journal.parent.name,
-      id: div.attributes?.n?.nodeValue
-    }});
-
-    divs.forEach(div => parsedJournals.push(div));
-  });
 
   let constellationResult = [];
   let journalResult = [];
   let query = "";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
+    data.journals.nodes.forEach((journal) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(journal.prefixed, "text/xml");
+      console.log("root", doc.documentElement);
+      const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
+      const divs = rawDivs.map(div => { return{
+        text: div.textContent,
+        name: journal.parent.name,
+        id: div.attributes?.n?.nodeValue
+      }});
+      divs.forEach(div => parsedJournals.push(div));
+    });
+
     console.log("location", location);
 
     if (location.state !== null) {
@@ -86,7 +86,6 @@ const search = ({ location, data }) => {
 
   function renderJResult(result, index) {
     return (
-      <Row>
           <Link to={"/" + result.item.name} className="result-link">
             <Card bg="primary" className="result-card">
               <Card.Header>Journal Result</Card.Header>
@@ -97,7 +96,6 @@ const search = ({ location, data }) => {
               </Card.Body>
             </Card>
           </Link>
-    </Row>
     );
   }
 
@@ -120,19 +118,33 @@ const search = ({ location, data }) => {
   return (
     <Layout>
       <Row id="main-row">
+
         <h4 className="general-text">
           {constellationResult.length + journalResult.length} results for "{query}
           "
         </h4>
 
         <br />
-        <Col>
-          <h6 className="general-text">Journal Results</h6>
-          {journalResult.map(renderJResult)}
-
-          <h6 className="general-text">People Results</h6>
-          {constellationResult.map(renderCResult)}
-        </Col>
+        <Tabs>
+          <Tab eventKey="journal" title={
+            <React.Fragment>
+              Journal Results
+              <Badge pill bg='primary'>{journalResult.length}</Badge>
+            </React.Fragment>
+          }>
+              {journalResult.map(renderJResult)}
+          </Tab>
+          <Tab eventKey="people" title={
+            <React.Fragment>
+              Person Results
+              <Badge pill bg='primary'>{constellationResult.length}</Badge>
+            </React.Fragment>
+          }>
+            <Col>
+              {constellationResult.map(renderCResult)}
+            </Col>
+          </Tab>
+        </Tabs>
       </Row>
     </Layout>
   );
