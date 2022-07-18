@@ -28,22 +28,17 @@ const search = ({ location, data }) => {
   let parsedJournals = [];
 
   data.journals.nodes.forEach((journal) => {
-    //  let headBegin = journal.prefixed.indexOf("<body");
-    //  let headEndStr = "</body>";
-    //  let headEnd = journal.prefixed.indexOf("</body>");
-    //  let teiHeaderBody = journal.prefixed.substring(
-    //    headBegin,
-    //    headEnd + headEndStr.length
-    //  );
-    parseString(journal.prefixed, function (err, result) {
-      //  console.log(journal.prefixed)
-      //  console.log(result)
-      let entry = {
-        text: result,
-        name: journal.parent.name,
-      };
-      parsedJournals.push(entry);
-    });
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(journal.prefixed, "text/xml");
+    const rawDivs = Array.from(doc.documentElement.querySelectorAll("tei-div"))
+    const divs = rawDivs.map(div => { return{
+      text: div.textContent,
+      name: journal.parent.name,
+      id: div.attributes?.n?.nodeValue
+    }});
+
+    divs.forEach(div => parsedJournals.push(div));
   });
 
   let constellationResult = [];
@@ -51,29 +46,18 @@ const search = ({ location, data }) => {
   let query = "";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
-    console.log(location);
+    console.log("location", location);
 
     if (location.state !== null) {
       query = location.state.searchQuery;
     } else {
       query = location.search.slice(3);
     }
-    let baseKey = "text.tei-TEI.tei-text.tei-body.tei-div";
     const journalFuse = new Fuse(parsedJournals, {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
-      keys: [
-        // `${baseKey}.tei-dateline`,
-        // `${baseKey}.tei-head`,
-        `${baseKey}.tei-p._`,
-        `${baseKey}.tei-p.tei-persName._`,
-        `${baseKey}.tei-p.tei-rs._`,
-        `${baseKey}.tei-head._`,
-        `${baseKey}.tei-dateline.tei-date._`,
-        // `${baseKey}.tei-p.tei-note._`,
-        // `${baseKey}.tei-p.tei-note.tei-q._`,
-      ],
+      keys: ["text"],
     });
 
     let jFuseResult = journalFuse.search(query);
@@ -96,27 +80,10 @@ const search = ({ location, data }) => {
     constellationResult.push(...cFuseResult);
   }
 
-  console.log(parsedJournals);
-  console.log(journalResult);
-  console.log(constellationResult);
-  // console.log(parsedJournals)
-  // function handleChange(e){
-  //     e.preventDefault()
-  //     setQuery(e.target.value)
-  // }
-  // function handleClick(){
-  //     let resultData = query;
-  //     setResult(resultData)
-  // }
+  // console.log("parsedJournals", parsedJournals);
+  console.log("journalResult", journalResult);
+  console.log("constellationResult", constellationResult);
 
-  // useEffect(() => {
-  //     btnRef.current.click()
-  // }, [])
-
-  //  <span>{}</span>;
-  //  {
-  //    result.matches[0].value;
-  //  }
   function renderJResult(result, index) {
     return (
       <Row>
