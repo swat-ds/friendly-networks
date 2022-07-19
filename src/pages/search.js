@@ -36,7 +36,6 @@ const search = ({ location, data }) => {
     data.journals.nodes.forEach((journal) => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(journal.prefixed, "text/xml");
-      console.log("root", doc.documentElement);
       const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
       const divs = rawDivs.map(div => { return{
         text: div.textContent,
@@ -48,11 +47,15 @@ const search = ({ location, data }) => {
 
     console.log("location", location);
 
+    // Extract search query from passed URL/state
     if (location.state !== null) {
       query = location.state.searchQuery;
     } else {
       query = location.search.slice(3);
     }
+    // Decode query (e.g., convert "%20" to a space char)
+    query = decodeURI(query);
+
     const journalFuse = new Fuse(parsedJournals, {
       includeMatches: true,
       includeScore: true,
@@ -120,8 +123,7 @@ const search = ({ location, data }) => {
       <Row id="main-row">
 
         <h4 className="general-text">
-          {constellationResult.length + journalResult.length} results for "{query}
-          "
+          {constellationResult.length+journalResult.length} results for "{query}"
         </h4>
 
         <br />

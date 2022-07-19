@@ -119,6 +119,8 @@ strong {
   font-weight: bold !important;
 }
 
+// Search-page related styles
+
 div.result-card{
   transform: none;
   transition: none;
@@ -136,6 +138,10 @@ div.result-card{
 }
 .result-link:hover, .result-link:focus {
   .result-card {outline: 2px solid var(--bs-secondary)}
+}
+
+.nav.nav-tabs {
+  border-color: var(--bs-secondary)
 }
 
 .nav.nav-tabs .nav-item button {
