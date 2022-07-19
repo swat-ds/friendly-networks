@@ -108,8 +108,11 @@ const search = ({ location, data }) => {
   console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {
+    // Generate an anchor link for the div if it has an identifier
+    const hash = result.item.id ? "#" + result.item.id : "";
+
     return (
-          <Link to={"/" + result.item.name} className="result-link">
+          <Link to={"/journals/" + result.item.name + hash} className="result-link">
             <Card bg="primary" className="result-card">
               <Card.Header>Journal Result</Card.Header>
               <Card.Body>
