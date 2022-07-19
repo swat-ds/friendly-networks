@@ -9,6 +9,9 @@ import "../styles/styles.scss";
 const parseString = require("xml2js").parseString;
 
 function formatSearchResult(result, query) {
+  // Replace any stray XML tags in the result
+  // result = result.replace(/<[^>]>/g, "")
+
   // Format using query string if present in the matched text
   if (result.matches[0].value.includes(query)) {
     const parts = result.matches[0].value.split(RegExp("("+query+")"));
@@ -25,7 +28,7 @@ function formatSearchResult(result, query) {
 
   // Otherwise, format by the given indices
   // Unpack text of result along with indices of match
-  const text = result.matches[0].value
+  const text = result.matches[0].value.replaceAll(/<[^>]*>/g, "") // Remove any stray XML tags
   const start = result.matches[0].indices[0][0]
   const end = result.matches[0].indices[0][1]
 
@@ -53,7 +56,6 @@ const search = ({ location, data }) => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(journal.prefixed, "text/xml");
       const title = doc.querySelector("tei-fileDesc tei-title").innerHTML;
-      console.log("title", title);
       const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
       const divs = rawDivs.map(div => { return{
         text: div.textContent,
@@ -75,13 +77,15 @@ const search = ({ location, data }) => {
     // Decode query (e.g., convert "%20" to a space char)
     query = decodeURI(query);
 
+    // Search journals
+
     const jOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
       ignoreLocation: true,
       findAllMatches:true,
-      threshhold: 0.4,
+      threshhold: 0.3,
       keys: ["text"],
     }
 
@@ -90,10 +94,15 @@ const search = ({ location, data }) => {
     let jFuseResult = journalFuse.search(query, 300);
     journalResult.push(...jFuseResult);
 
-    const constellationFuse = new Fuse(data.constellations.nodes, {
+    // Search constellations
+
+    const cOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
+      ignoreLocation: true,
+      findAllMatches:true,
+      threshhold: 0.05,
       keys: [
         "nameEntries.original",
         "biogHists.text",
@@ -101,14 +110,17 @@ const search = ({ location, data }) => {
         "places.original",
         "subjects.term.term",
       ],
-    });
+    }
+
+
+    const constellationFuse = new Fuse(data.constellations.nodes, cOptions);
 
     let cFuseResult = constellationFuse.search(query);
     constellationResult.push(...cFuseResult);
   }
 
   // console.log("parsedJournals", parsedJournals);
-  console.log("journalResult", journalResult);
+  // console.log("journalResult", journalResult);
   console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {
@@ -119,12 +131,8 @@ const search = ({ location, data }) => {
           <Link to={"/journals/" + result.item.name + hash} className="result-link">
             <Card bg="primary" className="result-card">
               <Card.Header>
-                <Card.Title>
-                  {result.item.title}
-                </Card.Title>
-                <Card.Subtitle>
-                {result.item.id}
-                </Card.Subtitle>
+                <Card.Title>{result.item.title}</Card.Title>
+                <Card.Subtitle>{result.item.id}</Card.Subtitle>
               </Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -137,11 +145,26 @@ const search = ({ location, data }) => {
   }
 
   function renderCResult(result, index) {
+    // Extract entity name to display in title
+    let name, date = ""
+    if ("nameEntries" in result.item) {
+      let entries = result.item.nameEntries[0].original.split(",");
+      if (result.item.entityType.term === "person") {
+        date = entries.pop();
+        name = entries.join(",");
+      } else {
+        name = "Corporate Body";
+        date = ""
+      }
+    }
     return (
       <Row>
           <Link to={"/people/" + result.item.arkId} className="result-link">
             <Card bg="primary" className="result-card">
-              <Card.Header>Person Result</Card.Header>
+              <Card.Header>
+                <Card.Title>{name}</Card.Title>
+                <Card.Subtitle>{date}</Card.Subtitle>
+              </Card.Header>
               <Card.Body>
                 <Card.Text>
                   {formatSearchResult(result, query)}
