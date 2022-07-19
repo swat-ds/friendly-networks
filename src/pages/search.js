@@ -8,19 +8,34 @@ import "../styles/styles.scss";
 
 const parseString = require("xml2js").parseString;
 
-function getHighlightedText(text, highlight) {
-  // Split text on highlight term, include term itself into parts, ignore case
-  const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+function formatSearchResult(result, query) {
+  // Format using query string if present in the matched text
+  if (result.matches[0].value.includes(query)) {
+    const parts = result.matches[0].value.split(RegExp("("+query+")"));
+    return <>
+      {parts.map( (item, index) => {
+        if (index%2 === 0) {
+          return item
+        }
+        return <mark>{item}</mark>
+      })}
+    </>
+
+  }
+
+  // Otherwise, format by the given indices
+  // Unpack text of result along with indices of match
+  const text = result.matches[0].value
+  const start = result.matches[0].indices[0][0]
+  const end = result.matches[0].indices[0][1]
+
+  // Split text on match indices
+  let [pre, match, post] = [
+    text.slice(0, start), text.slice(start, end+1), text.slice(end+1)
+  ];
+
   return (
-    <span>
-      {parts.map((part) =>
-        part.toLowerCase() === highlight.toLowerCase() ? (
-          <mark>{part}</mark>
-        ) : (
-          part
-        )
-      )}
-    </span>
+    <>{pre}<mark>{match}</mark>{post}</>
   );
 }
 
@@ -56,14 +71,19 @@ const search = ({ location, data }) => {
     // Decode query (e.g., convert "%20" to a space char)
     query = decodeURI(query);
 
-    const journalFuse = new Fuse(parsedJournals, {
+    const jOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
+      ignoreLocation: true,
+      findAllMatches:true,
+      threshhold: 0.4,
       keys: ["text"],
-    });
+    }
 
-    let jFuseResult = journalFuse.search(query);
+    const journalFuse = new Fuse(parsedJournals, jOptions);
+
+    let jFuseResult = journalFuse.search(query, 300);
     journalResult.push(...jFuseResult);
 
     const constellationFuse = new Fuse(data.constellations.nodes, {
@@ -94,7 +114,7 @@ const search = ({ location, data }) => {
               <Card.Header>Journal Result</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getHighlightedText(result.matches[0].value, query)}
+                  {formatSearchResult(result, query)}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -110,7 +130,7 @@ const search = ({ location, data }) => {
               <Card.Header>Person Result</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getHighlightedText(result.matches[0].value, query)}
+                  {formatSearchResult(result, query)}
                 </Card.Text>
               </Card.Body>
             </Card>
