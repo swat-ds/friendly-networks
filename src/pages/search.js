@@ -48,14 +48,18 @@ const search = ({ location, data }) => {
   let query = "";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
+
     data.journals.nodes.forEach((journal) => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(journal.prefixed, "text/xml");
+      const title = doc.querySelector("tei-fileDesc tei-title").innerHTML;
+      console.log("title", title);
       const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
       const divs = rawDivs.map(div => { return{
         text: div.textContent,
         name: journal.parent.name,
-        id: div.attributes?.n?.nodeValue
+        id: div.attributes?.n?.nodeValue,
+        title: title.split(":")[0]
       }});
       divs.forEach(div => parsedJournals.push(div));
     });
@@ -114,7 +118,14 @@ const search = ({ location, data }) => {
     return (
           <Link to={"/journals/" + result.item.name + hash} className="result-link">
             <Card bg="primary" className="result-card">
-              <Card.Header>Journal Result</Card.Header>
+              <Card.Header>
+                <Card.Title>
+                  {result.item.title}
+                </Card.Title>
+                <Card.Subtitle>
+                {result.item.id}
+                </Card.Subtitle>
+              </Card.Header>
               <Card.Body>
                 <Card.Text>
                   {formatSearchResult(result, query)}
