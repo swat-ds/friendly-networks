@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
 import { months } from "../globalVariables";
-import Card from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
 
 
 
