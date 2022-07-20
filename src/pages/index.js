@@ -15,28 +15,28 @@ import stairs from "../../content/assets/images/A00179825_meetinghouse.png"
 const homepageCardData = [
   {
     imageSrc: journalPage,
-    alt: "Manuscript journal page from 1776-12-24",
+    alt: "",
     text:(<><strong>Explore</strong> John Hunt’s journals</>),
     link:"/journals",
     id:"explore-card"
   },
   {
     imageSrc: rJordan,
-    alt: "Woodcut of Richard Jordan standing in the yard of his South Jersey farm",
+    alt: "",
     text:(<><strong>Discover</strong> Hunt’s friends &amp; family</>),
     link:"/people",
     id:"discover-card"
   },
   {
     imageSrc: map,
-    alt: "Network itinerary map of southeastern Pennsylvania",
+    alt: "",
     text:(<><strong>Traverse</strong> Hunt’s social network</>),
     link:"/network",
     id:"traverse-card"
   },
   {
     imageSrc: stairs,
-    alt: "Interior photograph of the Evesham meeting house",
+    alt: "",
     text:(<><strong>Learn</strong> about John Hunt's life &amp; times</>),
     link:"/background/author-bg",
     id:"learn-card"

@@ -44,7 +44,7 @@ const EntityCardDeck = ({entityDeck}) => {
           <Card.Img
             src={hat}
             variant="top"
-            alt="Mannequin in top hat"
+            alt="Quaker man"
           />
         );
 
@@ -53,7 +53,7 @@ const EntityCardDeck = ({entityDeck}) => {
           <Card.Img
             src={bonnet}
             variant="top"
-            alt="Mannequin in bonnet"
+            alt="Quaker woman"
           />
         );
       }

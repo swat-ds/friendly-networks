@@ -22,7 +22,7 @@ const JournalCard = ({ node, index, size }) => {
       <Link to={node.route}>
         <Card.Img
           src={thumbnailUrl}
-          alt="First page of journal"
+          alt=""
         />
         <Card.Body>
           <Card.Subtitle>
