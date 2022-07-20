@@ -84,8 +84,9 @@ const search = ({ location, data }) => {
       includeScore: true,
       minMatchCharLength: query.length,
       ignoreLocation: true,
+      ignoreFieldNorm:true,
       findAllMatches:true,
-      threshhold: 0.3,
+      threshhold: 0.001,
       keys: ["text"],
     }
 
@@ -93,6 +94,10 @@ const search = ({ location, data }) => {
 
     let jFuseResult = journalFuse.search(query, 300);
     journalResult.push(...jFuseResult);
+
+    // Filter bad matches from search results
+    // (since apparently Fuse won't do this itself??)
+    journalResult = journalResult.filter(result => result.score < 0.25)
 
     // Search constellations
 
@@ -117,10 +122,14 @@ const search = ({ location, data }) => {
 
     let cFuseResult = constellationFuse.search(query);
     constellationResult.push(...cFuseResult);
+
+    // Filter bad matches from search results
+    // (since apparently Fuse won't do this itself??)
+    constellationResult = constellationResult.filter(result => result.score < 0.7)
   }
 
   // console.log("parsedJournals", parsedJournals);
-  // console.log("journalResult", journalResult);
+  console.log("journalResult", journalResult);
   // console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {
@@ -266,38 +275,10 @@ export const query = graphql`
             uri
           }
         }
-        relations {
-          sourceArkID
-          targetArkID
-          sourceConstellation
-          targetConstellation
-
-          type {
-            term
-          }
-          content
-          note
-          id
-        }
-        sameAsRelations {
-          uri
-        }
         subjects {
           term {
             term
           }
-        }
-        genders {
-          term {
-            term
-            type
-          }
-        }
-        dates {
-          fromDate
-          fromDateOriginal
-          toDate
-          toDateOriginal
         }
       }
     }
