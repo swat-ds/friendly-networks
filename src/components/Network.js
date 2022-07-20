@@ -65,8 +65,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       });
       setNodes(filteredNodes);
       setLinks(filteredLinks);
-      console.log("filtered Nodes length:", filteredNodes.length);
-      console.log("filtered Links length:", filteredLinks.length);
+      // console.log("filtered Nodes length:", filteredNodes.length);
+      // console.log("filtered Links length:", filteredLinks.length);
     } else {
       setNodes(nodesInJSON);
       setLinks(linksInJSON);
@@ -290,7 +290,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
     // Click a node to pull up its information
     nodeWrapper.on("click", function (event, d) {
-      console.log(d3.select(this).data());
+      // console.log(d3.select(this).data());
       // Set selectedNode useState to data of clicked node
       setSelectedNode(d3.select(this).data());
       // Prevent click from registering with svg.on("click")

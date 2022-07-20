@@ -12,10 +12,10 @@ import {BsBoxArrowRight} from 'react-icons/bs'
  * @returns a react card, wrapped with a GatsbyJS Link
  */
 const RelationCard = ({relation, index, size }) => {
-  console.log(relation)
+  // console.log(relation)
 
   let arkId = relation.targetArkID.split("/").pop();
-  console.log(arkId)
+  // console.log(arkId)
 
     let type='';
     let note = '';

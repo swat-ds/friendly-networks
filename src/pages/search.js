@@ -66,7 +66,7 @@ const search = ({ location, data }) => {
       divs.forEach(div => parsedJournals.push(div));
     });
 
-    console.log("location", location);
+    // console.log("location", location);
 
     // Extract search query from passed URL/state
     if (location.state !== null) {
@@ -121,7 +121,7 @@ const search = ({ location, data }) => {
 
   // console.log("parsedJournals", parsedJournals);
   // console.log("journalResult", journalResult);
-  console.log("constellationResult", constellationResult);
+  // console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {
     // Generate an anchor link for the div if it has an identifier

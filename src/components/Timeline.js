@@ -8,7 +8,7 @@ import { months } from "../globalVariables";
  */
 const Timeline = (props) => {
     const {timelineData}  = props;
-    console.log(typeof timelineData);
+    // console.log(typeof timelineData);
 
     const renderEvent = (moment, index)=>{
 
