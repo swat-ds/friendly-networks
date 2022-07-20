@@ -39,8 +39,7 @@ const NavBar = (props) => {
     setQuery(e.target.value);
   };
 
-  //wheen pressed Enter key, the state will be set and programmatically trigger the click of the Link
-  //TODO: not working, goes to the search page but comes back to /?
+  //when pressed Enter key, the state will be set and programmatically trigger the click of the Link
   function handleSubmit(e) {
     e.preventDefault();
     // Go to new page
