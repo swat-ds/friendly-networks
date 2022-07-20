@@ -81,7 +81,7 @@
   color: var(--bs-primary);
 } // Descendant selector is needed to change color of path
 
-.nav-link {
+#nav-row .nav-link {
   color: var(--bs-secondary) !important;
 }
 
@@ -107,7 +107,7 @@
   color: var(--bs-primary) !important;
 }
 
-.nav-link.active {
+#nav-row .nav-link.active {
   text-decoration: underline var(--bs-info);
 }
 
@@ -123,11 +123,11 @@
     padding-bottom: 8px;
   }
 
-  .nav-item {
+  #nav-row .nav-item {
     font-size: x-large;
   }
 
-  .dropdown-menu{
+  #nav-row .dropdown-menu{
     border: none;
     font-size: large;
   }
@@ -145,24 +145,28 @@
   }
 
   .nav-item {
+    background-color: var(--bs-primary);
+    color: var(--bs-secondary)
+  }
+
+  #nav-row .nav-item {
     text-align: center;
   	color: var(--bs-secondary);
     flex-grow: 1;
   	border-radius: 2px;
-  	background-color: var(--bs-primary);
   	font-size: x-large;
   }
 
-  .nav-item:active,
-  .nav-item:hover,
-  .nav-item:focus-within {
+  #nav-row .nav-item:active,
+  #nav-row .nav-item:hover,
+  #nav-row .nav-item:focus-within {
   	background-color: var(--bs-secondary);
   	outline: 2px solid var(--bs-primary);
   }
 
-  .nav-item:active > a,
-  .nav-item:focus-within > a,
-  .nav-item:hover > a {
+  #nav-row .nav-item:active > a,
+  #nav-row .nav-item:focus-within > a,
+  #nav-row .nav-item:hover > a {
   	color: var(--bs-primary) !important;
     text-decoration: underline;
     text-decoration-color: var(--bs-primary) !important;

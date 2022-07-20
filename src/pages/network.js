@@ -77,7 +77,7 @@ const network = ({ data }) => {
   let d3Links = [];
 
   let constellations = data.allConstellation.nodes;
-  console.log("Size of entities:", constellations.length);
+  // console.log("Size of entities:", constellations.length);
   let arkIds = [];
   constellations
     .forEach((c) => arkIds.push(c.arkId));

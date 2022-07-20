@@ -119,15 +119,63 @@ strong {
   font-weight: bold !important;
 }
 
-#result-card{
+// Search-page related styles
+
+div.result-card{
   transform: none;
   transition: none;
   animation: none;
-  width: 90vw;
   height: fit-content;
+  padding: 0px;
 
-  margin-bottom: 3vh;
+  margin: 1.5vh 0;
 
+  mark {color: var(--bs-primary)}
+}
+
+.result-link {
+  text-decoration: none;
+}
+.result-link:hover, .result-link:focus {
+  .result-card {outline: 2px solid var(--bs-secondary)}
+}
+
+.nav.nav-tabs {
+  border-color: var(--bs-secondary)
+}
+
+.nav.nav-tabs .nav-item button {
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+
+  border-top: 1px solid var(--bs-primary);
+  border-right: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
+  border-bottom-color: var(--bs-secondary);
+
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+
+  .badge {
+    margin-left: 0.75em;
+    color: var(--bs-secondary);
+  }
+
+  &:hover {
+    color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+  }
+
+  &.active {
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+    border-color: var(--bs-secondary);
+
+    .badge {
+      color: var(--bs-secondary);
+      background-color: var(--bs-primary) !important;
+    }
+  }
 }
 
 // change the theme

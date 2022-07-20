@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
 import { months } from "../globalVariables";
-import {Button, Card} from 'react-bootstrap'
+import Card from 'react-bootstrap/Card'
 
 
 
@@ -20,10 +20,7 @@ const JournalCard = ({ node, index, size }) => {
   return(
     <Card bg="primary" className="journal-card">
       <Link to={node.route}>
-        <Card.Img
-          src={thumbnailUrl}
-          alt=""
-        />
+        <Card.Img src={thumbnailUrl} alt=""/>
         <Card.Body>
           <Card.Subtitle>
             {title}

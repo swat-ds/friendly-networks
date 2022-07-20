@@ -117,7 +117,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
  		function getNextCetei() {
  			counter += 1;
  			setCetei(data.allCetei.nodes[counter].parent.name);
- 			console.log(counter);
+ 			// console.log(counter);
  		}
 
  		//Sets the current cetei to the previous cetei
@@ -155,7 +155,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
     };
 
     const handleResize = useCallback(() => {
-      console.log("In handle resize");
+      // console.log("In handle resize");
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
       if (containerRef.current === null) {
@@ -184,7 +184,7 @@ let counter = 0; // counter for to tract the index of each transcript (cetei)
         const selector = "[data-facs=\"" + pid + "\"]";
         const node = containerRef.current.querySelector(selector);
         if (!node) {
-          console.log("Cannot find element with @data-facs " + pid);
+          // console.log("Cannot find element with @data-facs " + pid);
         }
         return node ? node.getBoundingClientRect().top - start : null;
       })

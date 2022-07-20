@@ -2,87 +2,112 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Fuse from "fuse.js";
 import Layout from "../components/Layout";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Tab, Tabs, Badge } from "react-bootstrap";
 
 import "../styles/styles.scss";
 
 const parseString = require("xml2js").parseString;
 
-function getHighlightedText(text, highlight) {
-  // Split text on highlight term, include term itself into parts, ignore case
-  const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+function formatSearchResult(result, query) {
+  // Replace any stray XML tags in the result
+  // result = result.replace(/<[^>]>/g, "")
+
+  // Format using query string if present in the matched text
+  if (result.matches[0].value.includes(query)) {
+    const parts = result.matches[0].value.split(RegExp("("+query+")"));
+    return <>
+      {parts.map( (item, index) => {
+        if (index%2 === 0) {
+          return item
+        }
+        return <mark>{item}</mark>
+      })}
+    </>
+
+  }
+
+  // Otherwise, format by the given indices
+  // Unpack text of result along with indices of match
+  const text = result.matches[0].value.replaceAll(/<[^>]*>/g, "") // Remove any stray XML tags
+  const start = result.matches[0].indices[0][0]
+  const end = result.matches[0].indices[0][1]
+
+  // Split text on match indices
+  let [pre, match, post] = [
+    text.slice(0, start), text.slice(start, end+1), text.slice(end+1)
+  ];
+
   return (
-    <span>
-      {parts.map((part) =>
-        part.toLowerCase() === highlight.toLowerCase() ? (
-          <mark>{part}</mark>
-        ) : (
-          part
-        )
-      )}
-    </span>
+    <>{pre}<mark>{match}</mark>{post}</>
   );
 }
 
 const search = ({ location, data }) => {
   let parsedJournals = [];
 
-  data.journals.nodes.forEach((journal) => {
-    //  let headBegin = journal.prefixed.indexOf("<body");
-    //  let headEndStr = "</body>";
-    //  let headEnd = journal.prefixed.indexOf("</body>");
-    //  let teiHeaderBody = journal.prefixed.substring(
-    //    headBegin,
-    //    headEnd + headEndStr.length
-    //  );
-    parseString(journal.prefixed, function (err, result) {
-      //  console.log(journal.prefixed)
-      //  console.log(result)
-      let entry = {
-        text: result,
-        name: journal.parent.name,
-      };
-      parsedJournals.push(entry);
-    });
-  });
 
   let constellationResult = [];
   let journalResult = [];
   let query = "";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
-    console.log(location);
 
+    data.journals.nodes.forEach((journal) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(journal.prefixed, "text/xml");
+      const title = doc.querySelector("tei-fileDesc tei-title").innerHTML;
+      const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
+      const divs = rawDivs.map(div => { return{
+        text: div.textContent,
+        name: journal.parent.name,
+        id: div.attributes?.n?.nodeValue,
+        title: title.split(":")[0]
+      }});
+      divs.forEach(div => parsedJournals.push(div));
+    });
+
+    // console.log("location", location);
+
+    // Extract search query from passed URL/state
     if (location.state !== null) {
       query = location.state.searchQuery;
     } else {
       query = location.search.slice(3);
     }
-    let baseKey = "text.tei-TEI.tei-text.tei-body.tei-div";
-    const journalFuse = new Fuse(parsedJournals, {
+    // Decode query (e.g., convert "%20" to a space char)
+    query = decodeURI(query);
+
+    // Search journals
+
+    const jOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
-      keys: [
-        // `${baseKey}.tei-dateline`,
-        // `${baseKey}.tei-head`,
-        `${baseKey}.tei-p._`,
-        `${baseKey}.tei-p.tei-persName._`,
-        `${baseKey}.tei-p.tei-rs._`,
-        `${baseKey}.tei-head._`,
-        `${baseKey}.tei-dateline.tei-date._`,
-        // `${baseKey}.tei-p.tei-note._`,
-        // `${baseKey}.tei-p.tei-note.tei-q._`,
-      ],
-    });
+      ignoreLocation: true,
+      ignoreFieldNorm:true,
+      findAllMatches:true,
+      threshhold: 0.001,
+      keys: ["text"],
+    }
 
-    let jFuseResult = journalFuse.search(query);
+    const journalFuse = new Fuse(parsedJournals, jOptions);
+
+    let jFuseResult = journalFuse.search(query, 300);
     journalResult.push(...jFuseResult);
 
-    const constellationFuse = new Fuse(data.constellations.nodes, {
+    // Filter bad matches from search results
+    // (since apparently Fuse won't do this itself??)
+    journalResult = journalResult.filter(result => result.score < 0.25)
+
+    // Search constellations
+
+    const cOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
+      ignoreLocation: true,
+      findAllMatches:true,
+      threshhold: 0.05,
       keys: [
         "nameEntries.original",
         "biogHists.text",
@@ -90,84 +115,105 @@ const search = ({ location, data }) => {
         "places.original",
         "subjects.term.term",
       ],
-    });
+    }
+
+
+    const constellationFuse = new Fuse(data.constellations.nodes, cOptions);
 
     let cFuseResult = constellationFuse.search(query);
     constellationResult.push(...cFuseResult);
+
+    // Filter bad matches from search results
+    // (since apparently Fuse won't do this itself??)
+    constellationResult = constellationResult.filter(result => result.score < 0.7)
   }
 
-  console.log(parsedJournals);
-  console.log(journalResult);
-  console.log(constellationResult);
-  // console.log(parsedJournals)
-  // function handleChange(e){
-  //     e.preventDefault()
-  //     setQuery(e.target.value)
-  // }
-  // function handleClick(){
-  //     let resultData = query;
-  //     setResult(resultData)
-  // }
+  // console.log("parsedJournals", parsedJournals);
+  console.log("journalResult", journalResult);
+  // console.log("constellationResult", constellationResult);
 
-  // useEffect(() => {
-  //     btnRef.current.click()
-  // }, [])
-
-  //  <span>{}</span>;
-  //  {
-  //    result.matches[0].value;
-  //  }
   function renderJResult(result, index) {
+    // Generate an anchor link for the div if it has an identifier
+    const hash = result.item.id ? "#" + result.item.id : "";
+
     return (
-      <Row>
-        <Col>
-          <Link to={"/" + result.item.name}>
-            <Card id="result-card" border="success">
-              <Card.Header>Journal Results</Card.Header>
+          <Link to={"/journals/" + result.item.name + hash} className="result-link">
+            <Card bg="primary" className="result-card">
+              <Card.Header>
+                <Card.Title>{result.item.title}</Card.Title>
+                <Card.Subtitle>{result.item.id}</Card.Subtitle>
+              </Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getHighlightedText(result.matches[0].value, query)}
+                  {formatSearchResult(result, query)}
                 </Card.Text>
               </Card.Body>
             </Card>
           </Link>
-        </Col>
-      </Row>
     );
   }
 
   function renderCResult(result, index) {
+    // Extract entity name to display in title
+    let name, date = ""
+    if ("nameEntries" in result.item) {
+      let entries = result.item.nameEntries[0].original.split(",");
+      if (result.item.entityType.term === "person") {
+        date = entries.pop();
+        name = entries.join(",");
+      } else {
+        name = "Corporate Body";
+        date = ""
+      }
+    }
     return (
       <Row>
-        <Col>
-          <Link to={"/people/" + result.item.arkId}>
-            <Card id="result-card" border="success">
-              <Card.Header>Journal Results</Card.Header>
+          <Link to={"/people/" + result.item.arkId} className="result-link">
+            <Card bg="primary" className="result-card">
+              <Card.Header>
+                <Card.Title>{name}</Card.Title>
+                <Card.Subtitle>{date}</Card.Subtitle>
+              </Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getHighlightedText(result.matches[0].value, query)}
+                  {formatSearchResult(result, query)}
                 </Card.Text>
               </Card.Body>
             </Card>
           </Link>
-        </Col>
       </Row>
     );
   }
   return (
     <Layout>
-      <h4 className="general-text">
-        {constellationResult.length + journalResult.length} results for "{query}
-        "
-      </h4>
+      <Row id="main-row">
 
-      <br />
-      <h6 className="general-text">Journal Results</h6>
+        <h4 className="general-text">
+          {constellationResult.length+journalResult.length} results for "{query}"
+        </h4>
 
-      {journalResult.map(renderJResult)}
-
-      <h6 className="general-text">People Results</h6>
-      {constellationResult.map(renderCResult)}
+        <br />
+        <Tabs>
+          <Tab eventKey="journal" title={
+            <React.Fragment>
+              Journal Results
+              <Badge pill bg='primary'>{journalResult.length}</Badge>
+            </React.Fragment>
+          }>
+              {journalResult.map(renderJResult)}
+          </Tab>
+          <Tab eventKey="people" title={
+            <React.Fragment>
+              Person Results
+              <Badge pill bg='primary'>{constellationResult.length}</Badge>
+            </React.Fragment>
+          }>
+            <Col>
+              {constellationResult.map(renderCResult)}
+            </Col>
+          </Tab>
+        </Tabs>
+      </Row>
     </Layout>
   );
 };
@@ -229,38 +275,10 @@ export const query = graphql`
             uri
           }
         }
-        relations {
-          sourceArkID
-          targetArkID
-          sourceConstellation
-          targetConstellation
-
-          type {
-            term
-          }
-          content
-          note
-          id
-        }
-        sameAsRelations {
-          uri
-        }
         subjects {
           term {
             term
           }
-        }
-        genders {
-          term {
-            term
-            type
-          }
-        }
-        dates {
-          fromDate
-          fromDateOriginal
-          toDate
-          toDateOriginal
         }
       }
     }

@@ -49,4 +49,4 @@ const fuse = new Fuse(books, {
 })
 
 // 3. Now search!
-console.log(fuse.search('ham'))
+// console.log(fuse.search('ham'))
