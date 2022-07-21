@@ -9,12 +9,15 @@ import "../styles/styles.scss";
 const parseString = require("xml2js").parseString;
 
 function formatSearchResult(result, query) {
-  // Replace any stray XML tags in the result
-  // result = result.replace(/<[^>]>/g, "")
 
-  // Format using query string if present in the matched text
+  // Format using query string if it is present in the matched text
   if (result.matches[0].value.includes(query)) {
     const parts = result.matches[0].value.split(RegExp("("+query+")"));
+    // Replace stray XML tags
+    parts.forEach((item, i) => {
+      parts[i] = item.replaceAll(/<[^>]*>/g, "")
+    });
+
     return <>
       {parts.map( (item, index) => {
         if (index%2 === 0) {
