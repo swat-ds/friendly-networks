@@ -46,9 +46,6 @@ const Footer = () => {
                 <Link to={globalVariables.about} className=" g-link ">
                   About
                 </Link>
-                <Link to={globalVariables.contact} className="g-link ">
-                  Contact
-                </Link>
               </p>
             </div>
 
