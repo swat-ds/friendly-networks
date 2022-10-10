@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import { Link } from "gatsby";
 import "../styles/pageStyles.scss";
 import { globalVariables } from "../globalVariables";
@@ -75,7 +76,7 @@ const about = () => {
                 This project would not have been possible without the love and support from John Hunt's family.
                 The stage at which this project currently is also made possible by tremendous contributions
                 from the following people:
-                Nabil Kayshap, Celia Caust-Ellenbogen, James Truitt, Ayodeji George, Anna Chaewon Jeong, Zaki Hossain. 
+                Nabil Kayshap, Celia Caust-Ellenbogen, James Truitt, Ayodeji George, Anna Chaewon Jeong, Zaki Hossain.
             </p>
           </section>
           <br />
@@ -93,4 +94,8 @@ const about = () => {
   );
 };
 
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="About - Friendly Networks"/>
+)
 export default about;

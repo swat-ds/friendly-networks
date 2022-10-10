@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
 import { Row, Col } from "react-bootstrap";
 import "../styles/pageStyles.scss"
@@ -96,5 +97,10 @@ export const data = graphql`
     }
   }
 `;
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="Journals - Friendly Networks"/>
+)
 
 export default journals;

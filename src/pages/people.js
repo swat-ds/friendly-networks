@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import { graphql } from "gatsby";
 import EntityCardDeck from  "../components/EntityCardDeck"
 
@@ -11,6 +12,11 @@ const people = ({ data }) => {
       </Layout>
     );
 };
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="People - Friendly Networks"/>
+)
 
 export default people;
 
