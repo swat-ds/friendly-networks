@@ -236,7 +236,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         genders: node.genders,
         dates: node.dates,
         allArks: arks,
-        arkRegex: `/${node.arkId}/`, 
+        arkRegex: `/${node.arkId}/`,
       },
     });
   }
@@ -266,6 +266,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             node {
               frontmatter {
                 slug
+                title
               }
               html
               rawMarkdownBody
@@ -281,10 +282,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         createPage({
           path: node.frontmatter.slug,
           component: bgComponent,
-          context:
-          { body: node.html,
-            rawBody: node.rawMarkdownBody
-          }, // additional data can be passed via context
+          context: {
+              body: node.html,
+              rawBody: node.rawMarkdownBody,
+              title: node.frontmatter.title
+            }, // additional data can be passed via context
         });
       });
     })
