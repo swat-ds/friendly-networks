@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import { globalVariables } from "../../globalVariables";
 import {Row, Col} from 'react-bootstrap';
 import {Link} from 'gatsby';
-import homepageCards from "../../components/HomepageCards"
+import backgroundCards from "../../components/BackgroundCards"
 // import "../../../assets/styles/pageStyles.scss";
 // import { Row, Col } from "react-bootstrap";
 // const appendixData = require("../../../assets/data/john_hunt_appendix.json");
@@ -40,7 +40,7 @@ const quaker_bg = () => {
       <Layout>
         <h1>Background: The Society of Friends</h1>
         <Row>
-            {homepageCards(pageCardData)}
+            {backgroundCards(pageCardData)}
         </Row>
       </Layout>
   );

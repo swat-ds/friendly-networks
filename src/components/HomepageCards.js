@@ -24,7 +24,7 @@ const buildCard = (entity, index) => {
             className="homepage-card-image"
             variant="top"
           />
-          <Card.Footer><Card.Title>{text}</Card.Title></Card.Footer>
+          <Card.Body><Card.Title>{text}</Card.Title></Card.Body>
         </Link>
       </Card>
     </Col>
@@ -34,7 +34,7 @@ const buildCard = (entity, index) => {
 
 const homepageCards = (cardArray) => {
   return (
-    <Row xs={1} sm={1} md={2} lg={2} xl={2} id="homepage-card-row">
+    <Row xs={1} sm={1} md={2} lg={2} xl={2} xxl={4} id="homepage-card-row">
       {cardArray.map(buildCard)}
     </Row>
   );

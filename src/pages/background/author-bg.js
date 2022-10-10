@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Row } from "react-bootstrap";
 import "../../styles/pageStyles.scss";
-import homepageCards from "../../components/HomepageCards"
+import backgrooundCards from "../../components/BackgroundCards"
 
 // Image imports
 import one from "../../../content/markdown/images/image1.jpg";
@@ -94,7 +94,7 @@ const author_bg = () => {
         <Layout>
             <Row id="main-row" className="background-jh" >
                 <h1>Background: John Hunt</h1>
-                {homepageCards(pageCardData)}
+                {backgrooundCards(pageCardData)}
             </Row>
         </Layout>
     );
