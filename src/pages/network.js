@@ -1,7 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import Network from "../components/Network";
 import { graphql } from "gatsby";
+
 // const fs = require('fs')
 // const nodes = require("../assets/data/dataTable.json");
 // const links = require("../assets/data/relationshipTable.json");
@@ -107,6 +109,11 @@ const network = ({ data }) => {
     </Layout>
   );
 };
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="Social Network - Friendly Networks"/>
+)
 
 export default network;
 

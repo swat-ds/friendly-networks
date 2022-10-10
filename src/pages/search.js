@@ -2,6 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Fuse from "fuse.js";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import { Card, Row, Col, Tab, Tabs, Badge } from "react-bootstrap";
 
 import "../styles/styles.scss";
@@ -220,6 +221,11 @@ const search = ({ location, data }) => {
     </Layout>
   );
 };
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="Search - Friendly Networks"/>
+)
 
 export default search;
 
