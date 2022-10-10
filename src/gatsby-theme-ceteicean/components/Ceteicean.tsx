@@ -4,6 +4,7 @@ import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import {Container, Row, Button, Col} from 'react-bootstrap'
 import { graphql, Link } from "gatsby";
 import Volume from '../../components/Volume'
+import { SEO } from "../../components/SEO";
 
 import * as El from "./Elements"
 import "../../styles/styles.scss";
@@ -81,3 +82,7 @@ export const query = graphql`
   }
 `;
 export default ShadowedCeteicean
+
+export const Head = () => (
+  <SEO title="Journals - Friendly Networks"/>
+)

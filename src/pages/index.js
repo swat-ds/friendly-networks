@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
+import { SEO } from "../components/SEO";
 import homepageCards from "../components/HomepageCards"
 import { Row, Col, Card } from "react-bootstrap";
 import "../styles/styles.scss";
@@ -65,4 +66,9 @@ const home = ({location}) => {
   );
 };
 
-export default home;
+export default home
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO />
+)

@@ -76,7 +76,7 @@ function spacePageBreaks(node) {
 };
 
 
-let counter = 0; // counter for to tract the index of each transcript (cetei)
+let counter = 0; // counter to track the index of each transcript (cetei)
 
 /**
  * An all-encompassing component for the journal display; the image and the transcript
