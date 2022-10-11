@@ -69,7 +69,7 @@ const EntityCardDeck = ({entityDeck}) => {
                 {name}
               </Card.Title>
               <Card.Subtitle>
-                {date}
+                {date.replace("approximately ", "")}
               </Card.Subtitle>
             </Card.Body>
           </Link>
@@ -83,7 +83,7 @@ const EntityCardDeck = ({entityDeck}) => {
      <Row id="main-row">
        <h1>People</h1>
        <p>Click a person's card to see their biographical profile.</p>
-       <Row xs={2} small={3} md={3} lg={6} xl={8} xxl={10} className="entity-card-row">
+       <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="entity-card-row">
          {entityDeck.map(renderEntityRow)}
        </Row>
      </Row>

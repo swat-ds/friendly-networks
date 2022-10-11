@@ -34,14 +34,14 @@ const author_bg = () => {
             id: ""
         },
         {
-            text: "“Advantages”: Why Keep a Journal?",
+            text: "Why Keep a Journal?",
             link: "/background/john-hunt/2-why-keep-a-journal",
             imageSrc: cover,
             alt: "thumbnail",
             id: ""
         },
         {
-            text: "“About Home:” The Hunt Family",
+            text: "The Hunt Family",
             link: "/background/john-hunt/3-family",
             imageSrc: ten,
             alt: "thumbnail",
@@ -55,14 +55,14 @@ const author_bg = () => {
             id: ""
         },
         {
-            text: "“Dear Friends:” Mentors and Role Models",
+            text: "Mentors and Role Models",
             link: "/background/john-hunt/5-mentors-role-models",
             imageSrc: two,
             alt: "thumbnail",
             id: ""
         },
         {
-            text: "“Everything that is Required of Us:” Hunt & Quaker Testimonies",
+            text: "John Hunt & Quaker Testimonies",
             link: "/background/john-hunt/6-quaker-testimonies",
             imageSrc: nine,
             alt: "thumbnail",
@@ -76,7 +76,7 @@ const author_bg = () => {
             id: ""
         },
         {
-          text: "John Hunt material at Friends Historical Library",
+          text: "John Hunt material at Swarthmore",
           link: "/background/john-hunt/8-Hunt-bibliography",
           imageSrc: fhlEntrance,
           alt: "thumbnail",
@@ -93,7 +93,7 @@ const author_bg = () => {
 
     return (
         <Layout>
-            <Row id="main-row" className="background-jh" >
+            <Row id="main-row" className="background-jh background-row" >
                 <h1>Background: John Hunt</h1>
                 {backgrooundCards(pageCardData)}
             </Row>
