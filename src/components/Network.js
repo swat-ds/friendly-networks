@@ -51,6 +51,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   const [selectedNode, setSelectedNode] = useState(null)
 
+  const [zoomState, setZoomState] = useState(d3.zoomIdentity)
+
   useEffect(() => {
     if (removeHunt) {
       let filteredNodes = nodesInJSON.filter((node) => {
@@ -80,7 +82,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
 
-  function draw() {
+  function draw(currZoomState) {
     const svg = d3
       .select(svgRef.current)
       .attr("width", width)
@@ -88,10 +90,12 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .call(
         d3.zoom().on("zoom", (event) => {
           svg.attr("transform", event.transform);
+          setZoomState(event.transform);
         })
       )
       .append("g");
       //'g' is an encompassing tag that groups elements inside an svg
+    svg.attr("transform", currZoomState);
 
 
     //Creates a force directed graph simulation layout with nodes and links
@@ -340,8 +344,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     });
     return svg;
   }
+  // End of "draw" function
+
+  // Rerender the SVG on a change
   useEffect(() => {
-    const svg = draw();
+    const svg = draw(zoomState);
     return () => {
       svg.remove();
     };
