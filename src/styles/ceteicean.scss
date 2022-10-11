@@ -3,13 +3,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.tei-pb.page-line {
-  height: 4;
-  border: 0;
+hr.tei-pb.page-line {
+  border: 4;
   height: 5px;
-  color: #505A34;
+  color: var(--bs-primary);
+  background-color: var(--bs-primary);
   opacity: 0.75;
-  // background-image: linear-gradient(to right, #505A34, #333, #505A34);
   border-radius: 3px;
 }
 
@@ -125,6 +124,10 @@ div {
   visibility: visible;
   content: '';
   transform: rotate(45deg);
+}
+
+div.popover.bs-popover-bottom div.popover-arrow::after {
+  border-bottom-color: var(--bs-primary)
 }
 
 .popover[data-popper-placement^='top'] > .arrow {
