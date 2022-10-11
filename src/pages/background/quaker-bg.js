@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
+import { SEO } from "../../components/SEO";
 import { globalVariables } from "../../globalVariables";
 import {Row, Col} from 'react-bootstrap';
 import {Link} from 'gatsby';
@@ -45,5 +46,10 @@ const quaker_bg = () => {
       </Layout>
   );
 };
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="The Society of Friends - Friendly Networks"/>
+)
 
 export default quaker_bg;
