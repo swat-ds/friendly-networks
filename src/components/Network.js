@@ -110,6 +110,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           .distance(50)
           .id((node) => node.id)
       )
+      .force("forceX", d3.forceX())
+      .force("forceY", d3.forceY())
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     //Feature to make the force directed graph draggable
