@@ -51,7 +51,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   const [selectedNode, setSelectedNode] = useState(null)
 
-  const [zoomState, setZoomState] = useState(d3.zoomIdentity)
+  const [zoomState, setZoomState] = useState(d3.zoomIdentity);
 
   useEffect(() => {
     if (removeHunt) {
@@ -83,6 +83,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //Synonymous to componentDidMount() in the class version of the component
 
   function draw(currZoomState) {
+    console.log(zoomState);
+
     const svg = d3
       .select(svgRef.current)
       .attr("width", width)
@@ -101,17 +103,17 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-2300))
-      .force("collide", d3.forceCollide().radius(90).iterations(2))
+      .force("charge", d3.forceManyBody().strength(-800))
+      .force("collide", d3.forceCollide().radius(40).iterations(2))
       .force(
         "link",
         d3
           .forceLink(links)
-          .distance(50)
+          .distance(20)
           .id((node) => node.id)
       )
-      .force("forceX", d3.forceX())
-      .force("forceY", d3.forceY())
+      .force("forceX", d3.forceX().strength(.2))
+      .force("forceY", d3.forceY().strength(.2))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     //Feature to make the force directed graph draggable
@@ -151,9 +153,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           link.label === "correspondedWith" ||
           link.label === "associatedWith"
         ) {
-          return 6;
+          return 3;
         }
-        return 2;
+        return 1;
       });
     // .style("stroke-dasharray", "3, 3");
 
@@ -190,8 +192,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("class", "node")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        const radius = Math.log(node.degree + 1) * 10 + 20;
-        return node.id === centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
+        const radius = Math.log(node.degree + 1) * 5 + 5;
+        return node.id === centralFigure ? 30 : radius; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
@@ -234,7 +236,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       d3.select(this)
         .style("stroke-opacity", 1.0)
         .style("stroke", offWhite)
-        .style("stroke-width", "3px")
+        .style("stroke-width", "2px")
 
       // Get arkId of hovered node
       const currentArk = d3.select(this)._groups[0][0].__data__.id;
@@ -254,7 +256,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       d3.selectAll(".linkedTO" + currentArk)
         .style("stroke-opacity", 1.0)
         .style("stroke", offWhite)
-        .style("stroke-width", "3px");
+        .style("stroke-width", "2px");
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
@@ -320,7 +322,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .append("text")
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
-      .attr("font-size", "small")
+      .attr("font-size", "x-small")
       .style("pointer-events", "none")
       .text((node) => {
         let nameParts = node.label.split(",");
