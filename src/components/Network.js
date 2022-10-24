@@ -129,6 +129,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     const famColor = "#A7026A";
     const offWhite = "#FAF8D6";
     const gold = "#D9B648"
+    const moss = "#505A34"
+    const blue = "#034d81"
 
     //Bind a line to each link
     const lines = svg
@@ -203,10 +205,10 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         if (node.id === centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           if(highlightMinister){
-            return "#505A34";
+            return moss;
           }
         }
-        return "#034d81";
+        return blue;
       });
 
       const d3Tooltip = d3
@@ -381,86 +383,98 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   }
   return (
     <Row id="main-row" className="network-page">
-      <Row id="instructions-row">
-        <h1>Network</h1>
-      </Row>
-      <Row id="legend-row">
-        <Col id="remove-hunt-col">
-          <Button
-            id="remove-hunt"
-            variant={removeHunt ? "primary" : "danger"}
-            onClick={() => setRemoveHunt(!removeHunt)}
-          >
-            {removeHunt ? "Add Hunt" : "Remove Hunt"}
-          </Button>
-        </Col>
-        <Col>
-          <div className="form-check form-switch">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexSwitchCheckDefault"
-              onChange={highlightMinisterHandler}
-            />
+      <Row xs={1} sm={4}>
+        <Col id="network-info">
+          <Row id="instructions-row">
+            <h1>Social Network</h1>
+            <p>The visualization below shows the relationships betwen the people
+            discussed in John Hunt's journals.</p>
+            <p>Thin red lines link relatives, and
+            thick green lines link acquaintances.
+            The larger a person's circle, the more times they are mentioned in the journals.</p>
+            <p>To zoom in or out, scroll while your cursor is over the visualization.
+            To pan, click on the visualization background and drag your cursor.
+            Hover over a node to highlight it and the connected nodes.</p>
+            <p>Click a node to display its biographical profile.
+            Click and drag a node to reposition it.
+            The node will stay fixed in this position until you refresh the page.</p>
+          </Row>
+          <Row id="legend-row">
+            <Col id="remove-hunt-col">
+              <Button
+                id="remove-hunt"
+                variant={removeHunt ? "primary" : "danger"}
+                onClick={() => setRemoveHunt(!removeHunt)}
+              >
+                {removeHunt ? "Add Hunt" : "Remove Hunt"}
+              </Button>
+            </Col>
+            <Col>
+              <div className="form-check form-switch">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                  onChange={highlightMinisterHandler}
+                />
 
-            <label
-              className="form-check-label general-text"
-              for="flexSwitchCheckDefault"
-            >
-              Highlight ministers
-            </label>
-          </div>
-        </Col>
-        <Col
-          style={highlightMinister ? {} : {display: "none"}}
-        >
-          <div
-            style={{
-              height: "30px",
-              width: "30px",
-              borderRadius: "50%",
-              backgroundColor: "#505A34",
-            }}
-          />
-          <span className="general-text">
-            Ministers
-          </span>
-        </Col>
-        <Col>
-          <div
+                <label
+                  className="form-check-label general-text"
+                  for="flexSwitchCheckDefault"
+                >
+                  Highlight ministers
+                </label>
+              </div>
+            </Col>
+            <Col>
+              <div
+                style={{
+                  height: "5px",
+                  width: "30px",
+                  backgroundColor: "#A7026A",
+                }}
+              />
+              <span className="general-text">Relatives</span>
+            </Col>
+            <Col>
+              <div
+                style={{
+                  height: "5px",
+                  width: "30px",
+                  backgroundColor: "#03AC93",
+                }}
+              ></div>
+              <span className="general-text">Acquaintances</span>
+            </Col>
+            <Col>
+            <div
             style={{
               height: "30px",
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#034d81",
             }}
-          />
-          <span className="general-text">Other</span>
+            />
+            <span className="general-text">Other</span>
+            </Col>
+            <Col style={highlightMinister ? {} : {display: "none"}}>
+              <div
+                style={{
+                  height: "30px",
+                  width: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "#505A34",
+                }}
+              />
+              <span className="general-text">
+                Ministers
+              </span>
+            </Col>
+          </Row>
         </Col>
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#A7026A",
-            }}
-          />
-          <span className="general-text">Relatives</span>
-        </Col>
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#03AC93",
-            }}
-          ></div>
-          <span className="general-text">Acquaintances</span>
-        </Col>
+      <Col id="spacer"/>
       </Row>
-
-
-      <Row id="container-row" xs={1} lg={4}>
+      <Row id="container-row" xs={1} sm={4}>
         <Col id="main-container">
           <svg
             style={{ backgroundColor: "#342E37" }}

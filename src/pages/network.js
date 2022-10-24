@@ -100,7 +100,6 @@ const network = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Vis nodesInJSON={d3Nodes} linksInJSON={d3Links}></Vis> */}
       <Network
         nodesInJSON={d3Nodes}
         linksInJSON={d3Links}

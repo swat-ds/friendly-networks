@@ -1,6 +1,10 @@
-#main-container{
+#main-container, #network-info{
   flex-grow: 3;
   width: auto;
+}
+
+#spacer{
+  min-width: 20%;
 }
 
 .network-page #main-container,
