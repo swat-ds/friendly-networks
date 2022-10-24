@@ -51,6 +51,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
   const [selectedNode, setSelectedNode] = useState(null)
 
+  const [zoomState, setZoomState] = useState(d3.zoomIdentity);
+
   useEffect(() => {
     if (removeHunt) {
       let filteredNodes = nodesInJSON.filter((node) => {
@@ -80,7 +82,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   //All the D3 data binding is inside the useEffect, will be re-rendered when nodes or links changes
   //Synonymous to componentDidMount() in the class version of the component
 
-  function draw() {
+  function draw(currZoomState) {
+    console.log(zoomState);
+
     const svg = d3
       .select(svgRef.current)
       .attr("width", width)
@@ -88,24 +92,28 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .call(
         d3.zoom().on("zoom", (event) => {
           svg.attr("transform", event.transform);
+          setZoomState(event.transform);
         })
       )
       .append("g");
       //'g' is an encompassing tag that groups elements inside an svg
+    svg.attr("transform", currZoomState);
 
 
     //Creates a force directed graph simulation layout with nodes and links
     const simulation = d3
       .forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(-2300))
-      .force("collide", d3.forceCollide().radius(90).iterations(2))
+      .force("charge", d3.forceManyBody().strength(-800))
+      .force("collide", d3.forceCollide().radius(40).iterations(2))
       .force(
         "link",
         d3
           .forceLink(links)
-          .distance(50)
+          .distance(20)
           .id((node) => node.id)
       )
+      .force("forceX", d3.forceX().strength(.2))
+      .force("forceY", d3.forceY().strength(.2))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     //Feature to make the force directed graph draggable
@@ -120,6 +128,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     const assocColor = "#03AC93";
     const famColor = "#A7026A";
     const offWhite = "#FAF8D6";
+    const gold = "#D9B648"
+    const moss = "#505A34"
+    const blue = "#034d81"
 
     //Bind a line to each link
     const lines = svg
@@ -145,9 +156,9 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
           link.label === "correspondedWith" ||
           link.label === "associatedWith"
         ) {
-          return 6;
+          return 3;
         }
-        return 2;
+        return 1;
       });
     // .style("stroke-dasharray", "3, 3");
 
@@ -175,7 +186,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
           // Join contents of src & tgt arrays w/ spaces; return resulting str
           return ([srcArray.join(" "), tgtArray.join(" ")].join(" "));
-      });
+      })
+      // Add data attributes
+      .attr("data-id", (node) => node.id)
+      .attr("data-label", (node) => node.label)
+      .attr("data-gender", (node) => node.gender)
+      .attr("data-degree", (node) => node.degree)
+      .attr("data-occupations", (node) => node.occupations)
+      .attr("data-subjects", (node) => node.subjects);
 
     // Add classes
 
@@ -184,8 +202,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("class", "node")
       .attr("r", (node) => {
         //John Hunt has 2 records;
-        const radius = Math.log(node.degree + 1) * 10 + 20;
-        return node.id === centralFigure ? 60 : radius; //Accentuates the centralFigure with bigger radius
+        const radius = Math.log(node.degree + 1) * 5 + 5;
+        return node.id === centralFigure ? 30 : radius; //Accentuates the centralFigure with bigger radius
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
@@ -194,10 +212,10 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
         if (node.id === centralFigure) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           if(highlightMinister){
-            return "#505A34";
+            return moss;
           }
         }
-        return "#034d81";
+        return blue;
       });
 
       const d3Tooltip = d3
@@ -227,8 +245,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       // Highlight hovered node
       d3.select(this)
         .style("stroke-opacity", 1.0)
-        .style("stroke", offWhite)
-        .style("stroke-width", "3px")
+        .style("stroke", gold)
+        .style("stroke-width", "2px")
 
       // Get arkId of hovered node
       const currentArk = d3.select(this)._groups[0][0].__data__.id;
@@ -241,14 +259,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
                 l.target.id === currentArk
             );
         })
-        .style("stroke", offWhite)  // Apply style
+        .style("stroke", gold)  // Apply style
         .raise(); // Bring to front
 
       // Highlight adjacent nodes
       d3.selectAll(".linkedTO" + currentArk)
         .style("stroke-opacity", 1.0)
-        .style("stroke", offWhite)
-        .style("stroke-width", "3px");
+        .style("stroke", gold)
+        .style("stroke-width", "2px");
 
       // button.transition().duration(300).style("opacity", 1); // show the tooltip
       // button
@@ -314,7 +332,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .append("text")
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
-      .attr("font-size", "small")
+      .attr("font-size", "x-small")
       .style("pointer-events", "none")
       .text((node) => {
         let nameParts = node.label.split(",");
@@ -340,8 +358,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     });
     return svg;
   }
+  // End of "draw" function
+
+  // Rerender the SVG on a change
   useEffect(() => {
-    const svg = draw();
+    const svg = draw(zoomState);
     return () => {
       svg.remove();
     };
@@ -369,86 +390,98 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   }
   return (
     <Row id="main-row" className="network-page">
-      <Row id="instructions-row">
-        <h1>Network</h1>
-      </Row>
-      <Row id="legend-row">
-        <Col id="remove-hunt-col">
-          <Button
-            id="remove-hunt"
-            variant={removeHunt ? "primary" : "danger"}
-            onClick={() => setRemoveHunt(!removeHunt)}
-          >
-            {removeHunt ? "Add Hunt" : "Remove Hunt"}
-          </Button>
-        </Col>
-        <Col>
-          <div className="form-check form-switch">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="flexSwitchCheckDefault"
-              onChange={highlightMinisterHandler}
-            />
+      <Row xs={1} sm={4}>
+        <Col id="network-info">
+          <Row id="instructions-row">
+            <h1>Social Network</h1>
+            <p>The visualization below shows the relationships betwen the people
+            discussed in John Hunt's journals.</p>
+            <p>Thin red lines link relatives, and
+            thick green lines link acquaintances.
+            The larger a person's circle, the more times they are mentioned in the journals.</p>
+            <p>To zoom in or out, scroll while your cursor is over the visualization.
+            To pan, click on the visualization background and drag your cursor.
+            Hover over a node to highlight it and the connected nodes.</p>
+            <p>Click a node to display its biographical profile.
+            Click and drag a node to reposition it.
+            The node will stay fixed in this position until you refresh the page.</p>
+          </Row>
+          <Row id="legend-row">
+            <Col id="remove-hunt-col">
+              <Button
+                id="remove-hunt"
+                variant={removeHunt ? "primary" : "danger"}
+                onClick={() => setRemoveHunt(!removeHunt)}
+              >
+                {removeHunt ? "Add Hunt" : "Remove Hunt"}
+              </Button>
+            </Col>
+            <Col>
+              <div className="form-check form-switch">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                  onChange={highlightMinisterHandler}
+                />
 
-            <label
-              className="form-check-label general-text"
-              for="flexSwitchCheckDefault"
-            >
-              Highlight ministers
-            </label>
-          </div>
-        </Col>
-        <Col
-          style={highlightMinister ? {} : {display: "none"}}
-        >
-          <div
-            style={{
-              height: "30px",
-              width: "30px",
-              borderRadius: "50%",
-              backgroundColor: "#505A34",
-            }}
-          />
-          <span className="general-text">
-            Ministers
-          </span>
-        </Col>
-        <Col>
-          <div
+                <label
+                  className="form-check-label general-text"
+                  for="flexSwitchCheckDefault"
+                >
+                  Highlight ministers
+                </label>
+              </div>
+            </Col>
+            <Col>
+              <div
+                style={{
+                  height: "5px",
+                  width: "30px",
+                  backgroundColor: "#A7026A",
+                }}
+              />
+              <span className="general-text">Relatives</span>
+            </Col>
+            <Col>
+              <div
+                style={{
+                  height: "5px",
+                  width: "30px",
+                  backgroundColor: "#03AC93",
+                }}
+              ></div>
+              <span className="general-text">Acquaintances</span>
+            </Col>
+            <Col>
+            <div
             style={{
               height: "30px",
               width: "30px",
               borderRadius: "50%",
               backgroundColor: "#034d81",
             }}
-          />
-          <span className="general-text">Other</span>
+            />
+            <span className="general-text">Other</span>
+            </Col>
+            <Col style={highlightMinister ? {} : {display: "none"}}>
+              <div
+                style={{
+                  height: "30px",
+                  width: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "#505A34",
+                }}
+              />
+              <span className="general-text">
+                Ministers
+              </span>
+            </Col>
+          </Row>
         </Col>
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#A7026A",
-            }}
-          />
-          <span className="general-text">Relatives</span>
-        </Col>
-        <Col>
-          <div
-            style={{
-              height: "5px",
-              width: "30px",
-              backgroundColor: "#03AC93",
-            }}
-          ></div>
-          <span className="general-text">Acquaintances</span>
-        </Col>
+      <Col id="spacer"/>
       </Row>
-
-
-      <Row id="container-row" xs={1} lg={4}>
+      <Row id="container-row" xs={1} sm={4}>
         <Col id="main-container">
           <svg
             style={{ backgroundColor: "#342E37" }}

@@ -33,18 +33,14 @@ const createD3Nodes = (constellations) => {
       label: constellation.nameEntries[0].original || null,
       gender: constellation.genders ? constellation.genders[0].term.term : null,
       degree: constellation.mentions,
-      occupations:
-        constellation.occupations?.reduce((labels, occupation) => {
-          let occupationLabel = occupation.term?.term
-            ? occupation.term.term + "; "
-            : "";
-          return labels + occupationLabel;
-        }, "") || null, ///=> label; lable2; lable3
-      subjects:
-        constellation.subjects?.reduce((labels, subject) => {
-          let subjectLabel = subject.term?.term ? subject.term.term + "; " : "";
-          return labels + subjectLabel;
-        }, "") || null, ///=> label; lable2; lable3
+      occupations: //=> label; lable2; lable3
+        constellation.occupations?.map(occupation => occupation.term?.term)
+          .filter(item => item) // filter out null values
+          .join("; "),
+      subjects: //=> label; lable2; lable3
+        constellation.subjects?.map(subject => subject.term?.term)
+          .filter(item => item) // filter out null values
+          .join("; "),
       bio:
         constellation?.biogHists?.[0]?.text
           .replaceAll(/<citation.*?>/g, "\nSource: ")
@@ -100,7 +96,6 @@ const network = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Vis nodesInJSON={d3Nodes} linksInJSON={d3Links}></Vis> */}
       <Network
         nodesInJSON={d3Nodes}
         linksInJSON={d3Links}
