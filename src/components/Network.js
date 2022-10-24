@@ -186,7 +186,14 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
 
           // Join contents of src & tgt arrays w/ spaces; return resulting str
           return ([srcArray.join(" "), tgtArray.join(" ")].join(" "));
-      });
+      })
+      // Add data attributes
+      .attr("data-id", (node) => node.id)
+      .attr("data-label", (node) => node.label)
+      .attr("data-gender", (node) => node.gender)
+      .attr("data-degree", (node) => node.degree)
+      .attr("data-occupations", (node) => node.occupations)
+      .attr("data-subjects", (node) => node.subjects);
 
     // Add classes
 
