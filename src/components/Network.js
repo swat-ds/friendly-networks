@@ -192,6 +192,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .attr("data-id", (node) => node.id)
       .attr("data-label", (node) => node.label)
       .attr("data-gender", (node) => node.gender)
+      .attr("data-birthDate", (node) => node.birthDate)
+      .attr("data-deathDate", (node) => node.deathDate)
       .attr("data-degree", (node) => node.degree)
       .attr("data-occupations", (node) => node.occupations)
       .attr("data-subjects", (node) => node.subjects);

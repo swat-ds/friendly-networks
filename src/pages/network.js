@@ -32,6 +32,8 @@ const createD3Nodes = (constellations) => {
       id: constellation.arkId || null,
       label: constellation.nameEntries[0].original || null,
       gender: constellation.genders ? constellation.genders[0].term.term : null,
+      birthDate: constellation.dates[0]?.fromDate,
+      deathDate: constellation.dates[0]?.toDate,
       degree: constellation.mentions,
       occupations: //=> label; lable2; lable3
         constellation.occupations?.map(occupation => occupation.term?.term)
