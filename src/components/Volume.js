@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
+import { Row, Button, Col, Form, InputGroup, Accordion } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
 
@@ -239,11 +240,11 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		}
 
  		return (
-      <Layout>
+      <Layout id="journal">
+      <Row id="main-row">
         <Row style={{fontSize: "15px",padding:"10px"}}>
           <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
         </Row>
-        <Row id="main-row">
           <div id="image-tool">
             {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
             <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
@@ -259,23 +260,14 @@ let counter = 0; // counter to track the index of each transcript (cetei)
                 Invalid type
               </Form.Control.Feedback>
             </InputGroup>
-            {/* <Form.Control
-              size="sm"
-              type="number"
-              placeholder="jump to "
-              onKeyDown={handleKeyDown}
-              style={{ width: "15vw" }}
-            ></Form.Control> */}
-            {/* <span class="general-text">Current Page: at {pids.indexOf(currentPid)+1} of {pids.length}</span> */}
             <span class="general-text">
-              Current Page: at {pids.indexOf(currentPid) + 1} of {pids.length}
+              Currently on page <strong>{pids.indexOf(currentPid) + 1}</strong> of {pids.length}
             </span>
             <div
               id="right-arrow-icon"
               size={28}
               onClick={() => getNextImage()}
             />
-            {/* </IconContext.Provider> */}
           </div>
           <Col id="image-col">
             <div id="journal-image">
@@ -319,6 +311,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               </Link>
             </Button>
           </Col>
+        </Row>
         </Row>
       </Layout>
   );
