@@ -92,6 +92,19 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			hash
  		} = props;
 
+    // Sort ceteis by date for purpose of getting previous or next journal
+    // data.allCetei.nodes.sort((a, b) => {
+    //   const titleA = a.original.match(/(?<=<creation>Original written <date (from|when)=")[-\d]+/)
+    //   const titleB = b.original.match(/(?<=<creation>Original written <date (from|when)=")[-\d]+/)
+    //   if (titleA < titleB) {
+    //     return -1
+    //   }
+    //   if (titleB < titleA) {
+    //     return 1
+    //   }
+    //   return 0
+    // })
+
     // Redirect from /[pid] to /journals/[pid]
     useEffect(() => {
       if (document && ! document.location.pathname.includes("journal")) {
@@ -298,8 +311,8 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               </Link>
             </Button>
           </Col>
-          <Col style={{flexGrow:"5"}}>
-            <Card bg="primary" id="preferred-citation">
+          <Col id="preferred-citation">
+            <Card bg="primary">
             <Card.Header>
               <Card.Title>Preferred Citation</Card.Title>
             </Card.Header>
