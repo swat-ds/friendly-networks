@@ -17,10 +17,10 @@
 #image-tool {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-evenly;
 	height: 5vh;
-	// border: 2px solid yellowgreen;
-  
+
 	#left-arrow-icon {
 		display: flex;
 		text-align: right;
@@ -107,10 +107,17 @@
 	scroll-behavior: smooth;
 }
 
-#journal-pagination-row {
+#journal-next-prev-citation {
 	margin-top: 1vh;
+	justify-content: center;
+	align-items: center;
+
 
 	#next-journal {
 		float: right;
+	}
+
+	#preferred-citation {
+		flex-grow: 7;
 	}
 }

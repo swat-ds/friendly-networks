@@ -2,8 +2,7 @@ import React from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
-import { Row, Button, Col, Form, InputGroup } from "react-bootstrap";
-import { Row, Button, Col, Form, InputGroup, Accordion } from "react-bootstrap";
+import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
 
@@ -242,33 +241,34 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		return (
       <Layout id="journal">
       <Row id="main-row">
-        <Row style={{fontSize: "15px",padding:"10px"}}>
+        <Row>
           <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
         </Row>
-          <div id="image-tool">
-            {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-            <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
-            <InputGroup hasValidation style={{ width: "15vw" }}>
-              <Form.Control
-                required
-                size="sm"
-                type="number"
-                placeholder="jump to "
-                onKeyDown={handleKeyDown}
-              ></Form.Control>
-              <Form.Control.Feedback type="invalid">
-                Invalid type
-              </Form.Control.Feedback>
-            </InputGroup>
-            <span class="general-text">
-              Currently on page <strong>{pids.indexOf(currentPid) + 1}</strong> of {pids.length}
-            </span>
-            <div
-              id="right-arrow-icon"
-              size={28}
-              onClick={() => getNextImage()}
-            />
-          </div>
+        <div id="image-tool">
+          {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
+          <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
+          <InputGroup hasValidation style={{ width: "15vw" }}>
+            <Form.Control
+              required
+              size="sm"
+              type="number"
+              placeholder="jump to "
+              onKeyDown={handleKeyDown}
+            ></Form.Control>
+            <Form.Control.Feedback type="invalid">
+              Invalid type
+            </Form.Control.Feedback>
+          </InputGroup>
+          <span class="general-text">
+            Page <strong>{pids.indexOf(currentPid) + 1}</strong> of {pids.length}
+          </span>
+          <div
+            id="right-arrow-icon"
+            size={28}
+            onClick={() => getNextImage()}
+          />
+        </div>
+        <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
               <Viewer imageId={currentPid}></Viewer>
@@ -286,7 +286,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </div>
           </Col>
         </Row>
-        <Row id="journal-pagination-row">
+        <Row id="journal-next-prev-citation">
           <Col>
             <Button variant="outline-warning" onClick={() => getPrevCetei()}>
               <Link
@@ -297,6 +297,18 @@ let counter = 0; // counter to track the index of each transcript (cetei)
                 Previous Journal
               </Link>
             </Button>
+          </Col>
+          <Col style={{flexGrow:"5"}}>
+            <Card bg="primary" id="preferred-citation">
+            <Card.Header>
+              <Card.Title>Preferred Citation</Card.Title>
+            </Card.Header>
+              <Card.Body>
+                <Card.Text>{getTitle(jsonPrefixed)}, John Hunt Papers, Friends Historical Library of Swarthmore College </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
             <Button
               id="next-journal"
               variant="outline-warning"
