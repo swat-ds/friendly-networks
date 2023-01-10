@@ -42,7 +42,7 @@ const credits = () => {
 
 	      					<h3>Web developer</h3>
 	      					<ul style={{listStyle: "none"}}>
-	      						<li>Zakir Hossain &rsquo;23</li>
+	      						<li>Zakir Hossain &rsquo;24</li>
 	      					</ul>
 
 	      					<h3>Research Assistants</h3>
