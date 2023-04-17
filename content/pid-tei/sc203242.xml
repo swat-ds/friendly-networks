@@ -35,7 +35,7 @@
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>John Hunt Papers, SFHL-RG5-240</collection>
                         <idno>A0011520</idno>
-                        <idno>sc203242</idno>
+                        <idno>334749</idno>
                     </msIdentifier>
                     <physDesc>
                         <p>1 pp.</p>
@@ -78,7 +78,7 @@
     </teiHeader>
 <text>
 <body>
-<pb n="001" facs="sc203591"/>
+<pb n="001" facs="334750"/>
 <div type="entry" n="1788-02-10"><head><supplied>February 1788</supplied></head><dateline><date when="1788-02-10">10th of the Second Month, 1788.</date></dateline><p> Was First Day. Went <rs key="w6wx87x7">my wife</rs> and I to Crop<damage><supplied>well meeting</supplied></damage> which was a solid favored time I think. Went to see <persName key="w6wt9jhx">Enoch Evans</persName>.</p></div>
 <div type="entry" n="1788-02-11"><dateline><date when="1788-02-11">11.</date></dateline><p> At work at screws for cheese press.</p></div>
 <div type="entry" n="1788-02-12"><dateline><date when="1788-02-12">12.</date></dateline><p> Was our weekday meeting. William Venable and Rachel Croshan was married. <persName key="w63s1j4g">Solomon Gaskill</persName> was there and I think it was lively good meeting. I am ready to think the scoffer and gainsayer, if any was there, was put to silence.</p></div>
