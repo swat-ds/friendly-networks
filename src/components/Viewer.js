@@ -2,10 +2,9 @@ import * as React from "react";
 
 const Viewer = ({ imageId }) => {
   // console.log(imageId);
-  const baseURl = "http://trislandora-production.brynmawr.edu/iiif/2/";
-  const postfix = "~JP2~/info.json";
-  let idWithColon = imageId.slice(0, 2) + ":" + imageId.slice(2);
-  let url = baseURl + idWithColon + postfix;
+  const baseURl = "https://digitalcollections.tricolib.brynmawr.edu/node/";
+  const postfix = "/manifest";
+  let url = baseURl + imageId + postfix;
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
   const [viewer, setViewer] = React.useState(null);
