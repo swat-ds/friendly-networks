@@ -34,8 +34,9 @@
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>John Hunt Papers, SFHL-RG5-240</collection>
-                        <idno>A0011528</idno>
-                        <idno>335061</idno>
+                        <idno type="local">A0011528</idno>
+                        <idno type="Islandora7 pid">sc203698</idno>
+                        <idno type="Islandora node_id">335061</idno>
                     </msIdentifier>
                     <physDesc>
                         <p>12 pp.</p>
