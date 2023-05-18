@@ -38,6 +38,17 @@ async function fetchAsync(url) {
   return jsonData;
 }
 
+/**
+ * Extracts the IIIF Image API urls from a IIIF presentation manifest
+ * @param {object} manifest A IIIF presentation manifest
+ * @returns {Array} of strings of urls, each ending in "info.json"
+ */
+function getImageUrls(manifest) {
+  const iiifCanvases = manifest.sequences[0].canvases
+  const urls = iiifCanvases.map(canvas => canvas.images[0].resource.service["@id"])
+  return urls
+}
+
 function getAllFacs(xmlString) {
   const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
   // ex: <tei-pb n="1" facs="(sc123)">
@@ -128,7 +139,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     //   return 0
     // })
 
-    // Redirect from /[pid] to /journals/[pid]
+    // Redirect from /[id] to /journals/[id]
     useEffect(() => {
       if (document && ! document.location.pathname.includes("journal")) {
         document.location.replace("/journals" + document.location.pathname);
@@ -142,8 +153,10 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     const nodeId = getNodeId(jsonPrefixed)
     const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
-    const manifest = fetchAsync(url)
-    manifest.then(console.log)
+    const manifest = fetchAsync(url) // Get IIIF presentation manifest
+    const imageUrls = []
+    manifest.then(data => imageUrls.push(...getImageUrls(data)))
+    console.log(imageUrls);
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
