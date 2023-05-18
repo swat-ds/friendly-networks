@@ -15,6 +15,22 @@ function getTitle(journal){
       ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
     );
 }
+/**
+ * 
+ * @param {*} journal Parsed TEI XML that has an element 
+ *                      TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno
+ * @returns {string} the node id encoded in that TEI file
+ */
+function getNodeId(journal) {
+  // Drill down into proper section of TEI header containing the <idno> elements
+  const ids = journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+    ["tei-sourceDesc"][0]["tei-msDesc"][0]["tei-msIdentifier"][0]["tei-idno"]
+  
+  // Get the value of <idno type="Islandora node_id">
+  const nodeIdEl = ids.find(element => element["$"]["type"] === "Islandora node_id")
+  const nodeId = nodeIdEl['_']
+  return nodeId;
+}
 
 async function fetchAsync(url) {
   let response = await fetch(url);
@@ -122,6 +138,8 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		parseString(pageContext.prefixed, function(err, result) {
  			jsonPrefixed = result;
  		});
+
+    const nodeId = getNodeId(jsonPrefixed)
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
