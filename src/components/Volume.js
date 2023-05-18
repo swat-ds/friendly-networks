@@ -151,12 +151,16 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			jsonPrefixed = result;
  		});
 
-    const nodeId = getNodeId(jsonPrefixed)
-    const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
-    const manifest = fetchAsync(url) // Get IIIF presentation manifest
+    // Get image URLs to send to OSD
     const imageUrls = []
-    manifest.then(data => imageUrls.push(...getImageUrls(data)))
-    console.log(imageUrls);
+    useEffect(() => {
+      const nodeId = getNodeId(jsonPrefixed)
+      const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
+      const manifest = fetchAsync(url) // Get IIIF presentation manifest
+      manifest.then(data => imageUrls.push(...getImageUrls(data)))
+      console.log(imageUrls)
+    }, [])
+  ;
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
