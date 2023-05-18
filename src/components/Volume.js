@@ -33,8 +33,9 @@ function getNodeId(journal) {
 }
 
 async function fetchAsync(url) {
-  let response = await fetch(url);
-  return response;
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  return jsonData;
 }
 
 function getAllFacs(xmlString) {
@@ -140,6 +141,9 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		});
 
     const nodeId = getNodeId(jsonPrefixed)
+    const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
+    const manifest = fetchAsync(url)
+    manifest.then(console.log)
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
