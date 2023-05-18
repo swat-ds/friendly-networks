@@ -16,6 +16,11 @@ function getTitle(journal){
     );
 }
 
+async function fetchAsync(url) {
+  let response = await fetch(url);
+  return response;
+}
+
 function getAllFacs(xmlString) {
   const rgx = /<tei-pb[^>]+facs="([^">]+)"/g;
   // ex: <tei-pb n="1" facs="(sc123)">
@@ -91,6 +96,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			data,
  			hash
  		} = props;
+
 
     // Sort ceteis by date for purpose of getting previous or next journal
     // data.allCetei.nodes.sort((a, b) => {
@@ -317,7 +323,10 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               <Card.Title>Preferred Citation</Card.Title>
             </Card.Header>
               <Card.Body>
-                <Card.Text>{getTitle(jsonPrefixed)}, John Hunt Papers, Friends Historical Library of Swarthmore College </Card.Text>
+                <Card.Text>
+                  {getTitle(jsonPrefixed)}, 
+                  John Hunt Papers, Friends Historical Library of Swarthmore College 
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
