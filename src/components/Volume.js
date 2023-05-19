@@ -330,7 +330,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
-              <Viewer tileSources={imageUrls}></Viewer>
+              <Viewer tileSources={imageUrls} currentPage={pids.indexOf(currentPid)}/>
             </div>
           </Col>
 
