@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
@@ -152,15 +152,15 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		});
 
     // Get image URLs to send to OSD
-    const imageUrls = []
-    useEffect(() => {
+    const imageUrls = useMemo(() => {
+      const imageUrls = []
       const nodeId = getNodeId(jsonPrefixed)
       const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
       const manifest = fetchAsync(url) // Get IIIF presentation manifest
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
       console.log(imageUrls)
-    }, [])
-  ;
+      return imageUrls
+    }, []);
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
