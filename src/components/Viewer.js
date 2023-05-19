@@ -1,17 +1,16 @@
 import * as React from "react";
 
-const Viewer = ({ tileSources }) => {
-  // console.log(imageId);
-  let url = tileSources;
+const Viewer = ({ tileSources, currentPage }) => {
+
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
   const [viewer, setViewer] = React.useState(null);
 
   React.useEffect(() => {
-    if (url && viewer) {
-      viewer.open(url);
+    if (tileSources && viewer) {
+      viewer.goToPage(currentPage);
     }
-  }, [url]);
+  }, [tileSources]);
 
   // When the component mounts, check if window and document are available. If they aren't,
   // then we can't render the viewer.
@@ -28,7 +27,7 @@ const Viewer = ({ tileSources }) => {
           // Create the viewer.
           const viewer = new OpenSeaDragon.default({
             element: viewerRef.current,
-            // sequenceMode: true,
+            sequenceMode: true,
             tileSources: tileSources,
             showNavigator: true,
             // Initial rotation angle
