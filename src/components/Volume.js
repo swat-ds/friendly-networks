@@ -5,6 +5,7 @@ import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
+import { image } from "d3";
 
 
 const parseString = require("xml2js").parseString;
@@ -329,7 +330,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
-              <Viewer imageId={currentPid}></Viewer>
+              <Viewer tileSources={imageUrls}></Viewer>
             </div>
           </Col>
 

@@ -1,10 +1,8 @@
 import * as React from "react";
 
-const Viewer = ({ imageId }) => {
+const Viewer = ({ tileSources }) => {
   // console.log(imageId);
-  const baseURl = "https://digitalcollections.tricolib.brynmawr.edu/node/";
-  const postfix = "/manifest";
-  let url = baseURl + imageId + postfix;
+  let url = tileSources;
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
   const [viewer, setViewer] = React.useState(null);
@@ -27,7 +25,6 @@ const Viewer = ({ imageId }) => {
         const InitOpenSeadragon = () => {
           viewer && viewer.destroy();
 
-          const tileSources = [encodeURI(url)];
           // Create the viewer.
           const viewer = new OpenSeaDragon.default({
             element: viewerRef.current,
