@@ -29,6 +29,9 @@ const Viewer = ({ tileSources, currentPage }) => {
             showNavigator: true,
             showRotationControl: true, // Show rotation buttons
             prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+            nextButton: "right-arrow-icon",
+            previousButton: "left-arrow-icon",
+            sequenceMode: true,
           });
           setViewer(viewer);
         };
