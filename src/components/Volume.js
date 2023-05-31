@@ -159,7 +159,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
       const manifest = fetchAsync(url) // Get IIIF presentation manifest
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
-      console.log(imageUrls)
       return imageUrls
     }, []);
 
@@ -169,14 +168,12 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
  		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
- 		//State to set pid (constellation id)
- 		const [currentPid, setPid] = useState(pids[0]);
+    const [currentPage, setPage] = useState(0)
 
  		//Sets the current cetei with the next cetei
  		function getNextCetei() {
  			counter += 1;
  			setCetei(data.allCetei.nodes[counter].parent.name);
- 			// console.log(counter);
  		}
 
  		//Sets the current cetei to the previous cetei
@@ -196,25 +193,20 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     // Scroll transcript to next pagebreak
     function getPrevImage() {
-      const currentIndex = pids.indexOf(currentPid);
-      if (currentIndex >= 1) {
-        containerRef.current.scroll(0, distances[currentIndex-1]);
-        // setPid(pids[currentIndex-1]);
+      if (currentPage >= 1) {
+        containerRef.current.scroll(0, distances[currentPage-1]);
       }
     };
 
     // Scroll transcript to next pagebreak
     function getNextImage() {
-      const currentIndex = pids.indexOf(currentPid);
-      if (currentIndex <= pids.length - 1) {
-        containerRef.current.scroll(0, distances[currentIndex+1]);
-        // setPid(pids[currentIndex+1]);
+      if (currentPage <= pids.length - 1) {
+        containerRef.current.scroll(0, distances[currentPage+1]);
       }
 
     };
 
     const handleResize = useCallback(() => {
-      // console.log("In handle resize");
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
       if (containerRef.current === null) {
@@ -243,7 +235,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         const selector = "[data-facs=\"" + pid + "\"]";
         const node = containerRef.current.querySelector(selector);
         if (!node) {
-          // console.log("Cannot find element with @data-facs " + pid);
         }
         return node ? node.getBoundingClientRect().top - start : null;
       })
@@ -278,9 +269,9 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       // Check how many pagebreaks are above divider
       const pageNum = distances.filter(pos => pos <= divider).length - 1;
 
-      // Set currentPid useEffect, if not already at appropriate value
-      if (pids[pageNum] !== currentPid) {
-        setPid(pids[pageNum])
+      // Set currentPage useEffect, if not already at appropriate value
+      if (pageNum !== currentPage) {
+        setPage(pageNum)
       }
     };
 
@@ -305,7 +296,12 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         </Row>
         <div id="image-tool">
           {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-          <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
+          <button 
+            id="left-arrow-icon" 
+            onClick={() => getPrevImage()} 
+            role="button"
+            disabled = {currentPage === 0}
+          />
           <InputGroup hasValidation style={{ width: "15vw" }}>
             <Form.Control
               required
@@ -319,18 +315,19 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </Form.Control.Feedback>
           </InputGroup>
           <span class="general-text">
-            Page <strong>{pids.indexOf(currentPid) + 1}</strong> of {pids.length}
+            Page <strong>{currentPage + 1}</strong> of {pids.length}
           </span>
-          <div
+          <button
             id="right-arrow-icon"
-            size={28}
             onClick={() => getNextImage()}
+            role="button"
+            disabled={currentPage === imageUrls.length - 1}
           />
         </div>
         <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
-              <Viewer tileSources={imageUrls} currentPage={pids.indexOf(currentPid)}/>
+              <Viewer tileSources={imageUrls} currentPage={currentPage}/>
             </div>
           </Col>
 
