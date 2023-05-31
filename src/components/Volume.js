@@ -169,8 +169,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
  		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
 
- 		//State to set pid (constellation id)
- 		const [currentPid, setPid] = useState(pids[0]);
+    const [currentPage, setPage] = useState(0)
 
  		//Sets the current cetei with the next cetei
  		function getNextCetei() {
@@ -196,19 +195,15 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     // Scroll transcript to next pagebreak
     function getPrevImage() {
-      const currentIndex = pids.indexOf(currentPid);
-      if (currentIndex >= 1) {
-        containerRef.current.scroll(0, distances[currentIndex-1]);
-        // setPid(pids[currentIndex-1]);
+      if (currentPage >= 1) {
+        containerRef.current.scroll(0, distances[currentPage-1]);
       }
     };
 
     // Scroll transcript to next pagebreak
     function getNextImage() {
-      const currentIndex = pids.indexOf(currentPid);
-      if (currentIndex <= pids.length - 1) {
-        containerRef.current.scroll(0, distances[currentIndex+1]);
-        // setPid(pids[currentIndex+1]);
+      if (currentPage <= pids.length - 1) {
+        containerRef.current.scroll(0, distances[currentPage+1]);
       }
 
     };
@@ -278,9 +273,9 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       // Check how many pagebreaks are above divider
       const pageNum = distances.filter(pos => pos <= divider).length - 1;
 
-      // Set currentPid useEffect, if not already at appropriate value
-      if (pids[pageNum] !== currentPid) {
-        setPid(pids[pageNum])
+      // Set currentPage useEffect, if not already at appropriate value
+      if (pageNum !== currentPage) {
+        setPage(pageNum)
       }
     };
 
@@ -319,7 +314,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </Form.Control.Feedback>
           </InputGroup>
           <span class="general-text">
-            Page <strong>{pids.indexOf(currentPid) + 1}</strong> of {pids.length}
+            Page <strong>{currentPage + 1}</strong> of {pids.length}
           </span>
           <div
             id="right-arrow-icon"
@@ -330,7 +325,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
-              <Viewer tileSources={imageUrls} currentPage={pids.indexOf(currentPid)}/>
+              <Viewer tileSources={imageUrls} currentPage={currentPage}/>
             </div>
           </Col>
 
