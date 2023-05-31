@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
-import { months } from "../globalVariables";
 import Card from 'react-bootstrap/Card'
 
 
 
-const JournalCard = ({ node, index, size }) => {
+const JournalCard = ({ node }) => {
   const titleArray = node.title.split(", ");
   const title = titleArray[0];
   const subtitle = titleArray[1];
