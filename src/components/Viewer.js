@@ -1,20 +1,16 @@
 import * as React from "react";
 
-const Viewer = ({ imageId }) => {
-  // console.log(imageId);
-  const baseURl = "https://web.tricolib.brynmawr.edu/digitalcollections/iiif/2/";
-  const postFix = "~JP2~/info.json";
-  let idWithColon = imageId.slice(0, 2) + ":" + imageId.slice(2);
-  let url = baseURl + idWithColon + postFix;
+const Viewer = ({ tileSources, currentPage }) => {
+
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
   const [viewer, setViewer] = React.useState(null);
 
   React.useEffect(() => {
-    if (url && viewer) {
-      viewer.open(url);
+    if (tileSources && viewer) {
+      viewer.goToPage(currentPage);
     }
-  }, [url]);
+  }, [currentPage]);
 
   // When the component mounts, check if window and document are available. If they aren't,
   // then we can't render the viewer.
@@ -22,24 +18,20 @@ const Viewer = ({ imageId }) => {
   React.useEffect(() => {
     if (typeof window !== "undefined" && typeof document !== "undefined") {
       import("openseadragon").then((OpenSeaDragon) => {
-        // Set the tile sources.
-        //Getting the id ready to feed to viewer
 
         const InitOpenSeadragon = () => {
           viewer && viewer.destroy();
-
-          const tileSources = [encodeURI(url)];
+          
           // Create the viewer.
           const viewer = new OpenSeaDragon.default({
             element: viewerRef.current,
-            // sequenceMode: true,
             tileSources: tileSources,
             showNavigator: true,
-            // Initial rotation angle
-
-            // Show rotation buttons
-            showRotationControl: true,
+            showRotationControl: true, // Show rotation buttons
             prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+            nextButton: "right-arrow-icon",
+            previousButton: "left-arrow-icon",
+            sequenceMode: true,
           });
           setViewer(viewer);
         };

@@ -76,3 +76,29 @@
     { name: "November", abbr: "Nov" },
     { name: "December", abbr: "Dec" },
  ];
+
+ export const journalTnLookup = {
+  "A0011237": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334402.jpg",
+  "A0011517": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334443.jpg",
+  "A0011518": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334487.jpg",
+  "A0011519": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334542.jpg",
+  "A0011520": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334750.jpg",
+  "A0011521": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334752.jpg",
+  "A0011522": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334837.jpg",
+  "A0011523": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334949.jpg",
+  "A0011524": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334953.jpg",
+  "A0011525": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334956.jpg",
+  "A0011526": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334961.jpg",
+  "A0011527": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335053.jpg",
+  "A0011528": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335062.jpg",
+  "A0011529": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335075.jpg",
+  "A0011530": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335108.jpg",
+  "A0011531": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335133.jpg",
+  "A0011532": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335192.jpg",
+  "A0011533": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335217.jpg",
+  "A0011534": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335242.jpg",
+  "A0011535": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335300.jpg",
+  "A0011536": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335317.jpg",
+  "A0011537": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335322.jpg",
+  "A0011538": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335325.jpg"
+}

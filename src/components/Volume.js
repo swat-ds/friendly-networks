@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
+import { image } from "d3";
 
 
 const parseString = require("xml2js").parseString;
@@ -14,6 +15,39 @@ function getTitle(journal){
     journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
       ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
     );
+}
+/**
+ * 
+ * @param {*} journal Parsed TEI XML that has an element 
+ *                      TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno
+ * @returns {string} the node id encoded in that TEI file
+ */
+function getNodeId(journal) {
+  // Drill down into proper section of TEI header containing the <idno> elements
+  const ids = journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+    ["tei-sourceDesc"][0]["tei-msDesc"][0]["tei-msIdentifier"][0]["tei-idno"]
+  
+  // Get the value of <idno type="Islandora node_id">
+  const nodeIdEl = ids.find(element => element["$"]["type"] === "Islandora node_id")
+  const nodeId = nodeIdEl['_']
+  return nodeId;
+}
+
+async function fetchAsync(url) {
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  return jsonData;
+}
+
+/**
+ * Extracts the IIIF Image API urls from a IIIF presentation manifest
+ * @param {object} manifest A IIIF presentation manifest
+ * @returns {Array} of strings of urls, each ending in "info.json"
+ */
+function getImageUrls(manifest) {
+  const iiifCanvases = manifest.sequences[0].canvases
+  const urls = iiifCanvases.map(canvas => canvas.images[0].resource.service["@id"])
+  return urls
 }
 
 function getAllFacs(xmlString) {
@@ -92,6 +126,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			hash
  		} = props;
 
+
     // Sort ceteis by date for purpose of getting previous or next journal
     // data.allCetei.nodes.sort((a, b) => {
     //   const titleA = a.original.match(/(?<=<creation>Original written <date (from|when)=")[-\d]+/)
@@ -105,7 +140,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     //   return 0
     // })
 
-    // Redirect from /[pid] to /journals/[pid]
+    // Redirect from /[id] to /journals/[id]
     useEffect(() => {
       if (document && ! document.location.pathname.includes("journal")) {
         document.location.replace("/journals" + document.location.pathname);
@@ -116,6 +151,17 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		parseString(pageContext.prefixed, function(err, result) {
  			jsonPrefixed = result;
  		});
+
+    // Get image URLs to send to OSD
+    const imageUrls = useMemo(() => {
+      const imageUrls = []
+      const nodeId = getNodeId(jsonPrefixed)
+      const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
+      const manifest = fetchAsync(url) // Get IIIF presentation manifest
+      manifest.then(data => imageUrls.push(...getImageUrls(data)))
+      console.log(imageUrls)
+      return imageUrls
+    }, []);
 
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
@@ -284,7 +330,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         <Row id="journal-display">
           <Col id="image-col">
             <div id="journal-image">
-              <Viewer imageId={currentPid}></Viewer>
+              <Viewer tileSources={imageUrls} currentPage={pids.indexOf(currentPid)}/>
             </div>
           </Col>
 
@@ -317,7 +363,10 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               <Card.Title>Preferred Citation</Card.Title>
             </Card.Header>
               <Card.Body>
-                <Card.Text>{getTitle(jsonPrefixed)}, John Hunt Papers, Friends Historical Library of Swarthmore College </Card.Text>
+                <Card.Text>
+                  {getTitle(jsonPrefixed)}, 
+                  John Hunt Papers, Friends Historical Library of Swarthmore College 
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
