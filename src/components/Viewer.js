@@ -1,7 +1,6 @@
 import * as React from "react";
 
 const Viewer = ({ tileSources, currentPage }) => {
-
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
   const [viewer, setViewer] = React.useState(null);
@@ -29,8 +28,8 @@ const Viewer = ({ tileSources, currentPage }) => {
             showNavigator: true,
             showRotationControl: true, // Show rotation buttons
             prefixUrl: "//openseadragon.github.io/openseadragon/images/",
-            nextButton: "right-arrow-icon",
-            previousButton: "left-arrow-icon",
+            nextButton: "nonexistant",
+            previousButton: "nonexistant",
             sequenceMode: true,
           });
           setViewer(viewer);

@@ -29,12 +29,18 @@
 		border-style: solid;
 		border-width: 2vh 2vw 2vh 0;
 		border-color: transparent hsl(215, 14%, 45%) transparent transparent;
+		background-color: transparent;
 		transition: all 0.1s ease-out;
 
-		&:hover {
+		&:enabled {&:hover {
 			cursor: pointer;
 			border-width: 2vh 2.5vw 2vh 0;
 			border-color: transparent #505A34 transparent transparent;
+		}}
+
+		&:disabled {
+			opacity: 20%;
+			cursor: inherit;
 		}
 	}
 
@@ -46,12 +52,18 @@
 		border-style: solid;
 		border-width: 2vh 0 2vh 2vw;
 		border-color: transparent transparent transparent hsl(215, 14%, 45%);
+		background-color: transparent;
 		transition: all 0.1s ease-out;
 
-		&:hover {
+		&:enabled {&:hover {
 			cursor: pointer;
 			border-width: 2vh 0 2vh 2.5vw;
 			border-color: transparent transparent transparent #505A34;
+		}}
+
+		&:disabled {
+			opacity: 20%;
+			cursor: inherit;
 		}
 	}
 }
@@ -111,6 +123,7 @@
 	margin-top: 1vh;
 	justify-content: center;
 	align-items: center;
+	color:hsl(0, 7%, 83%)
 
 
 	#next-journal {

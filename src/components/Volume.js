@@ -159,7 +159,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
       const manifest = fetchAsync(url) // Get IIIF presentation manifest
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
-      console.log(imageUrls)
       return imageUrls
     }, []);
 
@@ -175,7 +174,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		function getNextCetei() {
  			counter += 1;
  			setCetei(data.allCetei.nodes[counter].parent.name);
- 			// console.log(counter);
  		}
 
  		//Sets the current cetei to the previous cetei
@@ -209,7 +207,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     };
 
     const handleResize = useCallback(() => {
-      // console.log("In handle resize");
 
       // Don't do anything if the ref's DOM node hasn't loaded yet
       if (containerRef.current === null) {
@@ -238,7 +235,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         const selector = "[data-facs=\"" + pid + "\"]";
         const node = containerRef.current.querySelector(selector);
         if (!node) {
-          // console.log("Cannot find element with @data-facs " + pid);
         }
         return node ? node.getBoundingClientRect().top - start : null;
       })
@@ -300,7 +296,12 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         </Row>
         <div id="image-tool">
           {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
-          <div id="left-arrow-icon" onClick={() => getPrevImage()}/>
+          <button 
+            id="left-arrow-icon" 
+            onClick={() => getPrevImage()} 
+            role="button"
+            disabled = {currentPage === 0}
+          />
           <InputGroup hasValidation style={{ width: "15vw" }}>
             <Form.Control
               required
@@ -316,10 +317,11 @@ let counter = 0; // counter to track the index of each transcript (cetei)
           <span class="general-text">
             Page <strong>{currentPage + 1}</strong> of {pids.length}
           </span>
-          <div
+          <button
             id="right-arrow-icon"
-            size={28}
             onClick={() => getNextImage()}
+            role="button"
+            disabled={currentPage === imageUrls.length - 1}
           />
         </div>
         <Row id="journal-display">
