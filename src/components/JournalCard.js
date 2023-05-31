@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
+import {journalTnLookup} from '../globalVariables'
 import Card from 'react-bootstrap/Card'
-
-
 
 const JournalCard = ({ node }) => {
   const titleArray = node.title.split(", ");
@@ -11,10 +10,7 @@ const JournalCard = ({ node }) => {
   const subtitle = titleArray[1];
 
   // Construct urls of thumbnail images held in Islandora
-  const thumbnailUrl = "https://digitalcollections.tricolib"
-    + ".brynmawr.edu/islandora/object/sc:"
-    + node.route.split("sc").pop()
-    + "/datastream/TN";
+  const thumbnailUrl = journalTnLookup[node.route.split("/").pop()]
 
   return(
     <Card bg="primary" className="journal-card">
