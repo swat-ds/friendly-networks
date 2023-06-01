@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
@@ -110,7 +110,7 @@ function spacePageBreaks(node) {
 };
 
 
-let counter = 0; // counter to track the index of each transcript (cetei)
+let counter = 0; // counter to track the index of each transcript (cetei) 
 
 /**
  * An all-encompassing component for the journal display; the image and the transcript
@@ -126,19 +126,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			hash
  		} = props;
 
-
-    // Sort ceteis by date for purpose of getting previous or next journal
-    // data.allCetei.nodes.sort((a, b) => {
-    //   const titleA = a.original.match(/(?<=<creation>Original written <date (from|when)=")[-\d]+/)
-    //   const titleB = b.original.match(/(?<=<creation>Original written <date (from|when)=")[-\d]+/)
-    //   if (titleA < titleB) {
-    //     return -1
-    //   }
-    //   if (titleB < titleA) {
-    //     return 1
-    //   }
-    //   return 0
-    // })
 
     // Redirect from /[id] to /journals/[id]
     useEffect(() => {
@@ -165,20 +152,26 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed)
 
- 		// counter = name_index.has(pageContext.name)? name_index.get(pageContext.name) : 0;
- 		const [cetei, setCetei] = useState(data.allCetei.nodes[counter].parent.name);
-
     const [currentPage, setPage] = useState(0)
 
- 		//Sets the current cetei with the next cetei
- 		function getNextCetei() {
- 			counter += 1;
- 			setCetei(data.allCetei.nodes[counter].parent.name);
- 		}
+    const names = data.allCetei.nodes.map(node => node.parent.name).sort()
 
+ 		// Navigate to next journal
+ 		function getNextCetei() {
+      const name = pageContext.name
+      const index = names.indexOf(name)
+      if (index < names.length-1) {
+        navigate("/journals/" + names[index+1])
+      }
+ 		}
+    
  		//Sets the current cetei to the previous cetei
  		function getPrevCetei() {
- 			setCetei(data.allCetei.nodes[counter--].parent.name);
+      const name = pageContext.name
+      const index = names.indexOf(name)
+      if (index > 0) {
+        navigate("/journals/" + names[index-1])
+       }
  		}
 
 
@@ -344,14 +337,14 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         </Row>
         <Row id="journal-next-prev-citation">
           <Col>
-            <Button variant="outline-warning" onClick={() => getPrevCetei()}>
-              <Link
-                style={{ color: "white" }}
-                className="btn-g-link"
-                to={"/journals/" + cetei}
-              >
-                Previous Journal
-              </Link>
+            <Button 
+              id="prev-journal"
+              variant="outline-warning"
+              role="link"
+              onClick={() => getPrevCetei()}
+              disabled={names.indexOf(pageContext.name) < 1}
+            >
+              Prev Journal
             </Button>
           </Col>
           <Col id="preferred-citation">
@@ -371,15 +364,11 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             <Button
               id="next-journal"
               variant="outline-warning"
+              role="link"
               onClick={() => getNextCetei()}
+              disabled={names.indexOf(pageContext.name) >= names.length-1}
             >
-              <Link
-                style={{ color: "white" }}
-                className="btn-g-link"
-                to={"/journals/" + cetei}
-              >
-                Next Journal
-              </Link>
+              Next Journal
             </Button>
           </Col>
         </Row>

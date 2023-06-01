@@ -391,6 +391,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
   function highlightMinisterHandler(e) {
     setHighlightMinister(!highlightMinister);
   }
+  
   return (
     <Row id="main-row" className="network-page">
       <Row xs={1} sm={4}>

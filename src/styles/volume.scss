@@ -123,9 +123,12 @@
 	margin-top: 1vh;
 	justify-content: center;
 	align-items: center;
-	color:hsl(0, 7%, 83%)
+	color:hsl(0, 7%, 83%);
 
-
+	button {
+		color: var(--bs-secondary);
+	}
+		
 	#next-journal {
 		float: right;
 	}
