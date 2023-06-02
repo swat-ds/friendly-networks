@@ -1,8 +1,6 @@
 import React from "react"
-import {useState, useEffect } from 'react'
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
-import {Container, Row, Button, Col} from 'react-bootstrap'
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Volume from '../../components/Volume'
 import { SEO } from "../../components/SEO";
 
