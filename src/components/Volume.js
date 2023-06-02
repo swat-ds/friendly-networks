@@ -5,7 +5,6 @@ import "../styles/volume.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
-import { image } from "d3";
 
 
 const parseString = require("xml2js").parseString;
@@ -134,10 +133,16 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       }
     }, [])
 
+
+    // Parse the TEI file
  		let jsonPrefixed;
  		parseString(pageContext.prefixed, function(err, result) {
  			jsonPrefixed = result;
  		});
+
+    // Extract the PIDs from the parsed TEI
+    const prefixed = pageContext.prefixed;
+    const pids = getAllFacs(prefixed);
 
     // Get image URLs to send to OSD
     const imageUrls = useMemo(() => {
@@ -148,9 +153,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
       return imageUrls
     }, []);
-
-    const prefixed = pageContext.prefixed;
-    const pids = getAllFacs(prefixed)
 
     const [currentPage, setPage] = useState(0)
 
@@ -300,7 +302,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               required
               size="sm"
               type="number"
-              placeholder="jump to "
+              placeholder="jump to page..."
               onKeyDown={handleKeyDown}
             ></Form.Control>
             <Form.Control.Feedback type="invalid">
