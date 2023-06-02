@@ -121,7 +121,7 @@ export const Pb = (props) => {
         className="page-line tei-pb"
         id={"page" + props.teiNode.attributes.getNamedItem("n").value}
         data-facs={props.teiNode.attributes.getNamedItem("facs").value}
-      />
+        />
     </Behavior>
   );
 };

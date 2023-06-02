@@ -1,7 +1,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  counter-reset: pg;
+
 }
+
 
 hr.tei-pb.page-line {
   border: 4;
@@ -10,6 +13,20 @@ hr.tei-pb.page-line {
   background-color: var(--bs-primary);
   opacity: 0.75;
   border-radius: 3px;
+  // margin-left: 60px;
+  margin-bottom: 30px;
+  overflow: visible;
+
+  &:after{
+    counter-increment: pg;
+    content: "Page " counter(pg);
+    
+    font-size: small;
+    font-weight: bold;
+    // margin-left: -60px;
+    color: var(--bs-primary);
+    vertical-align: bottom;
+  }
 }
 
 .name-g-link {
