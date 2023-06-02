@@ -144,6 +144,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     const prefixed = pageContext.prefixed;
     const pids = getAllFacs(prefixed);
 
+    const [imagesFetched, setFetched] = useState(false)
     // Get image URLs to send to OSD
     const imageUrls = useMemo(() => {
       const imageUrls = []
@@ -151,21 +152,28 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
       const manifest = fetchAsync(url) // Get IIIF presentation manifest
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
+        .then(() => setFetched(true))
       return imageUrls
     }, []);
+    
+    if (imageUrls.length !== pids.length && imagesFetched ) {
+      console.warn("Mismatch between number of images & number of pagebreaks!");
+      console.log(pids.length + " pagebreaks");
+      console.log(imageUrls.length + " images (after filtering out wide images)");
+    }
 
     const [currentPage, setPage] = useState(0)
 
     const names = data.allCetei.nodes.map(node => node.parent.name).sort()
-
- 		// Navigate to next journal
- 		function getNextCetei() {
+    
+    // Navigate to next journal
+    function getNextCetei() {
       const name = pageContext.name
       const index = names.indexOf(name)
       if (index < names.length-1) {
         navigate("/journals/" + names[index+1])
       }
- 		}
+    }
     
  		//Sets the current cetei to the previous cetei
  		function getPrevCetei() {
@@ -357,7 +365,8 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               <Card.Body>
                 <Card.Text>
                   {getTitle(jsonPrefixed)}, 
-                  John Hunt Papers, Friends Historical Library of Swarthmore College 
+                  John Hunt Papers, SFHL-RG5-240, 
+                  Friends Historical Library of Swarthmore College 
                 </Card.Text>
               </Card.Body>
             </Card>
