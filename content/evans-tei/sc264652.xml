@@ -2240,36 +2240,38 @@ at East Greenwich the second sixth day of the fourth month
 
 <pb n="86"/>
 <note type="structure">This page has been divided into three columns, but only the first contains text</note>
-<list>
-<item><date when="1795-04-18">18 the 4 month 1795</date> Tappan on the west side of the North River forty miles from York</item>
+<div>
+<list><label><date when="1795-04-18">18 the 4 month 1795</date> Tappan on the west side of the North River forty miles from York</label></list>
+     
+<list type="gloss">
 <head> The names of friends whom I was nearly united to in my journey in that country towards Lake Champlain</head>
 
-<label>at Tappan: </label><item>Daniel Lawrence and his family</item>
+<label>At Tappan: </label><item>Daniel Lawrence and his family</item>
 
-<label>at Mulberry: </label><item>Edward Hallock</item>
+<label>At Mulberry: </label><item>Edward Hallock</item>
 
-<label>at Little Esopus: </label><item>Jacob Cotony, Alexander Young, then Jacob Lattin</item>
+<label>At Little Esopus: </label><item>Jacob Cotony, Alexander Young, then Jacob Lattin</item>
 
-<label>at Crum Elbow: </label><item>Isaac Frost and Solomon Frost his son</item>
+<label>At Crum Elbow: </label><item>Isaac Frost and Solomon Frost his son</item>
 
-<label>at the Creek meeting: </label><item>Isaac Hallock and wife Ruth and Jedediah Allen</item>
+<label>At the Creek meeting: </label><item>Isaac Hallock and wife Ruth and Jedediah Allen</item>
 
-<label>at Hudson, a little town on the North River the east side near two hundred miles up from York: </label><item>John Alsop, Elihew Bunker, Silas Bunker, Peter Barnard husband to Hannah Barnard</item>
+<label>At Hudson, a little town on the North River the east side near two hundred miles up from York: </label><item>John Alsop, Elihew Bunker, Silas Bunker, Peter Barnard husband to Hannah Barnard</item>
 
-<label>at Saratoga: </label><item>Rufus Hall and wife</item>
+<label>At Saratoga: </label><item>Rufus Hall and wife</item>
 
-<label>at Saratoga on the west side of the North River: </label><item>Ephraim Otis, Jonathan Grifes, Thomas Wilbur</item>
+<label>At Saratoga on the west side of the North River: </label><item>Ephraim Otis, Jonathan Grifes, Thomas Wilbur</item>
 
-<label>at Queensbury: </label><item>George Southwick and Daniel Hull</item>
+<label>At Queensbury: </label><item>George Southwick and Daniel Hull</item>
 
-<label>at Vergennes: </label><item>Richard Burling, <persName key="w6nc78ss">Thomas Robinson</persName> and wife Jemima. This is three hundred miles north of York and near Lake Champlain, at a little town at the falls of a creek</item>
+<label>At Vergennes: </label><item>Richard Burling, <persName key="w6nc78ss">Thomas Robinson</persName> and wife Jemima. This is three hundred miles north of York and near Lake Champlain, at a little town at the falls of a creek</item>
 
-<label>at Ferrisburgh: </label><item>the Widow Fish and Timothy Pigars and Joseph Hoeg and Jonathan Hoeg</item>
+<label>At Ferrisburgh: </label><item>the Widow Fish and Timothy Pigars and Joseph Hoeg and Jonathan Hoeg</item>
 
-<label>at Peru on the west side of Lake Champlain: </label><item>Richard Keas and wife</item>
+<label>At Peru on the west side of Lake Champlain: </label><item>Richard Keas and wife</item>
 
-<label>at the Grand Isle: </label><item>Daniel Hoeg and wife</item>
-</list>
+<label>At the Grand Isle: </label><item>Daniel Hoeg and wife</item>
+</list></div>
 <note type="structure">A page labeled “87” is blank</note>
 
 <div><pb n="88"/>
@@ -2292,6 +2294,7 @@ at East Greenwich the second sixth day of the fourth month
 <p>From Kennebec to Broad Bay the roads are mountainous, rough, and stony, yet we went with our carriages</p></div>
 
 <pb n="89"/>
+<div>
 <list>
 <head>1794 the names of my beloved friends eastward in my visit to New England and them parts</head>
 
@@ -2370,9 +2373,8 @@ at East Greenwich the second sixth day of the fourth month
 </list></item>
 </list>
 
-<p>These are both men and women I remember well in near feeling love in my travels in New England in the year 1794 their kindness felt, it never be forgot so long as I live here on earth, and when we have done here that we may be worthy to join that angelic host in praising God forever</p>
-
 <list>
+<head>These are both men and women I remember well in near feeling love in my travels in New England in the year 1794 their kindness felt, it never be forgot so long as I live here on earth, and when we have done here that we may be worthy to join that angelic host in praising God forever</head>
 <item><list>
 <head>Long Island:</head>
 <item><persName key="w6rj4s40">Elias Hicks</persName> and wife</item>
@@ -2473,9 +2475,9 @@ at East Greenwich the second sixth day of the fourth month
 <item>Israel Sabel</item>
 </list></item>
 </list>
+</div>
 
-
-
+<div>
 <list>
 <head>1794 visited these islands </head>
 <item>the size of New York in width miles four and in length fourteen</item>
@@ -2492,7 +2494,7 @@ at East Greenwich the second sixth day of the fourth month
 
 <item>Prudence in width one and in length nine</item>
 </list>
-     
+</div>     
 <div>
 <table>
 <head>Families of Friends</head>
