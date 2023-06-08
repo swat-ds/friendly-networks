@@ -2163,29 +2163,29 @@ x   Sandwich
      Salem
 x   Falmouth
 three of these I have been at
+<div>
 </div>
-    
-Salem quarterly meeting is held on the 5th day before 2nd. 6 day in the 9 month at Berwick 12th month at Dover 3rd month at Seabrook and 5th day before 1st. 6th day in the  6 month at Salem
+<div>
+<trailer>three of these I have been at</trailer>
+</div>
+<div>    
+<p>Salem Quarterly Meeting is held on the 5th day before 2nd 6 day in the 9 month at Berwick, 12th month at Dover, 3rd month at Seabrook, and 5th day before 1st. 6th day in the 6 month at Salem</p>
+
+<p>Falmouth Quarterly Meeting is held <del>at</del> on 5 day before the 1st 6 day in the 9th month at Vassalboro, 12th month at Durham, 3rd month at Windham, and 5th day before the last 6th day in the 5th month at Falmouth.</p>
 
 
 
-
-Falmouth quarterly meeting is held <del>at</del> on 5 day before  the 1st. 6 day in the 9th month at Vassalboro 12th month at Durham 3rd month at Windham and 5th day before the last 6th day in the 5th month at Falmouth
-
+<p>Sandwich quarter held at Bedford 1st 6 day in the 10th month</p>
 
 
-Sandwich quarter held at Bedford 1st 6 day in the 10th month
-
-
-at Rhode Island the fifth day before the second sixth day of 3 month
-at Smithfield the second sixth day of the tenth month
-at Swansea the second sixth day of the first month
-at East Greenwich the second sixth day of the fourth month
-
-
-
-
-
+<list>
+<item>at Rhode Island the fifth day before the second sixth day of 3 month</item>
+<item>at Smithfield the second sixth day of the tenth month</item>
+<item>at Swansea the second sixth day of the first month</item>
+<item>at East Greenwich the second sixth day of the fourth month</item>
+</list>
+</div>
+</div>
 <pb n="83"/>
 
 <div>
@@ -2195,7 +2195,7 @@ at East Greenwich the second sixth day of the fourth month
 
 <p>Nine Partners quarterly meeting is held the fourth days in the next week following in the said months the eleventh second fifth and eighth</p>
 
-<p>Easton <del>the</del> quarterly meeting is the forth day in the week next following in the same months eleventh second fifth and eighth these are of course one after the other from New York to Easton quarter after quarter</p>
+<p>Easton <del>the</del> quarterly meeting is the fourth day in the week next following in the same months eleventh second fifth and eighth these are of course one after the other from New York to Easton quarter after quarter</p>
 </div>
 
 <div>
@@ -2496,34 +2496,34 @@ at East Greenwich the second sixth day of the fourth month
 </list>
 </div>     
 <div>
-<table>
+<list type="gloss">
 <head>Families of Friends</head>
-<row><cell>in Boston</cell><cell>3</cell></row>
-<row><cell>in Lyn</cell><cell>80</cell></row>
-<row><cell>in Newbury</cell><cell>10</cell></row>
-<row><cell>in Amesbury</cell><cell>13</cell></row>
-<row><cell>in Seabrook</cell><cell>17</cell></row>
-<row><cell>in Newton</cell><cell>5</cell></row>
-<row><cell>in Epping</cell><cell>9</cell></row>
-<row><cell>in Weare</cell><cell>60</cell></row>
-<row><cell>in Dover</cell><cell>40</cell></row>
-<row><cell>in Kittery</cell><cell>6</cell></row>
-<row><cell>in Berwick</cell><cell>40</cell></row>
-<row><cell>in Durham</cell><cell>40</cell></row>
-<row><cell>in Lewiston</cell><cell>4</cell></row>
-<row><cell>in Greene</cell><cell>4</cell></row>
-<row><cell>in Winthrop</cell><cell>5</cell></row>
-<row><cell>in Fairfield</cell><cell>12</cell></row>
-<row><cell>in Vassalboro</cell><cell>24</cell></row>
-<row><cell>in Falmouth</cell><cell>30</cell></row>
-<row><cell>in Windham</cell><cell>30</cell></row>
-<row><cell>in Limington</cell><cell>3</cell></row>
-<row><cell>in Sandwich</cell><cell>16</cell></row>
-<row><cell>in Gilmanton</cell><cell>9</cell></row>
-<row><cell>in Pittsfield</cell><cell>10</cell></row>
-<row><cell>in Richmond</cell><cell>16</cell></row>
+<label>in Boston</label><item>3</item>
+<label>in Lyn</label><item>80</item>
+<label>in Newbury</label><item>10</item>
+<label>in Amesbury</label><item>13</item>
+<label>in Seabrook</label><item>17</item>
+<label>in Newton</label><item>5</item>
+<label>in Epping</label><item>9</item>
+<label>in Weare</label><item>60</item>
+<label>in Dover</label><item>40</item>
+<label>in Kittery</label><item>6</item>
+<label>in Berwick</label><item>40</item>
+<label>in Durham</label><item>40</item>
+<label>in Lewiston</label><item>4</item>
+<label>in Greene</label><item>4</item>
+<label>in Winthrop</label><item>5</item>
+<label>in Fairfield</label><item>12</item>
+<label>in Vassalboro</label><item>24</item>
+<label>in Falmouth</label><item>30</item>
+<label>in Windham</label><item>30</item>
+<label>in Limington</label><item>3</item>
+<label>in Sandwich</label><item>16</item>
+<label>in Gilmanton</label><item>9</item>
+<label>in Pittsfield</label><item>10</item>
+<label>in Richmond</label><item>16</item>
 <trailer>These the number of families of Friends beyond Boston, with some allowance for mistakes, by Joshua Evans</trailer>
-</table>
+</list>
 </div>
 
 <pb n="90"/>
