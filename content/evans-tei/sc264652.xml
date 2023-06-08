@@ -2240,34 +2240,36 @@ at East Greenwich the second sixth day of the fourth month
 
 <pb n="86"/>
 <note type="structure">This page has been divided into three columns, but only the first contains text</note>
-18 the 4 month 1795 Tappan on the west side of the North River forty miles from York the names of friends whom I was nearly united to in my journey in that country towards Lake Champlain
+<list>
+<item><date when="1795-04-18">18 the 4 month 1795</date> Tappan on the west side of the North River forty miles from York</item>
+<head> The names of friends whom I was nearly united to in my journey in that country towards Lake Champlain</head>
 
-at Tappan: Daniel Lawrence and his family
+<label>at Tappan: </label><item>Daniel Lawrence and his family</item>
 
-at Mulberry: Edward Hallock
+<label>at Mulberry: </label><item>Edward Hallock</item>
 
-at Little Esopus: Jacob Cotony, Alexander Young, then Jacob Lattin
+<label>at Little Esopus: </label><item>Jacob Cotony, Alexander Young, then Jacob Lattin</item>
 
-at Crum Elbow: Isaac Frost and Solomon Frost his son
+<label>at Crum Elbow: </label><item>Isaac Frost and Solomon Frost his son</item>
 
-at the Creek meeting: Isaac Hallock and wife Ruth and Jedediah Allen
+<label>at the Creek meeting: </label><item>Isaac Hallock and wife Ruth and Jedediah Allen</item>
 
-at Hudson, a little town on the North River the east side near two hundred miles up from York: John Alsop, Elihew Bunker, Silas Bunker, Peter Barnard husband to Hannah Barnard
+<label>at Hudson, a little town on the North River the east side near two hundred miles up from York: </label><item>John Alsop, Elihew Bunker, Silas Bunker, Peter Barnard husband to Hannah Barnard</item>
 
-at Saratoga: Rufus Hall and wife
+<label>at Saratoga: </label><item>Rufus Hall and wife</item>
 
-at Saratoga on the west side of the North River: Ephraim Otis, Jonathan Grifes, Thomas Wilbur
+<label>at Saratoga on the west side of the North River: </label><item>Ephraim Otis, Jonathan Grifes, Thomas Wilbur</item>
 
-at Queensbury: George Southwick and Daniel Hull
+<label>at Queensbury: </label><item>George Southwick and Daniel Hull</item>
 
-at Vergennes: Richard Burling, <persName key="w6nc78ss">Thomas Robinson</persName> and wife Jemima. This is three hundred miles north of York and near Lake Champlain, at a little town at the falls of a creek
+<label>at Vergennes: </label><item>Richard Burling, <persName key="w6nc78ss">Thomas Robinson</persName> and wife Jemima. This is three hundred miles north of York and near Lake Champlain, at a little town at the falls of a creek</item>
 
-at Ferrisburgh: the Widow Fish and Timothy Pigars and Joseph Hoeg and Jonathan Hoeg
+<label>at Ferrisburgh: </label><item>the Widow Fish and Timothy Pigars and Joseph Hoeg and Jonathan Hoeg</item>
 
-at Peru on the west side of Lake Champlain: Richard Keas and wife
+<label>at Peru on the west side of Lake Champlain: </label><item>Richard Keas and wife</item>
 
-at the Grand Isle: Daniel Hoeg and wife
-
+<label>at the Grand Isle: </label><item>Daniel Hoeg and wife</item>
+</list>
 <note type="structure">A page labeled “87” is blank</note>
 
 <div><pb n="88"/>
@@ -2518,11 +2520,13 @@ at the Grand Isle: Daniel Hoeg and wife
 <row><cell>in Gilmanton</cell><cell>9</cell></row>
 <row><cell>in Pittsfield</cell><cell>10</cell></row>
 <row><cell>in Richmond</cell><cell>16</cell></row>
-<head>These the number of families of Friends beyond Boston, with some allowance for mistakes, by Joshua Evans</head>
+<trailer>These the number of families of Friends beyond Boston, with some allowance for mistakes, by Joshua Evans</trailer>
 </table>
 </div>
 
 <pb n="90"/>
-John Hinchman
-Hannah Warrington
+<div><list>
+<item>John Hinchman</item>
+<item>Hannah Warrington</item>
+</list></div>
 </body></text></TEI>
