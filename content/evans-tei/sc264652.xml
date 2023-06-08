@@ -2124,59 +2124,58 @@ These are the places where I lodged and the names of the persons
 
 <pb n="82"/>
 <div>
-Monthly meetings
-Rhode Island quarterly meeting:
-     Richmond
-x   Uxbridge
-x   Smithfield
-x   South Kingstown
-x   Greenwich
-x   Providence
-     Swansea
-     Rhode Island
+<list>
+<head>Monthly meetings</head>
+<item><list>
+<head>Rhode Island quarterly meeting:</head>
+<item>Richmond</item>
+<item>Uxbridge*</item>
+<item>Smithfield*</item>
+<item>South Kingstown*</item>
+<item>Greenwich*</item>
+<item>Providence*</item>
+<item>Swansea</item>
+<item>Rhode Island</item>
+</list></item>
+<item><list>
+<head>Sandwich quarterly meeting:</head>
+<item>Sandwich</item>
+<item>Pembroke</item>
+<item>Ponaganset*</item>
+<item>Acoaxet*</item>
+<item>Nantucket*</item>
+<item>Bedford*</item>
+</list></item>
+<item><list>
+<head>Salem quarterly meeting:</head>
+<item>Salem</item>
+<item>Seabrook</item>
+<item>Dover*</item>
+</list></item>
+<item><list>
+<head>Falmouth quarterly meeting:</head>
+<item>Falmouth*</item>
+<item>Durham*</item>
+<item>Vassalboro*</item>
+</list></item>
+<trailer>those marked I have been at</trailer>
+</list>
 
-
-Sandwich quarterly meeting:
-     Sandwich
-     Pembroke
-x   Ponaganset
-x   Acoaxet
-x   Nantucket
-x   Bedford
-
-Salem quarterly meeting:
-     Salem
-     Seabrook
-x   Dover
-
-Falmouth quarterly meeting:
-x   Falmouth
-x   Durham
-x   Vassalboro
-
-those marked I have been at
-
-Quarterly meetings within
-Rhode Island yearly
-x   is Rhode Island
-x   Sandwich
-     Salem
-x   Falmouth
-three of these I have been at
-<div>
-</div>
-<div>
+<list>
+<head>Quarterly meetings within Rhode Island yearly is</head>
+<item>Rhode Island*</item>
+<item>Sandwich*</item>
+<item>Salem</item>
+<item>Falmouth*</item>
 <trailer>three of these I have been at</trailer>
-</div>
+</list>
+
 <div>    
 <p>Salem Quarterly Meeting is held on the 5th day before 2nd 6 day in the 9 month at Berwick, 12th month at Dover, 3rd month at Seabrook, and 5th day before 1st. 6th day in the 6 month at Salem</p>
 
 <p>Falmouth Quarterly Meeting is held <del>at</del> on 5 day before the 1st 6 day in the 9th month at Vassalboro, 12th month at Durham, 3rd month at Windham, and 5th day before the last 6th day in the 5th month at Falmouth.</p>
 
-
-
 <p>Sandwich quarter held at Bedford 1st 6 day in the 10th month</p>
-
 
 <list>
 <item>at Rhode Island the fifth day before the second sixth day of 3 month</item>
@@ -2200,32 +2199,32 @@ three of these I have been at
 
 <div>
 <head>the monthly meetings constituting each quarter</head>
-<table>
+<list>
 <head>New York Quarterly Meeting:</head>
-<row><cell></cell><cell>New York</cell></row>
-<row><cell>x</cell><cell>Westbury</cell></row>
-<row><cell>x</cell><cell>Jericho</cell></row>
-</table>
-<table>
+<item>New York</item>
+<item>Westbury*</item>
+<item>Jericho*</item>
+</list>
+<list>
 <head>Oblong Quarterly Meeting:</head>
-<row><cell>x</cell><cell>Oblong</cell></row>
-<row><cell>x</cell><cell>Purchase</cell></row>
-<row><cell></cell><cell>Chappaqua</cell></row>
-</table>
-<table>
+<item>Oblong*</item>
+<item>Purchase*</item>
+<item>Chappaqua</item>
+</list>
+<list>
 <head>Nine Partners Quarterly Meeting:</head>
-<row><cell>x</cell><cell>Nine Partners</cell></row>
-<row><cell>x</cell><cell>Hudson</cell></row>
-<row><cell></cell><cell>Cornwell</cell></row>
-<row><cell>x</cell><cell>Crick</cell></row>
-</table>
-<table>
+<item>Nine Partners*</item>
+<item>Hudson*</item>
+<item>Cornwell</item>
+<item>Crick*</item>
+</list>
+<list>
 <head>Saratoga Quarterly Meeting:</head>
-<row><cell>x</cell><cell>Saratoga</cell></row>
-<row><cell>x</cell><cell>Easton</cell></row>
-<row><cell>x</cell><cell>Danby</cell></row>
-<row><cell></cell><cell>East Hoosick</cell></row>
-</table>
+<item>Saratoga*</item>
+<item>Easton*</item>
+<item>Danby*</item>
+<item>East Hoosick</item>
+</list>
     
 <list> 
 <head>Quarterly meetings within New York Yearly Meeting is</head>
