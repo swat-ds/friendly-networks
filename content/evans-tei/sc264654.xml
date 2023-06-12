@@ -2,10 +2,10 @@
 <teiHeader>
 	<fileDesc>
 		<titleStmt>
-			<title></title>
+			<title/>
 		</titleStmt>
-		<publicationStmt></publicationStmt>
-		<sourceDesc></sourceDesc>
+		<publicationStmt/>
+		<sourceDesc/>
 	</fileDesc>
 </teiHeader>
 
@@ -359,7 +359,7 @@ These families are in Georgia which I visited in 1797.</p>
 This is so that Friends going there may not be at a loss as I was where to go.</p></div>
 
 	<div type="entry" n="1797-03-04"><dateline><date when="1797-03-04">4 the 3 month 1797</date></dateline><p> Was at Wrightsborough Month Meeting. It was large for that place, it being in Georgia, beyond South Carolina. Their business was but small and but poorly done. The prospect of things is very gloomy as to religion, for the land groweth under oppression and tyranny towards the blacks who they murder as it was inch by inch, by whipping some to death, and some with hunger and nakedness and an over proportion of labor and hard driving. But of this Friends stand clear, for they have none of this color amongst them as slaves. But there seems a cloud of thick darkness to hang over the land, I think it doth in some measure affect our Society in these southern lands. But I thought in the fore and latter part of this meeting I was favoured with power, as well in men’s and women’s part, to clear myself of the trust that I did believe the Lord had reposed in me, and felt my mind much relieved, for I was hardly able to hold up my head since I came into Georgia until now when I feel relief. It seemed an affecting time. Many was much tendered, both men and women; I thought it seemed to be a farewell season. I told them I hoped they would gather up every fragment and let nothing be lost, for I did believe a trying time was coming that would try the foundations of every one of them, and happy for them whose foundation was on the one sure rock Christ Jesus when the wind should blow and beat vehemently, and that they might know where the sheltering place is, for some would be ready to wish they had died before these days had come. These things I believed right to leave with them and felt clear of the burden that had lain on my spirit for many day. These things had this tendency to unite in near and dear feeling love to the shedding of many tears that I believe will not be soon forgot by them nor me we parted in near love. </p></div>
-<note type='structure'>[written delicately at bottom of page: "Richard" next two words illegible]</note>
+<note type="structure">[written delicately at bottom of page: "Richard" next two words illegible]</note>
 
 
 <div type="entry" n="1797-03-05">
@@ -1138,403 +1138,576 @@ Also new fashion- bonnets, black silk, silk gowns- those things are got in famil
 <note type="structure">[Page 66 blank]</note>
 
 <div><pb n="067"/>
-	<note type="structure" n="CONSIDER DELETING">The following pages include a list in two columns of the places to which Evans traveled and their distances, and with whom he stayed. Unfortunately the information in the two columns often do not correspond in the original manuscript. For the ease of the reader, efforts have been made to match the information in both columns. It is likely that many mistakes were made, but the following represents an attempt at an accurate breakdown of who Evans stayed with and where</note>
+	
+<table xml:id="journey1" next="#journey2">
+	<head>4 the 10 month 1797. Left home to pay a religious visit to the southern governments</head>
+	<row role="label"><cell/><cell>Miles</cell></row>
+	<row><cell>From Philadelphia to Baltimore</cell><cell>102</cell></row>
+	<row><cell>From thence to North Carolina</cell><cell>400</cell></row>
+	<row><cell>By going a little out of from the post road we lodged but one night at a tavern but passed through the settlement of Friends. From Philadelphia to the Yearly Meeting of North Carolina we was very kindly entertained by them and piloted on our way. Passed through the federal city then through Colchester and Dumfries. Crossed Rappahannock at Fredericksburg.</cell><cell/></row>
+	<row><cell>From thence to Newbegun meeting</cell><cell>4</cell></row>
+	<row><cell>From thence to Pasquotank narrows</cell><cell>10</cell></row>
+	<row><cell>From thence to Symonds Creek on</cell><cell>10</cell></row>
+	<row><cell>From thence to Sutton Creek</cell><cell>11</cell></row>
+	<row><cell>From thence to Welses</cell><cell>7</cell></row>
+	<row><cell>From thence to Beach Springs</cell><cell>3</cell></row>
+	<row><cell>From thence to Piney Wood</cell><cell>5</cell></row>
+	<row><cell>These are all within the Compass of Symonds Creek Quarter, North Carolina</cell><cell/></row>
+	<row><cell>From thence to Somerton</cell><cell>40</cell></row>
+	<row><cell>From thence to West Branch</cell><cell>20</cell></row>
+	<row><cell>From thence to Suffolk and back</cell><cell>18</cell></row>
+	<row><cell>Quarterly meeting and back</cell><cell>6</cell></row>
+	<row><cell>Thence to the Widow Busskin's</cell><cell>24</cell></row>
+	<row><cell>From thence to South Branch</cell><cell>10</cell></row>
+	<row><cell>From thence to the long bridge</cell><cell>10</cell></row>
+	<row><cell>From thence to Pasquotank narrows a second time</cell><cell>30</cell></row>
+	<row><cell>From thence to Camden Courthouse where we had a meeting</cell><cell>6</cell></row>
+	<row><cell>From thence to Great Swamp</cell><cell>16</cell></row>
+	<row><cell>From thence to Widow Richeson's</cell><cell>8</cell></row>
+	<row><cell>From thence to Piney Woods a second time to quarterly meeting</cell><cell>20</cell></row>
+	<row><cell>From thence to Benjamin Albertson's a second time</cell><cell>12</cell></row>
+	<row><cell>From thence to little River second time</cell><cell>4</cell></row>
+	<row><cell>From thence Nixonton where we had a meeting in the Courthouse in Pasquotank Courthouse</cell><cell>4</cell></row>
+	<row><cell>From thence back to Piney Woods a third time</cell><cell>20</cell></row>
+	<row><cell>From thence to Rich Square</cell><cell>60</cell></row>
+	<row><cell>From thence to Jack Swamp</cell><cell>30</cell></row>
+	<row><cell><del>From thence to Raleigh a little town North Carolina</del></cell><cell/></row>
+	<row><cell>The sum on this page is</cell><cell><gap reason="illegible"/></cell></row>
+</table>
 
-4 the 10 month 1797. Left home to pay a religious visit to the southern governments
-from Philadelphia to Baltimore miles 102	lodged at Joseph Tatnalls
-from thence to North Carolina - 400	then at Charles Johnsons
-by going a little out of from the post rode	then at Samuel Paxsons
-we lodged but one night at a tavern but	then at Samuel Snowden
-passed through the settlement of friends	then at a tavern
-from Philadelphia to the yearly meeting
-of North Carolina we was very kindly
-entertained by them and piloted on our way
-passed through the federal City then through
-Colchester and Dumfries Crossed Rappahannock	then passed Rappahannock River
-at Fredericksburg	at Fredericksburg
-	lodge at George Rogers not
-	a friend he was very kind
-	then at Thomas Harriss
-	then at Nathan Bells on Chickahominy River
-	then at Samuel Lads
-	James Hardgrove
-	Crossed James River at Westover
-	ferry lodged at White Honeycutts
-	then at Thomas Pretlows
-	then at Joshua Barless
-	then at Thomas Pretlows a second time
-	then at Robert Jordans at Suffolk
-from thence to Newberg meeting - 4	then at John Winslows in Carolina
-from thence to Pasquotank narrows -10	then at Joseph Wilsons
-	at Pasquotank County North Carolina
-from thence to Symonds Creek on - 10	then at Joshua Truebloods
-from thence to Sutton Creek - 11	then at Joseph Wilsons during the
-	yearly meeting of North Carolina
-from thence to Welses - 7	then at Nathan Morris
-from thence to Beach Springs - 3	then at Benjamin Albertsons
-from thence to Piney Wood - 5	then at Elias Albertsons
-these are all within the Compass of Symonds Creek
-Quarter North Carolina
-from thence to Somerton - 40	then at Jesse Coplands
-from thence to West Branch 20	then at the Widows Ann Seats
-	here is many friends during
-	the quarterly meeting
-	at West Branch Virginia
-from thence to Suffolk and back 18	then at Joseph Ricks
-quarterly meeting and back - 6
-thence to the Widow Bufskins - 24	then at the Widow Bufskins
-from thence to South Branch - 10	then at Robert Pools
-from thence to the long bridge 10	then at Edward Doughlies
-from thence to Pasquotank narrow	then at Abel Truebloods
-a second time ---- 30	at the Narrows of Pasquotank
-	then at Josiah Truebloods
-from thence to Camden
-Courthouse where we had a meeting 6	then at Christopher Whittuses
-from thence to great swamp 16	then at the Widow Brights
-	Camden County Carolina
-from thence to Widow Richesons 8	then at John Cornwells
-
-from thence to Piney Woods	then returned to Elias Albertsons
-a second time to quarterly meeting 20	at Piney Woods
-from thence to Benjamin
-Albertsons a second time - 12	then at Benjamin Albertsons
-from thence to little River second time 4
-from thence Nixonton where
-we had a meeting in the house
-Courthouse in Pasquotank Court - 4	Nathan Moreses
-from thence back to Piney wood
-a third time -------- 20	and back to Elias Albertsons
-from thence to Rich Square - 60	then to William Coplands
-	then at Mary Lawrence
-	then at Lawrence Smiths
-from thence to Jack Swamp - 30	then at John Pattersons at Jack Swamp
-the sum on this page is [illegible prob. 890]
+<list xml:id="lodgings1" next="#lodgings2">
+	<item>Lodged at Joseph Tatnall's</item>
+	<item>Then at Charles Johnson's</item>
+	<item>Then at Samuel Paxson's</item>
+	<item>Then at Samuel Snowden</item>
+	<item>Then at a tavern</item>
+	<item>Then passed Rappahannock River at Fredericksburg</item>
+	<item>Lodged at George Rogers, not a friend. He was very kind</item>
+	<item>Then at Thomas Harris's</item>
+	<item>Then at Nathan Bell's on Chickahominy River</item>
+	<item>Then at Samuel Ladd's</item>
+	<item>James Hardgrove</item>
+	<item>Crossed James River at Westover Ferry. Lodged at White Honeycutt's</item>
+	<item>Then at Thomas Pretlow's</item>
+	<item>Then at Joshua Barles's</item>
+	<item>Then at Thomas Pretlow's a second time</item>
+	<item>Then at Robert Jordan's at Suffolk</item>
+	<item>Then at John Winslow's in Carolina</item>
+	<item>Then at Joseph Wilson's at Pasquotank County North Carolina</item>
+	<item>Then at Joshua Trueblood's</item>
+	<item>Then at Joseph Wilson's during the Yearly Meeting of North Carolina</item>
+	<item>Then at Nathan Morris</item>
+	<item>Then at Benjamin Albertson's</item>
+	<item>Then at Elias Albertson's</item>
+	<item>Then at Jesse Copland's</item>
+	<item>Then at the Widows Ann Seat's. Here is many friends during the quarterly meeting at West Branch, Virginia.</item>
+	<item>Then at Joseph Rick's</item>
+	<item>Then at the Widow Busskin's</item>
+	<item>Then at Robert Pool's</item>
+	<item>Then at Edward Doughlies</item>
+	<item>Then at Abel Trueblood's at the Narrows of Pasquotank</item>
+	<item>Then at Josiah Trueblood's</item>
+	<item>Then at Christopher Whittus's</item>
+	<item>Then at the Widow Bright's, Camden County, Carolina</item>
+	<item>Then at John Cornwell's</item>
+	<item>Then returned to Elias Albertson's at Piney Woods</item>
+	<item>Then at Benjamin Albertson's</item>
+	<item>Then at Nathan Mores's</item>
+	<item>And back to Elias Albertson's</item>
+</list>
 <pb n="068"/>
-miles
-	then at Halifax at a tavern
-	then at one Perreys
-from thence to Raleigh a little town in
-North Carolina where the assembly sits - 100	then at Raleigh at one Atkinses at Raleigh
-	then at one Crawfords then at one Words
-from Raleigh to Corsesound month
-meeting in North Carolina - 170	then at Benjamin Stanton at Corse Sound
-	North Carolina
-in visiting the families of Corse Sound 30	then at Owen Stantons
-from thence to Clubfoot meeting - 10	then at Horton Howards
-from thence to Trent - 38	then at Joseph Dews North Carolina
-	then at Benjamin Stantons at Coventry
-from thence to upper Trent - 20	then at Malachi Jolley's at upper Trent
-from thence to Bear Creek meeting - 40	then at Thomas Outlands at Bear Creek
-from thence to Turner Swamp meet 20
-at Contentnea North Carolina	then at Thomas Hallowell North Carolina
-in visiting families at Upper and Lower Trent - 30	then at Benjamin Arnold
-from thence to Contentnea where the month meeting is held --- 4	then at Joshua Hastings
-from thence to Nahunta - 18
-from thence to Sarah Edgingtons - 2	then at Sarah Edgingtons
-from thence to great Contentnea - 12	then at Robert Felles
-from thence to Neuse meeting - 20	then at James Edgentons
-then back to Contentnea - 20	then at Joshua Hastings
-from thence to Holly Spring - 12	then at Thomas Horns
-from thence to Tar River - 38	then at Joseph Hall
-	then at Nathan Vicks this in North Carolina
-then back to Contentnea large house 38	then at Joshua Hastings five nights
-then to in visiting families
-at this place and meetings - 50	then at Silas Holloway
-	then at Isaac Dearken
-	then again at Benjamin Arnold five nights
-	then at James Edgentons
-from thence to Gum Swamp	then lodged two nights on the way
-the way we went is 178	towards Gum Swamp
-	then at Jonathan Merine
-from thence to Pee Dee - 22	then at John Thomas
-from thence to Charleston - 200	then at Thomas Moreman
-	then at Lewis Thomas
-	then at Charles Evens
-	then at Mallachiah Murphy
-	then at John James
-the 7th 2 month 1797. This day arrived at	then at Daniel Latham
-Charleston in good health and had cause to	in Charleston South Carolina
-bles magnify and praise the Lord who prepared
-the way for me through a dark land of
-deep oppression and Cruel treatment to the blacks
-with nakedness hunger and Cruel whipping
-from Charleston to Edisto meeting - 50	then at tavern where was many Negroes
-from thence to Martha Lewis - 4	then at Martha Lewis at Edisto near
-	the road leading from Charlestown to Georgia
-from thence to Augusta in Georgia - 100
-from thence to friends settlement in
-Georgia Columbia County - 30	then at William Farmer several nights
-from thence to Wrightsborough - 10	then at David Mote
-from thence to Williames - 10	then at Joseph Evans at Williams
-	in Georgia
-in visiting families within
-Wrightsborough month meeting 60
-on this page is 1222 [not accurate]
+<table xml:id="journey2" prev="#journey1" next="#journey3">
+	<row role="label"><cell/><cell>Miles</cell></row>
+	<row><cell>From thence to Raleigh, a little town in North Carolina where the assembly sits</cell><cell>100</cell></row>
+	<row><cell>From Raleigh to Core Sound Monthly Meeting in North Carolina</cell><cell>170</cell></row>
+	<row><cell>In visiting the families of Core Sound</cell><cell>30</cell></row>
+	<row><cell>From thence to Clubfoot meeting</cell><cell>10</cell></row>
+	<row><cell>From thence to Trent</cell><cell>38</cell></row>
+	<row><cell>From thence to Upper Trent</cell><cell>20</cell></row>
+	<row><cell>From thence to Bear Creek meeting</cell><cell>40</cell></row>
+	<row><cell>From thence to Turner Swamp meeting</cell><cell>20</cell></row>
+	<row><cell>At Contentnea North Carolina</cell><cell/></row>
+	<row><cell>In visiting families at Upper and Lower Trent</cell><cell>30</cell></row>
+	<row><cell>From thence to Contentnea where the monthly meeting is held</cell><cell>4</cell></row>
+	<row><cell>From thence to Nahunta</cell><cell>18</cell></row>
+	<row><cell>From thence to Sarah Edgington's</cell><cell>2</cell></row>
+	<row><cell>From thence to great Contentnea</cell><cell>12</cell></row>
+	<row><cell>From thence to Neuse meeting</cell><cell>20</cell></row>
+	<row><cell>Then back to Contentnea</cell><cell>20</cell></row>
+	<row><cell>From thence to Holly Spring</cell><cell>12</cell></row>
+	<row><cell>From thence to Tar River</cell><cell>38</cell></row>
+	<row><cell>Then back to Contentnea large house</cell><cell>38</cell></row>
+	<row><cell>Then to in visiting families at this place and meetings</cell><cell>50</cell></row>
+	<row><cell>From thence to Gum Swamp, the way we went is</cell><cell>178</cell></row>
+	<row><cell>From thence to Pee Dee</cell><cell>22</cell></row>
+	<row><cell>From thence to Charleston</cell><cell>200</cell></row>
+	<row><cell><div type="entry"><dateline>The <date when="1797-02-07">7th 2 month 1797</date>.</dateline> <ab>This day arrived at Charleston in good health and had cause to bless, magnify, and praise the Lord who prepared the way for me through a dark land of deep oppression and cruel treatment to the blacks with nakedness, hunger, and cruel whipping</ab></div></cell><cell/></row>
+	<row><cell>From Charleston to Edisto meeting</cell><cell>56</cell></row>
+	<row><cell>From thence to Martha Lewis</cell><cell>4</cell></row>
+	<row><cell>From thence to Augusta in Georgia</cell><cell>100</cell></row>
+	<row><cell>From thence to Friends settlement in Georgia, Columbia County</cell><cell>30</cell></row>
+	<row><cell>From thence to Wrightsborough</cell><cell>10</cell></row>
+	<row><cell>From thence to Williams</cell><cell>10</cell></row>
+	<row><cell>In visiting families within Wrightsborough month meeting</cell><cell>60</cell></row>
+	<row><cell>On this page is</cell><cell>1222 <note type="editorial">The actual total of the miles recorded on this page is 1342</note></cell></row>
+</table>
+
+<list xml:id="lodgings2" prev="#lodgings1" next="#lodgings3">
+	<item>Then to William Copland's</item>
+	<item>Then at Mary Lawrence</item>
+	<item>Then at Lawrence Smith's</item>
+	<item>Then at John Patterson's at Jack Swamp</item>
+	<item>Then at Halifax at a tavern</item>
+	<item>Then at one Perrey's</item>
+	<item>Then at Raleigh at one Atkins's at Raleigh</item>
+	<item>Then at one Crawford's then at one Word's</item>
+	<item>Then at Benjamin Stanton at Core Sound, North Carolina</item>
+	<item>Then at Owen Stanton's</item>
+	<item>Then at Horton Howard's</item>
+	<item>Then at Joseph Dew's, North Carolina</item>
+	<item>Then at Benjamin Stanton's at Coventry</item>
+	<item>Then at Malachi Jolley's at Upper Trent</item>
+	<item>Then at Thomas Outland's at Bear Creek</item>
+	<item>Then at Thomas Hallowell, North Carolina</item>
+	<item>Then at Benjamin Arnold</item>
+	<item>Then at Joshua Hastings</item>
+	<item>Then at Sarah Edgington's</item>
+	<item>Then at Robert Felles</item>
+	<item>Then at James Edgenton's</item>
+	<item>Then at Joshua Hastings</item>
+	<item>Then at Thomas Horn's</item>
+	<item>Then at Joseph Hall</item>
+	<item>Then at Nathan Vicks this in North Carolina</item>
+	<item>Then at Joshua Hastings five nights</item>
+	<item>Then at Silas Holloway</item>
+	<item>Then at Isaac Dearken</item>
+	<item>Then again at Benjamin Arnold five nights</item>
+	<item>Then at James Edgenton's</item>
+	<item>Then lodged two nights on the way towards Gum Swamp'</item>
+	<item>Then at Jonathan Merine</item>
+	<item>Then at John Thomas</item>
+	<item>Then at Thomas Moreman</item>
+	<item>Then at Lewis Thomas</item>
+	<item>Then at Charles Evens</item>
+	<item>Then at Mallachiah Murphy</item>
+	<item>Then at John James</item>
+	<item>Then at Daniel Latham in Charleston, South Carolina</item>
+	<item>Then at tavern where was many Negroes</item>
+	<item>Then at Martha Lewis at Edisto near the road leading from Charlestown to Georgia</item>
+	<item>Then at William Farmer several nights</item>
+	<item>Then at David Mote</item>
+	<item>Then at Joseph Evans at Williams in Georgia</item>
+</list>
 
 <pb n="069"/>
-from Wrightsborough in Georgia to	then at Francis Joneses
-Allwoods meeting in South Carolina - 60	then at Daniel Williams
-	then at James Ges
-	then at several places where I had lodged
-from thence to Bush River - 40 	then at Nathanial Hendersons	 	then at Henry Stidhams
-	then at Thomas Wilsons
-from thence to Padgetts Creek - 40	then at Ralph Hunts
-	then at Seth Wilsons
-from thence to Tiger River - 15	then at Eli Coocks
-	then at Isaac Hollingsworth
-to and from Tiger River on Cane Creek - 14	then at Joseph Thomsons
-from thence back to Bush River - 39	then at Isaac Cooks
-in South Carolina in this place bad rods	then at William Grigory
-from thence to Mud lick - 20
-from thence to Rabons Creek as we went 35
-though but twenty the nearest way	then at one Hustans
-towards the Allegheny mountains and so to Tennessee
-the first day lodged in the woods near the head
-of Saluda River in South Carolina 53
-then over the Blue Mountains and lodged
-in the woods a second night - 35
-then amongst the mountains had good
-entertainment at William Rises - 40	then at William Rises
-then in the Allegheny mountains that
-was of a towering height and lodged in the wood 22
-then over the mountains to George Husts 12	then at George Howards
-then to New Hope meeting in the Tennessee - 30	then at Cornal Rodors
-then to Lost Creek meeting - 60	then at John Millses
-	these are in the Tennessee government
-then to Grassy Valley beyond	then at Thomas Marshalls
-Holston River ten miles to a small settlement	at Grassy Valley ten miles beyond
-of friends where I had a meeting in Tennessee 18	Holston in the Tennessee government
-then back to Lost Creek - 18	then at Abraham Woodard
-then back to New Hope - 60	then at William Parkses
-	then at Ellis Ellises
-then to Limestone - 14	then at Thomas Emeries
-then to across Holston ferrey near
-the mouth of Autauga Tennessee -30	then at Abraham Smith
-then to Little Reed Island - 120	then at taverns
-	then at Isaac Greens
-then to Chestnut and back - 32	then at David Ballards
-then to Great Reed Island and back 24	then at Thomas Jessups
-then to the top of Allegheny mountain 12	then at Jacob Talberts
-then to Westfield meeting - 30	then at Bowtor Sumner
-then to Deep Creek - 32	then at John Burcham
-then to Hunting Creek - 13	then at Simon Healey
-then to the shallow ford - 22	then at James Burnsides
-then to Muddy Creek - 33	then at Samuel Welch
-then to Center - 30	then at Joseph Mendenhall
-then to Providence - 6	then at Enoch Macy
-then to Cane Creek monthly meeting 18	then at Jessey Wilson
-	then at John Davis
-then to spring monthly meeting - 9	then at Jonathan Lindley
-then to Eno meeting - 23	then at Joseph Thomson
-then back to Thomas Lindlies 28	then at Thomas Lindley
-then to Rocky River - 8
-then to Tisons meeting - 27	then at Sabra Gilbert
-North Carolina	deep River North Carolina
+<table xml:id="journey3" prev="#journey2" next="#journey4">
+	<row><cell>From Wrightsborough in Georgia to Allwoods meeting in South Carolina</cell><cell>60</cell></row>
+	<row><cell>From thence to Bush River</cell><cell>40</cell></row>
+	<row><cell>From thence to Padgetts Creek</cell><cell>40</cell></row>
+	<row><cell>From thence to Tiger River</cell><cell>15</cell></row>
+	<row><cell>To and from Tiger River on Cane Creek</cell><cell>14</cell></row>
+	<row><cell>From thence back to Bush River in South Carolina; in this place bad roads</cell><cell>39</cell></row>
+	<row><cell>From thence to Mud Lick</cell><cell>20</cell></row>
+	<row><cell>From thence to Rabons Creek as we went, though but twenty the nearest way</cell><cell>35</cell></row>
+	<row><cell>Towards the Allegheny mountains and so to Tennessee</cell><cell/></row>
+	<row><cell>The first day lodged in the woods near the head of Saluda River in South Carolina</cell><cell>53</cell></row>
+	<row><cell>Then over the Blue Mountains and lodged in the woods a second night</cell><cell>35</cell></row>
+	<row><cell>Then amongst the mountains had good entertainment at William Rise's</cell><cell>40</cell></row>
+	<row><cell>Then in the Allegheny mountains that was of a towering height and lodged in the wood</cell><cell>22</cell></row>
+	<row><cell>Then over the mountains to George Howard's</cell><cell>12</cell></row>
+	<row><cell>Then to New Hope Meeting in the Tennessee</cell><cell>30</cell></row>
+	<row><cell>Then to Lost Creek Meeting</cell><cell>60</cell></row>
+	<row><cell>Then to Grassy Valley beyond Holston River ten miles to a small settlement of Friends where I had a meeting, in Tennessee</cell><cell>18</cell></row>
+	<row><cell>Then back to Lost Creek</cell><cell>18</cell></row>
+	<row><cell>Then back to New Hope</cell><cell>60</cell></row>
+	<row><cell>Then to Limestone</cell><cell>14</cell></row>
+	<row><cell>Then to across Holston ferry near the mouth of Autauga, Tennessee</cell><cell>30</cell></row>
+	<row><cell>Then to Little Reed Island</cell><cell>120</cell></row>
+	<row><cell>Then to Chestnut and back</cell><cell>32</cell></row>
+	<row><cell>Then to Great Reed Island and back</cell><cell>24</cell></row>
+	<row><cell>Then to the top of Allegheny mountain</cell><cell>12</cell></row>
+	<row><cell>Then to Westfield meeting</cell><cell>30</cell></row>
+	<row><cell>Then to Deep Creek</cell><cell>32</cell></row>
+	<row><cell>Then to Hunting Creek</cell><cell>13</cell></row>
+	<row><cell>Then to the shallow ford</cell><cell>22</cell></row>
+	<row><cell>Then to Muddy Creek</cell><cell>33</cell></row>
+	<row><cell>Then to Center</cell><cell>30</cell></row>
+	<row><cell>Then to Providence</cell><cell>6</cell></row>
+	<row><cell>Then to Cane Creek Monthly Meeting</cell><cell>18</cell></row>
+	<row><cell>Then to Spring Monthly Meeting</cell><cell>9</cell></row>
+	<row><cell>Then to Eno meeting</cell><cell>23</cell></row>
+	<row><cell>Then back to Thomas Lindley's</cell><cell>28</cell></row>
+	<row><cell>Then to Rocky River</cell><cell>8</cell></row>
+	<row><cell>Then to Tison's meeting, North Carolina</cell><cell>27</cell></row>
+</table>
+
+<list xml:id="lodgings3" prev="#lodgings2" next="#lodgings4">
+	<item>Then at Francis Jones's</item>
+	<item>Then at Daniel William's</item>
+	<item>Then at James Ges</item>
+	<item>Then at several places where I had lodged</item>
+	<item>Then at Nathanial Henderson's</item>
+	<item>Then at Henry Stidham's</item>
+	<item>Then at Thomas Wilson's</item>
+	<item>Then at Ralph Hunt's</item>
+	<item>Then at Seth Wilson's</item>
+	<item>Then at Eli Coocks</item>
+	<item>Then at Isaac Hollingsworth</item>
+	<item>Then at Joseph Thomson's</item>
+	<item>Then at Isaac Cook's</item>
+	<item>Then at William Grigory</item>
+	<item>Then at one Hustan's</item>
+	<item>Then at William Rise's</item>
+	<item>Then at George Howard's</item>
+	<item>Then at Cornal Rodor's</item>
+	<item>Then at John Mills's</item>
+	<item>These are in the Tennessee government</item>
+	<item>Then at Thomas Marshall's at Grassy Valley, ten miles beyond Holston in the Tennessee
+				government</item>
+	<item>Then at Abraham Woodard</item>
+	<item>Then at William Parks's</item>
+	<item>Then at Ellis Ellis's</item>
+	<item>Then at Thomas Emery's</item>
+	<item>Then at Abraham Smith</item>
+	<item>Then at taverns</item>
+	<item>Then at Isaac Green's</item>
+	<item>Then at David Ballard's</item>
+	<item>Then at Thomas Jessup's</item>
+	<item>Then at Jacob Talbert's</item>
+	<item>Then at Bowtor Sumner</item>
+	<item>Then at John Burcham</item>
+	<item>Then at Simon Healey</item>
+	<item>Then at James Burnside's</item>
+	<item>Then at Samuel Welch</item>
+	<item>Then at Joseph Mendenhall</item>
+	<item>Then at Enoch Macy</item>
+	<item>Then at Jessey Wilson</item>
+	<item>Then at John Davis</item>
+	<item>Then at Jonathan Lindley</item>
+	<item>Then at Joseph Thomson</item>
+	<item>Then at Thomas Lindley</item>
+	<item>Then at Sabra Gilbert, Deep River, North Carolina</item>
+</list>
 
 <pb n="070"/>
-miles	lodging is in these places
-then back to the Ridge meeting 8	then at Hugh Morford
-then to Holly Spring - 22	then at David Kinworthy
-then to Back Creek quarter meeting 17	then at Thomas Winslow
-then to Heugh worrey meeting
-and to back Creek again - 20
-then to Mobra meeting - 12	then at Fenias Nixons
-then to Jewors a meeting in a print house 9	then at Enoch Macys
-then to Center month meeting - 14	then at Jessey Hendleys
-then to New Garden first day meeting 10	then at Timothy Russel
-then to Hopewell and back 12
-then to Sherborne - 14	then at Selvenas Gardner
-then to Dover and back - 15
-then to Belews Creek - 17
-then to Springfield - 22	then at Seth Cofings
-then to Deep River and back - 16
-then to Piney Woods and back - 18
-then to Deep River again - 8
-then to the Nicholite meeting - 4
-then to New Garden - 9	then at Matthews Cofings
-	here I lodged several nights at New Garden
-	in North Carolina in the 5 month 1797.
-	then at John Talberts
-so two and from thence and back in these	then at Obediah Herrises
-parts ---- 50	then at Timothy Russels several nights
-then to Bannister meeting - 90	then at Valentine Peggs
-	then at John Barnets
-	then at the Widow Hendrick
-then to Hills Creek - 40	then at Micaiah Smith
-then to Seneca - 12	then at Stevan Butler
-then to South River - 18	then at John Coffee
-then to Goose Creek - 27	then at Steven Morelin
-then to upper Goose Creek in Virginia 7
-then to James Johnsons and back - 20	then at James Johnsons
-	then at Joseph Wright
-then back to lower Goose Creek - 7	then at Samuel Davis
-then to Hills Creek again - 30	then at William Pidgeon
-	as I am a second time at Hills Creek
-then a second time at Seneca -
-to Seneca from Hills Creek - 12	I lodged a Daniel Strattons in Virginia
-then a second time 	then at Robert Hannows
-then to South River a second time the way we came 25	then at William Stantons
-in visiting the meetings and the
-Negroes about South River - 68	then at John Timborlak
-	then at Ekellas Douglas
-	then at John Linch
-then to Bannister a second time 60	then at Cristopher Johnson
-	then at the Widow Hendricks a second time
-then to the Widow Derhams - 65	then at the Widow Derhams
-then to Jared Ladds - 35	then at Richard Hanford
-	then at Jared Ladds
-then to Sadlors - 15	then at Sadlers
-then to grarley Run - 35	then at Joseph Butler
-then to Petersburgh a little town
-where we had a meeting in the Courthouse 12	then at Robert Pleasants
-then to Curls on James River - 18	then at James Ladds
-then to Wine Oak - 16	then at Benjamin Bates
-then to Skimino - 32	then at Joshua Bailey
-then to Stanton - 50 	then at Samson Stantons
-then to Jack swamp - 50	David Marmson
+<table xml:id="journey4" prev="#journey3" next="#journey5">
+	<row role="label"><cell/><cell>Miles</cell></row>
+	<row><cell>Then back to the Ridge meeting</cell><cell>8</cell></row>
+	<row><cell>Then to Holly Spring</cell><cell>22</cell></row>
+	<row><cell>Then to Back Creek Quarterly Meeting</cell><cell>17</cell></row>
+	<row><cell>Then to Uwharrie meeting and to Back Creek again</cell><cell>20</cell></row>
+	<row><cell>Then to Marlboro meeting</cell><cell>12</cell></row>
+	<row><cell>Then to Hover's, a meeting in a private house</cell><cell>9</cell></row>
+	<row><cell>Then to Center month meeting</cell><cell>14</cell></row>
+	<row><cell>Then to New Garden first day meeting</cell><cell>10</cell></row>
+	<row><cell>Then to {Holly Spring} Hopewell and back</cell><cell>12</cell></row>
+	<row><cell>Then to Sherborne</cell><cell>14</cell></row>
+	<row><cell>Then to Dover and back</cell><cell>15</cell></row>
+	<row><cell>Then to Belews Creek</cell><cell>17</cell></row>
+	<row><cell>Then to Springfield</cell><cell>22</cell></row>
+	<row><cell>Then to Deep River and back</cell><cell>16</cell></row>
+	<row><cell>Then to Piney Woods and back</cell><cell>18</cell></row>
+	<row><cell>Then to Deep River again</cell><cell>8</cell></row>
+	<row><cell>Then to the Nicholite meeting</cell><cell>4</cell></row>
+	<row><cell>Then to New Garden</cell><cell>9</cell></row>
+	<row><cell>So to and from thence and back in these parts</cell><cell>50</cell></row>
+	<row><cell>Then to Bannister meeting</cell><cell>90</cell></row>
+	<row><cell>Then to Hills Creek</cell><cell>40</cell></row>
+	<row><cell>Then to Seneca</cell><cell>12</cell></row>
+	<row><cell>Then to South River</cell><cell>18</cell></row>
+	<row><cell>Then to Goose Creek</cell><cell>27</cell></row>
+	<row><cell>Then to upper Goose Creek in Virginia</cell><cell>7</cell></row>
+	<row><cell>Then to James Johnson's and back</cell><cell>20</cell></row>
+	<row><cell>Then back to lower Goose Creek</cell><cell>7</cell></row>
+	<row><cell>Then to Hills Creek again</cell><cell>30</cell></row>
+	<row><cell>Then a second time at Seneca</cell><cell/></row>
+	<row><cell>To Seneca from Hills Creek</cell><cell>12</cell></row>
+	<row><cell>Then a second time</cell><cell/></row>
+	<row><cell>Then to South River a second time the way we came</cell><cell>25</cell></row>
+	<row><cell>In visiting the meetings and the Negroes about South River</cell><cell>68</cell></row>
+	<row><cell>Then to Bannister a second time</cell><cell>60</cell></row>
+	<row><cell>Then to the Widow Derham's</cell><cell>65</cell></row>
+	<row><cell>Then to Jared Ladd's</cell><cell>35</cell></row>
+	<row><cell>Then to Saddler's</cell><cell>15</cell></row>
+	<row><cell>Then to Gravelly Run</cell><cell>35</cell></row>
+	<row><cell>Then to Petersburgh, a little town where we had a meeting in the Courthouse</cell><cell>12</cell></row>
+	<row><cell>Then to Curles on James River</cell><cell>18</cell></row>
+	<row><cell>Then to Wine Oak</cell><cell>16</cell></row>
+	<row><cell>Then to Skimino</cell><cell>32</cell></row>
+	<row><cell>Then to Stanton</cell><cell>50</cell></row>
+	<row><cell>Then to Jack swamp</cell><cell>50</cell></row>
+</table>
 
+<list xml:id="lodgings4" prev="#lodgings3" next="#lodgings5">
+	<head>Lodging is in these places</head>
+	<item>Then at Hugh Morford</item>
+	<item>Then at David Kinworthy</item>
+	<item>Then at Thomas Winslow</item>
+	<item>Then at Phineas Nixon's</item>
+	<item>Then at Enoch Macy's</item>
+	<item>Then at Jessey Hendley's</item>
+	<item>Then at Timothy Russel</item>
+	<item>Then at Selvenas Gardner</item>
+	<item>Then at Seth Cofing's</item>
+	<item>Then at Matthews Cofing's. Here I lodged several nights at New Garden in North Carolina in the 5 month, 1797.</item>
+	<item>Then at John Talberts</item>
+	<item>Then at Obediah Harris's</item>
+	<item>Then at Timothy Russel's several nights</item>
+	<item>Then at Valentine Pegg's</item>
+	<item>Then at John Barnet's</item>
+	<item>Then at the Widow Hendrick</item>
+	<item>Then at Micaiah Smith</item>
+	<item>Then at Steven Butler</item>
+	<item>Then at John Coffee</item>
+	<item>Then at Steven Morelin</item>
+	<item>Then at James Johnson's</item>
+	<item>Then at Joseph Wright</item>
+	<item>Then at Samuel Davis</item>
+	<item>Then at William Pidgeon</item>
+	<item>As I am a second time at Hills Creek, I lodged a Daniel Stratton's in Virginia</item>
+	<item>Then at Robert Hannow's</item>
+	<item>Then at William Stanton's</item>
+	<item>Then at John Timborlak</item>
+	<item>Then at Ekellas Douglas</item>
+	<item>Then at John Linch</item>
+	<item>Then at Cristopher Johnson</item>
+	<item>Then at the Widow Hendrick's a second time</item>
+	<item>Then at the Widow Derham's</item>
+	<item>Then at Richard Hanford</item>
+	<item>Then at Jared Ladd's</item>
+	<item>Then at Saddler's</item>
+	<item>Then at Joseph Butler</item>
+	<item>Then at Robert Pleasant's</item>
+	<item>Then at James Ladd's</item>
+	<item>Then at Benjamin Bates</item>
+	<item>Then at Joshua Bailey</item>
+	<item>Then at Samson Stanton's</item>
+	<item>David Marmson</item>
+</list>
+	
 <pb n="071"/>
-then to James Jurkines - 27	at James Jurkinses
-then to Vise meeting - 17	then at Jorden Densons
-then to Black Creek - 22	then at Samson Stantons
-then to Stanton meeting - 17	then at Joseph Joneses
-then to Johnsons - 30	then at Joshua Raley
-then to Black Water - 24	then at Thomas Pretlows
-then to meeting and back and forward 20	these are a second time in Virginia
-then to Burley a second time 26	then at John Honeycut
-then to Petersburgh a second time 19	then at Robert Pleasants
-then to Black Creek on the East side
-of James River - 32	then at Gideon Ellenson
-then to Richmond - 30	then at Nathan Bells
-	then at George Winstons near Richmond
-then to Jeneto the way I went 34	then at Thomas Pleasants
-then to Cedar Creek - 20	then at Micajah Crew
-then back again - 10	then at Thomas Standley
-then to Caroline meeting - 32	then at Widow Harrises
-	then at Thomas Harris
-	then at Pleasants Terrels
-then to Stafford - 45	then at one Rogers a second time
-then to Southland - 25	then at Robert Painters
-then to Culpeper the way we Came 35	then at Jacob Pickering
-then to Crooked Run - 26	then at Cousin John Garwood
-then to Mount Pleasant - 12	then at Isaac Painters
-number of miles since I left home 4761
-this is in Virginia Winchester
-then to Bear Garden - 20	then at Isaac Perkinses
-	near Winchester in Virginia
-then to the glades or Sandy Creek 100	then at two taverns in Crossing the
-	Allegany mountains towards Redstone
-	then at John Willits
-then to Union meeting - 27	then at William Cammels
-then to Redstone - 12	then at Jonas Cattels
-then to <persName key="w6gj3q0h">Esther Hunts</persName> - 6	then at <persName key="w6gj3q0h">Esther Hunts</persName>
-then to sweetly meeting - 22	then at Finley Megrews
-then to Providence - 16	then at Allen Forquer
-then to Center the way we went - 9	then at <persName key="w6gj3q0h">Esther Hunts</persName>
-then to Providence a second time - 7	then at Margaret Brown
-these are on the western waters
-in the settlement of Redstone
-then to Fallowfield - 6
-then to pick run - 8	then at Mary Englands
-then to Westland - 8	then at David Graves
-these are on the westside the
-the Monongahela River
-then to William Dicksons - 11	then at William Dicksons
-then to Thomlinsons - 50	then at Thomlinsons
-then to Thomas Claytons - 50	then at Thomas Claytons in the mountain
-then to Bear Garden in the
-mountains --- 15	then at Richard Sidwell
-	then at Isaac Perkinses
-then to Beak Creek meeting 10	then at Joseph Bond
-	then at Richard Ridgaway
-then to the Ridge meeting - 7	then at Isaac Haines
-then to Winchester again - 5	then at Edward Conard
-this is on my return from Redstone	these are on the other side of
-	the mountains called Blue Ridge
-	near Winchester
+<table xml:id="journey5" prev="#journey4" next="#journey6">	
+	<row><cell>Then to James Jurkins</cell><cell>27</cell></row>
+	<row><cell>Then to Vise meeting</cell><cell>17</cell></row>
+	<row><cell>Then to Black Creek</cell><cell>22</cell></row>
+	<row><cell>Then to Stanton meeting</cell><cell>17</cell></row>
+	<row><cell>Then to Johnson's</cell><cell>30</cell></row>
+	<row><cell>Then to Black Water</cell><cell>24</cell></row>
+	<row><cell>Then to meeting and back and forward</cell><cell>20</cell></row>
+	<row><cell>Then to Burley a second time</cell><cell>26</cell></row>
+	<row><cell>Then to Petersburgh a second time</cell><cell>19</cell></row>
+	<row><cell>Then to Black Creek on the East side of James River</cell><cell>32</cell></row>
+	<row><cell>Then to Richmond</cell><cell>30</cell></row>
+	<row><cell>Then to Geneto; the way I went</cell><cell>34</cell></row>
+	<row><cell>Then to Cedar Creek</cell><cell>20</cell></row>
+	<row><cell>Then back again</cell><cell>10</cell></row>
+	<row><cell>Then to Caroline meeting</cell><cell>32</cell></row>
+	<row><cell>Then to Stafford</cell><cell>45</cell></row>
+	<row><cell>Then to Southland</cell><cell>25</cell></row>
+	<row><cell>Then to Culpeper; the way we came</cell><cell>35</cell></row>
+	<row><cell>Then to Crooked Run</cell><cell>26</cell></row>
+	<row><cell>Then to Mount Pleasant</cell><cell>12</cell></row>
+	<row><cell>Number of miles since I left home</cell><cell>4761</cell></row>
+	<row><cell>This is in Virginia Winchester</cell><cell/></row>
+	<row><cell>Then to Bear Garden</cell><cell>20</cell></row>
+	<row><cell>Then to {Redstone} the glades or Sandy Creek</cell><cell>100</cell></row>
+	<row><cell>Then to Union meeting</cell><cell>27</cell></row>
+	<row><cell>Then to Redstone</cell><cell>12</cell></row>
+	<row><cell>Then to <persName key="w6gj3q0h">Esther Hunts</persName></cell><cell>6</cell></row>
+	<row><cell>Then to Sewickley meeting</cell><cell>22</cell></row>
+	<row><cell>Then to Providence</cell><cell>16</cell></row>
+	<row><cell>Then to Center; the way we went</cell><cell>9</cell></row>
+	<row><cell>Then to Providence a second time</cell><cell>7</cell></row>
+	<row><cell>These are on the western waters in the settlement of Redstone</cell><cell/></row>
+	<row><cell>Then to Fallowfield</cell><cell>6</cell></row>
+	<row><cell>Then to Pike Run</cell><cell>8</cell></row>
+	<row><cell>Then to Westland</cell><cell>8</cell></row>
+	<row><cell>These are on the west side the Monongahela River</cell><cell/></row>
+	<row><cell>Then to William Dickson's</cell><cell>11</cell></row>
+	<row><cell>Then to Tomlinson's</cell><cell>50</cell></row>
+	<row><cell>Then to Thomas Clayton's</cell><cell>50</cell></row>
+	<row><cell>Then to Bear Garden in the mountains</cell><cell>15</cell></row>
+	<row><cell>Then to Beak Creek meeting</cell><cell>10</cell></row>
+	<row><cell>Then to the Ridge meeting</cell><cell>7</cell></row>
+	<row><cell>Then to Winchester again</cell><cell>5</cell></row>
+	<row><cell>This is on my return from Redstone</cell><cell/></row>
+</table>
+
+<list xml:id="lodgings5" prev="#lodgings4" next="#lodgings6">
+	<item>At James Jurkins's</item>
+	<item>Then at Jordan Denson's</item>
+	<item>Then at Samson Stanton's</item>
+	<item>Then at Joseph Jones's</item>
+	<item>Then at Joshua Raley</item>
+	<item>Then at Thomas Pretlow's</item>
+	<item>These are a second time in Virginia</item>
+	<item>Then at John Honeycut</item>
+	<item><add>Then at Robert Pleasant's</add></item>
+	<item>Then at Gideon Ellenson</item>
+	<item>Then at Nathan Bell's</item>
+	<item>Then at George Winston's near Richmond</item>
+	<item>Then at Thomas Pleasant's</item>
+	<item>Then at Micajah Crew</item>
+	<item>Then at Thomas Standley</item>
+	<item>Then at Widow Harris's</item>
+	<item>Then at Thomas Harris</item>
+	<item>Then at Pleasants Terrel's</item>
+	<item>Then at one Rogers a second time</item>
+	<item>Then at Robert Painter's</item>
+	<item>Then at Jacob Pickering</item>
+	<item>Then at Cousin John Garwood</item>
+	<item>Then at Isaac Painter's</item>
+	<item>Then at Isaac Perkins's near Winchester in Virginia</item>
+	<item>Then at two taverns in Crossing the Allegany mountains towards Redstone</item>
+	<item>Then at John Willits</item>
+	<item>Then at William Cammel's</item>
+	<item>Then at Jonas Cattel's</item>
+	<item>Then at <persName key="w6gj3q0h">Esther Hunt's</persName></item>
+	<item>Then at Finley Megrew's</item>
+	<item>Then at Allen Farquar</item>
+	<item>Then at <persName key="w6gj3q0h">Esther Hunt's</persName></item>
+	<item>Then at Margaret Brown</item>
+	<item>Then at Mary England's</item>
+	<item>Then at David Grave's</item>
+	<item>Then at William Dickson's</item>
+	<item>Then at Tomlinson's</item>
+	<item>Then at Thomas Clayton's in the mountain</item>
+	<item>Then at Richard Sidwell</item>
+	<item>Then at Isaac Perkins's</item>
+	<item>Then at Joseph Bond</item>
+	<item>Then at Richard Ridgaway</item>
+	<item>Then at Isaac Haines</item>
+	<item>Then at Edward Conard</item>
+	<item>These are on the other side of the mountains called Blue Ridge, near Winchester</item>
+</list>
 
 <pb n="072"/>
-miles
-then to Hopewell meeting - 8	then at Mahlon Jenney
-then to Middle Creek - 14	then at
-then to Bulskin meeting - 17	then at Evan Thomas
-then to the gap meeting - 19	then at John Thomas
-then to Fairfax - 8	then Widow Ballinger
-then to Goose Creek - 8
-then to South Fork and back to Fairfax 28
-then to Indian spring - 64	then at George Rewseys
-then to Sandy Spring - 20	then at Joseph Elgors
-then to Bush Creek - 25	then at Isaac Hendrick
-then to Pine Creek - 20	then at Nicolas Wireman
-then to Menallen - 30	then at Benjamin Walker
-then to Huntington - 10	then at James Bean
-then to Worington - 12	then at William Willits
-then to Neberrey - 12
-then to York --- 13
-then to Thomas Mores and back 24	then at Thomas Mors near
-	the River Susquehanna on the
-	south side
-	then at Joseph Updegraff
-then to fawn meeting - 26	then at Richard Webb
-to this place is miles since I left
-home in these southern governments 5526
-then to Deer Creek - 18	then at Asif
-then to fawls - 20	then at Joshua Hursbands
-then to Gunpowder - 20	then at Joshua Staplor
-	then at Moses Dilwin
-then to Bush - 32	then at Daniel Robinson
-	then at William Coles
-then to Deer Creek again - 13	then at Hugh Elye
-	then at Isaac Wilsons
-	then at George Churchmans
-then to East Nottingham - 20	then at Benjamin Masons
-then to Little Britain - 13	then at Jean Runels
-then to Eastland - 4	then at [add: Isaac] [del: Nathan] Haines
-then to West Nottingham - 8	then at Thomas Rogers
-then to East Nottingham - 7	then at Oliver Cork
-then to the head of scefras - 36	then at John Corse
-then to Chester - 30	then at the Widow Brown
-then to the head of Chester - 28	then at David Lambs
-then to Choptank bridge - 30	then at Joseph Turner
-then to center a Nicholite meeting - 10	then at James Harrises a Nicholite
-then to Westfork another Nicholite - 12
-then to Cold Spring - 40	then at Jacob Rights
-then to Malford - 20	then at Sarah Rolands
-then to Mother Cil - 17	then at Isaac Rolands
-then to third Haven - 50	then at John Regorstors
-	then at Howel Powel
-then to Massey Creek and back - 21	then at [del: Sarah] Rebecca Bartlet
-then to Choptank and back - 21
-then to Bayside and back - 40
-then to Choptank bridge again 25	then at Bacholer Chans
-	these are in the Lower Counties between
-	Chesapeake bay and Delaware river
+<table xml:id="journey6" prev="#journey5" next="#journey7">
+	<row role="label"><cell/><cell>Miles</cell></row>
+	<row><cell>Then to Hopewell meeting</cell><cell>8</cell></row>
+	<row><cell>Then to Middle Creek</cell><cell>14</cell></row>
+	<row><cell>Then to Bulskin meeting</cell><cell>17</cell></row>
+	<row><cell>Then to the Gap meeting</cell><cell>19</cell></row>
+	<row><cell>Then to Fairfax</cell><cell>8</cell></row>
+	<row><cell>Then to Goose Creek</cell><cell>8</cell></row>
+	<row><cell>Then to South Fork and back to Fairfax</cell><cell>28</cell></row>
+	<row><cell>Then to Indian spring</cell><cell>64</cell></row>
+	<row><cell>Then to Sandy Spring</cell><cell>20</cell></row>
+	<row><cell>Then to Bush Creek</cell><cell>25</cell></row>
+	<row><cell>Then to Pine Creek</cell><cell>20</cell></row>
+	<row><cell>Then to Menallen</cell><cell>30</cell></row>
+	<row><cell>Then to Huntington</cell><cell>10</cell></row>
+	<row><cell>Then to Warrington</cell><cell>12</cell></row>
+	<row><cell>Then to Newberry</cell><cell>12</cell></row>
+	<row><cell>Then to York</cell><cell>13</cell></row>
+	<row><cell>Then to Thomas More's and back</cell><cell>24</cell></row>
+	<row><cell>Then to Fawn meeting</cell><cell>26</cell></row>
+	<row><cell>To this place is miles since I left home in these southern governments</cell><cell>5526</cell></row>
+	<row><cell>Then to Deer Creek</cell><cell>18</cell></row>
+	<row><cell>Then to Falls</cell><cell>20</cell></row>
+	<row><cell>Then to Gunpowder</cell><cell>20</cell></row>
+	<row><cell>Then to Bush</cell><cell>32</cell></row>
+	<row><cell>Then to Deer Creek again</cell><cell>13</cell></row>
+	<row><cell>Then to East Nottingham</cell><cell>20</cell></row>
+	<row><cell>Then to Little Britain</cell><cell>13</cell></row>
+	<row><cell>Then to Eastland</cell><cell>4</cell></row>
+	<row><cell>Then to West Nottingham</cell><cell>8</cell></row>
+	<row><cell>Then to East Nottingham</cell><cell>7</cell></row>
+	<row><cell>Then to the head of Sassafras</cell><cell>36</cell></row>
+	<row><cell>Then to Chester</cell><cell>30</cell></row>
+	<row><cell>Then to the head of Chester</cell><cell>28</cell></row>
+	<row><cell>Then to Choptank bridge</cell><cell>30</cell></row>
+	<row><cell>Then to Center, a Nicholite meeting</cell><cell>10</cell></row>
+	<row><cell>Then to Westfork, another Nicholite</cell><cell>12</cell></row>
+	<row><cell>Then to Cold Spring</cell><cell>40</cell></row>
+	<row><cell>Then to Milford</cell><cell>20</cell></row>
+	<row><cell>Then to Motherkiln</cell><cell>17</cell></row>
+	<row><cell>Then to Third Haven</cell><cell>50</cell></row>
+	<row><cell>Then to Massey Creek and back</cell><cell>21</cell></row>
+	<row><cell>Then to Choptank and back</cell><cell>21</cell></row>
+	<row><cell>Then to Bayside and back</cell><cell>40</cell></row>
+	<row><cell>Then to Choptank bridge again</cell><cell>25</cell></row>
+</table>
+
+
+<list xml:id="lodgings6" prev="#lodgings5" next="#lodgings7">
+	<item>Then at Mahlon Jenney</item>
+	<item>Then at</item>
+	<item>Then at Evan Thomas</item>
+	<item>Then at John Thomas</item>
+	<item>Then Widow Ballinger</item>
+	<item>Then at George Rewsey's</item>
+	<item>Then at Joseph Elgor's</item>
+	<item>Then at Isaac Hendrick</item>
+	<item>Then at Nicolas Wireman</item>
+	<item>Then at Benjamin Walker</item>
+	<item>Then at James Bean</item>
+	<item>Then at William Willits</item>
+	<item>Then at Thomas More's near the River Susquehanna on the south side</item>
+	<item>Then at Joseph Updegraff</item>
+	<item>Then at Richard Webb</item>
+	<item>Then at Asif</item>
+	<item>Then at Joshua Hursband's</item>
+	<item>Then at Joshua Stapler</item>
+	<item>Then at Moses Dillwyn</item>
+	<item>Then at Daniel Robinson</item>
+	<item><add>Then at William Coles</add></item>
+	<item>Then at Hugh Elye</item>
+	<item>Then at Isaac Wilson's</item>
+	<item>Then at George Churchman's</item>
+	<item>Then at Benjamin Mason's</item>
+	<item>Then at Jean Runel's</item>
+	<item>Then at [add: Isaac] [del: Nathan] Haines</item>
+	<item>Then at Thomas Rogers</item>
+	<item>Then at Oliver Cork</item>
+	<item>Then at John Corse</item>
+	<item>Then at the Widow Brown</item>
+	<item>Then at David Lamb's</item>
+	<item>Then at Joseph Turner</item>
+	<item>Then at James Harris's a Nicholite</item>
+	<item>Then at Jacob Right's</item>
+	<item>Then at Sarah Roland's</item>
+	<item>Then at Isaac Roland's</item>
+	<item>Then at John Regorstor's</item>
+	<item>Then at Howel Powel</item>
+	<item>Then at <del>Sarah</del> Rebecca Bartlet</item>
+	<item>Then at Bacholer Chans</item>
+	<item>These are in the Lower Counties between Chesapeake bay and Delaware river</item>
+</list>
 
 <pb n="073"/>
-[on this page the column on the left includes the distances traveled and the column on the right includes the persons with whom Evans lodged]
+<list xml:id="lodgings7" prev="#lodgings6">	
+	<item>Then at <persName key="w6cz4d1t">Warner Mifflin</persName></item>
+	<item>Then at Clayton Cougel</item>
+	<item>Then at Sarah Hanson</item>
+	<item>Then at Daniel Williams</item>
+	<item>Then at Joseph Tatnall's a second time</item>
+</list>
 
-then at <persName key="w6cz4d1t">Warner Maflin</persName> 	then to Motherkill [modern Murderkil] - 24
-then at Clayton Cougel	then to Little Creek - 15
-	then to and from meetings - 12
-then at Sarah Hanson	then to Whitley Creek 12
-	then to Appequimeny - 12
-then at Daniel Williams	then to Wilmington - 23
-then at Joseph Tatnalls a second time	then to Philadelphia - 27</div>
-
-
-
+<table xml:id="journey7" prev="#journey6">
+	<row><cell>Then to Motherkill</cell><cell>24</cell></row>
+	<row><cell>Then to Little Creek</cell><cell>15</cell></row>
+	<row><cell>Then to and from meetings</cell><cell>12</cell></row>
+	<row><cell>Then to Whitley Creek</cell><cell>12</cell></row>
+	<row><cell>Then to Appequimeny</cell><cell>12</cell></row>
+	<row><cell>Then to Wilmington</cell><cell>23</cell></row>
+	<row><cell>Then to Philadelphia</cell><cell>27</cell></row>
+	<row><cell>Then to my house</cell><cell>5</cell></row>
+</table>
+</div>
 
 <div type="entry" n="1797-12-01"><dateline><date when="1797-12-01">1 the 12 month 1797</date></dateline><p> Returned home from a visit to all the southern governments on the west side Susquehanna as far as Georgia, not missing but four meetings. In all that way, it took me fourteen months wanting two days. When I Came home, found my wife and Children all well but many of my friends number to the silent grave, both aged, middle aged, and youth, so that we see no age is exempted from the stroke of that undeniable mace- death, ready or not ready. Oh that we all may often consider our latter end and be wise so that none may be found in a state unprepared to leave this world not having their accounts in readiness, and so not be worthy to receive the answer of well done good and faithful servant.</p></div>
 
-<floatingText>
+<div>
 <pb n="074"/>
-[This page is written in handwriting different from that of the author of the rest of the manuscript and describes the last days of Evans's life, although the journal continues for several pages after this in the original handwriting]
+<note type="structure">This page is written in handwriting different from that of the author of the rest of the manuscript and describes the last days of Evans's life, although the journal continues for several pages after this in the original handwriting</note>
 
-On getting into New Jersey again, he appeared at first unusually cheerful, saying he felt easy in his mind and clear of America, but soon after had to pass through a scene of sore conflicts on account of some near connections who were chargeable with misconduct, and with whom it is believed he labored in measure successfully within the short space of his life after returning home, as he lived but six days. On the day of his decease, being the 7th of the 7th mo 1798, he rose early in the morning (as was his practice) and went into the field near his house to work among the sweet potatoes. About sunrise, he was observed to lean on his hoe, which is supposed to be the time he began to feel himself unwell. Soon after, he hasted to the house, his wife being yet in bed. Casting himself on the bed by his wife, he told her he had a pain in his breast. As soon as he lay down, his wife hearing an unusual noise, rose up and asked what is the matter, but to her great surprise she perceived his breath was gone, having instantly expired in a few minutes after he left the field. The weather being very warm, he was entered in the grave yard belonging to friends at Haddonfield the next day, his corpse being accompanied by a large concourse of his friends and neighbours. After his interment, a solemn silence ensued, and in the efficacy of divine power, testimony was born to the gracious dealings of our Heavenly Father who had led this our valuable friend through various unusual trials and exercises in the course of his pilgrimage through life, and at the solemn close had granted that in an unusual manner, he should be exempt from bodily pain except for a few minutes and thus be taken as a shock of corn gathered in due season.
-</floatingText>
+<p>On getting into New Jersey again, he appeared at first unusually cheerful, saying he felt easy in his mind and clear of America, but soon after had to pass through a scene of sore conflicts on account of some near connections who were chargeable with misconduct, and with whom it is believed he labored in measure successfully within the short space of his life after returning home, as he lived but six days. On the day of his decease, being the 7th of the 7th mo 1798, he rose early in the morning (as was his practice) and went into the field near his house to work among the sweet potatoes. About sunrise, he was observed to lean on his hoe, which is supposed to be the time he began to feel himself unwell. Soon after, he hasted to the house, his wife being yet in bed. Casting himself on the bed by his wife, he told her he had a pain in his breast. As soon as he lay down, his wife hearing an unusual noise, rose up and asked what is the matter, but to her great surprise she perceived his breath was gone, having instantly expired in a few minutes after he left the field. The weather being very warm, he was entered in the grave yard belonging to friends at Haddonfield the next day, his corpse being accompanied by a large concourse of his friends and neighbours. After his interment, a solemn silence ensued, and in the efficacy of divine power, testimony was born to the gracious dealings of our Heavenly Father who had led this our valuable friend through various unusual trials and exercises in the course of his pilgrimage through life, and at the solemn close had granted that in an unusual manner, he should be exempt from bodily pain except for a few minutes and thus be taken as a shock of corn gathered in due season.</p>
+</div>
 
-<div type="entry" n="1798-04-01/1798-04-09"><pb n="075"/>
-[Original writing resumes]
+<pb n="075"/>
+<note type="structure">Original handwriting resumes</note>
+<div type="entry" n="1798-04-01/1798-04-09">
 <p><date from="1798-04-01" to="1798-04-09">From the first to the ninth of the 4 month 1798,</date> I visited several monthly meetings, although several of them was but poor low seasons. Yet, I thought I had some acceptable service, have no cause to murmur. I had to mention that of giving children three names, in order as they say to keep in remembrance some of their kindred, as also some single letter between the two names. This the rich and great have a plea for to distinguish where there is two of one name, but I have seen it seldom done amongst the poor folks as in like manner. Some words gathered from the top of the high tree of knowledge and wisdom of this world, which is foolishness with God and ever will be.</p></div>
 
 <div type="entry" n="1798-04-09/1798-04-17"><p><date from="1798-04-09" to="1798-04-17">From this to the 17 of the 4 month 1798</date>, have had much close labor in dealing with some of my neighbors who has been likely to spend much in the law, which always giveth me pain to hear of money spent that way, believing all matters might be settled much better by Crossing men themselves and save much Cost. This several days of my time has taken up in with a favorable prospect. The 9 of this month, I laid before a desire I had to be at Baltimore quarter and Virginia yearly meeting and to take some meeting that I had passed by last summer. Friends granted me liberty to proceed as we should open but am yet defined in truth’s service.</p></div>
@@ -1700,5 +1873,7 @@ then to Merion
 [The last words are in a different handwriting, the same as that in which the account of Evans's death is written]
 
 An account of his last illness and death 4 leaves back
+
+
 </body></text>
 </TEI>
