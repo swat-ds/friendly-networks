@@ -1349,7 +1349,7 @@ those that did go into it should consider well the grounds of their movement, an
 <pb n="73"/>
 <div>
 <label>Miles</label>
-<table>
+<table xml:id="journey1" next="#journey2">
 	<head>23 the 4 month 1794 the number of miles from place to place in my journey eastward through New England</head>
 	<row role="label"><cell/><cell/><cell>Miles</cell></row>
 	<row><cell>From my home to <persName key="w6vv2hqk">Abraham Warrington</persName>’s</cell><cell/><cell>10</cell></row>
@@ -1400,8 +1400,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell/><cell/><cell>543<note type="editorial">Actually sums to 541</note></cell></row>
 	<row><cell/><cell/><cell><del>556</del></cell></row>
 </table>
-
-<list>
+<list xml:id="lodgings1" next="#lodgings2">
 	<head>Where I lodged and the names</head>
 	<item>Long Island</item>
 	<item>Benjamin Hicks</item>
@@ -1451,8 +1450,10 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>Then William Roach three nights</item>
 	<item>Then William Brown, Nantucket, the 30 till the 7 of the 7 month 1794</item>
 </list>
+
 <pb n="74"/>
-<table>
+	
+<table xml:id="journey2" prev="#journey1" next="#journey3">
 	<head>Miles</head>
 	<row><cell>From thence to Little Compton</cell><cell>roads bad</cell><cell>8</cell></row>
 	<row><cell>From thence to New Rochelle</cell><cell>bad</cell><cell>6</cell></row>
@@ -1495,9 +1496,8 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Newport Rhode Island</cell><cell/><cell>8</cell></row>
 	<row><cell/><cell/><cell>506</cell></row>
 </table>
-
-<label><date>8 the 7 month 1794</date></label>
-<list>
+<list xml:id="lodgings2" prev="#lodgings1" next="#lodgings3">
+	<head><date>8 the 7 month 1794</date></head>
 	<item>then William Coffin two nights at the Vineyard</item>
 	<item>then Richard Lacks</item>
 	<item>then John Wing</item>
@@ -1545,9 +1545,9 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>then Alice Nedom</item>
 </list>
 
-
 <pb n="75"/>
-<table>
+
+<table xml:id="journey3" prev="#journey2" next="#journey4">
 	<head>The distance from meeting to meeting</head>
 	<row role="label"><cell/><cell/><cell>Miles</cell></row>
 	<row><cell>From thence to Updike’s Newtown</cell><cell>by water</cell><cell>14</cell></row>
@@ -1591,7 +1591,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Bath</cell><cell/><cell>45</cell></row>
 	<row rend="sum"><cell/><cell/><cell>634<lb/><del>589</del></cell></row>
 </table>
-<list>
+<list xml:id="lodgings3" prev="#lodgings2" next="#lodgings4">
 	<item>Newbury, Lewis Davis</item>
 	<item>Then Stephen Gove's</item>
 	<item>Then Ezekiel Jones</item>
@@ -1629,7 +1629,8 @@ those that did go into it should consider well the grounds of their movement, an
 </list>
 
 <pb n="76"/>
-<table>
+	
+<table xml:id="journey4" prev="#journey3" next="#journey5">
 	<head>Miles, 4 the 10 month 1794</head>
 	<row><cell>From thence to George Ramsdel’s</cell><cell>20</cell></row>
 	<row><cell>From thence to Henry Dearborn’s and back again</cell><cell>14</cell></row>
@@ -1666,7 +1667,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Rahway</cell><cell>20</cell></row>
 	<row rend="sum"><cell/><cell>690</cell></row>
 </table>
-<list>
+<list xml:id="lodgings4" prev="#lodgings3" next="#lodgings5">
 	<item>Jonathan Dame at Dover</item>
 	<item>Then Ezekiel Hite in New Hampshire government</item>
 	<item>Then John Brown</item>
@@ -1700,7 +1701,8 @@ those that did go into it should consider well the grounds of their movement, an
 </list>
 
 <pb n="77"/>
-<table>
+	
+<table xml:id="journey5" prev="#journey4">
 	<head>20 the 11 month 1794, miles</head>
 	<row><cell>From Rahway to Plainfield</cell><cell>9</cell></row>
 	<row><cell>From thence to Stonybrook</cell><cell>33</cell></row>
@@ -1720,7 +1722,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to my home</cell><cell>13</cell></row>
 </table>
 <p>This I acknowledge as a high favor from God, for which cause let all within me reverence his great and glorious name who has wrought so marvelously and made way in the hearts of all the people where my lot was cast, and Friends in particular manner, with whom I was between seven and eight months, and laid by not one day for want of health, nor took one day to rest till I came home, which was <date when="1794-12-06">the sixth day of the twelfth month 1794</date>.</p>
-<list>
+<list xml:id="lodgings5" prev="#lodgings4">
 	<item>Then to Nathan Robin's</item>
 	<item>Then to Alse Marriot</item>
 	<item>Then to John Wright’s</item>
@@ -1730,16 +1732,10 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>Then to <persName key="w6j20tpc">Thomas Dudley</persName></item>
 	<item>And then home, <date when="1794-12-06">the sixth day of the twelfth month, one thousand seven hundred and ninety four</date></item>
 </list>
-
 </div>
+	
 <div><head>A cure for felons.<note type="editorial">"Felon" is another term for a whitlow, an abcess near the cuticle</note></head> <p>Take lime and soft soap, mix it together something thinner than mortar, put it into a brass thimble, and bind it on. Keep it on till all the black stuff runs out, which may be six or eight hours.</p>
 <p>It has been an effectual cure by some that have tried it.</p></div>
-
-
-
-
-
-
 
 
 14 the 4 month 1795 left my home a second time on a religious visit to the eastern governments lodged at <persName key="w6vv2hqk">Abraham Warrington</persName>’s ten miles from my house  10
