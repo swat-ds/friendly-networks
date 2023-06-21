@@ -790,7 +790,7 @@ the second time to a woman that had children by her former husband. These I dear
 <dateline><date when="1795-03-11">11 the 3 month 1795</date></dateline><p> least this paper be lost, I take a copy that is as followeth:</p> <floatingText><body><p>I do hereby acknowledge the gift of a white mare unto Joshua Evans, rising seven years old.</p> <closer>As witness, my hand.
 <dateline>This <date when="1795-03-11">11 day of 3 month 1795</date>.</dateline> <signed>Charles Newbole.</signed></closer></body></floatingText>
 <div><p>And my desire is that my executors, if I should die and leave this mare and Charles, believing that they may return her if she is to be had, and in as good order as may be </p><signed>Joshua Evans.</signed></div>
-<p>I also visited several in tried circumstance. One of which was a young married woman who had been a great libertine, but now, under the preparing hand of the Lord for further service, without a doubt. With me, this was as much as she could bear, for she was got very low, and was calling all in question, and ready to despair the enemy’s temptations. Was many and very clost[?], but it was with me to be a comforter to her, for I did believe the Lord was preparing her for his own work and service. Blessed be his great name, who sometimes sendeth to the hedges and highways of the stones of the streets, raiseth up children unto Abraham. This I believe is her case.</p></div>
+<p>I also visited several in tried circumstance. One of which was a young married woman who had been a great libertine, but now, under the preparing hand of the Lord for further service, without a doubt. With me, this was as much as she could bear, for she was got very low, and was calling all in question, and ready to despair the enemy’s temptations. Was many and very clost, but it was with me to be a comforter to her, for I did believe the Lord was preparing her for his own work and service. Blessed be his great name, who sometimes sendeth to the hedges and highways of the stones of the streets, raiseth up children unto Abraham. This I believe is her case.</p></div>
 
 <div type="entry" n="1795-03-12"><dateline><date when="1795-03-12">12 the 3 month 1795</date></dateline><p> this fifth day meeting. It was but poor, low times. Then met to confer about building a schoolhouse, but could fix no spot to set it, and left it for further consideration.</p></div>
 
@@ -1573,7 +1573,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Epping</cell><cell/><cell>16</cell></row>
 	<row><cell>From thence to Lee</cell><cell/><cell>8</cell></row>
 	<row><cell>From thence to Dover</cell><cell/><cell>12</cell></row>
-	<row><cell>From thence to Kittery in Vermont<note role="editorial">Maine?</note></cell><cell/><cell>4</cell></row>
+	<row><cell>From thence to Kittery in Vermont<note type="editorial">Maine?</note></cell><cell/><cell>4</cell></row>
 	<row><cell>From thence to Berwick</cell><cell/><cell>12</cell></row>
 	<row><cell>From thence to Falmouth</cell><cell/><cell>45</cell></row>
 	<row><cell>From thence to Durham</cell><cell/><cell>25</cell></row>
@@ -1970,71 +1970,57 @@ those that did go into it should consider well the grounds of their movement, an
 </table>
 <label>These are the number of miles since I left home in this journey 1795</label>
 <span>Total Distance: 6204</span>
-
-
-
-from thence to Stephen Rogers's
-
-from thence to George Vans
-from thence to Steven Baker
-from thence to James Cornwell
-from thence to [space] Duel
-from thence to Peter Moser
-from thence to [space] Peckom’s
-from thence to Levy Hoeg
-
-from thence to Frances Bunker
-
-from thence to Joseph Michel
-from thence to William Shearman (this is near the Shaker’s town in York government, a people very reserved in their way and honest in their dealings, though some of their ideas I could not think well of nor unite with)
-
-from thence to David Antony
-from thence to Adam Harklis
-from thence to John Upton
-from thence to Eanes Curtis
-
-from thence to Aamas Carpenter
-from thence to David Tryan
-from thence to Charles Richard
-
-from thence to Thomas Dean’s
-
-from thence to Abner Howeg
-
-from thence to Nicholas Windsor
-from thence to Daniel Haviland
-from thence to Abner Howeg
-
-from thence to Isaac Thorn
-from thence to Isaac Hallock
-from thence to John Allen
-from thence to Garrett Burtis
-from thence to Enoch Darling
-from thence to Joseph Lancott’s
-from thence to Isaac Osborne’s
-from thence to Brown Wilbur’s
-
-from thence to Isaac Thorn’s
-from thence to Isaac Undrel’s
-from thence to Elisha Steal’s
-from thence to Ebenezer Crosby at West Hartford, Connecticut
-from thence to Charles Gilbert
-from thence to Charles Richard’s
-from thence back to Elishe Steal’s
-from thence back to Abner Howeg
-from thence to Isaac Osborne’s again
-from thence to Robert Reynolds
-from thence to Joseph Walter’s
-from thence to Jacob Undrel’s
-from thence to Timothy Carpenter
-
-
-from thence to Joseph Dilaplain
-from thence to Elijah Pound’s
-from thence to Joseph Eleson’s
-
-from thence to my own home 26 the 11 month 1795
-These are the places where I lodged and the names of the persons
+<list>
+	<item>From thence to Stephen Rogers's</item>
+	<item>From thence to George Vans</item>
+	<item>From thence to Steven Baker</item>
+	<item>From thence to James Cornwell</item>
+	<item>From thence to [space] Duel</item>
+	<item>From thence to Peter Moser</item>
+	<item>From thence to [space] Peckom’s</item>
+	<item>From thence to Levy Hoeg</item>
+	<item>From thence to Frances Bunker</item>
+	<item>From thence to Joseph Michel</item>
+	<item>From thence to William Shearman (this is near the Shaker’s town in York government, a people very reserved in their way and honest in their dealings, though some of their ideas I could not think well of nor unite with)</item>
+	<item>From thence to David Antony</item>
+	<item>From thence to Adam Harklis</item>
+	<item>From thence to John Upton</item>
+	<item>From thence to Eanes Curtis</item>
+	<item>From thence to Aamas Carpenter</item>
+	<item>From thence to David Tryan</item>
+	<item>From thence to Charles Richard</item>
+	<item>From thence to Thomas Dean’s</item>
+	<item>From thence to Abner Howeg</item>
+	<item>From thence to Nicholas Windsor</item>
+	<item>From thence to Daniel Haviland</item>
+	<item>From thence to Abner Howeg</item>
+	<item>From thence to Isaac Thorn</item>
+	<item>From thence to Isaac Hallock</item>
+	<item>From thence to John Allen</item>
+	<item>From thence to Garrett Burtis</item>
+	<item>From thence to Enoch Darling</item>
+	<item>From thence to Joseph Lancott’s</item>
+	<item>From thence to Isaac Osborne’s</item>
+	<item>From thence to Brown Wilbur’s</item>
+	<item>From thence to Isaac Thorn’s</item>
+	<item>From thence to Isaac Undrel’s</item>
+	<item>From thence to Elisha Steal’s</item>
+	<item>From thence to Ebenezer Crosby at West Hartford, Connecticut</item>
+	<item>From thence to Charles Gilbert</item>
+	<item>From thence to Charles Richard’s</item>
+	<item>From thence back to Elishe Steal’s</item>
+	<item>From thence back to Abner Howeg</item>
+	<item>From thence to Isaac Osborne’s again</item>
+	<item>From thence to Robert Reynolds</item>
+	<item>From thence to Joseph Walter’s</item>
+	<item>From thence to Jacob Undrel’s</item>
+	<item>From thence to Timothy Carpenter</item>
+	<item>From thence to Joseph Dilaplain</item>
+	<item>From thence to Elijah Pound’s</item>
+	<item>From thence to Joseph Eleson’s</item>
+	<item>from thence to my own home, <date when="1795-11-26">26 the 11 month 1795</date></item>
+	<trailer>These are the places where I lodged, and the names of the persons</trailer>
+</list>
 </div>
 	
 
