@@ -1738,7 +1738,7 @@ those that did go into it should consider well the grounds of their movement, an
 <p>It has been an effectual cure by some that have tried it.</p></div>
 
 <div>
-<table>
+<table xml:id="journey6" next="#journey7">
 	<head><date when="1795-04-14">14 the 4 month 1795</date> left my home a second time on a religious visit to the eastern governments</head>
 	<row><cell>Lodged at <persName key="w6vv2hqk">Abraham Warrington</persName>’s ten miles from my house</cell><cell>10</cell></row>
 	<row><cell>From thence to Stonybrook</cell><cell>34</cell></row>
@@ -1756,7 +1756,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>Then crossed the ferry up the North River from New York at a place called Crum Elbow eighty miles</cell><cell><supplied>80</supplied></cell></row>
 	<row rend="sum"><cell/><cell>404</cell></row>
 </table>
-<list>
+<list xml:id="lodgings6" next="#lodgings7">
 	<head><date when="1795-04-14">14 the 4 month 1795</date> left my home on a visit to the eastern governments</head>
 	<item>Lodged at <persName key="w6vv2hqk">Abraham Warrington</persName>’s the first night</item>
 	<item>Then to Benjamin Clark’s</item>
@@ -1775,7 +1775,7 @@ those that did go into it should consider well the grounds of their movement, an
 </list>
 
 <pb n="78"/>
-<table>
+<table xml:id="journey7" prev="#journey6" next="#journey8">
 	<row><cell>From Crum Elbow ferry to the meeting house</cell><cell>8</cell></row>
 	<row><cell>From thence to Tideman Hull’s</cell><cell>12</cell></row>
 	<row><cell>From thence to the Creek meeting</cell><cell>5</cell></row>
@@ -1817,7 +1817,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to the Isle of Mott<note type="editorial">Isle La Motte?</note> where is a few inhabitants as it is a small island</cell><cell>7</cell></row>
 	<row rend="sum"><cell/><cell>571</cell></row>
 </table>
-<list>
+<list xml:id="lodgings7" prev="#lodgings6" next="#lodgings8">
 	<item>Lodged at Tideman Hull’s this night</item>
 	<item>Then at Isaac Hallock’s two nights</item>
 	<item>Then a third time Isaac Hallock’s</item>
@@ -1856,7 +1856,7 @@ those that did go into it should consider well the grounds of their movement, an
 </list>
 
 <pb n="79"/>
-<table>
+<table xml:id="journey8" prev="#journey7" next="#journey9">
 	<row><cell>From thence to Colewell’s manor</cell><cell>9</cell></row>
 	<row><cell>From thence to Jacob Bouling’s</cell><cell>12</cell></row>
 	<row><cell>This is up the Chazy River west side lake</cell><cell/></row>
@@ -1890,7 +1890,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Danby. These roads are rough, stony, and mountainous, as well as the country, the traveling of which to me appears awful, to see the towering height of the hills and the clouds striking on them</cell><cell>65</cell></row>
 	<row><cell/><cell>1926</cell></row>
 </table>
-<list>
+<list xml:id="lodgings8" prev="#lodgings7" next="#lodgings9">
 	<item>Then at Isabel Fisk, on the Isle of Mott, the meeting at Abraham Knop's, and same day another at Caldwells Manor, at one Grant’s</item>
 	<item>Then at Jacob Bouling, six miles up the Chazy River, the west side Lake Champlain. Lodged two nights</item>
 	<item>Then at a tavern at St. John’s in Canada at the furthest end of Lake Champlain</item>
@@ -1923,7 +1923,7 @@ those that did go into it should consider well the grounds of their movement, an
 </list>
 
 <pb n="80"/>
-<table>
+<table xml:id="journey9" prev="#journey8">
 	<row><cell>From Danby to Mount Holly and back</cell><cell>40</cell></row>
 	<row><cell>From Danby to Easton</cell><cell>43</cell></row>
 	<row><cell>From Easton to Saratoga and back</cell><cell>12</cell></row>
@@ -1970,14 +1970,14 @@ those that did go into it should consider well the grounds of their movement, an
 </table>
 <label>These are the number of miles since I left home in this journey 1795</label>
 <span>Total Distance: 6204</span>
-<list>
+<list xml:id="lodgings9" prev="#lodgings8">
 	<item>From thence to Stephen Rogers's</item>
 	<item>From thence to George Vans</item>
 	<item>From thence to Steven Baker</item>
 	<item>From thence to James Cornwell</item>
-	<item>From thence to [space] Duel</item>
+	<item>From thence to <space/> Duel</item>
 	<item>From thence to Peter Moser</item>
-	<item>From thence to [space] Peckom’s</item>
+	<item>From thence to <space/> Peckom’s</item>
 	<item>From thence to Levy Hoeg</item>
 	<item>From thence to Frances Bunker</item>
 	<item>From thence to Joseph Michel</item>
