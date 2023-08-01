@@ -25,9 +25,11 @@
                 <idno type="local">A0011530</idno>
             </publicationStmt>
             <seriesStmt>
-                <title level="s" type="project">
-                    <title level="s" type="main">Friendly Networks</title>
-                    <title level="s" type="sub">The Journals of Our Beloved Friend John Hunt</title></title>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+						<title level="s" type="main">Our Beloved Friend</title>
+						<title level="s" type="sub">The Journals of John Hunt</title>
+				</title>
             </seriesStmt>
             <sourceDesc>
                 <msDesc>
