@@ -1,13 +1,92 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
-	<fileDesc>
-		<titleStmt>
-			<title/>
-		</titleStmt>
-		<publicationStmt/>
-		<sourceDesc/>
-	</fileDesc>
-</teiHeader>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joshua Evans Journal, xxxFIXMExxx: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>James Truitt</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. xxxFIXMExxx KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">xxxFIXMExxx</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+						<title level="s" type="main">As Bread Cast on the Waters</title>
+						<title level="s" type="sub">The Journals of Joshua Evans</title>
+				</title>
+			</seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans Papers, SFHL-RG5-190</collection>
+                        <idno type="local">xxxFIXMExxx</idno>
+                        <idno type="Islandora7 pid">xxxFIXMExxx</idno>
+                        <idno type="Islandora node_id">xxxFIXMExxx</idno>
+                    	<idno type="MssId">xxxFIXMExxx</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>xxxFIXMExxx</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The journals of Quaker minister Joshua Evans are held by the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed the journals, and in 2023, encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref>
+                </p>
+            </projectDesc>
+            <editorialDecl>
+            	<p>This edition aims both to retain Evans’s writing style and to prove accessible to the modern reader. It features three different journals: the autobiography transcribed by Evans’s son-in-law Abraham Warrington (MS A) and the two journals in Evans’s own hand (MSS B and C). These journals are held by the Friends Historical Library of Swarthmore College. For the last four years of journal entries, up to three variants from other manuscripts may exist for any particular entry. By using Evans’s original writings when possible and falling back on Warrington’s faithful transcription to cover the gaps, this edition aims to come as close as possible to presenting a full account of Evans’s life in his own words.</p>
+            	<p>The journals feature nonstandard spellings, random capitalizations, tense shifting, and a distinct lack of punctuation marks, all of which have been modified to modern conventions in this edition. Long, uninterrupted sections of text have been divided for clarity. Occasional words have been inserted or replaced, as indicated in brackets, with a consideration of the author’s style and intent. However, known antiquated spellings have been preserved, as have the capitalizations of “God,” “Lord,” “Truth,” and “Friend.” For Evans, the terms “close” and “clost” appear to have different meanings; thus, the non-word “clost” remains unchanged. Clauses within a sentence have been rearranged only when their meaning is otherwise obscured. Place names and Quaker meetings have also been capitalized. For ease of reading, the format of the date has been standardized.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1820-07-14" to="1821-08-02">xxxFIXMExxx</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Canada--Description and Travel</term>
+					<term>Church work with Indians--Society of Friends</term>
+					<term>Middle Atlantic States--Description and travel--18th century</term>
+					<term>Peace--Religious aspects--Society of Friends</term>
+					<term>Quakers--Diaries</term>
+					<term>Quakers--New Jersey</term>
+					<term>Quakers--Social life and customs</term>
+					<term>Quakers--United States--History</term>
+					<term>Slavery--United States</term>
+					<term>Southern States--Description and travel--18th century</term>
+					<term>Spiritual life--Society of Friends</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
 
 <text><body>
 <div type="entry" n="1796-10-04">
