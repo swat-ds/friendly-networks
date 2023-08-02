@@ -2,14 +2,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Joshua Evans Journal, xxxFIXMExxx: Electronic Version</title>
+                <title>Joshua Evans Journal, 1796 4mo. 10 - 1798 6mo. 29: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
                     <name>James Truitt</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. xxxFIXMExxx KB</extent>
+            <extent>ca. 350 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2023</date>
-                <idno type="local">xxxFIXMExxx</idno>
+                <idno type="local">A0011543</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -36,13 +36,13 @@
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>Joshua Evans Papers, SFHL-RG5-190</collection>
-                        <idno type="local">xxxFIXMExxx</idno>
-                        <idno type="Islandora7 pid">xxxFIXMExxx</idno>
-                        <idno type="Islandora node_id">xxxFIXMExxx</idno>
-                    	<idno type="MssId">xxxFIXMExxx</idno>
+                        <idno type="local">A0011543</idno>
+                        <idno type="Islandora7 pid">sc264654</idno>
+                        <idno type="Islandora node_id">335757</idno>
+                    	<idno type="MssId">MS C</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>xxxFIXMExxx</p>
+                        <p>80 pp.; 21.5 cm</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -58,7 +58,7 @@
             </editorialDecl>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date from="1820-07-14" to="1821-08-02">xxxFIXMExxx</date></creation>
+            <creation>Original written <date from="1796-10-04" to="1798-06-29">1796 10mo. 4 - 1798 6mo. 29</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
