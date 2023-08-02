@@ -37,8 +37,8 @@
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>Joshua Evans Papers, SFHL-RG5-190</collection>
                         <idno type="local">A0011543</idno>
-                        <idno type="Islandora7 pid">sc264654</idno>
-                        <idno type="Islandora node_id">335757</idno>
+                        <idno type="Islandora7Pid">sc264654</idno>
+                        <idno type="IslandoraNodeid">335757</idno>
                     	<idno type="MssId">MS C</idno>
                     </msIdentifier>
                     <physDesc>
