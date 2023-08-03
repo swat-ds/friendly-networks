@@ -1906,8 +1906,8 @@ those that did go into it should consider well the grounds of their movement, an
 </table>
 <list xml:id="lodgings7" prev="#lodgings6" next="#lodgings8">
 	<item>Lodged at Tideman Hull’s this night</item>
-	<item>Then at Isaac Hallock’s two nights</item>
-	<item>Then a third time Isaac Hallock’s</item>
+	<item>Then at <persName key="w6mm75p9">Isaac Hallock’s</persName> two nights</item>
+	<item>Then a third time <persName key="w6mm75p9">Isaac Hallock’s</persName></item>
 	<item>Then at Silas Bunker near Hudson</item>
 	<item>Then at Elihew Bunker’s in Hudson</item>
 	<item>Then at Hitchcock’s</item>
@@ -2082,7 +2082,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>From thence to Daniel Haviland</item>
 	<item>From thence to Abner Howeg</item>
 	<item>From thence to Isaac Thorn</item>
-	<item>From thence to Isaac Hallock</item>
+	<item>From thence to <persName key="w6mm75p9">Isaac Hallock</persName></item>
 	<item>From thence to John Allen</item>
 	<item>From thence to Garrett Burtis</item>
 	<item>From thence to Enoch Darling</item>
@@ -2243,7 +2243,7 @@ those that did go into it should consider well the grounds of their movement, an
 
 <label>At Crum Elbow: </label><item>Isaac Frost and Solomon Frost his son</item>
 
-<label>At the Creek meeting: </label><item>Isaac Hallock and wife Ruth and Jedediah Allen</item>
+<label>At the Creek meeting: </label><item><persName key="w6mm75p9">Isaac Hallock</persName> and wife Ruth and Jedediah Allen</item>
 
 <label>At Hudson, a little town on the North River the east side near two hundred miles up from York: </label><item>John Alsop, Elihew Bunker, Silas Bunker, Peter Barnard husband to Hannah Barnard</item>
 
