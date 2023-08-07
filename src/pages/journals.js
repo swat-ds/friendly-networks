@@ -51,9 +51,8 @@ function prepareNode(node){
 
 const journals = ({ data }) => {
   // Extract metadata from TEI files returned by graphQL
-  let preparedNodes = [];
   const nodes = data.allCetei.nodes;
-  nodes.forEach(node => preparedNodes.push(prepareNode(node)))
+  const preparedNodes = nodes.map(node => prepareNode(node))
 
   // Sort documents by date
   preparedNodes.sort((a, b)=>{
@@ -78,7 +77,7 @@ const journals = ({ data }) => {
        <Row id="main-row">
          <h1>Journals</h1>
          <p>
-            Click on a journal to browse page scans and transcripts from it.
+            Click on a journal card to browse images and transcripts of that journal.
         </p>
          <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="journal-card-row">
             {preparedNodes.map(renderJournals)}

@@ -20,12 +20,12 @@ const JournalCard = ({ node }) => {
       <Link to={node.route}>
         <Card.Img src={thumbnailUrl} alt=""/>
         <Card.Body>
-          <Card.Subtitle>
-            {title}
-          </Card.Subtitle>
           <Card.Title>
-            {date}
+            {title}
           </Card.Title>
+          <Card.Subtitle>
+            {date}
+          </Card.Subtitle>
         </Card.Body>
       </Link>
     </Card>
