@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card'
 
 const JournalCard = ({ node }) => {
   const titleArray = node.title.split(", ");
-  const title = titleArray[0];
+  const title = titleArray[0].replace('Journal', 'journal');
   const date = titleArray[1].split('- ').reduce(
       // Add a line break between the two components of date ranges
       (accumulator, current) => {return (<>{accumulator}- <br/>{current}</>)}
