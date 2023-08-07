@@ -1,12 +1,14 @@
 import React from "react";
+import {useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { SEO } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, ButtonGroup, ToggleButton } from "react-bootstrap";
 import "../styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;
+var xpath = require("xml2js-xpath");
 
 // Extract relevant metadata from a TEI file
 function prepareNode(node){
@@ -40,24 +42,42 @@ function prepareNode(node){
       "tei-title"
     ][0]._.split(":")[0].split(",")[1];
   
+  // Extract collection title from TEI
+  let collection = xpath.evalFirst(header, "//tei-collection")["_"]
+
   let preparedNode = {
     route: route ,
     title: title,
-    detailedDateStr: detailedDateStr
+    detailedDateStr: detailedDateStr,
+    collection: collection,
   };
 
   return preparedNode;
 }
 
-const journals = ({ data }) => {
+const JournalsPage = ({ data }) => {
   // Extract metadata from TEI files returned by graphQL
   const nodes = data.allCetei.nodes;
   const preparedNodes = nodes.map(node => prepareNode(node))
-
+  
+  
   // Sort documents by date
   preparedNodes.sort((a, b)=>{
     return a.detailedDateStr > b.detailedDateStr ? 1 : -1;
   })
+  
+  // Create a useState to filter which collections are shown
+  const [collFilter, setColl] = useState('');
+  console.log("collFilter", collFilter);
+
+  const collections = [
+    {name: 'All', value: ''},
+    {name: 'Hunt', value: 'Hunt'},
+    {name: 'Evans', value: 'Evans'}
+  ];
+
+  var filteredNodes;
+  filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
 
   // Create a grid of journal cards
   const renderJournals = (node, index)=>{
@@ -79,8 +99,24 @@ const journals = ({ data }) => {
          <p>
             Click on a journal card to browse images and transcripts of that journal.
         </p>
+        <ButtonGroup>
+          {collections.map((collection, idx) => (
+            <ToggleButton
+              key={idx}
+              id={`collection-${idx}`}
+              type="radio"
+              variant="secondary"
+              name="radio"
+              value={collection.value}
+              checked={collFilter === collection.value}
+              onChange={(e) => setColl(e.currentTarget.value)}
+            >
+              {collection.name}
+            </ToggleButton>
+          ))}
+        </ButtonGroup>
          <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="journal-card-row">
-            {preparedNodes.map(renderJournals)}
+            {filteredNodes.map(renderJournals)}
          </Row>
        </Row>
       </Layout>
@@ -109,4 +145,4 @@ export const Head = () => (
   <SEO title="Journals - Friendly Networks"/>
 )
 
-export default journals;
+export default JournalsPage;
