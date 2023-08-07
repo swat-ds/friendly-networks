@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card'
 const JournalCard = ({ node }) => {
   const titleArray = node.title.split(", ");
   const title = titleArray[0];
-  const subtitle = titleArray[1];
+  const subtitle = titleArray[1].replace('- ', '- \n');
 
   // Construct urls of thumbnail images held in Islandora
   const thumbnailUrl = journalTnLookup[node.route.split("/").pop()]
