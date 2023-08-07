@@ -7,7 +7,10 @@ import Card from 'react-bootstrap/Card'
 const JournalCard = ({ node }) => {
   const titleArray = node.title.split(", ");
   const title = titleArray[0];
-  const subtitle = titleArray[1].replace('- ', '- \n');
+  const date = titleArray[1].split('- ').reduce(
+      // Add a line break between the two components of date ranges
+      (accumulator, current) => {return (<>{accumulator}- <br/>{current}</>)}
+    )
 
   // Construct urls of thumbnail images held in Islandora
   const thumbnailUrl = journalTnLookup[node.route.split("/").pop()]
@@ -21,7 +24,7 @@ const JournalCard = ({ node }) => {
             {title}
           </Card.Subtitle>
           <Card.Title>
-            {subtitle}
+            {date}
           </Card.Title>
         </Card.Body>
       </Link>
