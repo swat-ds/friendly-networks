@@ -6,6 +6,7 @@ import { SEO } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import "../styles/pageStyles.scss"
+import { filter } from "d3";
 
 const parseString = require("xml2js").parseString;
 var xpath = require("xml2js-xpath");
@@ -123,7 +124,24 @@ const JournalsPage = ({ data }) => {
        <Row id="main-row"><Col>
          <h1>Journals</h1>
          <p>
-            Click on a journal card to browse images and transcripts of that journal.
+         The journals of John Hunt and Joshua Evans are valuable sources for 
+          Quaker history in the late eighteenth and early nineteenth centuries.
+          Hunt’s journals focus on his daily life in Burlington County, New 
+          Jersey, and cover over 50 years, from 1770 to Hunt’s death in 1824 
+          (though little material has survived from 1800 to 1812).
+          Evans’s journals begin with an autobiography and go on to detail 
+          his religious travels from Nova Scotia to Georgia in the 1790s.
+          Both mens’ journals document their advocacy for non-violence, the 
+          abolition of slavery, and the fair treatment of Native Americans 
+          and African Americans.
+         </p>
+         <p>
+            Click on a journal card to browse images and transcripts of that 
+            journal.
+            Use the "Hunt" and "Evans" buttons 
+            {filterOnSide ?" on the right ":" above the cards "}
+            to filter which journals cards are displayed, or click "All" to 
+            view all cards.
         </p>
         <Row style={{"flexWrap": "wrap-reverse", "alignItems": "start"}}>
             <Col id="journal-card-col">

@@ -8,6 +8,10 @@ body {
 //   border-radius: 10px !important;
 // }
 
+#main-row > .col > p {
+  padding-right: 5vw;
+}
+
 #journal-filter-group {
   display: flex;
   align-items: center;
