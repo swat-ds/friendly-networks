@@ -1,25 +1,69 @@
-
-:root {
-    --red: hsl(0, 78%, 62%);
-    --cyan: hsl(180, 62%, 55%);
-    --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 64%);
-    --varyDarkBlue: hsl(234, 12%, 34%);
-    --grayishBlue: hsl(229, 6%, 66%);
-    --veryLightGray: hsl(0, 0%, 98%);
-    --weight1: 200;
-    --weight2: 400;
-    --weight3: 600;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#journal-card-row {
-  margin-left: 2em;
-  width: 90vw;
-  background-color: #eeeeee;
+//////////// For debugging purposes ////////////
+// div {
+//   border: 1px solid white !important;
+//   border-radius: 10px !important;
+// }
+
+#journal-filter-group {
+  display: flex;
+  align-items: center;
+  * {
+    color: var(--bs-secondary);
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+#journal-filter-col {
+  flex-wrap: wrap;
+  padding: 12px 0px 0px;
+  margin-right: -4.5vw;
+  max-height: 70vh;
+  position: sticky;
+  top: 0;
+
+  > * {
+
+  }
+  
+  .filter-label {
+    text-align: center;
+    vertical-align: bottom;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  #journal-filter-col {
+    flex-flow: row nowrap;
+    position: relative;
+    padding: 12px;
+    margin-right: 0px;
+
+    > *{
+      display: flex;
+      flex: 1 1 auto;
+    }
+
+    .filter-label {
+      text-align: right;
+    }
+  } 
+
+}
+
+.btn-group > .btn:not(:last-child) {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.btn-group > .btn:nth-child(n+3) {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 #background-items {

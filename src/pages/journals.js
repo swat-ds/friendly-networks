@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { SEO } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
-import { Row, Col, ButtonGroup, ToggleButton } from "react-bootstrap";
+import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import "../styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;
@@ -68,8 +68,6 @@ const JournalsPage = ({ data }) => {
   
   // Create a useState to filter which collections are shown
   const [collFilter, setColl] = useState('');
-  console.log("collFilter", collFilter);
-
   const collections = [
     {name: 'All', value: ''},
     {name: 'Hunt', value: 'Hunt'},
@@ -78,6 +76,34 @@ const JournalsPage = ({ data }) => {
 
   var filteredNodes;
   filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
+
+  // Handle display of filter buttons: 
+  const minWidth = 992;
+  const [filterOnSide, setFilterOnSide] = useState(true)
+  useEffect(() => { // Check size of window on component load
+    if (window && window.innerWidth < minWidth) {
+      setFilterOnSide(false)
+    }
+    else if (window && window.innerWidth >= minWidth) {
+      setFilterOnSide(true)
+    }
+  }, [])
+  useEffect(() => {   // Keep track of window resize
+    const handleResize = () => {
+      if (window && window.innerWidth < minWidth) {
+        setFilterOnSide(false)
+      }
+      else if (window && window.innerWidth >= minWidth) {
+        setFilterOnSide(true)
+      }
+    };
+    if (window) {
+      window.addEventListener('resize', handleResize)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      };
+    }
+  }, [])
 
   // Create a grid of journal cards
   const renderJournals = (node, index)=>{
@@ -94,31 +120,45 @@ const JournalsPage = ({ data }) => {
 
   return (
       <Layout>
-       <Row id="main-row">
+       <Row id="main-row"><Col>
          <h1>Journals</h1>
          <p>
             Click on a journal card to browse images and transcripts of that journal.
         </p>
-        <ButtonGroup>
-          {collections.map((collection, idx) => (
-            <ToggleButton
-              key={idx}
-              id={`collection-${idx}`}
+        <Row style={{"flexWrap": "wrap-reverse", "alignItems": "start"}}>
+            <Col id="journal-card-col">
+              <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="journal-card-row">
+                  {filteredNodes.map(renderJournals)}
+              </Row>
+            </Col>
+          <Col id="journal-filter-col" sm={12} lg={1}>
+            <div className="filter-label h6">Filter by collection</div>
+            <ToggleButtonGroup 
+              name="collection" 
               type="radio"
-              variant="secondary"
-              name="radio"
-              value={collection.value}
-              checked={collFilter === collection.value}
-              onChange={(e) => setColl(e.currentTarget.value)}
+              defaultValue={''}
+              id="journal-filter-group"
+              vertical={filterOnSide}
             >
-              {collection.name}
-            </ToggleButton>
-          ))}
-        </ButtonGroup>
-         <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="journal-card-row">
-            {filteredNodes.map(renderJournals)}
-         </Row>
-       </Row>
+              {collections.map((collection, idx) => (
+                <ToggleButton
+                  className="journal-toggle-btn"
+                  key={idx}
+                  id={`collection-${idx}`}
+                  type="radio"
+                  variant="primary"
+                  name="collection"
+                  value={collection.value}
+                  checked={collFilter === collection.value}
+                  onChange={(e) => setColl(e.currentTarget.value)}
+                >
+                  {collection.name}
+                </ToggleButton>
+              ))}
+            </ToggleButtonGroup>
+          </Col>
+        </Row>  
+      </Col></Row>
       </Layout>
   );
 };
