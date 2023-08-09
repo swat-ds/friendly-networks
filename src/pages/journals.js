@@ -131,7 +131,7 @@ const JournalsPage = ({ data }) => {
           (though little material has survived from 1800 to 1812).
           Evans’s journals begin with an autobiography and go on to detail 
           his religious travels from Nova Scotia to Georgia in the 1790s.
-          Both mens’ journals document their advocacy for non-violence, the 
+          Both men’s journals document their advocacy for non-violence, the 
           abolition of slavery, and the fair treatment of Native Americans 
           and African Americans.
          </p>
