@@ -100,5 +100,8 @@
   "A0011535": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335300.jpg",
   "A0011536": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335317.jpg",
   "A0011537": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335322.jpg",
-  "A0011538": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335325.jpg"
+  "A0011538": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335325.jpg",
+  "A0011540": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335756.jpg",
+  "A0011541": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335715.jpg",
+  "A0011543": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/335837.jpg",
 }
