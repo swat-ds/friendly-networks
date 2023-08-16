@@ -31,9 +31,12 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
   let x = 0;
   for (const i of constellationData) {
     const fetchConstellation = () =>
-      axios.put(`https://api.snaccooperative.org`, {
-        command: "read",
-        constellationid: i["SNAC ID"],
+      axios.get(`https://api.snaccooperative.org`, {
+        data: {
+          command: "read",
+          constellationid: i["SNAC ID"],
+        },
+        // timeout: 10000,
       });
       let result = await fetchConstellation()
       if("constellation" in result.data){
