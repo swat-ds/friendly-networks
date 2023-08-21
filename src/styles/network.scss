@@ -11,13 +11,18 @@
 .network-page #info-box {
   margin-bottom: 12px;
 }
+#to-profile {
+  color: var(--bs-secondary);
+}
+
+#legend-row {
+  padding-bottom: 12px;
+  align-items: flex-start;
+}
 
 #legend-row .col {
   align-items: center;
-}
-
-#to-profile {
-  color: var(--bs-secondary);
+  width: fit-content;
 }
 
 #legend-row button {

@@ -466,7 +466,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
             </Col>
           </Row>
         </Col>
-      <Col id="spacer"/>
       </Row>
       <Row id="container-row" xs={1} sm={4}>
         <Col id="main-container">
