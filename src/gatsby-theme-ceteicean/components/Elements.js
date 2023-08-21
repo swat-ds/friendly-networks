@@ -122,7 +122,8 @@ export const Pb = (props) => {
         data-facs={props.teiNode.attributes.getNamedItem("facs").value}
         />
       {/*Page number that, when clicked, copies link to page to clipboard*/}
-      <p 
+      <button
+        title="Copy link to page"
         id={"page" + props.teiNode.attributes.getNamedItem("n").value}
         className="page-num"
         onClick={() => {
@@ -134,7 +135,7 @@ export const Pb = (props) => {
         }}
       >
         Page {parseInt(props.teiNode.attributes.getNamedItem("n").value)}
-      </p>
+      </button>
     </Behavior>
   );
 };
