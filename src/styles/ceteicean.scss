@@ -14,19 +14,18 @@ hr.tei-pb.page-line {
   opacity: 0.75;
   border-radius: 3px;
   // margin-left: 60px;
-  margin-bottom: 30px;
   overflow: visible;
+  margin-bottom: 0px;
+}
 
-  &:after{
-    counter-increment: pg;
-    content: "Page " counter(pg);
-    
-    font-size: small;
-    font-weight: bold;
-    // margin-left: -60px;
-    color: var(--bs-primary);
-    vertical-align: bottom;
-  }
+p.page-num {
+  margin-bottom: 30px;
+  font-size: small;
+  font-weight: bold;
+  color: var(--bs-primary);
+  vertical-align: bottom;
+  user-select: none;
+  cursor: copy;
 }
 
 .name-g-link {

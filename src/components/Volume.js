@@ -27,7 +27,7 @@ function getNodeId(journal) {
     ["tei-sourceDesc"][0]["tei-msDesc"][0]["tei-msIdentifier"][0]["tei-idno"]
   
   // Get the value of <idno type="Islandora node_id">
-  const nodeIdEl = ids.find(element => element["$"]["type"] === "Islandora node_id")
+  const nodeIdEl = ids.find(element => element["$"]["type"] === "IslandoraNodeid")
   const nodeId = nodeIdEl['_']
   return nodeId;
 }
@@ -290,6 +290,16 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  				}
  			}
  		}
+
+    // Handle scrolling to the page indicated in the URL on load:
+    useEffect(()=>{
+      if (typeof window !== 'undefined' && window.location.hash) {
+        const pageNum = window.location.hash.slice(1);
+        console.log(pageNum);
+        // const pageBreak = 
+      }
+    }, [])
+
 
  		return (
       <Layout id="journal">
