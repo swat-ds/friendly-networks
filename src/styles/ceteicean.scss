@@ -30,6 +30,26 @@ button.page-num {
   cursor: copy;
 }
 
+// Handles proper display of quotation marks around quoted paragraphs
+q:has(> p) {
+  &::before{
+    display: none;
+  }
+  &::after{
+    display: none;
+  }
+
+  > p {
+    &::before {
+      content: "“";
+    }
+    &::after{
+      content: "”";
+    }
+  }
+}
+
+
 .name-g-link {
   cursor: pointer;
   position: relative;

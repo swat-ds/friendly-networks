@@ -556,7 +556,7 @@ beyond which there is laid up the crown of everlasting peace, the sure reward of
 
 <div type="entry" n="1794-10-21"><dateline><date when="1794-10-21">21 the 10 month 1794</date></dateline><p> had a meeting at Pittsfield. This was dull. Poor, low time.</p></div>
 
-<div type="entry" n="1794-10-22"><dateline><date when="1794-10-22">22 the 10 month 1794</date></dateline><p> had another at the same place. Here I met my beloved friends Martha Ruth and Lydia Rotch, to my comfort, they going to the east and I to the west, on our religious visits to Friends like poor pilgrims, though the Lord is our stay and staff. Blessed be his great and glorious name.</p></div>
+<div type="entry" n="1794-10-22"><dateline><date when="1794-10-22">22 the 10 month 1794</date></dateline><p> had another at the same place. Here I met my beloved friends <persName key="w65147nn">Martha Ruth</persName> and Lydia Rotch, to my comfort, they going to the east and I to the west, on our religious visits to Friends like poor pilgrims, though the Lord is our stay and staff. Blessed be his great and glorious name.</p></div>
 
 <div type="entry" n="1794-10-23"><dateline><date when="1794-10-23">23 the 10 month 1794</date></dateline><p> we parted, she to the east and I to the west. I went to Weare and she to <del>Pittsfield</del> Gilmanton I feel very poor and stripped.</p></div>
 
@@ -921,7 +921,7 @@ the second time to a woman that had children by her former husband. These I dear
 
 <div type="entry" n="1795-04-01"><dateline><date when="1795-04-01">1 the 4 month 1795</date></dateline><p> as is common in my sojourning in this world of changes, cometh wave after wave. I thought this day they would consequently roll over my head, but the Lord may be trusted in, for he leaveth not his truly depending children to fall to the ground. I visited some widows and fatherless children, as is common for those in that station to meet with trials, but they may confide in the promise of Christ Jesus our Lord if they keep their places as becometh their stations. He will be a husband to the widow and a father to the fatherless children. Blessed be the Lord our God and that forevermore.</p></div>
 
-<div type="entry" n="1795-04-02"><dateline><date when="1795-04-02">2 the 4 month 1795</date></dateline><p> this was our meeting day. At this time was buried a young man that had stuck a nail in his heel, which was the cause of his and, as was supposed, this was a solid favored meeting. I hope not to be forgot very soon.</p></div>
+<div type="entry" n="1795-04-02"><dateline><date when="1795-04-02">2 the 4 month 1795</date></dateline><p> this was our meeting day. At this time was buried a young man that had stuck a nail in his heel, which was the cause of his end, as was supposed. This was a solid favored meeting. I hope not to be forgot very soon.</p></div>
 
 <div type="entry" n="1795-04-03"><dateline><date when="1795-04-03">3 the 4 month 1795</date></dateline><p> visited some of my neighbors to our comfort.</p></div>
 
@@ -1307,7 +1307,7 @@ At this meeting was many hearts tendered and many tears shed.</p></div>
 
 <div type="entry" n="1795-11-22"><dateline><date when="1795-11-22">22 the 11 month 1795</date></dateline><p> was at their first day meetings in New York, fore and afternoon. They were the most afflicting meetings that I have sat in for some time. This was near the close of the mortality in that town, after what might have been an humbling time, and have weaned the people from the eager pursuit of earthly riches, and to have sought that which is more durable, and should last beyond time, but so soon as the rod was stayed, to my grief, the inhabitants turned again, as the sow, to the wallowing place and so waxed worse and worse.</p></div>
 
-<div type="entry" n="1795-11-23"><dateline><date when="1795-11-23">23 the 11 month 1795</date></dateline><p> this day visited a few families and had some contest with an old formalist Quaker who had been long in trading, and now pleads for it as the richest and only way to improve a new country and enable people to live happy. This was greatly to my astonishment, but I found the god of this world had blinded his eyes, but as I told him, to my grief, while we was dealing with and disowning the youth for going out of plainness, such things as they was selling them was the very things that they was dealt with for wearing this. I said before him, but I found him blind and deaf as an adder, for he would not hear, least it should clash with his worldly entrust, for I thought it was his god though an high professor. Those things I laid clost as he could bear, and so left him. This was in New York.</p></div>
+<div type="entry" n="1795-11-23"><dateline><date when="1795-11-23">23 the 11 month 1795</date></dateline><p> this day visited a few families and had some contest with an old formalist Quaker who had been long in trading, and now pleads for it as the richest and only way to improve a new country and enable people to live happy. This was greatly to my astonishment, but I found the god of this world had blinded his eyes, but as I told him, to my grief, while we was dealing with and disowning the youth for going out of plainness, such things as they was selling them was the very things that they was dealt with for wearing. This I said before him, but I found him blind and deaf as an adder, for he would not hear, lest it should clash with his worldly interest, for I thought it was his god though an high professor. Those things I laid clost as he could bear, and so left him. This was in New York.</p></div>
 
 <div type="entry" n="1795-11-24"><dateline><date when="1795-11-24">24 the 11 month 1795</date></dateline><p> left New York about the eighth hour in the morning and traveled forty miles towards home.</p></div>
 
@@ -1484,7 +1484,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From Newport to Portsmouth and back</cell><cell/><cell>16</cell></row>
 	<row><cell>From Newport to Jacob Mott’s</cell><cell/><cell>8</cell></row>
 	<row><cell>From thence to Tiverton</cell><cell/><cell>5</cell></row>
-	<row><cell/><cell/><cell>543<note type="editorial">Actually sums to 541</note></cell></row>
+	<row rend="sum"><cell/><cell/><cell>543<note type="editorial">Actually sums to 541</note></cell></row>
 	<row><cell/><cell/><cell><del>556</del></cell></row>
 </table>
 <list xml:id="lodgings1" next="#lodgings2">
@@ -1581,7 +1581,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>From thence to Updike’s Newtown</cell><cell/><cell>8</cell></row>
 	<row><cell>From thence by water to Portsmouth on Rhode Island a second time</cell><cell/><cell>11</cell></row>
 	<row><cell>From thence to Newport Rhode Island</cell><cell/><cell>8</cell></row>
-	<row><cell/><cell/><cell>506</cell></row>
+	<row rend="sum"><cell/><cell/><cell>506</cell></row>
 </table>
 <list xml:id="lodgings2" prev="#lodgings1" next="#lodgings3">
 	<head><date>8 the 7 month 1794</date></head>
