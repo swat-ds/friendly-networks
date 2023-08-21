@@ -110,7 +110,7 @@ const NavBar = (props) => {
                   <NavDropdown.Item
                     as={Link}
                     activeClassName="active"
-                    to="/background/author-bg"
+                    to="/background/hunt-bg"
                   >
                     John Hunt
                   </NavDropdown.Item>

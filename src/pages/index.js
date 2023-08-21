@@ -39,7 +39,7 @@ const homepageCardData = [
     imageSrc: stairs,
     alt: "",
     text:(<><strong>Learn</strong> about John Hunt's life &amp; times</>),
-    link:"/background/author-bg",
+    link:"/background/hunt-bg",
     id:"learn-card"
   },
 ];

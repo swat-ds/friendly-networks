@@ -16,7 +16,7 @@
    network: "/network",
    people: "/people",
 
-   author_bg: "/background/author-bg",
+   author_bg: "/background/hunt-bg",
    quaker_bg: "/background/quaker-bg",
    background: "/background/background",
 
