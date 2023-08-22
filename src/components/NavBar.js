@@ -117,6 +117,13 @@ const NavBar = (props) => {
                   <NavDropdown.Item
                     as={Link}
                     activeClassName="active"
+                    to="/background/evans-bg"
+                  >
+                    Joshua Evans
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    activeClassName="active"
                     to="/background/quaker-bg"
                   >
                     Quakers
