@@ -25,6 +25,13 @@ const author_bg = () => {
             imageSrc: cover,
             alt: "thumbnail",
             id: ""
+        },
+        {
+            text: "Evans's Testimonies",
+            link: "/background/joshua-evans/evans-testimonies",
+            imageSrc: null,
+            alt: "thumbnail",
+            id: ""
         }
     ]
 
