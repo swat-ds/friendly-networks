@@ -14,7 +14,7 @@ Evans’s spirituality manifested itself in a number of behaviours and beliefs t
 However, these idiosyncracies almost prevented Evans from embarking on his travels in the first place due to the controversey they stirred among other Quakers. Because “singularity” — acting in a manner that was more extreme — could be a source of undue pride, Evans's decision to grow a beard resulted in the appointment of a Select committee, on which Evans's friend John Hunt served. Though Hunt supported Evans's testimony, not everyone did; Hunt recorded that “many of his Friends became uneasy, apprehending he was running beyond the motions of truth into unprofitable imaginations. They highly esteemed him before, and now extended to him their earnest admonitions.”[^2] The committee visit was conducted with "good temper," and Hunt described it as a "good edifying time," though very different sentiments appeared. In the end, Evans "was left with his beard on much as we found him."[^3] Nevertheless, the "singularity" of Evans's beard made the meeting hesitate to grant him a travel certificate for a number of years.[^4]
 
 [^2]: _Journal of John Hunt,_ June 10, 1786.
-[^3]: Friends Miscellany, vol. I, p. 303.
+[^3]: _Friends Miscellany, vol. I,_ p. 303.
 [^4]: [_Journal of Joshua Evans_, autobiography, p. 23](/journals/A0011540#page023).
 
 ![Busy street scene showing the meetinghouse and school behind a brick wall. Young and old Quakers walk along the sidwalk in front of the buildings. Many of the older Quakers use canes. Also shows two African American children with a large pig on the lower left.](images/image2.jpg " ")
