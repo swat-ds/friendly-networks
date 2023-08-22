@@ -3,10 +3,12 @@ import Layout from "../../components/Layout";
 import { SEO } from "../../components/SEO";
 import { Row } from "react-bootstrap";
 import "../../styles/pageStyles.scss";
-import backgrooundCards from "../../components/BackgroundCards"
+import backgroundCards from "../../components/BackgroundCards"
 
 // Image imports
 import two from "../../../content/markdown/images/image2.jpg";
+import cover from "/content/assets/images/EvansMsACover.jpg";
+
 
 const author_bg = () => {
     const pageCardData = [
@@ -18,9 +20,9 @@ const author_bg = () => {
             id: ""
         },
         {
-            text: "Evans's Journal",
+            text: "The Form of Evans's Journal",
             link: "/background/joshua-evans/evans-journal",
-            imageSrc: two,
+            imageSrc: cover,
             alt: "thumbnail",
             id: ""
         }
@@ -30,7 +32,7 @@ const author_bg = () => {
         <Layout>
             <Row id="main-row" className="background-jh background-row" >
                 <h1>Background: Joshua Evans</h1>
-                {backgrooundCards(pageCardData)}
+                {backgroundCards(pageCardData)}
             </Row>
         </Layout>
     );
