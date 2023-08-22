@@ -12,8 +12,17 @@ body {
 .background{
   // padding: 3vw;
   // line-height: 2;
-  padding: 15px;
-  max-width: 1000px;
+  padding: 30px;
+  max-width: 900px;
+}
+
+.background.card blockquote {
+  margin: auto 5%;
+  
+  p {
+    padding: 0 2%;
+    border-left: 1px solid var(--bs-secondary);
+  }
 }
 
 .background.card div.card-body h3 {
@@ -29,3 +38,4 @@ body {
     aspect-ratio: calc(5/3);
     object-position: bottom;
 }
+
