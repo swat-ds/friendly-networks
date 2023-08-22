@@ -22,7 +22,7 @@ However, there were a few individuals who merited descriptives of “dear” or 
 Evans avoided tea, coffee, sugar and molasses, and meat, and used only leather made from animals that had died naturally. Like [John Woolman](/people/w6wr0v4m), he wore undyed clothing, dye being made by slave labor. This behavior caused some concern among Friends because “singularity” — acting in a manner that was more extreme — could be a source of undue pride. When Evans began to cultivate a long beard, his cumulative behaviors resulted in the appointment of a Select committee. Apparently Hunt supported Evans’ testimony. He wrote: “many of his Friends became uneasy; apprehending he was running beyond the motions of truth into unprofitable imaginations. They highly esteemed him before, and now extended to him their earnest admonitions.”[^4] The committee visit was conducted with "good temper," and Hunt described it as a "good edifying time," though very different sentiments appeared. In the end, Evans "was left with his beard on much as we found him."[^5]
 
 [^4]: _Journal,_ June 10, 1786.
-[^5]: Friends Miscellany, vol. I, p. 303.
+[^5]: _Friends Miscellany, vol. I_, p. 303.
 
 When Evans died in 1813 at the age of 80, Hunt wrote: “Between me and him there has been an uninterrupted unity between thirty and forty years. He was an elder of good and sound judgment although of but few words; he was like a father to me, and we were always suited together with one another’s company.” [^6]
 
@@ -30,4 +30,4 @@ When Evans died in 1813 at the age of 80, Hunt wrote: “Between me and him ther
 
 [John Parrish (1729-1807)](/people/w63g5dz0/), another well beloved friend, was a Quaker abolitionist and a proponent of Native American rights. Parrish is best remembered for authoring _Remarks on the Slavery of the Black People._ Published in 1806, Parrish's pamphlet covered such issues as Biblical anti-slavery, constitutional rationales for emancipation, colonization, and African-American political protest. At Parrish’s death Hunt remarked that their acquaintance had begun before 1772 and that he usually stayed with him in Philadelphia during Yearly Meeting, “very pleasant and edifying was his company and converse.”[^7]
 
-[^7]: Friends Miscellany, vol. X, 1837, p. 313.
+[^7]: _Friends Miscellany, vol. X,_ 1837, p. 313.
