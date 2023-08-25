@@ -30,12 +30,17 @@ button.page-num {
   cursor: copy;
 }
 
+.tei-tei q {
+  user-select: all;
+
+  &::before, &::after {
+    user-select: all;
+  }
+}
+
 // Handles proper display of quotation marks around quoted paragraphs
 q:has(> p) {
-  &::before{
-    display: none;
-  }
-  &::after{
+  &::before, &::after{
     display: none;
   }
 
