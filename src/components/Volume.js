@@ -7,7 +7,9 @@ import Layout from "./Layout";
 import Viewer from "./Viewer";
 
 
+
 const parseString = require("xml2js").parseString;
+var xpath = require("xml2js-xpath");
 
 function getTitle(journal){
   return (
@@ -15,6 +17,11 @@ function getTitle(journal){
       ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
     );
 }
+
+function getCollection(journal){
+  return xpath.evalFirst(journal, "//tei-collection")["_"]
+}
+
 /**
  * 
  * @param {*} journal Parsed TEI XML that has an element 
@@ -31,6 +38,7 @@ function getNodeId(journal) {
   const nodeId = nodeIdEl['_']
   return nodeId;
 }
+
 
 async function fetchAsync(url) {
   const response = await fetch(url);
@@ -374,8 +382,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getTitle(jsonPrefixed)}, 
-                  John Hunt Papers, SFHL-RG5-240, 
+                  {getTitle(jsonPrefixed)},  {getCollection(jsonPrefixed)}, 
                   Friends Historical Library of Swarthmore College 
                 </Card.Text>
               </Card.Body>
