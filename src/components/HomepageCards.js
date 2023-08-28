@@ -10,7 +10,7 @@ const buildCard = (entity, index) => {
   const id = entity.id;
 
   return (
-    <Col className="homepage-card-col">
+    <Col className="homepage-card-col" sm={6} md={4}>
       <Card
         bg="primary"
         text="secondary"
@@ -34,7 +34,7 @@ const buildCard = (entity, index) => {
 
 const homepageCards = (cardArray) => {
   return (
-    <Row xs={1} md={2} id="homepage-card-row">
+    <Row id="homepage-card-row">
       {cardArray.map(buildCard)}
     </Row>
   );
