@@ -484,6 +484,7 @@ const Person = (props) => {
    * @returns the relation from the @relations with the component of RelativeCard
    */
   const renderRelatives = () => {
+    if (! relations) {return <p>None</p>}
     let existentRelations = [];
     for (let r of relations) {
       let arkId = r.targetArkID.split("/").pop();
@@ -496,7 +497,7 @@ const Person = (props) => {
         <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
       );
     }
-    return null;
+    return <p>None</p>;
   };
 
   /**
