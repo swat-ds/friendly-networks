@@ -104,5 +104,4 @@ The "sin and iniquity" Evans saw in the south led him to believe that a "mighty 
 >Thus has been the feelings of my mind as I have passed through those lands, and I believe that time is coming to pass, and unless by sincere repentance and an amendment of life and to do justly so far as is in their powers, it over take the inhabitants of those southern countries where there is so much of those poor oppressed Blacks."[^24]
 
 [^23]: "I believe some day there will be an overturning, and a terrible day it will be, for it appeareth to me the land is stained with the blood of the Negroes and Indians, and the cry of the slain no doubt hath reached the holy ear." _Journal of Joshua Evans,_ [1797-04-18](/journals/A0011543#1797-04-18). The entry for [1797-03-04](/journals/A0011543#1797-03-04) may be an earlier allusion to this idea.
-[^24] _Journal of Joshua Evans,_ [1798-05-29](/journals/A0011543#1798-05-29/1798-05-30).
-
+[^24]: _Journal of Joshua Evans,_ [1798-05-29](/journals/A0011543#1798-05-29/1798-05-30).
