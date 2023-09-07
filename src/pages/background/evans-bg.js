@@ -8,6 +8,7 @@ import backgroundCards from "../../components/BackgroundCards"
 // Image imports
 import two from "../../../content/markdown/images/image2.jpg";
 import cover from "/content/assets/images/EvansMsACover.jpg";
+import map from "/content/assets/images/A00179843_map2.jpg"
 
 
 const author_bg = () => {
@@ -15,7 +16,7 @@ const author_bg = () => {
         {
             text: "Joshua Evans: An Overview",
             link: "/background/joshua-evans/evans-biography",
-            imageSrc: two,
+            imageSrc: map,
             alt: "thumbnail",
             id: ""
         },
@@ -29,7 +30,7 @@ const author_bg = () => {
         {
             text: "Evans's Testimonies",
             link: "/background/joshua-evans/evans-testimonies",
-            imageSrc: null,
+            imageSrc: two,
             alt: "thumbnail",
             id: ""
         }
