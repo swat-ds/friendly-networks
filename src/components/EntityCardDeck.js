@@ -36,10 +36,11 @@ const EntityCardDeck = ({entityDeck}) => {
     /*if (entity.imageSrc) {
       image = <Card.Img src={entity.imageSrc} alt="[Thumbnail]"/>
     }
+    else*/
 
     // If entity has "Quakers" occupation
-    else*/ if (entity?.occupations?.some(x => x.term.term === "Quakers")){
-      if (entity?.genders.some(x => x.term.term === "Male")) {
+     if (entity?.occupations?.some(x => x.term.term === "Quakers")){
+      if (entity?.genders?.some(x => x.term.term === "Male")) {
         image = (
           <Card.Img
             src={hat}

@@ -11,22 +11,23 @@
 .network-page #info-box {
   margin-bottom: 12px;
 }
-
-#legend-row .col {
-  align-items: center;
-}
-
 #to-profile {
   color: var(--bs-secondary);
 }
 
-#remove-hunt {
-   margin: "2px";
-   color: var(--bs-secondary);
+#legend-row {
+  padding-bottom: 12px;
+  align-items: flex-start;
 }
 
-#remove-hunt-col {
-  align-self: center;
+#legend-row .col {
+  align-items: center;
+  width: fit-content;
+}
+
+#legend-row button {
+   margin: "2px";
+   color: var(--bs-secondary);
 }
 
 #info-card{

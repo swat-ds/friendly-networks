@@ -19,7 +19,7 @@ The earlier section of the original journal was traced to members of the Stackho
 
 No manuscript text has yet been discovered covering the period from 1800 to 7mo 1812. A much abbreviated text for this period is included in _Friends Miscellany_ in 1837.[^1] John Comly and the other editors of _Friends Miscellany_ had access to the entire manuscript, including the now missing section, as well as to other writings by Hunt. They took great liberties in editing and shortening the text. For instance, the published section from 1770-1800 is less than 10% of the original for the same period.
 
-[^1]: Friends Miscellany, vol. X, 1837, pp. 218-416.
+[^1]: _Friends Miscellany, vol. X,_ 1837, pp. 218-416.
 
 A second variant was published in the Proceedings of the New Jersey Historical Society in 1934.[^2] It was abridged from the partial original then in the possession of T. Matlack Stackhouse, presumed to be the same as the first part (1770-1800) of the journal now in the collections of FHL.
 

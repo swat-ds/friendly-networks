@@ -14,20 +14,46 @@ hr.tei-pb.page-line {
   opacity: 0.75;
   border-radius: 3px;
   // margin-left: 60px;
-  margin-bottom: 30px;
   overflow: visible;
+  margin-bottom: 0px;
+}
 
-  &:after{
-    counter-increment: pg;
-    content: "Page " counter(pg);
-    
-    font-size: small;
-    font-weight: bold;
-    // margin-left: -60px;
-    color: var(--bs-primary);
-    vertical-align: bottom;
+button.page-num {
+  background-color: rgb(0,0,0,0);
+  border: none;
+  display: block;
+  margin-bottom: 30px;
+  font-size: small;
+  font-weight: bold;
+  color: var(--bs-primary);
+  user-select: none;
+  cursor: copy;
+}
+
+.tei-tei q {
+  user-select: all;
+
+  &::before, &::after {
+    user-select: all;
   }
 }
+
+// Handles proper display of quotation marks around quoted paragraphs
+q:has(> p) {
+  &::before, &::after{
+    display: none;
+  }
+
+  > p {
+    &::before {
+      content: "“";
+    }
+    &::after{
+      content: "”";
+    }
+  }
+}
+
 
 .name-g-link {
   cursor: pointer;
@@ -90,6 +116,10 @@ hr.tei-pb.page-line {
   width: fit-content;
   -webkit-transform: translateZ(0); /* webkit flicker fix */
   -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+
+  > .general-text{
+    user-select: none;
+  }
 }
 
 .superscript {

@@ -7,7 +7,9 @@ import Layout from "./Layout";
 import Viewer from "./Viewer";
 
 
+
 const parseString = require("xml2js").parseString;
+var xpath = require("xml2js-xpath");
 
 function getTitle(journal){
   return (
@@ -15,6 +17,11 @@ function getTitle(journal){
       ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
     );
 }
+
+function getCollection(journal){
+  return xpath.evalFirst(journal, "//tei-collection")["_"]
+}
+
 /**
  * 
  * @param {*} journal Parsed TEI XML that has an element 
@@ -27,10 +34,11 @@ function getNodeId(journal) {
     ["tei-sourceDesc"][0]["tei-msDesc"][0]["tei-msIdentifier"][0]["tei-idno"]
   
   // Get the value of <idno type="Islandora node_id">
-  const nodeIdEl = ids.find(element => element["$"]["type"] === "Islandora node_id")
+  const nodeIdEl = ids.find(element => element["$"]["type"] === "IslandoraNodeid")
   const nodeId = nodeIdEl['_']
   return nodeId;
 }
+
 
 async function fetchAsync(url) {
   const response = await fetch(url);
@@ -291,6 +299,16 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  			}
  		}
 
+    // Handle scrolling to the page indicated in the URL on load:
+    useEffect(()=>{
+      if (typeof window !== 'undefined' && window.location.hash) {
+        const pageNum = window.location.hash.slice(1);
+        console.log(pageNum);
+        // const pageBreak = 
+      }
+    }, [])
+
+
  		return (
       <Layout id="journal">
       <Row id="main-row">
@@ -364,8 +382,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </Card.Header>
               <Card.Body>
                 <Card.Text>
-                  {getTitle(jsonPrefixed)}, 
-                  John Hunt Papers, SFHL-RG5-240, 
+                  {getTitle(jsonPrefixed)},  {getCollection(jsonPrefixed)}, 
                   Friends Historical Library of Swarthmore College 
                 </Card.Text>
               </Card.Body>

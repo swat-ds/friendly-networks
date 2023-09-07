@@ -119,9 +119,23 @@ export const Pb = (props) => {
     <Behavior node={props.teiNode}>
       <hr
         className="page-line tei-pb"
-        id={"page" + props.teiNode.attributes.getNamedItem("n").value}
         data-facs={props.teiNode.attributes.getNamedItem("facs").value}
         />
+      {/*Page number that, when clicked, copies link to page to clipboard*/}
+      <button
+        title="Copy link to page"
+        id={"page" + props.teiNode.attributes.getNamedItem("n").value}
+        className="page-num"
+        onClick={() => {
+          if (typeof window !== 'undefined') {
+            const url = window.location.href.split("#")[0]
+            const id = props.teiNode.attributes.getNamedItem("n").value
+            navigator.clipboard.writeText(url+"#page"+id)
+          } 
+        }}
+      >
+        Page {parseInt(props.teiNode.attributes.getNamedItem("n").value)}
+      </button>
     </Behavior>
   );
 };

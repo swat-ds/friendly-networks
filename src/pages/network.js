@@ -101,7 +101,7 @@ const network = ({ data }) => {
       <Network
         nodesInJSON={d3Nodes}
         linksInJSON={d3Links}
-        centralFigure="w6n9820p"
+        centralFigures= {["w6n9820p", "w6c82qz0"]}
       ></Network>
     </Layout>
   );

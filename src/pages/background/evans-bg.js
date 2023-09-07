@@ -1,0 +1,54 @@
+import React from "react";
+import Layout from "../../components/Layout";
+import { SEO } from "../../components/SEO";
+import { Row } from "react-bootstrap";
+import "../../styles/pageStyles.scss";
+import backgroundCards from "../../components/BackgroundCards"
+
+// Image imports
+import two from "../../../content/markdown/images/image2.jpg";
+import cover from "/content/assets/images/EvansMsACover.jpg";
+import map from "/content/assets/images/A00179843_map2.jpg"
+
+
+const author_bg = () => {
+    const pageCardData = [
+        {
+            text: "Joshua Evans: An Overview",
+            link: "/background/joshua-evans/evans-biography",
+            imageSrc: map,
+            alt: "thumbnail",
+            id: ""
+        },
+        {
+            text: "The Form of Evans's Journal",
+            link: "/background/joshua-evans/evans-journal",
+            imageSrc: cover,
+            alt: "thumbnail",
+            id: ""
+        },
+        {
+            text: "Evans's Testimonies",
+            link: "/background/joshua-evans/evans-testimonies",
+            imageSrc: two,
+            alt: "thumbnail",
+            id: ""
+        }
+    ]
+
+    return (
+        <Layout>
+            <Row id="main-row" className="background-jh background-row" >
+                <h1>Background: Joshua Evans</h1>
+                {backgroundCards(pageCardData)}
+            </Row>
+        </Layout>
+    );
+};
+
+// Enrich <head> tag
+export const Head = () => (
+  <SEO title="Joshua Evans - Friendly Networks"/>
+)
+
+export default author_bg;

@@ -10,71 +10,57 @@ import "../styles/network.scss";
  *
  * @param {*} nodesInJSON A json array contains multiple nodes as object
  * @param {*} linksInJSON A json array contains multiple link as object
- * @param {*} centralFigure An indication of whose entity is rendered
+ * @param {*} centralFigures A string array of IDs of ctl figs in the network
  *
  * Note: all of the above @params are destructured from  @props @param
  * @returns a @Row element containing an svg
  */
 
-function getNodesWithoutHunt(nodes, links, removingNode) {
-  let filteredNodes = nodes.filter((node) => {
-    return node.id !== removingNode;
-  });
-
-  let filteredLinks = links.filter((link) => {
-    return (
-      (link.source.id !== removingNode) & (link.target.id !== removingNode)
-    );
-  });
+function getGraphWithoutNode(nodes, links, exiledNode) {
+  let filteredNodes = nodes.filter(node => node.id !== exiledNode);
+  let filteredLinks = links.filter(link => {
+      return (link.source.id !== exiledNode) & (link.target.id !== exiledNode)
+  })
   return {
-    filteredNodes: filteredNodes,
-    filteredLinks: filteredLinks,
+    nodes: filteredNodes,
+    links: filteredLinks,
   };
 }
 
-const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
-  //states to changes nodes and links if needed
+const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
 
-  const { filteredNodes, filteredLinks } = useMemo(() => {
-    return getNodesWithoutHunt(nodesInJSON, linksInJSON, centralFigure);
-  }, [centralFigure]);
-
-  //  console.log("nodes in json length:", nodesInJSON.length);
-  //   console.log("links in json length:", linksInJSON.length);
-  //   console.log("no Hunt nodes length:", noHuntNodes.length);
-  //   console.log("no Hunt links :", noHuntLinks.length);
-
+  // States to track nodes and links
   const [nodes, setNodes] = useState(nodesInJSON);
-  const [highlightMinister, setHighlightMinister] = useState(false);
-
   const [links, setLinks] = useState(linksInJSON);
-  const [removeHunt, setRemoveHunt] = useState(false);
-
+  
   const [selectedNode, setSelectedNode] = useState(null)
+
+  const [highlightMinister, setHighlightMinister] = useState(false);
+  const [removedNodes, setRemovedNodes] = useState([]);
 
   const [zoomState, setZoomState] = useState(d3.zoomIdentity);
 
   useEffect(() => {
-    if (removeHunt) {
-      let filteredNodes = nodesInJSON.filter((node) => {
-        return node.id !== centralFigure;
-      });
+    let filteredGraph = removedNodes.reduce( //Assign values by
+    // recursively running getGraphWithoutNode, with exile param set to
+    // each value in removedNodes in succession
+    (accumulator, currentValue) => {
+      return getGraphWithoutNode(accumulator.nodes, accumulator.links, currentValue)
+    },
+    {nodes: nodesInJSON, links: linksInJSON}
+    // getGraphWithoutNode is initially passed all the nodes & links that
+    // were passed to Network, so that is what reduce returns 
+    // if removedNodes.len === 0
+    )
+    setNodes(filteredGraph.nodes);
+    setLinks(filteredGraph.links);
+  }, [removedNodes]);
 
-      let filteredLinks = linksInJSON.filter((link) => {
-        return (
-          (link.source.id !== centralFigure) &
-          (link.target.id !== centralFigure)
-        );
-      });
-      setNodes(filteredNodes);
-      setLinks(filteredLinks);
-      // console.log("filtered Nodes length:", filteredNodes.length);
-      // console.log("filtered Links length:", filteredLinks.length);
-    } else {
-      setNodes(nodesInJSON);
-      setLinks(linksInJSON);
-    }
-  }, [removeHunt]);
+
+  // Map ids of central figures to last names
+  const centralNames = Object.fromEntries(centralFigures.map(id => {
+    return [id, nodesInJSON.find(node => node.id === id).label.split(",")[0]]
+  }));
 
   const svgRef = useRef(); // A reference to refer to the SVG element
   let width = 600,
@@ -204,15 +190,15 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
       .append("circle")
       .attr("class", "node")
       .attr("r", (node) => {
-        //John Hunt has 2 records;
         const radius = Math.log(node.degree + 1) * 5 + 5;
-        return node.id === centralFigure ? 30 : radius; //Accentuates the centralFigure with bigger radius
+        // Accentuate the centralFigures with bigger radii
+        return centralFigures.includes(node.id) ? 35 : radius;
       })
       .call(dragInteraction)
       // .style("stroke", "#bd0fdb")
       // .style("stroke-width", 1)
       .style("fill", (node) => {
-        if (node.id === centralFigure) return "#FF8C00";
+        if (centralFigures.includes(node.id)) return "#FF8C00";
         if (node.subjects?.includes("ministry")) {
           if(highlightMinister){
             return moss;
@@ -369,28 +355,21 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
     return () => {
       svg.remove();
     };
-  }, [nodes, links, removeHunt, highlightMinister]); //End of useEffect()
-
-  // function removeCenter(){
-  //   setRemoveHunt(!removeHunt)
-  //   console.log(nodes.length, links.length)
-
-  //   let filteredNodes = nodesInJSON.filter((node) => {
-  //        return node.id !== centralFigure;
-  //   });
-
-  //   let filteredLinks = linksInJSON.filter(link => {
-  //     return link.source.id !== centralFigure && link.target.id !== centralFigure;
-  //   });
-  //   setNodes(filteredNodes)
-  //   setLinks(filteredLinks);
-  //   console.log(filteredNodes.length, filteredLinks.length);
-  // }
+  }, [nodes, links, removedNodes, highlightMinister]); //End of useEffect()
 
 
   function highlightMinisterHandler(e) {
     setHighlightMinister(!highlightMinister);
   }
+
+  function addNode(node) {
+    setRemovedNodes(removedNodes.concat([node]))
+  }  
+  function takeNode(node) {
+    const index = removedNodes.indexOf(node)
+    setRemovedNodes(removedNodes.toSpliced(index, 1))
+  }
+
   
   return (
     <Row id="main-row" className="network-page">
@@ -402,7 +381,8 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
             discussed in John Hunt's journals.</p>
             <p>Thin red lines link relatives, and
             thick green lines link acquaintances.
-            The larger a person's circle, the more times they are mentioned in the journals.</p>
+            The larger a person's circle, the more 
+            times they are mentioned in the journals.</p>
             <p>To zoom in or out, scroll while your cursor is over the visualization.
             To pan, click on the visualization background and drag your cursor.
             Hover over a node to highlight it and the connected nodes.</p>
@@ -411,15 +391,18 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
             The node will stay fixed in this position until you refresh the page.</p>
           </Row>
           <Row id="legend-row">
-            <Col id="remove-hunt-col">
-              <Button
-                id="remove-hunt"
-                variant={removeHunt ? "primary" : "danger"}
-                onClick={() => setRemoveHunt(!removeHunt)}
-              >
-                {removeHunt ? "Add Hunt" : "Remove Hunt"}
-              </Button>
-            </Col>
+            {centralFigures.map(id => { return (
+              <Col>
+                <Button
+                  variant={removedNodes.includes(id) ? "primary" : "danger"}
+                  onClick={()=>removedNodes.includes(id)?takeNode(id):addNode(id)}
+                >
+                  {removedNodes.includes(id)
+                    ? `Add ${centralNames[id]}` 
+                    : `Remove ${centralNames[id]}`}
+                </Button>
+              </Col>)})
+            }
             <Col>
               <div className="form-check form-switch">
                 <input
@@ -483,7 +466,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigure }) => {
             </Col>
           </Row>
         </Col>
-      <Col id="spacer"/>
       </Row>
       <Row id="container-row" xs={1} sm={4}>
         <Col id="main-container">
