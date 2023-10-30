@@ -293,7 +293,6 @@ const Person = (props) => {
           return (
             <li>
               <span>{`${placeName}, ${state}, ${country}  `}</span>
-              <span>{map ? <a href={map}>map</a> : ""}</span>
             </li>
           );
         } else {
@@ -351,7 +350,7 @@ const Person = (props) => {
     return (
       <Map
         center={[39.856677,-74.90081]}
-        maxZoom={11}
+        maxZoom={12}
         minZoom={3}
         startZoom={7}
         json={geoJson}
