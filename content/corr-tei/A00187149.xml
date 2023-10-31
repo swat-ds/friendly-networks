@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <publicationStmt></publicationStmt>
+            <sourceDesc></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+                <pb n="001" facs="452821"/>
+                
+                <p><address>
+                    <persName key="w6n9820p">John Hunt</persName>
+                </address></p>
+            
+                <div type="letter">
+                <opener>    
+                    <dateline>Philadelphia <date when="1824-04-17">4th month, 17th, 1824</date>.</dateline>
+                    
+                    <salute>Dear Friend,</salute>
+                </opener>
+                <p>I received thy letter before I left home, but have it not with me, and if I had, the time this morning would not allow of much enlargement on its content. It was, however, acceptable, as coming from the hand of an old friend, for whom I hope ever to retain an affectionate remembrance. Friends are collecting, as usual, from various parts. Isaac Stevenson and Anna Braithwaite arrived on 5th day evening and it is said William Flanner is in town. <persName key="w65d92g1">William Forster</persName> is in or near New York, expecting soon to proceed to New
+                
+                <pb n="002" facs="452842"/>
+                England. I do not hear that many strangers are expected from other Yearly Meetings. I feel more of the spirit of heaviness, than anything that may be called joyous, and have recollected this morning what Daniel Stanton is reported to have said at the time of an Annual Assembly, – when he exclaimed with a sigh – <said>I shall be glad when this yearly meeting is <hi rend="underline">well</hi> over.</said> So say I now, and maybe feel as sorrowful as he did; but we must try to hope for the best.</p>
+                
+                <p><persName key="w6k6603s">David Roberts</persName> and <persName key="w6k08k1m">Rachel</persName> being at our Quarters last Evening, I requested him to take charge of four copies of the Volume I sent thee some time ago, which he engaged to call for this afternoon. Accept them as a token of my regard, and mention my love to <rs key="w6wx87x7">thy wife</rs> &amp; <rs key="w6136j8n">daughter</rs>.</p>
+                
+                <closer>
+                    <salute>Thy affectionate friend </salute>
+                    <signed><persName key="w6b01gx6">John Cox</persName></signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
