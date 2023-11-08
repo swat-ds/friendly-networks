@@ -99,8 +99,13 @@ div.d3Tooltip {
   padding: 5px;
   transform: translateX(100%);
   font: 16px sans-serif;
-  font-weight: bold;
+  // font-weight: bold;
+  font-size: 12px;
   border: 1px solid black;
   border-radius: 8px;
   pointer-events: none; /* keep the mouseover when over the tooltip */
+}
+
+#network-svg text {
+  max-width: 10px;
 }

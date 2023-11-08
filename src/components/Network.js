@@ -324,7 +324,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
       .attr("font-size", "x-small")
       .style("pointer-events", "none")
       .text((node) => {
-        let nameParts = node.label.split(",");
+        let nameParts = node.label.split(", ");
         let lastName = nameParts[0];
         let firstName =
           nameParts.length > 2
