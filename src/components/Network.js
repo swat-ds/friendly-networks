@@ -91,7 +91,7 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
     const simulation = d3
       .forceSimulation(nodes)
       .force("charge", d3.forceManyBody().strength(-800))
-      .force("collide", d3.forceCollide().radius(40).iterations(2))
+      .force("collide", d3.forceCollide().radius(40).iterations(8))
       .force(
         "link",
         d3
@@ -297,7 +297,6 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
 
     // Click a node to pull up its information
     nodeWrapper.on("click", function (event, d) {
-      // console.log(d3.select(this).data());
       // Set selectedNode useState to data of clicked node
       setSelectedNode(d3.select(this).data());
       // Prevent click from registering with svg.on("click")
