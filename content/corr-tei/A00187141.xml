@@ -65,16 +65,21 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="457126"/>
+            <div>
+                <pb n="001" facs="457126"/>
             
-            <p>
-            <persName key="w6p55q0b">William Penn</persName> says he could hardly wish anyone better than that he was in a way of making the best use of his time seeing it is a matter of such vast great importance. I am fearful about indulging a thought I have had of late of bespeaking an hour or two of thy time when thee can most conveniently spare it although the time may not be spent altogether in the best manner for that is a very extensive thing yet I hope it will not be all lost.
-            </p>
-            
+                <p>
+                <persName key="w6p55q0b">William Penn</persName> says he could hardly wish anyone better than that he was in a way of making the best use of his time seeing it is a matter of such vast great importance. I am fearful about indulging a thought I have had of late of bespeaking an hour or two of thy time when thee can most conveniently spare it although the time may not be spent altogether in the best manner for that is a very extensive thing yet I hope it will not be all lost.
+                </p>
+             
+                <closer>
+                    <salute>Thy friend</salute>
+                    <signed><persName key="w6n9820p">J. H.</persName></signed>
+                    <dateline><date when="1821-02-17">17th 2nd month 1821</date></dateline>
+                </closer>
+            </div>
             <closer>
-                <salute>Thy friend</salute>
-                <signed><persName key="w6n9820p">J. H.</persName></signed>
-                <dateline><date when="1821-02-17">17th 2nd month 1821</date></dateline>
+                <address><addrLine>Asa Matlack</addrLine></address>
             </closer>
         </body>
     </text>
