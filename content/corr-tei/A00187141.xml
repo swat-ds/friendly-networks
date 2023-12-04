@@ -66,7 +66,7 @@
     <text>
         <body>
             <div>
-                <pb n="001" facs="457126"/>
+                <pb n="001" facs="457127"/>
             
                 <p>
                 <persName key="w6p55q0b">William Penn</persName> says he could hardly wish anyone better than that he was in a way of making the best use of his time seeing it is a matter of such vast great importance. I am fearful about indulging a thought I have had of late of bespeaking an hour or two of thy time when thee can most conveniently spare it although the time may not be spent altogether in the best manner for that is a very extensive thing yet I hope it will not be all lost.
@@ -79,6 +79,7 @@
                 </closer>
             </div>
             <closer>
+                <pb n="002" facs="457128"/>
                 <address><addrLine>Asa Matlack</addrLine></address>
             </closer>
         </body>
