@@ -1,0 +1,116 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joseph Whitall letter to John Hunt, 1824 4mo 21: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187145</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt papers, SFHL-RG5-240</collection>
+                        <idno type="local">A00187145</idno>
+                        <idno type="IslandoraNodeid">457143</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>3 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1824-04-21" to="1824-04-22">4th month 21st-22nd 1824</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Death</term>
+                    <term>Bereavement</term>
+                </keywords>
+                <keywords scheme="#snac">
+                    <term ref="http://n2t.net/ark:/99166/w68x44wf">Hunt, Abigail, 1770-1823</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457143" />
+            
+            <opener>
+                <dateline>Philadelphia on the <date when="1824-04-21">4th month 21st 1824</date></dateline>
+                <salute>Dear Friend,</salute>
+            </opener>
+            <p>
+            Although I have but little time to spare for letter writing, have felt disposed to send thee a few lines to acknowledge the receipt of thine, about the time of our last Quarterly Meeting in the second month. It was truly acceptable and comforting to receive such a testimonial of thy continued remembrance and regard since. When my mind has been brought into sympathy with thee in thy late close trial; but although the pious life of thy dear daughter in one respect increases the smart of separation, on the other hand it must afford much consolation to believe that she like <quote type="biblical">Mary had chosen that good part that shall never be taken from her</quote>, and so was prepared to enter into the joy of her Lord.
+            </p>
+            
+            <p>
+            It was in my heart to pay thee a visit some weeks back when we came to Moores Town, but the indisposition of our son Joseph prevented that satisfaction.
+            </p>
+            
+            <p>
+            <date when="1824-04-22">5th day morning</date>. As thou art prevented by age
+            <pb n="002" facs="457143" />
+            and infinity from attaining our annual solemnities. I thought of giving thee a short sketch of our getting <add>along</add> at this time, but being taken with a dizziness in my head and being on a committee that takes up considerable time will necessarily direct me from that purpose, except just in short to say that ancient goodness has been mercifully vouchsafed to qualify friends to profess them far with much harmony and condescension, so that we have had just cause to believe that we as a people shall not <add>be</add> wholly given to reproach, and as encouraged to hope that He who saved us up to be a people, and hath revealed to us that foundation that cannot be shaken, will graciously establish us thereon.
+            </p>
+            
+            <closer>
+                <salute>With the salutations of that love which I have from my youth and first acquaintance felt for thee I must conclude thy affectionate friend.</salute>
+                <signed><persName key="w6g26smq">Joseph Whitall</persName></signed> 
+            </closer>
+            
+            <postscript>
+                <label>P.S.</label>
+                <p>Fowell Buxton is brother in law to <persName key="w65d92g1">William Forster</persName></p>
+            </postscript>
+            </div>
+            
+            <pb n="003" facs="457143" />
+            
+            <closer>
+                <address>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName> near Moores Town</addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>
