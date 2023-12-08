@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Amelia Branin letter to the Upper and Lower Evesham Preparative Meetings, 1792 7mo 23: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187151</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187151</idno>
+                        <idno type="IslandoraNodeid">457165</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1792-07-23">23 of the 7th month 1792</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Conduct of life</term>
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="457166"/>
+            
+            <opener>
+                <salute>
+                    To the preparative meetings of friends of upper and lower Evesham,
+                </salute>
+            </opener>
+            <p>
+            dear friends feeling my mind drawn in love to you all I write &amp; notwithstanding we are far departed from each other of often remember you <del>may be</del> with great nearness and longing desires that you may be favored to keep near to the pure fountain of life that only can persevere <add>from</add> the snares of death and although we have many trials <damage><supplied>to the</supplied></damage> inward &amp; outward to pass through yet let none be discouraged in their minds. For it is nothing new or <add>stra<damage><supplied>nge</supplied></damage></add> being the way that all the faithful have <damage><gap/></damage> to pass through in every age of the worl<damage><supplied>d</supplied></damage> and the Lord’s power is the same as ever it was and he as attentive to the cries of his poor afflicted children as ever, therefore let all depend upon him for help but dear friends if their is a growing easy in our minds and a giving way to those things that the light hath made manifest to us to be contrary to the Lord’s pure will, we shall lose our strength and become dead and formal but oh that this may never be the case with any of those that have set their faces Zionwards but let all be faithful according to ability received in order that the Lord’s work may forward amongst us and the dear youth for whom my heart is often humbly bowed before the Lord in secret that they <add>may</add> be preserved on this day of great difficulty. But oh dear youth faithfulness is the way to fruitfulness and if you are faithful to what is your duty, you will grow strong in the
+            
+            <pb n="001" facs="457167"/>
+            <damage><gap/></damage> and become useful in your day it is in great <damage><supplied>f</supplied></damage>ear and deep self abasement I trust &amp; write to you at this time but could not be easy, till I gave up thereto
+            </p>
+            
+            <closer>
+                <salute>I now conclude in much love to you both aged and youth and remain your faithful friend and sister in the fellowship of the<del>Great</del> Blessed Truth</salute>
+                <dateline>Gr<add>e</add>at Eggharbour the 23 of the 7th month 1792</dateline>
+                <signed>Amelia Branin</signed>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>
