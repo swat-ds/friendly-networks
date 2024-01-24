@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>James Mott to Ann Evans, 8mo 12, 1794: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187155</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187155</idno>
+                        <idno type="IslandoraNodeid">457177</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-08-12">12th of the 8th month, 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="457178"/>
+            <opener>
+                <dateline>Mamaroneck near New York <date when="1794-08-12">12th of the 8th month, 1794</date></dateline>
+                <salute>Esteemed friend,</salute>
+            </opener>
+            <p>
+            Although I am personally unacquainted with thee, yet not so with <rs key="w6c82qz0">thy worthy husband</rs>, with whom I contracted some acquaintance during the time of our yearly meeting in New York, and which was soon after increased by my accompanying him to a few meetings in our neighborhood. Since which having been as far as Rhode Island, I there fell in with him again at a quarterly meeting on that island and was several days in his company, when our little acquaintance was again pleasingly to me revived, and having been at diverse places in<damage><gap/></damage> in New England, as well as in the compass of our own yearly meeting, where he has visited the meetings an<damage><supplied>d</supplied></damage> in some instances the families of friends, and I fi<damage><gap/></damage> his labors have been not only very acceptable, to the visited, but I have to believe will to some prove last<damage><supplied>ingly</supplied></damage> profitable. It affords me such satisfaction to fi<damage><supplied>nd</supplied></damage> that his way has been made so easy to him and such place with his friends, and that his singular<damage><supplied>ity</supplied></damage> (if I may so term them) are put so out of sight in <damage><gap/></damage> minds of friends, that I thought I should hardly <damage><supplied>be</supplied></damage> to my own sensations, or do justice to thee, without thee some little information thereof, and as I b<damage><supplied>elieve</supplied></damage> he has come out in the right time, I hope th<damage><supplied>ee</supplied></damage> be favored cheerfully to give him up, to do th<damage><supplied>at which</supplied></damage> his master <del>his master</del> has called him to, and patie<damage><supplied>ntly</supplied></damage> wait for the right time for his return, bearing i<damage><supplied>n mind</supplied></damage> that those who tarried by the stuff were to part<damage><gap/></damage> those that went to the battle, that it may <damage><supplied>be</supplied></damage> the wish of
+            </p>
+            
+            <closer>
+            <salute>thy affectionate friend</salute> 
+            <signed>James M<damage><supplied>ott</supplied></damage></signed>
+            </closer>
+            <pb n="2" facs="457179"/>
+        </body>
+    </text>
+</TEI>
