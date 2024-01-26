@@ -79,7 +79,7 @@
                 <salute>Esteemed Friend Ann Evans</salute>
             </opener>
             <p>
-            Enclosed is a letter from thy dear husband who I left a few days since at Pittsfield or parted with him there, he then having perhaps only two meetings to attend before his departure from the limits of this Yearly Meeting, for that of New York expecting to be first at East Hossack.
+            Enclosed is a letter from <rs key="w6c82qz0">thy dear husband</rs> who I left a few days since at Pittsfield or parted with him there, he then having perhaps only two meetings to attend before his departure from the limits of this Yearly Meeting, for that of New York expecting to be first at East Hossack.
             </p>
             <p>
             I left him under as deep a sensation of affectionate love, as my little measure would admit, after having been with him more than three months in which time he had attended including two Quarterly, eight Monthly, and several Preparative Meetings in many of which it was his lot to labor closely to the people in the love of the gospel (which seemed abundantly to overshadow his tabernacle) I hope to the awakening of some from a bed of ease and security. And I believe his encouraging communications has been a strength to a remnant in many places whose feet have been turned in the right way, and if there is a giving up and a full submission to the little discoveries in each mind the traces of his labor will not only be to be seen, but felt and experienced as waymarks to the generation that may succeed the present. I have thought much of him since I left him, and hope he has us, I often used to wish a better, more feeling and sympathizing companion, than he had in the greatest part of this Yearly Meeting, one whose experience             
@@ -90,7 +90,7 @@
             That he may when his visit is accomplished return to thee and his dear family with the rich reward of a peaceful {mind} Mind is the earnest solitude of thy friend whose dear wife unites in affectionate love to thee and much desire thy continual support from best help during the trying separation allotted thee
             </p>
             <closer>
-                <signed>Thomas Rotch</signed>
+                <signed><persName key="w67m1bxt">Thomas Rotch</persName></signed>
             </closer>
             <pb n="3" facs="457204"/>
             </div>
@@ -100,7 +100,7 @@
                     <addrLine>Samuel R Fisher</addrLine>
                     <addrLine>Merchant</addrLine>
                     <addrLine>Philadelphia</addrLine>
-                    <addrLine>for Ann Evans wife of Joshua</addrLine> 
+                    <addrLine>for Ann Evans wife of <persName key="w6c82qz0">Joshua</persName></addrLine> 
                     <addrLine>Newtown</addrLine>
                 </address>
             </closer>
