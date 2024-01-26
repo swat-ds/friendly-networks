@@ -1,0 +1,117 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Thomas and Charity Rotch to Ann Evans, 8mo 24, 1794: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 10 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187157</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187157</idno>
+                        <idno type="IslandoraNodeid">457185</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-08-24">8th month on the 24th, 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <pb n="1" facs="457186"/>
+                <opener>
+                    <dateline>Boston, <date when="1794-08-24">8th month on the 24th, 1794</date></dateline>
+                    <salute>Esteemed Friend Ann Evans</salute>
+                </opener>
+                <p>
+                    Although I have no personal acquaintance with thee yet that which I have contracted with <rs key="w6c82qz0">thy dear husband</rs> and has caused me to think much of thee and thy feeble constitution at this time of thy tried separation from so near a friend. But I believe the errand on which he is sent, and cause that he is engaged in, contributes to thy comfort, as well as increases thy solicitude for his preservation. I have been at about thirty eight meetings with him which have generally been larger than usual on such occasions, and very solid, and I thin<damage><supplied>k</supplied></damage> I may say satisfactory. It is with a degree of thankfulness to the Father of Mercies that <add>I say</add> his appearance has not been in <add>the</add> way of Friends in this part of the continent as far as I have discovered
+                </p>
+                <p>
+                When it was mentioned in our yearly meeting that his companion expected to return, I felt a desire to accompany him through this part of the country, and as far east as he should go, yet was fearful of being in the way of one more suitable but thought it safest to mention it to a few Friends and have had cause to rejoice many times since that he condescended to accept my company. If such powerful truths which he has through divine aid had to communicate to us wherever we have been does not awaken us to a more fervent zeal for the promotion of truth by the <gap reason="illegible"/>ment of our own talents, I have been ready to think that nothing short of the Lord’s taking us in his own hand will effect the purpose of our creation.
+                </p>
+                <closer>
+                    <salute>With affectionate regard to thee &amp; children &amp; grandchildren I am thy friend</salute> 
+                    <signed><persName key="w67m1bxt">Thomas Rotch</persName></signed>
+                </closer>
+            </div>
+            <div>
+                <pb n="2" facs="457187"/>
+                <p>
+                <rs key="w67m1bxt">my beloved husband</rs>, having sent the foregoing, from Boston, for me to forward, unsealed; I could not forbear <add>my</add> dear friend expressing my near sympathy with thou in this thy present allotment; &amp; have before attempted it, but feeling inadequate to the performance of anything that could be acceptable to thou, I with some reluctance threw by my pen at present I think the sympathetic feeling of my mind has is <gap reason="illegible"/>ment which induces me to make this <del>little</del> essay, as an additional little testimony on behalf, of thy dear husband’s labors amongst us in these parts, many minds I believe have been deeply united &amp; <gap reason="illegible"/> with him, into a sense of the great degeneracy of the present day &amp; though I was not aware of the dangerous situation, we were in; until it was so clearly set forth; both in precept &amp; example; by my much valued &amp; truly beloved friend. &amp; I humbly hope his faithful labors will be measurably blessed and sanctified; that he indeed may have the unspeakably glorious reward of those <quote type="biblical">that turn many to righteousness</quote> <del>which I think</del> though I believe we shall, many of us, have <del>many</del><add>some</add> bitter draughts before we can experience a journeying forward in the line of the divine appointment; I have had many solitary hours, in the absence of my dear husband though favored with <del>many</del> kind friends, yet believing at him to be in the way of duty. &amp; having the satisfaction of knowing him to be tenderly beloved by his companion; (who is like a nursing father) I have been favored to give him up, with more cheerfulness, than I could have Expected. Much deserving &amp; it may be the happy means of establishing him upon the immortal foundation; towards which he has looked with earnest solicitation, in many past seasons; &amp; thereby be enabled to assist my feeble endeavors, is permitted again to enjoy the inestimable favor of his company; I have wrote in haste &amp; hope that thou will excuse the freedom 
+                
+                <pb n="3" facs="457188"/>
+                I feel that of a sister towards thee; &amp; was desirous that thou <damage><supplied>should</supplied></damage> know, that the way is made much easier for thy beloved husband than was expected; &amp; I believe that he will be prospered in this important work.
+                </p>
+                <closer>
+                    <salute>With near affection I again salute thee &amp; remain thy sympathetic friend</salute>
+                    <signed><persName key="w6c61k15">Charity Rotch</persName></signed>
+                    <dateline>New Bedford <date when="1794-08-28">8th month 28th 1794</date></dateline>
+                </closer>
+            </div>
+            <pb n="4" facs="457189"/>
+            <closer>
+                <address>
+                    <addrLine>Ann Evans</addrLine>
+                    <addrLine>wife of <persName key="w6c82qz0">Joshua Evans</persName></addrLine>
+                    <addrLine>New Town</addrLine>
+                    <addrLine>Gloucester County</addrLine>
+                    <addrLine>New Jersey</addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>
