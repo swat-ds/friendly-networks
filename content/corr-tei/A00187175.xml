@@ -1,0 +1,102 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John and Rachel Coffee to Ann Evans, 9mo 9, 1797: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. XXXXX KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187175</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187175</idno>
+                        <idno type="IslandoraNodeid">457245</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1797-09-09">9th of the 9th month 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                    <term>Quakers--Conduct of life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457246"/>
+            <opener>
+                <dateline>Bedford County Virginia Goose Creek monthly meeting the <date when="1797-09-09">9th of the 9th month 1797</date></dateline>
+                <salute>Esteemed friend,</salute>
+            </opener>
+            <p>
+            though personally unknown to us we use the friendly freedom of writ<add>ing</add> to thee on account of our worthy friend thy dear husband <persName key="w6c82qz0">Joshua Evans</persName>, whom we beli<add>e</add>ve the Lord hath sent forth to labor in his vineyard in those southern states and in the course of his prestigious visit his lot was east amongst friends in those parts: and while within the verge of our Monthly meeting his abode was mostly at our house and we have this to say concerning him that his company, conversation and conduct adorned the doctrine he delivered to others and endeared him to us and many other friends who had his company in a pr<add>i</add>vate manner and although he appears singularly led in the narrow way which truly is the <add>way</add> to life we have no doubt but as he continues faithful therein the Lord will make his way a way of pleas<damage><gap/></damage>itness and all his paths paths of peace. Shining brighter and brighter unto the perfect day and bless his gospel labor of love to the comforting of many of the outcast of Isra<add>e</add>l and dispersed of Juda and in the conclusion of time conduct his immortal so<damage><supplied>ul</supplied></damage> into to mansions of eternal felicity. We may inform thee that thy beloved husband was in a pretty good state of health where amongst us which was the latter end of the sixth month and the beginning of the seventh <damage><gap/></damage>ing much more to add,
+            </p>
+            
+            <closer>
+                <salute>we subscribe ourselves <damage><supplied>frien</supplied></damage>ds to thee and thy dear companion.</salute>
+                <signed>John Coffee</signed>
+                <signed>Rachel Coffee</signed>
+            </closer>
+            </div>
+            <pb n="2" facs="457247"/>
+            <closer>
+            <address>    
+            <addrLine><damage><gap/></damage>n to Evans the <damage><gap/></damage> of Joshua in the Jersies</addrLine>
+            <addrLine>To the care of Samuel Fisher</addrLine> 
+            <addrLine>The favor of Christopher Anthony</addrLine>
+            <addrLine>Philadelphia</addrLine>
+            </address>
+            </closer>
+        </body>
+    </text>
+</TEI>
