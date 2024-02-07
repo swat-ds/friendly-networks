@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Zacharias Dicks to Ann Evans, 6mo 9, 1797: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187172</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187172</idno>
+                        <idno type="IslandoraNodeid">457236</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1797-06-09">6th month, 9th 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="4572367"/>
+            <div>
+            <opener>
+                <dateline>North Carolina Guilford County <gap reason="illegible"/> 6th month, 9th 1797</dateline>
+            </opener>
+            <p>
+            beloved friend although thou art a stranger to me as to the outward but being favored with the company of <rs key="w6c82qz0">thy dear husband</rs> in his traveling through our land, my mind hath been drawn into a near sympathy with thee, with desires this may be preserved in all thy stepping along now in the time of your long separation which I make no doubt tends at times to the trial of thy faith but as thou abides in the patience thou will be the fellow shearer of that enjoyment which this world cannot give, neither can it take it away. I have been favored as above with the company of thy dear husband, not only at my house but likewise at Diver’s Meetings at the verge of Newgarden and Cainereck Quarterly Meetings which hath been to me truly comfortable instructive and satisfactory and I hope notwithstanding his singularities and the path in which he is led there is no doubt with me but as he is careful to keep near to that which first engaged him to leave all that is near and dear in this world he will be enabled to get through to the lasting peace of his own mind and to the edification of the churches in general and dear friend remember that those farmers by <add>that</add> abode
+            <pb n="2" facs="4572368"/>
+            by the stuff had an equal reward with those that went to the battle may this be thy happy experience in a spiritual sense is the real desire of thy <del>real although</del> sincere although unknown friend
+            </p>
+            
+            <closer>
+                <signed><persName key="w69c91bq">Zacharias Dicks</persName></signed>
+            </closer>
+            </div>
+            <closer>
+            <address>
+                <addrLine>To Ann Evans</addrLine>
+            </address>
+            </closer>
+        </body>
+    </text>
+</TEI>
