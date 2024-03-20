@@ -1,0 +1,120 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Cox letter to John Hunt, 1820 2mo 14: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 11 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187147</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt papers, SFHL-RG5-240</collection>
+                        <idno type="local">A00187147</idno>
+                        <idno type="IslandoraNodeid">457152</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1820-02-14">2nd month 14th, 1820</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Death</term>
+                    <term>Quakers--Doctrines</term>
+                    <term>Travel--religious aspects</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457153"/>
+            <opener>
+                <dateline>Burlington, <date when="1820-02-14">2nd month 14th, 1820.</date></dateline>
+                <salute>Dear Friend,</salute>
+            </opener>
+            <p>
+            the difficulty of finding a direct conveyance for a letter to Moorestown has prevented an earlier acknowledgement of the receipt of thine, dated the 19th of last month, which really did me good. Whatever may be the state of others, is, or ought be, best known to themselves. I sometimes think I know my own, which is often such, that so kind a remembrance of me, as thy late notice evinces, is truly reviving. It was pleasing to know that thyself and wife, now that “it is toward evening and the day is far spent”, are so comfortable, and cared for by affectionate children. My love is to her and to them, and I should like to see you all once more, in your own habitation, but that is, like a great many other things, amongst the uncertainties of the present scene. Be that as it may, I feel a desire in looking toward you, at the close of a solitary evening, that in a degree of the same faith and confidence which David felt, after recounting the many distinguished favors which had been conferred upon him, you and I may be enabled to adopt his expressions. <quote type="biblical">Surely goodness and mercy shall follow me all the days of my life, and I will dwell in the house of the Lord forever.</quote> I have long admired, and almost reverenced the exalted character of the Royal Prophet. He had his weaknesses, in common with other men, under every dispensation; but when he was betrayed into transgression, he was quick to repent, and herein was his preservation.
+            </p>
+            <p>
+            With regard to my native village, and the tribes which congregate there at stated times, I am not altogether unmindful of them; but thou knows all my family connections are broken up, and the younger branches so, scattered, that there is hardly a spot in the town now that seems like home, nor any in which to sojourn for a night. These changes, however, as they
+            <pb n="002" facs="457154"/>
+            are principally in the natural course of things, furnish matter for serious and instructive reflection. Those who are now the survivors, must soon pass away, and be numbered amongst those who have finished their course.
+            </p>
+            <p>
+                On the late very affecting occurrence which has been permitted to happen on the Delaware, whereby two of our beloved friends have suddenly disappeared and plunged into a grave of deep waters, many minds have mingled in near sympathy with some of those who have partaken of the bitter cup in your neighborhood. Under the impression of the first shock, from such a calamity, the heart sinks, and the powers of utterance seem suspended. It has, however, been permitted to happen, and for what causes, in the inscrutable wisdom of an infinitely good and merciful providence, we cannot comprehend. When opportunity offers, I wish my love, and the tenderest sympathy I am capable of feeling, may be mentioned to <persName key="w6k08k1m">Rachel Roberts</persName>. He who felt as a man, when he wept over the mortal remains of his friends, continues to be touched with a feeling of our infirmities, and while our sincere though weak efforts are exerted to yield in humble submission to his will, he bears and mercifully waits with us, till the point of resignation is fully attained.
+            </p>
+            <p>
+            I have lived rather a lonely life, since the 3rd of the present month, when my venerable brother-in-law, <persName key="w6427ngj">G.D.</persName> on his way to meeting (the ground being, in most places, covered with sea) fell in the street. The part most affected was the right hip, and thence down to the knee. Though there does not appear to be any fracture, or dislocation of the joint, yet the fall was so sudden and heavy, as to agitate the whole frame, and besides the frequent &amp; acute pain he has endured, insomuch that he is mostly confined to his bed, the irritation on his nerves is at times distressing. Since the period I have mentioned my wife has been mostly with him, and we have thought, for a day or two past, he is gaining a little, the pain is abated, and his power to move without help, is increased, being able to sit up in a chair occasionally.
+            </p>
+            <p>
+            Perhaps if I tell thee that <persName key="w6wh3qkh">Nathan Hunt</persName> is expected in Philadelphia in
+            <pb n="003" facs="457155"/>
+            the Spring, with a view to embark on a religious visit to England, &amp;c. it will be no news to thee. However, so it is, and I hear he is coming with an old certificate, that is, the one which he obtained a year ago last fall. If the North Carolina folks had not thought proper to deliberate on his concern afresh, with a view to discover whether it had lost anything in weight, they might at least have furnished him with an endorsement of a later date than the old paper, and thus made it more passable on the British shores. In due season, we may hear the result of Caln Quarter (to be held; I believe, next 5th day) on the concern of Jesse Kersey, who has also, it seems, a view across the great waters. William Rickman, by a late account received in Burlington; was on or near the boundaries of the British settlements, on his way to Canada.
+            </p>
+            <p>
+            Leaving now, in the freedom of communication to an old friend, 
+            written thee a pretty long letter, with desires that thou may continue to bear
+            me in remembrance,
+            </p>
+            <closer>
+                <salute>I conclude, I am thy affectionate friend</salute>
+                <signed><persName key="w6b01gx6">John Cox</persName></signed>
+            </closer>
+            </div>
+            
+            <pb n="004" facs="457156"/>
+            
+            <closer>
+                <address>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+                    <addrLine>near Moorestown</addrLine>
+                    <addrLine>It may be left with Ann Stokes, widow of Doctor Stokes or with Samuel Cole, Moorestown – either of whom are requested to deliver it to <persName key="w6n9820p">John Hunt</persName></addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,101 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Susanna, Nancy, Martha, and Mary Davis to the family of Joshua Evans, 7mo 10, 1797: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187174</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187174</idno>
+                        <idno type="IslandoraNodeid">457242</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1797-07-10">10th of the 7th Month 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457243"/>
+            <opener>
+                <dateline>Campbell County Virginia the <date when="1797-07-10">10th of the 7th Month 1797</date></dateline>
+                <salute>Dear Friends,</salute>
+            </opener>
+            <p>
+            Being put in mind by a particular friend of writing to you; we unite and feel our minds drawn out in love towards you who being the family of an Excellent pattern, our dear friend and yours, and <rs key="w6c82qz0">your near relation</rs>, the company of whom we have had more than could be expected from one who has so extensive a journey: his agreeable company, good advice and counsel has be very comfortable to us and hope it will not all be forgotten. We have cause to believe he has been instrumentally useful in this little meeting to which we belong. O that we had such a pattern such an example in our part of the world. No doubt but your trials are great (as well as his) in parting from so near and dear a friend, father, and companion in life; but we hope your loss is our gain in a great measure, and we still hope, after he has done what the great master has for him to do, he may return to you in peace, and that you may receive him with joy and comfort. It is our sincere desire and prayer to Almighty god that the candle may not be extinguished, which we which we believe has been measurably alighted amongst us. We are going to school except the eldest of us, who is the teacher, and has a comfortable little school. Now if you should receive this, and think proper to make us a return, yea more than a return we should be exceeding glad, and t<damage><supplied>a</supplied></damage>ke it very kind. so conclude with our loves to you and all the family &amp;c.
+            </p>
+            <closer>
+                <signed>Susanna, Nancy, Martha and Mary Davis</signed>
+            </closer>
+            
+            <postscript>
+             <p>I join my dear young friends in this letter to you being a scholar of the same school a present</p>
+             <signed>Betty Hendricks</signed>
+            </postscript>
+            </div>
+            <pb n="2" facs="457244"/>
+            <closer>
+            <address>
+             <addrLine>Susannah Davis</addrLine>
+             <addrLine>To Ann Evans</addrLine>
+            </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

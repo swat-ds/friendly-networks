@@ -1,0 +1,118 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joseph Foulke letter to John Hunt, 1823 10mo 3: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 12 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187144</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt papers, SFHL-RG5-240</collection>
+                        <idno type="local">A00187144</idno>
+                        <idno type="IslandoraNodeid">457138</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1823-03-10">10th Month 3rd, 1823</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Doctrines</term>
+                    <term>Diseases</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457139"/>
+            
+            <opener>
+                <dateline>Gwynedd B. School <date when="1823-10-03">10th Month 3rd, 1823</date><note type="authorial" place="margin">Received this <date when="1823-10-06">6th of 10th month</date></note></dateline>
+                <salute>Beloved friends</salute>
+            </opener>
+            
+            <p>
+            Thy acceptable letter came duly to hand a few days after its date, on the reading of which, I thought I might say with the apostle, <quote type="biblical">I rejoice because of the consolation.</quote> It is indeed reviving and very encouraging to us to be remembered by those who in old age, and after a long, long career of life, hold fast to the cause and to the testimony in which we most surely believe. Thy expressions I felt to be very emphatical. <quote type="biblical">Brethren pray for us.</quote> The Apostle, no doubt under the feeling of the many infirmities incident to human nature and the temptation to which we are exposed after all our experiences and all our labors, had need that the brethren should pray for them, so I believe it is no less needful in this our day that we should endeavor fervently to pray for one another, that our faith fail not, and that there may be a true holding out unto the end, <quote type="biblical">steadfast and immovable always abounding in the work of the Lord for as much as ye know brethren that our labor in the Lord is not in vain.</quote> Hence the declaration of the Psalmist becomes realized that <quote type="biblical">they that are planted in the Lord’s house shall flourish in the courts of our God they shall still bring forth fruit in old age, they shall be fat and flourishing</quote>. And for this very good reason too, <quote type="biblical">because the Lord is good, he is our rock and there is no unrighteousness in him.</quote> And it was also declared of that meek humble man Moses that <quote type="biblical">he was faithful in all his house</quote>, so it ultimately proved that when he was a hundred and twenty years old, his eye was not dim, nor his natural force abated. So it has been, and doubtless through all generations will be, that the truly faithful shall shine with increasing luster unto the end of their days. Their spiritual eye shall never be dim, but more and more enlightened to see and know <quote type="biblical">what is the hope of His (Christ's) calling, and what the riches of the glory of his inheritance in the saints.</quote> (Epesians 1:18) They shall never be weary of well doing nor their natural force abate in the work of the Lord. We may toil and our bodies become weary as respects temporal things, but this is a work in which strength will forever be increased. Hence it is that the <quote type="biblical">Righteous shall hold on his way and they that have clean hands shall be stronger and stronger.</quote> And again, <quote type="biblical">they that be wise shall shine as the brightness of the firmament and they that turn many to righteous as the Stars forever and ever.</quote> (Daniel 11:3).</p>
+                
+                <p>Thou mentions thy afflictions with the Ague. It is a complaint very prevalent in this neighborhood and I believe all over the country. In some places the termination is in a kind of malignant bilious fever which is very mortal. When thou mentioned the number of coffins that went out of one joiners shop in a day, it reminded me of attending the burial of Jane Shoemaker widow of
+            
+            <pb n="002" facs="457140"/>
+                
+            John Shoemaker of Abington a few weeks ago. There was three graves open in that ground all at once, and a Friend informed me that for a time there was, on an average, a burial in that ground every day. The disorder is also very mortal in some parts of Bucks County. Yet from appearances, the inhabitants of the world are dull of learning Righteousness, though the Lord’s judgements are in the Earth, and so much so that the disorders that carry many away are of such a nature as to baffle the skill of the most experienced physicians. </p>
+                
+                <p>My mind has of later time been much impressed (both on mine own account and on account of my brethren everywhere) with that very significant declaration or expression of the Most High through the mouth of his prophet unto Israel formerly, and which is applicable to us both as it relates to our present well-being and to our future happenings: <quote type="biblical">Oh! that there was such a <hi rend="underlined">Heart</hi> in them, that they would fear me and keep my commandments always, that it might be well with them and with their children forever</quote> (Deuteronomy 5:29). But alas! There is a proneness in our nature to take up a resting place in externals, and thus lapse into a state of spiritual slumber: being contented to draw near unto the Lord with the mouth and with the lips to do him honor, when the heart is far removed from him and deeply engrossed in an inordinate love of the world, and pursuit after its riches, its honors and its preferments. And when the hearts of parents are thus oppressed and enslaved, what can we expect from their offspring? As the parents go into the Earth and Earthly mindedness, so the children will go into the air and many times into high mindedness, and thus the <quote type="biblical">Lord’s portion becomes trodden underfoot, his pleasant portion a desolate wilderness.</quote> (Jeremiah 12:10). But may we all earnestly strive to have <quote type="biblical">such a heart in us as to fear the Lord and keep his commandments always, that it may be well with us and with our children forever.</quote> I believe that here only we can be qualified to discharge our duties severally in repairing the waste places and the broken walls. Oh, I crave that I ever may have a heart in me to feel and that is susceptible of feeling the real condition of my fellow creatures, that I never may be betrayed with a disposition that would judge others of an evil when at the same time I may be blind to my own situation. Well, let us dwell near to Hermon, the mount on which it is said there is always dew, the mount where the Lord commanded the Blessing even life forever more, and not like the mount of Gilboa on which was <quote type="biblical">neither dew nor rain nor fields of offering, for there the shields of the Mighty
+            
+                <pb n="003" facs="457141"/>
+                
+                was vilely cast away the shield of Saul as though he had not been anointed with oil.</quote> </p>
+                <p>I am aware that thou don't approve of sending much blank paper in correspondences of this kind, but the bearer of this will now soon be on me not prepared to wait long. We should be glad to be remembered to <rs key="w6wx87x7">thy dear wife</rs> and daughters <persName key="w68x44wf">Abigail</persName> and <persName key="w6136j8n">Hannah</persName> and son <persName key="w6vf7pzj">John</persName>. I believe I owe him a letter. I hope thou may be well enough to write occasionally, for I am much revived by remembrances of this kind. I think there is one of thy sons removed suddenly removed to his long home since I last wrote thou. I was exceeding sorry in missing to speak to thee at Burlington Quarter last—at the rise of the meeting I went towards thee, but was pulled this way and that way until thou made thy escape. I was a silent spectator but I trust not an idler among Friends there that day. I now send our best love from father &amp; family, from wife and nearest Friends, to thee and all thine,
+            </p>
+                
+            <closer>
+                <salute>affectionately</salute>
+                <signed><persName key="w63g5f9w">Joseph Faulke</persName></signed>
+                <salute>To <persName key="w6n9820p">John Hunt the Elder</persName></salute>
+            </closer>
+            </div>
+            
+            <closer>
+              <pb n="004" facs="457142"/>
+              <address>  
+                 <addrLine><persName key="w6n9820p">John Hunt (the Elder)</persName></addrLine>
+                 <addrLine>near Moors town</addrLine>
+                 <addrLine>State of New Jersey</addrLine>
+                 <addrLine>Care of Williams &amp; Albertson</addrLine>
+                 <addrLine>NW corner of Marshall</addrLine> 
+                 <addrLine>&amp; Second Street Philadelphia</addrLine>
+              </address>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>

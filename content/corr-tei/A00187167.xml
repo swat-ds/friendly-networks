@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Abigail Matthewson to Joshua Evans, 12mo 1, 1796: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187167</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187167</idno>
+                        <idno type="IslandoraNodeid">457221</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1796-12-01">1 of the 12th month 1796</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="457222"/>
+            <opener>
+                <address>
+                    <addrLine><persName key="w6c82qz0">Joshua Evans</persName></addrLine> 
+                    <addrLine>Newtown</addrLine>
+                </address>
+            </opener>
+            <div>
+            <pb n="2" facs="457223"/>
+            <opener>
+                <dateline><damage><gap/></damage>tego the <date when="1796-12-01">1 of the 12th month 1796</date></dateline>
+                <salute>Dearly beloved Friend,</salute>
+            </opener>
+            <p>
+            In a degree of that love that nearly unites in spirit, do I write to thee to inform thee a little of our present situation I think I may venture to inform thee that thy labors of love amongst us has not been wholly lost. I think my husband has taken part if he doth but be faithful it will be such a blessing as will afford the greatest comfort to me. Hannah Sleeper acquaints us as thy long journey to the southward which I hope may be attend<add>ed</add> with more ease than I have any idea of but of earnestly desire that thou may be made able to perform it to the glory of him that hath called thee there. We received thy kind letter which was refreshing and edifying. Samuel Sleeper and his wife appear to be very thoughtful, respecting the value of heavenly treasure and seems in some good degree humbled under the enjoyment, thereof, we have some refreshing season when we meet, with ardent longings that the merciful Creator of all things will in his own time compassionate our condition and in the riches of his goodness condescend to favor us with his goodness which transcends all temporal enjoyments.
+            </p>
+            <closer>
+                <salute>In a degree of boundless love and a sympathizing friendship I conclude thy friend</salute>
+                <signed>Abigail Matthewson</signed>
+            </closer>
+            <postscript>
+                <p>my husband with Samuel Sleeper and his wife remember their love to thee &amp; thine</p>
+            </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

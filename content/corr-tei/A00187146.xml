@@ -1,0 +1,116 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Cox letter to John Hunt, 1824 7mo 20: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 12 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187146</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt papers, SFHL-RG5-240</collection>
+                        <idno type="local">A00187146</idno>
+                        <idno type="IslandoraNodeid">457147</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1824-07-20">7th month 20th, 1824</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Death</term>
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2005064399">Hunt, John, 1740-1824</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457148"/>
+            <opener>
+                <dateline>Oxmead <date when="1824-07-20">7th month 20th, 1824</date></dateline>
+                <salute>My dear Friend</salute>
+            </opener>
+            <p>
+            I have received thy letter of the 10th and was pleased again to hear thee after another afflicting dispensation of infinite wisdom meted out for a purpose best known, or rather only known to himself, for <quote type="biblical">he doth not afflict willingly, nor grieve the children of men; though he cause grief, yet will he have compassion, according to the multitude of his mercies.</quote> Now when we thus address one another as fellow pilgrims journeying, in hopes and fears, toward a better country, thou very well knowest we dare not hunt for expressions, nor study our simple compositions, but loving the truth as it is in Jesus, and loving, in Him, those who are trying to walk in it to the end, we express what comes before us, and are thus made instrumental in helping one another on the way. We have our ups and downs - if we were not frequently brought down, how could we rise? And when one is up a little, he may be authorized to revive in the remembrance of him that is down, and fearful of sinking in the troubled waters, the animating expressions of the rules of the storm. <quote type="biblical">Be of good cheer; it is I, be not afraid.</quote> Since the intelligence reached <add>me</add>, and perhaps it was soon after the event of the decease of thy son, I pondered on the mournful state of parents thus bereaved of their earthly props in old age. I thought of the days of my youth, from which period to the present time, John Hunt had kindly noticed me, and that all along, whatever might have been my case, he had never lost sight of <quote type="biblical">the one thing needful</quote>, the <quote type="biblical">pearl of great price</quote>. And that though he had often to lament and mourn, under a sense of his weakness and his slips, yet that the blessed truth and its prosperity, in himself and in others, and in the visible church at large, had been, above all things, <add>in his estimation</add> precious.
+            
+            <pb n="002" facs="457149"/>
+            Now I believe that an indifference to the possession of this pearl of inestimable value, this heavenly <quote type="biblical">treasure in earthen vessels</quote>, of which none of us can be possessed, but through a submission to the operation of the divine hold on the transgressing nature in the heart, which alone can cleanse and purify, and utterly cast out and destroy all that is opposed to its righteous government, is the main cause of the dreadful infidelity and gross idolatry that is foaming and spreading like a torrent of filthy and troubled waters on the Earth, casting up mire and dirt in its progress. And if what I have mentioned be the real <q>main cause</q> of all this, and I do mention it without hesitation or doubt, is it any wonder that the devastation and havoc has been suffered to wind it, way within our enclosure, breaking over the boundary line which truth has prescribed for all its botanics, and despising that holy restraint which is so essential to the real and substantial happiness of man, here and forever? Yet we may derive consolation from the reflection, that though we may be used as instruments to promote it, the cause of truth and righteousness, and the power to promote it, to diffuse it, and finally to establish it from sea to sea, and from the rivers to the ends of the Earth, is the sole prerogative of Omnipotence, who will complete his own mighty work, in his own time, and thus fulfill the declarations of his servants the Prophets, who, in the openings of the vision of light, at various periods, spoke in his name, of the times to come, and the glory that should be revealed. Though it must be a acknowledged to be a dark and dreary day in which we live, yet the holy promises are yea and amen forever! He that hath made them, can never break them, and though in the <del>bonds of</del> bondage of sin and iniquity there is darkness, as there was in typical Egypt, yet in the dwellings of the circumcised Israel, there is light still, and there may see and do see good
+            
+            <pb n="003" facs="457150"/>
+                days even now. Thus have I given thee, my old friend, some of my serious impressions, in freedom. I seldom write or talk much on religious subjects, especially on points of controversy, being inclined to doubt its safety or profitableness, except when the mind, under better influence than we can command, leads thereto. I certainly had not a thought, when I took the pen, of committing to paper anything like the matter contained in the preceding page; but it seemed to come before me, and if, on the perusal of it, it shall minister any encouragement to thee, in the day of windy speculation and grievous unsettlement in the minds of many under our name, I shall partake of thy comfort. I have sometimes a lively hope, that a seed will be preserved, through all the storms of the present days and those which may be permitted yet to come. A seed a precious seed, which though often grieved and <quote type="biblical">pressed down as a cart with sheaves</quote>, the Lord who hath sown it will cherish, protect, and water, and cause to produce the genuine flagrant fruits of righteousness and peace, to his praise. I humbly trust these are not words of course, or penned in lightness, but the language of the heart, a language to which thine will respond; for I trust we have not so learned Christ as to reject him (as many do in the present day) as a savior, a sacrifice, a redeemer, and our only hope of salvation.
+            </p>
+            
+            <p>
+            On another glance at thy letter, I observe the expression of desire for some of thy correspondent’s company. I too, have desired to see thee once more at thy own habitation,  but my wife and I both feel the increasing infirmities of advancing age, and go but little abroad. However, I keep it in view, as an event that may possibly happen. Be that as it may, I conclude with desire for our mutual increase in saving faith, enduring patience, and perseverance to the end of the race,
+            </p>
+            
+            <closer>
+                <salute>Thy affectionate friend</salute> 
+                <signed><persName key="w6b01gx6">John Cox</persName></signed>
+            </closer>
+            </div>
+            
+            <pb n="004" facs="457151"/>
+            
+            <closer>
+               <address>
+                   <addrLine>John Hunt</addrLine> 
+                   <addrLine>near Moorestown</addrLine>
+               </address>
+            </closer>
+            <postscript>
+                <p>
+                Anna Braithwaite embarked on the 16th instant for Liverpool, at New York. We have no late intelligence of the movements of <persName key="w65d92g1">William Forster</persName> or Isaac Stevenson. It is likely thou hast heard that another female messenger is expected on a religious visit to this country - Elizabeth Robson of Liverpool - she obtained her clearance at the last yearly meeting in London, but I have not heard of her embarkation.
+                </p>
+            </postscript>
+        </body>
+    </text>
+</TEI>

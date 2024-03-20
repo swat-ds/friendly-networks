@@ -1,0 +1,106 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joseph Foulke letter to John Hunt, 1822 8mo 23: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187143</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>John Hunt papers, SFHL-RG5-240</collection>
+                        <idno type="local">A00187143</idno>
+                        <idno type="IslandoraNodeid">457134</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>3 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1822-08-23">23rd of 8th month 1822</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Doctrines</term>
+                    <term>Simplicity--Religious aspects</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457135"/>
+                
+            <opener>
+                <dateline>Montgomery County Gwynedd B. School <date when="1822-08-23">23rd of 8th month 1822</date></dateline>
+                <salute>Beloved friend,</salute>
+            </opener> 
+                
+            <p>
+            It has been much on my mind to write to thee for some time past, partly as an acknowledgment for thy several acceptable communications to me, and mainly for the love and regard my spirit feels towards thee. Having been refreshed in thy company and at thy house both spiritually and temporally. I have been much instructed and entertained as well as my family and some of our particular friends with thy long letters. And should be glad they might be continued as thou feels the current flow my engagements have been various since my wife and I were at thy house. But not much from home. Had an appointed meeting near this place (Montgomery Square) where friends of our meeting formerly held meetings on first day of afternoons in the summer time it was on first day afternoon the meeting was appointed. I was glad to hear the remarks of a very noted man (one Wager) on the occasion he attended. And observed that religion only softened the morals of people. That the laws of the land might be fully and rigorously put in execution and the people all the which grow worse until they become savage. He said he therefore thought much of these meetings and could gladly encourage them believing that the people of the neighborhood had need of improvement. (which indeed was true enough). He and his wife wished me to continue meetings on first day afternoons. But I was glad to feel released from an exercise that had long attended my mind. If I had time enough I might fill my sheet full <gap reason="illegible"/> nothing but love.  To communicate in particular. We are all in good health which is a favor as it is sickly in the neighborhood. I received thy message of love by Salatheel &amp; Leaver when he was lately over at Moors town.
+            </p>
+            
+            <pb n="002" facs="457136"/>
+                
+            <p>
+                It is a day in which there is much religious speculation afloat and uncertain and changeable doctrines in the busy bustling world. Which makes it necessary for friends to keep to their plain way of living and their plain way of preaching that they may not be misunderstood in neither life or conversation. I have latterly been much instructed in reading the works of Isaac Pennington find them richly stored with most excellent matter I believe if friends would read them with unbiased minds, they need not be uninformed and if they would try the spirits whether they be of God, they need not be deceived with false doctrine. I should be glad to fill my sheet this time but time forbids. Please tell thy son <persName key="w6vf7pzj">John</persName> I received his kind letter and intend answer it soon and complying with his request as far as practicable with love to <rs key="w6wx87x7">thy wife</rs>, <persName key="w68x44wf">Abigail</persName> &amp; <persName key="w6136j8n">Hannah</persName> and all enquiring friend.
+            </p>
+            
+            <closer>
+                <salute>I remain</salute> 
+                <signed><persName key="w63g5f9w">Joseph Faulk</persName></signed>
+            </closer>
+            </div>
+            
+            <closer>
+                <pb n="003" facs="457137"/>
+                <address>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+                    <addrLine>Near Moors Town</addrLine>
+                    <addrLine>New Jersey</addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

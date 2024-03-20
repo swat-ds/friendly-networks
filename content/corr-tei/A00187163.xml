@@ -1,0 +1,110 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Seth Coleman to Ann Evans, 8mo 16, 1795: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187163</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187163</idno>
+                        <idno type="IslandoraNodeid">457209</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1795-08-16">16th 8th month 1795</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457210"/>
+            <opener>
+                <dateline><damage><supplied>Dart</supplied></damage>mouth Nova Scotia, <date when="1795-08-16">16th 8th month 1795</date></dateline>
+                <salute>Respected Friend Ann Evans,</salute>
+            </opener>
+            <p>
+            In that love that is the cement of friendship do I at this time salute thee, and have to inform of <rs key="w6c82qz0">thy dear husband</rs> being with us on a religious visit, his coming was very unexpected to us, as we had been ready to think that poor Nova Scotia was almost unworthy of the notice of any of our brethren in society, but to our great comfort and consolation <add>we are</add> yet remembered although in so remote a corner, I believe the few days we spent together was to our mutual satisfaction, or at least on my own part must say it was like a cordial to my mind, I could <gap reason="illegible"/> wished to accompanied him through the country but my engagements were such at that juncture that prevented me, but our friend Thomas Green went on to Cornwallis and parted with him there, <del>two</del> <add>3</add> days journey from this, since which I have had no tidings from him, I think he had a very worthy and agreeable companion appeared, constantly attentive and careful in every respect. It appeared that taking the water was somewhat of a burden to him but as he was wonderfully brought through to this port, I have not my doubts but he will be still <add>preserved to</add> persevere in safely to &amp; accomplishment of his journey as way opens, and that he may be favored to return with the reward of peace in his own breast and to the mutual satisfaction of thyself &amp; family is the most ardent wish of thy affectionate Friend
+            </p>
+            <closer>
+                <signed>Seth Coleman</signed>
+                <salute>My wife &amp; family joins in love to thee and thine</salute>
+            </closer>
+            
+            <postscript>
+                <p>
+                NB a sealskin bag I send by Captain Miller contents unknown except a tin box of crackers my wife presents thee as a specimen of our Nova Scotia manufacture but not Philadelphia superfine. We shall expect a few lines from thy dear husband as soon as favored to return.
+                </p>
+                <closer>
+                    <signed>Seth Coleman</signed>
+                    <salute>Thomas Green &amp; wife wishes to be remembered to thee and thine</salute>
+                </closer>
+            </postscript>
+            </div>
+            <pb n="2" facs="457211"/>
+            <closer>
+                <address>
+                  <addrLine><persName key="w6c82qz0">Joshua Evans</persName></addrLine>
+                  <addrLine>New Jersey Gloucester</addrLine>
+                  <addrLine>County Newtown - to the care of Samuel Fisher, Philadelphia</addrLine> 
+                  <addrLine>near the drawbridge</addrLine> 
+                  <addrLine>In favor of Captain Miller</addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

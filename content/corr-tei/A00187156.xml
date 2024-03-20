@@ -1,0 +1,113 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joseph Austin to Ann Evans, 8mo 20, 1794: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187156</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187156</idno>
+                        <idno type="IslandoraNodeid">457180</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-08-20">20th 8th month 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457181"/>
+            <opener>
+                <dateline>New Bedford <date when="1794-08-20">20th 8th month 1794</date></dateline>
+                <salute>Beloved Friend Ann Evans,</salute>
+            </opener>
+            <p>
+            Although not personally acquainted with thee, yet of late much so with <rs key="w6c82qz0">thy beloved Husband</rs>, since his leaving thee and his other near and dear connections at home, to visit his brethren abroad in the love of the Gospel— in which I fully believe he is in the way of his duty, in answering the requirings of the Great Master, and I have a hope to believe the divine blessing will attend his labors of love among us, to his peace of mind and our furtherment in the way of Truth, which induces me to address thee in this way, being sensible, from my acquaintance with him, that it must be satisfactory to thee to hear from him at any time, with some little account of his getting along. I have traveled with him 200 miles, attended 27 meetings, 2 of which were Quarterly, Sandwich and Rhode Island. At the latter I parted with him, 7th instant. All the meetings were large for their neighborhoods, attended by every class of people. The Truth so far prevailed as in great measure to chain down all dark and light spirits, and was to general satisfaction. <rs key="w6c82qz0">Thy beloved Husband</rs> often mentioned his having been abundantly favored in his getting along, much beyond his expectation when he left home. That, with many other cooperating circumstances, is a clean evidence to my mind that his singular appearance has the
+            
+            <pb n="2" facs="457182"/>
+            the ownings of Truth. It also evinces that when there is a yielding faithful obedience to the dictates of best wisdom, hard things are made easy. I hope thou may be favored to give him up cheerfully, that when his labor abroad is ended you may be favored to meet again with the reward of peace. I may further add, hearing from <rs key="w6c82qz0">thy dear husband</rs>, 17th he was then in Providence well in health, since I left him he has had several meetings and visited 23 families, 20 of which was not of our society, also 3 ministers of other societies, at Providence, all to good satisfaction. I had this account from his companion by letter to his wife, who is Thomas Rotch a solid affectionate tender hearted Friend, has been with him since Sandwich Quarterly Meeting and expects to be with him several months more. They are now on their way from Providence to Boston and so on to the Eastern Country.
+            </p>
+            <p>
+                ps enclosed thou has a copy of minute made by one of the Friends who accompanied <rs key="w6c82qz0">thy Husband</rs> in visiting the families of our little meeting, also some little traces of his journey while I was with him. This being what at present occurs, I conclude with affectionate love and regard to thee and every branch of the family, in which my wife and <persName key="w6c61k15">Charity Rotch</persName> wife of thy 
+            
+            <pb n="3" facs="457183"/>
+            <rs key="w67m1bxt">thy dear husband’s companion</rs> unites with me in —</p>
+            <closer>
+                <salute>and am thy affectionate friend</salute>
+                <signed>Joseph Austin</signed>
+            </closer> 
+            
+            </div>
+            
+            <closer>
+                <pb n="4" facs="457184"/>
+                <address>
+                    <addrLine>Ann Evans wife of Joshua Evans</addrLine>
+                    <addrLine>Newtown Township</addrLine>
+                    <addrLine>Gloucester County</addrLine>
+                    <addrLine>To the care of <persName key="w6427nc6">William Savery</persName></addrLine>
+                    <addrLine>New Jersey</addrLine>
+                    <addrLine>Philadelphia</addrLine>
+                </address>
+                <signed>Joseph Austin</signed>
+            </closer>
+        </body>
+    </text>
+</TEI>

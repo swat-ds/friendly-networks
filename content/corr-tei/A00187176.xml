@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>George Churchman to Joshua Evans's Wife, 10mo 31, 1797: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187176</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187176</idno>
+                        <idno type="IslandoraNodeid">457248</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1797-10-31">10th month, 31st, 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457249"/>
+            <opener>
+                <dateline>East Nottingham <date when="1797-10-31">10th month, 31st, 1797.</date></dateline>
+            </opener>
+            <p>
+                As I expect it would be agreeable to <persName key="w6c82qz0">Joshua Evans</persName>’ wife and connections to have some account where he is, &amp;c., &amp; I thought I was willing to try to let them know, that he came across Susquehanna River from Deer-Creek with me last 7th day morning and attended our monthly meeting at East Nottingham that day, and next day our first day meeting which was a large gathering; yesterday he proposed being at Little Britain Meeting, another about 4 miles distant in the same township today, &amp; tomorrow at West Nottingham. After that, his prospect seemed to be to go down to the eastern shore of Maryland by the Head of Sassafras, &amp; to take the meetings, both on that shore, and the Delaware shore in succession, hoping to get nearly through them by the time of the Southern Quarterly Meeting, which begins the 25th of the 11th month. It appears he has been favored with remarkable health and success through this extensive journey as I think he told me he had not lain by even one day with sickness, if I remember right; also I understood his desire was to get home pretty soon after the Southern Quarter above hinted of, although I did not ask him particularly concerning that. I was with him at Deer-Creek monthly meeting before he came over the river, and both there and here I have had much unity with him &amp; his honest, well-meant labors; particularly at our first day meeting, he being much favored there among a mixed multitude, to demonstrate (though not with the enticing words of man’s wisdom) that pure gospel doctrines, through the help of the spirit, may be preached with a degree of primitive force &amp; energy, through simple instruments, who are called thereto, &amp; submissively given up to be qualified for the purpose, by the effectual operation of the cross &amp; mortification of all that is selfish &amp; pleasing to the natural part. (Having given the above intimation as I heard Joshua express a desire to write himself if he knows of a direct opportunity)
+            </p>
+            <closer>
+                <salute>I am with love to his connections their affectionate friend</salute>
+                <signed>George Churchman</signed>
+            </closer>
+            </div>
+            <pb n="2" facs="457250"/>
+            <closer>
+            <address>
+                <addrLine>George Churchman</addrLine>
+                <addrLine>To Joshua Evans’ wife &amp; connections</addrLine>
+                <addrLine>On Cooper’s-Creek</addrLine>
+                <addrLine>New Jersey</addrLine>
+            </address>
+            </closer>
+        </body>
+    </text>
+</TEI>
