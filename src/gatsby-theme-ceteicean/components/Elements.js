@@ -292,6 +292,15 @@ export const Para = (props) => {
   );
 };
 
+export const AddrLine = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      <br/>
+    </Behavior>
+  );
+};
+
 export const Head = (props) => {
   return (
     <Behavior node={props.teiNode}>

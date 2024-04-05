@@ -17,6 +17,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-teiheader": El.TeiHeader,
     //"tei-ab"
     "tei-add": El.Add,
+    "tei-addrline": El.AddrLine,
     "tei-cell": El.TableCell,
     "tei-closer": El.Block,
     //"tei-damage"
