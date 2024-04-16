@@ -241,6 +241,15 @@ export const Dateline = (props) => {
     return("");
   }
 
+  // Wrap in <p> if within <closer>
+  if (props.teiNode.closest('tei-closer')) {
+    return (
+      <Behavior node={props.teiNode}>
+          <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
+      </Behavior>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
@@ -383,15 +392,11 @@ export const List = (props) => {
 };
 
 export const Salute = (props) => {
-  // Add a linebreak before the Salute if it's in the opener
-  let linebreak = (props.teiNode.parentNode.localName === "tei-opener")?
-    (<br/>):
-    "";
-
   return(
     <Behavior node={props.teiNode}>
-      {linebreak}
+      <p>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
     </Behavior>
   );
 };
@@ -399,8 +404,9 @@ export const Salute = (props) => {
 export const Signed = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <br/>
-      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      <p className="signed">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
     </Behavior>
   );
 };
