@@ -41,7 +41,7 @@ function prepareNode(node){
   let detailedDateStr =
     header["tei-teiHeader"]["tei-fileDesc"][0]["tei-titleStmt"][0][
       "tei-title"
-    ][0]._.split(":")[0].split(",")[1];
+    ][0]._.split(":")[0].split(/, (?=\d|undated)/)[1];
   
   // Extract collection title from TEI
   let collection = xpath.evalFirst(header, "//tei-collection")["_"]
