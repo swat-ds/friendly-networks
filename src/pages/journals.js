@@ -46,11 +46,22 @@ function prepareNode(node){
   // Extract collection title from TEI
   let collection = xpath.evalFirst(header, "//tei-collection")["_"]
 
+  // Extract genre from TEI
+  let genre
+  if (title.toLowerCase().includes("journal")){
+    genre = "Journals";
+  } else if (title.toLowerCase().includes("account")){
+    genre = "Account Books"
+  } else {
+    genre = "Letters"
+  }
+
   let preparedNode = {
     route: route ,
     title: title,
     detailedDateStr: detailedDateStr,
     collection: collection,
+    genre: genre,
   };
 
   return preparedNode;
@@ -75,8 +86,18 @@ const JournalsPage = ({ data }) => {
     {name: 'Evans', value: 'Evans'}
   ];
 
+// Create a useState to filter which genres are shown
+const [genreFilter, setGenre] = useState('');
+const genres = [
+  {name: 'All', value: ''},
+  {name: 'Journals', value: 'journal'},
+  {name: 'Letters', value: 'letter'},
+  {name: 'Accounts', value: 'account'}
+];
+
   var filteredNodes;
   filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
+  filteredNodes = filteredNodes.filter(x => x.title.toLowerCase().includes(genreFilter))
 
   // Handle display of filter buttons: 
   const minWidth = 992;
@@ -171,6 +192,32 @@ const JournalsPage = ({ data }) => {
                   onChange={(e) => setColl(e.currentTarget.value)}
                 >
                   {collection.name}
+                </ToggleButton>
+              ))}
+            </ToggleButtonGroup>
+
+            {/* Genres */}
+            <div className="filter-label h6">Filter by genre</div>
+            <ToggleButtonGroup 
+              name="genre" 
+              type="radio"
+              defaultValue={''}
+              id="journal-filter-group"
+              vertical={filterOnSide}
+            >
+              {genres.map((genre, idx) => (
+                <ToggleButton
+                  className="journal-toggle-btn"
+                  key={idx}
+                  id={`genre-${idx}`}
+                  type="radio"
+                  variant="primary"
+                  name="genre"
+                  value={genre.value}
+                  checked={genreFilter === genres.value}
+                  onChange={(e) => setGenre(e.currentTarget.value)}
+                >
+                  {genre.name}
                 </ToggleButton>
               ))}
             </ToggleButtonGroup>
