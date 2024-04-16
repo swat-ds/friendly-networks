@@ -40,10 +40,12 @@ body {
 
 @media only screen and (max-width: 991px){
   #journal-filter-col {
+    background-color: #342E37;
     flex-flow: row nowrap;
     position: relative;
     padding: 12px;
     margin-right: 0px;
+    position: sticky;
 
     > *{
       display: flex;
