@@ -70,19 +70,21 @@
         <body>
             <pb n="1" facs="457216"/>
             <opener>
-                <dateline>Wilmut, Nova Scotia the <date when="1795-10-17">10th month 17th day 1795</date></dateline>
+                <dateline>Wilmut, Nova Scotia, the <date when="1795-10-17">10th month 17th day, 1795</date></dateline>
                 <salute>Esteemed Friend</salute>
             </opener>
             <p>
-            The day I left you at Beaver Harbor, I got to St. John’s &amp; next morning a passage presented for Digby so everything was favorable for my speedy return home to my family which I found all well which they are <add>likewise</add> at this time &amp; soon after my return I went to Halifax and paid our friends a visit at Dartmouth and they was rejoiced to hear from thee &amp; thy companion that you had got so far on your journey so favorable; thy labor of love through our parts, I think I may say had a good effect on the things of most of the people that attended the meetings thee had amongst us so I hope it may prove like bread cast on the waters which may be found after many days;
+            The day I left you at Beaver Harbor, I got to St. John’s &amp; next morning a passage presented for Digby so everything was favorable for my speedy return home to my family which I found all well, which they are <add>likewise</add> at this time. &amp; soon after my return I went to Halifax and paid our friends a visit at Dartmouth and they was rejoiced to hear from thee &amp; thy companion that you had got so far on your journey so favorable. Thy labor of love through our parts, I think I may say, had a good effect on the Minds of most of the people that attended the meetings thee had amongst us, so I hope it may prove like bread cast on the waters which may be found after many days.
             </p>
             <p>
-            Thy singular appearance I expected would be the cause of many remarks of ridicule but ins<add>t</add>ead of that it carried remarks of humility &amp; self-denial amongst all classes of people which I thought worthy of noticing. Dear friend I have not heard from thee nor Timothy since we parted therefore if thou could favor me with a line informing me how thee got along, it would be kindly received by myself &amp; family who joins with me in love to thee hoping this when it comes to hand, it may find thee returned home to thy family with rejoicing of peace in thy own bosom &amp; that the Lord may send more such laborers amongst us is the earnest desire of thy friend
+            Thy singular appearance I expected would be the cause of many remarks of ridicule, but ins<add>t</add>ead of that it carried remarks of humility &amp; self-denial amongst all classes of people which I thought worthy of noticing. Dear Friend, I have not heard from thee nor Timothy since we parted. Therefore, if thou could favor me with a line informing me how thee got along, it would be kindly received by myself &amp; family, who joins with me in love to thee, hoping this, when it comes to hand, it may find thee returned home to thy family with rejoicing of peace in thy own bosom. &amp; that the Lord may send more such laborers amongst us is the earnest desire of 
             </p>
             <closer>
-                <signed><persName key="w6c82qz0">Joshua Evans</persName></signed>
+                <salute>thy friend,</salute>
                 <signed><persName key="w6xf1t3b">Samuel Moore</persName></signed>
             </closer>
+            <trailer><persName key="w6c82qz0">Joshua Evans</persName></trailer>
+
             <pb n="2" facs="457217"/>            
         </body>
     </text>

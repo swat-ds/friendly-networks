@@ -236,13 +236,11 @@ export const Dateline = (props) => {
 
   // Return an empty string if this dateline immediately precedes <p>
   if (nextNode?.localName === "tei-p") {
-    // console.log("In Dateline()")
-    // console.log(<Behavior node={props.teiNode}/>)
     return("");
   }
 
-  // Wrap in <p> if within <closer>
-  if (props.teiNode.closest('tei-closer')) {
+  // Wrap in <p> if within <opener> or <closer>
+  if (props.teiNode.closest('tei-closer') || props.teiNode.closest('tei-opener')) {
     return (
       <Behavior node={props.teiNode}>
           <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>

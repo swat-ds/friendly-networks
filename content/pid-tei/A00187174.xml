@@ -74,18 +74,19 @@
             <div>
             <pb n="1" facs="457243"/>
             <opener>
-                <dateline>Campbell County Virginia the <date when="1797-07-10">10th of the 7th Month 1797</date></dateline>
+                <dateline>Campbell County Virginia, the <date when="1797-07-10">10th of the 7th Month, 1797</date></dateline>
                 <salute>Dear Friends,</salute>
             </opener>
             <p>
-            Being put in mind by a particular friend of writing to you; we unite and feel our minds drawn out in love towards you who being the family of an Excellent pattern, our dear friend and yours, and <rs key="w6c82qz0">your near relation</rs>, the company of whom we have had more than could be expected from one who has so extensive a journey: his agreeable company, good advice and counsel has be very comfortable to us and hope it will not all be forgotten. We have cause to believe he has been instrumentally useful in this little meeting to which we belong. O that we had such a pattern such an example in our part of the world. No doubt but your trials are great (as well as his) in parting from so near and dear a friend, father, and companion in life; but we hope your loss is our gain in a great measure, and we still hope, after he has done what the great master has for him to do, he may return to you in peace, and that you may receive him with joy and comfort. It is our sincere desire and prayer to Almighty god that the candle may not be extinguished, which we which we believe has been measurably alighted amongst us. We are going to school except the eldest of us, who is the teacher, and has a comfortable little school. Now if you should receive this, and think proper to make us a return, yea more than a return we should be exceeding glad, and t<damage><supplied>a</supplied></damage>ke it very kind. so conclude with our loves to you and all the family &amp;c.
+            Being put in mind by a particular Friend of writing to you, we unite and feel our minds drawn out in love towards you who being the family of an Excellent pattern, our dear friend and yours and <rs key="w6c82qz0">your near relation</rs>, the company of whom we have had more than could be expected from one who has so extensive a journey. His agreeable company, good advice and counsel has be<supplied>en</supplied> very comfortable to us and hope it will not all be forgotten. We have cause to believe he has been instrumentally useful in this little meeting to which we belong. Oh, that we had such a pattern, such an example, in our part of the world! No doubt but your trials are great (as well as his) in parting from so near and dear a Friend, father, and companion in life; but we hope your loss is our gain in a great measure, and we still hope, after he has done what the great master has for him to do, he may return to you in peace, and that you may receive him with joy and comfort. It is our sincere desire and prayer to Almighty God that the candle may not be extinguished which we <sic>which we</sic> believe has been measurably alighted amongst us. We are going to school except the eldest of us, who is the teacher, and has a comfortable little school. Now if you should receive this, and think proper to make us a return, yea more than a return, we should be exceeding glad, and t<damage><supplied>a</supplied></damage>ke it very kind. So conclude,
             </p>
             <closer>
+                <salute>with our loves to you and all the family &amp;c.,</salute>
                 <signed>Susanna, Nancy, Martha and Mary Davis</signed>
             </closer>
             
             <postscript>
-             <p>I join my dear young friends in this letter to you being a scholar of the same school a present</p>
+             <p>I join my dear young friends in this letter to you, being a scholar of the same school at present.</p>
              <signed>Betty Hendricks</signed>
             </postscript>
             </div>
@@ -93,7 +94,7 @@
             <closer>
             <address>
              <addrLine>Susannah Davis</addrLine>
-             <addrLine>To Ann Evans</addrLine>
+             <addrLine>To <persName key="w6844k1p">Ann Evans</persName></addrLine>
             </address>
             </closer>
         </body>

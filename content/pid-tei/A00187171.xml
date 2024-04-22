@@ -75,15 +75,15 @@
             <div>
             <pb n="1" facs="457234"/>
             <opener>
-                <dateline>Newgarden Gilford County <add>in</add> North Carolina the <date when="1797-05-09">9th of the 5th month, 1797</date></dateline>
+                <dateline>Newgarden, Gilford County <add>in</add> North Carolina, the <date when="1797-05-09">9th of the 5th month, 1797</date></dateline>
                 <salute>Esteemed Friend,</salute>
             </opener>
             <p>
-                feeling a near sympathy with thee, in the absence of <rs key="w6c82qz0">thy dear companion</rs>, I thought, I could not but encourage thee (although a stranger) to be found at all times a cheerful giver. <quote type="biblical">For the lord loves a cheerful giver</quote>. I do feel a wish that thou may be encouraged to give up thy dear companion cheerfully to fight the lamb’s warfare, believing him to be radiant in his master’s cause. Since he hath been at this place he hath pretty much made our house his home and his most agreeable company I believe by us, will never be forgot, nor yet by friends who greatly express their satisfaction therewith. Oh that we may ever bear in mind the solid advice and counsel that he hath dropped amongst us, believing it to be handed to him from the great Master who alone is worthy to have the praise. It is a sorrowful sight to look over the harvest field and behold <quote type="biblical">the laborers that they are so few</quote>, was it but enough <add>the</add> engagement of each one of our h<add>e</add>arts to be found faithful, for there never was more need of faithful <add>laborers</add> than at this time, I do believe. I cannot but sympathize with thee, believing thy trials are great, but as there is a cheerful giving up to the <del>I believe he will enable</del> Shepherd of Israel, I believe he will enable thee to bear them with joy. I with my family enjoy a reasonable state of health at present, hoping these may find thee and thine partakers of the blessing. So not much more but love to thee and thy family in which my dear companion and children joins.
+                Feeling a near sympathy with thee, in the absence of <rs key="w6c82qz0">thy dear companion</rs>, I thought I could not but encourage thee (although a stranger) to be found at all times a cheerful giver, <quote type="biblical">for the Lord loves a cheerful giver</quote>. I do feel a wish that thou may be encouraged to give up thy dear companion cheerfully to fight the lamb’s warfare, believing him to be radiant in his master’s cause. Since he hath been at this place he hath pretty much made our house his home, and his most agreeable company (I believe) by us will never be forgot—nor yet by Friends, who greatly express their satisfaction therewith. Oh! that we may ever bear in mind the solid advice and counsel that he hath dropped amongst us, believing it to be handed to him from the great Master who alone is worthy to have the praise. It is a sorrowful sight to look over the harvest field and behold <quote type="biblical">the laborers that they are so few</quote>, was it but enough <add>the</add> engagement of each one of our h<add>e</add>arts to be found faithful, for there never was more need of faithful <add>laborers</add> than at this time, I do believe. I cannot but sympathize with thee, believing thy trials are great, but as there is a cheerful giving up to the <del>I believe he will enable</del> Shepherd of Israel, I believe he will enable thee to bear them with joy. I with my family enjoy a reasonable state of health at present, hoping these may find thee and thine partakers of the blessing. So, not much more but love to thee and thy family, in which my dear companion and children joins. I conclude, 
             </p>
             
             <closer>
-                <salute>I conclude thy friend who greatly desires thy prosperity as well as her own in the ever blessed truth.</salute>
+                <salute>Thy friend, who greatly desires thy prosperity as well as her own in the ever blessed truth,</salute>
                 <signed>Judith Russel</signed>
             </closer>
             
@@ -96,7 +96,7 @@
             <pb n="2" facs="457235"/>
             <closer>
                 <address>
-                    <addrLine>To Ann Evans</addrLine>
+                    <addrLine>To <persName key="w6844k1p">Ann Evans</persName></addrLine>
                 </address>
             </closer>
         </body>

@@ -74,21 +74,23 @@
             <pb n="1" facs="4572367"/>
             <div>
             <opener>
-                <dateline>North Carolina Guilford County <gap reason="illegible"/> 6th month, 9th 1797</dateline>
+                <dateline>North Carolina, Guilford County, <gap reason="illegible"/> 6th month 9th, 1797</dateline>
+                <salute>Beloved Friend,</salute>
             </opener>
             <p>
-            beloved friend although thou art a stranger to me as to the outward but being favored with the company of <rs key="w6c82qz0">thy dear husband</rs> in his traveling through our land, my mind hath been drawn into a near sympathy with thee, with desires this may be preserved in all thy stepping along now in the time of your long separation which I make no doubt tends at times to the trial of thy faith but as thou abides in the patience thou will be the fellow shearer of that enjoyment which this world cannot give, neither can it take it away. I have been favored as above with the company of thy dear husband, not only at my house but likewise at Diver’s Meetings at the verge of Newgarden and Cainereck Quarterly Meetings which hath been to me truly comfortable instructive and satisfactory and I hope notwithstanding his singularities and the path in which he is led there is no doubt with me but as he is careful to keep near to that which first engaged him to leave all that is near and dear in this world he will be enabled to get through to the lasting peace of his own mind and to the edification of the churches in general and dear friend remember that those farmers by <add>that</add> abode
+             Although thou art a stranger to me as to the outward, but being favored with the company of <rs key="w6c82qz0">thy dear husband</rs> in his traveling through our land, my mind hath been drawn into a near sympathy with thee, with desires thou may be preserved in all thy stepping along now in the time of your long separation, which I make no doubt tends at times to the trial of thy faith. But as thou abides in the patience thou will be the fellow sharer of that enjoyment which this world cannot give, neither can it take it away. I have been favored as above with the company of thy dear husband, not only at my house but likewise at diverse meetings in the verge of Newgarden and Cane Creek Quarterly Meetings, which hath been to me truly comfortable, instructive, and satisfactory, and I hope (notwithstanding his singularities and the path in which he is led there is no doubt with me but as he is careful to keep near to that which first engaged him to leave all that is near and dear in this world, he will be enabled to get through, to the lasting peace of his own mind and to the edification of the churches in general. And, dear friend, remember that those formerly <add>that</add> <quote type="biblical">abode
             <pb n="2" facs="4572368"/>
-            by the stuff had an equal reward with those that went to the battle may this be thy happy experience in a spiritual sense is the real desire of thy <del>real although</del> sincere although unknown friend
+            by the stuff had an equal reward with those that went to the battle.</quote> May this be thy happy experience in a spiritual sense, is the real desire of 
             </p>
             
             <closer>
+                <salute>thy <del>real although</del> sincere although unknown friend,</salute>
                 <signed><persName key="w69c91bq">Zacharias Dicks</persName></signed>
             </closer>
             </div>
             <closer>
             <address>
-                <addrLine>To Ann Evans</addrLine>
+                <addrLine>To <persName key="w6844k1p">Ann Evans</persName></addrLine>
             </address>
             </closer>
         </body>

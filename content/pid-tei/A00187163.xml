@@ -74,33 +74,40 @@
             <div>
             <pb n="1" facs="457210"/>
             <opener>
-                <dateline><damage><supplied>Dart</supplied></damage>mouth Nova Scotia, <date when="1795-08-16">16th 8th month 1795</date></dateline>
+                <dateline><damage><supplied>Dart</supplied></damage>mouth, Nova Scotia, <date when="1795-08-16">16th 8th month 1795</date></dateline>
                 <salute>Respected Friend Ann Evans,</salute>
             </opener>
             <p>
-            In that love that is the cement of friendship do I at this time salute thee, and have to inform of <rs key="w6c82qz0">thy dear husband</rs> being with us on a religious visit, his coming was very unexpected to us, as we had been ready to think that poor Nova Scotia was almost unworthy of the notice of any of our brethren in society, but to our great comfort and consolation <add>we are</add> yet remembered although in so remote a corner, I believe the few days we spent together was to our mutual satisfaction, or at least on my own part must say it was like a cordial to my mind, I could <gap reason="illegible"/> wished to accompanied him through the country but my engagements were such at that juncture that prevented me, but our friend Thomas Green went on to Cornwallis and parted with him there, <del>two</del> <add>3</add> days journey from this, since which I have had no tidings from him, I think he had a very worthy and agreeable companion appeared, constantly attentive and careful in every respect. It appeared that taking the water was somewhat of a burden to him but as he was wonderfully brought through to this port, I have not my doubts but he will be still <add>preserved to</add> persevere in safely to &amp; accomplishment of his journey as way opens, and that he may be favored to return with the reward of peace in his own breast and to the mutual satisfaction of thyself &amp; family is the most ardent wish of thy affectionate Friend
+            In that love that is the cement of friendship do I at this time salute thee, and have to inform of <rs key="w6c82qz0">thy dear husband</rs> being with us on a religious visit. His coming was very unexpected to us, as we had been ready to think that poor Nova Scotia was almost unworthy of the notice of any of our brethren in society, but to our great comfort and consolation <add>we are</add> yet remembered although in so remote a corner. I believe the few days we spent together was to our mutual satisfaction, or at least on my own part must say it was like a cordial to my mind. I could of wished to accompanied him through the country, but my engagements were such at that juncture that prevented me, but our friend Thomas Green went on to Cornwallis and parted with him there, <del>two</del> <add>3</add> days journey from this, since which I have had no tidings from him. I think he had a very worthy and agreeable companion, appeared constantly attentive and careful in every respect. It appeared that taking the water was somewhat of a burden to him, but as he was wonderfully brought through to this port, I have not my doubts but he will be still <add>preserved to</add> persevere in safety to the accomplishment of his journey as way opens. And that he may be favored to return with the reward of peace in his own breast, and to the mutual satisfaction of thyself &amp; family, is the most ardent wish of 
             </p>
             <closer>
+                <salute>thy affectionate friend,</salute>
                 <signed>Seth Coleman</signed>
-                <salute>My wife &amp; family joins in love to thee and thine</salute>
             </closer>
             
             <postscript>
+                <p>My wife &amp; family joins in love to thee and thine</p>
                 <p>
-                NB a sealskin bag I send by Captain Miller contents unknown except a tin box of crackers my wife presents thee as a specimen of our Nova Scotia manufacture but not Philadelphia superfine. We shall expect a few lines from thy dear husband as soon as favored to return.
+                N.B. A sealskin bag I send by Captain Miller, contents unknown except a tin box of crackers my wife presents thee as a specimen of our Nova Scotia manufacture, but not Philadelphia superfine. We shall expect a few lines from <rs key="w6c82qz0">thy dear husband</rs> as soon as favored to return.
                 </p>
                 <closer>
                     <signed>Seth Coleman</signed>
-                    <salute>Thomas Green &amp; wife wishes to be remembered to thee and thine</salute>
                 </closer>
+            </postscript>
+            <postscript>
+                <p>
+                    Thomas Green &amp; wife wishes to be remembered to thee and thine
+                </p>
             </postscript>
             </div>
             <pb n="2" facs="457211"/>
             <closer>
                 <address>
                   <addrLine><persName key="w6c82qz0">Joshua Evans</persName></addrLine>
-                  <addrLine>New Jersey Gloucester</addrLine>
-                  <addrLine>County Newtown - to the care of Samuel Fisher, Philadelphia</addrLine> 
+                  <addrLine>New Jersey</addrLine>
+                  <addrLine>Gloucester County</addrLine>
+                    <addrLine>Newtown</addrLine>
+                    <addrLine>to the care of Samuel Fisher, Philadelphia</addrLine> 
                   <addrLine>near the drawbridge</addrLine> 
                   <addrLine>In favor of Captain Miller</addrLine>
                 </address>
