@@ -2,16 +2,16 @@
   text-decoration: none;
 }
 
-.journal-card, .entity-card, .homepage-card, .background-card {
+.document-card, .entity-card, .homepage-card, .background-card {
   height: 100%;
   border: none;
 }
 
-.journal-card:hover, .journal-card:focus, .entity-card:hover, .entity-card:focus {
+.document-card:hover, .document-card:focus, .entity-card:hover, .entity-card:focus {
   outline: 2px solid var(--bs-secondary)
 }
 
-.journal-card-col, .entity-card-col {
+.document-card-col, .entity-card-col {
   padding: 12px
 }
 
@@ -21,6 +21,6 @@
   object-position: top;
 }
 
-.journal-card-row {
+.document-card-row {
   align-items: stretch;
 }

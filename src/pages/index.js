@@ -21,8 +21,8 @@ const homepageCardDataMain = [
   {
     imageSrc: journalPage,
     alt: "",
-    text:(<><strong>Explore</strong> the journals</>),
-    link:"/journals",
+    text:(<><strong>Explore</strong> the writings</>),
+    link:"/writings",
     id:"explore-card"
   },
   {
@@ -45,8 +45,8 @@ const homepageCardDataHunt = [
   {
     imageSrc: huntCover,
     alt: "",
-    text: "Read Hunt's journal",
-    link: "/journals",
+    text: "Read Hunt's writings",
+    link: "/writings",
     id: "hunt-journal-card"
   },
   {
@@ -62,8 +62,8 @@ const homepageCardDataEvans = [
   {
     imageSrc: evansCover,
     alt: "",
-    text: "Read Evans's journal",
-    link: "/journals",
+    text: "Read Evans's writings",
+    link: "/writings",
     id: "evans-journal-card"
   },
   {
@@ -83,7 +83,7 @@ const home = ({location}) => {
       <Row className="general-text" id="homepage-text"><Col>
         <h1>Friendly Networks</h1>
         <p><cite>Friendly Networks</cite> explores ways to describe Quaker identities, outline Quaker social networks, and connect them to archival sources. Since its origins in the 1650s, the Quaker community has encompassed a densely interconnected transatlantic network. Quakers excelled in creating and maintaining connections with scattered Friends, and the resulting relationships allow us to trace the movement of ideas throughout the Quaker world.</p>
-        <p>The project focuses on John Hunt and Joshua Evans, two Quaker ministers and diarists from Burlington County, New Jersey. Their journals offer a window onto a complex social network while also documenting their daily activities, their spiritual lives, and their advocacy for non-violence, the end of slavery, and the fair treatment of Native Americans.</p>
+        <p>The project focuses on John Hunt and Joshua Evans, two Quaker ministers and diarists from Burlington County, New Jersey. Their writings offer a window onto a complex social network while also documenting their daily activities, their spiritual lives, and their advocacy for non-violence, the end of slavery, and the fair treatment of Native Americans.</p>
         <p>This website and the research behind it are made possible with support from the H. David and Joyce E. Hunt Family Foundation Special Projects Fund.</p>
       </Col></Row>
       <Row className="homepage-card-row">

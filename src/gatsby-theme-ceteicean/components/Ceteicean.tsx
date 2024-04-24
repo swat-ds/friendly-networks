@@ -84,5 +84,5 @@ export const query = graphql`
 export default ShadowedCeteicean
 
 export const Head = () => (
-  <SEO title="Journals - Friendly Networks"/>
+  <SEO title="Writings - Friendly Networks"/>
 )

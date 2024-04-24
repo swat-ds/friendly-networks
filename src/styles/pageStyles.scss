@@ -12,7 +12,7 @@ body {
   padding-right: 5vw;
 }
 
-#journal-filter-group {
+#document-filter-group {
   display: flex;
   align-items: center;
   * {
@@ -24,7 +24,7 @@ body {
   padding-bottom: 12px;
 }
 
-#journal-filter-col {
+#document-filter-col {
   flex-wrap: wrap;
   padding: 12px 0px 0px;
   margin-right: -4.5vw;
@@ -39,7 +39,7 @@ body {
 }
 
 @media only screen and (max-width: 991px){
-  #journal-filter-col {
+  #document-filter-col {
     background-color: #342E37;
     flex-flow: row nowrap;
     position: relative;

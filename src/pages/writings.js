@@ -28,7 +28,7 @@ function prepareNode(node){
   });
 
   // Set the URL for this document
-  let route = "/journals/" + node.parent.name;
+  let route = "/writings/" + node.parent.name;
   
   // Extract document title from TEI
   let title =
@@ -67,7 +67,7 @@ function prepareNode(node){
   return preparedNode;
 }
 
-const JournalsPage = ({ data }) => {
+const WritingsPage = ({ data }) => {
   // Extract metadata from TEI files returned by graphQL
   const nodes = data.allCetei.nodes;
   const preparedNodes = nodes.map(node => prepareNode(node))
@@ -130,7 +130,7 @@ const genres = [
   // Create a grid of journal cards
   const renderJournals = (node, index)=>{
     return (
-      <Col className="journal-card-col">
+      <Col className="document-card-col">
         <JournalCard
         node={node}
         index={index}
@@ -143,9 +143,9 @@ const genres = [
   return (
       <Layout>
        <Row id="main-row"><Col>
-         <h1>Journals</h1>
+         <h1>Writings</h1>
          <p>
-         The journals of John Hunt and Joshua Evans are valuable sources for 
+         The writings of John Hunt and Joshua Evans are valuable sources for 
           Quaker history in the late eighteenth and early nineteenth centuries.
           Hunt’s journals focus on his daily life in Burlington County, New 
           Jersey, and cover over 50 years, from 1770 to Hunt’s death in 1824 
@@ -157,31 +157,31 @@ const genres = [
           and African Americans.
          </p>
          <p>
-            Click on a journal card to browse images and transcripts of that 
-            journal.
+            Click on a document card to browse images and transcripts of that 
+            document.
             Use the "Hunt" and "Evans" buttons 
             {filterOnSide ?" on the right ":" above the cards "}
             to filter which journals cards are displayed, or click "All" to 
             view all cards.
         </p>
         <Row style={{"flexWrap": "wrap-reverse", "alignItems": "start"}}>
-            <Col id="journal-card-col">
-              <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="journal-card-row">
+            <Col id="document-card-col">
+              <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="document-card-row">
                   {filteredNodes.map(renderJournals)}
               </Row>
             </Col>
-          <Col id="journal-filter-col" sm={12} lg={1}>
+          <Col id="document-filter-col" sm={12} lg={1}>
             <div className="filter-label h6">Filter by collection</div>
             <ToggleButtonGroup 
               name="collection" 
               type="radio"
               defaultValue={''}
-              id="journal-filter-group"
+              id="document-filter-group"
               vertical={filterOnSide}
             >
               {collections.map((collection, idx) => (
                 <ToggleButton
-                  className="journal-toggle-btn"
+                  className="document-toggle-btn"
                   key={idx}
                   id={`collection-${idx}`}
                   type="radio"
@@ -202,12 +202,12 @@ const genres = [
               name="genre" 
               type="radio"
               defaultValue={''}
-              id="journal-filter-group"
+              id="document-filter-group"
               vertical={filterOnSide}
             >
               {genres.map((genre, idx) => (
                 <ToggleButton
-                  className="journal-toggle-btn"
+                  className="document-toggle-btn"
                   key={idx}
                   id={`genre-${idx}`}
                   type="radio"
@@ -247,7 +247,7 @@ export const data = graphql`
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Journals - Friendly Networks"/>
+  <SEO title="Writings - Friendly Networks"/>
 )
 
-export default JournalsPage;
+export default WritingsPage;

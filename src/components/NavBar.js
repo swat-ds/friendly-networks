@@ -85,11 +85,11 @@ const NavBar = (props) => {
               <Nav className="justify-content-around nav-nav">
                 <Nav.Item>
                   <Nav.Link as={Link}
-                    to="/journals"
+                    to="/writings"
                     activeClassName="active"
                     partiallyActive={true}
                   >
-                    Journals
+                    Writings
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>

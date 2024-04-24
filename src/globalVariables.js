@@ -12,7 +12,7 @@
    doc: "/documentation",
    error: "/404",
    home: "/",
-   journals: "/journals",
+   writings: "/writings",
    network: "/network",
    people: "/people",
 
@@ -77,7 +77,7 @@
     { name: "December", abbr: "Dec" },
  ];
 
- export const journalTnLookup = {
+ export const documentTnLookup = {
   "A0011237": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334402.jpg",
   "A0011517": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334443.jpg",
   "A0011518": "https://digitalcollections.tricolib.brynmawr.edu/sites/default/files/2023-03/334487.jpg",

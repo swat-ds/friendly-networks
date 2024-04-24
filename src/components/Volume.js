@@ -11,26 +11,26 @@ import Viewer from "./Viewer";
 const parseString = require("xml2js").parseString;
 var xpath = require("xml2js-xpath");
 
-function getTitle(journal){
+function getTitle(doc){
   return (
-    journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+    doc["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
       ["tei-titleStmt"][0]["tei-title"][0]["_"].split(":")[0]
     );
 }
 
-function getCollection(journal){
-  return xpath.evalFirst(journal, "//tei-collection")["_"]
+function getCollection(doc){
+  return xpath.evalFirst(doc, "//tei-collection")["_"]
 }
 
 /**
  * 
- * @param {*} journal Parsed TEI XML that has an element 
+ * @param {*} doc Parsed TEI XML that has an element 
  *                      TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno
  * @returns {string} the node id encoded in that TEI file
  */
-function getNodeId(journal) {
+function getNodeId(doc) {
   // Drill down into proper section of TEI header containing the <idno> elements
-  const ids = journal["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
+  const ids = doc["tei-TEI"]["tei-teiHeader"][0]["tei-fileDesc"][0]
     ["tei-sourceDesc"][0]["tei-msDesc"][0]["tei-msIdentifier"][0]["tei-idno"]
   
   // Get the value of <idno type="Islandora node_id">
@@ -120,9 +120,9 @@ function spacePageBreaks(node) {
 let counter = 0; // counter to track the index of each transcript (cetei) 
 
 /**
- * An all-encompassing component for the journal display; the image and the transcript
+ * An all-encompassing component for the document display; the image and the transcript
  * @param {*} props the properties to be passed when used this component
- * @returns a component, containing the OpenSeaDragon and transcript, for each journal
+ * @returns a component, containing the OpenSeaDragon and transcript, for each document
  */
 
  const Volume = (props) => {
@@ -134,10 +134,10 @@ let counter = 0; // counter to track the index of each transcript (cetei)
  		} = props;
 
 
-    // Redirect from /[id] to /journals/[id]
+    // Redirect from /[id] to /writings/[id]
     useEffect(() => {
-      if (document && ! document.location.pathname.includes("journal")) {
-        document.location.replace("/journals" + document.location.pathname);
+      if (document && ! document.location.pathname.includes("writings")) {
+        document.location.replace("/writings" + document.location.pathname);
       }
     }, [])
 
@@ -174,12 +174,12 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     const names = data.allCetei.nodes.map(node => node.parent.name).sort()
     
-    // Navigate to next journal
+    // Navigate to next document
     function getNextCetei() {
       const name = pageContext.name
       const index = names.indexOf(name)
       if (index < names.length-1) {
-        navigate("/journals/" + names[index+1])
+        navigate("/writings/" + names[index+1])
       }
     }
     
@@ -188,7 +188,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       const name = pageContext.name
       const index = names.indexOf(name)
       if (index > 0) {
-        navigate("/journals/" + names[index-1])
+        navigate("/writings/" + names[index-1])
        }
  		}
 
@@ -310,7 +310,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
 
  		return (
-      <Layout id="journal">
+      <Layout id="document">
       <Row id="main-row">
         <Row>
           <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
@@ -345,17 +345,17 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             disabled={currentPage === imageUrls.length - 1}
           />
         </div>
-        <Row id="journal-display">
+        <Row id="document-display">
           <Col id="image-col">
-            <div id="journal-image">
+            <div id="document-image">
               <Viewer tileSources={imageUrls} currentPage={currentPage}/>
             </div>
           </Col>
 
-          <Col id="journal-col">
+          <Col id="document-col">
             <div
               className="general-text"
-              id="journal-transcript"
+              id="document-transcript"
               ref={containerRef}
               onScroll={handleScroll}
             >
@@ -363,16 +363,16 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </div>
           </Col>
         </Row>
-        <Row id="journal-next-prev-citation">
+        <Row id="document-next-prev-citation">
           <Col>
             <Button 
-              id="prev-journal"
+              id="prev-document"
               variant="outline-warning"
               role="link"
               onClick={() => getPrevCetei()}
               disabled={names.indexOf(pageContext.name) < 1}
             >
-              Prev Journal
+              Prev Document
             </Button>
           </Col>
           <Col id="preferred-citation">
@@ -390,13 +390,13 @@ let counter = 0; // counter to track the index of each transcript (cetei)
           </Col>
           <Col>
             <Button
-              id="next-journal"
+              id="next-document"
               variant="outline-warning"
               role="link"
               onClick={() => getNextCetei()}
               disabled={names.indexOf(pageContext.name) >= names.length-1}
             >
-              Next Journal
+              Next Document
             </Button>
           </Col>
         </Row>
