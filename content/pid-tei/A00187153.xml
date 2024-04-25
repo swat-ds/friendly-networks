@@ -92,14 +92,14 @@
             
             <closer>
                 <salute>With near love to thee &amp; children, in which <rs key="w6nm473p">my husband</rs> &amp; children unite, I conclude &amp; subscribe, thy affectionate friend</salute>
-                <signed>Dorcas Brown</signed>
+                <signed><persName key="w6v51n7p">Dorcas Brown</persName></signed>
             </closer>
             </div>
             
             <pb n="002" facs="457173"/>
             <closer>
                 <address>
-                    <addrLine>Dorcas Brown</addrLine>
+                    <addrLine><persName key="w6v51n7p">Dorcas Brown</persName></addrLine>
                     <addrLine>Ann Evans</addrLine>                    
                 </address>
             </closer>
