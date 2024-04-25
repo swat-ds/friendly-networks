@@ -224,7 +224,7 @@
 
 <div type="entry" n="1794-07-08"><dateline><date when="1794-07-08">8 the 7 month 1794</date></dateline><p> this morning, I am poor in spirit, and see but little how things may turn, but think best to be still, and say but little, and let the Lord do as seemeth good to him, for human wisdom is not sufficient to direct our ways. We had a meeting here, but not large, though solid.</p></div>
 
-<div type="entry" n="1794-07-09"><dateline><date when="1794-07-09">9 the 7 month 1794</date></dateline><p> this morning, went in a boat by water to a place called Woods’ Hole. Here I parted with my friend Jacob Mott, who had been with me some time. Here I met my <del>proposed companies</del> friend <persName key="w67m1bxt">Thomas Rotch</persName>, who had my horse, and proposed to be my companion for some time. We rode 8 miles this day.</p></div>
+<div type="entry" n="1794-07-09"><dateline><date when="1794-07-09">9 the 7 month 1794</date></dateline><p> this morning, went in a boat by water to a place called Woods’ Hole. Here I parted with my friend <persName key="w6qg9m2x">Jacob Mott</persName>, who had been with me some time. Here I met my <del>proposed companies</del> friend <persName key="w67m1bxt">Thomas Rotch</persName>, who had my horse, and proposed to be my companion for some time. We rode 8 miles this day.</p></div>
 
 <div type="entry" n="1794-07-10"><dateline><date when="1794-07-10">10 the 7 month 1794</date></dateline><p> had a meeting at Falmouth. This was said by some to be the largest they ever saw at this place. The people sat solid.</p></div>
 
@@ -1480,7 +1480,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<row><cell>Back cross the ferry to Canonicut</cell><cell/><cell>3</cell></row>
 	<row><cell>Crossed again to Newport</cell><cell/><cell>3</cell></row>
 	<row><cell>From Newport to Portsmouth and back</cell><cell/><cell>16</cell></row>
-	<row><cell>From Newport to Jacob Mott’s</cell><cell/><cell>8</cell></row>
+	<row><cell>From Newport to <persName key="w6qg9m2x">Jacob Mott’s</persName></cell><cell/><cell>8</cell></row>
 	<row><cell>From thence to Tiverton</cell><cell/><cell>5</cell></row>
 	<row rend="sum"><cell/><cell/><cell>543<note type="editorial">Actually sums to 541</note></cell></row>
 	<row><cell/><cell/><cell><del>556</del></cell></row>
@@ -1525,7 +1525,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>Then <persName key="w69g68m3">Thomas Robinson</persName></item>
 	<item>During the yearly meeting</item>
 	<item>Then John Greens</item>
-	<item>Then Jacob Mott’s</item>
+	<item>Then <persName key="w6qg9m2x">Jacob Mott’s</persName></item>
 	<item>Then Susanna Barker</item>
 	<item>Then John Gifford</item>
 	<item>Then David Russell</item>
@@ -1607,7 +1607,7 @@ those that did go into it should consider well the grounds of their movement, an
 	<item>then Elisha Steer</item>
 	<item>then Lidea Lockwood</item>
 	<item>then John Langford</item>
-	<item>then Jacob Mott</item>
+	<item>then <persName key="w6qg9m2x">Jacob Mott</persName></item>
 	<item>then <persName key="w69g68m3">Thomas Robinson</persName></item>
 	<item>Newport Rhode Island</item>
 	<item>then Benjamin Runels</item>
@@ -2386,7 +2386,7 @@ those that did go into it should consider well the grounds of their movement, an
 <item><list>
 <head>Rhode Island:</head>
 <item><persName key="w69g68m3">Thomas Robinson</persName> and wife</item>
-<item>Jacob Mott</item>
+<item><persName key="w6qg9m2x">Jacob Mott</persName></item>
 </list></item>
 
 <item><list>
