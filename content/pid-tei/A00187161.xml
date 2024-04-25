@@ -76,7 +76,7 @@
             <pb n="1" facs="457202"/>
             <opener>
                 <dateline>New Bedford</dateline>
-                <salute>Esteemed Friend Ann Evans</salute>
+                <salute>Esteemed Friend <persName key="w6844k1p">Ann Evans</persName></salute>
             </opener>
             <p>
             Enclosed is a letter from <rs key="w6c82qz0">thy dear husband</rs> who I left a few days since at Pittsfield or parted with him there, he then having perhaps only two meetings to attend before his departure from the limits of this Yearly Meeting, for that of New York expecting to be first at East Hossack.
@@ -99,7 +99,7 @@
                 <address>
                     <addrLine>Samuel R. Fisher, merchant</addrLine>
                     <addrLine>Philadelphia</addrLine>
-                    <addrLine>For Ann Evans, wife of <persName key="w6c82qz0">Joshua</persName></addrLine> 
+                    <addrLine>For <persName key="w6844k1p">Ann Evans</persName>, wife of <persName key="w6c82qz0">Joshua</persName></addrLine> 
                     <addrLine>Newtown</addrLine>
                 </address>
             </closer>

@@ -88,13 +88,13 @@
                 <salute>This from thy friend although stranger,</salute>
                 <signed><persName key="w6b38mqv">Daniel Titus</persName></signed>
             </closer>
-            <trailer>To Ann Evans</trailer>
+            <trailer>To <persName key="w6844k1p">Ann Evans</persName></trailer>
             </div>
             
             <closer>
                 <pb n="002" facs="457170"/>
                 <address>
-                    <addrLine>To Ann Evans, wife of <persName key="w6c82qz0">Joshua Evans</persName> </addrLine><addrLine>at Haddenfield</addrLine> 
+                    <addrLine>To <persName key="w6844k1p">Ann Evans</persName>, wife of <persName key="w6c82qz0">Joshua Evans</persName> </addrLine><addrLine>at Haddenfield</addrLine> 
                     <addrLine>To the care of <persName key="w6427nc6">William Savery</persName></addrLine>
                     <addrLine>Philadelphia</addrLine>
                 </address>

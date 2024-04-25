@@ -75,7 +75,7 @@
                 <pb n="1" facs="457186"/>
                 <opener>
                     <dateline>Boston, <date when="1794-08-24">8th month on the 24th, 1794</date></dateline>
-                    <salute>Esteemed Friend Ann Evans</salute>
+                    <salute>Esteemed Friend <persName key="w6844k1p">Ann Evans</persName></salute>
                 </opener>
                 <p>
                     Although I have no personal acquaintance with thee yet that which I have contracted with <rs key="w6c82qz0">thy dear husband</rs> has caused me to think much of thee and thy feeble constitution at this time of thy tried separation from so near a friend. But I believe the errand on which he is sent, and cause that he is engaged in, contributes to thy comfort as well as increases thy solicitude for his preservation. I have been at about thirty eight meetings with him which have generally been larger than usual on such occasions, and very solid, and, I thin<damage><supplied>k</supplied></damage> I may say, satisfactory. It is with a degree of thankfulness to the Father of Mercies that <add>I say</add> his appearance has not been in <add>the</add> way of Friends in this part of the continent as far as I have discovered
@@ -105,7 +105,7 @@
             <pb n="4" facs="457189"/>
             <closer>
                 <address>
-                    <addrLine>Ann Evans,</addrLine>
+                    <addrLine><persName key="w6844k1p">Ann Evans</persName>,</addrLine>
                     <addrLine>wife of <persName key="w6c82qz0">Joshua Evans</persName>,</addrLine>
                     <addrLine>New Town,</addrLine>
                     <addrLine>Gloucester County,</addrLine>

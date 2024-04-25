@@ -75,7 +75,7 @@
             <pb n="001" facs="457172"/>
             <opener>
                 <dateline>Nantucket, <date when="1794-07-18">18th of 7th month, 1794</date></dateline>
-                <salute>Beloved friend Ann Evans,</salute>
+                <salute>Beloved friend <persName key="w6844k1p">Ann Evans</persName>,</salute>
             </opener>
             <p>
             Feeling a near sympathy with thee in thy lonely moments, as I doubt not but thou has many—&amp; perhaps more anxiety of mind at times may prevail on account of the singularity of <rs key="w6c82qz0">thy dearly beloved companion's</rs> <del><gap/> the</del> appearance <add>from</add><del>of</del> most in this our day than otherwise might arise—but my dear friend, I would wish thee to be encouraged from a full belief that He that called him forth fitted &amp; qualified for his work &amp; service will be with him and enable him to make his way good wherever his lot may be cast, to the humbling admiration of many sincere-hearted travelers—such is the sweetness attendant on his mission, that I believe even those who are not <add>yet</add> prevailed on to obey the call <add>of the Master</add> must love &amp; admire the servant. I am free to say for thy comfort that I know of no Friend that has visited this island since my residence here that has left a better savour behind. &amp; Oh, that his labor of gospel love may have the desired effect among us, and prove like bread cast upon the waters to return some days hence unto many minds, is the sincere desire of my heart. It was very satisfactory to us that <add>he</add> took lodgings with us &amp; hope his mind was tolerable easy therewith as we love our friends &amp; are very glad to do what little we can, but yet do not wish to be more anxious to have them to put up with us than they may be to come or than is best.
@@ -100,7 +100,7 @@
             <closer>
                 <address>
                     <addrLine><persName key="w6v51n7p">Dorcas Brown</persName></addrLine>
-                    <addrLine>Ann Evans</addrLine>                    
+                    <addrLine><persName key="w6844k1p">Ann Evans</persName></addrLine>                    
                 </address>
             </closer>
         </body>
