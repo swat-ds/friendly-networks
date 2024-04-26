@@ -309,6 +309,16 @@ export const AddrLine = (props) => {
 };
 
 export const Head = (props) => {
+  if (props.teiNode.parentNode.localName === "tei-table") {
+    return (
+      <Behavior node={props.teiNode}>
+      <caption class="teiHead general-text">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </caption>
+    </Behavior>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
       <h2 class="teiHead general-text">
@@ -436,11 +446,14 @@ export const TableCell = (props) => {
   // Check if the parent <tr> has the "rend" attribute set to "sum"
   let parent = props.teiNode.parentNode?.attributes?.getNamedItem("rend")?.value
 
-  // Check if the  cell contains any numbers
+  // Check if the cell contains any numbers
   let containsNumber = /\d/.test(props.teiNode?.textContent)
+  
+  // Check that the cell doesn't contain a month
+  let monthFree = ! /mo/i.test(props.teiNode?.textContent)
 
   // Return <td> with className "sum" if both checks are true
-  if (parent === "sum" && containsNumber) {
+  if (parent === "sum" && containsNumber && monthFree) {
     return(
       <Behavior node={props.teiNode}>
         <td className="sum">

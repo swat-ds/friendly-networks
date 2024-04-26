@@ -150,9 +150,27 @@ td {
   border-top: 1px solid;
 }
 
-table.account-book td, th {
-  &:nth-last-child(-n + 5), &:nth-child(4) {
-    border-left: thin solid;
+table.account-book + br + span + table.account-book:before {
+  content: '';
+  display: flex;
+  margin-bottom: 16px;
+  width: 400%;
+  height: 1px;
+  background: var(--bs-secondary);
+  top: 100%;
+  left: 0;
+}
+
+table.account-book { 
+  td {
+    &:nth-last-child(-n + 5), &:nth-child(4) {
+      border-left: thin solid;
+    }
+  }
+  caption-side: top;
+  width: 100%;
+  tr {
+    width: 100%;
   }
 }
 
