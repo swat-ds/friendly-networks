@@ -69,7 +69,7 @@
     <text>
         <body>
 			<pb n="001" facs="469932"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1769-05-21">21st 5mo 1769</date></cell>
 					<cell>Abraham Matlack Dr.</cell>
@@ -141,7 +141,7 @@
 					<cell>5</cell>
 				</row>
 				<row>
-					<cell><date when="1769-06-11">11th-6mo</date></cell>
+					<cell><date when="1769-06-11">11th 6mo</date></cell>
 					<cell><rs key="w6n9820p">Myself</rs> 4 days</cell>
 					<cell>0</cell>
 					<cell>14</cell>
@@ -226,7 +226,7 @@
 				</row>
 			</table>
 			<pb n="002" facs="469933"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -425,7 +425,7 @@
 				</row>
 			</table>
 			<pb n="003" facs="469934"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell>8-11</cell>
@@ -652,7 +652,7 @@
 				</row>
 			</table>
 			<pb n="004" facs="469935"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1769-09-14">14th 9mo</date></cell>
 					<cell><persName key="w66f6jgb">Kendall Coles</persName> Cr.</cell>
@@ -809,7 +809,7 @@
 				</row>
 			</table>
 			<pb n="005" facs="469936"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -819,7 +819,7 @@
 				</row>
 				<row>
 					<cell><date when="1769-08-05">5th 8mo 1769</date></cell>
-					<cell>Then balanced accounts with Kendall Cole's &amp; there was due to me</cell>
+					<cell>Then balanced accounts with <persName key="w66f6jgb">Kendall Coles</persName> &amp; there was due to me</cell>
 					<cell>1</cell>
 					<cell>8</cell>
 					<cell>1</cell>
@@ -868,7 +868,7 @@
 				</row>
 				<row>
 					<cell/>
-					<cell>To half a day <rs key="w6n9820p">myself</rs> lying out seller &amp;<gap reason="illegible"/></cell>
+					<cell>To half a day <rs key="w6n9820p">myself</rs> laying out cellar &amp; su<supplied>ch</supplied></cell>
 					<cell>0</cell>
 					<cell>1</cell>
 					<cell>9</cell>
@@ -1015,7 +1015,7 @@
 				</row>
 			</table>
 			<pb n="006" facs="469937"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1770-02-25">25th 2nd mo 1770</date></cell>
 					<cell><persName key="w6jx3293">Thomas Lippincott</persName> Dr.</cell>
@@ -1165,7 +1165,7 @@
 				</row>
 			</table>
 			<pb n="007" facs="469938"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell>1705</cell>
 					<cell/>
@@ -1192,7 +1192,7 @@
 				</row>
 			</table>
 			<pb n="008" facs="469939"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -1447,7 +1447,7 @@
 				</row>
 			</table>
 			<pb n="009" facs="469940"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell>John Morton Dr.</cell>
@@ -1681,7 +1681,7 @@
 				</row>
 			</table>
 			<pb n="010" facs="469941"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -1712,7 +1712,7 @@
 				</row>
 			</table>
 			<pb n="011" facs="469942"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1769-08-14">14th 8mo 1769</date></cell>
 					<cell>Then begun to work for John Stokes</cell>
@@ -1876,7 +1876,7 @@
 				</row>
 			</table>
 			<pb n="012" facs="469943"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1770-09-02">2nd 9mo</date></cell>
 					<cell><persName key="w66f6jgb">Kendall Coles</persName> Dr. to work at the house</cell>
@@ -2117,7 +2117,7 @@
 				</row>
 			</table>
 			<pb n="013" facs="469944"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1769-12-21">21st 12mo 1769</date></cell>
 					<cell>Then begun to work for Joseph Worington getting timber</cell>
@@ -2288,7 +2288,7 @@
 				</row>
 			</table>
 			<pb n="014" facs="469945"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell>Joseph Worington Cr.</cell>
@@ -2340,7 +2340,7 @@
 				</row>
 			</table>
 			<pb n="015" facs="469946"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1770-01-01">1st 1mo 1770</date></cell>
 					<cell>Then balanced accounts with Samuel Collins and there was due to me</cell>
@@ -2420,7 +2420,7 @@
 				</row>
 			</table>
 			<pb n="016" facs="469947"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1770-01-01">1st 1mo 1770</date></cell>
 					<cell>Samuel Collins Cr. by a pair of [snibils?] by setting a pair of new shoes</cell>
@@ -2430,7 +2430,7 @@
 				</row>
 			</table>
 			<pb n="017" facs="469948"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1771-01-06">6 of the 1mo 1771</date></cell>
 					<cell><persName key="w66f6jgb">Kendall Coles</persName> Dr.</cell>
@@ -2685,7 +2685,7 @@
 				</row>
 			</table>
 			<pb n="018" facs="469949"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -2751,7 +2751,7 @@
 				</row>
 			</table>
 			<pb n="019" facs="469950"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -2887,7 +2887,7 @@
 				</row>
 				<row>
 					<cell/>
-					<cell>To making a pump 56 feet &amp; a half long at 1s6 per foot &amp; 5s for the basis</cell>
+					<cell>To making a pump 56 feet &amp; a half long at 1s6 per foot &amp; 5s for the boxes</cell>
 					<cell>4</cell>
 					<cell>12</cell>
 					<cell>0</cell>
@@ -2913,9 +2913,12 @@
 					<cell>9</cell>
 					<cell>8</cell>
 				</row>
-				<row rend="sum">
+			</table>
+        	<table type="account-book">
+        		<head><persName key="w66b7v5c">Robert Hunt</persName> Dr.</head>
+				<row>
 					<cell><date when="1771-09-01">9mo 1st</date></cell>
-					<cell><persName key="w66b7v5c">Robert Hunt</persName> Dr. to one day's work by William</cell>
+					<cell> to one day's work by William</cell>
 					<cell>0</cell>
 					<cell>3</cell>
 					<cell>6</cell>
@@ -2939,7 +2942,7 @@
 					<cell>Some oak boards</cell>
 					<cell>0</cell>
 					<cell>3</cell>
-					<cell>0</cell>
+					<cell>0</cell>At work at the meeting house
 				</row>
 				<row>
 					<cell/>
@@ -2950,7 +2953,7 @@
 				</row>
 			</table>
 			<pb n="020" facs="469951"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -2995,7 +2998,7 @@
 				</row>
 			</table>
 			<pb n="021" facs="469952"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1771-09-12">12th 9mo 1771</date></cell>
 					<cell><persName key="w6j49htj">John Lippincott</persName> Dr. to 2 days <add>work <rs key="w6n9820p">myself</rs></add> at his screw press</cell>
@@ -3222,7 +3225,7 @@
 				</row>
 			</table>
 			<pb n="022" facs="469953"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1772-09-26">26th of 9mo</date></cell>
 					<cell>By cash received of <persName key="w6j49htj">John Lippincott</persName></cell>
@@ -3435,7 +3438,7 @@
 				</row>
 			</table>
 			<pb n="023" facs="469954"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1771-07-22">22nd 7mo 1771</date></cell>
 					<cell><persName key="w66f6jgb">Kendall Coles</persName> Dr. to half a day's work <rs key="w6n9820p">myself</rs></cell>
@@ -3578,7 +3581,7 @@
 				</row>
 			</table>
 			<pb n="024" facs="469955"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -3616,7 +3619,7 @@
 				</row>
 			</table>
 			<pb n="025" facs="469956"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -3850,7 +3853,7 @@
 				</row>
 			</table>
 			<pb n="026" facs="469957"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1771-12-22">22nd 12th month 1771</date></cell>
 					<cell>John Eves Dr.</cell>
@@ -3965,14 +3968,14 @@
 				</row>
 			</table>
 			<pb n="027" facs="469958"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1772-01-05">5 1mo 1772</date></cell>
 					<cell>John Eves Cr. by 2 bushels of wheat</cell>
 				</row>
 			</table>
 			<pb n="028" facs="469959"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell><date when="1773-05-12">12th 5th mo 1773</date></cell>
 					<cell>David Davis Dr. to 1 day's work <rs key="w6n9820p">myself</rs> mending the cider press &amp; sundry</cell>
@@ -4031,8 +4034,8 @@
 				</row>
 			</table>
 			<pb n="029" facs="469960"/>
-			<table>
-				<row>
+			<table type="account-book">
+				<row role="label">
 					<cell/>
 					<cell/>
 					<cell>£</cell>
@@ -4046,6 +4049,8 @@
 					<cell>0</cell>
 					<cell>0</cell>
 				</row>
+			</table>
+        	<table type="account-book">
 				<row>
 					<cell><date when="1773-05-12">12th 5mo 1773</date></cell>
 					<cell>David Davis Cr. to 2 gallons of vinegar</cell>
@@ -4055,10 +4060,11 @@
 				</row>
 			</table>
 			<pb n="030" facs="469961"/>
-			<table>
+			<table type="account-book">
+				<head>Then begun to work at the meeting house at Ancocas making the door &amp; windowcases</head>
 				<row>
 					<cell><date when="1772-06-29">29 of 6mo 1772</date></cell>
-					<cell>Then begun to work at the meeting house at Aneocas making the door &amp; windowcases</cell>
+					<cell></cell>
 					<cell>£</cell>
 					<cell>s</cell>
 					<cell>d</cell>
@@ -4282,10 +4288,11 @@
 				</row>
 			</table>
 			<pb n="031" facs="469962"/>
-			<table>
+			<table type="account-book">
+				<head>At work at the meeting house</head>
 				<row>
 					<cell><date when="1772-10-25">25 10mo 1772</date></cell>
-					<cell>At work at the meeting house <rs key="w6n9820p">myself</rs> 3½ days</cell>
+					<cell><rs key="w6n9820p">myself</rs> 3½ days</cell>
 					<cell>0</cell>
 					<cell>12</cell>
 					<cell>3</cell>
@@ -4376,7 +4383,7 @@
         			<p><quote type="biblical">Daniel sat in the gate of the king.</quote> See IInd of Daniel 49 verse.</p>
         			<p><quote type="biblical">So Jonah went out of the city and sat on the east side of the city.</quote> IV of Jonah 5 verse</p>
 			<pb n="032" facs="469963"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell/>
@@ -4511,7 +4518,7 @@
 					<cell>6</cell>
 				</row>
 				<row>
-					<cell/>
+					<cell/>s
 					<cell>John 6 days</cell>
 					<cell>0</cell>
 					<cell>18</cell>
@@ -4603,7 +4610,7 @@
 				</row>
 			</table>
 			<pb n="033" facs="469964"/>
-			<table>
+			<table type="account-book">
 				<row>
 					<cell/>
 					<cell>John Stone Cr. by 2 bushels &amp; a half of rye at 3s9 per bushel</cell>
