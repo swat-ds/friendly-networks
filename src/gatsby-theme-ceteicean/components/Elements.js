@@ -410,9 +410,11 @@ export const Signed = (props) => {
 };
 
 export const Table = (props) => {
+  let tableType = props.teiNode.attributes.getNamedItem("type")?.value
+
   return(
     <Behavior node={props.teiNode}>
-      <table>
+      <table className={tableType}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </table>
       <br/>

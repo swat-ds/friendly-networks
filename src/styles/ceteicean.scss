@@ -131,21 +131,29 @@ q:has(> p) {
   font-size: 1.25rem
 }
 
-.sum {
-  border-top: 1px solid;
-}
-
-td {
-  padding: 4px 6px;
-  text-align: right;
-}
-
 div {
   font-weight: 300;
 }
 
 .signed {
   margin-left: 10%;
+}
+
+//-----------------Tables--------------------
+
+td {
+  padding: 4px 6px;
+  text-align: right;
+}
+
+.sum {
+  border-top: 1px solid;
+}
+
+table.account-book td, th {
+  &:nth-last-child(-n + 5), &:nth-child(4) {
+    border-left: thin solid;
+  }
 }
 
 //-----------------Popover formatting--------------------
