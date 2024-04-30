@@ -133,7 +133,7 @@ const search = ({ location, data }) => {
   }
 
   // console.log("parsedDocs", parsedDocs);
-  console.log("DocResult", DocResult);
+  // console.log("DocResult", DocResult);
   // console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {

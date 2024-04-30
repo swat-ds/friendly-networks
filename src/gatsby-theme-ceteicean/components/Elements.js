@@ -109,12 +109,6 @@ function useOnScreen(ref) {
 
 export const Pb = (props) => {
 
-  // const ref = useRef();
-  // const isVisible = useOnScreen(ref);
-
-  // if(isVisible){
-  //   console.log("I am visible")
-  // }
   return (
     <Behavior node={props.teiNode}>
       <hr
@@ -240,7 +234,10 @@ export const Dateline = (props) => {
   }
 
   // Wrap in <p> if within <opener> or <closer>
-  if (props.teiNode.closest('tei-closer') || props.teiNode.closest('tei-opener')) {
+  if (
+    props.teiNode?.closest && // To prevent error where "props.teiNode.closest ≠ a fx"
+    (props.teiNode?.closest('tei-closer') || props.teiNode?.closest('tei-opener'))
+  ) {
     return (
       <Behavior node={props.teiNode}>
           <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
@@ -262,14 +259,6 @@ export const TeiHeader = (props) => {
 }
 
 export const Para = (props) => {
-  // function getBreaks(){
-  //   if(props.teiNode.sibling){
-
-  //   }
-  // }
-  // const ref = useRef();
-  // console.log(ref.current.nextSibling);
-  // console.log(props);
 
   let prevNode = props.teiNode?.previousElementSibling;
   let nextNode = props.teiNode?.nextElementSibling;
