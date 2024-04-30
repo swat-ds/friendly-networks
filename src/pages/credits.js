@@ -28,7 +28,7 @@ const credits = () => {
 	                  <li>Chris Densmore, Curator of Friends Historical Library</li>
 	                  <li>Nabil Kashyap, Digital Scholarship Librarian</li>
 	                  <li>Jordan Landes, Curator of Friends Historical Library</li>
-	                  <li>Emily Higgs Kopin, Head of Digital Strategy</li>
+	                  <li>Roberto Vargas, Head of Research and Instruction</li>
 	                  <li>Pat O&rsquo;Donnell, Archivist</li>
 	                  <li>Chelcie Juliet Rowell, Writing Associate</li>
 	                  <li>Anthony Weed, Academic Web Developer</li>
