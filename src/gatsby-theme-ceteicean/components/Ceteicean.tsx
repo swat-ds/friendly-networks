@@ -17,6 +17,7 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
     "tei-teiheader": El.TeiHeader,
     //"tei-ab"
     "tei-add": El.Add,
+    "tei-addrline": El.AddrLine,
     "tei-cell": El.TableCell,
     "tei-closer": El.Block,
     //"tei-damage"
@@ -83,5 +84,5 @@ export const query = graphql`
 export default ShadowedCeteicean
 
 export const Head = () => (
-  <SEO title="Journals - Friendly Networks"/>
+  <SEO title="Writings - Friendly Networks"/>
 )

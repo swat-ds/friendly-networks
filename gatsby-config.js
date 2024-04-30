@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/friendly-networks`,
   siteMetadata: {
     title: "Friendly Networks",
-    description: "Explore the journals and social networks of 18th-century Quakers",
+    description: "Explore the writings and social networks of 18th-century Quakers",
     siteUrl: "https://ds-pages.swarthmore.edu/friendly-networks/",
   },
   plugins: [

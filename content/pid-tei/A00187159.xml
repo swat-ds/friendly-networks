@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Henry Dearborn letter to Joshua Evans, 1794 9mo 15: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187159</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187159</idno>
+                        <idno type="IslandoraNodeid">457193</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-09-15">September 15th, 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="457194"/>
+            <opener>
+                <dateline>Pittston <date when="1794-09-15">September 15th, 1794</date></dateline>
+                <salute>Friend <persName key="w6c82qz0">Evans</persName>,</salute>
+            </opener>
+            <p>
+            Your friendly message from Winthrop, came to my house in my absence, but I embrace the earliest opportunity of congratulating you, on your safe arrival in this part of the country, after so long a journey, I hope your tour has been as pleasant as you expected, &amp; that you will not leave this part of the country without calling, &amp; spending a little time at my house. I would with much satisfaction, wait on you at Vassalborough, did not my private affairs demand my whole attention until the time I must leave home, for Philadelphia, which will be within about twenty or twenty-five days; if you do not expect to return home as soon as I may probably be in Philadelphia, any letter or message you wish to send your family <add>or friends</add>, I shall be
+            <pb n="2" facs="457195"/>
+            happy in carrying &amp; <del>will</del> delivering to your family when I tell you that I wish to see you and my house be assured, than is in not one of those empty compliments, which are too current in the world, but that I really am very desirous of seeing you.
+            </p>
+            <closer>
+                <salute>I am your friend</salute>
+                <signed>Henry Dearborn</signed>
+            </closer>
+        </body>
+    </text>
+</TEI>

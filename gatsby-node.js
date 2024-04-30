@@ -244,12 +244,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   }
 
-  /////////// Create journal pages ///////////
+  /////////// Create document pages ///////////
   const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
   for (const node of result.data.allCetei.nodes) {
     const name = node.parent.name;
     createPage({
-      path: "journals/" + name,
+      path: "writings/" + name,
       component,
       context: {
         name,
@@ -295,41 +295,3 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   );
 };
-
-// // Create page for each TEI file (code from gatsby-theme-ceteicean/gatsby-node)
-// exports.createPages = async ({ actions, graphql, reporter }) => {
-//   const { createPage } = actions
-//   const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
-//
-//   const result = await graphql(`
-//     query {
-//       allCetei {
-//         nodes {
-//           prefixed
-//           elements
-//           parent {
-//             ... on File {
-//               name
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   if (result.errors) {
-//     reporter.panicOnBuild(`Error while running GraphQL query.`)
-//     return
-//   }
-//   for (const node of result.data.allCetei.nodes) {
-//     const name = "journals/" + node.parent.name;
-//     createPage({
-//       path: name,
-//       component,
-//       context: {
-//         name,
-//         prefixed: node.prefixed,
-//         elements: node.elements
-//       }
-//     })
-//   }
-// }

@@ -1,0 +1,97 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Priscilla Evans letter to Joshua Evans, 1794 8mo 29: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187158</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187158</idno>
+                        <idno type="IslandoraNodeid">457190</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-08-29">8th month, 29th. 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Death|Diseases</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457191"/>
+            <opener>
+                <salute>Dear <rs key="w6c82qz0">Father</rs>,</salute>
+            </opener>
+            <p>
+            I received thy letter, and shall be glad if I could take thy advice but the Adversary, the root of all evil, he is persuading me that it time enough for me to think of Death persuading me to take liberty in dress and address, but I shall be able to a deaf ear to him and hear him not, for it is time I was preparing to leave this world, not knowing what hour Death summons me to appear before the Throne of Judgment to give an account for myself, which we all must do sooner or later, it highly necessary for all of us to prepare for that great day. I hope I may not put it off too long, delays are dangerous, time that is past cannot be recalled,
+            </p>
+            <p>
+            I have been favored with a good state of health since I parted with thee, and am glad to hear that thou hast been favored in the like manner, for the most part of the time. I think one of thy letters gives an account of thy having a trying time which is no more than we must expect to hear, we must trust in the Lord for health who is able to <quote type="biblical">make the rough ways smooth, and the crooked ways straight</quote>.
+            </p>
+            
+            <closer>
+                <salute>So I must conclude with my kind love to thee, dear father.</salute>
+                <signed><persName key="w62c9r2n">Priscilla Evans</persName></signed>
+                <dateline><date when="1794-08-29">8th month, 29th. 1794</date></dateline>
+            </closer>
+            </div>
+            <pb n="2" facs="457192"/>
+            <closer>
+                <address>
+                    <addrLine>To <persName key="w6c82qz0">Joshua Evans</persName></addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

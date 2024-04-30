@@ -1,0 +1,108 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dorcas Brown letter to Ann Evans, 1794 7mo 18: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187153</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187153</idno>
+                        <idno type="IslandoraNodeid">457171</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-07-18">18th of 7th month 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="001" facs="457172"/>
+            <opener>
+                <dateline>Nantucket, <date when="1794-07-18">18th of 7th month, 1794</date></dateline>
+                <salute>Beloved friend <persName key="w6844k1p">Ann Evans</persName>,</salute>
+            </opener>
+            <p>
+            Feeling a near sympathy with thee in thy lonely moments, as I doubt not but thou has many—&amp; perhaps more anxiety of mind at times may prevail on account of the singularity of <rs key="w6c82qz0">thy dearly beloved companion's</rs> <del><gap/> the</del> appearance <add>from</add><del>of</del> most in this our day than otherwise might arise—but my dear friend, I would wish thee to be encouraged from a full belief that He that called him forth fitted &amp; qualified for his work &amp; service will be with him and enable him to make his way good wherever his lot may be cast, to the humbling admiration of many sincere-hearted travelers—such is the sweetness attendant on his mission, that I believe even those who are not <add>yet</add> prevailed on to obey the call <add>of the Master</add> must love &amp; admire the servant. I am free to say for thy comfort that I know of no Friend that has visited this island since my residence here that has left a better savour behind. &amp; Oh, that his labor of gospel love may have the desired effect among us, and prove like bread cast upon the waters to return some days hence unto many minds, is the sincere desire of my heart. It was very satisfactory to us that <add>he</add> took lodgings with us &amp; hope his mind was tolerable easy therewith as we love our friends &amp; are very glad to do what little we can, but yet do not wish to be more anxious to have them to put up with us than they may be to come or than is best.
+            </p>
+            <p>
+            He arrived at Martha’s Vineyard about noon the same day that he left here, &amp; on 4th day of the week 9th of the month landed at Woods Hole, dined then, &amp; set off for Richard Lakes that afternoon (my nephew <persName key="w67m1bxt">Thomas Rotch</persName> accompanying him), which is the last account we have had from him but am in hopes we shall hear soon.
+            </p>
+            <p>
+                When my mind is touched with a feeling sympathy with those whose lot <add>it</add> is to have near &amp; dear companions called abroad in truth’s service. Some expressions of dear <persName key="w6dn68k9">William Hunt’s</persName> in a letter to his wife are frequently received in my remembrance. After he had been speaking to her of his mind’s being <add>opened &amp;</add> sweetly drawn towards her in the pure seed <q>wherein the fellowship of their spirits stood firm in the holy life &amp; had been made partakers of the glory manifested to the children of light</q> he says. <q>For which excellent hope received, we are now accounted worthy <add>of the Most High</add> to sojourn apart for a season, may a deep humbling concern ever possess our mind to dwell in perfect resignation to his heavenly will where the fountain of peace is fully known to solace the weary mind under all its fatigues &amp; soils.</q>
+            </p>
+            <p>
+            As it has afforded some degree of comfort to <add>my</add> friend on an occasion a little similar, thought the revival of it might not be disagreeable to thee at this time, &amp; hope thou will excuse my freedom. <rs key="w6nm473p">My husband</rs> <add>fully</add> intended to have wrote to thee by this conveyance but it has been an uncommon busy time with his employers that he has not been able to attend to <add>it</add>.
+            </p>
+            
+            <closer>
+                <salute>With near love to thee &amp; children, in which <rs key="w6nm473p">my husband</rs> &amp; children unite, I conclude &amp; subscribe, thy affectionate friend</salute>
+                <signed><persName key="w6v51n7p">Dorcas Brown</persName></signed>
+            </closer>
+            </div>
+            
+            <pb n="002" facs="457173"/>
+            <closer>
+                <address>
+                    <addrLine><persName key="w6v51n7p">Dorcas Brown</persName></addrLine>
+                    <addrLine><persName key="w6844k1p">Ann Evans</persName></addrLine>                    
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sarah Hustler letter to Martha Dudley, undated: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187178</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187178</idno>
+                        <idno type="IslandoraNodeid">457254</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1769" to="1799">between 1762 and 1799</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Doctrines</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457255"/>
+            <head>
+            Acts of Resignation
+            </head>
+            <p>
+            Great God, the time is now come when thou art pleased to afflict me; but at this time and all others, praised be thy Holy Name, this is thy appointment, &amp; I submit. I know it is for some wise end. The return of this calamity, the manner, the continuance of my afflictions are all of thy permitting. Great source of being this is <add>thy</add> hour which thou from all eternity has ordained to be the season of my present discomfort, but the instruments of my future happiness &amp; glory. It is good for me that I am in trouble, that I may learn thy salutes, for nothing is or can be done without thy providence or directi<damage><supplied>on</supplied></damage> without some wise or excellent design. Welcome then distress. Welcome disappointment if it teaches me resignation to my God.
+            </p>
+            </div>
+            <div>
+            <pb n="2" facs="457256"/>
+            <p>
+            remain within our borders, and the company of our beloved sisters from different parts of your continent who are now laboring among us hath been acceptable and encouraging.
+            </p>
+            <p>
+                We salute you in gospel love, &amp; remain your affectionate friends.
+            </p>
+            <closer>
+            <salute>Signed in and on behalf of the Meeting,</salute> 
+            <signed>By Sarah Hustler, Clerk</signed>
+            <signed><persName key="w6vq5hcv">Martha Dudley</persName></signed>
+            </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

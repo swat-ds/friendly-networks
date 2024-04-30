@@ -109,12 +109,6 @@ function useOnScreen(ref) {
 
 export const Pb = (props) => {
 
-  // const ref = useRef();
-  // const isVisible = useOnScreen(ref);
-
-  // if(isVisible){
-  //   console.log("I am visible")
-  // }
   return (
     <Behavior node={props.teiNode}>
       <hr
@@ -236,9 +230,19 @@ export const Dateline = (props) => {
 
   // Return an empty string if this dateline immediately precedes <p>
   if (nextNode?.localName === "tei-p") {
-    // console.log("In Dateline()")
-    // console.log(<Behavior node={props.teiNode}/>)
     return("");
+  }
+
+  // Wrap in <p> if within <opener> or <closer>
+  if (
+    props.teiNode?.closest && // To prevent error where "props.teiNode.closest ≠ a fx"
+    (props.teiNode?.closest('tei-closer') || props.teiNode?.closest('tei-opener'))
+  ) {
+    return (
+      <Behavior node={props.teiNode}>
+          <p>{<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}</p>
+      </Behavior>
+    );
   }
 
   return (
@@ -255,14 +259,6 @@ export const TeiHeader = (props) => {
 }
 
 export const Para = (props) => {
-  // function getBreaks(){
-  //   if(props.teiNode.sibling){
-
-  //   }
-  // }
-  // const ref = useRef();
-  // console.log(ref.current.nextSibling);
-  // console.log(props);
 
   let prevNode = props.teiNode?.previousElementSibling;
   let nextNode = props.teiNode?.nextElementSibling;
@@ -292,7 +288,26 @@ export const Para = (props) => {
   );
 };
 
+export const AddrLine = (props) => {
+  return (
+    <Behavior node={props.teiNode}>
+      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      <br/>
+    </Behavior>
+  );
+};
+
 export const Head = (props) => {
+  if (props.teiNode.parentNode.localName === "tei-table") {
+    return (
+      <Behavior node={props.teiNode}>
+      <caption class="teiHead general-text">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </caption>
+    </Behavior>
+    );
+  }
+
   return (
     <Behavior node={props.teiNode}>
       <h2 class="teiHead general-text">
@@ -374,15 +389,11 @@ export const List = (props) => {
 };
 
 export const Salute = (props) => {
-  // Add a linebreak before the Salute if it's in the opener
-  let linebreak = (props.teiNode.parentNode.localName === "tei-opener")?
-    (<br/>):
-    "";
-
   return(
     <Behavior node={props.teiNode}>
-      {linebreak}
+      <p>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
     </Behavior>
   );
 };
@@ -390,16 +401,19 @@ export const Salute = (props) => {
 export const Signed = (props) => {
   return (
     <Behavior node={props.teiNode}>
-      <br/>
-      {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      <p className="signed">
+        {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+      </p>
     </Behavior>
   );
 };
 
 export const Table = (props) => {
+  let tableType = props.teiNode.attributes.getNamedItem("type")?.value
+
   return(
     <Behavior node={props.teiNode}>
-      <table>
+      <table className={tableType}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </table>
       <br/>
@@ -408,9 +422,21 @@ export const Table = (props) => {
 };
 
 export const TableRow = (props) => {
+
+  let className;
+
+  // If this is an acct-bk table,
+  if (props.teiNode.parentElement?.attributes.getNamedItem("type")?.value === "account-book") {
+    // and if first cell isn't empty,
+    if (! props.teiNode.firstElementChild.hasAttribute('data-empty')) {
+      // set the returned <tr>'s class to "date-row"
+      className = 'date-row'
+    };
+  }
+
   return(
     <Behavior node={props.teiNode}>
-      <tr>
+      <tr className={className}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </tr>
     </Behavior>
@@ -418,14 +444,31 @@ export const TableRow = (props) => {
 };
 
 export const TableCell = (props) => {
-  // Check if the parent <tr> has the "rend" attribute set to "sum"
+  
+  // Check if the parent <row> has @role attribute "label"; return <th> if so
+  let role = props.teiNode.parentNode?.attributes?.getNamedItem("role")?.value
+  if (role === "label") {
+    return(
+      <Behavior node={props.teiNode}>
+        <th scope="col">
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </th>
+      </Behavior>
+    );
+  }
+  
+
+  // Check if the parent <row> has the "rend" attribute set to "sum"
   let parent = props.teiNode.parentNode?.attributes?.getNamedItem("rend")?.value
 
-  // Check if the  cell contains any numbers
+  // Check if the cell contains any numbers
   let containsNumber = /\d/.test(props.teiNode?.textContent)
+  
+  // Check that the cell doesn't contain a month
+  let monthFree = ! /mo/i.test(props.teiNode?.textContent)
 
   // Return <td> with className "sum" if both checks are true
-  if (parent === "sum" && containsNumber) {
+  if (parent === "sum" && containsNumber && monthFree) {
     return(
       <Behavior node={props.teiNode}>
         <td className="sum">

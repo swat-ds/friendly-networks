@@ -1,0 +1,91 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Enoch Macy letter to Ann Evans, 1797 6mo 13: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187173</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187173</idno>
+                        <idno type="IslandoraNodeid">457239</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1797-06-13">6th month 13th 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="457240"/>
+            <opener>
+                <dateline>Newgarden, North Carolina, <date when="1797-06-13">6th month 13th, 1797</date></dateline>
+                <salute>Beloved Friend <persName key="w6844k1p">Ann Evans</persName></salute>
+            </opener>
+            <p>
+            My kind love is to thee and thine, although an entire stranger as to the outward, but having an agreeable acquaintance with <rs key="w6c82qz0">thy beloved husband</rs>, who is (and has been this some weeks) in these parts, has often drawn my mind in near sympathy towards thee with desires that those may be kept and preserved in the patience now in the time of his being called from thee as at other times. I may inform thee that his labors of love in these parts has been large &amp; (I believe) to the ease of his own mind, and much to the satisfaction of friends and others hereaway. Notwithstanding his singularity, he is dearly beloved amongst us and I firmly believe his <add>service has</add> not been lessened thereby. With desires that when his service is over he may be favored to return to his family and friends with <sic>with</sic> the reward of peace and as thou art favored to give him up freely thou will be a partaker of that ineffable peace that the world can
+            
+            <pb n="2" facs="457241"/>
+            give nor take away which is great encouragement to give up to the Lord’s requirings as he takes great delight in a freewill offering, which I desire may be the happy situation of each of our minds
+            </p>
+            <closer>
+                <salute>and am with affectionate love to thee and thine thy assured wellwishing friend</salute>
+                <signed><persName key="w6kq8v7v">Enoch Macy</persName></signed>
+            </closer>
+        </body>
+    </text>
+</TEI>
