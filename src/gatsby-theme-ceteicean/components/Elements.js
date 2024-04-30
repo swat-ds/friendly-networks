@@ -426,7 +426,7 @@ export const TableRow = (props) => {
   let className;
 
   // If this is an acct-bk table,
-  if (props.teiNode.parentElement.attributes.getNamedItem("type")?.value === "account-book") {
+  if (props.teiNode.parentElement?.attributes.getNamedItem("type")?.value === "account-book") {
     // and if first cell isn't empty,
     if (! props.teiNode.firstElementChild.hasAttribute('data-empty')) {
       // set the returned <tr>'s class to "date-row"
