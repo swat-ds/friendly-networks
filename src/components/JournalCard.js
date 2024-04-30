@@ -1,22 +1,27 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../styles/card.scss";
-import {journalTnLookup} from '../globalVariables'
+import {documentTnLookup} from '../globalVariables'
 import Card from 'react-bootstrap/Card'
 
-const JournalCard = ({ node }) => {
-  const titleArray = node.title.split(", ");
-  const title = titleArray[0].replace('Journal', 'journal');
+const DocumentCard = ({ node }) => {
+  const titleArray = node.title.split(/, (?=\d|undated)/);
+  let title = titleArray[0].replace('Journal', 'journal');
   const date = titleArray[1].split('- ').reduce(
       // Add a line break between the two components of date ranges
       (accumulator, current) => {return (<>{accumulator}- <br/>{current}</>)}
     )
 
+  // Shorten title if over 50 characters
+  while (title.length > 50) {
+    title = title.split(' ').slice(0, -1).join(' ')+'…'
+  }
+
   // Construct urls of thumbnail images held in Islandora
-  const thumbnailUrl = journalTnLookup[node.route.split("/").pop()]
+  const thumbnailUrl = documentTnLookup[node.route.split("/").pop()]
 
   return(
-    <Card bg="primary" className="journal-card">
+    <Card bg="primary" className="document-card">
       <Link to={node.route}>
         <Card.Img src={thumbnailUrl} alt=""/>
         <Card.Body>
@@ -32,4 +37,4 @@ const JournalCard = ({ node }) => {
   );
 };
 
-export default JournalCard;
+export default DocumentCard;

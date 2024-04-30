@@ -1,0 +1,107 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John and Molley Thomas letter to Ann Evans, 2mo 1, 1797; Caleb Hall to Ann Evans, 2mo 7, 1797: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187169</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187169</idno>
+                        <idno type="IslandoraNodeid">457227</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1797-02-01" to="1797-02-07">1st-7th day of the 2nd month 1797</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel--Religious aspects</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457228"/>
+            <opener>
+                <dateline>Marlborough of South Carolina, Piney Grove</dateline>
+                <salute>Esteemed Friend,</salute>
+            </opener> 
+            <p>
+            I gladly embrace this opportunity for <add>to</add> inform thee that we have been favored with the company of our esteemed Friend <persName key="w6c82qz0">Joshua Evans</persName>, thy loving companion, in paying us a religious visit. Which hath been comfortable and satisfactory to us—both at our meeting and also in visiting most of the families of our meeting, which I bore him company mostly whilst amongst us, greatly to my satisfaction. And I may inform thee, dear Friend, that I do sympathize with thee in thy lonesome situation, and I believe that thou will not lose thy reward in giving up <rs key="w6c82qz0">thy dear companion</rs>, for I believe he <supplied>is</supplied> a faithful servant and is diligent about his master’s business. I am at this time in company with him at Pee Dee in Richmond County; he is making southward for Charleston. So <add>I</add> conclude in much love to thee, hoping that thou may be preserved in thy patie<damage><supplied>nce</supplied></damage> and all will be well. 
+            </p>
+            <closer>
+                <salute>From thy affectionate friend and well wisher (my wife joins with me)</salute>
+                <signed>John Thomas</signed>
+                <signed>Molley Thomas</signed>
+                <dateline>The <date when="1797-02-01">1st day of the 2nd month, 1797</date></dateline>
+            </closer>
+            </div>
+            <div>
+            <pb n="2" facs="457229"/>
+            <opener>
+                <dateline>North Carolina, Wayne County</dateline>
+                <salute>Esteemed Friend,</salute>
+            </opener>
+            <p>
+            These may inform thee that <rs key="w6c82qz0">thy dear companion</rs> attended the several meetings belonging to Contentnea Quarter. Whose company has been truly acceptable and satisfactory to me; whom I believe is a faithful servant in his great master’s work, whom I truly love. I have born him company near four hundred miles and are now at Charleston, and conclude, 
+            </p>
+            <closer>
+                <salute>Thy loving friend, </salute>
+                <signed>Caleb Hall</signed>
+                <dateline>the <date when="1797-02-07">7th day of the 2nd month, 1797</date></dateline>
+            </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Miller Jr. letter to Ann Evans, undated: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187177</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187177</idno>
+                        <idno type="IslandoraNodeid">457251</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date from="1794" to="1798">between 1794 and 1798</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Diseases</term>
+                    <term>Quakers--Conduct of life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="1" facs="457252"/>
+            <opener>
+                <salute>Esteemed mother-in-law,</salute>
+            </opener>
+            <p>
+            Having an opportunity to <gap reason="illegible"/> to thee. I feel a willingness to embrace the same, but I feel a little at a loss how to address <add>myself to</add> such an elderly <add>person</add> as thou art, not having anything in particular on my mind but good will, dear friend thee has been a frequent subject of my thought since I saw thee last, for thee was in a very poor state of health then, and I have heard that thou hast had a bad spell of sickness since, the hearing of which somewhat affected me, to think thou art so much afflicted now in the absence of <rs key="w6c82qz0">thy husband</rs>, and I believe I do a little feelingly sympathize with thee in thy present lonesome situation, who art separated from such an agreeable companion for a season. But I hope thee will give him up freely, for I believe he is where he ought to be and in the Lord’s work &amp; service, which at times and seasons is a comfort to my mind, to find there are some who are willing to give up their time for such a glorious work &amp; service. For there are so many of us that are fulfilling the lust of the flesh and the lust of the eye and the pride of life, which I acknowledge to be very great folly, and am at times willing to forsake them, but the flesh is weak. Likewise Joseph Evans hath been frequent in my thought since I was up there last, being in some measure sensible of his great loss can in some degree sympathize with him, as he is deprived of such a good wife, an agreeable companion and affectionate mother to their dear children. But <add>his and</add> our great loss, I hope, is her gain who is gone from works to reward. These may likewise inform thee that we are favored with a good state of health at this time, which I esteem a great blessing, especially now when the Smallpox hath been so thick in our neighborhood, and Margaret hath been favored to escape it. Our friends here are generally well. We have got moved and live pretty comfortable and should be glad to see thee down here as soon as is convenient. We have not heard from Father Evans this good while, nor any of you; therefore, a few lines from you would be very acceptable, as it is the greatest comfort that absence affords true friends. Please to give my kind love to <persName key="w6c82qz0">Joshua Evans</persName> and enquiring friends. Margaret, not having time to write, requests me to give <damage><gap/></damage> 
+            </p>
+            
+            <closer>
+                <salute>In haste I conclude and subscribe myself thy <damage><gap/> <supplied>son-in-</supplied></damage>law,</salute>
+                <signed>John Miller, Junior</signed>
+            </closer>
+            </div>
+            <pb n="2" facs="457253"/>
+            <closer>
+            <address>
+                <addrLine><persName key="w6844k1p">Ann Evans</persName>, wife of <persName key="w6c82qz0">Joshua Evans</persName></addrLine> 
+                <addrLine>Newtown Township</addrLine>
+                <addrLine>Gloucester County</addrLine>
+            </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

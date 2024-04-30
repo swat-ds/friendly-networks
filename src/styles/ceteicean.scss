@@ -131,17 +131,56 @@ q:has(> p) {
   font-size: 1.25rem
 }
 
+div {
+  font-weight: 300;
+}
+
+.signed {
+  margin-left: 10%;
+}
+
+//-----------------Tables--------------------
+
+td, th {
+  padding: 4px 4px;
+  text-align: right;
+}
+
 .sum {
   border-top: 1px solid;
 }
 
-td {
-  padding: 4px 6px;
-  text-align: right;
+table.account-book { 
+  .sum {
+    border-top: 2px solid;
+  }
+  td, th {
+    // Add lines separating columns for dates and currency amount
+    &:nth-last-of-type(-n+3), &:nth-of-type(2) {
+      border-left: thin dotted;
+    }
+  }
+  caption-side: top;
+  width: 100%;
+  tr {
+    width: 100%;
+  }
+
+  tr.date-row:nth-of-type(n+3) {
+    border-top: thin solid;
+  }
 }
 
-div {
-  font-weight: 300;
+// Add a line separating consecutive tables
+table.account-book + br + span + table.account-book:not(:has(caption)):before {
+  content: '';
+  display: flex;
+  margin-bottom: 16px;
+  width: 400%;
+  height: 1px;
+  background: var(--bs-secondary);
+  top: 100%;
+  left: 0;
 }
 
 //-----------------Popover formatting--------------------

@@ -377,11 +377,11 @@ const Network = ({ nodesInJSON, linksInJSON, centralFigures }) => {
           <Row id="instructions-row">
             <h1>Social Network</h1>
             <p>The visualization below shows the relationships betwen the people
-            discussed in John Hunt's journals.</p>
+            discussed in the writings of John Hunt and Joshua Evans.</p>
             <p>Thin red lines link relatives, and
             thick green lines link acquaintances.
             The larger a person's circle, the more 
-            times they are mentioned in the journals.</p>
+            times they are mentioned in the documents.</p>
             <p>To zoom in or out, scroll while your cursor is over the visualization.
             To pan, click on the visualization background and drag your cursor.
             Hover over a node to highlight it and the connected nodes.</p>

@@ -135,9 +135,9 @@
         "TriCo ID": "",
         "ImgSrc": "",
         "ImgAttr": "",
-        "Mntns": "102",
+        "Mntns": "101",
         "HuntMntns": "101",
-        "EvansMntns": "1"
+        "EvansMntns": "0"
     },
     {
         "SNAC ID": "45693157",
@@ -587,6 +587,16 @@
         "ImgAttr": "",
         "Mntns": "44",
         "HuntMntns": "44",
+        "EvansMntns": ""
+    },
+    {
+        "SNAC ID": "85564036",
+        "ARK ID": "w63p2txf",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "0",
+        "HuntMntns": "1\u2264",
         "EvansMntns": ""
     },
     {
@@ -1620,6 +1630,16 @@
         "EvansMntns": ""
     },
     {
+        "SNAC ID": "85674655",
+        "ARK ID": "w6sp11k8",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "0",
+        "HuntMntns": "",
+        "EvansMntns": ""
+    },
+    {
         "SNAC ID": "85676076",
         "ARK ID": "w6z71dmb",
         "TriCo ID": "",
@@ -1718,6 +1738,16 @@
         "Mntns": "10",
         "HuntMntns": "9",
         "EvansMntns": "1"
+    },
+    {
+        "SNAC ID": "85517848",
+        "ARK ID": "w61657hq",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "0",
+        "HuntMntns": "",
+        "EvansMntns": ""
     },
     {
         "SNAC ID": "13632608",
@@ -1848,6 +1878,16 @@
         "Mntns": "10",
         "HuntMntns": "9",
         "EvansMntns": "1"
+    },
+    {
+        "SNAC ID": "85687750",
+        "ARK ID": "w6650fb8",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "7",
+        "HuntMntns": "7",
+        "EvansMntns": ""
     },
     {
         "SNAC ID": "85717637",
@@ -2080,6 +2120,16 @@
         "EvansMntns": "8"
     },
     {
+        "SNAC ID": "88066475",
+        "ARK ID": "w6qg9m2x",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "6",
+        "HuntMntns": "",
+        "EvansMntns": "6"
+    },
+    {
         "SNAC ID": "87570278",
         "ARK ID": "w6f58fm2",
         "TriCo ID": "",
@@ -2190,6 +2240,16 @@
         "EvansMntns": "4"
     },
     {
+        "SNAC ID": "87977180",
+        "ARK ID": "w6r31tft",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "",
+        "HuntMntns": "",
+        "EvansMntns": ""
+    },
+    {
         "SNAC ID": "87600125",
         "ARK ID": "w6b38mqv",
         "TriCo ID": "",
@@ -2218,6 +2278,26 @@
         "Mntns": "10",
         "HuntMntns": "7",
         "EvansMntns": "3"
+    },
+    {
+        "SNAC ID": "88014494",
+        "ARK ID": "w6nm473p",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "2",
+        "HuntMntns": "",
+        "EvansMntns": "2"
+    },
+    {
+        "SNAC ID": "88016277",
+        "ARK ID": "w6v51n7p",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "1",
+        "HuntMntns": "",
+        "EvansMntns": "1"
     },
     {
         "SNAC ID": "87636497",
@@ -2260,6 +2340,26 @@
         "EvansMntns": ""
     },
     {
+        "SNAC ID": "87977026",
+        "ARK ID": "w6844k1p",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "",
+        "HuntMntns": "",
+        "EvansMntns": ""
+    },
+    {
+        "SNAC ID": "87977749",
+        "ARK ID": "w62c9r2n",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "1",
+        "HuntMntns": "1",
+        "EvansMntns": "0"
+    },
+    {
         "SNAC ID": "41387281",
         "ARK ID": "w68063j0",
         "TriCo ID": "https://archives.tricolib.brynmawr.edu/agents/people/9067",
@@ -2268,5 +2368,75 @@
         "Mntns": "4",
         "HuntMntns": "1",
         "EvansMntns": "3"
+    },
+    {
+        "SNAC ID": "87980090",
+        "ARK ID": "w6tr6ths",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "3",
+        "HuntMntns": "",
+        "EvansMntns": "3"
+    },
+    {
+        "SNAC ID": "87978910",
+        "ARK ID": "w6553fn4",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "2",
+        "HuntMntns": "",
+        "EvansMntns": "2"
+    },
+    {
+        "SNAC ID": "87981245",
+        "ARK ID": "w6g846rs",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "0",
+        "HuntMntns": "",
+        "EvansMntns": ""
+    },
+    {
+        "SNAC ID": "88003787",
+        "ARK ID": "w6k17xbr",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "1",
+        "HuntMntns": "",
+        "EvansMntns": "1"
+    },
+    {
+        "SNAC ID": "88016958",
+        "ARK ID": "w6kq8v7v",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "2",
+        "HuntMntns": "",
+        "EvansMntns": "2"
+    },
+    {
+        "SNAC ID": "88017570",
+        "ARK ID": "w6nh5hqd",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "",
+        "HuntMntns": "",
+        "EvansMntns": ""
+    },
+    {
+        "SNAC ID": "25793258",
+        "ARK ID": "w6vq5hcv",
+        "TriCo ID": "",
+        "ImgSrc": "",
+        "ImgAttr": "",
+        "Mntns": "3",
+        "HuntMntns": "3",
+        "EvansMntns": ""
     }
 ]

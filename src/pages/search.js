@@ -47,27 +47,27 @@ function formatSearchResult(result, query) {
 }
 
 const search = ({ location, data }) => {
-  let parsedJournals = [];
+  let parsedDocs = [];
 
 
   let constellationResult = [];
-  let journalResult = [];
+  let DocResult = [];
   let query = "";
 
   if (typeof window !== "undefined" && typeof document !== "undefined") {
 
-    data.journals.nodes.forEach((journal) => {
+    data.writings.nodes.forEach((doc) => {
       const parser = new DOMParser();
-      const doc = parser.parseFromString(journal.prefixed, "text/xml");
-      const title = doc.querySelector("tei-fileDesc tei-title").innerHTML;
-      const rawDivs = Array.from(doc.querySelectorAll("tei-div"))
+      const xml = parser.parseFromString(doc.prefixed, "text/xml");
+      const title = xml.querySelector("tei-fileDesc tei-title").innerHTML;
+      const rawDivs = Array.from(xml.querySelectorAll("tei-div"))
       const divs = rawDivs.map(div => { return{
         text: div.textContent,
-        name: journal.parent.name,
+        name: doc.parent.name,
         id: div.attributes?.n?.nodeValue,
         title: title.split(":")[0]
       }});
-      divs.forEach(div => parsedJournals.push(div));
+      divs.forEach(div => parsedDocs.push(div));
     });
 
     // console.log("location", location);
@@ -81,9 +81,9 @@ const search = ({ location, data }) => {
     // Decode query (e.g., convert "%20" to a space char)
     query = decodeURI(query);
 
-    // Search journals
+    // Search writings
 
-    const jOptions = {
+    const wOptions = {
       includeMatches: true,
       includeScore: true,
       minMatchCharLength: query.length,
@@ -94,14 +94,14 @@ const search = ({ location, data }) => {
       keys: ["text"],
     }
 
-    const journalFuse = new Fuse(parsedJournals, jOptions);
+    const docFuse = new Fuse(parsedDocs, wOptions);
 
-    let jFuseResult = journalFuse.search(query, 300);
-    journalResult.push(...jFuseResult);
+    let wFuseResult = docFuse.search(query, 300);
+    DocResult.push(...wFuseResult);
 
     // Filter bad matches from search results
     // (since apparently Fuse won't do this itself??)
-    journalResult = journalResult.filter(result => result.score < 0.25)
+    DocResult = DocResult.filter(result => result.score < 0.25)
 
     // Search constellations
 
@@ -132,8 +132,8 @@ const search = ({ location, data }) => {
     constellationResult = constellationResult.filter(result => result.score < 0.7)
   }
 
-  // console.log("parsedJournals", parsedJournals);
-  console.log("journalResult", journalResult);
+  // console.log("parsedDocs", parsedDocs);
+  // console.log("DocResult", DocResult);
   // console.log("constellationResult", constellationResult);
 
   function renderJResult(result, index) {
@@ -141,7 +141,7 @@ const search = ({ location, data }) => {
     const hash = result.item.id ? "#" + result.item.id : "";
 
     return (
-          <Link to={"/journals/" + result.item.name + hash} className="result-link">
+          <Link to={"/writings/" + result.item.name + hash} className="result-link">
             <Card bg="primary" className="result-card">
               <Card.Header>
                 <Card.Title>{result.item.title}</Card.Title>
@@ -193,18 +193,18 @@ const search = ({ location, data }) => {
       <Row id="main-row">
 
         <h4 className="general-text">
-          {constellationResult.length+journalResult.length} results for "{query}"
+          {constellationResult.length+DocResult.length} results for "{query}"
         </h4>
 
         <br />
         <Tabs>
-          <Tab eventKey="journal" title={
+          <Tab eventKey="documents" title={
             <React.Fragment>
-              Journal Results
-              <Badge pill bg='primary'>{journalResult.length}</Badge>
+              Document Results
+              <Badge pill bg='primary'>{DocResult.length}</Badge>
             </React.Fragment>
           }>
-              {journalResult.map(renderJResult)}
+              {DocResult.map(renderJResult)}
           </Tab>
           <Tab eventKey="people" title={
             <React.Fragment>
@@ -292,7 +292,7 @@ export const query = graphql`
       }
     }
 
-    journals: allCetei {
+    writings: allCetei {
       totalCount
       nodes {
         prefixed

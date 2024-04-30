@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>William Brown letter to Ann Evans, 1794 8mo 12: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Lyra Ederington</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187154</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s" type="project">Friendly Networks</title>
+                <title level="s" type="series">
+                    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+                </title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Joshua Evans papers, SFHL-RG5-190</collection>
+                        <idno type="local">A00187154</idno>
+                        <idno type="IslandoraNodeid">457174</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-08-12">8th month 12th 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Travel</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term ref="http://id.loc.gov/authorities/names/no2020100384">Evans, Joshua, 1731-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1" facs="457175" />
+            <opener>
+                <dateline>Nantucket <date when="1794-08-12">8th month 12th 1794</date></dateline>
+                <salute>Dear Friend <persName key="w6844k1p">Ann Evans</persName></salute>
+            </opener>
+            <p>
+            From the near feeling sympathy with thee in the separation from <rs key="w6c82qz0">thy dear husband</rs>, I was induced to attempt the addressing thee with a few lines the 17th of last month, which (through other engagements crowding upon me at that time) was prevented accomplishing seasonably to go by the conveyance then offering. I am, however, glad that about the same time <rs key="w6v51n7p">my wife</rs> embraced the opportunity &amp; forwarded a letter so much to my satisfaction that I was made measurably easy under my own failure, and hope before this time it has reached thy hands in safety. I am nevertheless desirous (although at this late period) of casting in my mite as a testimony of my near unity with him in his present engagement, and that I have felt much for thee in thy lonely situation, although I have not entertained the least doubt, but the hand that put him forth upon his religious mission, would be thy support and comfort in his absence, through every adverse allotment which He in His wisdom may see meet to dispense.
+            </p>
+            <p>w
+            I do not recollect that <rs key="w6v51n7p">my wife’s</rs> information of <rs key="w6c82qz0">thy dear husband’s</rs> progress extended farther than the time of his leaving this island, which I believe he was enabled to do after a faithful <add>discharge</add> of duty in great sweetness, having had diverse appointed meetings with different Classes not members with us, and though led in a close searching line were to general (as well as to his own) satisfaction. He proceeded from hence to Martha’s Vineyard, had one or two meetings with the people there, being but one family of Friends on that island, from whence crossed over to the Main, taking some meetings &amp; visiting the families of active members on the way to New Bedford. At this place he spent some time in the like service, &amp; we have been informed to good satisfaction, for although the news of his singular appearance, <damage><gap/></damage> place to place previous to his arrival, seemed to <damage><supplied>create</supplied></damage>
+            
+            <pb n="2" facs="457176" />
+            fears of  what might be the consequence, yet I don't find in one instance but that all fears vanished &amp; way opened to admiration. He left Bedford on fourth day the 23rd of last month, taking meetings toward Providence; from thence on to Rhode Island; was last week I understand at their quarterly meeting; has for his companion <persName key="w67m1bxt">Thomas Rotch</persName> of Bedford, a near friend of ours &amp; nephew to my wife, who, having given up to this engagement from an apprehension of religious duty, I have no doubt but he will continue with him through the course of his journey Eastward. From whose near connection with us &amp; some other friends here, I have reason to hope we shall hear often from them. When we do, I shall endeavor to convey the intelligence to thee, knowing how acceptable it is, were it only the information of the health of our absent friends. Whilst he may be engaged near the sea coast, I expect he will have frequent opportunities himself, &amp; thou may probably have later accounts than this in that way. The communications <damage><gap/></damage> vessels to and from Philadelphia &amp; this place being also frequent while the mild season continues, should thou, or his children, or other friends incline to write to him this way, our knowledge of the most ready <damage><supplied>convey</supplied></damage>ance in passing letters to him induces me to believe they may generally reach him in safety &amp; with equal expedition perhaps to any other channel, clear of the public post, that I wish thee to use freedom, as I shall be pleased in having it in my power to render thee service herein, or in any other line in which thou may be free to direct.
+            </p>
+            <closer>
+            <salute>
+            With near love to thee &amp; every branch of thy family, <damage><supplied>in</supplied></damage> which I am joined by <rs key="w6v51n7p">my wife</rs> &amp; youngest daughter (the eldest who <damage><supplied>wro</supplied></damage>te to thy daughter being now absent) I conclude, &amp; <damage><supplied>remain</supplied></damage> thy affectionate friend
+            </salute>
+            <signed><persName key="w6nm473p">William Brown</persName></signed>
+            </closer>
+        </body>
+    </text>
+</TEI>
