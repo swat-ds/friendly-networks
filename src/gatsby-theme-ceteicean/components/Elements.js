@@ -433,9 +433,21 @@ export const Table = (props) => {
 };
 
 export const TableRow = (props) => {
+
+  let className;
+
+  // If this is an acct-bk table,
+  if (props.teiNode.parentElement.attributes.getNamedItem("type")?.value === "account-book") {
+    // and if first cell isn't empty,
+    if (! props.teiNode.firstElementChild.hasAttribute('data-empty')) {
+      // set the returned <tr>'s class to "date-row"
+      className = 'date-row'
+    };
+  }
+
   return(
     <Behavior node={props.teiNode}>
-      <tr>
+      <tr className={className}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </tr>
     </Behavior>
@@ -443,7 +455,21 @@ export const TableRow = (props) => {
 };
 
 export const TableCell = (props) => {
-  // Check if the parent <tr> has the "rend" attribute set to "sum"
+  
+  // Check if the parent <row> has @role attribute "label"; return <th> if so
+  let role = props.teiNode.parentNode?.attributes?.getNamedItem("role")?.value
+  if (role === "label") {
+    return(
+      <Behavior node={props.teiNode}>
+        <th scope="col">
+          {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
+        </th>
+      </Behavior>
+    );
+  }
+  
+
+  // Check if the parent <row> has the "rend" attribute set to "sum"
   let parent = props.teiNode.parentNode?.attributes?.getNamedItem("rend")?.value
 
   // Check if the cell contains any numbers

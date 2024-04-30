@@ -141,8 +141,8 @@ div {
 
 //-----------------Tables--------------------
 
-td {
-  padding: 4px 6px;
+td, th {
+  padding: 4px 4px;
   text-align: right;
 }
 
@@ -150,7 +150,29 @@ td {
   border-top: 1px solid;
 }
 
-table.account-book + br + span + table.account-book:before {
+table.account-book { 
+  .sum {
+    border-top: 2px solid;
+  }
+  td, th {
+    // Add lines separating columns for dates and currency amount
+    &:nth-last-of-type(-n+3), &:nth-of-type(2) {
+      border-left: thin dotted;
+    }
+  }
+  caption-side: top;
+  width: 100%;
+  tr {
+    width: 100%;
+  }
+
+  tr.date-row:nth-of-type(n+3) {
+    border-top: thin solid;
+  }
+}
+
+// Add a line separating consecutive tables
+table.account-book + br + span + table.account-book:not(:has(caption)):before {
   content: '';
   display: flex;
   margin-bottom: 16px;
@@ -159,19 +181,6 @@ table.account-book + br + span + table.account-book:before {
   background: var(--bs-secondary);
   top: 100%;
   left: 0;
-}
-
-table.account-book { 
-  td {
-    &:nth-last-child(-n + 5), &:nth-child(4) {
-      border-left: thin solid;
-    }
-  }
-  caption-side: top;
-  width: 100%;
-  tr {
-    width: 100%;
-  }
 }
 
 //-----------------Popover formatting--------------------
