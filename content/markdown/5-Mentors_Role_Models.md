@@ -11,7 +11,7 @@ It is clear that Hunt respected and admired fellow ministers and other people th
 [^1]: _Journal,_ August 10, 1812.
 [^2]: _Journal,_ June 16, 1813.
 
-However, there were a few individuals who merited descriptives of “dear” or “near.” Of these [Joshua Evans](/people/w6c82qz0/), [Joshua Lippincott](/people/w6jb6xn6/), and [John Parrish](/people/w63g5dz0/) were among those singled out. It is clear that John Hunt greatly esteemed fellow minister [Joshua Evans (1731-1798)](/people/w6c82qz0/) of Haddonfield Monthly Meeting. Evans was a frequent companion and close friend. After Evans’s burial Hunt added a note to an earlier entry, “This, our dear Friend, died very suddenly. . . . Between us there has been adistinguished unity ever since I embarked in the cause of truth. For then, he as it were took me by the hand, and steadied me as a father, and so he has been to me ever since."[^3]
+However, there were a few individuals who merited descriptives of “dear” or “near.” Of these [Joshua Evans](/people/w6c82qz0/), [Joshua Lippincott](/people/w6jb6xn6/), and [John Parrish](/people/w63g5dz0/) were among those singled out. It is clear that John Hunt greatly esteemed fellow minister [Joshua Evans (1731-1798)](/people/w6c82qz0/) of Haddonfield Monthly Meeting. Evans was a frequent companion and close friend. After Evans’s burial Hunt added a note to an earlier entry, “This, our dear Friend, died very suddenly. . . . Between us there has been a distinguished unity ever since I embarked in the cause of truth. For then, he as it were took me by the hand, and steadied me as a father, and so he has been to me ever since."[^3]
 
 [^3]: _Journal,_ July 1, 1798.
 

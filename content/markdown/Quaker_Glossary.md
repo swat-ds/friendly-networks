@@ -15,7 +15,7 @@ title: "Glossary of Quaker Terms"
   <dd>Term used to describe the first generation of Quakers.</dd>
 
 <dt id="ancient-worthies">Ancient worthies</dt>
-  <dd>See <a href="ancient-friends">"Ancient friends"</a>.</dd>
+  <dd>See <a href="#ancient-friends">"Ancient friends"</a>.</dd>
 
 <dt id="acknowledgement">Acknowledgement</dt>
   <dd>A formal, written statement of apology by an offending member to the meeting for having acted in a manner contrary to the rules of discipline.</dd>
