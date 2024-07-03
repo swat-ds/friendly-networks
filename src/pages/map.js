@@ -1,64 +1,62 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-import { graphql } from "gatsby";
+import {useState } from "react";
+import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Map from "../components/Map"
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-import { nj1 } from "/content/geodata/northern-journey-1.js"
 
-const jsonData = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type":"Feature",
-      "geometry": {
-        "type":"Point",
-        "coordinates": [-75.0376700, 39.8915000]
-      },
-      "properties": {
-        "name": "Haddonfield",
-        "administrationCode": "NJ",
-        "countryCode": "US"
-      }
-    },
-    {
-      "type":"Feature",
-      "geometry": {
-        "type":"Point",
-        "coordinates": [-86.2502700, 35.7503500]
-      },
-      "properties": {
-        "name": "Tennessee",
-        "administrationCode": "TN",
-        "countryCode": "US"
-      }
-    },
-    {
-      "type":"Feature",
-      "geometry": {
-        "type":"Point",
-        "coordinates": [-74.6682000, 39.8776900]
-      },
-      "properties": {
-        "administrationCode": "NJ",
-        "countryCode": "US"
-      }
-    }
-  ]
-}
+import { nj1 } from "/content/geodata/northern-journey-1.js"
+import { nj2 } from "/content/geodata/northern-journey-2.js"
+import { sj1 } from "/content/geodata/southern-journey-1.js"
+import { sj2 } from "/content/geodata/southern-journey-2.js"
+import { redmond } from "/content/geodata/redmond.js"
+
 
 const MapPage = ({ data }) => {
+  const maps = [
+    {name: "Evans's 1st journey North", data: nj1},
+    {name: "Evans's 2nd journey North", data: nj2},
+    {name: "Evans's 1st journey South", data: sj1},
+    {name: "Evans's 2nd journey South", data: sj2},
+    {name: "Redmond's journey North", data: redmond},
+  ]
+  
+  const [currentMap, setMap] = useState(0)
+
   return (
     <Layout>
-      <Row>
-        <Col>
+      <Row id="main-row">
+        <h1>Map</h1>
+        <ToggleButtonGroup 
+            name="collection" 
+            type="radio"
+            defaultValue={''}
+            id="map-choice"
+          >
+          {maps.map((map, idx) => (
+            <ToggleButton
+              className="map-toggle-btn"
+              key={idx}
+              id={`map-butn-${idx}`}
+              type="radio"
+              variant="primary"
+              name="map"
+              value={idx}
+              checked={currentMap === idx}
+              onChange={(e) => setMap(e.currentTarget.value)}
+            >
+              {map.name}
+            </ToggleButton>
+          ))}
+          </ToggleButtonGroup>
+        <Col id="map-col">
           <Map
-            center={[41.97141704129031, -71.89499962774197]}
             maxZoom={11}
             minZoom={3}
             startZoom={7}
-            json={nj1}
+            json={maps[currentMap].data}
+            key={currentMap}
           />
         </Col>
       </Row>

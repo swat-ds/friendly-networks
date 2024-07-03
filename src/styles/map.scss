@@ -13,3 +13,15 @@ div div.leaflet-bar a {
     color: var(--bs-primary);
   }
 }
+
+#map-choice {
+  display: flex;
+  align-items: center;
+  * {
+    color: var(--bs-secondary);
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  padding-bottom: 12px;
+}
