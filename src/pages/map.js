@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Map from "../components/Map"
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-
+import { nj1 } from "/content/geodata/northern-journey-1.js"
 
 const jsonData = {
   "type": "FeatureCollection",
@@ -52,14 +52,13 @@ const MapPage = ({ data }) => {
   return (
     <Layout>
       <Row>
-        <Col/>
         <Col>
           <Map
-            center={[39.856677,-74.90081]}
+            center={[41.97141704129031, -71.89499962774197]}
             maxZoom={11}
             minZoom={3}
             startZoom={7}
-            json={jsonData}
+            json={nj1}
           />
         </Col>
       </Row>
