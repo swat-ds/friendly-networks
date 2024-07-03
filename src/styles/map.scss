@@ -6,7 +6,7 @@ div.leaflet-popup h3 {
   font-size: 1rem;
 }
 
-div#map-row div.leaflet-bar a {
+div div.leaflet-bar a {
   background-color: var(--bs-primary);
   &:hover, &:hover span, &.leaflet-disabled, &.leaflet-disabled span {
     background-color: var(--bs-secondary);
