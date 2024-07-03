@@ -37,17 +37,12 @@ const Map = (props) => {
     return (
       <MapContainer center={center} zoom={startZoom} scrollWheelZoom={true} style={{ height: "600px" }}>
         <TileLayer
-          attribution='Tiles &copy; Esri &mdash; Source: Esri'
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png"
-          maxZoom={maxZoom}
-          minZoom={minZoom}
-        />
-        <TileLayer
-          attribution='Label tiles &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png"
-          maxZoom={maxZoom}
-          minZoom={minZoom}
-        />
+         attribution='GOOGLE'
+         url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
+         maxZoom={maxZoom}
+         minZoom={minZoom}
+         subdomains={['mt0','mt1','mt2','mt3']}
+       />
         <GeoJSON data={json} onEachFeature={addPopup}/>
         <MapZoomer data={json}/>
         {props.children}
