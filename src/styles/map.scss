@@ -25,3 +25,11 @@ div div.leaflet-bar a {
   }
   padding-bottom: 12px;
 }
+
+#map-row .leaflet-container {
+  height: 600px;
+}
+
+#map-col .leaflet-container {
+  height: 60vh;
+}

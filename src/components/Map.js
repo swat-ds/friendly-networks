@@ -35,7 +35,7 @@ const Map = (props) => {
 
   if (typeof window !== 'undefined') {
     return (
-      <MapContainer center={center} zoom={startZoom} scrollWheelZoom={true} style={{ height: "600px" }}>
+      <MapContainer center={center} zoom={startZoom} scrollWheelZoom={true}>
         <TileLayer
          attribution='GOOGLE'
          url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
