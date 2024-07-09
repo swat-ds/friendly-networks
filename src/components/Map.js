@@ -168,8 +168,8 @@ const Arrows = (path) => {
           onEachFeature={addPopup} 
           style={path ? styleFunction : null}
         />
-        <MapZoomer data={json}/>
         <Arrows path={path}/>
+        <MapZoomer data={json}/>
         {props.children}
       </MapContainer>
     );
