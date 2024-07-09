@@ -57,6 +57,7 @@ const MapPage = ({ data }) => {
             startZoom={7}
             json={maps[currentMap].data}
             key={currentMap}
+            path={true}
           />
         </Col>
       </Row>
