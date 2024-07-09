@@ -38,23 +38,16 @@ const Map = (props) => {
         " >", 
         {
           repeat: true,
+          attributes: {
+            fill: '#535B32',
+          }
         }
       )
     }
   }
 
   const styleFunction = feature => {
-  //   // Get index of feature in array of features
-  //   const index = json.features.findIndex(x => x === feature)
-  //   // Adjust for fact that first half features is points, not lines
-  //   const percentage = (2*index/json.features.length - 1)
-  //   // Convert to hex percentage
-  //   const hexPercentage = Math.floor(256*percentage).toString(16).padStart(2, '0')
-  //   const negaHexPerc = Math.floor(256-256*percentage).toString(16).padStart(2, '0')
-  //   // Convert to RGB string
-  //   const rgbString = `#${negaHexPerc}${negaHexPerc}${hexPercentage}`
-  //   console.log(rgbString) 
-  //   return {color: rgbString}
+    return {color: "#636B42", opacity: "60%"}
   }
 
 

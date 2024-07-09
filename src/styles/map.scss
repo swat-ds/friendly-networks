@@ -14,6 +14,11 @@ div div.leaflet-bar a {
   }
 }
 
+.leaflet-marker-icon {
+  // Change icon color to match primary green
+ filter: hue-rotate(-135.9deg) saturate(58%) brightness(95%); 
+}
+
 #map-choice {
   display: flex;
   align-items: center;
