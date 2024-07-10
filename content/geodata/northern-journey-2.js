@@ -8,7 +8,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -26,7 +26,7 @@ export const nj2 = {
         "description": "stayed at Abraham Warrington's",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "44",
-        "date of arrival": "1795-04-15"
+        "dateOfArrival": "1795-04-15"
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +44,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "38",
-        "date of arrival": "1795-04-16"
+        "dateOfArrival": "1795-04-16"
       },
       "geometry": {
         "type": "Point",
@@ -62,7 +62,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "41",
-        "date of arrival": "1795-04-17"
+        "dateOfArrival": "1795-04-17"
       },
       "geometry": {
         "type": "Point",
@@ -80,7 +80,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "18",
-        "date of arrival": "1795-04-19"
+        "dateOfArrival": "1795-04-19"
       },
       "geometry": {
         "type": "Point",
@@ -98,7 +98,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "38",
-        "date of arrival": "1795-04-22"
+        "dateOfArrival": "1795-04-22"
       },
       "geometry": {
         "type": "Point",
@@ -116,7 +116,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
-        "date of arrival": "1795-04-24"
+        "dateOfArrival": "1795-04-24"
       },
       "geometry": {
         "type": "Point",
@@ -134,7 +134,7 @@ export const nj2 = {
         "description": "stops at \"Newburgh Valley\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "21",
-        "date of arrival": "1795-04-25"
+        "dateOfArrival": "1795-04-25"
       },
       "geometry": {
         "type": "Point",
@@ -152,7 +152,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "16",
-        "date of arrival": "1795-04-26"
+        "dateOfArrival": "1795-04-26"
       },
       "geometry": {
         "type": "Point",
@@ -170,7 +170,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "88",
-        "date of arrival": "1795-04-29"
+        "dateOfArrival": "1795-04-29"
       },
       "geometry": {
         "type": "Point",
@@ -188,7 +188,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "17",
-        "date of arrival": "1795-05-03"
+        "dateOfArrival": "1795-05-03"
       },
       "geometry": {
         "type": "Point",
@@ -206,7 +206,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "9",
-        "date of arrival": "1795-05-05"
+        "dateOfArrival": "1795-05-05"
       },
       "geometry": {
         "type": "Point",
@@ -224,7 +224,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "50",
-        "date of arrival": "1795-05-08"
+        "dateOfArrival": "1795-05-08"
       },
       "geometry": {
         "type": "Point",
@@ -242,7 +242,7 @@ export const nj2 = {
         "description": "calls it \"Saratoga\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "60",
-        "date of arrival": "1795-05-11"
+        "dateOfArrival": "1795-05-11"
       },
       "geometry": {
         "type": "Point",
@@ -260,7 +260,7 @@ export const nj2 = {
         "description": "calls it \"Saratoga on the west side\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
-        "date of arrival": "1795-05-12"
+        "dateOfArrival": "1795-05-12"
       },
       "geometry": {
         "type": "Point",
@@ -278,7 +278,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "16",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -296,7 +296,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -314,7 +314,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -332,7 +332,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "14",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -350,7 +350,7 @@ export const nj2 = {
         "description": "calls it \"Saratoga\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -368,7 +368,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "30",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -386,7 +386,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "10",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -404,7 +404,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "52",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -422,7 +422,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -440,7 +440,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "12",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -458,7 +458,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "52",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -476,7 +476,7 @@ export const nj2 = {
         "description": "visited Jonathan Hoag's",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "4",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -494,7 +494,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "12",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -512,7 +512,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "11",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -530,7 +530,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "5",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -548,7 +548,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "25",
-        "date of arrival": "1795-06-17"
+        "dateOfArrival": "1795-06-17"
       },
       "geometry": {
         "type": "Point",
@@ -566,7 +566,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "29",
-        "date of arrival": "1795-06-17"
+        "dateOfArrival": "1795-06-17"
       },
       "geometry": {
         "type": "Point",
@@ -584,7 +584,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "7",
-        "date of arrival": "1795-06-18"
+        "dateOfArrival": "1795-06-18"
       },
       "geometry": {
         "type": "Point",
@@ -602,7 +602,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "7",
-        "date of arrival": "1795-06-18"
+        "dateOfArrival": "1795-06-18"
       },
       "geometry": {
         "type": "Point",
@@ -620,7 +620,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "7",
-        "date of arrival": "1795-06-20"
+        "dateOfArrival": "1795-06-20"
       },
       "geometry": {
         "type": "Point",
@@ -638,7 +638,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "21",
-        "date of arrival": "1795-06-21"
+        "dateOfArrival": "1795-06-21"
       },
       "geometry": {
         "type": "Point",
@@ -656,7 +656,7 @@ export const nj2 = {
         "description": "\"Saint John's\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "40",
-        "date of arrival": "1795-06-23"
+        "dateOfArrival": "1795-06-23"
       },
       "geometry": {
         "type": "Point",
@@ -674,7 +674,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-06-24"
+        "dateOfArrival": "1795-06-24"
       },
       "geometry": {
         "type": "Point",
@@ -692,7 +692,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-06-24"
+        "dateOfArrival": "1795-06-24"
       },
       "geometry": {
         "type": "Point",
@@ -710,7 +710,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "12",
-        "date of arrival": "1795-06-26"
+        "dateOfArrival": "1795-06-26"
       },
       "geometry": {
         "type": "Point",
@@ -728,7 +728,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "190",
-        "date of arrival": "1795-07-03"
+        "dateOfArrival": "1795-07-03"
       },
       "geometry": {
         "type": "Point",
@@ -746,7 +746,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "",
-        "date of arrival": "1795-07-06"
+        "dateOfArrival": "1795-07-06"
       },
       "geometry": {
         "type": "Point",
@@ -764,7 +764,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "",
-        "date of arrival": "1795-07-11"
+        "dateOfArrival": "1795-07-11"
       },
       "geometry": {
         "type": "Point",
@@ -782,7 +782,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "",
-        "date of arrival": "1795-07-12"
+        "dateOfArrival": "1795-07-12"
       },
       "geometry": {
         "type": "Point",
@@ -800,7 +800,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "1000",
-        "date of arrival": "1795-07-17"
+        "dateOfArrival": "1795-07-17"
       },
       "geometry": {
         "type": "Point",
@@ -818,7 +818,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "47",
-        "date of arrival": "1795-07-28"
+        "dateOfArrival": "1795-07-28"
       },
       "geometry": {
         "type": "Point",
@@ -836,7 +836,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "84",
-        "date of arrival": "1795-08-04"
+        "dateOfArrival": "1795-08-04"
       },
       "geometry": {
         "type": "Point",
@@ -854,7 +854,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-08-06"
+        "dateOfArrival": "1795-08-06"
       },
       "geometry": {
         "type": "Point",
@@ -872,7 +872,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "40",
-        "date of arrival": "1795-08-08"
+        "dateOfArrival": "1795-08-08"
       },
       "geometry": {
         "type": "Point",
@@ -890,7 +890,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-08-11"
+        "dateOfArrival": "1795-08-11"
       },
       "geometry": {
         "type": "Point",
@@ -908,7 +908,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-08-12"
+        "dateOfArrival": "1795-08-12"
       },
       "geometry": {
         "type": "Point",
@@ -926,7 +926,7 @@ export const nj2 = {
         "description": "says he went to \"Passamaquoddy\" at the mouth of St Croix",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-08-14"
+        "dateOfArrival": "1795-08-14"
       },
       "geometry": {
         "type": "Point",
@@ -944,7 +944,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "35",
-        "date of arrival": "1795-08-15"
+        "dateOfArrival": "1795-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -962,7 +962,7 @@ export const nj2 = {
         "description": "Only refers to going to \"Pleasant River\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-08-17"
+        "dateOfArrival": "1795-08-17"
       },
       "geometry": {
         "type": "Point",
@@ -980,7 +980,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "39",
-        "date of arrival": "1795-08-19"
+        "dateOfArrival": "1795-08-19"
       },
       "geometry": {
         "type": "Point",
@@ -998,7 +998,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "30",
-        "date of arrival": "1795-08-21"
+        "dateOfArrival": "1795-08-21"
       },
       "geometry": {
         "type": "Point",
@@ -1016,7 +1016,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": "1795-08-22"
+        "dateOfArrival": "1795-08-22"
       },
       "geometry": {
         "type": "Point",
@@ -1034,7 +1034,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "14",
-        "date of arrival": "1795-08-24"
+        "dateOfArrival": "1795-08-24"
       },
       "geometry": {
         "type": "Point",
@@ -1052,7 +1052,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "14",
-        "date of arrival": "1795-08-25"
+        "dateOfArrival": "1795-08-25"
       },
       "geometry": {
         "type": "Point",
@@ -1070,7 +1070,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "18",
-        "date of arrival": "1795-08-26"
+        "dateOfArrival": "1795-08-26"
       },
       "geometry": {
         "type": "Point",
@@ -1088,7 +1088,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "70",
-        "date of arrival": "1795-08-29"
+        "dateOfArrival": "1795-08-29"
       },
       "geometry": {
         "type": "Point",
@@ -1106,7 +1106,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "75",
-        "date of arrival": "1795-09-01"
+        "dateOfArrival": "1795-09-01"
       },
       "geometry": {
         "type": "Point",
@@ -1124,7 +1124,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "70",
-        "date of arrival": "1795-09-04"
+        "dateOfArrival": "1795-09-04"
       },
       "geometry": {
         "type": "Point",
@@ -1142,7 +1142,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "65",
-        "date of arrival": "1795-09-08"
+        "dateOfArrival": "1795-09-08"
       },
       "geometry": {
         "type": "Point",
@@ -1160,7 +1160,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-09-11"
+        "dateOfArrival": "1795-09-11"
       },
       "geometry": {
         "type": "Point",
@@ -1178,7 +1178,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-09-13"
+        "dateOfArrival": "1795-09-13"
       },
       "geometry": {
         "type": "Point",
@@ -1196,7 +1196,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "43",
-        "date of arrival": "1795-09-14"
+        "dateOfArrival": "1795-09-14"
       },
       "geometry": {
         "type": "Point",
@@ -1214,7 +1214,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "6",
-        "date of arrival": "1795-09-16"
+        "dateOfArrival": "1795-09-16"
       },
       "geometry": {
         "type": "Point",
@@ -1232,7 +1232,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "6",
-        "date of arrival": "1795-09-16"
+        "dateOfArrival": "1795-09-16"
       },
       "geometry": {
         "type": "Point",
@@ -1250,7 +1250,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-09-18"
+        "dateOfArrival": "1795-09-18"
       },
       "geometry": {
         "type": "Point",
@@ -1268,7 +1268,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "14",
-        "date of arrival": "1795-09-20"
+        "dateOfArrival": "1795-09-20"
       },
       "geometry": {
         "type": "Point",
@@ -1286,7 +1286,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "53",
-        "date of arrival": "1795-09-21"
+        "dateOfArrival": "1795-09-21"
       },
       "geometry": {
         "type": "Point",
@@ -1304,7 +1304,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "25",
-        "date of arrival": "1795-09-25"
+        "dateOfArrival": "1795-09-25"
       },
       "geometry": {
         "type": "Point",
@@ -1322,7 +1322,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "14",
-        "date of arrival": "1795-09-27"
+        "dateOfArrival": "1795-09-27"
       },
       "geometry": {
         "type": "Point",
@@ -1340,7 +1340,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "10",
-        "date of arrival": "1795-09-27"
+        "dateOfArrival": "1795-09-27"
       },
       "geometry": {
         "type": "Point",
@@ -1358,7 +1358,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "30",
-        "date of arrival": "1795-09-29"
+        "dateOfArrival": "1795-09-29"
       },
       "geometry": {
         "type": "Point",
@@ -1376,7 +1376,7 @@ export const nj2 = {
         "description": "visits Robert Nesbet",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "32",
-        "date of arrival": "1795-10-03"
+        "dateOfArrival": "1795-10-03"
       },
       "geometry": {
         "type": "Point",
@@ -1394,7 +1394,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
-        "date of arrival": "1795-10-04"
+        "dateOfArrival": "1795-10-04"
       },
       "geometry": {
         "type": "Point",
@@ -1412,7 +1412,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "35",
-        "date of arrival": "1795-10-05"
+        "dateOfArrival": "1795-10-05"
       },
       "geometry": {
         "type": "Point",
@@ -1430,7 +1430,7 @@ export const nj2 = {
         "description": "goes to \"the Branch\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "37",
-        "date of arrival": "1795-10-09"
+        "dateOfArrival": "1795-10-09"
       },
       "geometry": {
         "type": "Point",
@@ -1448,7 +1448,7 @@ export const nj2 = {
         "description": "says \"Peach Pond\"; goes to \"the Valley\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "22",
-        "date of arrival": "1795-10-11"
+        "dateOfArrival": "1795-10-11"
       },
       "geometry": {
         "type": "Point",
@@ -1466,7 +1466,7 @@ export const nj2 = {
         "description": "goes back to \"the Valley\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "28",
-        "date of arrival": "1795-10-12"
+        "dateOfArrival": "1795-10-12"
       },
       "geometry": {
         "type": "Point",
@@ -1484,7 +1484,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-10-14"
+        "dateOfArrival": "1795-10-14"
       },
       "geometry": {
         "type": "Point",
@@ -1502,7 +1502,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
-        "date of arrival": "1795-10-16"
+        "dateOfArrival": "1795-10-16"
       },
       "geometry": {
         "type": "Point",
@@ -1520,7 +1520,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "11",
-        "date of arrival": "1795-10-18"
+        "dateOfArrival": "1795-10-18"
       },
       "geometry": {
         "type": "Point",
@@ -1538,7 +1538,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "11",
-        "date of arrival": "1795-10-18"
+        "dateOfArrival": "1795-10-18"
       },
       "geometry": {
         "type": "Point",
@@ -1556,7 +1556,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
-        "date of arrival": "1795-10-19"
+        "dateOfArrival": "1795-10-19"
       },
       "geometry": {
         "type": "Point",
@@ -1574,7 +1574,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
-        "date of arrival": "1795-10-21"
+        "dateOfArrival": "1795-10-21"
       },
       "geometry": {
         "type": "Point",
@@ -1592,7 +1592,7 @@ export const nj2 = {
         "description": "calls it \"Oswego meeting house\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "25",
-        "date of arrival": "1795-10-23"
+        "dateOfArrival": "1795-10-23"
       },
       "geometry": {
         "type": "Point",
@@ -1610,7 +1610,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "13",
-        "date of arrival": "1795-10-24"
+        "dateOfArrival": "1795-10-24"
       },
       "geometry": {
         "type": "Point",
@@ -1628,7 +1628,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "9",
-        "date of arrival": "1795-10-26"
+        "dateOfArrival": "1795-10-26"
       },
       "geometry": {
         "type": "Point",
@@ -1646,7 +1646,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -1664,7 +1664,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "70",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -1682,7 +1682,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "65",
-        "date of arrival": ""
+        "dateOfArrival": ""
       },
       "geometry": {
         "type": "Point",
@@ -1700,7 +1700,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "40",
-        "date of arrival": "1795-11-19"
+        "dateOfArrival": "1795-11-19"
       },
       "geometry": {
         "type": "Point",
@@ -1718,7 +1718,7 @@ export const nj2 = {
         "description": "goes to \"Colebark\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
-        "date of arrival": "1795-11-20"
+        "dateOfArrival": "1795-11-20"
       },
       "geometry": {
         "type": "Point",
@@ -1736,7 +1736,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "50",
-        "date of arrival": "1795-11-21"
+        "dateOfArrival": "1795-11-21"
       },
       "geometry": {
         "type": "Point",
@@ -1754,7 +1754,7 @@ export const nj2 = {
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "100",
-        "date of arrival": "1795-11-26"
+        "dateOfArrival": "1795-11-26"
       },
       "geometry": {
         "type": "Point",

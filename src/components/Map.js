@@ -22,11 +22,28 @@ const Map = (props) => {
 
   // (this extracts the name from a feature to display in a pop-up)
   const addPopup = (feature, layer) => {
+    // Name and State
     if (feature.properties && feature.properties.name) {
       const state = feature.properties?.countryCode === "US"
         ? ", " + feature.properties.adminCode
         : "";
-      const popup = `<h3>${feature.properties.name + state}</h3>`
+      var popup = `<h3>${feature.properties.name + state}</h3>`
+      // Date of arrival
+      if (feature.properties.dateOfArrival) {
+        popup += `<strong>Arrived:</strong> 
+          ${feature.properties.dateOfArrival}<br/>`
+      }
+      // Distance
+      if (feature.properties.distance) {
+        popup += `<strong>Distance:</strong> 
+        ${Number.parseFloat(feature.properties.distance).toFixed(0)} 
+        miles<br/>`
+      }
+      //Notes
+      if (feature.properties.description) {
+        popup += `<strong>Note:</strong> 
+          ${feature.properties.description}<br/>`
+      }
       layer.bindPopup(popup);
     }
   }
@@ -64,7 +81,9 @@ const Map = (props) => {
 
   if (typeof window !== 'undefined') {
     return (
-      <MapContainer center={center} zoom={startZoom} scrollWheelZoom={true} path={path}>
+      <MapContainer 
+        center={center} zoom={startZoom} scrollWheelZoom={true} path={path}
+      >
         <TileLayer
          attribution='GOOGLE'
          url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
