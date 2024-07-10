@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter to John Hunt from Esther Hunt, 1792: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 10 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2023</date>
+                <idno type="local">A00187302</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187302</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1793-03-15">3rd month 4th day 1792</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term><term>Illness</term><term>Death</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Hunt, Joshua, 1754-1792</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+          <pb n="001" facs="452821"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Redstone settlement <date when="1793-03-15">3rd month 4th day 1792</date>.</dateline> 
+                    <salute>Dear Friend & Brother <persName key="w6n9820p">J.H.</persName>,</salute> 
+                </opener>
+                <p>Believing that it would be best for me to write to thee at this time, although it is a sorrowful account that I have to give. Oh, surely short, and uncertain are all our temporal engagements; many trials are suffered to come upon us, to loosen us from this world. It seemed to me, that we had passed through considerable of difficulties in getting to this land, under which we had been supported to admiration have got settled, and as it were the sun shined upon us a short season. But oh, how is it changed and how am I stripped, having my dear companion and bosom friend taken from me by death and I, left in this strange land with our six children, the youngest about four months old, that it be truly said any loss and theirs it great, I can but mourn under a sense thereof, though not as without hope, for I have a comfortable hope that our loss is his gain yet, it is a trying season and hard to flesh and blood. <damage><gap/></damage> have had sympathizing friends in this time of affliction, which has helped to bare up the mind, and as it were give fresh hope, that he (whose tender mercies are over all his work, insomuch that, the sparrows were not to be forgotten before him) will be graciously pleased to preserve us; and we have need of the prayers of our friends for us, that we may walk worthy of his notice who can abundantly make up the loss of our friends outwardly My dear husband was taken poorly from home, being over the river at the monthly meeting the 29th 1st month 1792, got home and thought himself better, and express how agreeable home felt, and rather more than common signified how sweet I felt to him even equal to the day of marriage, and we both acknowledged our desire to be thankful for the favors bestowed upon us. 
+            
+                   <pb n="002" facs="452821"/>
+                    He having laid out his business so as to have a few weeks to learn our family in a school way, having a shop fitted up {so} that would do for that purpose. The children were pleased with their books and appeared in a promising way as to learning–it was but a few days before he grew so poorly <add>as</add> not able to attend to it any longer. His disorder began like a cold: chills, fever, loss of appetite, & without much pain, which gradually increased upon him his strength failing, was favored with his reason and a quiet mind. He took many things that we were in hopes would do him good, but the cause did not remove. Often expressed that he was in hopes he should be better and much desired stillness, telling me not to be so much concerned about him, for he was in hopes he should be raised up again, and thought his affliction might be for our good. And a few days before his departure expressed how well satisfied he was in being here, thought himself better contented than he ever had been, during his sickness was remarkable patient & sensible for the most part—appeared to be fervently concerned to be prepared for a future state, though it seemed hid from his eyes that his end was so near, which was the 26th of the 2nd month. <persName key=w6x74cd2>Jonas Cattle</persName>, William Dixon & John Cadwallader were with us at that trying season—was buried the 28th at the burning ground at big Redstone on which occasion a solemn meeting was help, supposed to <add>be</add> solidest funeral that had been seen in this country, it being too common for a light rawness to appear on such occasions. He made a little will before he went to the Jerseys in the fall, in which he appointed <persName key="w6x74cd2">Jonas Cattle</persName> & William Dixon to be executors. His business in little compass considering our new beginning—Moses Leonard has lived with us six months past, and will stay an other year. If I can make it answer, have a prospect for Thomas French to work at the trade he appears to be a pretty good workman already
+            
+                   <pb n="003" facs="452821"/>
+(2nd of 4th month) we were in a good way as to the outward support of our family. My loss is very great its hardly to be conceived but by those who may have in some measure experienced the like. I hope to be kept from murmuring & do desire to feel that state of mind which breaths, not my will but thine be done. Our family are in a middling state of health. I have sore eyes which have been so some time. With love and near affection to thee <persName key="w6wx87x7">thy wife</persName> & children in which my children join, I conclude 
+                    <closer>
+                        <salute>thy tried Sister</salute> <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed> 
+                        <postscript>P.S. Please to remember my love to our friends & relations as thou mayst have opportunity, and in particular to <persName key="w6hj799d">Elizabeth Collins</persName>, Grace Rodgers, Mother Roberts, and also to any Brothers, Sisters and thine as I cannot write to them separately at this time & if thee will please to let my <persName key="w6553d40">Brother</persName> see this, it may be some satisfaction to him. Therefore with my heart filled with love & mine eyes with tears, do affectionately bid you all farewell not knowing what deep trial may be permitted to come upon us, or weather I shall be favored to ever seen any of you more in this world, do earnestly with that we may be found worthy to meet all sorrows shall be wiped away. </postscript>
+            
+                   <pb n="004" facs="452821"/>
+                    To 
+                    <address>
+                        <addrLine><persName key="w6n9820p">John Hunt</persName></addrLine> <addrLine>Burlington County in Jersey</addrLine> <addrLine>by favor of <persName>John Garwood</persName> </addrLine>
+                    </address>
+                    </closer>
+        </body></div>
+    </text>
+</TEI>
