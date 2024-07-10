@@ -2,7 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Esther Hunt letter to John Hunt, [1793] [3]mo [15]: Electronic Version</title>
+                <title>Esther Hunt letter to John Hunt, 1793 3mo 15: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
@@ -56,7 +56,7 @@
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term>Quakers---Social life and customs</term>
+                    <term>Quakers--Social life and customs</term>
                     <term>Domestic relations</term>
                 </keywords>
             </textClass>
@@ -72,22 +72,26 @@
             <pb n="001" facs="452821"/>
                 <div type="letter">
                     <opener>
-            <dateline><date when ="1792-03-15">15th 3rd Month 1793</date></dateline> <salute>Dear Brother <persName key="w6n9820p">J.H.</persName>,</salute> </opener> <p> I received a few lines from thee, when on your return home from these parts, which were very acceptable to me, being desirous <add>to</add> hear more particular how you fared, as well as how your families fared in your absence, we have not had opportunities as I expected to send &amp; here from your parts, but I hope when there is, it may not be missed for it is a great comfort to me, in my lonesome situation to have an account from my near &amp; dear friends for so you feel to me.</p>
+                        <dateline><date when ="1792-03-15">15th 3rd Month 1793</date></dateline> 
+                        <salute>Dear Brother <persName key="w6n9820p">J.H.</persName>,</salute> 
+                    </opener> 
+                    <p> I received a few lines from thee, when on your return home from these parts, which were very acceptable to me, being desirous <add>to</add> hear more particular how you fared, as well as how your families fared in your absence, we have not had opportunities as I expected to send &amp; here from your parts, but I hope when there is, it may not be missed for it is a great comfort to me, in my lonesome situation to have an account from my near &amp; dear friends for so you feel to me.</p>
             
            
-            <p>I may with thankfulness acknowledge the many favors bestowed upon us poor unworthy creatures, many ways &amp; in particular, that we are favored with health, (although it has been very changeable weather) &amp; several have been taken away by death as William Wilson’s son William a hopeful young man – Thomas Newport a friend that lives near us, went over the mountain (with Issac Jinkonson) was took with <add>the</add> smallpox had it smartly before he could return to his family. His wife was delivered of twins &amp; she with one of the children is dead, the other like to live, a trying circumstance.</p> <p>I have thought that your coming to see us, has been of considerable service to me <add>&amp; I believe it has to others</add> feeling myself it times better reconciled to my situation, but oh, the surfeiting cares &amp; cumbering things of this life are many indeed,
-            
-            <pb n="002" facs="452821"/> that at times I am ready to say in my heart except the Lord help, vain is the help of man, yet have thought I have need of their prayers for me &amp; family that we may be united by the holy sement, which will bring all into order &amp; keep it so: that corrupt unmortified self, may be kept down, I think that Thomas French has been favored with that which has kept self down in a good degree, but, I fear that will not <add>always</add> be the the case, O, I Daily feel the need of wisdom, that, which is profitable to direct inwardly &amp; outwardly that whilst, we are necessary providing for the body, that the more needful part be not neglected, O, I may say in truth <del>that</del> there is breathing in my heart that we may give all diligence to make our calling &amp; election sure, yet feel my weakness &amp; poverty so great that I am unable to do anything; except it is at times in secret petitions.</p> <p>I believe that it will not be best for me to write to several of any friend as I should be glad to, but don't wish to burden the carrier, therefore <del>if thee will</del> please to remember my kind love to my friends &amp; relations, brother <persName key="w6553d40">Samuel</persName> particular my children joining me in love to thee, thy <add><persName key="w6wx87x7">wife</persName></add> &amp; children</p> 
+            <p>I may with thankfulness acknowledge the many favors bestowed upon us poor unworthy creatures, many ways &amp; in particular, that we are favored with health, (although it has been very changeable weather) &amp; several have been taken away by death as William Wilson’s son William a hopeful young man – Thomas Newport a friend that lives near us, went over the mountain (with Issac Jinkonson) was took with <add>the</add> smallpox had it smartly before he could return to his family. His wife was delivered of twins &amp; she with one of the children is dead, the other like to live, a trying circumstance.</p> 
+                    <p>I have thought that your coming to see us, has been of considerable service to me <add>&amp; I believe it has to others</add> feeling myself it times better reconciled to my situation, but oh, the surfeiting cares &amp; cumbering things of this life are many indeed,
+
+                <pb n="002" facs="452821"/> 
+                that at times I am ready to say in my heart except the Lord help, vain is the help of man, yet have thought I have need of their prayers for me &amp; family that we may be united by the holy cement, which will bring all into order &amp; keep it so: that corrupt unmortified self, may be kept down. I think that Thomas French has been favored with that which has kept self down in a good degree, but, I fear that will not <add>always</add> be the the case. Oh, I Daily feel the need of wisdom, that which is profitable to direct inwardly &amp; outwardly, that whilst we are necessary providing for the body, that the more needful part be not neglected. Oh, I may say in truth <del>that</del> there is breathing in my heart that we may give all diligence to make our calling &amp; election sure, yet feel my weakness &amp; poverty so great that I am unable to do anything; except it is at times in secret petitions.</p> 
+                    <p>I believe that it will not be best for me to write to several of any friend as I should be glad to, but don't wish to burden the carrier, therefore <del>if thee will</del> please to remember my kind love to my friends &amp; relations, brother <persName key="w6553d40">Samuel</persName> particular. My children joining me in love to thee, thy <add><persName key="w6wx87x7">wife</persName></add> &amp; children</p> 
                     <closer> 
                         <salute>from thy friend &amp; sister</salute>
-            
-                <signed><persName key="w6gj3q0h">Esther Hunt</persName>
-                </signed>
+                        <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
                     </closer>
-                        <p>I have wrote thee this poor letter as it came, without considering much how it would read, having my child in my lap whilst the rest are asleep</p> 
+                       <postscript> <p>I have wrote thee this poor letter as it came, without considering much how it would read, having my child in my lap whilst the rest are asleep</p> </postscript>
             
             <pb n="003" facs="452821"/> 
-                    <postscript><label>P.S.</label> <p>our horses are not all well yet. We have made about one hundred and fifty weight of sugar besides molasses <persName key="w6x74cd2">Jonas</persName>’ family in a middling state of health</p> 
+                    <postscript><label>P.S.</label> <p>our horses are not all well yet. We have made about one hundred and fifty weight of sugar besides molasses. <persName key="w6x74cd2">Jonas’s</persName> family in a middling state of health</p> 
             </postscript> 
                 </div> 
             <pb n="004" facs="452821"/> 
