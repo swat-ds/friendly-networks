@@ -9,7 +9,7 @@
                     <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 9 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -75,7 +75,7 @@
     <text>
         <body>
             <pb n="001" facs="XXXXX"/>
-            <div type=letter>
+            <div type="letter">
             <opener>
                <salute> Beloved <rs key="w6n9820p">Brother</rs>,</salute>
             </opener>
@@ -155,10 +155,12 @@
             <closer>
                 <address>
                     <addrLine>To</addrLine>
-            <addrLine><persName key=>John Hunt</persName></addrLine>
-            in
-            Evesham, burlington
-            County, Jersey</address></closer>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+            <addrLine>in</addrLine>
+            <addrLine>Evesham, burlington</addrLine>
+            <addrLine>County, Jersey</addrLine>
+                </address>
+            </closer>
             
         </body>
     </text>
