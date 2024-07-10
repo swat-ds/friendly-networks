@@ -2,7 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX: Electronic Version</title>
+                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
@@ -21,13 +21,13 @@
                 <availability status="free">
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
-                <date when="2023">2023</date>
+                <date when="2023">2024</date>
                 <idno type="local">XXXXX</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of John Hunt and Joshua Evans</title>
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
@@ -46,7 +46,7 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker ministers John Hunt and Joshua Evans are stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2023 and encoded the text in TEI. The 2023 project also included researching individuals mentioned in the text to create and update records about them in the <ref target="https://snaccooperative.org/">Social Networks and Archival Context website</ref></p>           
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
