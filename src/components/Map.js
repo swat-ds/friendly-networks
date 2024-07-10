@@ -2,8 +2,9 @@ import React from "react";
 import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-import { Marker, Popup, GeoJSON, useMap, FeatureGroup } from 'react-leaflet'
-import TextPath from 'react-leaflet-textpath'
+import { GeoJSON, useMap } from 'react-leaflet'
+import TextPath from 'react-leaflet-textpath' 
+// ^ Import necessary for access to setText property
 
 import "../styles/map.scss";
 
@@ -52,11 +53,12 @@ const Map = (props) => {
   const addTextPath = (feature, layer) => {
     if (feature.geometry.type === "LineString") {
       layer.setText(
-        " >", 
+        "▶", 
         {
           repeat: true,
+          offset: 5,
           attributes: {
-            fill: '#535B32',
+            fill: '#FAF8D6'
           }
         }
       )
@@ -64,7 +66,7 @@ const Map = (props) => {
   }
 
   const styleFunction = feature => {
-    return {color: "#636B42", opacity: "60%"}
+    return {color: "#636B42", weight: "10"}
   }
 
 
