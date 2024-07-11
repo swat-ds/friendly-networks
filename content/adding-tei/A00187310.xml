@@ -124,14 +124,13 @@
             expose my poor scribble if thou canst make out to 
             read thyself, it may be sufficient. </p>
             <closer>
-                <salute>Therefore, with love to you all <rs key="w6wx87x7">wife</rs> &amp; children,
-            with others as if named I conclude,
-            thy affectionate sister</salute>, 
-                <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
-            </closer>
+                    <salute>Therefore, with love to you all <rs key="w6wx87x7">wife</rs> &amp;
+                        children, with others as if named I conclude, thy affectionate sister, </salute>
+                    <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                </closer>
             </div>
             <closer>
-                <address><addrLine>John Hunt
+                <address><addrLine><persName key="w6n9820p">John Hunt</persName>
             senior</addrLine></address>
             </closer>            
         </body>
