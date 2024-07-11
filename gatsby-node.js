@@ -5,6 +5,7 @@ const bgComponent = require.resolve(`./src/templates/BgComponent.js`);
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
+const { log } = require("console");
 
 //Creates nodes for the markdown, which are used later to create pages.
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -39,6 +40,7 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
         // timeout: 10000,
       });
       let result = await fetchConstellation()
+      console.log(result.status, result.data.timing);
       if("constellation" in result.data){
         x++;
         constellations.push(result);
