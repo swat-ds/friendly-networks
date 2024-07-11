@@ -1,0 +1,109 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1794 6mo 15: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187305</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187305</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-06-15">15th 6th 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                <term>Religious life</term>
+                <term>Agriculture</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Cattle, Jonas, 1741-1828</term>
+                    <term></term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+            <opener>
+               <salute> Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+            </opener>
+            <p>I received thy kind letter sent by Thomas French which was to me very acceptable. &amp; being willing to embrace every opportunity of conveyance am about therefore to make use of this, and may inform, that I, with the rest of our family are in a good degree favored with health. Also, that we are like to have a good harvest, which are blessings that I desire to be truly thankful for. There is likewise a prospect of some fruit, though not as much as last season. The season of sugar making was short, it being while Thomas was gone to Jersey, but, we made near 100 lb. <del>but</del> Many families that made very little, &amp; some none. The flu is in many places over this side of the mountain. In the wheat, that, one might think people would think of the ill use made of the rye if hardness of heart did not so much prevail. Thomas French hired for a short time, &amp; James makes his home with us. There is a family in the little house on our place that expects to stay this season. We are favored with great plenty, &amp; it likewise brings
+            
+            <pb n="002" facs="XXXXX"/> its cumbers and cares, which at time falls heavy on me. I often think the need I stand in of divine wisdom, to know how, to go in &amp; out before my own family &amp; to direct the affairs thereof. Oh, may my friends have a sympathy with &amp; for me therein, that, if at any time a word should arise it may not be withheld either as caution or council, for I feel exceedingly weak for the charge committed to my care. May the Lord direct my steps both temporally &amp; spiritually is the desire of my heart. The little hint thee kindly gave in thy letter was I believe of use, though at that time did not see the danger of not being low enough after times of favor—&amp; may inform that there has been a little movement in visiting some families <add>since</add>. In which I was with friends about one week, to a degree of satisfaction, but, as if every movement was to be laid waste, that might have a tendency to stir up the pure mind. So it was in this: <add>some</add> looking as I, apprehended for silver trumpets instead of rams horns. It seems that the enemy has made inroads upon us, in different ways &amp; manners &amp; times. It looks rather doubtful whether any will be able to escape his maw.</p>
+            
+           <pb n="003" facs="XXXXX"/> 
+                <p> I could be glad to give a better account of us &amp; our meetings, but if I say as it appears to me, it will be in a mournful way indeed. Oh, may there be a revival of light &amp; life amongst <add>us</add>, is what is longed for by me. Sister Elizabeth appears in public; at some times I believe to satisfaction, at other times not as much so. <persName key="w6x74cd2">Jonas</persName> is like something almost smothered, or covered with a cloud. At this time he is gone to the quarterly meeting at Hopewell. I, with he may return home more bright. He has been overborne with <add>a</add> multiplicity of cares of importance, &amp; not been able to clear himself, is rather become numb under the weight thereof (as it appears to me). I shall conclude with designing thee to excuse my writing, having just wrote as it came before me, without considering how it would read in the day time. I have wrote in the night &amp; expect thee may be at a load by my poor spelling. There are several friends that have desired their loves remembered to thee &amp; Brother <persName key="w6553d40">Samuel</persName>, <add>too with</add> William &amp; Rebecca Dixon, Benjamin Townsend etc.</p> 
+            </div>
+           <closer> 
+               <salute>from thy affectionate sister</salute>
+            <signed><persName key ="w6gj3q0h">Esther Hunt </persName></signed>
+            
+            <dateline><date when="1794-06-25">15th 6th 1794</date> Redstone</dateline> 
+            </closer>
+            
+            <pb n="004" facs="XXXXX"/>
+            <closer>
+                <address>
+                    <addrLine>To</addrLine>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+            <addrLine>in</addrLine>
+            <addrLine>Evesham, burlington</addrLine>
+            <addrLine>County, Jersey</addrLine>
+                </address>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>
