@@ -1,0 +1,114 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1799 1mo 19: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187312</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187312</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p> 4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1799-01-19">19th 1st mo 1799</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+            <opener>
+                <dateline><date when="1799-01-19">19th 1st month 1799</date> Redstone</dateline>
+                <note type="structure">In John Hunt's hand</note>I received this letter 12th of 3rd month 1799
+                <salute>Beloved <persName key="w6n9820p">Brother</persName>,</salute>
+            </opener>
+                <p>With feeling regard, I take my pen to write once more to thee, my dear <rs key="w6n9820p">brother</rs>, for the time has seemed long to me since there has been any way open for communication, although it has been often my desire. I received thy acceptable letter sent by Catherine Leeds who with her companions paid <damage><gap/></damage> religious visit, I believe, much to our satisfaction, <damage><gap/></damage> the paper thee sent directed to the monthly-meetings did not come to my hands first; being delivered to Reece Cadwallader; it was sent over the River &amp; read at Westland monthly-meeting &amp; then read at this at the close of the meeting before entering on business; (before it came to my hands) and I don’t know but it was in its season. However in word they generally approved what was therein contained, many desiring copies thereof, some thought it long yet seemed at a loss what part to leave out. </p>
+            
+            <pb n="002" facs="XXXXX"/>
+                <p>We have had abundance of labor bestowed upon us. If it could be that others might do the work, it seems they would not be wanting. But oh, alas, our state is such, others may be engaged with us, and for us, yet that will not complete the work. We must know a joining in ourselves, which some of us may be fully sensible of at time; tho very much in the weakness. O, my <rs key="w6n9820p">brother</rs>, its affecting to my mind that I have no good tidings, feeling myself clothed with poverty &amp; weaknesses and many more appear to be in dangerous situations. The Earth and the <damage><gap/></damage> has its to be feared, too great an influence among yet, this I think is the case there is struggling in places &amp; individuals (&amp; we know in the outward that is a sign of life, and where there is life there is hope) I feel desires that the abundant labors bestowed upon us may not be lost, oh, that we may not become castaways by our neglect &amp; inattention. Benjamin Townsend is gone on a religious visit to Carolina accompanied by his cousin Joseph Townsend attended Baltimore yearly meeting &amp; so proceeded on their journey</p>
+            
+            <pb n="003" facs="XXXXX"/>
+            <p>I feel in measure sensible that many blessings and favors have been &amp; are still
+                    continued to me &amp; children and oh, that we may be grateful receivers. Joshua
+                    Hunt &amp; family is moved about 8 miles to Issac Mason’s Iron works where he
+                    has I profitable birth as to the outward at present <persName key="w6dn68k9"
+                        >William Hunt</persName> is settled at Bridgeport &amp; followeth
+                    chairmaking &amp; appears to be industrious. Brother <persName key="w66b7v5c"
+                        >Robert</persName> is living at Winchester &amp; keeps school &amp; its
+                    expected that he will come out here in the spring to keep school at Westland
+                    &amp; not to fetch his family until he has proved it himself. Brother <persName
+                        key="w6x74cd2a">Jonas</persName> &amp; family in tolerable health at
+                    present, though often subject to complaints. <rs key="w6hj799d">Sister</rs> has
+                    been lame several weeks with pain sciatic or <add>some afflicting pains</add>.
+                    Ann married to Jonah Cadwallader. John Moores's family well as far as I
+                    know.</p> 
+                <closer>
+                    <salute>With love to thee <rs key="w6wx87x7">wife</rs> &amp; children, in which my 
+                children join, I conclude thy sister</salute> <persName key="w6gj3q0h">Esther Hunt</persName>
+                </closer>
+            </div>
+                <pb n="004" facs="XXXXX"/>
+                <closer>
+                    <address>
+                        <addrLine>To <persName key="w6n9820p">John Hunt</persName> </addrLine>
+                        <addrLine>in Jersey</addrLine>
+                        <addrLine>(to the care of James French)</addrLine>
+                    </address>
+                </closer>
+        </body>
+    </text>
+</TEI>
