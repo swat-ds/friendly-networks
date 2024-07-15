@@ -2,7 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Esther Hunt letter to John Hunt, 1802 5mo 28: Electronic Version</title>
+                <title>Esther Hunt letter to John Hunt, 1802 4mo 1: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">A00187318</idno>
+                <idno type="local">A00187319</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -35,7 +35,7 @@
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>Roberts-Hunt family papers, SC-061</collection>
-                        <idno type="local">A00187318</idno>
+                        <idno type="local">A00187319</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
@@ -50,7 +50,7 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="1802-05-28">28th 5th 1802</date></creation>
+            <creation>Original written <date when="1802-04-01">1st 4th mo 1802</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
@@ -58,11 +58,6 @@
                 <keywords scheme="#lcsh">
                     <term>Quakers--Social life and customs</term>
                     <term>Religious life</term>
-                    <term>Domestic relations</term>
-                </keywords>
-                <keywords scheme="#lcnaf">
-                    <term>Stokes, Samuel, 1744-1802</term>
-                    <term>Cattle, Jonas, 1741-1828</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -77,22 +72,18 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
                 <opener>
-                    <salute>Dear <rs key="w6n9820p">Brother</rs>,</salute>
+                    <salute> Beloved <rs key="w6n9820p">Brother</rs>,</salute>
                 </opener>
-                    <p>Having just received thy letter sent by the hand of <persName key="w6x74cd2a">Jonas</persName>, who returned yesterday, &amp; having an opportunity of returning a line by Samuel Haines &amp; companions, (who are this day at our house &amp; expect to return direct home). We are in a middling state of health. Margaret Elger and companions from Pipe Creek are on a religious visit to these western parts which has afforded encouragement that we are not altogether forsaken. And dear <rs key="w6n9820p">brother</rs>, believe it would be advantageous for thee, to be on thy guard against that spirit which is casting thee at times unprofitably down, &amp; at other times raising all most of thy feet. Be earnest that thou mayst be a good example to believers in all things, remembering good soldiers much know how to endure hardiness, &amp; especially those of the fore rank <underlined>lest they should discourage the weak feeble minded</underlined> Therefore as I have but a few minutes to write in, feel willing to add that the account of the disease of our Brother <persName key="w61d2nhm">Samuel Stokes</persName> took impression on my mind, and desire to be affectionately remembered to sister Hope &amp; children, much desiring their preservation &amp; that you that are there may be concerned to visit &amp; sympathize with them, comforting the widow who I tenderly feel for. Really desiring that her trust may be in the Lord, whose gracious promises are yea and amen forever.</p>
-                <closer>
-                    <salute>With love to you all as if named in which I feel desire for the blessing of preservation for us all, am thy Sister</salute>
-                    <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
-                    <dateline><date when="1802-05-28">28th 5th 1802</date></dateline>	
-                </closer>			
-            </div>
+            
+                <p>These may inform that I received thy kind letter sent by Thomas French, and wish that thou mayst not forget me. For very agreeable it is to hear from you, seeing we are so widely separated that its not to be expected that we shall be likely to have much opportunity of seeing each other anymore. I did not write by Elisha for as to outward matters he could inform verbally, and as to that of a religious or inward state. I wish not to discourage thee, yet truly according to my sense things are in a poor way and the life of religion mournfully low amongst <add>us</add> here at poor Redstone. Though there is a fine prospect further both as to temporal and spiritual improvement. That its force is very powerful, if some are not raised up or sent to fill the vacant places we shall be left, like its mentioned of the gleaning of the fruit, only here and there a small bunch or cluster. </p>
+            
             <pb n="002" facs="XXXXX"/>
+                <p><persName key="">Jonas</persName> &amp; Elizabeth Cattell have some prospect of going to Jersey this spring <del>that</del> thou mayst have some opportunity to inquire of them. There are some instances that afford encouragement, also grievous alarming our constances of the grand adversary, attacking some in the front &amp; wounding almost unto death, Poor Benjamin Townsend is one of this number. It has been an awful lesson to me: that what need for those that think they stand to take heed lest they fall, lest (as that imminent apostle express it) whilst he preached to others he himself should become a castaway. A word to the wise may be sufficient; the remark is by no means to publish it in Gath–but rather that the true Israelites may mourn, as also to petition for his recovery to the great physician that the wine and the oil may be widely applied. We are in a good degree favored with health. </p>
                 <closer>
-                    <address>
-                        <addrLine>John Hunt Senior</addrLine> 
-                        <addrLine>in Jersey</addrLine>
-                    </address>
+                    <salute>With love to thee <rs key="w6wx87x7">wife</rs> &amp; children I conclude, thy affectionate sister</salute> <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                    <dateline><date when="1802-04-01">1st 4th month 1802</date> Redstone</dateline>
                 </closer>
+            </div>
         </body>
     </text>
 </TEI>
