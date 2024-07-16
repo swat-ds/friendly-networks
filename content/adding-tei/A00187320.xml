@@ -50,7 +50,6 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="1805-09-03">3rd of 9th mo 1805</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
@@ -73,7 +72,8 @@
                 <opener><damage><gap/></damage></opener>
                 <p>I trust is more deserving the best of riches. I may just inform thee that I have had my health <del>better</del> rather better for about a week <del>then</del> my dear little babe I have at home, it sucks the bottle and is a fine child, the rest of our family is well as usual. From some late recounts provision is more plenty and not so high in Europe which is comfortable to hear; I join in desires that we, the inhabitants of this highly favored land may be grateful receivers of the abundant mercies bestowed.</p>
                 <closer>
-                    <salute>In much love I conclude tribulated Sister in Gospel fellowship My daughter’s love is to thee.</salute> 
+                    <salute>In much love I conclude, thy tribulated Sister in Gospel fellowship. My
+                        daughter’s love is to thee.</salute> 
                     <signed><persName key="w6gj3q0h">E. Collins</persName></signed>
                  </closer>
             </div>
