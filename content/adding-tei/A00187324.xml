@@ -1,0 +1,103 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hannah Yarnall letter to Esther Hunt, 1809 3mo 6: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187324</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187324</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1809-03-06">3rd mo 6th 1809</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Simpson, James, 1743-1811</term>
+                    <term>Collins, John, 1750-1817</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+                 <opener>
+                     <dateline>Byberry <date>3rd month 6th 1809</date></dateline>
+                     <salute>Dear Friend,</salute> 
+                     <persName key="w6gj3q0h">Esther Collins</persName>
+                 </opener>
+                 <p> Notwithstanding thy <rs key="w6165774">husband</rs> could give thee some account of my movements after we parted until <del>we</del> Burlington Quarter. I have thought that if I should scribble a few lines it might at least revive poor unworthy <persName key="w6g77m31">H.Y.</persName> with her friend <persName key="w6gj3q0h">E.C.</persName> I thought how clever it would have been to have had thy company at Burlington. I crossed the River on foot to Bristol that afternoon in company with some friends who lived there. My son not expecting I would venture that way, did not meet me. But Friends were kind to convey me home, so that I got to monthly-meeting at Horsham the next day. With the consoling reflection on taking my seat in meeting, that I was permitted to return as it were, to the bosom of my friend at home again. And I believe our joy was somewhat mutual, which I thought was the cause of humble thankfulness to the further of all our sure mercies, who alone can favor with a glance of that feeling, which is comparable to the ointment which was poured on the Head of Aaron and ran down his beard to the skirts of his garment, <add>when lived in</add> <del>which</del> sement &amp; binds together in Gospel fellowship and which would echo to that language viz. I dwell amongst my own people.</p>
+                 <p>I hope I speak of those things under a sense of my own nothingness—a very poor frail mortal.</p>
+                 <p>Dear <persName key="w6gj3q0h">Esther</persName>, wilt thee remember me in thy Prayer that I may not shrink from going down again &amp; again into the walking pool, so that I may be favored more &amp; more to know self to be redeemed &amp; to become of no reputation. For I fully believe that thou art acquainted with the true pathway to the sheep fold of rest. Notwithstanding it is described to be a Peaceful way yet, <add>remember</add> it is said that it is through many Tribulations the <del>riteous</del> righteous enter the kingdom, so through all heights &amp; depths, its for them to hold on their way and those of clean hands shall wax stronger &amp; stronger. Hast thou not many times found that there may be so giving way to discouragements as to sink as it were be below the gift, notwithstanding I do look on <add>the</add> or a Mother in Israel. I venture to make a few observations, being desirous that thou may be encouraged to faithfulness whether about home or more distant. For may it not be said the <del>the</del> fields are white unto harvest—and the faithful laborers too few. </p>
+                 <p>Perhaps I might mention to thee that I had so much satisfaction in my visit amongst my Friends &amp; relations. I several times thought whether it was not to be the last, but time will prove that. Oh! That I may be prepared for the end whether it comes sooner or later. I thought of wiring to Dear Joseph but believe there must suffice for this time. I should like to hear of him whether he has recovered of his lameness. My love to him &amp; his, as to myself &amp; thine.</p>
+                 
+            <pb n="002" facs="XXXXX"/>
+                 <closer>
+                     <salute>from thy Friend</salute> 
+                     <signed><persName key="w6g77m31">Hannah Yarnall</persName></signed>
+                 </closer>
+                 <postscript><p><label>P.S.</label> Please to remember me to Uncle <persName key="w6n9820p">J. Hunt</persName> when convenient, and tell him I delivered his message to <persName key="w65f9hh6">James Simpson</persName> by letter pretty early after I got home. If there should reach thee before monthly meeting or there in time, please tell Aunt Rebecca or Benjamin Warrington the few things I left there may remain, without a very easy conveyance should present until Yearly meeting.</p></postscript>
+                 <closer>
+                     <salute>My love to them</salute>
+                     <signed><persName key="w6g77m31">H Y</persName></signed>
+                 </closer>
+                 <postscript><p>To receive a line from thee I think would at any time be accepted as a favor </p></postscript>
+        </div>
+        </body>
+    </text>
+</TEI>
