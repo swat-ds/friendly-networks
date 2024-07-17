@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Elisha Hunt letter to Esther Hunt , 1808 9mo 7: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 4 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187336</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187336</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1808-09-07">7th 9th mo 1808</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Woolman, John, 1720-1772</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+            <opener>
+                <dateline>Redstone <date>7th 9th month 1808</date></dateline>
+                <salute>Dear <rs key="w6gj3q0h">Mother</rs>,</salute>
+            </opener>
+            <p>I received thy last with one enclosed for Stacy which was truly acceptable, and had just seen Martha Smith the week before for the first time. And although I was pleased with her company, I don’t know that <add>her</add> information to me has given a just idea of everything. I now trust thou wilt write everything I ought to know. Last 2nd day was our Quarterly Meeting, which was large.</p>
+                <p><persName key="w68063j0">Hugh Judge</persName> of Baltimore, <persName key="w6gj3q0h">Charity Cook</persName>, &amp; Josanah Hollingsworth of Miami attended it. The two latter will be at Moorestown for ought I know, as they have set out on a visit which extends to Jersey. &amp; if they come, remember they are <add>from the</add> backwoods. Treat them well, they are worthy women. <persName key="w6th9w2h">Horton Howard</persName> &amp; wife are at our house tonight whom I expect thou wilt see, &amp; they can tell how we look, and them well likewise, for merit inherits the backwoods.</p>
+                <p> We are in health, &amp; favored with all that’s necessary to support life. We would like a little more money so as to enable us to pay our debts as they are due, public expenses, &amp; charity purposes. I have just made a calculation of money laid out last year &amp; find that I have paid upwards of two hundred dollars, ending the first of the 6th month last. This ensuing year will not be so much, because I have not so much to receive nor debts to pay, &amp; what is owing to me I am afraid I will not get soon, I have none at present or I would send some to thee, &amp; when I shall I know not for the embargo is sensibly felt here. Mother I have nothing of importance to tell thee, thou knowest I need an additional portion of that good Spirit (whereby I might be enabled to pass through time with propriety more than any other thing. Therefore thy exertion for me let them be spiritual, I crave nothing more.</p> 
+                <p>And <rs key="w6gj3q0h">Mother</rs>, I have read a book called <title>Clarkson’s Portraiture of Quakerism</title> am much pleased with it. There is none here to be had at present, I want them, &amp; I want them for my Brothers.
+            </p>
+            <pb n="002" facs="XXXXX"/>
+                <p>Joseph Jones &amp; <persName key="w6wr0v4m">Woolman</persName> have arrived, but no letters. I conclude with love to thee &amp; thine, Uncle <persName key="w6553d40">Samuel</persName> &amp; all my relations, I cannot leave home this season &amp; if thou wilt come out spring it will be better, for we have nobody fit to leave at home with the care of everything. I have been troubled with something like the rheumatism in my right shoulder &amp; hip which is frequently very painful. Our little boy grows, he is healthy &amp; strong. </p>
+            </div>
+            <closer>
+                <salute>My peace &amp; tranquility dwell with thee </salute>
+                <signed>Elisha Hunt</signed>
+            </closer>
+                <postscript><p>Mary; Love</p></postscript>
+            
+        </body>
+    </text>
+</TEI>
