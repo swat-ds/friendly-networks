@@ -1,0 +1,127 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Collins letter to Esther Hunt, 1817 6mo 27: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. XXXXX KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187330</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187330</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1817-06-27">6 mo 27th 1817</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term></term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term></term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            —Page 01—
+            
+            Chester 6 month 27th 1817
+            Dear Wife
+            Notwithstanding, my situation at times
+            feels very lonely, and but little enjoyment <del>to be</del> found in 
+            the concerns which daily occupy too much of <add>my</add> time. Still
+            the hope that our separation is not final revives the spirits
+            when almost yielding to gloomy sensations (which will sometimes
+            intrude) with a cheering prospect, though at too great a distance
+            of again bury in the enjoyment of a compromise which 
+            of all others is the most to be desired, and <add>on</add> which as a blessing
+            I have at times set too little value. May he who joined us
+            together more and more unite our hearts as we advance in
+            life (if permitted to remain together) to his honor and our own
+            happiness! And that we may be favored to train up His infant
+            charge in his fear, which is committed to our case, is the breathing
+            of my heart at this time. I very much desire that either
+            may be taught subjection as far as her age will admit, believing 
+            that the sooner the twig is bent the less the danger of breaking.
+            I have yet heard nothing from you since we parted, but trust
+            you have safely arrived at the place of your destination in good
+            health. 
+            
+            —Page 02—
+            With the exception of Father and myself, we are in usual
+            health. He has not been well since you left home, occasioned 
+            in the first instance I believe by change of dress. Yet good his
+            usual rounds on foot etc., and is now at J. Evans with Mother. 
+            Rebecca not very well. Ann Bugby was confined on first day
+            afternoon with another son and is pretty brave. Anna
+            Walton was confined on sixth day with a daughter and has
+            had the typhus fever, but we heard yesterday was better. 
+            Charles Kain has recruited so far as to walk about a little. 
+            A. Edwards and co. have started on their journey. I do
+            not hear about her health, but thinks its not very good. 
+            Polly has been here nearly all the time and has the care of 
+            the business pretty much, and seems kind and affectionate.
+            The girls seem rather giddy but do pretty well, but I don’t
+            know what to do with the boys.
+            I would like know how you fare and when you will be
+            ready to return. Harvest is likely to be late here, and of 
+            course other things will be later than usual. We have had
+            considerable of rain within the week with high winds, which
+            has blown down the grain and grass.
+            
+            
+            
+            
+            
+            
+        </body>
+    </text>
+</TEI>
