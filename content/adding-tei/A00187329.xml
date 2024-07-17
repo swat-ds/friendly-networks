@@ -2,11 +2,11 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
+                <title>Esther Hunt letter to John Collins, 1800 8mo 15: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
             <extent>ca. XXXXX KB</extent>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187329</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -34,12 +34,12 @@
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187329</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>4 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -50,16 +50,18 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1800-08-15">8th mo 15th 1800</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                    <term>Domestic relations</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Grellet, Stephen, 1773-1855</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +73,39 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+                <opener>
+                    <dateline><date>28th 6th Month 1800</date> Redstone Settlement</dateline>
+                    <salute>Beloved Friend <persName key="w6165774">J. C.</persName>,</salute>
+                </opener>
+                
+                <p>Thou with thy wife and other Friend, <del>from</del> in your parts are often brought very fresh into my remembrance with near affection, and many time have I taken my pen to write. And sometimes after writing have been discouraged sending, by its being so little worth and perhaps out of Season, before an opportunity of conveyance. But as iron sharepeneth iron, so doth the countenance of a man, his friend (as said the wise man). Even so I have thought it has that effect when we can convey a few lines from one to another where we have not the opportunity of the outward countenance. </p>
+                <p>Dear Friends, I feel a freedom in love to inform that the acceptable <add>visit</add> paid to us by our endeared Jersey Friends retains a good savor in the minds of Friends, and believe it had a quickening tendency, though there don’t appear that improvement that is desired. We have likewise had several <add>religious</add> visits of late. Jonathan Write from Virginia, Ruth Hagget &amp; Rachel Dicks from Carolina who attended the Quarterly meeting.</p>
+            
+            <pb n="002" facs="XXXXX"/>
+                <p>There has been a large number of Friends moved out from North Carolina who have produced certificates from the Monthly meetings, as also a particular account front the Quarterly meeting there of the proceedings of friends and <add>suppose</add> two Monthly meetings are dissolved by the movement. Some few <add>Friends</add> that are left are joined to other Monthly meetings. They are about to purchase a body of land and as soon as convenient, to settle it. </p>
+                <p> O, may it not be truly said the harvest is great and the skillful faithful laborers few in comparison. Oh, that the number of faithful may increase everywhere, that truth may grow &amp; prosper. </p> <p>At this time John Hall from Europe and <persName key="w6mw2sk8">Stephen Grellet</persName>, his companion, are on a Religious visit to the meetings this side of the mountains. John Haines’ son at Crooked Run has accompanied them. Stephen appeared to have a clear discerning of the poor state we were in as to the life of religion.</p>
+            
+            <pb n="003" facs="XXXXX"/>
+                <p> We are in a good degree favored with health, as well as partakers of other Blessings which are bountifully bestowed upon us poor unworthy creatures. &amp; that we may be thankful receivers is what I ardently desire.</p>
+                <p>I feel a desire that we may be preserved from the many snares of the grand adversary. But oh, my frailties and many besetments are at times heavy upon me, that I desire the prayers of those that are admitted in to favor, that they may intercede for me &amp; mine, lest we become stumbling blocks and and castaways.</p>
+                <p>the 8th month 15th 1800— May add that opportunities have been missed of sending my lines, &amp; now there appears another. Inform that we are in a tolerable state of health at present, though several of us have been poorly of late. There has been a very hot spell of weather–we have had an extraordinary harvest of grass &amp; grain. There appears likely to be a dry spell at present. May we not say in truth what shall we render unto the Lord for all his blessings, for they are manyfold. </p>
+                
+            <pb n="004" facs="XXXXX"/>
+                <p>The love I at times feel for my Friends is not easily to be expressed. Please to remember my <add>love</add> affectionately to Dear Elizabeth and Rebecca, with others as opportunity offers and accept of the same.</p>
+                <closer>
+                    <salute>from your Friend &amp; well wisher,</salute>
+                    <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                </closer>
+                <postscript>
+                    <p>(for John and Ruth Collins) excuse my poor writing &amp; not expose it</p>
+                </postscript>
+            </div>
+                <closer>
+                    <address><addrLine>To <persName key="w6165774">John Collins</persName></addrLine>
+                    <addrLine>in Jersey</addrLine></address>
+                </closer> 
         </body>
     </text>
 </TEI>
