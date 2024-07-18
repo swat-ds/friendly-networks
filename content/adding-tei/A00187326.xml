@@ -71,7 +71,7 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
                 <opener>
-                    <dateline>Pike Run <date>10th month 1st 1810</date></dateline>
+                    <dateline>Pike Run <date when="1810-10-01">10th month 1st 1810</date></dateline>
                     <salute>Dear Friends
                     <persName key="w6165774">John</persName> &amp; <persName key="w6gj3q0h">Esther Collins</persName>,</salute>
                 </opener>

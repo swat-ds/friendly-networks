@@ -72,7 +72,7 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
                 <opener>
-                    <dateline>Salem. State of Ohio <date>5th 14th 1808</date></dateline>
+                    <dateline>Salem. State of Ohio <date when="1808-05-14">5th 14th 1808</date></dateline>
                     <salute>Dear Mother,</salute>
                 </opener>
                 <p>I don’t remember that I have written to thee since I arrived in this wooden country, for I believe there has not been any opportunity of conveyance since. I have not received anything from thee since I don’t know when.</p>

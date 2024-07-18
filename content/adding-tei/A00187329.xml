@@ -76,7 +76,7 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
                 <opener>
-                    <dateline><date>28th 6th Month 1800</date> Redstone Settlement</dateline>
+                    <dateline><date when="1800-06-28">28th 6th Month 1800</date> Redstone Settlement</dateline>
                     <salute>Beloved Friend <persName key="w6165774">J. C.</persName>,</salute>
                 </opener>
                 
@@ -99,7 +99,7 @@
                     <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
                 </closer>
                 <postscript>
-                    <p>(for John and Ruth Collins) excuse my poor writing &amp; not expose it</p>
+                    <p>(for <persName key="w6165774">John</persName> and Ruth Collins) excuse my poor writing &amp; not expose it</p>
                 </postscript>
             </div>
                 <closer>

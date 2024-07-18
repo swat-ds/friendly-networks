@@ -76,7 +76,7 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
             <opener>
-                <dateline>Redstone <date>7th 9th month 1808</date></dateline>
+                <dateline>Redstone <date when="1808-09-07">7th 9th month 1808</date></dateline>
                 <salute>Dear <rs key="w6gj3q0h">Mother</rs>,</salute>
             </opener>
                 <p>I received thy last with one enclosed for Stacy which was truly acceptable, and had just seen Martha Smith the week before for the first time. And although I was pleased with her company, I don’t know that <add>her</add> information to me has given a just idea of everything. I now trust thou wilt write everything I ought to know. Last 2nd day was our Quarterly Meeting, which was large.</p>
