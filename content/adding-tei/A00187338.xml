@@ -74,10 +74,10 @@
     <text>
         <body>
             <pb n="001" facs="XXXXX"/>
+            <div type="letter">
             <opener>
-                <dateline>Redstone <date when="1809-03-19">19th 3rd month 1809</date></dateline>
-                <salute>Dear <rs key="w6gj3q0h">Mother</rs></salute>, 
-            </opener>
+                    <dateline>Redstone <date when="1809-03-19">19th 3rd month 1809</date></dateline>
+                    <salute>Dear <rs key="w6gj3q0h">Mother</rs>, </salute></opener>
                 <p>Thy letter of the 3rd instant came to hand the 13th, which was long looked for before arrived, that by J. Conn I have not yet received. Affection prompts me to write once more, notwithstanding I have nothing of importance to relate. Our visit to Philadelphia is at an end. For if everything had combined to forward the journey, we are prevented by Mary’s disability, who scalded both her feet with sugar water the first of this month &amp; has walked none since, &amp; appears likely that many weeks will elapse before she will have recovered. She is in good health otherwise, and all the rest of us. Our little boy is fat &amp; hearty &amp; will soon talk. We have not made much sugar yet, &amp; I am calculating to do but little of everything, for I cannot hire to answer. &amp; if I can get clear of George shall do it unless he improves very suddenly. </p>
                 <p><rs key="w6gj3q0h">Mother</rs>, I should feel myself happily situated if my family consisted of my wife &amp; son alone, or of persons agreeable, for I hate perplexity. I received a letter from Brother Nathan a few days ago. He did not say one word about his family, but have since understood that thou hast a second grandson. </p>
                 <p>22nd We have stormy cold disagreeable weather, &amp; the muddiest roads that I ever saw, Mcmanamy’s lane is hub deep to the waggon &amp; we have to ride round by Glade Grist mill every week.</p>
@@ -94,7 +94,7 @@
                     <salute>Thy affectionate son,</salute>
                     <signed>Elisha Hunt</signed>
                 </closer>
-            
+            </div>
         </body>
     </text>
 </TEI>
