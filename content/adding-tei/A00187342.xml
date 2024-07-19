@@ -74,7 +74,7 @@
             <pb n="001" facs="XXXXX"/>
             <div type="letter">
                  <opener>
-                     <dateline>Brownsville <date>6th month 22nd 1813</date></dateline>
+                     <dateline>Brownsville <date when="1813-06-22">6th month 22nd 1813</date></dateline>
                      <salute>Endeared <rs key="w6gj3q0h">Mother</rs>,</salute>
                  </opener>
                 <p>I am afraid that thee thinks that I have been negligent in writing to thee. I begin to think myself that I don’t write as frequently as I ought to, or I should not feel too awkward about writing letters as I do at present. I have had no letter from Nathan for several months past, I am anxious to hear from them x. I think that I will go and see them sometime this summer.</p>
