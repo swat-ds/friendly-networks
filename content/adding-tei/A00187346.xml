@@ -1,0 +1,100 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mary Hunt letter to Esther Hunt, 1817 5mo 6: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187346</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187346</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1817-05-06">6th of 5th mo 1817</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Death</term>
+                    <term>Religious life</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Brownsville <date when="1817-05-06">6th of 5th month 1817</date></dateline>
+                    <salute>Dear <rs key="w6gj3q0h">Mother</rs>,</salute>
+                </opener>
+                <p>Notwithstanding it may be that I am last of all thy children in addressing thee in thy affliction, yet I am sensible it has not been want of affection nor sympathy. But considering that a letter from my dear Caleb would be of more use, felt myself excused; and now he not being at home, and our relation John Haines being preparing to go to your country, feel willing to supply his place to the best of my ability.</p>
+                <p>I believe Caleb informed thee that Elisha is gone to Kentucky &amp; expects to come to thee as soon as may be after his return; this was his calculation to perform both journeys before harvest; and if his health will admit there is not doubt but he will execute his plan. I have not heard from him since he left Wheeling, but suppose if nothing obstructed his progress he is at the end of his journey before now. I feel somewhat lonely, but not so much so as I calculated on. Though my little son &amp; self make the whole family, <add>both</add> night &amp; day. I renewed believe that ability will be afforded if rightly as he for in preparation to the trials dispensed. </p>
+                
+            <pb n="002" facs="XXXXX"/>
+                <p>I feel no ability to make my feelings into words respecting thy situation; they are beyond the explanation of a tongue like mine. May the all sustaining arm of goodness support &amp; carry thee through; is the breathing of my heart. </p>
+                <p>I crave that thou mayest be directed by best wisdom in all thy movements. And if consistent therewith, thou canst come home with Elisha, it will be very pleasing to me, and I believe to us all; feeling daily need of thy counsel and advice. Think deeply of it, dear <rs key="w6gj3q0h">Mother</rs>. I feel as if I cannot suppress the desires of my heart that thou mayest see it right.</p>
+                <p>I believe our relations here are in usual health; Rhoda has had a very favorable recovery, &amp; her son grows finely. Last 27th day was our quarterly meeting. C. Osburn acceptably attended it on his way to Philadelphia. The committee appointed 6 months ago on the division of our monthly meeting, repaired their approbation, and the meeting concurring therewith. We shall henceforth make two monthly meetings: Redstone &amp; Sandy-Hill one, &amp; Providence &amp; Centre the other.</p>
+                <closer>
+                    <salute>---Farewell dear <rs key="w6gj3q0h">Mother</rs> (Emmor desires his love inserted)</salute>
+                    <signed>Mary Hunt</signed>
+                </closer>
+            </div>
+            <pb n="003" facs="XXXXX"/>
+                <closer>
+                    <address><addrLine><persName key="w6gj3q0h">Esther Hunt</persName></addrLine>
+                    <addrLine>Moorestown New Jersey</addrLine>
+                    <addrLine>For J. Haines</addrLine></address>
+                </closer>
+        </body>
+    </text>
+</TEI>
