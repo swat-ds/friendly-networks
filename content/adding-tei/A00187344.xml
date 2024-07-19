@@ -2,14 +2,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
+                <title>Caleb Hunt letter to Esther Hunt, 1817 2mo 11: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 4 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187344</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -34,12 +34,12 @@
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187344</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>4 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -50,13 +50,14 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1817-02-11">2nd mo 11th 1817</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
                     <term></term>
@@ -71,6 +72,56 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+            <opener>
+                <dateline>Brownsville <date key="1817-02-11">2nd month 11th 1817</date></dateline>
+                <salute>Dear <rs key="w6gj3q0h">Mother</rs>,</salute> 
+            </opener>
+            <p>The time runs long since I have had a a letter from thee, &amp; I know that thee has equal right to think that. I have hardly done my duty. But I have go to out of the habit of letter writing that I seem as if I did <add>not</add> know how to begin on what to write when I have begun. We continue to enjoy the billing of health. Our black boy has had <del>has had been</del> the dropsy this winter, which has been our greatest trouble. But Doctor Pennell has cured him I believe completed. I have enjoyed (for my own part) my health better than ever I did for the same span of time. I weigh 185 lb, which is six or eight pounds more than either Brother Elisha or Stacy weigh &amp; better than 20 lb more than I weighed last spring when I was in in Jersey. So that getting married seems to agree with me well enough. But my dear Mary rather exceed me for she <del>weighs</del> has gained near 25 lb in weight 
+            
+            
+                <pb n="002" facs="XXXXX"/>
+            since she came here to live. She complains some of her weak back but continues to go about her business, though I suppose that she will not be able to <add>do</add> so two months longer.</p>
+            <p>We live at the upper end of Bridgeport (which thee perhaps has heard before). I get any breakfast in the morning before I go to the store I there short days I don’t often go home until night. Rhodas’ little boy learns his book at home this winter &amp; is his mother’s chief company in the day time. We have a comfortable house as any in the place (if it is not as large) but large enough for our family &amp; to have for our friends when they please to call on us, &amp; stabling for their horses. &amp; always have had plenty to feed them &amp; their horses with. I sold my saddle horse (that I had in Jersey last spring) &amp; our carriage  to William Yeates <add>Senior</add> of Alexander so that one cow &amp; a few fowls is all the stock that we winter. The price of all kinds of county produce is far above what it used to be (for instance) wheat sells for $1.50 rye, &amp; corn, $1.80, &amp; oats $.50, bushel hay 12 bales a ton. Fortunately coal is cheap enough (is 6 cents per bunch delivered), for we have had a long severe cold spell of weather. <del>I estimated</del> by far 
+            
+                <pb n="003" facs="XXXXX"/>
+            the longest spell of sleighing that I ever seen for the roads have been good ever since the cold weather commenced.</p> 
+            <p>I think that fat horses will be seen in Jersey next spring if 
+            they have continued shipping there in preparation to what has been
+            done here (for my own part I have <add>not</add> been in one).
+            We have had a great fuss here this winter about the 
+            great National Road. The Bridgeport people have been turning themselves
+            to have it to come into that town before it crosses the rim
+            which the commission have at length connected to &amp; the President
+            has confirmed. They have began to dig down the hill on the other
+            side of the River in good earnest &amp; expect to do the same on
+            this as soon as winter breaks up. &amp; proper to build a <damage><gap/></damage>
+            the Monongahela as well as a permanent <add>one over</add> the mouth of the Dunlap
+            Creek before many years. Brother Stacy has concluded to go to 
+            farming in the spring. Brother Elisha is to stock the plan for him
+            &amp; his is to farm to the Shaws. His wife is anxious to live on a farm
+            &amp; he is much in the spirit of it. Farming has been much better
+            business in this county than it was to us. Guthrie proposes to 
+            go down the river in the spring. Our connections are all well here.
+            Sister Mary’s head has got quite well I believe. Emmor talks
+            much of his good parents &amp; Aunt Rachel. Tis needless to say how 
+            agreeable it would be to our fathers &amp; them here next summer as well 
+            as Brother David &amp; Sister Rachel. </p>
+                <closer>
+                    <salute>Accept for they self &amp; <rs key="w6165774">father</rs> &amp; Brother &amp; <rs key="w6k08k1m">Sister</rs>,
+                    though abundant is my love &amp; esteem in which my dear R joined, thy son</salute>
+                    <signed>Caleb Hunt</signed>
+            </closer>
+            </div>
+                <pb n="004" facs="XXXXX"/>
+                <closer>
+                    <address><addrLine><persName key="w6165774">John Collins</persName></addrLine>
+                    <addrLine>near Moorestown New Jersey </addrLine>
+                    <addrLine>for <persName key="w6gj3q0h">Esther Collins</persName></addrLine></address> 
+                </closer>
+            
+            
         </body>
     </text>
 </TEI>
