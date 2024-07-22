@@ -6,10 +6,10 @@
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 9 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,24 +22,24 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187334</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				    <title level="s" type="main">The Writing of Esther Roberts Hunt Collins</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187334</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>3 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -70,88 +70,95 @@
     <text>
         <body>
             <pb n="001" facs="XXXXX"/>
-            The Country School
-            From dark dull woods emerging into day
-            We pass where farms their opening fields display
-            Barns, fences, cottages, lawns appear{ed}.
-            Where various sounds of human toil {were heard} we hear
-            There {a}round a hut upon a sloping green
-            Gay laughing bands of playful boys {were} <add>are</add> seen
-            Soon books aloud is thundered from the door
-            And balls and hoops must harm the hours no more.
-            But frequent tears the blotted leaves assail
-            And sighs for dear loved liberty prevail.
-            Hither by long yet fond remembrance led
-            With awe we enter{ed} the sequestered shed
-            All eyes are turned the strangers to survey
-            One tap is hear and all the hint obey
-            Then grave and courteous rising from his seat
-            The decent master bows with weakness meet
-            Invites to sit, looks round with watchful eyes
-            And bids by signs alternate classes use
-            Hears, reads, instructs, with solemn voice and allow
-            Deep busy silence muffling all below. 
-            Dear to the muse to truth, to science dear
-            Be he who humbly toils and teaches here
-            His worth his labor shall not sleep forgot
-            And thus the muse records them as she ought
+            <div type="poem">
+            <head>The Country School</head>
+             <lg>
+                 <l>From dark dull woods emerging into day</l>
+                 <l>We pass where farms their opening fields display</l>
+                 <l>Barns, fences, cottages, lawns appear<del>ed</del>.</l>
+                 <l>Where various sounds of human toil <del>were heard</del> we hear</l>
+                 <l>There <del>a</del>round a hut upon a sloping green</l>
+                 <l>Gay laughing bands of playful boys <del>were</del> <add>are</add> seen</l>
+                 <l>Soon books aloud is thundered from the door</l>
+                 <l> And balls and hoops must harm the hours no more.</l>
+                 <l>But frequent tears the blotted leaves assail</l>
+                 <l>And sighs for dear loved liberty prevail.</l>
+                 <l> Hither by long yet fond remembrance led</l>
+                 <l>With awe we enter<del>ed</del> the sequestered shed</l>
+                 <l>All eyes are turned the strangers to survey</l>
+                 <l>One tap is hear and all the hint obey</l>
+                 <l>Then grave and courteous rising from his seat</l>
+                 <l>The decent master bows with weakness meet</l>
+                 <l>Invites to sit, looks round with watchful eyes</l>
+                 <l>And bids by signs alternate classes use</l>
+                 <l>Hears, reads, instructs, with solemn voice and allow</l>
+                 <l>Deep busy silence muffling all below. </l>
+                 <l>Dear to the muse to truth, to science dear</l>
+                 <l>Be he who humbly toils and teaches here</l>
+                 <l>His worth his labor shall not sleep forgot</l>
+                 <l>And thus the muse records them as she ought</l>
+             </lg>
             
             <pb n="002" facs="XXXXX"/>
-            Of all professions that this world has known
-            From clowns and cobblers upward to the throng
-            From the grave architect of Greece and Rome
-            Down to the framer of a farthing broom
-            The worst for care and underserved abuse
-            The first in real dignity and use
-            If skilled to teach and diligent to rule
-            Is the learned <underlined>master</underlined> if a little school
-            Not he who guides the legs or skills the clown
-            To square his fist and knock his fellow down
-            Not he who shows the still more barbarous art
-            To parry, thrust, and pierce the unguarded heart
-            But that good man who, faithful to his charge
-            Still toils the opening season to enlarge
-            And leads the growing mind through every stage 
-            From humble, A, B, C, to God’s own page
-            From numberation through awakening way
-            Still dark enmities seem clear as day
-            Pours over the mind a flood of mental light
-            Expands its wings and gives it powers for flight 
-            Till earth’s remotest bounds and Heaven’s bright train
-            We trace weight, measure, picture and explain
-            If such his toil sure honor and regard
-            And wealth and fame will be his dear reward 
-            Sure every tongue will utter forth his praise
-            
+             <lg>
+                 <l>Of all professions that this world has known</l>
+                 <l>From clowns and cobblers upward to the throne</l>
+                 <l>From the grave architect of Greece and Rome</l>
+                 <l>Down to the framer of a farthing broom</l>
+                 <l>The worst for care and underserved abuse</l>
+                 <l>The first in real dignity and use</l>
+                 <l>If skilled to teach and diligent to rule</l>
+                 <l>Is the learned <hi rend="underlined">master</hi> if a little school</l>
+                 <l>Not he who guides the legs or skills the clown</l>
+                 <l>To square his fist and knock his fellow down</l>
+                 <l>Not he who shows the still more barbarous art</l>
+                 <l>To parry, thrust, and pierce the unguarded heart</l>
+                 <l>But that good man who, faithful to his charge</l>
+                 <l>Still toils the opening season to enlarge</l>
+                 <l>And leads the growing mind through every stage </l>
+                 <l>From humble, A, B, C, to God’s own page</l>
+                 <l>From numberation through awakening way</l>
+                 <l>Still dark enmities seem clear as day</l>
+                 <l>Pours over the mind a flood of mental light</l>
+                 <l>Expands its wings and gives it powers for flight</l> 
+                 <l>Till earth’s remotest bounds and Heaven’s bright train</l>
+                 <l>We trace weight, measure, picture and explain</l>
+                 <l>If such his toil sure honor and regard</l>
+                 <l>And wealth and fame will be his dear reward</l>
+                 <l>Sure every tongue will utter forth his praise</l>
+             </lg>
+             
             <pb n="003" facs="XXXXX"/>
-            And blessing gild the evening of his days
-            Yes, blessed indeed with cold ungrateful scorn
-            With study pale by daily crosses worn
-            Despised by those who to his labor own
-            All that they read and almost all the know
-            Condemned each tedious day such cares to bear
-            As well might drive even patience to despair
-            The partial <add>parents</add> taunt the idler dull
-            The blockheads dark impenetrable skull
-            The endless round of A, B, C, whole train
-            Repeated over ten thousand times in vain
-            Placed an a point the object of each sneer 
-            His faults enlarge, his merits disappear
-            If mild, “our lazy master loves his ease
-            The boys at school do anything they please”
-            If rigid “he’s a cross, hard-hearted wretch
-            He drives the children stupid with his birch
-            My child with gentle means will mind a breath
-            But frowns and floggings frighten him to death”
-            Do as he will his conduct is arraigned 
-            And dear the little that he gets is gained
-            Even that {he} is given him on the quarter day
-            With looks that sall it money thrown away
-            Just! Heavens: who knows the unremitting care
-            And deep solicitude that teachers share
-            If such their fate by thy divine control
-            Oh, give them health and fortitude of Soul. 
-            
+             <lg>
+                 <l>And blessing gild the evening of his days</l>
+                 <l>Yes, blessed indeed with cold ungrateful scorn</l>
+                 <l>With study pale by daily crosses worn</l>
+                 <l>Despised by those who to his labor own</l>
+                 <l>All that they read and almost all the know</l>
+                 <l>Condemned each tedious day such cares to bear</l>
+                 <l>As well might drive even patience to despair</l>
+                 <l>The partial <add>parents</add> taunt the idler dull</l>
+                 <l>The blockheads dark impenetrable skull</l>
+                 <l>The endless round of A, B, C, whole train</l>
+                 <l>Repeated over ten thousand times in vain</l>
+                 <l>Placed an a point the object of each sneer</l> 
+                 <l>His faults enlarge, his merits disappear</l>
+                 <l>If mild, "our lazy master loves his ease</l>
+                 <l>The boys at school do anything they please"</l>
+                 <l>If rigid "he’s a cross, hard-hearted wretch</l>
+                 <l>He drives the children stupid with his birch</l>
+                 <l>My child with gentle means will mind a breath</l>
+                 <l>But frowns and floggings frighten him to death"</l>
+                 <l>Do as he will his conduct is arraigned</l> 
+                 <l>And dear the little that he gets is gained</l>
+                 <l>Even that <del>he</del> is given him on the quarter day</l>
+                 <l>With looks that sall it money thrown away</l>
+                 <l>Just! Heavens: who knows the unremitting care</l>
+                 <l>And deep solicitude that teachers share</l>
+                 <l>If such their fate by thy divine control</l>
+                 <l>Oh, give them health and fortitude of Soul.</l> 
+             </lg>
+            </div>
         </body>
     </text>
 </TEI>
