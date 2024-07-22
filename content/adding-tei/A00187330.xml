@@ -2,14 +2,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>John Collins letter to Esther Hunt, 1817 6mo 27: Electronic Version</title>
+                <title>David Roberts letter to Rachel Roberts, 1817 6mo 27: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
                     <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 6 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -27,7 +27,7 @@
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				    <title level="s" type="main">The Correspondence of Rachel Hunt Roberts</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
@@ -46,7 +46,7 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+                <p>The correspondence of Quaker Rachel Hunt Roberts is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
@@ -56,10 +56,11 @@
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Edwards, Ann, 1773-1820</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,57 +72,17 @@
     </teiHeader>
     <text>
         <body>
-            —Page 01—
-            
-            Chester 6 month 27th 1817
-            Dear Wife
-            Notwithstanding, my situation at times
-            feels very lonely, and but little enjoyment <del>to be</del> found in 
-            the concerns which daily occupy too much of <add>my</add> time. Still
-            the hope that our separation is not final revives the spirits
-            when almost yielding to gloomy sensations (which will sometimes
-            intrude) with a cheering prospect, though at too great a distance
-            of again bury in the enjoyment of a compromise which 
-            of all others is the most to be desired, and <add>on</add> which as a blessing
-            I have at times set too little value. May he who joined us
-            together more and more unite our hearts as we advance in
-            life (if permitted to remain together) to his honor and our own
-            happiness! And that we may be favored to train up His infant
-            charge in his fear, which is committed to our case, is the breathing
-            of my heart at this time. I very much desire that either
-            may be taught subjection as far as her age will admit, believing 
-            that the sooner the twig is bent the less the danger of breaking.
-            I have yet heard nothing from you since we parted, but trust
-            you have safely arrived at the place of your destination in good
-            health. 
-            
-            —Page 02—
-            With the exception of Father and myself, we are in usual
-            health. He has not been well since you left home, occasioned 
-            in the first instance I believe by change of dress. Yet good his
-            usual rounds on foot etc., and is now at J. Evans with Mother. 
-            Rebecca not very well. Ann Bugby was confined on first day
-            afternoon with another son and is pretty brave. Anna
-            Walton was confined on sixth day with a daughter and has
-            had the typhus fever, but we heard yesterday was better. 
-            Charles Kain has recruited so far as to walk about a little. 
-            A. Edwards and co. have started on their journey. I do
-            not hear about her health, but thinks its not very good. 
-            Polly has been here nearly all the time and has the care of 
-            the business pretty much, and seems kind and affectionate.
-            The girls seem rather giddy but do pretty well, but I don’t
-            know what to do with the boys.
-            I would like know how you fare and when you will be
-            ready to return. Harvest is likely to be late here, and of 
-            course other things will be later than usual. We have had
-            considerable of rain within the week with high winds, which
-            has blown down the grain and grass.
-            
-            
-            
-            
-            
-            
+            <pb n="001" facs="XXXXX"/>
+                <opener>
+                    <dateline>Chester <date when="1817-06-27">6 mo 27th 1817</date></dateline>
+                    <salute>Dear <rs key="w6k08k1m">Wife</rs></salute>
+                </opener>
+                <p>Notwithstanding, my situation at times feels very lonely, and but little enjoyment <del>to be</del> found in the concerns which daily occupy too much of <add>my</add> time. Still the hope that our separation is not final revives the spirits when almost yielding to gloomy sensations (which will sometimes intrude) with a cheering prospect, though at too great a distance of again bury in the enjoyment of a compromise which of all others is the most to be desired, and <add>on</add> which as a blessing I have at times set too little value. May he who joined us together more and more unite our hearts as we advance in life (if permitted to remain together) to his honor and our own happiness! And that we may be favored to train up His infant charge in his fear, which is committed to our case, is the breathing of my heart at this time. I very much desire that either may be taught subjection as far as her age will admit, believing that the sooner the twig is bent the less the danger of breaking. I have yet heard nothing from you since we parted, but trust you have safely arrived at the place of your destination in good health. </p>
+                
+            <pb n="001" facs="XXXXX"/>
+                <p>With the exception of Father and myself, we are in usual health. He has not been well since you left home, occasioned in the first instance I believe by change of dress. Yet good his usual rounds on foot etc., and is now at <persName key="">J. Evans</persName> with Mother. Rebecca not very well. Ann Bugby was confined on first day afternoon with another son and is pretty brave. Anna Walton was confined on sixth day with a daughter and has had the typhus fever, but we heard yesterday was better. Charles Kain has recruited so far as to walk about a little. </p>
+                <p><persName key="w6xt6kpr">A. Edwards</persName> and co. have started on their journey. I do not hear about her health, but thinks its not very good. Polly has been here nearly all the time and has the care of the business pretty much, and seems kind and affectionate. The girls seem rather giddy but do pretty well, but I don’t know what to do with the boys.</p>
+                <p>I would like know how you fare and when you will be ready to return. Harvest is likely to be late here, and of course other things will be later than usual. We have had considerable of rain within the week with high winds, which has blown down the grain and grass.</p>
         </body>
     </text>
 </TEI>
