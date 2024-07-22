@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Account of a sermon delivered by James Simpson and funeral service, 1811: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 10 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">XXXXX</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187351</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1811">1811</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Religious life</term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Funeral serivce</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Simpson, James, 1743-1811</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+                    <p>This very good singular sermon was delivered by our dear Friend <persName key="w65f9hh6">James Simpson</persName> a few months previous to his death at Frankfort Meeting.</p>
+                    <said>"What I am now going to relate is but a simple story, and it is probable some of you may have heard me tell it before; but it has taken such possession of my mind that I thought I would just drop it for your consideration. When I was a young man, there lived in our neighborhood a Presbyterian who was universally reported to be a very to be a very liberal man, and uncommonly upright in his dealings. When he had any of the produce of his farm to dispose of, he made it an invariable rule to give good measure over good, rather more than could be required of him. One of his friends observing him frequently do so, questioned him why he did it, told him he gave too much, and said it could not be to his own advantage. Now my friends, mark the answer of this Presbyterian. <q>God Almighty has permitted me but one journey through the world; and when gone I cannot return to rectify mistakes.</q> Think of <hi rend="underlined" >this</hi> Friends, but <hi rend="underlined">one journey</hi> through the world. The hours that are past are gone forever, and the actions in those hours can never be recalled. I do not throw it out as a charge, nor do I mean to imply that any of you are dishonest, but the words of this good Presbyterian have often impressed my mind. And I think in an instructive manner; but <hi rend="underlined">one</hi> journey; we are allowed but one journey through the world. Therefore let none of us say my tongue’s my own, I’ll talk what I please, my time’s my own, I’ll go where I please, I can go to meetings, or if the world calls me I’ll stay at home, its all own. Now this won’t do Friends; it is as impossible for us to live as we list and then come here to worship, as it is for a lamp to burn without oil. It is utterly impossible. And I was thinking what a droll composition man is; he is a compound of bank notes, dollars, units and newspapers; and bringing 
+                    <pb n="002" facs="XXXXX"/> 
+                    as it were the world on his back, he comes here to perform worship, or at least he would have it appear so. Now Friends, I just drop it before we part, for your consideration. Let each one try himself and see how it is with his own soul."</said>
+                    <p>The following is an account of his funeral extracted from a letter. </p>
+                    <q>Yes Mary! we have indeed witnessed the departure of one who after a long career in a religious life, has at length in full maturity sunk into a peaceful ocean of rest where not a wave of trouble rolls across his happy breast.</q>
+                    <p>Last 5th day morning, Mother and myself went through the hard rain to the meeting house. There was a great number collected to wait for the funeral of <persName key="w65f9hh6">J. Simpson</persName>. After the corpse was quietly laid in the ground, the people assembled in the house till it was crowded full on the men’s side, a few benches being empty on the women’s. They were soon filled by the men. I never saw so large a collection in Frankfort Meeting house before. A solemn silence soon spread over the assembly, when Dr. Moore rose and in a very emphatic manner thus began:</p>
+                    <said>“Where are our fathers now, and the prophets: do they live forever? The latter part of this question has my friends, I apprehend been very fully answered this morning. That they do not live forever in this earthly tabernacle. We all do know that sooner or later we must die, and be numbered with the silent dead! Seeing then that all flesh is grass, and all the goodliness thereof is as the flower of the field, let us improve the fleeting moments here allotted us, that so when the awful period arrives toward, which we are all hastening, we may have an assurance, a well grounded evidence that we have an house not made with hands eternal in the heavens, a city which hath foundations whose maker and builder the Lord alone is!”</said>
+                <pb n="003" facs="XXXXX"/>
+                    <p>He went on and enlarged in a beautiful manner more of which I could give thee in substance, but not the exact words of that dignified minister Dr. Moore. Soon after he sat down our dear friend Abraham Lower stood up and said he was thinking of that passage in scripture where the prophet Samuel died and all Israel mourned for him.</p>
+                    <said>“They mourned because they loved him: such I apprehend is the occasion of your grief; and I feel near sympathy with you, my beloved friends, on account of the dear deceased. Although I was not personally acquainted with him, had not the pleasure of being intimate with him, yet having sat under the powerful influence of the faithful testimony he bore for the sake of truth and righteousness, I am happy in believing he has received the reward of well done good and faithful servant enter thou into the joy of thy Lord”.</said>
+                    <p>After which John Shoemaker knelt down &amp; addressed the throne of grace in a very solemn manner, he made a short but beautiful prayer. It really seemed alarming by awful silence had outstretched her wing, and the canopy of the Almighty presence overshadowed the whole assembly. All was quiet around, even silent as the awful grave. The meeting separated in this still solemnity and there were not many present but who felt impressed with the scene they had witnessed. </p>
+            </div>
+            <pb n="004" facs="XXXXX"/>
+                <closer>
+                    <address><addrLine><persName key="w6gj3q0h">Esther Collins</persName>—</addrLine>
+                    <addrLine>A letter containing a sermon preached by <persName key="w65f9hh6">J. Simpson</persName></addrLine></address>
+                </closer>
+            
+        </body>
+    </text>
+</TEI>
