@@ -2,11 +2,11 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
+                <title>Mercy Redmond, 1760 5mo 9: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
             <extent>ca. XXXXX KB</extent>
@@ -22,12 +22,12 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187301</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				    <title level="s" type="main">The Journal of Mercy Davis Redmond</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
@@ -35,31 +35,34 @@
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <idno type="local">A00187301</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>16 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+                <p>The journal of Quaker Mercy Davis Redmond is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1760-05-09">9th of the 5th mo 1760</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Voyages and travels</term>
+                    <term>Society of Friends</term>
+                    <term>Religious life</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Woolman, John, 1720-1772</term>
+                    <term>Foster, Hannah Core, 1710-1777</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -70,7 +73,417 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <body>
+        <body>  
+        <div type="entry" n="1760-05-09">
+        <pb n="001" facs="XXXXX"/>
+            <p>The ninth of the fifth month 1760, my friend Ann Gaunt and
+            I set out in order to visit Friends in New England and Long Island. And 
+            that night came to Benjamin Johnson’s at Tom’s River. And though
+            they were not Friends, the woman of the house was desirous that we 
+            should have a meeting among the neighbors, which we found freedom 
+            to assent to. And were not easy to omit, and notice being given to the 
+            near neighbors, and though the time was short there came as many
+            I believe as could, and we had a meeting with them. And our master that
+            is a present helper in every <del>time <gap/></del>  needful time, and worthy to be 
+            trusted in, was pleased to hand forth something to us, suitable to the 
+            States of the people, which was both to ours and their satisfaction. And
+            we parted in much love and affection, more than many that are
+            called of our society, and set out that afternoon for Squan, in order
+            to have a meeting among the few Friends that dwell there.</p> <p>And according 
+            we had on the next day it being fifth day of the week, and 11th
+            of the month, there gathered a pretty many people some not being of
+            our society, so that the house was near full. And a close exercising
+            time it was indeed, because of the indifference of the of the people,
+            but the way being a little opened we both had something to speak
+            to them and it ended to more satisfaction. And went from there 
+            to the house of Thomas Tilton, its being hard by and set out that 
+            afternoon for Shrewsbury, being accompanied by the aforesaid Tilton’s
+            son, who informed me that he had found a necessity laid upon 
+            him, to go and let in their meeting house alone, on the weekday 
+            
+                <pb n="002" facs="XXXXX"/>
+            there being no meeting established at that time on the weekday,
+            which I thought worth remarking of one who is but quite
+            a youth. And since that the monthly meeting has granted a weekday
+            meeting at that place, we came that night to Joseph Wardel’s
+            at Shrewsbury.</p> <p>And notice being given we had a meeting the next day at
+            their meeting house, it being the second day of the week and though
+            the people seemed to be got too much in to indifference, yet the 
+            most high was pleased to renew his visitation of love and favor
+            to the people and the meeting ended to good satisfaction, which 
+            desire they and we may gratefully remember.</p> <p>And went from thence 
+            that afternoon to Nathan Tilton’s, its being on the way to Woodbridge 
+            and there stayed all next day, the weather being wet and on
+            fourth day we rode in the rain to Woodbridge, being accompanied 
+            by several Friends.</p> <p>And on fifth day was at their monthly meeting which 
+            was small and for a while very well, being mostly made up with elderly 
+            and middle aged people, but truth seemed to arise and make way so
+            that we had pretty good service and satisfaction among them. And I
+            believe there is an honest remnant belonging to that monthly meeting,
+            and they were advised to bring their children to meetings for discipline. 
+            That when the present generation may be removed, the succeeding
+            generation may be favored to come up rightly, which much depends
+            upon the honest care of parents, which often seems attended with 
+            a blessing.</p> <p>And next morning we set out for York being 
+            
+            <pb n="003" facs="XXXXX"/>
+            Accompanied by Benjamin Shadwell, and crossed two ferries. one
+            being nine miles over, and got to York a little after the middle of
+            the day. And making but a short stay there, we traveled twenty
+            miles that afternoon back of York, to the house of Aaron Quimbee  
+            and was accompanied by young John Burling and George Bowne,
+            two hopeful youths and there we stayed till first day, it being
+            the 18th day of the month.</p> <p>And had a meeting that day at Westchester 
+            among the few Friends that are there and a pretty many of other 
+            societies. And our good master was pleased to reach forth a hand
+            of divine goodness and heavenly help to our comforts, and strength. 
+            the people sat very quiet, and the meeting ended to good satisfaction.</p>
+            <p>And on second day we were at Marrineck, among a few Friends
+            which meeting was hard and laborious, and we had painful labor 
+            under a sense of declension that seemed to appear in them
+            parts, among Friends. but the meeting ended pretty well, for which 
+            favor with many others. I hope we may be truly thankful.</p> <p>And 
+            rode that afternoon about 9 miles and lodged at John Cornals,
+            and next day we had a meeting at the Purchase. And the religion
+            in them parts seems at a very low ebb, the most high was 
+            pleased to renew his visitation of love to us, and we had a comfortable
+            meeting together and went home with Moses Quimbee. </p>
+            <p>And on fourth day had a meeting at Shappequo, and though 
+            very dull in the beginning, yet our good master was pleased 
+            to condescend and favor us with a good meeting and it ended 
+            
+            <pb n="004" facs="XXXXX"/>
+            well, and lodged that night at Moses Powel’s.</p> <p>And on fifth day 
+            we rode about ten miles, and had a meeting in a dwelling house
+            near Crompond, which was mostly made up of a shattered, raw people,
+            which looked very dull to us at the beginning. but the divine notice
+            of the almighty was extended and ability given, beyond expectation, 
+            and the meeting ended to good satisfaction, and thankfully unto 
+            the author of all good.</p> <p>And we to that afternoon about sixteen
+            miles to Samuel Fealses, and there stayed till seventh day, and
+            had a meeting at his dwelling house, which was a sore exercising 
+            time. The people seemed to have but little sense of truth, though
+            they make a profession of it. We had some painful labor
+            among them, which rested with some satisfaction, on our 
+            minds, and rode that afternoon about seventeen miles, to 
+            Oblong, and lodged at Benjamin Ferris’s.</p> <p>And on first day
+            which was the twenty fifth day of the month, we had a meeting
+            at their meeting house. And though there was some things
+            closely spoke too, yet it was a good comfortable meeting 
+            and ended to satisfaction, which seemed like balm to our 
+            drooping spirits.</p> <p>And on second day we went seventeen miles
+            to Oswego, and had a little meeting with few Friends, and although
+            great part of them looked but raw, yet we was favored with 
+            the notice of our heavenly master, and it was a good meeting which 
+            
+            <pb n="005" facs="XXXXX"/>
+            I thought made that saying good, that the lord looks not as man looks
+            and lodged at Lot Trip’s.</p> <p>That night and on third day we had a meeting
+            at the nine pardoners, and an exercising painful time it was The true 
+            seed seemed much oppressed, but the way a little opened. And we found
+            ability to speak some things to them, which was to some satisfaction.</p> 
+            <p>And we lodged that night at Jonathan Holmes’, and next day we rode
+            twenty five miles to New Milford to a meeting that was appointed at four
+            a clock that afternoon, which was very small by reason the people
+            had not general notice, and it was not to much satisfaction.</p>
+            <p>And on fifth, sixth, and seventh day, we was employed in riding through
+            the government of Connecticut, which was upwards of a hundred 
+            miles riding, and came on seventh day afternoon, to the house of 
+            young Peter Davies.</p> <p>And on the first day of the sixth month and
+            first day of the week, we was at their meeting at Westerly, with about
+            thirty Friends, and the Lord favored us with a good meeting among
+            them few, which caused us with thankful hearts to acknowledge to 
+            his goodness, who is the true helper of his people.</p> <p>And we lodged 
+            that night at the house of Thomas Wilbur’s, and had a meeting that 
+            evening in his house, with a sick woman that had very hard
+            fits, and seemed under great affliction of body, and mind. She expelled
+            much satisfaction and relief, after the meeting was over, that 
+            she received thereby.</p> <p>And on second day we had a meeting at
+            Hopkintown, which seemed pretty open and it was a comfortable
+            meeting, and we hope serviceable. And lodged that night at 
+            Solomon Hauks’s.</p> <p>And on third day we had a meeting at 
+            
+            <pb n="006" facs="XXXXX"/>
+            Richmantown, and a poor hard time it was, though we had some
+            satisfaction in the discharge of our duty among them, we went home that
+            night with James Perrey.</p> <p>And had a meeting on fourth day at South
+            Kingstown higher, and the Lord was pleased to exalt his truth and power
+            over all, and it was a good meeting and ended to satisfaction, which a 
+            little revived our spirits. And we lodged that night at Peleg Peckhams.</p> 
+            <p>And on fifth day we had a meeting at South Kingstown lower, and a dull
+            lifeless time it was, we had something to say to them but all did 
+            not seem to raise the dead. These four latter meetings were in the 
+            Narragansett County, and we intended on meeting on sixth day at 
+            Connecticut, but a strong easterly storm arising, it was thought not
+            safe for us to cross the ferry.</p> <p>And we stayed at Thomas Hazard’s till 
+            seventh day, and then set out for Newport on Rhode Island, and 
+            crossed two ferries each being three miles over, and came to Newport,
+            and stayed at Thomas Richardson’s.</p> <p>And was at two meetings at Newport 
+            on first day, one in the forenoon, and the other in the afternoon. Both 
+            was very large and though we went to them in great fear, yet they
+            was both satisfactory meetings which drew from us thankfulness unto 
+            the blessed author of all good. And in the evening we went to visit 
+            a sick man in the town, and had some little service with him.</p>
+            <p>And on second day we had a meeting at Sakonnet, which was but
+            dull and hard but ended with some satisfaction, we lodged that 
+            night at Abraham Barker’s.</p> <p>and had a meeting on third day at 
+            Tiverton. And it was we hope a profitable season to the people, and
+            we was helped to discharge our duty, among them we crossed the ferry
+            that evening over to Rhode Island again.</p><p> And there stayed until
+            
+            <pb n="007" facs="XXXXX"/>
+            first day and was at Portsmouth meeting, the first day of Newport yearly
+            meeting being usually held at that place.</p> <p>On fifth day it was a pretty
+            good meeting, being attended by several Friends from diverse parts,
+            who came on a religious visit to Friends in that County, John Stover
+            from Old England, and our worthy and ancient friend Elizabeth Shipley
+            from Pennsylvania and her companion, <persName key=" w65v49t0">Hannah Foster</persName>, <persName key="w6wr0v4m">John Woolman</persName>
+            and his companion Samuel Eastborn. My companion and I and that
+            afternoon all that aforesaid Friends went to Newport, in order to be at 
+            the yearly meeting next day, and we all lodged at Thomas Richardson's
+            during our stay there, and was very kindly entertained.</p> <p>The yearly
+            meeting holding four days, and our good master was pleased to remember us,
+            and to favor us with the shedding abroad of his love to 
+            the uniting us in a near manner, to himself and one to another, and
+            I hope it was a good time to some of the youth there being a 
+            tender remnant among them, of the younger sort, for all of those
+            favors with many more I hope we shall not be forgetful, our 
+            friend John Stover was very much employed in rectifying their
+            discipline, things being much out of rights regulation among 
+            them, so that he omitted the attending several of our meetings 
+            of worship, it being his business to visit meetings for discipline
+            this second time of his coming, into these parts and after the 
+            conclusion of the yearly meeting, we went to James Michael’s, in
+            order for visiting the meetings in Dartmouth.</p><p>And on the third 
+            day of the week we went to visit a young family of Friends, and 
+            
+            
+            <pb n="008" facs="XXXXX"/>
+            had good satisfaction, they were tender young people.</p> <p>On fourth day
+            we had a meeting at Acoaxet in which we <add>had</add> hard work, though we was 
+            helped to discharge our duty, <persName key="w6wr0v4m">John Woolman </persName>and Samuel Eastborn, 
+            being in company with us all that week.</p><p>And on fifth day we and 
+            the aforesaid Friends, had a meeting at Newtown, which was a satisfactory
+            meeting, and in the afternoon we went to visit a sick Friend,
+            the wife of Abraham Tucker, and had a good season with her, and
+            lodged that night at Joseph Tucker’s, and had a setting in his
+            family in the evening, and I hope had good service among his 
+            children.</p> <p>And on sixth day we had a meeting at Achushnet and a 
+            hard time it was from beginning to ending. And that night we lodged
+            at Nathan Davis’s, the son of our worthy friend Nicholas Davis.</p> <p>And 
+            on seventh day we had a meeting at Long plain, which was but a 
+            low time.</p> <p>And on first of the week and twenty second of the month
+            <persName key="w6wr0v4m">John Woolman</persName> and Samuel Eastborn, went to Rochester meeting, and
+            we was at Ponaganset. John Stover likewise being there. The meeting
+            was very large, and likewise very hard, the people being got
+            greatly into stupidity, and hard heartedness it was thought there
+            was upwards of a thousand people, at that meeting.</p> <p>We was at their
+            monthly meeting on second day at the same place, John Stover 
+            <persName key="w6wr0v4m">John Woolman</persName> and Samuel, and Comfort Hoag from the East
+            and, all being at the monthly meeting, which was very large. And the 
+            meeting for worship pretty well, but the meeting of discipline was filled
+            up with a great number of young people, not members that rendered
+            it very burdensome, to us that were strangers to the place and likewise 
+            
+            
+            <pb n="009" facs="XXXXX"/>
+            to that custom, and it was much advised against, by both men and women. 
+            And the men drew a minute and sent to the women, in order to strengthen
+            them in bearing a hand against that practice. We lodged that night 
+            at Jonathan Husseys.</p> <p>And next day we and <persName key="w6wr0v4m">John Woolman</persName>, Samuel 
+            Eastborn, William Lightfood from Philadelphia, and Comfort Hoag
+            and her companion, with a pretty many other Friends, went on board
+            a vessel for the Island of Nantucket. And having but little wind we
+            was obliged to go ashore at a place called Tarpaulin Cove in the
+            evening and there we stayed in a tavern that night.</p><p>And next morning
+            at four o’clock we went on board again, and was all day in 
+            the vessel, and in the evening twelve of us got in the boat that
+            belonged to the vessel and rowed to shore, and got to the town
+            about eight o’clock that evening, and lodged at Sarah Barney’s.
+            Some Friends in the town took a boat and brought the other Friends
+            on shore, that we left in the vessel. It being low water the
+            vessel could not come within six miles of the town, it was called
+            60 miles by water.</p> <p>On fifth day we had no meeting but spent the
+            day in visiting some Friends.</p> <p>On sixth day the yearly meeting came
+            on, and a hard meeting we had though my companion
+            was favored to discharge her duty honestly, and speak to the 
+            states of the people. There appears a great declension among the people
+            though. I believe there is an honest hearted remnant, among them. 
+            In the afternoon we rode two miles out of town, to visit a sick and
+            aged Friend, the son of Mary Starbuck, that our friend John 
+            Richardson given an account of in his journals. I believe he is a good
+            old man, he is aged about eighty eight years, we had good 
+            
+            <pb n="010" facs="XXXXX"/>
+            satisfaction in the visit. And was accompanied by William Lightfoot,
+            and several other Friends.</p> <p>And in the evening, we had a little setting at
+            Sarah Barneys, with a few Friends that came in on seventh day which 
+            was the second day of the yearly meeting. The Lord favored us with a good
+            and comfortable meeting. And likewise the select meeting in the morning
+            was pretty well, considering the times. In the afternoon our aforesaid
+            men Friends, appointed a meeting among the Indians of that place, 
+            there was a pretty many of them met, and the Friends had good 
+            satisfaction, in the visit the Indians was still and attentive. 
+            We spent the afternoon in visiting sick Friends, to good satisfaction,
+            which paid us for our labor richly.</p> <p>The twenty ninth of the 
+            month and the first day of the week, we was at two meetings
+            at the meeting house, it being the third day of the yearly meeting,
+            which was large and both pretty solid, though close doctrine
+            to deliver. In the evening we had a setting in Silvenus
+            Hussey’s family.</p> <p>Our friend <persName key="w6wr0v4m">John Woolman</persName> had some 
+            solid and seasonable advice, to the few Friends present on
+            second day. Their monthly meeting came on and select
+            meeting in the morning. They was both good solid meetings
+            and truth seemed to be exalted over all its enemies, which
+            gave us new life. The meeting of business was also very solid
+            and some good advice given. Our friend <persName key="w6wr0v4m">John Woolman</persName> came 
+            in among the women and was directed to drop some very 
+            seasonable advice, to mothers of children concerning their
+            educating of them. In the evening had a sitting at 
+            
+            <pb n="011" facs="XXXXX"/>
+            Sarah Barney’s, with a few Friends which was satisfactory, John
+            Woolman being with us, there seems to be great openness and tenderness
+            in the minds of some Friends. In that place I desire that remnant
+            may be favored to to keep their places rightly, and may grow in 
+            experience, that they may come to be helpful to others that 
+            the breaches may be repaired. </p>On the third day morning at 2 o’clock
+            in the morning we arose and went on board the vessel 
+            with our former passengers, with a few more added, in order to 
+            go to Woods Hole, but the wind being quite contrary we
+            presently went on shore again, and returning to our lodging
+            went to bed again. And when we arose the wind not yet
+            suiting we found freedom to approach another meeting, to which 
+            came a pretty many people, and it seemed a favorable time.
+            My companion was drawn forth largely, to speak to the States
+            of the people. On fourth day morning at 2 o’clock we was 
+            called to go aboard again, the wind being fair we set sail 
+            and got ashore at seven o’clock in the evening at Woods
+            Hole. I was exceedingly seasick and several other of the 
+            passengers, which made it seem very tedious. I did not
+            recover it for several days, which caused traveling to be
+            very wearisome, this last water voyage I think was called
+            fifteen leagues, we lodged at Steven Boarman’s about 5 miles
+            from Woods Hole. On the third day of the year’s 7th month
+            and fifth of the week, we had a meeting at Falmouth, which was
+            
+            <pb n="012" facs="XXXXX"/>
+            a very dull time to us and I believe to the people also. We lodged
+            that night at Joshua Wing’s. John Woolman and Samuel 
+            being still with us, we went next day the sixth of the week to
+            Sandwich monthly meeting, William Lightfoot took cold on the
+            water which rendered him unable to travel, and we was obliged 
+            to leave him at Steven Boarman’s, and next day he met us at 
+            Sandwich, and was pretty well recruited. The monthly meeting 
+            aforesaid was but small and likewise but dull, a great coolness
+            and indifference appears among many of the professors of truth 
+            in them parts. Though I hope there is a remnant that defines 
+            to do well, on seventh day was their quarterly meeting at the 
+            same place, we was all at it and it was a good meeting and ended 
+            well for which favor, I was thankful that afternoon my companion 
+            and Samuel Eastborn set out with several other Friends in order 
+            to be at Yarmouth meeting on first day, which was about seventeen
+            miles from Sandwich. John Woolman and I stayed at Sandwich,
+            first day meeting, which I hope was a profitable season to the 
+            people. In the afternoon we had a setting with Daniel Allen’s
+            family, I think it was a pretty good time in the evening my
+            companion and Samuel returned from Yarmouth and on second
+            day morning we all took leave of our kind friend Joshua Wings
+            and his wife who was very kind to us, we made our home with
+            them all the while we were at Sandwich, and went that day
+            to Nathan Davis’s, in order to have a meeting on third day at
+            Rochester. John and Samuel parted with us on second day and
+            
+            
+            <pb n="013" facs="XXXXX"/>
+            went for Rhode Island quarterly meeting, and we visited the meeting
+            about Dartmouth. The meeting at Rochester was hard and laborious–
+            though we was helped to labor faithfully among them. On fourth day 
+            we had a meeting at Ponaganset, and there was likewise a marriage
+            and a painful time it was, because of the many dry professors.
+            But we was favored to clear our minds among them. We lodged a 
+            third day night at Joseph Smith’s. And on fourth day in the 
+            afternoon we set out towards Freetown, and lodged at Gideon
+            Allen’s. And on fifth day we had a meeting at Freetown, we 
+            had very hard work in them meetings at Dartmouth there
+            seems a great degeneracy among {?} the many professors of 
+            truth in them parts, we lodged at Edward Shoves’, and had 
+            an opportunity in his family, in the evening to good satisfaction. 
+            And on sixth day we had a meeting at Taunton, and such a meeting
+            I think I never was at before, nor never desire to be at such another.
+            I did not think there was a sensible Friend among them. We lodged
+            that night at Henry Bowers. He had lately buried his wife
+            which seemed a very great stroke to him. We had an opportunity
+            with him and his little ones in the morning to good satisfaction. 
+            On seventh day we had a meeting at Swansey, which was a low
+            time and to no great satisfaction. We rode twenty miles that 
+            afternoon, and crossed two ferries, and came to James Michael’s
+            that night. And on the first day of the week and twelfth of
+            the month, my companion went to Portsmouth meeting, and 
+            
+            
+            <pb n="014" facs="XXXXX"/>
+            I was at Newport meeting in the forenoon, and in the afternoon we
+            was both at Newport meeting, and I hope they was both pretty good
+            meetings. On second day we had a meeting at Connecticut, being accompanied
+            by a pretty many Friends from Newport. This latter meeting was 
+            but a hard time, and after meeting we took leave of our friends, and set
+            out for Long Island, and lodged that night at Peleg Peckhams. On 
+            third day mourning William Lightfoot met us in order to bear us
+            company through Long Island, and several other Friends being with us
+            we rode thirty six miles that day and came to Groton that evening, and 
+            lodged there in a tavern. Next morning at seven o'clock we went
+            on board a ferry boat, and went according to account forty miles
+            by water, and landed on Long Island about twelve o’clock. William
+            Lightfoot and we rode twenty seven miles, and came to the head of
+            the river that evening and lodged at a tavern. On fifth day morning 
+            we set out again towards Secatogue and ride twenty seven miles and
+            lodged at John Hallock’s and had a meeting in his house, on sixth
+            day among a few Friends that dwell thereabouts, which was to pretty
+            good satisfaction. That afternoon we rode nineteen miles and lodged
+            at the widow Willets’, and had a meeting on the seventh day at Secatogue
+            which was large and I think a good meeting, and lodged that night 
+            at Samuel Willis’s, and second day we rested. And on third day we
+            had a meeting at Matinecock, which seemed an open time and lodged 
+            at Issac Dote’s. On fourth day we was at Westbury meeting, which 
+             
+            
+            <pb n="015" facs="XXXXX"/>
+            was large considering harvest time and a good opportunity I think it
+            was. We lodged that night at the Widow Titus’s and on fifth day we had
+            a meeting at Cow Neck, which seemed very full in the beginning, though
+            after a time the cloud seemed a little removed, and I had some 
+            service among them to satisfaction. My companion was silent in that meeting.
+            We lodged that night at Matthew Franklin’s. On sixth day we had 
+            a meeting at Flushing, which seemed hard and laborious in the 
+            beginning, but our good master was pleased to favor with his
+            heavenly help, and I think the meeting ended well, which was cause
+            of thankfulness. We lodged that night at John Way’s. On seventh
+            day we had a meeting at Newtown, which was very small. My
+            companion had some good service among them. We went to York
+            that afternoon and lodged at Margaret Bown’s. On the twenty seventh
+            of the month and first day of the week we was at two meetings 
+            at York, both I hope was profitable meetings. I think there is a 
+            well concerned remnant in that city. On second day we crossed 
+            the ferry and got to Joseph Shadwell’s that night.  On third day we 
+            rode to Stony Brooks and lodged at James Olden’s. On fourth day
+            we came to Crosswicks, and there my companion and I took leave 
+            of each other, in much love and affection, she intending 
+            homewards next day. William Lightfoot and I came to Burlington 
+            and lodged that night at Daniel Smith’s, and set out next day 
+            in the rain and reached home about two o’clock in the afternoon, 
+            and was received joyfully by my dear husband and children
+            and friends, and found all well, and a good degree of peace and
+            
+            
+            <pb n="016" facs="XXXXX"/>
+            sweetness in my own mind, for which favors and blessings, I hope
+            I shall gratefully remember and live under a humble sense of
+            in this journey I was at eighty seven meeting—
+            Mercy Redmond
+</div>
+
+
         </body>
     </text>
 </TEI>
