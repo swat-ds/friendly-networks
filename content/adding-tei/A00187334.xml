@@ -56,10 +56,8 @@
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
-                </keywords>
-                <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Poetry</term>
+                    <term>Education</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +69,89 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="XXXXX"/>
+            The Country School
+            From dark dull woods emerging into day
+            We pass where farms their opening fields display
+            Barns, fences, cottages, lawns appear{ed}.
+            Where various sounds of human toil {were heard} we hear
+            There {a}round a hut upon a sloping green
+            Gay laughing bands of playful boys {were} <add>are</add> seen
+            Soon books aloud is thundered from the door
+            And balls and hoops must harm the hours no more.
+            But frequent tears the blotted leaves assail
+            And sighs for dear loved liberty prevail.
+            Hither by long yet fond remembrance led
+            With awe we enter{ed} the sequestered shed
+            All eyes are turned the strangers to survey
+            One tap is hear and all the hint obey
+            Then grave and courteous rising from his seat
+            The decent master bows with weakness meet
+            Invites to sit, looks round with watchful eyes
+            And bids by signs alternate classes use
+            Hears, reads, instructs, with solemn voice and allow
+            Deep busy silence muffling all below. 
+            Dear to the muse to truth, to science dear
+            Be he who humbly toils and teaches here
+            His worth his labor shall not sleep forgot
+            And thus the muse records them as she ought
+            
+            <pb n="002" facs="XXXXX"/>
+            Of all professions that this world has known
+            From clowns and cobblers upward to the throng
+            From the grave architect of Greece and Rome
+            Down to the framer of a farthing broom
+            The worst for care and underserved abuse
+            The first in real dignity and use
+            If skilled to teach and diligent to rule
+            Is the learned <underlined>master</underlined> if a little school
+            Not he who guides the legs or skills the clown
+            To square his fist and knock his fellow down
+            Not he who shows the still more barbarous art
+            To parry, thrust, and pierce the unguarded heart
+            But that good man who, faithful to his charge
+            Still toils the opening season to enlarge
+            And leads the growing mind through every stage 
+            From humble, A, B, C, to God’s own page
+            From numberation through awakening way
+            Still dark enmities seem clear as day
+            Pours over the mind a flood of mental light
+            Expands its wings and gives it powers for flight 
+            Till earth’s remotest bounds and Heaven’s bright train
+            We trace weight, measure, picture and explain
+            If such his toil sure honor and regard
+            And wealth and fame will be his dear reward 
+            Sure every tongue will utter forth his praise
+            
+            <pb n="003" facs="XXXXX"/>
+            And blessing gild the evening of his days
+            Yes, blessed indeed with cold ungrateful scorn
+            With study pale by daily crosses worn
+            Despised by those who to his labor own
+            All that they read and almost all the know
+            Condemned each tedious day such cares to bear
+            As well might drive even patience to despair
+            The partial <add>parents</add> taunt the idler dull
+            The blockheads dark impenetrable skull
+            The endless round of A, B, C, whole train
+            Repeated over ten thousand times in vain
+            Placed an a point the object of each sneer 
+            His faults enlarge, his merits disappear
+            If mild, “our lazy master loves his ease
+            The boys at school do anything they please”
+            If rigid “he’s a cross, hard-hearted wretch
+            He drives the children stupid with his birch
+            My child with gentle means will mind a breath
+            But frowns and floggings frighten him to death”
+            Do as he will his conduct is arraigned 
+            And dear the little that he gets is gained
+            Even that {he} is given him on the quarter day
+            With looks that sall it money thrown away
+            Just! Heavens: who knows the unremitting care
+            And deep solicitude that teachers share
+            If such their fate by thy divine control
+            Oh, give them health and fortitude of Soul. 
+            
         </body>
     </text>
 </TEI>
