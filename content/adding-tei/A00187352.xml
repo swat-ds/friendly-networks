@@ -2,14 +2,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
+                <title>Joshua Hunt letter to John Collins, 1791 1mo 17: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 7 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187352</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -34,12 +34,12 @@
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187352</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>2 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -50,16 +50,17 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1791-01-17">1st mo 17th 1791</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Cattle, Jonas, 1741-1828</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +72,30 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="XXXXX"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Redstone <date when="1791-01-17">1st Month 17th 1791</date></dateline>
+                    <salute> Much esteemed Friend,</salute>
+                </opener>
+                 <p>I received thy kind letter from the Yearly Meeting, which was truly acceptable. &amp; embrace this opportunity in a few words to inform that we are middling well in health, &amp; have been for the most part since we come into this country. Expect about the 1st of the 4th month to move to a place I have lately purchased near 4 miles from <persName key="w6x74cd2a">Jonas</persName>’, &amp; have great cause to acknowledge in humble gratitude &amp; kindness of Providence many ways towards us. </p>
+                 <p>The parting with our Friends in Moorestown (therein particular) I have very often to remember. How I observed in some others what I felt myself, my heart was full, my tongue faltered. It was for some time ere I could utter that very familiar term, farwell. The best of friends must part, <q>Feeling has no fellow.</q> Time hastens on, yet a little while &amp; we shall be as though we had not been, <q>Go to the Land of Darkness</q> &amp; <q>seeing these things are so what manner of persons ought we to be, in all Godliness &amp;.</q> My wishes &amp; desires therefore are, that we may all steadily labor to attain to those happy shores where no troubles annoy.</p> 
+                 <p>Since we have been in this country, I have often thought that we have come to the right place &amp; feel well satisfied. Although, we may expect to encounter many difficulties; the country being much unimproved &amp; our society here in a very similar state. I have sometimes thought our society here might be compared to David’s army, which consisted of such who had been in trouble &amp; in debt &amp;. But his men, I apprehend, were under much better discipline than we are. </p>
+                 <p>The plantation we are about to remove to is pretty well improved for this country. A tolerable log house &amp; kitchen, out-houses, barn &amp; stables &amp; several tenements, all of log. A young <add>apple</add> orchard of excellent fruit (they say) &amp; a variety of other fruits &amp; plenty of sugar trees. About 10 acres of very good meadow cleared; the owner allows that he had 400 bushels of wheat last harvest, &amp; a prospect of much more the ensuing season.</p>
+                 <p>I have hopes that with the Blessings of Providence when settled to enjoy a state of contentment, with which if we may be favored or helped to, add Godliness. That will be great gain, for <add>we</add> brought nothing &amp;.</p>
+                <closer>
+                   <salute>My <rs key="w6gj3q0h">wife</rs> johns in a salutation of kind love to thee &amp; thine, with wishes for your health &amp; welfare every way</salute>
+                   <signed><persName key="w6n05cnp">Joshua Hunt</persName></signed>
+                </closer>
+            </div>
+            <pb n="002" facs="XXXXX"/>
+                 <closer>
+                     <address><addrLine><persName key="w6165774">John Collins</persName></addrLine>
+                     <addrLine>near Moorestown, Burlington County New Jersey</addrLine>
+                     <addrLine>Favored by Reece Cadwallader</addrLine>
+                     <addrLine>to the care of William Wilson </addrLine>
+                     <addrLine>nearly opposite the steeple in 2nd street Philadelphia</addrLine></address>
+                 </closer>
         </body>
     </text>
 </TEI>
