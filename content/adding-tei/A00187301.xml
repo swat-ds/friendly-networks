@@ -2,7 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Mercy Redmond, 1760 5mo 9: Electronic Version</title>
+                <title>Mercy Redmond Journal, 1760 5mo 9: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
@@ -36,7 +36,7 @@
                         <institution>Friends Historical Library of Swarthmore College</institution>
                         <collection>Redman family papers, SC-106</collection>
                         <idno type="local">A00187301</idno>
-                        <idno type="IslandoraNodeid">XXXXX</idno>
+                        <idno type="IslandoraNodeid">488703</idno>
                     </msIdentifier>
                     <physDesc>
                         <p>16 pp.</p>
