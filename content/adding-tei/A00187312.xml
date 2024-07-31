@@ -69,7 +69,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488765"/>
             <div type="letter">
             <opener>
                 <dateline><date when="1799-01-19">19th 1st month 1799</date> Redstone</dateline>
@@ -78,10 +78,10 @@
             </opener>
                 <p>With feeling regard, I take my pen to write once more to thee, my dear <rs key="w6n9820p">brother</rs>, for the time has seemed long to me since there has been any way open for communication, although it has been often my desire. I received thy acceptable letter sent by Catherine Leeds who with her companions paid <damage><gap/></damage> religious visit, I believe, much to our satisfaction, <damage><gap/></damage> the paper thee sent directed to the monthly-meetings did not come to my hands first; being delivered to Reece Cadwallader; it was sent over the River &amp; read at Westland monthly-meeting &amp; then read at this at the close of the meeting before entering on business; (before it came to my hands) and I don’t know but it was in its season. However in word they generally approved what was therein contained, many desiring copies thereof, some thought it long yet seemed at a loss what part to leave out. </p>
             
-            <pb n="002" facs="XXXXX"/>
+                <pb n="002" facs="488766"/>
                 <p>We have had abundance of labor bestowed upon us. If it could be that others might do the work, it seems they would not be wanting. But oh, alas, our state is such, others may be engaged with us, and for us, yet that will not complete the work. We must know a joining in ourselves, which some of us may be fully sensible of at time; tho very much in the weakness. O, my <rs key="w6n9820p">brother</rs>, its affecting to my mind that I have no good tidings, feeling myself clothed with poverty &amp; weaknesses and many more appear to be in dangerous situations. The Earth and the <damage><gap/></damage> has its to be feared, too great an influence among yet, this I think is the case there is struggling in places &amp; individuals (&amp; we know in the outward that is a sign of life, and where there is life there is hope) I feel desires that the abundant labors bestowed upon us may not be lost, oh, that we may not become castaways by our neglect &amp; inattention. Benjamin Townsend is gone on a religious visit to Carolina accompanied by his cousin Joseph Townsend attended Baltimore yearly meeting &amp; so proceeded on their journey</p>
             
-            <pb n="003" facs="XXXXX"/>
+                <pb n="003" facs="488767"/>
             <p>I feel in measure sensible that many blessings and favors have been &amp; are still
                     continued to me &amp; children and oh, that we may be grateful receivers. Joshua
                     Hunt &amp; family is moved about 8 miles to Issac Mason’s Iron works where he
@@ -101,7 +101,7 @@
                 children join, I conclude thy sister</salute> <persName key="w6gj3q0h">Esther Hunt</persName>
                 </closer>
             </div>
-                <pb n="004" facs="XXXXX"/>
+            <pb n="004" facs="488768"/>
                 <closer>
                     <address>
                         <addrLine>To <persName key="w6n9820p">John Hunt</persName> </addrLine>

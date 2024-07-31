@@ -73,7 +73,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488799"/>
             <opener>
                 <dateline><date when="1804-08-05">8th month 5th 1804</date> Redstone</dateline> 
                 <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>
@@ -85,7 +85,7 @@
                 <salute>With desire for the preservation of thee and thine as well as mine own, conclude thy Sister</salute>
                 <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
             </closer>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488800"/>
             <closer>
                 <address>
                     <addrLine><persName key="w6n9820p">John Hunt</persName> senior</addrLine>

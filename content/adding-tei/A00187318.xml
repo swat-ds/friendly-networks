@@ -74,7 +74,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488792"/>
             <div type="letter">
                 <opener>
                     <salute>Dear <rs key="w6n9820p">Brother</rs>,</salute>
@@ -86,7 +86,7 @@
                     <dateline><date when="1802-05-28">28th 5th 1802</date></dateline>	
                 </closer>			
             </div>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488793"/>
                 <closer>
                     <address>
                         <addrLine><persName key="w6n9820p">John Hunt</persName> Senior</addrLine> 
