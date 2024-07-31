@@ -68,7 +68,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488824"/>
             <div type="letter">
                 <opener>
                     <salute>Dear <persName key="w6gj3q0h">Esther</persName>,</salute>
@@ -83,7 +83,7 @@
             <dateline><date when="1810-05-25">25th of 5th month 1810</date></dateline>
             
             </div>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488825"/>
                 <closer><address><addrLine><persName key="w6gj3q0h">Esther Collins</persName> from <persName key="w6g77m31">H. Yarnall</persName></addrLine>
                 <addrLine>Jersey near Moorestown</addrLine>
                 <addrLine>to the Attention of Richard Prior } Philadelphia </addrLine></address>

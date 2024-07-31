@@ -75,7 +75,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="001" facs="488917"/>
             <div type="letter">
                 <opener>
                     <dateline>19th 6th month</dateline>
@@ -92,7 +92,7 @@
                     <p><label>P.S.</label> thy Uncle <persName key="w6553d40">Samuel</persName> is awfully alarmed with a cancer on his cheek which has an</p>
                 </postscript>
             
-            <pb n="002" facs="XXXXX"/>
+                <pb n="002" facs="488918"/>
             <closer>
                 <address><addrLine>Rachel Hunt at Weston</addrLine></address>
             </closer>

@@ -72,7 +72,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488914"/>
             <div type="letter">
                 <opener>
                     <dateline>Redstone <date when="1791-01-17">1st Month 17th 1791</date></dateline>
@@ -88,7 +88,7 @@
                    <signed><persName key="w6n05cnp">Joshua Hunt</persName></signed>
                 </closer>
             </div>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488915"/>
                  <closer>
                      <address><addrLine><persName key="w6165774">John Collins</persName></addrLine>
                      <addrLine>near Moorestown, Burlington County New Jersey</addrLine>

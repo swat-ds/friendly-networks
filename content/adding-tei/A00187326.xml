@@ -68,7 +68,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488818"/>
             <div type="letter">
                 <opener>
                     <dateline>Pike Run <date when="1810-10-01">10th month 1st 1810</date></dateline>
@@ -84,7 +84,7 @@
                     <p><label>P.S.</label> my love to Uncle <persName key="w6n9820p">J. Hunt</persName> &amp; other inquiring friends in our our parts &amp; Matlock there remembrance is desirable</p>
                 </postscript>
             </div>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488819"/>
                 <closer>
                     <address><addrLine><persName key="w6165774">John</persName> or <persName key="w6gj3q0h">Esther Collins</persName> </addrLine></address>
                 </closer>

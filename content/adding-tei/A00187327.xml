@@ -69,7 +69,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="XXXXX"/>
+            <pb n="001" facs="488821"/>
             <div type="letter">
             <opener>
                 <dateline>Byberry <date hwne="1810-02-08">2nd month 8th 1810</date></dateline>
@@ -85,7 +85,7 @@
                  <signed><persName key="w6g77m31">Hannah Yarnall</persName></signed> 
              </closer>
             </div>
-            <pb n="002" facs="XXXXX"/>
+            <pb n="002" facs="488822"/>
                 <closer><address><addrLine><persName key="w6165774">John</persName> &amp; <persName key="w6gj3q0h">Esther Collins</persName></addrLine>
                 <addrLine>near Moorestown New Jersey </addrLine>
                 <addrLine>per favor of Caleb Adkinson</addrLine></address>
