@@ -27,7 +27,7 @@
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				    <title level="s" type="main">The Correspondence of Martha Routh</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
@@ -46,7 +46,7 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+                <p>The correspondence of Quaker minister Martha Routh is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
@@ -74,7 +74,7 @@
                 <p>where bread would be given and your water would not face, and however mingled with the wormwood and the gall, the precious life would be preserved– Thus my truly valued friend, was my mind at that time affected and the sense now unwrought for returning. In the freedom of a little sister I mention it to thee. I only came here yesterday from our monthly meeting held at Hard Shore and think to return home on 2nd day. My husband and dear Elizabeth Rattilon setting at full blessing to do so by staying with our dear Aunt who with us have lately had removed from works I trust to a blessed reward her brother our dear Uncle with whom she had lived more than 50 years. In the seventy seventh year of his age, had only four days illness and made no complaint of pain but just at the first, a little in his breast which he told the Doctor. Soon went off, and a few hours before his death, <damage><gap/></damage> leaning on my arm walked into the front <damage><gap/></damage> <damage><gap/></damage> on returning to his chamber looked round <damage><gap/></damage> Then retired to his chair and drank cups of coffee and ate some bread, but finding his pulse after very fast told my Aunt. &amp; I believe he was near his solemn close, which he bore with Christian fortitude and had the consulate Friend see him depart his well spent. With the least emotion I have ever known anyone, needed no supporting. In his chair, put my hand to his forehead where I had stood some time to wipe the sweat from it, 
             <pb n="002" facs="xxxxx"/>
                 and was thankful I was at home and enabled to wait on a beloved relation who had behaved with the affection of a Father to me. The meeting at his burial was a way solemn, time wherein our dear Aunt with others were strengthened to hear testimony to the truth.</p> 
-                <p>I have now so near covered this paper as only to leave room to unite the endeared love of many Brethren and Sisters to thee &amp; thine; in which the best I have. Nearly salute thyself in a particular manner, with many more. I love, in your land, who am thy sincere Friend, <persName key="w65147nn">Martha Routh</persName></p>
+                <closer><salute>I have now so near covered this paper as only to leave room to unite the endeared love of many Brethren and Sisters to thee &amp; thine; in which the best I have. Nearly salute thyself in a particular manner, with many more. I love, in your land, who am thy sincere Friend,</salute> <persName key="w65147nn">Martha Routh</persName></closer>
             </div>
             <pb n="003" facs="xxxx"/>
             <closer>
