@@ -9,7 +9,7 @@
                     <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 8 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -50,16 +50,18 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1799-02-06">2nd mo 6th 1799</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Emlen, Samuel, 1730-1799</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +73,32 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="structure">
+            <opener>
+                <dateline>Philadelphia <date when="1799-02-06">2nd mo 6th 1799</date></dateline>
+                <salute>My Beloved Friend,</salute>
+            </opener>
+                <p>With a renowned salutation of near love, I now acknowledge thy has kind remembrances, one of 1st mo 14th and one the 1st of the present month. &amp; in the first place, wish to let thee know such testimonies of thy regard are gratefully &amp; cordially accepted by thy poor little Friend, however unworthy thy sisterly attention. Shall I again assure thee thou art often the companion of my mind, accompanied with all the sympathy I am capable of. I wish thou may be encouraged to persevere in the path as I find that I am. Sensible, gloomy, trying seasons are often thy portion. Yet I also believe thee hast great cause to be encouraged–for canst thou not, my dear Friend, feel at times the force of that comforting, soul sustaining language, <quote type="biblical">“thy master is thy husband, the Lord of hosts, is His Name.”</quote> Oh! Blessed experience my heart seems somewhat animated in the recollection of it.</p>
+                <p>And now, in answer to part of thy last which I have imparted to no one person. I may say that I wish thou may be strengthened to do all that thy hand findeth to do, &amp; I have thought perhaps another person may be preparing to join thee in that particular work there mentioned–as i cannot feel sufficient to bear me out in entering on <add>that</add> engagement. I endeavored to feel after it from time to time since first being informed of it by thy pen, &amp; think it
+            
+            <pb n="002" facs="xxxxx"/>
+                not right to keep thee in suspense. If it happened so that we might be engaged together, I think it would be strengthening to me; but if it is not to be so, may our heavenly Father’s will be done. Give preserved near in spirit in our different allotments. &amp; whether separate or joined in the work–I wish <add>we</add> may be ever kept <del>uinted</del> united in heart &amp; mind. I expect to send this tomorrow by some Friend that may be going to attend the Quarterly Meeting–which I have thought of but did not find it my place to attempt being through. Thy niece Mary Bryant was here today. I informed her of my intention to write thee. She desired her love &amp; that I might tell thee they are well. She appears tender &amp; very affectionate. I much wish her furtherance in the way of truth. Our dear, valued Friend M. Prior has been very poorly, so much so as to prevent her attending our meeting second day. She was out yesterday, but appears feeble. The vessel in which she expects to embark, is thought likely to sail in two weeks or less. Dear Gervis Johnson we expect with my brother in a few days from their Jersey visit. My dear Mother is from home a few miles from his city on an appointment of our Monthly meeting. I expect her return tomorrow. If present she would join me in love to thyself &amp; dear children, mine to them &amp; to thy valuable Ruth.</p> 
+            <closer>
+                <salute>With much to thyself I remain thy sincere Friend,</salute>
+                <signed><persName key="w6ht6kfw">S Cresson</persName> Friend</signed> 
+            </closer>
+            
+            <note type="structure">written along side of page</note>
+                <postscript><p>Cousin <persName key="w6wq14dj">Samuel Emlen</persName> desired his love to thee. Thine to him was truly acceptable Hannah Hastings a valuable sweet young woman who lives with Catherine Hunt’s home desires her love to thee</p></postscript> 
+            </div>
+          
+            <pb n="003" facs="xxxxx"/>
+            <closer><address><addrLine><persName key="w6g77m31">Hannah Yarnall</persName></addrLine> 
+                <addrLine>Byberry</addrLine>
+                <addrLine><persName key="w6ht6kfw">Sarah Cresson</persName> </addrLine>
+                <addrLine><date when="1799-02">2nd mo 1799</date></addrLine></address>
+            </closer>
         </body>
     </text>
 </TEI>
