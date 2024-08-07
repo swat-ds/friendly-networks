@@ -1,0 +1,97 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Elizabeth Evans letter to Hannah Thornton, 1793 1mo 14: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187368</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, </collection>
+                        <idno type="local">A00187368</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                    <term>Death</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Warrington, Rebecca Walton, 1734-1812</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener>
+                <salute>Beloved <rs key="w6g77m31">Daughter</rs></salute>
+            </opener>
+            <p>I may inform thee that I received a few lines from thee dated the 28 of the 12 mo, which was very agreeable to hear that thee has thy health so well. But are sorry to hear thy father &amp; mother is so poorly, &amp; that thy girl is gone, for I am afraid I cannot get Elizabeth Mull for thee but I shall endeavor to do the best I can. But underhanded dealing I don’t hold with. <add>Its</add>possible there may be a way for it by spring, but cannot see any way at this time, so must leave it. &amp; I may inform thee that I have been very poorly but am now a considerable better. The rest of the family in usual health, which I think a great favor. Sister <persName key="w64n1mqv">Rebekah Warrington</persName> informed me that thee gave James a letter for her &amp; that he believed he dropped it, for he did not know what became of it, &amp; she desired me to write &amp; let thee know of it in hopes that thee could give some account of it. I may inform thee of the <damage><gap/></damage> decease of Silence Crispin which ate his supper in usual health &amp; as I was informed was taken soon after with a fit of the colic, <add>&amp;</add> was a corpse in half an hour <add>after he was taken.</add> Has left a poor afflicted widow that cannot take one step without help, nor has not this many years. As I have been informed <add>he</add> was buried this day three weeks. It will be agreeable to hear from thee often.</p> 
+            <closer>
+                <salute>So I conclude &amp; remain thy loving &amp; affectionate mother,</salute>
+                <signed><persName key="w6hv3dnq">Elizabeth Evans</persName></signed>
+            </closer>
+            <dateline><date when="1793-01-14">the 14 of the 1 mo 1793</date></dateline>
+            <postscript><p><label>PS</label> Don’t expect to come soon, but should be glad to see thee if the way opens</p></postscript>
+            </div>
+            <pb n="002" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>To <persName key="w6g77m31">Hannah Thornton</persName></addrLine>
+                <addrLine>in Byberry</addrLine></address>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>
