@@ -6,10 +6,10 @@
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 6 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,7 +22,7 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187366</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
@@ -34,32 +34,34 @@
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187366</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>2 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+                <p>The correspondence of the Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1790-01-17">17 of the 1 month 1790</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                    <term>Death</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Thornton, James, 1785-1858</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +73,28 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener>
+                <dateline>Byberry the <date when="1790-01-17">17 of the 1 month 1790</date></dateline>
+                <salute>My Dear Children,</salute>
+            </opener>
+            <p>It much affected me to hear of your afflictions, and the more <add>so</add>to think that it is so difficult for me to come to see you. I have very often thought of you and have had some hopes time back <add>of</add> hearing of your getting better. I may inform you a little of the circumstance of our family. </p>
+            <p>My dear <rs key="w6wt9jhx">husband</rs> has not missed one fit of the ague yet and has it at this time, a <add>nd</add> our poor sick lad is alive yet but I believe there are but few that see him that thinks he will live long. For hardly i think he has set up ten minutes at the time this three weeks. We are afraid to leave him alone many minutes at the time, for fear he should drop off and we not know of it. And I may say with thankfulness that the rest of our family is about as well <damage><gap/></damage> at present as is common for us to be. I think I have had my health rather better than common.</p> 
+            <closer>
+                <salute>So I conclude and remain your affectionate mother,</salute>
+                <signed><persName key="w6hv3dnq">Elizabeth Evans</persName> </signed>
+            </closer>
+            <postscript>
+                <label>PS</label><p>Please to remember my love to brother &amp; sister Thornton &amp; Jamie. Please to write &amp; let us know how they anyhow are, <add>and how</add> little Edmund is with that wheezing in his throat. And how you all are are. <persName key="w6hf8m7k">Joseph</persName>, it will be matter of joy to me that thee is restored to thy usual health again. My <rs key="w6wt9jhx">husband</rs> join with love to you all</p>
+            </postscript>
+            </div>
+            <pb n="002" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>To <persName key="w6hf8m7k">Joseph Thornton</persName></addrLine> 
+                <addrLine>with care</addrLine></address>
+            </closer>
+            
         </body>
     </text>
 </TEI>
