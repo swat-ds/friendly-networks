@@ -1,0 +1,101 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>James Thornton letter to Hannah Yarnal, 1803 10mo 4: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187372</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187372</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>3 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Yarnall family  is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1803-10-04">10th mo 4th 1803</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Voyages and travels</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Yarnall, Hannah Haines Thornton, 1765-1822</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Pelham <date when="1803-10-04">10th mo 4th 1803</date> </dateline>
+                    <salute>Dear Sister,</salute>
+                </opener>
+                <p>I take this opportunity to let thee know how and where we are by John Shoemaker, who we expect will be here this evening in order to attend Pelham Monthly meeting which is tomorrow, &amp; return homewards pretty soon. I expect now have <del>gotten</del> received a letter from Martha dated about two weeks back at Genesee River. We got to Black Creek settlement last fifth day, was a week left there on second day morning. Got to Pelham in the evening. We were at the falls of Niagara between Black Creek &amp; Pelham it was a very grand sight, a great body of water a great deal larger than Delaware that falls 150 feet perpendicular. We have had our health very well for the most part since we left home. Riding agrees with me very well, &amp; <rs key="w6g77m31">mother</rs> stands it quite as well as she expected very often think of thee and the rest of you, and hope in about 5 weeks to see you, but you must <del>you must</del> not be disappointed if we stay a week longer. We expect to <add>set</add> off on fifth day morning for Young Street, 3 days journey on a bad road. We think it likely we shall be about two weeks <del>gone</del> till we return here again. <del>&amp; then we</del></p>
+                <closer> 
+                    <salute>Not having anything more in particular to write, I conclude in love to you all and Uncle William’s family in <add>which</add> <rs key="w6g77m31">mother</rs> joins me– and reman thy affectionate <rs key="w6096wx2">Brother</rs></salute>
+                    <signed><persName key="w6096wx2">James Thornton</persName></signed>
+                </closer>
+            
+            <postscript><p><label>PS</label> Please to let <rs key="w6hv3dnq">grandmother Evans</rs> know how we are if you have any opportunity</p></postscript>
+            
+            <pb n="002" facs="xxxxx"/>
+                <postscript><p><persName key="w6096wx2">James Thornton</persName></p></postscript>
+            </div>
+            <pb n="003" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>Ruth Cadwallader</addrLine>
+                <addrLine>Byberry</addrLine>
+                <addrLine>Favored by J. Shoemaker</addrLine></address>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>
