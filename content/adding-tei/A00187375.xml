@@ -2,14 +2,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>XXXXX, [YYYY] [M]mo [D]: Electronic Version</title>
+                <title>Hannah Thornton letter to Rebecca Yarnall, 1795 8mo 21: Electronic Version</title>
                 <editor>Friends Historical Library of Swarthmore College</editor>
                 <respStmt>
                     <resp>TEI Markup done by</resp>
-                    <name>XXXXXX</name>
+                    <name>Victoria Kimmel</name>
                 </respStmt>
             </titleStmt>
-            <extent>ca. XXXXX KB</extent>
+            <extent>ca. 5 KB</extent>
             <publicationStmt>
                 <publisher>Friends Historical Library of Swarthmore College</publisher>
                 <address>
@@ -22,44 +22,45 @@
                     <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
                 </availability>
                 <date when="2023">2024</date>
-                <idno type="local">XXXXX</idno>
+                <idno type="local">A00187375</idno>
             </publicationStmt>
             <seriesStmt>
 				<title level="s" type="project">Friendly Networks</title>
 				<title level="s" type="series">
-				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
 				</title>
             </seriesStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>XXXXX</collection>
-                        <idno type="local">XXXXX</idno>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187375</idno>
                         <idno type="IslandoraNodeid">XXXXX</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>XXXXX pp.</p>
+                        <p>2 pp.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+                <p>The correspondence of the Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1795-08-21">8th mo 21st 1795</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             <textClass>
                 <keywords scheme="#lcsh">
-                    <term></term>
+                    <term>Domestci relations</term>
                 </keywords>
                 <keywords scheme="#lcnaf">
-                    <term></term>
+                    <term>Thornton, James, 1785-1858</term>
+                    <term>Yarnall, Peter, 1754-1798</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -71,6 +72,25 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener>
+                <dateline>Philadelphia <date when="1795-08-21">8th mo 21st 1795</date></dateline>
+                <salute>Dear Becky,</salute>
+            </opener>
+                <p>thy dear <rs key="w6kx66c3">father</rs> is in town, I saw him last evening. He is pretty well, says thy brother in Chester <add>County</add> is well. I often think of thee, my Dear Child. I hope thou has thy health and may be a good example to little <persName key="w6096wx2">James</persName>, <del>&amp;</del> I hope he is kind to thee, &amp; that you all live in love together. I cannot tell when I may return to you but I hope as soon as is right tell little <persName key="w6096wx2">James</persName> he should right to me thee first opportunity</p> 
+                <closer>
+                    <salute>In haste conclude with love, thy adopted caretaker</salute>
+                    <signed><persName key="w6g77m31">Hannah Thornton</persName></signed>
+                </closer>
+            </div>
+            <pb n="002" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>To Rebecca Yarnall</addrLine>
+                <addrLine>Byberry</addrLine></address>
+            </closer>
+            
+            
         </body>
     </text>
 </TEI>
