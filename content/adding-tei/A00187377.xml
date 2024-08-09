@@ -1,0 +1,91 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hannah Thornton letter to Peter Yarnall, 1796 2mo 3: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187377</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187377</idno>
+                        <idno type="IslandoraNodeid">XXXXX</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>1 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1796-02-03">2nd mo 3rd 1796</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Relgiious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Thornton, James, 1785-1858</term>
+                    <term>Yarnall, Peter, 1754-1798</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <opener>
+                <salute>Esteemed Friend <persName>Peter Yarnall</persName>,</salute>
+            </opener>
+            <p>Thy daughter is down with the measles. she has them finely, they began to turn on her last night. I propose leaving her this morning to attend our Quarterly Meeting in care of our Ruth, who with my <rs key="w6096wx2">son</rs> I expect shortly to take sick with it. I heard last week <add>all</add> thy children were well. Likewise thy companion’s family were well. Ebenezer Creeson, by whom received the above intelligence, is about trying to purchase a plantation in our neighborhood. Cousin Ruth Walmsley is just recruited from a severe spell of the colic, she has a minute to visit the family of Middleton Monthly Meeting. May her movements in some respects excite us of poor Byberry to more future industry to set our houses in order. We heard trenchantly severely by of your movements, &amp; was enabled to move forward in the line of your <add>duty,</add> which no doubt produces its reward. I hope adequate to the <damage><gap/></damage> of both body &amp; mind which I apprehend one not few, just so much from a poor unworthy sister. I hope in the
+                <note type="structure">written along side of page</note> Near fellowship of the gospel, if I may venture to use the expression.</p> 
+            <closer>
+                <salute>I salute thee &amp; thy companion, &amp; conclude your affectionate Friend,</salute> <persName key="w6g77m31">Hannah Thornton</persName>
+                <dateline>Byberry <date when="1796-02-03">2nd mo 3rd 1796</date></dateline> 
+            </closer>
+                
+        </body>
+    </text>
+</TEI>
