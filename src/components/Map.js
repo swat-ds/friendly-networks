@@ -53,10 +53,10 @@ const Map = (props) => {
   const addTextPath = (feature, layer) => {
     if (feature.geometry.type === "LineString") {
       layer.setText(
-        "▶", 
+        "➛", 
         {
           repeat: true,
-          offset: 5,
+          offset: 4,
           attributes: {
             fill: '#FAF8D6'
           }
@@ -66,7 +66,7 @@ const Map = (props) => {
   }
 
   const styleFunction = feature => {
-    return {color: "#636B42", weight: "10"}
+    return {color: "#636B42", weight: "6"}
   }
 
 
