@@ -8,7 +8,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-04"
+                "dateOfArrival": "1796-10-04",
+                "link": "/writings/A0011543#1796-10-04"
             },
             "geometry": {
                 "type": "Point",
@@ -26,7 +27,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "102.0",
-                "dateOfArrival": "1796-10-07"
+                "dateOfArrival": "1796-10-07",
+                "link": "/writings/A0011543#1796-10-07"
             },
             "geometry": {
                 "type": "Point",
@@ -44,7 +46,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-16"
+                "dateOfArrival": "1796-10-16",
+                "link": "/writings/A0011543#1796-10-16"
             },
             "geometry": {
                 "type": "Point",
@@ -62,7 +65,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-17"
+                "dateOfArrival": "1796-10-17",
+                "link": "/writings/A0011543#1796-10-17"
             },
             "geometry": {
                 "type": "Point",
@@ -80,7 +84,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-17"
+                "dateOfArrival": "1796-10-17",
+                "link": "/writings/A0011543#1796-10-17"
             },
             "geometry": {
                 "type": "Point",
@@ -98,7 +103,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-25"
+                "dateOfArrival": "1796-10-25",
+                "link": "/writings/A0011543#1796-10-25"
             },
             "geometry": {
                 "type": "Point",
@@ -116,7 +122,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-26"
+                "dateOfArrival": "1796-10-26",
+                "link": "/writings/A0011543#1796-10-26"
             },
             "geometry": {
                 "type": "Point",
@@ -134,7 +141,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-28"
+                "dateOfArrival": "1796-10-28",
+                "link": "/writings/A0011543#1796-10-28"
             },
             "geometry": {
                 "type": "Point",
@@ -152,7 +160,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-10-29"
+                "dateOfArrival": "1796-10-29",
+                "link": "/writings/A0011543#1796-10-29"
             },
             "geometry": {
                 "type": "Point",
@@ -188,7 +197,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "400.0",
-                "dateOfArrival": "1796-11-03"
+                "dateOfArrival": "1796-11-03",
+                "link": "/writings/A0011543#1796-11-03"
             },
             "geometry": {
                 "type": "Point",
@@ -206,7 +216,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1796-11-04"
+                "dateOfArrival": "1796-11-04",
+                "link": "/writings/A0011543#1796-11-04"
             },
             "geometry": {
                 "type": "Point",
@@ -224,7 +235,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1796-11-06"
+                "dateOfArrival": "1796-11-06",
+                "link": "/writings/A0011543#1796-11-06"
             },
             "geometry": {
                 "type": "Point",
@@ -242,7 +254,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "11.0",
-                "dateOfArrival": "1796-11-07"
+                "dateOfArrival": "1796-11-07",
+                "link": "/writings/A0011543#1796-11-07"
             },
             "geometry": {
                 "type": "Point",
@@ -260,7 +273,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "7.0",
-                "dateOfArrival": "1796-11-08"
+                "dateOfArrival": "1796-11-08",
+                "link": "/writings/A0011543#1796-11-08"
             },
             "geometry": {
                 "type": "Point",
@@ -278,7 +292,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "3.0",
-                "dateOfArrival": "1796-11-08"
+                "dateOfArrival": "1796-11-08",
+                "link": "/writings/A0011543#1796-11-08"
             },
             "geometry": {
                 "type": "Point",
@@ -296,7 +311,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "5.0",
-                "dateOfArrival": "1796-11-09"
+                "dateOfArrival": "1796-11-09",
+                "link": "/writings/A0011543#1796-11-09"
             },
             "geometry": {
                 "type": "Point",
@@ -314,7 +330,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "40.0",
-                "dateOfArrival": "1796-11-10"
+                "dateOfArrival": "1796-11-10",
+                "link": "/writings/A0011543#1796-11-10"
             },
             "geometry": {
                 "type": "Point",
@@ -332,7 +349,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1796-11-12"
+                "dateOfArrival": "1796-11-12",
+                "link": "/writings/A0011543#1796-11-12"
             },
             "geometry": {
                 "type": "Point",
@@ -350,7 +368,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1796-11-13"
+                "dateOfArrival": "1796-11-13",
+                "link": "/writings/A0011543#1796-11-13"
             },
             "geometry": {
                 "type": "Point",
@@ -368,7 +387,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-11-15"
+                "dateOfArrival": "1796-11-15",
+                "link": "/writings/A0011543#1796-11-15"
             },
             "geometry": {
                 "type": "Point",
@@ -386,7 +406,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1796-11-17"
+                "dateOfArrival": "1796-11-17",
+                "link": "/writings/A0011543#1796-11-17"
             },
             "geometry": {
                 "type": "Point",
@@ -404,7 +425,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1796-11-18"
+                "dateOfArrival": "1796-11-18",
+                "link": "/writings/A0011543#1796-11-18"
             },
             "geometry": {
                 "type": "Point",
@@ -458,7 +480,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
-                "dateOfArrival": "1796-11-23"
+                "dateOfArrival": "1796-11-23",
+                "link": "/writings/A0011543#1796-11-23"
             },
             "geometry": {
                 "type": "Point",
@@ -476,7 +499,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "28.0",
-                "dateOfArrival": "1796-11-24"
+                "dateOfArrival": "1796-11-24",
+                "link": "/writings/A0011543#1796-11-24"
             },
             "geometry": {
                 "type": "Point",
@@ -494,7 +518,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
-                "dateOfArrival": "1796-11-27"
+                "dateOfArrival": "1796-11-27",
+                "link": "/writings/A0011543#1796-11-27"
             },
             "geometry": {
                 "type": "Point",
@@ -512,7 +537,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "4.0",
-                "dateOfArrival": "1796-11-27"
+                "dateOfArrival": "1796-11-27",
+                "link": "/writings/A0011543#1796-11-27"
             },
             "geometry": {
                 "type": "Point",
@@ -530,7 +556,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-11-29"
+                "dateOfArrival": "1796-11-29",
+                "link": "/writings/A0011543#1796-11-29"
             },
             "geometry": {
                 "type": "Point",
@@ -548,7 +575,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1796-11-29"
+                "dateOfArrival": "1796-11-29",
+                "link": "/writings/A0011543#1796-11-29"
             },
             "geometry": {
                 "type": "Point",
@@ -566,7 +594,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
-                "dateOfArrival": "1796-12-01"
+                "dateOfArrival": "1796-12-01",
+                "link": "/writings/A0011543#1796-12-01"
             },
             "geometry": {
                 "type": "Point",
@@ -584,7 +613,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1796-12-03"
+                "dateOfArrival": "1796-12-03",
+                "link": "/writings/A0011543#1796-12-03"
             },
             "geometry": {
                 "type": "Point",
@@ -602,7 +632,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1796-12-04"
+                "dateOfArrival": "1796-12-04",
+                "link": "/writings/A0011543#1796-12-04"
             },
             "geometry": {
                 "type": "Point",
@@ -620,7 +651,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "100.0",
-                "dateOfArrival": "1796-12-06"
+                "dateOfArrival": "1796-12-06",
+                "link": "/writings/A0011543#1796-12-06"
             },
             "geometry": {
                 "type": "Point",
@@ -638,7 +670,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "170.0",
-                "dateOfArrival": "1796-12-07"
+                "dateOfArrival": "1796-12-07",
+                "link": "/writings/A0011543#1796-12-07"
             },
             "geometry": {
                 "type": "Point",
@@ -656,7 +689,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1796-12-18"
+                "dateOfArrival": "1796-12-18",
+                "link": "/writings/A0011543#1796-12-18"
             },
             "geometry": {
                 "type": "Point",
@@ -674,7 +708,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "38.0",
-                "dateOfArrival": "1796-12-20"
+                "dateOfArrival": "1796-12-20",
+                "link": "/writings/A0011543#1796-12-20"
             },
             "geometry": {
                 "type": "Point",
@@ -692,7 +727,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1796-12-25"
+                "dateOfArrival": "1796-12-25",
+                "link": "/writings/A0011543#1796-12-25"
             },
             "geometry": {
                 "type": "Point",
@@ -710,7 +746,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "40.0",
-                "dateOfArrival": "1796-12-27"
+                "dateOfArrival": "1796-12-27",
+                "link": "/writings/A0011543#1796-12-27"
             },
             "geometry": {
                 "type": "Point",
@@ -728,7 +765,8 @@ export const sj1 = {
                 "description": "Evans seems to have significantly underestimated the distance between Bear Creek and Turner Swamp",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1796-12-29"
+                "dateOfArrival": "1796-12-29",
+                "link": "/writings/A0011543#1796-12-29"
             },
             "geometry": {
                 "type": "Point",
@@ -746,7 +784,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "4.0",
-                "dateOfArrival": "1797-01-01"
+                "dateOfArrival": "1797-01-01",
+                "link": "/writings/A0011543#1797-01-01"
             },
             "geometry": {
                 "type": "Point",
@@ -764,7 +803,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-01-02"
+                "dateOfArrival": "1797-01-02",
+                "link": "/writings/A0011543#1797-01-02"
             },
             "geometry": {
                 "type": "Point",
@@ -782,7 +822,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-01-04"
+                "dateOfArrival": "1797-01-04",
+                "link": "/writings/A0011543#1797-01-04"
             },
             "geometry": {
                 "type": "Point",
@@ -800,7 +841,8 @@ export const sj1 = {
                 "description": "This is the historical location of Neuse Monthly Meeting given by the map in Weeks's \"Southern Quakers and Slavery\"",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-01-05"
+                "dateOfArrival": "1797-01-05",
+                "link": "/writings/A0011543#1797-01-05"
             },
             "geometry": {
                 "type": "Point",
@@ -836,7 +878,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-01-08"
+                "dateOfArrival": "1797-01-08",
+                "link": "/writings/A0011543#1797-01-08"
             },
             "geometry": {
                 "type": "Point",
@@ -854,7 +897,8 @@ export const sj1 = {
                 "description": "Evans seems to have significantly underestimated the distance between Holly Spring and Tar River",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "38.0",
-                "dateOfArrival": "1797-01-09"
+                "dateOfArrival": "1797-01-09",
+                "link": "/writings/A0011543#1797-01-09"
             },
             "geometry": {
                 "type": "Point",
@@ -872,7 +916,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "38.0",
-                "dateOfArrival": "1797-01-12"
+                "dateOfArrival": "1797-01-12",
+                "link": "/writings/A0011543#1797-01-12"
             },
             "geometry": {
                 "type": "Point",
@@ -890,7 +935,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-01-19"
+                "dateOfArrival": "1797-01-19",
+                "link": "/writings/A0011543#1797-01-19"
             },
             "geometry": {
                 "type": "Point",
@@ -908,7 +954,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "178.0",
-                "dateOfArrival": "1797-01-29"
+                "dateOfArrival": "1797-01-29",
+                "link": "/writings/A0011543#1797-01-29"
             },
             "geometry": {
                 "type": "Point",
@@ -926,7 +973,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "22.0",
-                "dateOfArrival": "1797-01-31"
+                "dateOfArrival": "1797-01-31",
+                "link": "/writings/A0011543#1797-01-31"
             },
             "geometry": {
                 "type": "Point",
@@ -944,7 +992,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "200.0",
-                "dateOfArrival": "1797-02-09"
+                "dateOfArrival": "1797-02-09",
+                "link": "/writings/A0011543#1797-02-09"
             },
             "geometry": {
                 "type": "Point",
@@ -962,7 +1011,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "56.0",
-                "dateOfArrival": "1797-02-14"
+                "dateOfArrival": "1797-02-14",
+                "link": "/writings/A0011543#1797-02-14"
             },
             "geometry": {
                 "type": "Point",
@@ -980,7 +1030,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "100.0",
-                "dateOfArrival": "1797-02-17"
+                "dateOfArrival": "1797-02-17",
+                "link": "/writings/A0011543#1797-02-17"
             },
             "geometry": {
                 "type": "Point",
@@ -998,7 +1049,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-02-19"
+                "dateOfArrival": "1797-02-19",
+                "link": "/writings/A0011543#1797-02-19"
             },
             "geometry": {
                 "type": "Point",
@@ -1016,7 +1068,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-02-22"
+                "dateOfArrival": "1797-02-22",
+                "link": "/writings/A0011543#1797-02-22"
             },
             "geometry": {
                 "type": "Point",
@@ -1034,7 +1087,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-02-23"
+                "dateOfArrival": "1797-02-23",
+                "link": "/writings/A0011543#1797-02-23"
             },
             "geometry": {
                 "type": "Point",
@@ -1052,7 +1106,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "100.0",
-                "dateOfArrival": "1797-03-12"
+                "dateOfArrival": "1797-03-12",
+                "link": "/writings/A0011543#1797-03-12"
             },
             "geometry": {
                 "type": "Point",
@@ -1070,7 +1125,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "40.0",
-                "dateOfArrival": "1797-03-13"
+                "dateOfArrival": "1797-03-13",
+                "link": "/writings/A0011543#1797-03-13"
             },
             "geometry": {
                 "type": "Point",
@@ -1088,7 +1144,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "14.0",
-                "dateOfArrival": "1797-03-16"
+                "dateOfArrival": "1797-03-16",
+                "link": "/writings/A0011543#1797-03-16"
             },
             "geometry": {
                 "type": "Point",
@@ -1106,7 +1163,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "39.0",
-                "dateOfArrival": "1797-03-20"
+                "dateOfArrival": "1797-03-20",
+                "link": "/writings/A0011543#1797-03-20"
             },
             "geometry": {
                 "type": "Point",
@@ -1124,7 +1182,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-03-27"
+                "dateOfArrival": "1797-03-27",
+                "link": "/writings/A0011543#1797-03-27"
             },
             "geometry": {
                 "type": "Point",
@@ -1142,7 +1201,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "35.0",
-                "dateOfArrival": "1797-03-28"
+                "dateOfArrival": "1797-03-28",
+                "link": "/writings/A0011543#1797-03-28"
             },
             "geometry": {
                 "type": "Point",
@@ -1160,7 +1220,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "53.0",
-                "dateOfArrival": "1797-03-30"
+                "dateOfArrival": "1797-03-30",
+                "link": "/writings/A0011543#1797-03-30"
             },
             "geometry": {
                 "type": "Point",
@@ -1178,7 +1239,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "149.0",
-                "dateOfArrival": "1797-04-04"
+                "dateOfArrival": "1797-04-04",
+                "link": "/writings/A0011543#1797-04-04"
             },
             "geometry": {
                 "type": "Point",
@@ -1196,7 +1258,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
-                "dateOfArrival": "1797-04-06"
+                "dateOfArrival": "1797-04-06",
+                "link": "/writings/A0011543#1797-04-06"
             },
             "geometry": {
                 "type": "Point",
@@ -1214,7 +1277,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-04-10"
+                "dateOfArrival": "1797-04-10",
+                "link": "/writings/A0011543#1797-04-10"
             },
             "geometry": {
                 "type": "Point",
@@ -1232,7 +1296,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-04-11"
+                "dateOfArrival": "1797-04-11",
+                "link": "/writings/A0011543#1797-04-11"
             },
             "geometry": {
                 "type": "Point",
@@ -1250,7 +1315,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
-                "dateOfArrival": "1797-04-13"
+                "dateOfArrival": "1797-04-13",
+                "link": "/writings/A0011543#1797-04-13"
             },
             "geometry": {
                 "type": "Point",
@@ -1268,7 +1334,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "14.0",
-                "dateOfArrival": "1797-04-17"
+                "dateOfArrival": "1797-04-17",
+                "link": "/writings/A0011543#1797-04-17"
             },
             "geometry": {
                 "type": "Point",
@@ -1286,7 +1353,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "150.0",
-                "dateOfArrival": "1797-04-18"
+                "dateOfArrival": "1797-04-18",
+                "link": "/writings/A0011543#1797-04-18"
             },
             "geometry": {
                 "type": "Point",
@@ -1304,7 +1372,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "32.0",
-                "dateOfArrival": "1797-04-22"
+                "dateOfArrival": "1797-04-22",
+                "link": "/writings/A0011543#1797-04-22"
             },
             "geometry": {
                 "type": "Point",
@@ -1322,7 +1391,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "24.0",
-                "dateOfArrival": "1797-04-24"
+                "dateOfArrival": "1797-04-24",
+                "link": "/writings/A0011543#1797-04-24"
             },
             "geometry": {
                 "type": "Point",
@@ -1340,7 +1410,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-04-25"
+                "dateOfArrival": "1797-04-25",
+                "link": "/writings/A0011543#1797-04-25"
             },
             "geometry": {
                 "type": "Point",
@@ -1358,7 +1429,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-04-27"
+                "dateOfArrival": "1797-04-27",
+                "link": "/writings/A0011543#1797-04-27"
             },
             "geometry": {
                 "type": "Point",
@@ -1376,7 +1448,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "32.0",
-                "dateOfArrival": "1797-04-29"
+                "dateOfArrival": "1797-04-29",
+                "link": "/writings/A0011543#1797-04-29"
             },
             "geometry": {
                 "type": "Point",
@@ -1394,7 +1467,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "13.0",
-                "dateOfArrival": "1797-04-30"
+                "dateOfArrival": "1797-04-30",
+                "link": "/writings/A0011543#1797-04-30"
             },
             "geometry": {
                 "type": "Point",
@@ -1412,7 +1486,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "22.0",
-                "dateOfArrival": "1797-05-01"
+                "dateOfArrival": "1797-05-01",
+                "link": "/writings/A0011543#1797-05-01"
             },
             "geometry": {
                 "type": "Point",
@@ -1430,7 +1505,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "33.0",
-                "dateOfArrival": "1797-05-02"
+                "dateOfArrival": "1797-05-02",
+                "link": "/writings/A0011543#1797-05-02"
             },
             "geometry": {
                 "type": "Point",
@@ -1448,7 +1524,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-05-03"
+                "dateOfArrival": "1797-05-03",
+                "link": "/writings/A0011543#1797-05-03"
             },
             "geometry": {
                 "type": "Point",
@@ -1466,7 +1543,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "6.0",
-                "dateOfArrival": "1797-05-04"
+                "dateOfArrival": "1797-05-04",
+                "link": "/writings/A0011543#1797-05-04"
             },
             "geometry": {
                 "type": "Point",
@@ -1484,7 +1562,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-05-05"
+                "dateOfArrival": "1797-05-05",
+                "link": "/writings/A0011543#1797-05-05"
             },
             "geometry": {
                 "type": "Point",
@@ -1502,7 +1581,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "23.0",
-                "dateOfArrival": "1797-05-08"
+                "dateOfArrival": "1797-05-08",
+                "link": "/writings/A0011543#1797-05-08"
             },
             "geometry": {
                 "type": "Point",
@@ -1520,7 +1600,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-05-09"
+                "dateOfArrival": "1797-05-09",
+                "link": "/writings/A0011543#1797-05-09"
             },
             "geometry": {
                 "type": "Point",
@@ -1538,7 +1619,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-05-10"
+                "dateOfArrival": "1797-05-10",
+                "link": "/writings/A0011543#1797-05-10"
             },
             "geometry": {
                 "type": "Point",
@@ -1556,7 +1638,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-05-11"
+                "dateOfArrival": "1797-05-11",
+                "link": "/writings/A0011543#1797-05-11"
             },
             "geometry": {
                 "type": "Point",
@@ -1574,7 +1657,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "17.0",
-                "dateOfArrival": "1797-05-13"
+                "dateOfArrival": "1797-05-13",
+                "link": "/writings/A0011543#1797-05-13"
             },
             "geometry": {
                 "type": "Point",
@@ -1592,7 +1676,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-05-16"
+                "dateOfArrival": "1797-05-16",
+                "link": "/writings/A0011543#1797-05-16"
             },
             "geometry": {
                 "type": "Point",
@@ -1610,7 +1695,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-05-17"
+                "dateOfArrival": "1797-05-17",
+                "link": "/writings/A0011543#1797-05-17"
             },
             "geometry": {
                 "type": "Point",
@@ -1628,7 +1714,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "14.0",
-                "dateOfArrival": "1797-05-17"
+                "dateOfArrival": "1797-05-17",
+                "link": "/writings/A0011543#1797-05-17"
             },
             "geometry": {
                 "type": "Point",
@@ -1646,7 +1733,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-05-21"
+                "dateOfArrival": "1797-05-21",
+                "link": "/writings/A0011543#1797-05-21"
             },
             "geometry": {
                 "type": "Point",
@@ -1664,7 +1752,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-05-22"
+                "dateOfArrival": "1797-05-22",
+                "link": "/writings/A0011543#1797-05-22"
             },
             "geometry": {
                 "type": "Point",
@@ -1682,7 +1771,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "15.0",
-                "dateOfArrival": "1797-05-23"
+                "dateOfArrival": "1797-05-23",
+                "link": "/writings/A0011543#1797-05-23"
             },
             "geometry": {
                 "type": "Point",
@@ -1700,7 +1790,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-05-24"
+                "dateOfArrival": "1797-05-24",
+                "link": "/writings/A0011543#1797-05-24"
             },
             "geometry": {
                 "type": "Point",
@@ -1718,7 +1809,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "17.0",
-                "dateOfArrival": "1797-05-29"
+                "dateOfArrival": "1797-05-29",
+                "link": "/writings/A0011543#1797-05-29"
             },
             "geometry": {
                 "type": "Point",
@@ -1736,7 +1828,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "22.0",
-                "dateOfArrival": "1797-05-31"
+                "dateOfArrival": "1797-05-31",
+                "link": "/writings/A0011543#1797-05-31"
             },
             "geometry": {
                 "type": "Point",
@@ -1754,7 +1847,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
-                "dateOfArrival": "1797-06-01"
+                "dateOfArrival": "1797-06-01",
+                "link": "/writings/A0011543#1797-06-01"
             },
             "geometry": {
                 "type": "Point",
@@ -1772,7 +1866,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-06-03"
+                "dateOfArrival": "1797-06-03",
+                "link": "/writings/A0011543#1797-06-03"
             },
             "geometry": {
                 "type": "Point",
@@ -1790,7 +1885,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-06-05"
+                "dateOfArrival": "1797-06-05",
+                "link": "/writings/A0011543#1797-06-05"
             },
             "geometry": {
                 "type": "Point",
@@ -1808,7 +1904,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "9.0",
-                "dateOfArrival": "1797-06-09"
+                "dateOfArrival": "1797-06-09",
+                "link": "/writings/A0011543#1797-06-09"
             },
             "geometry": {
                 "type": "Point",
@@ -1826,7 +1923,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "90.0",
-                "dateOfArrival": "1797-06-18"
+                "dateOfArrival": "1797-06-18",
+                "link": "/writings/A0011543#1797-06-18"
             },
             "geometry": {
                 "type": "Point",
@@ -1844,7 +1942,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "40.0",
-                "dateOfArrival": "1797-06-19"
+                "dateOfArrival": "1797-06-19",
+                "link": "/writings/A0011543#1797-06-19"
             },
             "geometry": {
                 "type": "Point",
@@ -1880,7 +1979,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-06-22"
+                "dateOfArrival": "1797-06-22",
+                "link": "/writings/A0011543#1797-06-22"
             },
             "geometry": {
                 "type": "Point",
@@ -1898,7 +1998,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "27.0",
-                "dateOfArrival": "1797-06-23"
+                "dateOfArrival": "1797-06-23",
+                "link": "/writings/A0011543#1797-06-23"
             },
             "geometry": {
                 "type": "Point",
@@ -1934,7 +2035,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "7.0",
-                "dateOfArrival": "1797-06-27"
+                "dateOfArrival": "1797-06-27",
+                "link": "/writings/A0011543#1797-06-27"
             },
             "geometry": {
                 "type": "Point",
@@ -1952,7 +2054,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-07-03"
+                "dateOfArrival": "1797-07-03",
+                "link": "/writings/A0011543#1797-07-03"
             },
             "geometry": {
                 "type": "Point",
@@ -1988,7 +2091,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "25.0",
-                "dateOfArrival": "1797-07-06"
+                "dateOfArrival": "1797-07-06",
+                "link": "/writings/A0011543#1797-07-06"
             },
             "geometry": {
                 "type": "Point",
@@ -2006,7 +2110,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
-                "dateOfArrival": "1797-07-07"
+                "dateOfArrival": "1797-07-07",
+                "link": "/writings/A0011543#1797-07-07"
             },
             "geometry": {
                 "type": "Point",
@@ -2024,7 +2129,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "150.0",
-                "dateOfArrival": "1797-07-27"
+                "dateOfArrival": "1797-07-27",
+                "link": "/writings/A0011543#1797-07-27"
             },
             "geometry": {
                 "type": "Point",
@@ -2042,7 +2148,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-07-28"
+                "dateOfArrival": "1797-07-28",
+                "link": "/writings/A0011543#1797-07-28"
             },
             "geometry": {
                 "type": "Point",
@@ -2060,7 +2167,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-07-30"
+                "dateOfArrival": "1797-07-30",
+                "link": "/writings/A0011543#1797-07-30"
             },
             "geometry": {
                 "type": "Point",
@@ -2078,7 +2186,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
-                "dateOfArrival": "1797-07-31"
+                "dateOfArrival": "1797-07-31",
+                "link": "/writings/A0011543#1797-07-31"
             },
             "geometry": {
                 "type": "Point",
@@ -2096,7 +2205,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "32.0",
-                "dateOfArrival": "1797-08-01"
+                "dateOfArrival": "1797-08-01",
+                "link": "/writings/A0011543#1797-08-01"
             },
             "geometry": {
                 "type": "Point",
@@ -2132,7 +2242,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "50.0",
-                "dateOfArrival": "1797-08-03"
+                "dateOfArrival": "1797-08-03",
+                "link": "/writings/A0011543#1797-08-03"
             },
             "geometry": {
                 "type": "Point",
@@ -2150,7 +2261,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "17.0",
-                "dateOfArrival": "1797-08-08"
+                "dateOfArrival": "1797-08-08",
+                "link": "/writings/A0011543#1797-08-08"
             },
             "geometry": {
                 "type": "Point",
@@ -2168,7 +2280,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "71.0",
-                "dateOfArrival": "1797-08-09"
+                "dateOfArrival": "1797-08-09",
+                "link": "/writings/A0011543#1797-08-09"
             },
             "geometry": {
                 "type": "Point",
@@ -2186,7 +2299,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "17.0",
-                "dateOfArrival": "1797-08-10"
+                "dateOfArrival": "1797-08-10",
+                "link": "/writings/A0011543#1797-08-10"
             },
             "geometry": {
                 "type": "Point",
@@ -2204,7 +2318,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "24.0",
-                "dateOfArrival": "1797-08-12"
+                "dateOfArrival": "1797-08-12",
+                "link": "/writings/A0011543#1797-08-12"
             },
             "geometry": {
                 "type": "Point",
@@ -2222,7 +2337,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "26.0",
-                "dateOfArrival": "1797-08-16"
+                "dateOfArrival": "1797-08-16",
+                "link": "/writings/A0011543#1797-08-16"
             },
             "geometry": {
                 "type": "Point",
@@ -2240,7 +2356,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "19.0",
-                "dateOfArrival": "1797-08-17"
+                "dateOfArrival": "1797-08-17",
+                "link": "/writings/A0011543#1797-08-17"
             },
             "geometry": {
                 "type": "Point",
@@ -2258,7 +2375,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "32.0",
-                "dateOfArrival": "1797-08-19"
+                "dateOfArrival": "1797-08-19",
+                "link": "/writings/A0011543#1797-08-19"
             },
             "geometry": {
                 "type": "Point",
@@ -2276,7 +2394,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-08-20"
+                "dateOfArrival": "1797-08-20",
+                "link": "/writings/A0011543#1797-08-20"
             },
             "geometry": {
                 "type": "Point",
@@ -2294,7 +2413,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "34.0",
-                "dateOfArrival": "1797-08-22"
+                "dateOfArrival": "1797-08-22",
+                "link": "/writings/A0011543#1797-08-22"
             },
             "geometry": {
                 "type": "Point",
@@ -2312,7 +2432,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-08-26"
+                "dateOfArrival": "1797-08-26",
+                "link": "/writings/A0011543#1797-08-26"
             },
             "geometry": {
                 "type": "Point",
@@ -2330,7 +2451,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-08-30"
+                "dateOfArrival": "1797-08-30",
+                "link": "/writings/A0011543#1797-08-30"
             },
             "geometry": {
                 "type": "Point",
@@ -2348,7 +2470,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "45.0",
-                "dateOfArrival": "1797-08-31"
+                "dateOfArrival": "1797-08-31",
+                "link": "/writings/A0011543#1797-08-31"
             },
             "geometry": {
                 "type": "Point",
@@ -2366,7 +2489,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "25.0",
-                "dateOfArrival": "1797-09-02"
+                "dateOfArrival": "1797-09-02",
+                "link": "/writings/A0011543#1797-09-02"
             },
             "geometry": {
                 "type": "Point",
@@ -2384,7 +2508,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "35.0",
-                "dateOfArrival": "1797-09-03"
+                "dateOfArrival": "1797-09-03",
+                "link": "/writings/A0011543#1797-09-03"
             },
             "geometry": {
                 "type": "Point",
@@ -2402,7 +2527,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "26.0",
-                "dateOfArrival": "1797-09-04"
+                "dateOfArrival": "1797-09-04",
+                "link": "/writings/A0011543#1797-09-04"
             },
             "geometry": {
                 "type": "Point",
@@ -2420,7 +2546,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-09-05"
+                "dateOfArrival": "1797-09-05",
+                "link": "/writings/A0011543#1797-09-05"
             },
             "geometry": {
                 "type": "Point",
@@ -2474,7 +2601,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "27.0",
-                "dateOfArrival": "1797-09-10"
+                "dateOfArrival": "1797-09-10",
+                "link": "/writings/A0011543#1797-09-10"
             },
             "geometry": {
                 "type": "Point",
@@ -2492,7 +2620,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-09-11"
+                "dateOfArrival": "1797-09-11",
+                "link": "/writings/A0011543#1797-09-11"
             },
             "geometry": {
                 "type": "Point",
@@ -2510,7 +2639,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "22.0",
-                "dateOfArrival": "1797-09-13"
+                "dateOfArrival": "1797-09-13",
+                "link": "/writings/A0011543#1797-09-13"
             },
             "geometry": {
                 "type": "Point",
@@ -2618,7 +2748,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "15.0",
-                "dateOfArrival": "1797-09-20"
+                "dateOfArrival": "1797-09-20",
+                "link": "/writings/A0011543#1797-09-20"
             },
             "geometry": {
                 "type": "Point",
@@ -2636,7 +2767,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-09-22"
+                "dateOfArrival": "1797-09-22",
+                "link": "/writings/A0011543#1797-09-22"
             },
             "geometry": {
                 "type": "Point",
@@ -2654,7 +2786,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "5.0",
-                "dateOfArrival": "1797-09-24"
+                "dateOfArrival": "1797-09-24",
+                "link": "/writings/A0011543#1797-09-24"
             },
             "geometry": {
                 "type": "Point",
@@ -2672,7 +2805,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-09-26"
+                "dateOfArrival": "1797-09-26",
+                "link": "/writings/A0011543#1797-09-26"
             },
             "geometry": {
                 "type": "Point",
@@ -2744,7 +2878,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-09-30"
+                "dateOfArrival": "1797-09-30",
+                "link": "/writings/A0011543#1797-09-30"
             },
             "geometry": {
                 "type": "Point",
@@ -2762,7 +2897,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-10-01"
+                "dateOfArrival": "1797-10-01",
+                "link": "/writings/A0011543#1797-10-01"
             },
             "geometry": {
                 "type": "Point",
@@ -2780,7 +2916,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "28.0",
-                "dateOfArrival": "1797-10-01"
+                "dateOfArrival": "1797-10-01",
+                "link": "/writings/A0011543#1797-10-01"
             },
             "geometry": {
                 "type": "Point",
@@ -2798,7 +2935,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-10-06"
+                "dateOfArrival": "1797-10-06",
+                "link": "/writings/A0011543#1797-10-06"
             },
             "geometry": {
                 "type": "Point",
@@ -2816,7 +2954,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "25.0",
-                "dateOfArrival": "1797-10-07"
+                "dateOfArrival": "1797-10-07",
+                "link": "/writings/A0011543#1797-10-07"
             },
             "geometry": {
                 "type": "Point",
@@ -2834,7 +2973,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "50.0",
-                "dateOfArrival": "1797-10-09"
+                "dateOfArrival": "1797-10-09",
+                "link": "/writings/A0011543#1797-10-09"
             },
             "geometry": {
                 "type": "Point",
@@ -2852,7 +2992,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-10-11"
+                "dateOfArrival": "1797-10-11",
+                "link": "/writings/A0011543#1797-10-11"
             },
             "geometry": {
                 "type": "Point",
@@ -2870,7 +3011,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-10-12"
+                "dateOfArrival": "1797-10-12",
+                "link": "/writings/A0011543#1797-10-12"
             },
             "geometry": {
                 "type": "Point",
@@ -2888,7 +3030,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "12.0",
-                "dateOfArrival": "1797-10-13"
+                "dateOfArrival": "1797-10-13",
+                "link": "/writings/A0011543#1797-10-13"
             },
             "geometry": {
                 "type": "Point",
@@ -2906,7 +3049,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "13.0",
-                "dateOfArrival": "1797-10-14"
+                "dateOfArrival": "1797-10-14",
+                "link": "/writings/A0011543#1797-10-14"
             },
             "geometry": {
                 "type": "Point",
@@ -2924,7 +3068,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "26.0",
-                "dateOfArrival": "1797-10-16"
+                "dateOfArrival": "1797-10-16",
+                "link": "/writings/A0011543#1797-10-16"
             },
             "geometry": {
                 "type": "Point",
@@ -2942,7 +3087,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "18.0",
-                "dateOfArrival": "1797-10-19"
+                "dateOfArrival": "1797-10-19",
+                "link": "/writings/A0011543#1797-10-19"
             },
             "geometry": {
                 "type": "Point",
@@ -2960,7 +3106,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-10-20"
+                "dateOfArrival": "1797-10-20",
+                "link": "/writings/A0011543#1797-10-20"
             },
             "geometry": {
                 "type": "Point",
@@ -2978,7 +3125,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-10-21"
+                "dateOfArrival": "1797-10-21",
+                "link": "/writings/A0011543#1797-10-21"
             },
             "geometry": {
                 "type": "Point",
@@ -2996,7 +3144,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "32.0",
-                "dateOfArrival": "1797-10-23"
+                "dateOfArrival": "1797-10-23",
+                "link": "/writings/A0011543#1797-10-23"
             },
             "geometry": {
                 "type": "Point",
@@ -3014,7 +3163,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "13.0",
-                "dateOfArrival": "1797-10-25"
+                "dateOfArrival": "1797-10-25",
+                "link": "/writings/A0011543#1797-10-25"
             },
             "geometry": {
                 "type": "Point",
@@ -3032,7 +3182,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-10-29"
+                "dateOfArrival": "1797-10-29",
+                "link": "/writings/A0011543#1797-10-29"
             },
             "geometry": {
                 "type": "Point",
@@ -3050,7 +3201,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "13.0",
-                "dateOfArrival": "1797-10-30"
+                "dateOfArrival": "1797-10-30",
+                "link": "/writings/A0011543#1797-10-30"
             },
             "geometry": {
                 "type": "Point",
@@ -3068,7 +3220,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "4.0",
-                "dateOfArrival": "1797-10-30"
+                "dateOfArrival": "1797-10-30",
+                "link": "/writings/A0011543#1797-10-30"
             },
             "geometry": {
                 "type": "Point",
@@ -3086,7 +3239,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "8.0",
-                "dateOfArrival": "1797-11-01"
+                "dateOfArrival": "1797-11-01",
+                "link": "/writings/A0011543#1797-11-01"
             },
             "geometry": {
                 "type": "Point",
@@ -3104,7 +3258,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "7.0",
-                "dateOfArrival": "1797-11-02"
+                "dateOfArrival": "1797-11-02",
+                "link": "/writings/A0011543#1797-11-02"
             },
             "geometry": {
                 "type": "Point",
@@ -3122,7 +3277,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "36.0",
-                "dateOfArrival": "1797-11-03"
+                "dateOfArrival": "1797-11-03",
+                "link": "/writings/A0011543#1797-11-03"
             },
             "geometry": {
                 "type": "Point",
@@ -3140,7 +3296,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-11-06"
+                "dateOfArrival": "1797-11-06",
+                "link": "/writings/A0011543#1797-11-06"
             },
             "geometry": {
                 "type": "Point",
@@ -3158,7 +3315,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-11-07"
+                "dateOfArrival": "1797-11-07",
+                "link": "/writings/A0011543#1797-11-07"
             },
             "geometry": {
                 "type": "Point",
@@ -3176,7 +3334,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "28.0",
-                "dateOfArrival": "1797-11-08"
+                "dateOfArrival": "1797-11-08",
+                "link": "/writings/A0011543#1797-11-08"
             },
             "geometry": {
                 "type": "Point",
@@ -3194,7 +3353,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "30.0",
-                "dateOfArrival": "1797-11-09"
+                "dateOfArrival": "1797-11-09",
+                "link": "/writings/A0011543#1797-11-09"
             },
             "geometry": {
                 "type": "Point",
@@ -3212,7 +3372,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "10.0",
-                "dateOfArrival": "1797-11-10"
+                "dateOfArrival": "1797-11-10",
+                "link": "/writings/A0011543#1797-11-10"
             },
             "geometry": {
                 "type": "Point",
@@ -3230,7 +3391,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
-                "dateOfArrival": "1797-11-13"
+                "dateOfArrival": "1797-11-13",
+                "link": "/writings/A0011543#1797-11-13"
             },
             "geometry": {
                 "type": "Point",
@@ -3248,7 +3410,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "17.0",
-                "dateOfArrival": "1797-11-14"
+                "dateOfArrival": "1797-11-14",
+                "link": "/writings/A0011543#1797-11-14"
             },
             "geometry": {
                 "type": "Point",
@@ -3266,7 +3429,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "50.0",
-                "dateOfArrival": "1797-11-16"
+                "dateOfArrival": "1797-11-16",
+                "link": "/writings/A0011543#1797-11-16"
             },
             "geometry": {
                 "type": "Point",
@@ -3284,7 +3448,8 @@ export const sj1 = {
                 "description": "Referred to as \"Massey\" Creek in travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "21.0",
-                "dateOfArrival": "1797-11-17"
+                "dateOfArrival": "1797-11-17",
+                "link": "/writings/A0011543#1797-11-17"
             },
             "geometry": {
                 "type": "Point",
@@ -3302,7 +3467,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "21.0",
-                "dateOfArrival": "1797-11-17"
+                "dateOfArrival": "1797-11-17",
+                "link": "/writings/A0011543#1797-11-17"
             },
             "geometry": {
                 "type": "Point",
@@ -3320,7 +3486,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-11-19"
+                "dateOfArrival": "1797-11-19",
+                "link": "/writings/A0011543#1797-11-19"
             },
             "geometry": {
                 "type": "Point",
@@ -3338,7 +3505,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "40.0",
-                "dateOfArrival": "1797-11-20"
+                "dateOfArrival": "1797-11-20",
+                "link": "/writings/A0011543#1797-11-20"
             },
             "geometry": {
                 "type": "Point",
@@ -3356,7 +3524,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-11-21"
+                "dateOfArrival": "1797-11-21",
+                "link": "/writings/A0011543#1797-11-21"
             },
             "geometry": {
                 "type": "Point",
@@ -3374,7 +3543,8 @@ export const sj1 = {
                 "description": "Included in journal narrative but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
-                "dateOfArrival": "1797-11-22"
+                "dateOfArrival": "1797-11-22",
+                "link": "/writings/A0011543#1797-11-22"
             },
             "geometry": {
                 "type": "Point",
@@ -3392,7 +3562,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "25.0",
-                "dateOfArrival": "1797-11-23"
+                "dateOfArrival": "1797-11-23",
+                "link": "/writings/A0011543#1797-11-23"
             },
             "geometry": {
                 "type": "Point",
@@ -3410,7 +3581,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "24.0",
-                "dateOfArrival": "1797-11-24"
+                "dateOfArrival": "1797-11-24",
+                "link": "/writings/A0011543#1797-11-24"
             },
             "geometry": {
                 "type": "Point",
@@ -3428,7 +3600,8 @@ export const sj1 = {
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "15.0",
-                "dateOfArrival": "1797-11-26"
+                "dateOfArrival": "1797-11-26",
+                "link": "/writings/A0011543#1797-11-26"
             },
             "geometry": {
                 "type": "Point",
