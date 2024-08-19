@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-import { GeoJSON, FeatureGroup, Popup, Marker, useMap } from 'react-leaflet'
+import { Popup, Marker, Polyline, useMap } from 'react-leaflet'
 import TextPath from 'react-leaflet-textpath' 
 // ^ Import necessary for access to setText property
 
@@ -14,18 +14,6 @@ const Map = (props) => {
 
   // Unpack props
   const {center, maxZoom, minZoom, startZoom, json, path} = props;
-
-  const layers = []
-
-  // Functions for onEachFeature in GeoJSON
-  const forFeature = (feature, layer) => {
-    if (feature.geometry.type === "Point") {
-      addPopup(feature, layer)
-    }
-    if (path) {
-      addTextPath(feature, layer)
-    }
-  }
   
   const PopupContent = ({feature}) => {    
     
@@ -66,38 +54,6 @@ const Map = (props) => {
     )
   }
 
-  // (this extracts the name from a feature to display in a pop-up)
-  const addPopup = (feature, layer) => {
-
-    layers.push(layer)
-    console.log(layers, layers[0]._leaflet_id);
-    layers[0].fire('click')
-
-    const popup = renderToString(
-      <Popup feature={feature} />
-    )
-    layer.bindPopup(popup);
-  }
-
-  // Adding text to line paths
-  const addTextPath = (feature, layer) => {
-    if (feature.geometry.type === "LineString") {
-      layer.setText(
-        "➛", 
-        {
-          repeat: true,
-          offset: 4,
-          attributes: {
-            fill: '#FAF8D6'
-          }
-        }
-      )
-    }
-  }
-
-  const styleFunction = feature => {
-    return {color: "#636B42", weight: "6"}
-  }
 
 
 const MapNavButton = ({index, direction}) => {
@@ -187,12 +143,6 @@ const MapNavButton = ({index, direction}) => {
               </Marker>
           )
         })}
-{/* 
-        <GeoJSON 
-          data={json} 
-          onEachFeature={forFeature} 
-          style={path ? styleFunction : null}
-        /> */}
         <MapZoomer data={json}/>
         {props.children}
       </MapContainer>
