@@ -156,6 +156,18 @@ const MapNavButton = ({index, direction}) => {
          subdomains={['mt0','mt1','mt2','mt3']}
        />
         {json.features.map((feature, index) => {
+          if (feature.geometry.type === "LineString") {
+            // Flip coordinates to lat,lng instead of lng,lat
+            const points = feature.geometry.coordinates.map(point => [point[1], [point[0]]])
+            return <TextPath 
+              positions={points} 
+              pathOptions={{color: "#636B42", weight: "6"}}
+              text=" ➛ "
+              repeat
+              offset={4}
+              attributes={{fill: '#FAF8D6'}}
+            />
+          }
           if (feature.geometry.type !== "Point") {
             return null
           }
