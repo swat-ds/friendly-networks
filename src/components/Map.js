@@ -122,11 +122,10 @@ const MapNavButton = ({index, direction}) => {
   <Button 
     variant="secondary" 
     onClick={() => {
-      console.log("layer", layer);
-      console.log("latlng", layer._latlng)
-      map.flyTo(layer._latlng, maxZoom)
+      map.flyTo(
+        layer._latlng, maxZoom, {duration: 0.9, noMoveStart: true}
+      )
       layer.openPopup()
-
     }}
     >
       {direction}
