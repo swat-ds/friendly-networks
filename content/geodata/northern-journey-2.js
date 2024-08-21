@@ -4,7 +4,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Evesham",
+        "name": "Newton",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "",
@@ -13,17 +13,17 @@ export const nj2 = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.8857989,
-          39.8522951,
-          0
-        ]
+          -75.0497448,
+          39.9105176,
+          0.0
+      ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Stony Brook Meeting House",
-        "description": "stayed at Abraham Warrington's",
+        "name": "Stony Brook",
+        "description": "Stayed at Abraham Warrington's",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "44",
         "dateOfArrival": "1795-04-15",
@@ -137,7 +137,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Marlboro",
-        "description": "stops at \"Newburgh Valley\"",
+        "description": "Intermediate stop at at \"Newburgh Valley\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "21",
         "dateOfArrival": "1795-04-25",
@@ -174,7 +174,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Crum Elbow Meeting House",
+        "name": "Crum Elbow",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "88",
@@ -193,7 +193,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Creek Meeting House",
+        "name": "Creek",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "17",
@@ -212,7 +212,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Nine Partners Meeting House",
+        "name": "Nine Partners",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "9",
@@ -251,7 +251,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Quaker Springs",
-        "description": "calls it \"Saratoga\"",
+        "description": "Calls it \"Saratoga\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "60",
         "dateOfArrival": "1795-05-11",
@@ -270,7 +270,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Saratoga Springs",
-        "description": "calls it \"Saratoga on the west side\"",
+        "description": "Calls it \"Saratoga on the west side\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
         "dateOfArrival": "1795-05-12",
@@ -361,7 +361,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Quaker Springs",
-        "description": "calls it \"Saratoga\"",
+        "description": "Calls it \"Saratoga\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "15",
         "dateOfArrival": ""
@@ -487,7 +487,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Ferrisburgh",
-        "description": "visited Jonathan Hoag's",
+        "description": "Visited Jonathan Hoag's",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "4",
         "dateOfArrival": ""
@@ -956,7 +956,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "St. Andrews",
-        "description": "says he went to \"Passamaquoddy\" at the mouth of St Croix",
+        "description": "Location approximate. Evans wrote that he went to \"Passamaquoddy\" at the mouth of St Croix",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
         "dateOfArrival": "1795-08-14",
@@ -994,7 +994,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Addison",
-        "description": "Only refers to going to \"Pleasant River\"",
+        "description": "Location approximate. Evans only wrote that he went to \"Pleasant River\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
         "dateOfArrival": "1795-08-17",
@@ -1431,7 +1431,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Stockbridge",
-        "description": "visits Robert Nesbet",
+        "description": "Visits Robert Nesbet",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "32",
         "dateOfArrival": "1795-10-03",
@@ -1507,7 +1507,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Peach Lake",
-        "description": "says \"Peach Pond\"; goes to \"the Valley\"",
+        "description": "Says \"Peach Pond\"; goes to \"the Valley\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "22",
         "dateOfArrival": "1795-10-11",
@@ -1544,7 +1544,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Nine Partners Meeting House",
+        "name": "Nine Partners",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
@@ -1563,7 +1563,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Creek Meeting House",
+        "name": "Creek",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
@@ -1601,7 +1601,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Creek Meeting House",
+        "name": "Creek",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "11",
@@ -1620,7 +1620,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Nine Partners Meeting House",
+        "name": "Nine Partners",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
@@ -1639,7 +1639,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Creek Meeting House",
+        "name": "Creek",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "8",
@@ -1658,8 +1658,8 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Poughkeepsie Friends Quaker Meeting",
-        "description": "calls it \"Oswego meeting house\"",
+        "name": "Poughkeepsie",
+        "description": "Calls it \"Oswego meeting house\"",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "25",
         "dateOfArrival": "1795-10-23",
@@ -1696,7 +1696,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Friends Oblong Meeting House and Cemetary",
+        "name": "Oblong",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "9",
@@ -1715,7 +1715,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Nine Partners Meeting House",
+        "name": "Nine Partners",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
@@ -1751,11 +1751,12 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Friends Oblong Meeting House and Cemetary",
+        "name": "Oblong",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "65",
-        "dateOfArrival": ""
+        "dateOfArrival": "",
+        "link": ""
       },
       "geometry": {
         "type": "Point",
@@ -1789,7 +1790,7 @@ export const nj2 = {
       "type": "Feature",
       "properties": {
         "name": "Chappaqua",
-        "description": "goes to \"Colebark\"",
+        "description": "Stopped at \"Colebark\" on the way",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "20",
         "dateOfArrival": "1795-11-20",
@@ -1826,7 +1827,7 @@ export const nj2 = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Evesham",
+        "name": "Newton",
         "description": "",
         "styleUrl": "#icon-1899-0288D1",
         "distance": "100",
@@ -1836,9 +1837,9 @@ export const nj2 = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.8857989,
-          39.8522951,
-          0
+            -75.0497448,
+            39.9105176,
+            0.0
         ]
       }
     },
@@ -1849,8 +1850,8 @@ export const nj2 = {
         "type": "LineString",
         "coordinates": [
           [
-            -74.8857989,
-            39.8522951
+            -75.0497448,
+            39.9105176
           ],
           [
             -74.6769958,
@@ -2258,8 +2259,8 @@ export const nj2 = {
             40.7127753
           ],
           [
-            -74.8857989,
-            39.8522951
+            -75.0497448,
+            39.9105176
           ]
         ]
       }

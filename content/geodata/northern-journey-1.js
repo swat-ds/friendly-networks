@@ -4,7 +4,7 @@ export const nj1 = {
         {
             "type": "Feature",
             "properties": {
-                "name": "Evesham",
+                "name": "Newton",
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
@@ -14,8 +14,8 @@ export const nj1 = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.8857989,
-                    39.8522951,
+                    -75.0497448,
+                    39.9105176,
                     0.0
                 ]
             }
@@ -419,7 +419,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Newtown",
-                "description": "Distance is unexpectedly long",
+                "description": "Distance recorded by Evans is unexpectedly long",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
                 "roads": "part good",
@@ -659,7 +659,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Newport",
-                "description": "Attends yearly meeting",
+                "description": "Attended yearly meeting",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "4.0",
                 "roads": "",
@@ -797,7 +797,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Apponagansett",
-                "description": "Stops at \"New Rochelle\", \"Center\", \"Newtown\"",
+                "description": "Evans recorded intermediate stops at \"New Rochelle\", \"Center\", \"Newtown\". This may be an error for stops earlier in his trip.",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
                 "roads": "bad",
@@ -897,7 +897,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Nantucket",
-                "description": "Attends quarterly meeting",
+                "description": "Attended quarterly meeting",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
                 "roads": "by water",
@@ -1396,7 +1396,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Portsmouth",
-                "description": "Attends quarterly meeting",
+                "description": "Attended quarterly meeting",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "11.0",
                 "roads": "",
@@ -2296,7 +2296,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Richmond",
-                "description": "This is a guess at where George Ramsdel may have lived",
+                "description": "This marker is a guess at where George Ramsdel may have lived",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "20.0",
                 "roads": "",
@@ -2316,7 +2316,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Bowdoinham",
-                "description": "Also travels to Henry Dearborn's",
+                "description": "Also traveled to Henry Dearborn's",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "7.0",
                 "roads": "",
@@ -2496,7 +2496,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Dover",
-                "description": "Attends monthly meeting",
+                "description": "Attended monthly meeting",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "60.0",
                 "roads": "",
@@ -2893,7 +2893,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Crosswicks",
-                "description": "Visits Samuel Brown's",
+                "description": "Visited Samuel Brown's",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "16.0",
                 "roads": "",
@@ -2913,7 +2913,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Arneytown",
-                "description": "Visits Robin's",
+                "description": "Visited Robin's",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "19.0",
                 "roads": "",
@@ -3033,7 +3033,7 @@ export const nj1 = {
             "type": "Feature",
             "properties": {
                 "name": "Springfield",
-                "description": "Visits John Wright's",
+                "description": "Visited John Wright's",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "9.0",
                 "roads": "",
@@ -3043,8 +3043,8 @@ export const nj1 = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.3222146,
-                    40.7016937,
+                    -74.710125,
+                    40.041216,
                     0.0
                 ]
             }
@@ -3091,11 +3091,30 @@ export const nj1 = {
         },
         {
             "type": "Feature",
+            "properties": {
+                "name": "Newton",
+                "description": "",
+                "styleUrl": "#icon-1899-0288D1",
+                "distance": "",
+                "dateOfArrival": "1794-12-06",
+                "link": "/writings/A0011541#1794-12-06"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.0497448,
+                    39.9105176,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
             "properties": {},
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
-                    [-74.8857989, 39.8522951, 0],
+                    [-75.0497448, 39.9105176, 0],
                     [-74.8648873, 40.071222, 0],
                     [-74.6473956, 40.1533063, 0],
                     [-74.6672226, 40.3572976, 0],
@@ -3247,9 +3266,10 @@ export const nj1 = {
                     [-74.8648873, 40.071222, 0],
                     [-74.7183641, 40.0799767, 0],
                     [-74.6473956, 40.1533063, 0],
-                    [-74.3222146, 40.7016937, 0],
+                    [-74.710125, 40.041216, 0],
                     [-74.7879393, 39.9931438, 0],
-                    [-74.8857989, 39.8522951, 0]
+                    [-74.8857989, 39.8522951, 0],
+                    [-75.0497448, 39.9105176, 0]
                 ]
             }
         }

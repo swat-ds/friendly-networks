@@ -89,8 +89,8 @@ export const sj2 = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -76.2363248,
-                    39.9025084,
+                    -75.387693,
+                    39.916778,
                     0.0
                 ]
             }
@@ -706,8 +706,8 @@ export const sj2 = {
         {
             "type": "Feature",
             "properties": {
-                "name": "Wrightstown",
-                "description": "",
+                "name": "Westtown",
+                "description": "Evans wrote \"Wrightstown\", a meeting some 40 miles away in Bucks County. This is likely an error for \"Westtown\", the point marked here.",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "7.0",
                 "dateOfArrival": "1798-06-14",
@@ -716,8 +716,8 @@ export const sj2 = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.9809261,
-                    40.2655249,
+                    -75.5475,
+                    39.950556,
                     0.0
                 ]
             }
@@ -764,7 +764,7 @@ export const sj2 = {
             "type": "Feature",
             "properties": {
                 "name": "Uwchlan",
-                "description": "included in journal but omitted from travel log",
+                "description": "Included in journal but omitted from travel log",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
                 "dateOfArrival": "1798-06-16",
@@ -915,7 +915,7 @@ export const sj2 = {
         {
             "type": "Feature",
             "properties": {
-                "name": "Providence",
+                "name": "Upper Providence",
                 "description": "",
                 "styleUrl": "#icon-1899-0288D1",
                 "distance": "",
@@ -925,8 +925,8 @@ export const sj2 = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -76.2363248,
-                    39.9025084,
+                    -75.480546,
+                    40.152224,
                     0.0
                 ]
             }
@@ -1087,8 +1087,8 @@ export const sj2 = {
                         39.849557
                     ],
                     [
-                        -76.2363248,
-                        39.9025084
+                        -75.387693,
+                        39.916778
                     ],
                     [
                         -75.436303,
@@ -1223,8 +1223,8 @@ export const sj2 = {
                         39.9912312
                     ],
                     [
-                        -74.9809261,
-                        40.2655249
+                        -75.5475,
+                        39.950556
                     ],
                     [
                         -75.4960355,
@@ -1267,8 +1267,8 @@ export const sj2 = {
                         40.0569633
                     ],
                     [
-                        -76.2363248,
-                        39.9025084
+                        -75.480546,
+                        40.152224
                     ],
                     [
                         -75.2793886,
