@@ -4,9 +4,8 @@ import { Button } from "react-bootstrap";
 import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
-import { Popup, Marker, Polyline, useMap } from 'react-leaflet'
+import { Popup, Marker, useMap } from 'react-leaflet'
 import TextPath from 'react-leaflet-textpath' 
-// ^ Import necessary for access to setText property
 
 import "../styles/map.scss";
 
@@ -47,9 +46,12 @@ const Map = (props) => {
     return (
       <div>
         <h3>{feature.properties.name + state}</h3>
-        {arrived}
-        {distance}
-        {notes}
+        <p>
+          {arrived}
+          {distance}
+          {notes}
+          {link}
+        </p>
       </div>
     )
   }
@@ -60,14 +62,12 @@ const MapNavButton = ({index, direction}) => {
   const map = useMap()
 
   // Calculate target index
-  const target = direction === "Next" ? index+1 : index-1;
-  console.log("target", target);
+  const target = direction === "Next" ? index-1 : index+1;
 
   // Look for relevant layer
   const layers = Object.values(map._layers).filter( 
     el => el?.options?.id === target
   )
-  console.log(Object.values(map._layers).map(el => el));
   
   // Exit if no relevant marker exists (e.g., first/last in sequence)
   if (layers.length === 0) {return null}
@@ -79,7 +79,7 @@ const MapNavButton = ({index, direction}) => {
     variant="secondary" 
     onClick={() => {
       map.flyTo(
-        layer._latlng, maxZoom, {duration: 0.9, noMoveStart: true}
+        layer._latlng, maxZoom, {duration: 0.5, animate: true}
       )
       layer.openPopup()
     }}
@@ -111,7 +111,7 @@ const MapNavButton = ({index, direction}) => {
          minZoom={minZoom}
          subdomains={['mt0','mt1','mt2','mt3']}
        />
-        {json.features.map((feature, index) => {
+        {json.features.reverse().map((feature, index) => {
           if (feature.geometry.type === "LineString") {
             // Flip coordinates to lat,lng instead of lng,lat
             const points = feature.geometry.coordinates.map(point => [point[1], [point[0]]])
@@ -124,24 +124,23 @@ const MapNavButton = ({index, direction}) => {
               attributes={{fill: '#FAF8D6'}}
             />
           }
-          if (feature.geometry.type !== "Point") {
-            return null
+          if (feature.geometry.type === "Point") {
+            return(
+                <Marker id={index} position={[
+                    feature.geometry.coordinates[1],
+                    feature.geometry.coordinates[0]
+                  ]}>
+                  <Popup>
+                    <PopupContent feature={feature}/>
+                    {path ? <div className="mapButtons">
+                      <MapNavButton index={index} direction="Prev"/>
+                      <MapNavButton index={index} direction="Next"/> 
+                    </div>
+                    : null}
+                  </Popup>
+                </Marker>
+            )
           }
-          return(
-              <Marker id={index} position={[
-                  feature.geometry.coordinates[1],
-                  feature.geometry.coordinates[0]
-                ]}>
-                <Popup>
-                  <PopupContent feature={feature}/>
-                  {path ? <>
-                    <MapNavButton index={index} direction="Prev"/>
-                    <MapNavButton index={index} direction="Next"/> 
-                  </>
-                  : null}
-                </Popup>
-              </Marker>
-          )
         })}
         <MapZoomer data={json}/>
         {props.children}
