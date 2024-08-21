@@ -21,9 +21,11 @@ div div.leaflet-bar a {
 
 #map-choice {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   * {
+    vertical-align: middle;
     color: var(--bs-secondary);
+    text
     &:focus {
       box-shadow: none !important;
     }

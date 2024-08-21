@@ -106,6 +106,11 @@ const NavBar = (props) => {
                     Network
                   </Nav.Link>
                 </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/map" activeClassName="active">
+                    Map
+                  </Nav.Link>
+                </Nav.Item>
                 <NavDropdown title="Background" id="background-dropdown">
                   <NavDropdown.Item
                     as={Link}
