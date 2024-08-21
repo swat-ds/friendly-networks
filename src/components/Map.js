@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { renderToString } from 'react-dom/server'
+import React from "react";
+import { Link } from "gatsby";
 import { Button } from "react-bootstrap";
 import L from "leaflet";
 import { MapContainer } from 'react-leaflet/MapContainer'
@@ -40,8 +40,12 @@ const Map = (props) => {
     //Notes
     var notes;
     if (feature.properties.description) {
-      notes = <><strong>Note: </strong> 
+      notes = <><strong>Note: </strong><br/> 
         {feature.properties.description}<br/></>
+    }
+    var link;
+    if (feature.properties.link) {
+      link = <strong><Link to={feature.properties.link}>Journal Entry</Link></strong>
     }
     return (
       <div>
@@ -104,6 +108,8 @@ const MapNavButton = ({index, direction}) => {
       <MapContainer 
         center={center} zoom={startZoom} scrollWheelZoom={true} path={path}
       >
+        {/* <TileLayer
+        attribution='Tiles &copy; Esri &mdash; Source: Esri'
         <TileLayer
          attribution='GOOGLE'
          url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
