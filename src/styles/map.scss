@@ -38,3 +38,13 @@ div div.leaflet-bar a {
 #map-col .leaflet-container {
   height: 70vh;
 }
+
+div.mapButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+    button {
+    margin: 1px;
+  }
+}
