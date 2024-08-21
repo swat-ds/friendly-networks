@@ -60,8 +60,6 @@ const Map = (props) => {
     )
   }
 
-
-
 const MapNavButton = ({index, direction}) => {
   const map = useMap()
 
@@ -110,8 +108,19 @@ const MapNavButton = ({index, direction}) => {
       >
         {/* <TileLayer
         attribution='Tiles &copy; Esri &mdash; Source: Esri'
+        url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}'
+        maxZoom={maxZoom}
+        minZoom={minZoom}
+        />
         <TileLayer
-         attribution='GOOGLE'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url='https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png'
+          subdomains={"abcd"}
+          maxZoom={maxZoom}
+          minZoom={minZoom}
+          /> */}
+        <TileLayer
+         attribution='Tiles &copy; Google &mdash; Source: Google'
          url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
          maxZoom={maxZoom}
          minZoom={minZoom}
