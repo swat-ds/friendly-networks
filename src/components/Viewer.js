@@ -1,4 +1,6 @@
+import { TileSource } from "openseadragon";
 import * as React from "react";
+// import OpenSeaDragon from "openseadragon"
 
 const Viewer = ({ tileSources, currentPage }) => {
   // Create a ref for the viewer.
@@ -9,38 +11,41 @@ const Viewer = ({ tileSources, currentPage }) => {
     if (tileSources && viewer) {
       viewer.goToPage(currentPage);
     }
-  }, [currentPage]);
+  }, [currentPage, tileSources.length, viewer]);
 
-  // When the component mounts, check if window and document are available. If they aren't,
-  // then we can't render the viewer.
-  // If they are available, the OpenSeaDragon viewer will be lazy loaded, and instantiated.
+  // When the component mounts, check if window and document are available.
+  // If they aren't, then we can't render the viewer.
+  // If they are available, the OpenSeaDragon viewer will be 
+  // lazy loaded, and instantiated.
   React.useEffect(() => {
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-      import("openseadragon").then((OpenSeaDragon) => {
+    if (
+      typeof window !== "undefined" 
+      && typeof document !== "undefined"
+      && tileSources.length > 0
+  ) {
+      import("openseadragon").then((OpenSeaDragon) => { // Why are we importing this here?
+        // Currently it means that we have to reimport if deps change
 
-        const InitOpenSeadragon = () => {
-          viewer && viewer.destroy();
+        const InitOpenSeadragon = (viewerParam, tileParam) => {
+          viewerParam && viewerParam.destroy();
           
           // Create the viewer.
-          const viewer = new OpenSeaDragon.default({
+          const newViewer = new OpenSeaDragon.default({
             element: viewerRef.current,
-            tileSources: tileSources,
+            tileSources: tileParam,
             showNavigator: true,
-            showRotationControl: true, // Show rotation buttons
+            showRotationControl: true,
             prefixUrl: "//openseadragon.github.io/openseadragon/images/",
             nextButton: "nonexistant",
             previousButton: "nonexistant",
             sequenceMode: true,
           });
-          setViewer(viewer);
+          setViewer(newViewer);
         };
-        InitOpenSeadragon();
+        InitOpenSeadragon(viewer, tileSources);
       });
     }
-    return () => {
-      viewer && viewer.destroy();
-    };
-  }, []);
+  }, [tileSources.length]);
 
   return (
     <div
