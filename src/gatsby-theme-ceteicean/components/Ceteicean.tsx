@@ -1,17 +1,11 @@
 import React from "react"
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
-import { graphql } from "gatsby";
-import Volume from '../../components/Volume'
-import { SEO } from "../../components/SEO";
-
 import * as El from "./Elements"
 import "../../styles/styles.scss";
 
 
 
-const ShadowedCeteicean = ({pageContext, data, location}) => {
-
-  let hash = location.hash;
+const ShadowedCeteicean = ({pageContext}) => {
 
   const routes = {
     "tei-teiheader": El.TeiHeader,
@@ -58,31 +52,9 @@ const ShadowedCeteicean = ({pageContext, data, location}) => {
   };
 
   return (
-    <Volume pageContext={pageContext} data={data} hash={hash}>
       <Ceteicean pageContext={pageContext} routes={routes} />
-    </Volume>
   );
 
 }
 
-export const query = graphql`
-  {
-    allCetei {
-      totalCount
-      nodes {
-        original
-        parent {
-          ... on File {
-            id
-            name
-          }
-        }
-      }
-    }
-  }
-`;
 export default ShadowedCeteicean
-
-export const Head = () => (
-  <SEO title="Writings - Friendly Networks"/>
-)

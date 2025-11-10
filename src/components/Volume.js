@@ -1,10 +1,14 @@
 import React, { useMemo } from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Link, navigate } from "gatsby";
+import { Link, navigate, graphql } from "gatsby";
 import "../styles/volume.scss";
+import "../styles/styles.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
+import ShadowedCeteicean from "../gatsby-theme-ceteicean/components/Ceteicean";
+import { Seo } from "../components/SEO";
+
 
 
 
@@ -359,7 +363,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
               ref={containerRef}
               onScroll={handleScroll}
             >
-              {props.children}
+              <ShadowedCeteicean pageContext={pageContext} />
             </div>
           </Col>
         </Row>
@@ -405,4 +409,25 @@ let counter = 0; // counter to track the index of each transcript (cetei)
   );
 };
 
+export const query = graphql`
+  {
+    allCetei {
+      totalCount
+      nodes {
+        original
+        parent {
+          ... on File {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+
 export default Volume;
+
+export const Head = () => (
+  <Seo title="Writings - Friendly Networks"/>
+)
