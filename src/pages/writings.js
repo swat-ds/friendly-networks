@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import "../styles/pageStyles.scss"
@@ -247,7 +247,7 @@ export const data = graphql`
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Writings - Friendly Networks"/>
+  <Seo title="Writings - Friendly Networks"/>
 )
 
 export default WritingsPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { SEO } from "../../components/SEO";
+import { Seo } from "../../components/SEO";
 import {Row, Col} from 'react-bootstrap';
 import HomepageCards from "../../components/HomepageCards"
 // import "../../../assets/styles/pageStyles.scss";
@@ -47,7 +47,7 @@ const quaker_bg = () => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="The Society of Friends - Friendly Networks"/>
+  <Seo title="The Society of Friends - Friendly Networks"/>
 )
 
 export default quaker_bg;

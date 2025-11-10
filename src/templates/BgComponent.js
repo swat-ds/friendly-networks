@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import {Row, Col, Card} from 'react-bootstrap'
 import "../styles/styles.scss"
 import "../styles/background.scss";
@@ -22,7 +22,7 @@ const BgComponent = ({pageContext}) => {
 
 
 export const Head = ({pageContext}) => (
-  <SEO title={pageContext.title + " - Friendly Networks"}/>
+  <Seo title={pageContext.title + " - Friendly Networks"}/>
 )
 
 export default BgComponent

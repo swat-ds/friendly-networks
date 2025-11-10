@@ -5,7 +5,7 @@ import { Row, Col, Card } from "react-bootstrap";
 
 //Local imports
 import Layout from "./Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import Map from "./Map";
 import RelationCardDeck from "./RelationCardDeck";
 import { months } from "../globalVariables.js";
@@ -603,7 +603,7 @@ export default Person;
 
 // Enrich <head> tag
 export const Head = (props) => (
-  <SEO title={props.pageContext.nameEntries[0].original.replace("approximately ", "") + " - Friendly Networks"}/>
+  <Seo title={props.pageContext.nameEntries[0].original.replace("approximately ", "") + " - Friendly Networks"}/>
 )
 
 export const query = graphql`
