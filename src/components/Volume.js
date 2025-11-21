@@ -140,7 +140,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     // Redirect from /[id] to /writings/[id]
     useEffect(() => {
-      if (document && ! document.location.pathname.includes("writings")) {
+      if (typeof document !== "undefined" && ! document.location.pathname.includes("writings")) {
         document.location.replace("/writings" + document.location.pathname);
       }
     }, [])

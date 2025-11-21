@@ -1,4 +1,3 @@
-import { TileSource } from "openseadragon";
 import * as React from "react";
 // import OpenSeaDragon from "openseadragon"
 
@@ -19,13 +18,11 @@ const Viewer = ({ tileSources, currentPage }) => {
   // lazy loaded, and instantiated.
   React.useEffect(() => {
     if (
-      typeof window !== "undefined" 
+      tileSources.length > 0
+      && typeof window !== "undefined" 
       && typeof document !== "undefined"
-      && tileSources.length > 0
   ) {
-      import("openseadragon").then((OpenSeaDragon) => { // Why are we importing this here?
-        // Currently it means that we have to reimport if deps change
-
+      import("openseadragon").then((OpenSeaDragon) => {
         const InitOpenSeadragon = (viewerParam, tileParam) => {
           viewerParam && viewerParam.destroy();
           
