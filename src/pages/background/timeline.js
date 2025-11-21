@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { SEO } from "../../components/SEO";
+import { Seo } from "../../components/SEO";
 import Timeline from "../../components/Timeline";
 import { Row, Col } from "react-bootstrap";
 import "../../styles/pageStyles.scss";
@@ -24,7 +24,7 @@ const timeline = () => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Hunt Timeline - Friendly Networks"/>
+  <Seo title="Hunt Timeline - Friendly Networks"/>
 )
 
 export default timeline;

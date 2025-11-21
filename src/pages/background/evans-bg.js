@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { SEO } from "../../components/SEO";
+import { Seo } from "../../components/SEO";
 import { Row } from "react-bootstrap";
 import "../../styles/pageStyles.scss";
 import backgroundCards from "../../components/BackgroundCards"
@@ -48,7 +48,7 @@ const author_bg = () => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Joshua Evans - Friendly Networks"/>
+  <Seo title="Joshua Evans - Friendly Networks"/>
 )
 
 export default author_bg;

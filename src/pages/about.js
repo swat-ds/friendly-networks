@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import { Link } from "gatsby";
 import "../styles/pageStyles.scss";
 import { globalVariables } from "../globalVariables";
@@ -35,6 +35,6 @@ const about = () => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="About - Friendly Networks"/>
+  <Seo title="About - Friendly Networks"/>
 )
 export default about;

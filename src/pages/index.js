@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import HomepageCards from "../components/HomepageCards"
 import { Row, Col } from "react-bootstrap";
 import "../styles/styles.scss";
@@ -119,5 +119,5 @@ export default home
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO />
+  <Seo />
 )

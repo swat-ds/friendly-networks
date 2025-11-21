@@ -2,6 +2,7 @@ const axios = require("axios");
 const constellationData = require("./content/constellationsForInclusion.json");
 const PeopleComponent = require.resolve(`./src/components/Person.js`);
 const bgComponent = require.resolve(`./src/templates/BgComponent.js`);
+const Volume = require.resolve(`./src/components/Volume.js`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
@@ -245,12 +246,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   /////////// Create document pages ///////////
-  const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
+  // const component = require.resolve(`./src/gatsby-theme-ceteicean/components/Ceteicean.tsx`)
   for (const node of result.data.allCetei.nodes) {
     const name = node.parent.name;
     createPage({
       path: "writings/" + name,
-      component,
+      component: Volume,
       context: {
         name,
         prefixed: node.prefixed,

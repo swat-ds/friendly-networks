@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import Network from "../components/Network";
 import { graphql } from "gatsby";
 
@@ -109,7 +109,7 @@ const network = ({ data }) => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Social Network - Friendly Networks"/>
+  <Seo title="Social Network - Friendly Networks"/>
 )
 
 export default network;
