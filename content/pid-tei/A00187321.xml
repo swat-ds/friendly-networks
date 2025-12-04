@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1804 8mo 5: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187321</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187321</idno>
+                        <idno type="IslandoraNodeid">488798</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1804-08-05">8th mo 5th 1804</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Warrington, Abraham, 1755-</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488799"/>
+            <opener>
+                <dateline><date when="1804-08-05">8th month 5th 1804</date> Redstone</dateline> 
+                <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+            </opener>
+                <p>These may inform that the reception of thy letter &amp; the company of thy son with <persName key="w6vv2hqk">A. Warrington</persName> has been acceptable. The intimation of thy prospect of a visit to us was pleasant, and if it is the good master’s will that thou shouldst come, be not discouraged at Mountains &amp; difficulties, for he is able to make way through them, and it will be joyous to many of thy friends to see thee here as well as relations who retain the remembrance of thy former visit savory as well as thy Epistle. I much desire thy preservation right direction, that by faithful obedience thou mayst both witness &amp; manifest the truth of those expressions of the just man’s path being a shining light shining more &amp; more unto the perfect day.  </p>
+                <p> We were visited by Ann Faris from Wellington accompanied by Garret Blackford, Hannah Hastings at last quarterly meeting. She visited the families of friends of Concord monthly meeting at last quarter. Request was brought forward for a quarterly meeting over the Ohio, also for a preparative meeting &amp; the establishment of a meeting at the Middle Fork of Beaver called Salem. Truly it may be said the harvest is great &amp; the faithful laborers few. 12th of the month</p>
+                <p>Thy son with mine H.W. and E.C. have been over the Ohio that he has seen thy brother &amp; family &amp; can give thee a verbal account of them and us. I think there a danger of his being too much took with what he saw, but hope if thou should, see thy way to visit us thou mayst be able to judge a little for him. </p>
+            <closer>
+                <salute>With desire for the preservation of thee and thine as well as mine own, conclude thy Sister</salute>
+                <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+            </closer>
+            <pb n="002" facs="488800"/>
+            <closer>
+                <address>
+                    <addrLine><persName key="w6n9820p">John Hunt</persName> senior</addrLine>
+                </address>
+            </closer>
+         </body>
+    </text>
+</TEI>

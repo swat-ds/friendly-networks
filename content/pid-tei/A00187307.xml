@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1794 10mo 19: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel </name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187307</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187307</idno>
+                        <idno type="IslandoraNodeid">488745</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1794-10-19">19th 10mo 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Hunt, Esther Warrington, 1743-1833</term>
+                    <term>Cattle, Jonas, 1741-1828</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488746"/>
+           <opener> 
+               <dateline><date when="1794-10-19">19th 10mo 1794</date></dateline>
+               <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>								
+            </opener>
+            <p>I have proposed to write to thee, but being willing to leave it near the time of the boys starting, have not now the leisure that I could wish. Therefore may just inform that we are favored with health, &amp; James has made his home with me since he has been in this country. &amp; know not but that he has been in a good degree orderly in life &amp; conversation &amp; as he is about to return, think it right to make some mention respecting him. I think there is need of his, as well as other youths being more acquainted with that of bearing the yoke in their youth that they may know how to deny themselves of those youthful vanities which by nature they are prone to—that there may be a growth in true religion as they grow in years that so they may be in possession of what we are making profession of. Thomas and Elisha propose to bear James company back if so permitted which I have consented to &amp; think they will all need the care of their friends &amp; hope they will be in a disposition to receive their council <del>of their friends</del>. We have been favored with the company of Issac Marton, whose labor was extraordinary indeed.</p>
+            
+            <pb n="002" facs="488747"/>
+            <p><persName key="w6x74cd2">Jonas</persName> is gone to the quarter—&amp; so on to the yearly meeting at Baltimore. Elizabeth is under discouragement &amp; at times weary of herself, but believe Issac Morton was a comforter to her. Religion is at a low ebb here, &amp; some that ought to have stood as stakes have given way. I have thought we were too much like the ground that we read was often watered &amp; brought forth briars &amp; thorns. Thy letter sent by Crossly was very comfortable, &amp; especially to hear of an improvement in your meetings. </p> 
+            <p>Which that it may continue is what I desire, &amp; may add that Crossly &amp; family are living in one of my cabins. Rebecca has been very poorly but is better. They remember their love to their friend, &amp; seem better satisfied than at first. </p>
+            <closer>
+                <salute>With love &amp; near affection to thee <rs key="w6wx87x7">wife</rs> 
+                and children, I conclude, thy Sister,</salute> 
+                <signed><persName key ="w6gj3q0h">Esther Hunt</persName></signed>
+            </closer>
+        </body>
+    </text>
+</TEI>

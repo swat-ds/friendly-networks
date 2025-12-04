@@ -1,0 +1,104 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Caleb Hunt letter to Esther Hunt, 1808 5mo 14: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 4 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187337</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187337</idno>
+                        <idno type="IslandoraNodeid">488851</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1808-05-14">5th 14th 1808</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488852"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Salem. State of Ohio <date when="1808-05-14">5th 14th 1808</date></dateline>
+                    <salute>Dear Mother,</salute>
+                </opener>
+                <p>I don’t remember that I have written to thee since I arrived in this wooden country, for I believe there has not been any opportunity of conveyance since. I have not received anything from thee since I don’t know when.</p>
+                <p>I arrived here about the 20th of the 3rd month, I believe. I came with J. French and his family, and I have been up to see them twice. They appear to be in very good spirits, yet the chill had not come on when I saw them last, and maybe it won’t come on them at all. They live about six miles from Salem, but it is as discouraging time now here as ever has been I reckon. The crops fail, so generally last summer.</p>
+                <p>I undertook to work when I first came here, but I lived too lazy last winter to be good for anything at work this spring, and the people here were very anxious for me to teach school, so I undertook it. Though my school is small at present, there is
+                
+                    <pb n="002" facs="488853"/>
+                a prospect of its increasing in a few days. If they had a schoolhouse, and I better qualified for the business, I should like it a great deal better. I at present have it in the <add>old</add> meeting house. I have engaged for a year, if I chose to stay so long &amp; they chose to keep me. But money is scarce here &amp; am afraid that I shall get tired of it when it comes to paying one for it. They are at work at the meeting house &amp; expect to hold Quarterly Meeting in it next month. I don’t know what the people will do that come here to Quarterly Meeting, for there is nothing to spare here for man or house.</p>
+                <p>Our mill works stand the test as yet, but we can’t do much this spring for want of grain. Nathan and Stacy I expect will write for themselves, I think it is high time Nathan had got to housekeeping. I expect to board with him when he gets <add>at it</add> <del>to housekeeping</del>. At present I board at John Shreet’s at the cost of $150 per week. I have had no direct account from Redstone since I left there. I am looking for a better <add>next</add> part.
+            
+                    <pb n="003" facs="488854"/>
+                John Shreet’s wife and <persName key="w6tq8ftp">Hannah Warrington</persName> have concluded to go to Jersey with J. Conn, who expects to move out here as soon as he can go and fetch his family.</p>
+                <p><rs key="w6gj3q0h">Mother</rs>, I don’t know when I shall have the pleasure of seeing thee at thy home, I think that if <add>I</add> could get money enough to pay off some of my debts and to fetch me to Jersey, I should like to stay some time there with thee. And maybe the time will come when I shall be able so to do, but I can’t tell when, for money is hard for me to come at. Our mills are no great profit, and hard work does not quit me.</p>
+                <p>As for Stacy, I expect that he will write to thee. But if he don’t it will be because he has not time for they are very much hurried. I believe that he has learned to work pretty well considering all things. </p>
+                <p> He just now told me that he has not written nor shall not. Therefore he wish thee for to accept of his love and write to him every opportunity.</p> 
+                <closer>
+                    <salute>Give my love to <rs key="w6165774">Father</rs> and accept for thyself the assurance of highest love and esteem, and am thy most affectionate son,</salute>
+                    <signed>Caleb Hunt</signed>
+                </closer>
+            </div>
+            <pb n="004" facs="488855"/>
+            <closer>
+                <address><addrLine> <persName key="w6gj3q0h">Esther Collins</persName> </addrLine>
+                <addrLine>near Moorestown N. Jersey </addrLine>
+                <addrLine> per <persName key="w6tq8ftp">H. Warrington</persName></addrLine></address>
+            </closer>
+        </body>
+    </text>
+</TEI>

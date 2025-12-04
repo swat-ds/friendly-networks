@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1800 5mo 27: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187317</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187317</idno>
+                        <idno type="IslandoraNodeid">488787</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>3 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1800-05-27">27th 5th 1800</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Illness</term>
+                    <term>Dometic relations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488788"/>
+            <div type="letter">
+                <dateline>Redstone the <date when="1800-05-27">27th 5th month 1800</date></dateline>
+                    <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+                <p>These few lines may inform thee that I received thy letter directed to me with the inclosed, which was kindly accepted the account of Cousin William.</p>
+                <p>Illness seems striking, yet, who shall dare to say what doest thou.</p>
+                <p>I have wrote so often to thee that I don’t know, but I shall do too much at it for I believe I have sent several since I received thine before this. Its like they may not all have come to thy hands, but if they should, I desire thou may’st excuse my freedom &amp; receive it in the way it is meant. A large number of Friends from Carolina have arrived here, above twenty families, many of them in a weak sickly state. In a few days after they came, one <add>ancient woman</add> deceased at Reese Cadwallader’s. She had been a minister in good esteem—their prospect is to go &amp; settle together in a new settlement. Jonathan Write is here from Virginia on a religious visit.</p>
+            
+                <pb n="002" facs="488789"/>
+                <p>My desire was to write to several others of my endeared relations &amp; friends, but time will not now admit.</p> 
+                    <closer>
+                        <salute>Therefore with love and desires for all your welfare every way, conclude thy affectionate Sister, </salute>
+                        <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                    </closer>
+                
+                <postscript> <p><label>P.S.</label>I with my children have been favored with health, though Elisha is something amiss now. Enoch has gone to work with a blacksmith &amp; Nathan with the hatter.</p>
+                </postscript>
+                </div>
+            <pb n="003" facs="488790"/>
+                <closer>
+                    <address><addrLine>to <persName key="w6n9820p">John Hunt</persName></addrLine>
+                    <addrLine>in Jersey, Burlington County</addrLine>
+                    <addrLine>Evesham Township, near Moorestown</addrLine></address>
+                </closer>
+        </body>
+    </text>
+</TEI>

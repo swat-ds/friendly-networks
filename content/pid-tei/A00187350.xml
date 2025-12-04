@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>John Collins letter to Esther Hunt, 1817 2mo 5: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 5 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187350</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187350</idno>
+                        <idno type="IslandoraNodeid">488834</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>1 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1817-02-05">5th of the 2nd mo</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Haines, Hinchman, 1767-1853</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488835"/>
+            <opener>
+                <dateline>at Charles Shoemaker’s <date when="1817-02-05">5th of the 2nd month</date></dateline>
+                <salute>Beloved <rs key="w6gj3q0h">wife</rs>,</salute> 
+            </opener>
+                <p>I may just inform my health is much better than when I left home, and <add>it</add> has been very pleasant in having an account from thee, though not <del>quite</del> equal to a line from thee. I cannot give any account when my return to thee is to be brought about, but <del>it</del> the present prospect seems not likely to be soon. What I have had is from E. R. &amp; J. R. <del>who</del> <add>one of these</add> I expect will be the bearer. If thou hast an opportunity, thou mayest inform Mary H. that I think Hinchman has been much favored. Sometimes I have felt well satisfied in being with him, and others <del>my</del> as though I was left almost naked, and destitute of anything that was good. Some families been visited I believe to good satisfaction. We are now at the Quarterly meeting of Abington, and expect to engage again in that labor when it <add>is</add> over please to give my love to our Children, <add>and other friends as opportunity offers</add> understanding <persName key="w6k08k1m">Rachel</persName> has been to the doctor concerning her breast.</p>
+                <closer>
+                    <salute>thy loving Husband</salute> 
+                    <signed><persName key="w6165774">John Collins</persName></signed>
+                </closer>
+        </body>
+    </text>
+</TEI>

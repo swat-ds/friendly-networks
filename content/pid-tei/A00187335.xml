@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to her children, 1816 5mo 5: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187335</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187335</idno>
+                        <idno type="IslandoraNodeid">488845</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1816-05-05">5th mo 5th 1816</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Haines, Hinchman, 1767-1853</term>
+                    <term>Roberts, Rachel Hunt, 1791-1881</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488846"/>
+            <div type="letter">
+                <opener>
+                    <dateline><date when="1816-05-05">5th month 5th 1816</date> Near Moorestown</dateline>
+                    <salute> My endeared children,</salute>
+                </opener>
+                <p>Feeling my mind often drawn in love to you, believing it to be a time peculiarly important. O, may the eye of <add>the</add> mind be turned inward for council &amp; right guidance in all your engagements lest you get involved in difficulties, as too many have already done. <quote>In humility there is safety,</quote> therefore keep to the pure principle of the blessed truth, &amp; be clothed with humility whereby you may partake of the blessing of preservation. It’s very desirable to hear from you all &amp; particularly so at this time. Caleb, being in a weakly state &amp; engaged in so important an undertaking, with the difficulties that might attend his journey–&amp; Stacy’s situation I think much of, and desire to hear particularly from him. I hope brotherly love will be like the threefold cord with you. Our cousin Samuel Roberts was agreeably married about two months. The undeniable messenger was sent, &amp; the poor young man hurried out of time, in a few days illness. His sister Mary Lippincott has been very ill, called the billows pleurisy. <note type="structure">upside-down text at bottom of the page</note> He had made his will &amp; settled his outward concerns in time of health leaving me the home where we lived etc. If either of you, my dear Children, can make it answer to come this spring. It seems to one it would be a satisfaction to us all—the many failures and uncertainties in trade occasions me to desire my children to lessen their commercial pursuits. </p>
+            
+                <pb n="002" facs="488847"/>
+                <p>My endeared Children Elisha, Caleb, &amp; Stacy, with your dear precious wives, I salute you all as one in near affection, <add>&amp; inform</add> we have been visited in a very heart piercing solemn manner, the consideration whereof will affect your minds with that sympathetic feeling which will cause us to mingle our leave notwithstanding our wide separation. This is 1st 3rd 1817. We have been enjoying our usual health from the time I last wrote.</p>
+                <p><persName key="w6md9qck">Hinchman Haines</persName>, having his mind drawn in gospel love to Friends in the limits of Abbington &amp; in being named to my dear <rs key="w6165774">Husband</rs> &amp; he after considering the subject united with him therein, left home 20th 1st month. &amp; they progressed on until the 6th 2nd <add>month</add> being the day of Abington Quarterly. In the last setting of that meeting, he was perceived to lean against the friend next him, after some stint he was carried out &amp; immediately conveyed to a kind Friend’s house (George Williams). Doctor Michel attended him, with others. It was discovered to be of a paralytic nature, his left side being quite helpless. His mind retained a calm sweetness, &amp; his recollection not much impaired. His daughter Rhoda being at that Meeting was then with. Next day Arthur &amp; I were sent for. The Delaware River being frozen, we rode there in a few hours. He appeared some better &amp; quite sensible, except his own helpless state. <add>His daughter Phoebe also was with us part of the time</add>. we continued with him until 13th, when we removed him home. Doctor Wandike with others accompanied us, and my dear <rs key="w6165774">Husband</rs> was cheerful &amp; thankful to get to his own room, &amp; not in the least degree regretting his giving up to go with Hinchman, but believed it was in the ordering of wisdom &amp; he was resigned to his lot. The disorder increased upon him, &amp; being taken with a hiccough his affliction was great. But his mind supported, &amp; as it were sweetened, with a forecast of the reward of the righteous; manifesting great love &amp; desire for the welfare of all. <del>the day</del> A short time before he departed, he thinking I was by him, said <said>my dear, when I am gone, as soon as thou conveniently can, Write to thy children &amp; let them know, remember my love to them all, and to Brother <persName key="w6x74cd2a">Jonas</persName> &amp; Sister Elizabeth Cattell.</said> He departed the 23rd, 2nd month.</p>
+                <p> Entered the 25th. I have taken a heavy cold before I went to Abington, the shock &amp; exercise of body &amp; mind so impaired my health that it became necessary for me to give up &amp; come under the care of others &amp; have not yet been fit to set up, all day. <persName key="">Rachel</persName> has been most of the time with us.</p>
+            </div>
+         </body>
+    </text>
+</TEI>

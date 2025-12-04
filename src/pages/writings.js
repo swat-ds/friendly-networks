@@ -82,8 +82,11 @@ const WritingsPage = ({ data }) => {
   const [collFilter, setColl] = useState('');
   const collections = [
     {name: 'All', value: ''},
-    {name: 'Hunt', value: 'Hunt'},
-    {name: 'Evans', value: 'Evans'}
+    {name: 'Hunt', value: 'John Hunt'},
+    {name: 'Evans', value: 'Evans'},
+    {name: 'Redman', value: 'Redman'},
+    {name: 'Roberts', value: 'Roberts'},
+    {name: 'Yarnall', value: 'Yarnall'},
   ];
 
 // Create a useState to filter which genres are shown

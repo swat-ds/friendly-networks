@@ -1,0 +1,110 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Elisha Hunt letter to Esther Hunt, 1816 11mo 30: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187343</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187343</idno>
+                        <idno type="IslandoraNodeid">488879</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1816-11-30">11th mo 30th 1816</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>    
+                </keywords>
+                
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488880"/>
+                <div type="letter">
+                <opener><dateline>Brownsville <date when="1816-11-30">11th month 30th 1816</date></dateline>
+                    <salute>Endeared <rs key="w6gj3q0h">Mother</rs>,</salute>
+                </opener>
+                <p>Although it is long since I have written to thee, it is not because I think less or love less. You are the companion of my thoughts daily &amp; I love you much. More than a year has passed since we had an interview, &amp; I know not that I am any wiser or better, everyday I am engaged about my usual vocations &amp; such is the disposition of my mind, (whether it is natural in my constitution or otherwise) that I am by no means everyday the same. My business has been more prosperous than I even anticipated when I quit farming; yet I find many embarrassments &amp; knowing the uncertainty of trade &amp; that I may easily be deprived of all I possess by many an unforeseen circumstance, + my mind is in some near care prepared to meet a change of fortune. I would gladly close business instantly were it possible, because if it could be now done, I am on the safe side. I however see no winding up place. Our business as good as usual, &amp; Caleb is by no means willing to quit.</p>
+                
+                    <pb n="002" facs="488881"/>
+                <p>I observed that I am not everyday the same, perhaps it is the case with all men that they experience great changes in their feelings &amp; constitution I believe some get along more uniformly &amp; easy than others. Sometimes things look very pleasant &amp; I begin to feel myself of some account, at other times everything wears a different appearance, &amp; I discover so many weaknesses &amp; faults of various descriptions in myself, that I sink into trifling insignificance &amp; conclude that I am one of the weakest of men, &amp; that I ought to retire from the bustle of business &amp; explore myself no more. My spirits are too often under far.</p>
+                <p>Henry Mills has lost his credit, property, &amp; everything, has gone down the river to do I don’t know what. It is said that his property will not pay 5 percent on his debts. Our neighbor Widow Whesley was buried this week. Nothing to remark relative to our family generally, Uncle &amp; Aunt are as well as usual. Caleb &amp; Stacy with their wives are well. Stacy expects to try to live by the labor of his hands, &amp; I doubt not but
+            
+                    <pb n="003" facs="488882"/>
+                but he will make a comfortable living &amp; enjoy life as well, indeed I expect a great deal better than in the line of trade.</p>
+                <p>My M. enjoys good health, all but her head, which is every day more or less painful. Our son is healthy. Our family is compound of us three alone, of course it don’t cost much to keep us. My stomach is very weak so that I have to be very careful what I eat. &amp; with all the care scarcely a day passes without its turning up its contents, indeed it has became at most so familiar as to be looked for every meal a sickness comes on which lasts 15 or 20 minute when a discharge sometimes of wind effects a cure. If wind does not arrive the contents of the stomach will, in which case there is no more complaint until I eat or drink. </p>
+                <p>Provisions are scarce &amp; dear. Wheat $1.50 bushel corn &amp; rye $1.00, oats $.75, Pork $8.00, &amp; Hay $14 a ton.</p> 
+                <closer>
+                    <salute>My M. joins in love to <rs key="w6165774">Father</rs>
+                        Brother &amp; <rs key="w6k08k1m">Sister</rs> affectionately </salute>
+                    <signed>Elisha Hunt</signed>
+                </closer>
+            </div>
+            
+            <pb n="004" facs="488883"/>
+            <closer>
+                <address><addrLine>Brownsville </addrLine>
+                <addrLine><persName key="w6165774">John Collins</persName></addrLine>
+                <addrLine>Moorestown Burlington County N Jersey</addrLine>
+                <addrLine>for <persName key="w6gj3q0h">Esther Collins</persName></addrLine></address>
+            </closer>
+            
+            <note type="structure">written along side of page in different hand</note>
+            <postscript> 
+                <p>Thy observation of not being always alike, is, I believe no uncommon thing, I believe we are memorably dealt by and sometimes it may be in wisdom that our minds are arrested to behold our frail dependent state: which is very proper for us to say deceived who is always ready to lift up or cast down may step in &amp; cast a gloom on everything </p>
+            </postscript>
+            
+        </body>
+    </text>
+</TEI>

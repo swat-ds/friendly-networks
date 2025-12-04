@@ -1,0 +1,105 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1796 7mo 19: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187315</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187315</idno>
+                        <idno type="IslandoraNodeid">488777</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1796-07-19">19th 7mo-1796</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Hunt, Robert, 1745-1805</term> 
+                    <term>Potts, Joseph, 1742-1804</term>
+                    <term>Hicks, Elias, 1748-1830</term>
+                    <term>Collins, Elizabeth Ballinger Mason, 1755-1831</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488778"/>
+            <div type="letter">
+                <opener>
+                    <salute>Dear <rs key="w6n9820p">Brother</rs></salute>							
+                    <dateline>Redstone <date>19th 7th month 1796</date></dateline>
+                </opener>
+                <p>These may inform that I received thy kind &amp; salutary letter, sent by Rachel Cattell who arrived safe home after the Quarterly Meeting at Hopewell where her father attended. It is indeed a great satisfaction to me to have letters from you, my endeared friends &amp; relations &amp; as thee expresses mine being acceptable. How much more must thine be to me, in a strange land separated from almost all former friends &amp; connections, it has been tendering to my heart &amp; affecting to feel the near sympathizing regard thou hast for me &amp; children; who am a poor unworthy creature, &amp; when I have considered the gracious dealings &amp; tender mercies of the almighty towards us poor finite creatures, it often revives in me, what shall we render to him for all his benefits; which indeed are manyfold. In considering of myself I have been ready to compare myself to a poor vessel heavy loaden in shallow water, in continual danger that except the Lord keep &amp; preserve me in an extraordinary manner I shall utterly perish, friends &amp; family suffer thereby; may a humble sense of my own nothingness, engage my heart to seek unto the Lord, in whom there is everlasting strength that he may be pleased to keep &amp; preserve from the many baits &amp; snares of the wicked one, <del>both here &amp; with you</del>.</p>
+                <p>In the fifth month we were visited by Isaiah Baldonson from Baltimore, he being under appointment by that yearly meeting, on account of the request that had gone up to that meeting for a Quarterly Meeting to be held on this side of the mountains. He attended all the meetings here &amp; meetings at several other places &amp; was favored to labor faithfully in an extrordinary manner to the tendering &amp; refreshing of Friends.
+                    <pb n="002" facs="488779"/>
+            He appeared bright &amp; discerning that we were not in a prepared situation for that trust &amp; labored to convince friends the necessity there was of more elders which had before been under consideration therefore several both men &amp; women were named for that purpose &amp; poor me among the rest, which has been no light thing, for before being <add>appointed</add> <del>clerk</del> of the Monthly-Meeting &amp; being in the place of an overseer several years, have requested to be released therefrom which is not yet done though under consideration It may be truly said, the harvest is great &amp; the faithful laborers too few, oh, may there be ardent prayers ascend to the Lord of the harvest that he may fit &amp; qualify more laborers that may effectually labor in his field, that the good seed may be preserved &amp; the briars &amp; thorns destroyed.</p>
+                <p>The account received respecting <persName key="w63p2txf">Joshua Roberts</persName> was agreeable but being now informed that he has an apprentice, it feels pleasant to me that <add><persName key="w6sv8fbg">Enoch</persName></add> <del>he</del> should go to Issac Thorn who is now wanting him–we are in a good degree favored with health, have had a good harvest though not large, being about 10 acres which is supposed to yield 200 bushels have gathered most of our hay &amp; have done this <add>as</add> before without spirits which is uncommon in this neighborhood. Thomas French is living at <persName key="w6x74cd2a">Jonas</persName>’s that I have had new hand, &amp; <add>they</add> appear well satisfied which I, esteem a favor. Jacob Vickers &amp; wife are in a pretty good way at present. Crossly likewise is making out middling considering his family which is like to increase. Produce has been double the price it used to be though not scarce with many. I have assisted Crossly by lending him grain–&amp; now they both have a little harvest of their own. We have but little fruit this year by reason of late hard frosts</p>
+                <pb n="003" facs="488780"/>
+                <p>It is often in my mind to come &amp; see you in my native land &amp; have looked some towards it this fall, but the difficulty of my living home is great, that I don’t see that I shall have enough to call blame against it now. So with desires for all our being rightly directed through the many difficulties &amp; besetments of our day.</p> 
+                 <closer>
+                     <salute>I conclude with unfeigned love to thee <del>thy</del> <rs key="">wife</rs> &amp; children, thy affectionate Sister</salute> 
+                     <signed>Esther Hunt</signed>
+                 </closer>
+           <postscript><p> As opportunity offers please to remember my love to <persName key="w6hj799d">Elizabeth Collins</persName>, Rebecca Cowperthwaite, <persName key="w6165774">John Collins</persName> with their companions &amp; other Friends, farewell. </p></postscript>
+            </div>
+            <pb n="004" facs="488781"/>
+            <closer>
+                <address>
+                    <addrLine>To <persName key="w6n9820p">John Hunt</persName> in Jersey</addrLine>
+                </address>
+            </closer>
+        </body>
+    </text>
+</TEI>

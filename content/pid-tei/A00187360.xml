@@ -1,0 +1,112 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mary Bonsall letter to Lydia and Rachel Hoskins, 1800 7mo 20: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 11 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187360</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Richardson-Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187360</idno>
+                        <idno type="IslandoraNodeid">527584</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Richardson-Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1800-07-20">7th mo 20th</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Yarnall, Hannah Haines Thornton, 1765-1822</term>
+                    <term>Allinson, Martha Cooper, 1748-1823</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener>
+                <dateline>Uwchlan <date when="1800-07-20">7th mo 20th</date></dateline>
+                <salute>Dear Sisters,</salute>
+            </opener>
+                <p>It seems at one side of the subject as if I had been neglectful in writing to you, which would not have been the case I think did we live near the Post office. This is obviated with you. As letters sent to the care of G. Mossey or Nathan Sharples would probably reach me the next meeting day, George Irving’s neighbor to <add>a friend</add> of our meeting and has told me letters could be sent that way very direct. I want to hear from you. Not a word that I recollect since I left you. We had a pleasant-er day as to weather than many preceding for traveling. When we came to Schuylkill it was higher than when we went onto Burlington, so that poor Martha clung to her mother. And the latter not so serene as when she first crossed. The hind wheels of the wagon were underwater some distance. The road seemed much rougher returning than going. I speak thus particular as I spoke when with you of it being a more eligible way <add>than to pass the city</add>. We are told at Righter’s ferry to cross Schuylkill will be a better plan. Yesterday I was a short time in company with J. Jacobs, my husband and self had rode to his sister Lightfoot’s and were spending the afternoon. J. Jacobs stopped and drank tea with us. While drinking tea, he said he was sickly in the city, and abruptly spoke of Hugh Ely’s death. I wanted no more tea, and now feel as if I should be fond of receiving a letter from one of my sisters. </p>
+                <p>We expected to have gone to Philadelphia ere this when we left you. The season of the year is such as calls for attention to business. Is I suppose the cause we have not <add>been</add>  or do not go to the city <add>this</add> week or it seems as if it was needful. But to return to the subject of our ride from your place, we got to <persName key="w6g77m31">H. Yarnall’s</persName> before they breakfasted. I went immediately to lie down, and in all stayed near two hours. I was much recruited by my rest and a short sleep. Got to a tolerable inn to dinner, and as the way was intricate to strangers so across the country, James went with us 13 miles. We reached Joseph Melen’s about dark within 11 miles of home, we were tired enough. When we got home our young woman said she did not know it had been warmer than common, but had felt less 
+            
+            <pb n="002" facs="xxxxx"/>
+                able for business. And indeed our house is so embowered in trees that the sun had not a full chance of reaching them. We occasioned much disappointment to the former tenant J.N. Miam by not passing through Frankford. And I suppose some to relatives in the city. Nathaniel Richardson we find an agreeable disposition in <add>our</add> family and <add>lends</add> to the business of the farm. Surprisingly his Uncle seems much pleased with him. We had last week <add>or the one before</add> an acceptable visit from John &amp; Betsy Roberts. Betsy’s father, James Jones, <del>lays</del> is confined to his house and room. I expect with a stroke or strokes of the palsy. She is an interesting woman. Issac went last week to Weston with his boys. Had a very great rain after. He set off home so that he would not have come much further, only that he thought I would be uneasy about him. I went as far as our meeting house where there are several friends live to spend the day among them. </p>
+                <p>Martha was with me, <damage><gap/></damage> Anna with him. He got to us between 9 &amp; 10 o’clock. It was so dark and late, we judged it most prudent not to come home, though very foreign from my thoughts when slept. Past first day week as we were going to meeting half way. Our axel wheel broke, our young woman, our daughters, and ourselves in it. We had left Edward, who is a smart boy with the care of the house. N. Richardson was on horseback, a clever man not of our society, going to meeting, came to our assistance. Issac obtained side saddle in the neighborhood, mounted our daughters on horse back using the carriage horses. The man that came to our help took me, saying his horse would carry as many as could set on him. Our young woman walked. I rode about a quarter of mile. I could ride no more. Issac rode a young creature N.R. was on. We all got to meeting. I told Issac, who overtook me walking, if he could do me no good he might as well go on. The girls overtook me. Offered me a horse but I footed it. It was late when we got to meeting. I wished to take shelter somewhere else than a raised seat, late as it was, and I fatigued. What should J. Jacobs do but call me to my seat. I suppose if I thought at all I thought I must obey my superiors. You may judge how fit I was for it. I now think waggons for these roads ought to be made in Pennsylvania. We had the company of Jesse Murry’s brother, the doctor. since our return. He is desirous to make up with Friends and not be disowned for his marriage. He came and set alongside of me and said <q>“indeed, friend Bonsall, I think my case a hard one.”</q> And I could not see from his  
+            
+            
+            <pb n="003" facs="xxxxx"/>
+                statement anything surprising or very uncommon in it.</p>
+                <p>It does seem a little trying to be so secluded from hearing what is passing, we doubtless miss of hearing and seeing many things unpleasant. If we could anyhow make a composition of this neighborhood and that of Burlington, would they not both be mended? Why yes, I think so. But I hope before very long of seeing some of our dear relatives here. Our harvest is all in except the oats and flax. Martha seems pretty comfortable since her return, but to use a term of our brother at New York to J. Bonsall. “I am mistaken if the onions &amp; garlic of good old Bulington does not come up sometimes.” <add>May be in her case applicable.</add> I am writing this as its our meeting day tomorrow, thought possible I could send it to the office. From there. And though it may not contain much in quality yet it may convince. I am not indifferent to hearing from you but desirous and will convey to you a little information of us. Remember me with near affection to Father, in which I am sure I should be joined by JB was he present, but he is currently engaged with his men &amp; boys. Also remember Brother and sister Hoskins.</p>
+            <closer>
+                <salute>your affectionate sister,</salute>
+                <signed><persName key="w6q924mx">Mary Bonsall</persName></signed>
+                To Lydia &amp; Rachel Hoskins
+            </closer>
+            
+            <postscript>
+                <p>J Jacobs told me yesterday he had two pairs of stockings he brought from Boston for M.N. for which I can say obliged. Martha desires her love to her grandfather &amp; Aunts. Please give mine to <persName key="w6sf4z67">Martha Allinson</persName></p>
+            </postscript>
+            </div>
+            <pb n="004" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>Lydia Hoskins</addrLine>
+                <addrLine>Burlington N Jersey</addrLine></address>
+            </closer>
+            
+        </body>
+    </text>
+</TEI>

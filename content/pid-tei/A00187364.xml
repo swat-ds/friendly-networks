@@ -1,0 +1,104 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hannah Yarnall letter to Elizabeth Evans, 1805 7mo 4: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00287364</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187364</idno>
+                        <idno type="IslandoraNodeid">527601</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1805-07-04">7th mo 4th 1805</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                    <term>Agriculture</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Thornton, James, 1785-1858|</term>
+                    <term>Grellet, Stephen, 1773-1855</term>
+                    <term>Sands, David, 1745-1818</term>
+                    <term>Parrish, John, 1730-1807</term>
+                    <term>Evans, Enoch, 1743-1818</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Byberry <date when="1805-07-04">7th mo 4th 1805</date></dateline>
+                    <salute>Dear <rs key="w6hv3dnq">Mother</rs>,</salute>
+                </opener>
+                <p>I feel a neglect in not writing thee since thou and <rs key="w6wt9jhx">father</rs> was here-but many things having occurred has rather put it by, one of which from time to time I expected to have been over there to see you and early after we parted I took an 80 miles ride over the Blue Mountains <add>in company with some friends</add> to see a family who has been convinced of Friends principles that took up near two weeks. And now I do not know when I shall get over. Although <persName key="w6vj6d7g">James</persName> seems not able to do much on the farm yet his attention seems necessary among the hands. I expect to be sure to have found a <del>vacan</del> vacancy to have broke of between planting and hay, but about that time I was over the Mountain. And another matter he planted in a meadow, therefore it <del>maid</del> made it late, and the hauling bark filled up the time until hay, and now harvest is come. How it may be after is over I do not yet see–thee had better not look for us before thee does see us.</p>
+                <p><persName key="w6vj6d7g">James</persName> sometimes is scarce able to keep about <del>his</del> and then recruits and so on, but is now rather better–fashion. Hannah and the rest of us now in middling health, but diverse complaints in the neighborhood of people being indisposed. John Simpson has returned from a journey. He &amp; <persName key="w63g5dz0">John Parrish</persName> left here today. <persName key="w6mw2sk8">Stephen Grellet</persName> and companion was here on first day last on a visit to the meeting in Pennsylvania. I hear today that <persName key="w63x9hgz">David Sands</persName> is returned from Europe–very satisfactory indeed it must be 
+            
+            <pb n="002" facs="xxxxx"/>
+            to his friends and near connections in life after an absence of eleven years.</p>
+                <closer>
+                    <salute>I conclude with near love to thee and father and our relations there convey from thy daughter,</salute>
+                    <signed><persName key="w6g77m31">Hannah Yarnall</persName></signed>
+                </closer>
+                <postscript><p>I should like to receive a letter from thee I heard some time past thee had been poorly and had got better. I hope thee continues so. I was in town last meeting for sufferings, perhaps might have seen <rs key="w6wt9jhx">father</rs> if he had been there.</p></postscript>
+            </div>
+                <closer>
+                    <address><addrLine><persName key="w6hv3dnq">Elizabeth Evans</persName></addrLine>
+                    <addrLine>Evesham near Cropwell in Jersey</addrLine></address>
+                </closer>
+        </body>
+    </text>
+</TEI>

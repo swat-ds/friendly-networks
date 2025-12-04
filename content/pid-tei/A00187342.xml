@@ -1,0 +1,117 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Caleb Hunt letter to Esther Hunt, 1813 6mo 22: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187342</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187342</idno>
+                        <idno type="IslandoraNodeid">488874</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1813-06-22">6th mo 22nd 1813</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                </keywords>
+                
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488875"/>
+            <div type="letter">
+                 <opener>
+                     <dateline>Brownsville <date when="1813-06-22">6th month 22nd 1813</date></dateline>
+                     <salute>Endeared <rs key="w6gj3q0h">Mother</rs>,</salute>
+                 </opener>
+                <p>I am afraid that thee thinks that I have been negligent in writing to thee. I begin to think myself that I don’t write as frequently as I ought to, or I should not feel too awkward about writing letters as I do at present. I have had no letter from Nathan for several months past, I am anxious to hear from them x. I think that I will go and see them sometime this summer.</p>
+                <p>We have had accounts from there sometime ago of the death of cousin John Hunt <note type="editorial">not to be confused with Hunt, John, 1740-1824</note>We understand that he died with a galloping consumption brought on (it is supposed by the exposure that he underwent while he acted the part of a soldier last fall &amp; winter). It has been rather a sickly spring here, the measles have been in the neighborhood generally, and many have them still around us. Emma had them but was not long to nurse with them. For my part I have completely recovered from the cough that tormented me all winter.</p>
+                <p> Our business here goes on as smoothly so far as we could wish or expect, &amp; nothing to discourage us but what we shall be able to meet all our engagements.
+            
+                    <pb n="002" facs="488876"/>
+                Most probable that Elisha will visit the city of Philadelphia this fall. I should be much pleased to visit the city and my relations in Jersey, but I expect that it will be best for Elisha to go the first time as our firm is a new one and he has had most experience in this place.</p>
+                <p>If goods are to be had next spring I think that will be about the time for me to have the pleasure of visiting you. Our business here has been regular and respectable, and I have no doubt but that we can transact the business about as well on our own account as when M. Reuters &amp; Co. were concerned. There is a cotton factory company established in Bridgeport with a capital of above eleven thousand dollars, to be worked by steam. <del>The capital</del> They are preparing to build a large brick building for the purpose. An air foundry is also going on by John and William Cock &amp; others. And a company are about contracting to build steamboats to one to run from here to Pittsburg, to carry freight and passengers, to make two or three trips a week and one larger to run to the falls of Ohio from Pittsburg. So that our town is improving more this summer than ever I knew it <add>in</add> one season. There is a great outcry for houses to live in &amp; people to build them.
+            
+                    <pb n="003" facs="488877"/>
+                It has been some time since we heard from Brother Stacy. I want to know what he is doing &amp; when he expects to return. Also, I want to hear from Sister <persName key="w6k08k1m">Rachel</persName>. She has not written to me for some time past.</p>
+                <p>Uncle <persName key="w6x74cd2a">Jonas Cattle</persName> has been very ill within a few days past, but I believe that he like to get about again. Our Friends <del>and</del> here are generally healthy. We should like to hear from you more frequently than what we do. With sentiments of esteem for Father &amp; Brother, &amp; accept for thyself thee observance of any affections and esteem. </p>
+               <closer>
+                   <salute>thy love,</salute>
+                   <signed>Caleb Hunt</signed>
+               </closer>
+               <postscript>
+                   <p>Brother Elisha &amp; wife send their love</p>
+               </postscript>
+            </div>
+            
+            <div type="letter">
+                <note type="structure">second, unsigned letter in a different hand</note>
+                <opener>
+                    <salute>Beloved Cousin,</salute>
+                </opener>
+                <p>I take my pen to inform thee <add>yesterday we heard</add> thy dear Sister S. Stokes is believed to be in danger of being again deprived of her reason, thought to be in part occasioned by her tender mind being distressed about her children <add>so that she cannot sleep, afraid they will suffer</add>. Particularly S. Conrow’s wife, as she is like to be confined ‘ere long. &amp; they say S. Conrows have a boy they want to put out, if thou could take him, or find a suitable place. Its believed it would be very satisfactory &amp; much better for the child than nigher home &amp; the <del>afflicted</del> poor afflicted grandmother’s mind a little relieved</p>
+            </div>
+                <closer>
+                    <address><addrLine>John Collins</addrLine>
+                    <addrLine>Near Moorestown New Jersey</addrLine>
+                    <addrLine>for his wife Esther Collins</addrLine>
+                    <addrLine>CH 1813</addrLine>
+                    <addrLine>to be left at Arch Street Ferry</addrLine>
+                    <addrLine>politeness of Israel Miller</addrLine></address>
+                </closer>
+        </body>
+    </text>
+</TEI>

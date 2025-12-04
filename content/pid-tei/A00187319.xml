@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1802 4mo 1: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187319</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187319</idno>
+                        <idno type="IslandoraNodeid">488794</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1802-04-01">1st 4th mo 1802</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488795"/>
+            <div type="letter">
+                <opener>
+                    <salute> Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+                </opener>
+                <p>These may inform that I received thy kind letter sent by Thomas French, and wish that thou mayst not forget me. For very agreeable it is to hear from you, seeing we are so widely separated that its not to be expected that we shall be likely to have much opportunity of seeing each other anymore. I did not write by Elisha for as to outward matters he could inform verbally, and as to that of a religious or inward state. I wish not to discourage thee, yet truly according to my sense things are in a poor way and the life of religion mournfully low amongst <add>us</add> here at poor Redstone. Though there is a fine prospect further both as to temporal and spiritual improvement. That its force is very powerful, if some are not raised up or sent to fill the vacant places we shall be left, like its mentioned of the gleaning of the fruit, only here and there a small bunch or cluster. </p>
+                <pb n="002" facs="488796"/>
+                <p><persName key="">Jonas</persName> &amp; Elizabeth Cattell have some prospect of going to Jersey this spring <del>that</del> thou mayst have some opportunity to inquire of them. There are some instances that afford encouragement, also grievous alarming our constances of the grand adversary, attacking some in the front &amp; wounding almost unto death, Poor Benjamin Townsend is one of this number. It has been an awful lesson to me: that what need for those that think they stand to take heed lest they fall, lest (as that imminent apostle express it) whilst he preached to others he himself should become a castaway. A word to the wise may be sufficient; the remark is by no means to publish it in Gath–but rather that the true Israelites may mourn, as also to petition for his recovery to the great physician that the wine and the oil may be widely applied. We are in a good degree favored with health. </p>
+                <closer>
+                    <salute>With love to thee <rs key="w6wx87x7">wife</rs> &amp; children I conclude, thy affectionate sister</salute> <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                    <dateline><date when="1802-04-01">1st 4th month 1802</date> Redstone</dateline>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

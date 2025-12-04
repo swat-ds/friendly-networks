@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1802 5mo 28: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187318</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187318</idno>
+                        <idno type="IslandoraNodeid">488791</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1802-05-28">28th 5th 1802</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                    <term>Domestic relations</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Stokes, Samuel, 1744-1802</term>
+                    <term>Cattle, Jonas, 1741-1828</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488792"/>
+            <div type="letter">
+                <opener>
+                    <salute>Dear <rs key="w6n9820p">Brother</rs>,</salute>
+                </opener>
+                <p>Having just received thy letter sent by the hand of <persName key="w6x74cd2a">Jonas</persName>, who returned yesterday, &amp; having an opportunity of returning a line by Samuel Haines &amp; companions, (who are this day at our house &amp; expect to return direct home). We are in a middling state of health. Margaret Elger and companions from Pipe Creek are on a religious visit to these western parts which has afforded encouragement that we are not altogether forsaken. And dear <rs key="w6n9820p">brother</rs>, believe it would be advantageous for thee, to be on thy guard against that spirit which is casting thee at times unprofitably down, &amp; at other times raising all most of thy feet. Be earnest that thou mayst be a good example to believers in all things, remembering good soldiers much know how to endure hardiness, &amp; especially those of the fore rank <hi rend="underlined">lest they should discourage the weak feeble minded</hi> Therefore as I have but a few minutes to write in, feel willing to add that the account of the disease of our Brother <persName key="w61d2nhm">Samuel Stokes</persName> took impression on my mind, and desire to be affectionately remembered to sister Hope &amp; children, much desiring their preservation &amp; that you that are there may be concerned to visit &amp; sympathize with them, comforting the widow who I tenderly feel for. Really desiring that her trust may be in the Lord, whose gracious promises are yea and amen forever.</p>
+                <closer>
+                    <salute>With love to you all as if named in which I feel desire for the blessing of preservation for us all, am thy Sister</salute>
+                    <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                    <dateline><date when="1802-05-28">28th 5th 1802</date></dateline>	
+                </closer>			
+            </div>
+            <pb n="002" facs="488793"/>
+                <closer>
+                    <address>
+                        <addrLine><persName key="w6n9820p">John Hunt</persName> Senior</addrLine> 
+                        <addrLine>in Jersey</addrLine>
+                    </address>
+                </closer>
+        </body>
+    </text>
+</TEI>
