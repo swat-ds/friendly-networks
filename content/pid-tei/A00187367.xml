@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Elizabeth Evans letter to Hannah Thornton, 1792 12mo 17: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187367</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187367</idno>
+                        <idno type="IslandoraNodeid">527610</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Yarnall family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1792-12-17">17 of the 12 mo 1792</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Thornton, James, 1785-1858</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener><salute>Beloved <rs key="w6g77m31">Daughter</rs>,</salute></opener>
+                <p>I may inform thee that I have received a few lines from thee dated the 8th of the 12 mo, which was satisfactory to we to hear thee was pretty well in health. Though very sorry for thy toothache, which I know to be a very afflicting disorder. The time will seem very long to me if thee lets it be till spring before thee comes to see me, but if it is right, I hope I shall submit if thee don’t come. Please do write &amp; let me know how you all are, &amp; if sister is likely to have the use of her arm. I may inform thee that I have been very poorly taken at the preparative meeting, but now am some <add>considerable</add> better. The rest of the family pretty well, except John some poorly with a cold. I may inform thee that I wrote to thee since I sent the last sender. By what thee wrote was fearful thee did not receive it.</p> 
+                <closer>
+                    <salute>So I conclude and remain thy loving &amp; affectionate Mother,</salute>
+                    <signed><persName key="w6hv3dnq">Elizabeth Evans</persName></signed></closer>
+                <postscript>
+                    <p>Please to remember me &amp; my husband to Brother &amp; Sister &amp; little
+                    <persName key="w6vj6d7g">James</persName> &amp; Jamie &amp; all the rest of my best friends</p>
+                </postscript>
+                <dateline><date when="1792-12-17">the 17 of the 12 mo 1792</date></dateline>
+            </div>
+            <pb n="002" facs="xxxxx"/>
+            <closer><address><addrLine>To <persName key="w6g77m31">Hannah Thornton</persName></addrLine>
+            <addrLine>in Byberry</addrLine></address></closer>
+            
+        </body>
+    </text>
+</TEI>

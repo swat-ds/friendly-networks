@@ -1,0 +1,92 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Rebecca Jones letter to Peter Yarnall, 1794 7mo 2: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 5 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187358</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187 </collection>
+                        <idno type="local">A00187358</idno>
+                        <idno type="IslandoraNodeid">527579</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>1 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of the Yarnall Family is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1704-07-02">7mo 2nd 1794</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Yarnall, Hannah Sharpless 1765-1795</term>
+                    <term>Yarnall, Hannah Haines Thornton, 1765-1822</term>
+                    <term>Thornton, Joseph, 1756-1790</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+            <opener>
+                <salute>Dear <persName key="w6kx66c3">Peter</persName></salute>
+            </opener>
+                <p>I write in great haste, to mention the request of one of my near Friends, Hannah Brooke, wife of my landlord Bayer Brooke, who is in the neighborhood of Jonathan Knight, and at the house of a Joseph Green <add>near the Red Lion</add> she is in a state truly pitiable, owing to deep exercise of mind, &amp; believes the door of mercy is shut upon her. (I believe otherwise, having been an innocent creature from a child) she is very desirous of seeing thee, and I do hope thou mayest be made instrumental in the Lord’s hand–to comfort, &amp; raise her drooping mind out of the horrible pit. So do comply is thou canst &amp; give me a line afterwards. I have but a minute or two to write, so excuse haste. My love to thy precious Hannah, also to dear <persName key="w6vj6d7g">James</persName> &amp; <persName key="w6g77m31">Hannah Thornton</persName> when thou seest them, they have my tender sympathy.</p> 
+            <closer>I am with sisterly affection thy friend,
+                <signed><persName key="w6891hbg">R Jones</persName></signed>
+            </closer>
+                
+            </div>
+                <closer><dateline>Philadelphia <date when="1794-07-02">7mo 2nd 1794</date></dateline></closer>
+        </body>
+    </text>
+</TEI>

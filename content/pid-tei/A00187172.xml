@@ -72,9 +72,9 @@
     <text>
         <body>
             <pb n="1" facs="4572367"/>
-            <div>
+            <div type="letter">
             <opener>
-                <dateline>North Carolina, Guilford County, <gap reason="illegible"/> 6th month 9th, 1797</dateline>
+                <dateline>North Carolina, Guilford County, <gap reason="illegible"/> <date when="1797-06-09">6th month 9th, 1797</date></dateline>
                 <salute>Beloved Friend,</salute>
             </opener>
             <p>

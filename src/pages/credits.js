@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import {Row, Col, Card} from "react-bootstrap";
 import "../styles/background.scss";
 import "../styles/styles.scss"
@@ -79,7 +79,7 @@ const credits = () => {
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Credits - Friendly Networks"/>
+  <Seo title="Credits - Friendly Networks"/>
 )
 
 export default credits

@@ -1,0 +1,115 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joshua Hunt letter to John Hunt, 1791 7mo 24: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 10 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187349</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Joshua Hunt</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187349</idno>
+                        <idno type="IslandoraNodeid">488908</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker teacher Joshua Hunt is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1791-07-24">7th mo 24th 1791</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Settler colonialism</term>
+                    <term>Slavery</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Cattle, Jonas, 1741-1828</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488909"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Hill Country <date key="1791-07-24">7th Month 24th 1791</date></dateline>
+                    <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+                </opener>
+                <p>As I apprehend it may be agreeable to thee to hear from us. I embrace this opportunity to inform that myself &amp; family are in a middling state of health, &amp; I believe <persName key="w6x74cd2a">Jonas Catell</persName> &amp; his near the same. We have been favored with a rich &amp; plentiful harvest in the country. My orchard is like to afford us a middling plenty of apples for house-use, &amp; Peaches a pretty many, but there is a mournful prospect through the country with respect to hay. A worm nearly resembling a caterpillar has made vast consumption of our grass. They touched somewhat upon the fields of wheats &amp; rye &amp; young corn, but their commission seemed not to include much grain. My loss I think might be computed at 20lb. My stock being but small, &amp; a prospect of a great plenty of straw that I am in hopes, I shall not lack.</p>
+                <p>Had the Sabeans <add>or Indians</add> fell upon &amp;. Or had they destroyed a few crops of grass or grain, the inhabitants without inquiring into the cause, would have been alarmed &amp; perhaps in arms against those invaders. No arms to be taken up, &amp; yet how necessary is it to inquire into the cause &amp; to put on Job’s armor. Rain, fruit, &amp; good things of the land in the days of the children on Israel, were to be given or withheld as they did well or ill, agreeable to the language of the great dispenser through Moses
+            
+                    <pb n="002" facs="488910"/>
+                  Moses (Viz.) If ye walk in my statutes &amp; keep my commandments &amp; do them, then will I give you rain in due season, &amp; the sand shall yield her increase, and the trees of the field shall yield their fruit, &amp; your threshing shall reach unto the vintage, &amp; the vintage shall reach unto the sowing time, &amp; ye shall eat your bread to the full &amp; dwell in your land lately. And I will give Peace in the land, &amp; ye shall lie down &amp; none shall make you afraid &amp; &amp; Lev. XXVI 3 &amp;. Certainly we have the same ruler, who constantly superintends &amp; dispenses agreeable to conduct. Righteousness exalteth a nation. Why not a state, a county, a neighborhood, &amp; <q>But sin is a shame</q></p>
+                  <p>There has been a rumor of war the fore part of this season, many soldiers have passed through our country to the distance I suppose of 600 miles beyond us. That the Indians have been wronged will not admit of dispute, &amp; how much better would it be to make them all full compensation for the wrong, and thereby destroy all our enemies by making them our friends. To civilize &amp; convert them with sword &amp; gun seems repugnant to that gospel injunction, do justly, love mercy, &amp; walk humbly, with which would we comply, we might reasonably expect peace in the Land &amp;.</p>
+                  <p>I often feel near attachments to friends and kindred, customs &amp; maxims, the former wanted ways &amp; walks of native home, not that I do, or have any cause to repent coming here; could
+            
+                      <pb n="003" facs="488911"/>
+                could I be fairly weaned from there &amp; naturalized here (which I hope a little time will bring about) all things might be well as to the outward.</p>
+                <p>But the poor negroes never forget Guinea, those golden shores, of blissful freedom. O Christian white men do but heed ‘em Give them days of happy freedom. Ah! Weakly white men never can need ‘em Give them therefore life of freedom All worldly honors fade away, And black &amp; white men soon decay The wear’ed Black may be at rest When wicked white men fore opprest </p>
+                <p>I have been unwell this spring &amp; summer at times, which creations me to look to the end: A young man from Philadelphia brought us word of the death of Samuel Allenson, which account was to me affecting. We all <add>are</add> hastening as a post to his stage, &amp; that we all may labor to be rich in Faith and zealous in good works cease to do evil &amp; learn to do well, &amp; that these lines may find thee &amp; thine in a state of health pressing towards the mark for the prize, am the fierce wishes of </p>
+                <closer>
+                    <salute>thy loving <rs key="w6n9820p">Brother</rs>,</salute>
+                    <persName key="w6n05cnp">Joshua Hunt</persName></closer>
+               <postscript> 
+                   <p><label>P.S.</label> please to remember our kind love to <persName key="w6553d40">Samuel Roberts</persName> son &amp; wife, inform him that <persName key="w6x74cd2a">Jonas</persName> &amp; I <del>expect</del> propose being down in the 9th month</p>
+               </postscript>
+                <pb n="004" facs="488912"/>
+                <postscript>
+                    <p> &amp; should take it very kind that he would settle &amp; contract our affairs as much as he conveniently can, as our stay much be short, our kind love also to Samuel &amp; Hope Stokes to Elisha &amp; Elizabeth, Elizabeth I think I shall be willing to bring home with me, if she is free &amp; <add>at</add> liberty &amp;. Our love also to Joshua Dudley &amp; wife &amp; other inquiring Friends &amp; relations as thou mayst have opportunity, &amp; thyself &amp; <add>family</add> accept of the same salutation</p>
+                </postscript>
+                <closer>
+                    <signed><persName key="w6n05cnp">Joshua</persName> &amp; <persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                </closer>
+            </div>
+               <closer>
+                   <address><addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+                   <addrLine>near Moorestown New Jersey Burlington County</addrLine></address>
+               </closer>
+         </body>
+    </text>
+</TEI>

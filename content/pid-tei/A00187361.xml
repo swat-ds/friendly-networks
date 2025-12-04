@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hannah Yarnall letter to Elizabeth Evans, 1804 2mo 17: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 4 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187361</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187361</idno>
+                        <idno type="IslandoraNodeid">527589</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1804-02-17">2nd mo 17th 1804</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Illness</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Thornton, James, 1785-1858</term>
+                    <term>Roberts, William, 1753-1829</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Byberry <date when="1804-02-17">2nd mo 17th 1804</date></dateline>
+                    <salute>Dear <rs key="w6hv3dnq">Mother</rs>,</salute>
+                </opener>
+                <p>Yesterday I received a letter signed thy name, mentioning your not hearing from us lately by letter. I may inform <persName key="w6096wx2">James</persName> wrote last week. Issac said he gave it to <persName key="w60h49r3">William Roberts</persName>, in which was mentioned that thy camlet cloak and the writings reflecting Martin Moody was left at John Hilman’s in town, with a request for Mary to send them by the first safe opportunity, which would be satisfactory to hear was done and you had received them. <del>as</del></p> <p>As to <persName key="w6096wx2">James</persName>’s throat, those lumps on each side is about the glands or what some calls ammons of the ears and connects below them. They appear <add>of a</add> hard callous nature. Doctor Physic, who is esteemed for a skillful surgeon gives it as his opinion that nothing can be done for his relief but to have them taken off–with fixing a wire round one at a time which will, as is supposed, </p>
+                <note type="structure">continued from fourth page</note>
+                <p>the presence of our Holy Helper and High Priest is far better than corn, wine, or oil, but if I should be spared and enabled, I trust I should think of Him and make it a point to visit them perhaps in company with <add>dear</add> Mary Withcel who desires to come to see you H&amp;Y write in love <persName key="w6g77m31">H.Y.</persName></p>
+            
+            <pb n="002" facs="xxxxx"/>
+                <p>be some days and nights a doing its office, he says without danger but not without very considerable pain, and it will require his being in town for ten days for the first operation, and it may be the second may not be requested to be done, at least for some length of time after the other that is uncertain. But the whole is proposed to be referred to the spring and as the most favorable time of year. The fourth month is proposed, unless necessity should hasten it, which I have not a prospect at present will be the case. With care he makes out to eat middlingly well many sorts of food, but sometimes I have been much alarmed at his strongly writhing. A year past, I don’t know that there is much change from what appeared when we were at your house. I believed I spoke to thee on the subject and got thee to look at it. I had then taken some advice
+            
+            <pb n="003" facs="xxxxx"/>
+                with a physician <add>in the Country</add> a few days before, but as he proposed giving him <del>callows</del> some Mercury. I declined taking anything off him, fearing of his inquiring his constitution, which I think I had cause to guard against &amp; apprehend it was best so. We appear poor, frail beings, incident to many disorders and complaints, even while on this stage of action. I sometimes in some degree think I see the necessity of making ready for a final farewell to all things here, but weakness I may safely acknowledge to be mine and therefore am surrounded with many infirmities and <add>am</add> desirous of your prayers for me that I may be quickened unto watchfulness even unto prayer for myself. That indeed &amp; in truth I may withstand the wiles of the old adversary in all his temptations and transformations who knows all our week sides and unless <add>we are brought to see them ourselves and</add> a double watch is set there he undoubtedly will be likely to make an inroad upon us—and thereby miss of <del>that</del> or greatly endanger ourselves. O thereof viz.</p> 
+            
+            <pb n="004" facs="xxxxx"/>
+                <p><del>being</del> of that which was promised by the lip of truth unto those who happily attained to an overcoming which none to <del>receive</del> but those who received it.</p> 
+                <p>I mark the invitation <del>to</del> kindly so to attend with my son at the proposed time of sister Lydia’s consummating her marriage. But as I am a friend to many small companies at such times, I should be sorry to take up the room of Lydia’s &amp; her intended particular friends, a few of which they may incline to have with them, and which I think is allowable provided the provision. Therefore is bounded in moderation, which I am not doubting will be the case in the present instance alluding to. I have several times as I thought felt my mind drawn to attend marriages here away without any invitation, <add>as sometimes with</add> and to my satisfaction and without enforcing the company at the place of dining. But considering the distance and season of the year it does not appear likely that will be the circumstance at sister Lydia’s, but if I was on that shore I should be very likely to try to get into one corner of the meetinghouse that day as I should think far more of that than a dinner for to be favored with </p>
+            </div>
+        </body>
+    </text>
+</TEI>

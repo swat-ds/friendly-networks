@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import { SEO } from "../components/SEO";
+import { Seo } from "../components/SEO";
 import JournalCard from "../components/JournalCard";
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import "../styles/pageStyles.scss"
@@ -82,8 +82,11 @@ const WritingsPage = ({ data }) => {
   const [collFilter, setColl] = useState('');
   const collections = [
     {name: 'All', value: ''},
-    {name: 'Hunt', value: 'Hunt'},
-    {name: 'Evans', value: 'Evans'}
+    {name: 'Hunt', value: 'John Hunt'},
+    {name: 'Evans', value: 'Evans'},
+    {name: 'Redman', value: 'Redman'},
+    {name: 'Roberts', value: 'Roberts'},
+    {name: 'Yarnall', value: 'Yarnall'},
   ];
 
 // Create a useState to filter which genres are shown
@@ -247,7 +250,7 @@ export const data = graphql`
 
 // Enrich <head> tag
 export const Head = () => (
-  <SEO title="Writings - Friendly Networks"/>
+  <Seo title="Writings - Friendly Networks"/>
 )
 
 export default WritingsPage;

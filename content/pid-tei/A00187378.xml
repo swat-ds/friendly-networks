@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Peter Yarnall letter to Hannah Thornton, 1796 3mo 11: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187378</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of the Yarnall family</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Richardson-Yarnall family papers, RG5-187</collection>
+                        <idno type="local">A00187378</idno>
+                        <idno type="IslandoraNodeid">527642</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1796-03-11">3rd month 11th 1796</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Domestic relations</term>
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="xxxxx"/>
+            <opener><dateline>Deep River <date when="1796-03-11">3rd month 11th 1796</date></dateline>
+            <salute>My dear Friend,</salute></opener>
+            <p>I am thankful my mind hath been often engaged in near sympathy with thee under my late arduous embassy, which has often appraised a trying path, but I find it best to endeavor to do what little I can, if I can only obtain a single might to cast into the treasury. We have deep wading sometimes, but it is a mercy inexpressible when made willing to suffer with the seed, for as we abide faithful, when it reigns, we shall reign also. Many are the fare, inexperienced, uninformed youths in the land of Carolina, which we entered 5 or 6 weeks ago, &amp; perhaps more, after taking meetings through the back parts of Virginia. And since we arrived at New Garden, have performed a visit in company with our dear Friend John Wishham to thee families of Friends of New Garden particular meeting, which we accomplished the day before yesterday–about 80 in numbers– and this day have attended the quarterly meeting for New Gardens held at Deep River. I trust the great shepherd of Israel was with us, for which favor I desired to bow as in my first door for the work is altogether his-the power and the glory.</p> 
+            <p>Dear <persName key="w6g77m31">Hannah</persName>, pray for me, that I may use the field and also hardness as a good soldier. I believe I have felt
+            
+            <pb n="002" facs="xxxxx"/>
+            my heart bound to the precious immortal cause <del>but</del> <add>and</add> as long as our blessed captain &amp; leader goeth before and salutes his little flocks with the endeared language. Be of good Christ, and drawing with the cords of his love. May we not run after him and hopest in the accomplishment of the warfare. Yet my cup overflow. Oh, may they be sure and in the way of holiness too–and the excellency of the creator always in the dust. I gave a hint respecting the dear young people who labor under many &amp; great disadvantages, and yet the forming hand is laid upon some of them who are acquainted with retirement and near stillness. My prayers are for them that they may move in a holy solidity, attending to the tender [?]  the Lord hath been pleased to rouse in their minds then will that gracious declaration be fulfilled in them, their people have I formed for myself, and they shall show forth my praise–I feel nearly for my dear Friends with you and in my own neighborhood. I did believe the Lord had driven in both places and by his holy quickening life remain also afresh for service. I desire they, with myself, may walk worthy of all his blessings &amp; favor, which to my humbling admission have been mystified.</p> 
+            <p>And now dear Friend, 
+            
+            <pb n="003" facs="xxxxx"/>
+            being acquainted with thy diffident mind I instruct thee not to be cast down when the true bread is scarce, and weakness upon thy loins. And even permitted to feel as though the divine presence was beheld, for the Lord is the strength of his people, &amp; his ear is open to their praying and their gracious words proceeding out of his mouth, that man shall not live by bread alone but by every word proceeding from the mouth of God. And in there dispensations how can close the immortal life in us is nurtured. I know I am writing to one of longer experience than myself, though I am sure my sympathy has been often great with thee, when thou hast been ready to utter–is there any savior like unto my savior? May a holy tranquility rest upon thy mind, and heart. Hannah, be encouraged to sit down with the little flock under thy prayers, for the good will of him that dwells in the bush is near and watches over you to do your good.</p>
+            <p>I have been filling up my time in various services. Since coming the Carolina have visited all the meetings of Cane Creek greater &amp; most belonging to new garden. In a day or two expect to move forward in company with dear John Wisham and my beloved companion James Emlen towards Westfield </p>
+            
+            <pb n="004" facs="xxxxx"/>
+            <closer>
+                <address><addrLine>For <persName key="w6g77m31">Hannah Thornrton</persName> </addrLine>
+                <addrLine>at Byberry</addrLine></address>
+            </closer> 
+        </body>
+    </text>
+</TEI>

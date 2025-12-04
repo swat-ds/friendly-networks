@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hannah Yarnall letter to Esther Hunt, 1810 5mo 25: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 6 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187328</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187328</idno>
+                        <idno type="IslandoraNodeid">488823</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>2 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1810-05-25">25th of 5th mo 1810</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488824"/>
+            <div type="letter">
+                <opener>
+                    <salute>Dear <persName key="w6gj3q0h">Esther</persName>,</salute>
+                </opener>
+            
+            <p>We are now on our way as far as Darby and remember thy request to write thee but do not feel much qualification therefor, but felt your visit so kind believe it right for me to manifest it in this way, by letting thee know that I feel pretty quiet so far, but to look forward at the young, it seems very weighty. I continue to crave your remembrance. I have not words to set forth how it feels to me as I have been setting in this Friend’s house I have been looking how it would do to think of turning home, but conclude there is no other for me to but to <del>look</del> go forward although it truly looks mountainous. Asa Walmsley is with us, &amp; John Stapler is expected to meet us in about two weeks after this. I was sorry thy <rs key="w6165774">husband</rs> did not return to us at Jonathan Perry’s as he had so much time, but I did not know how it was to be in the morning when he left for the city. William Yarnall was at our house the latter part of the same week you left us, had quite give out accompanying the friend that was talked of.</p>
+            <closer>
+                <salute>In love to you &amp; daughter, I conclude &amp; remain 
+                your sincere friend,</salute> 
+                <signed><persName key="w6g77m31">Hannah Yarnall</persName></signed>
+            </closer>
+            <dateline><date when="1810-05-25">25th of 5th month 1810</date></dateline>
+            
+            </div>
+            <pb n="002" facs="488825"/>
+                <closer><address><addrLine><persName key="w6gj3q0h">Esther Collins</persName> from <persName key="w6g77m31">H. Yarnall</persName></addrLine>
+                <addrLine>Jersey near Moorestown</addrLine>
+                <addrLine>to the Attention of Richard Prior } Philadelphia </addrLine></address>
+                </closer>
+            
+        </body>
+    </text>
+</TEI>

@@ -3,7 +3,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-export const SEO = ({ title, description, pathname, children }) => {
+export const Seo = ({ title, description, pathname, children }) => {
   // Import site metadata
   const data = useStaticQuery(graphql`
   query {

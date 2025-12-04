@@ -1,0 +1,111 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Joshua Hunt letter to John Hunt, 1791 4mo 24: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 9 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187348</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Joshua Hunt</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187348</idno>
+                        <idno type="IslandoraNodeid">488903</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker teacher Joshua Hunt is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1791-04-24">4th mo 24th 1791</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Religious life</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Rogers, William, 1731-1812</term>
+                    <term>Cattle, Jonas, 1741-1828</term>
+                    <term>Roberts, Samuel, 1758-1834</term>
+                    <term>Collins, John, 1750-1817</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488904"/>
+            <div type="letter">
+                <opener><dateline>Redstone <date when="1791-04-24">4th month 24th 1791</date></dateline>
+                    <salute>Beloved <rs key="w6n9820p">Brother</rs>,</salute>
+                </opener>
+                <p>I received thy lines from the hand of Reece C. and also by John Shreeve, both of which were truly acceptable. My family enjoys a pretty good state of health, except Enoch is a little poorly. <persName key="w6x74cd2a">Jonas’s</persName> family pretty well I believe. I am glad to hear of thy talk of coming to see us <add>with</add> <persName key="w6fv9b6q">William Rogers</persName>; &amp; could wish way may open for the undertaking.</p> 
+                <p>As thee requested some information respecting our meetings, &amp; I <add>am</add> free to give me sense thereon. Some of our meetings have been comfortable &amp; satisfactory to me, but for the most part dry &amp; hard. There is such a raw, wild, uncultivated, Indian- like state in the people that <add>it</add> makes hard work. </p>
+                <p>Our monthly meetings have sometimes been pretty lively; but old Split Foot has lately made an inroad several sides upon us. The subject of dividing our Monthly-Meeting has for some months been before us, but it is now suspended for a time. Yesterday was our Monthly-meeting, &amp; I thought for some time we were like to have a very good one. But by &amp; by while David was harmoniously playing, wicked Saul cast his 
+                
+                    <pb n="002" facs="488905"/>
+                javelin, &amp; a sorely distressing time it was, the like I think I never seen nor felt. The wise woman builded the house, but the foolish plucked down with her hands. Our meetings are like something just brought into existence, some of them scarcely able to stand. Abundant need of faithful Elders, upright stakes, standard bearers, tender, yet jealous fathers &amp; nursing mothers. Many have come into this country that have lately been halt, lame &amp; blind in religion, &amp; now desiring to be something more, walk yet but hobblingly. Many coming from different parts, accustomed to different methods of proceeding, &amp; every one naturally thinking his own way best, occasions difficulties sometimes in our meetings. But it is allowed that great improvement has been made. Friends &amp; Friends Meetings in this country, agreeable to my ideas, are nearly distanced &amp; situated from me as follows. (Viz.)</p>
+                <p>Redstone Meeting about 4 miles southwest, Westland- 71/2 miles southwest &amp; by west. Fallowfield 9 miles, Northwest, Providence 6 miles between North &amp; Northeast. Sewickly 20 miles north where Benjamin Gilbert lives and Sandy-creek
+            
+                    <pb n="003" facs="488906"/>
+                glades meeting perhaps 30 miles southeast.</p>
+                <p>There is a small collection of Friends near Union Town <add>perhaps go 10 miles southeast</add>, who have lately requested a meeting, which is not likely to take place yet a while. Perhaps with the addition <add>of</add> one or two solid families it might <del>take place</del> <add>be begun</add>. There is also a small collection of Friends about Muddy Creek, perhaps 14 or 15 miles southwest, where with the addition of a few solid families a meeting might be began. Several Friends have visited our country this last winter who I believe have some prospect of coming with their families; Jacob Londy from Hardwick in particular, who signified to me that he had some acquaintance with thee. One Henry Widowfield, I heard say is <add>also</add> about to move out. I could wish it were thy duty to come out with thy family to help us; but if thou shouldst come to see us, I expect the homeliness of the country will be no invitation. </p>
+                <p>Thomas Bishop &amp; William Egastaff are waiting while I write. Egastaff I believe thinks if ever he settles it will be in this country. If Thomas could come with a wish I believe he would be likely to get along. Time fails. I refer thee to <persName key="w6553d40">Samuel Roberts’s</persName> letter &amp; <persName key="w6165774">John Collins's</persName> for further information 
+                
+                    <pb n="004" facs="488907"/>
+                Information respecting temporals, for I am almost weary of writing of them.</p> 
+                <p>A few white hairs at length has come Which plainly foretells to the man He’s hastening to his latest home, his thread of life scarce half a span. His jovial youth its spent alas! He’s running down the slope of age, A few more fleeting seasons pass Then gone forever from the Stage.</p>
+                <closer>
+                    <salute>Thy loving <rs key="w6n9820p">Brother</rs>,</salute> 
+                    <signed><persName key="w6n05cnp">Joshua Hunt</persName></signed>
+                </closer>
+            </div>
+             <closer>
+                 <address><addrLine><persName key="w6n9820p">John Hunt</persName></addrLine>
+                     <addrLine>Near Moorestown New Jersey</addrLine></address>
+             </closer>
+        </body>
+    </text>
+</TEI>

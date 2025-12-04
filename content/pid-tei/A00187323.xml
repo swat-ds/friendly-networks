@@ -1,0 +1,104 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1805 9mo 3: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 8 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187323</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187323</idno>
+                        <idno type="IslandoraNodeid">488806</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1805-09-03">3rd of 9th mo 1805</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs </term>
+                    <term>Religious life</term>
+                    <term>Domestic relations</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term></term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488807"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Redstone <date when="1805-09-03">3rd of 9th month 1805</date></dateline>
+                    <salute>Dear Brother <persName key="w6n9820p">John Hunt</persName>,</salute>
+                </opener>
+                    <p>These may inform yesterday was our Quarterly-meeting. Receiving a few lines from a friends in the Neighborhood where our Brother Robert lives, getting intelligence that he is much as when I was there, not better.</p> <p>The case of Sarah Shaw was terminated in her being reinstated as a Member, (though not to be considered a select one). Samuel Jackson had the judgment of the Monthly-meeting confirmed, the request of a monthly-meeting at Salem was Granted, <del>which</del> which is to be opened the third day preceding the 2nd seventh day in this Month &amp; named Salem Monthly -meeting. A request was produced to this Quarter for the Establishment of a <add>meeting &amp; the privilege of holding</add> preparative meeting at the South Fork of Little Beaver (a branch of Salem), The request of Cross Creek was referred under the care of the former committee to attend thereto &amp; report to next Quarterly-meeting. The request and proposal of a Quarterly meeting established for Short Creek <add>&amp;</add> Concord <del>was prepared</del> is to be forwarded to the ensuing yearly meeting. <del>And</del> It was spread before the meeting the weak state of the Meeting named Richland (towards Clerksburg)
+            
+                        <pb n="002" facs="488808"/>
+            believing it hardly held to reputation, considerable number of their members having moved away. </p>
+                <p>Therefore It’s like to be discontinued, a committee appointed thereon. I have, dear <rs key="w6n9820p">Brother</rs> given thee a short account of some of yesterday's business, <add>there were</add> several other matters, as well as reading &amp; answering the queries preparing essays for the Yearly-meeting &amp; getting representatives <del>for the yearly-meeting</del> <add>there too</add>. &amp; which fell to my lot for one, either way <add>will</add> open for my going, I do not now see; not having expected to go this fall. Verily true it is, the harvest great and the rightly qualified laborers few. Oh, forget <add>not</add> to join in interceding for those, who have measurably entered into the labor, that they continue on. And faint not, as also that there be greater increase of those who are willing to come into the labor that may be raised up, to stand as valiants <add>for truth</add> in this remote land. Oh, how shall I describe to thee dear Brother our state, Its enough to make one tremble when seen in the clearness. The many dangers both on the <add>right</add> hand as well as left, within and without, that it has seemed to me, there was <add>never</add> a time or place where the help of rightly exercised Spirits was wanted <add>more than here</add>. Lest after all the great things the Lord hath done for us, we became a reproach, a hissing and a by word, &amp; go into captivity </p>
+            
+                <pb n="003" facs="488809"/>
+                <p>Thee must excuse my writing, for its done of hand, expecting an opportunity in a few Minutes of sending it, &amp; remembering thy desire to hear from us; as well as travel and exercise when here which I have hope will not be all lost.</p>
+                <closer>
+                    <salute>Therefore, with desires that we <add>may</add> so step along through this wilderness world as to be favored with the <del>great</del> blessing of preservation is the ardent breathing of thy exercised friend &amp; sister,</salute> 
+                    <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+                </closer>
+                <postscript><p><label>P.S.</label> we are favored with health in a good degree, and the Children join in love to thee &amp; thine &amp; <damage><gap/></damage>. I expect Elisha is in your parts, I feel anxious for his welfare &amp; right conducting, hoping he will return as soon as will be convenient. </p></postscript>
+            </div>
+            <pb n="004" facs="488810"/>
+            <closer>
+                <address><addrLine><persName key="w6n9820p">John Hunt</persName> senior</addrLine>
+                <addrLine>Jersey</addrLine>
+                <addrLine>favor by Thomas French</addrLine></address>
+            </closer>
+        </body>
+    </text>
+</TEI>

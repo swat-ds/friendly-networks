@@ -1,0 +1,105 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Caleb Hunt letter to Esther Hunt, 1817 4mo 16: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 7 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187345</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187345</idno>
+                        <idno type="IslandoraNodeid">488889</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1817-04-26">4th mo 16th 1817</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Domestic relations</term>
+                    <term>Death</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Roberts, David, 1792-1880</term>
+                    <term>Roberts, Rachel Hunt, 1791-1881</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488890"/>
+            <div type="letter">
+                <opener>
+                    <dateline>Brownsville <date when="1817-04-16">4th month 16th 1817</date></dateline>
+                    <salute>Endeared <rs key="">Mother</rs>,</salute>
+                </opener>
+                <p>Soon after we received thy letter informing us of thy great loss, Brother Elisha wrote thee that he should come to see thee early this Spring, if a journey to Kentucky that he then had in prospect could be dispersed with. We afterward concluded that it <del>was</del> would not do well to put off going to Kentucky till he could return from Jersey, &amp; he immediately made ready &amp; started last 6th day morning in a boat, with a number others. The river was pretty <del>full of water</del> high, &amp; the weather has been pleasant since that. I expect that he will soon arrive at the place of his destination. We expect that he will be about four weeks from home. He expects to start to Jersey soon after his return from Kentucky. He took no horse with him, proposed to buy one there to ride home.</p>
+            
+                <pb n="002" facs="488891"/>
+                <p>Early in the morning of the 6th day of this month, my dear Rhoda was delivered of a fine son <del>in about two hours after she felt the first pain</del> <add>she</add> suffered as little as could reasonably be expected. She appears at present in a fair way to get about again very soon. The babe is a fine, healthy looking, quiet child. We have not given him a name yet, but talk some of calling him Alfred. </p>
+                <p>We are indulging the pleasing prospect of having them with us this summer. Brother Stacy has moved to the farm. He &amp; Elisha are going to carry on farming in partnership. Our family are all small ones &amp; I think thee can spend thy times very comfortably among us. My house is situated in a pleasant part of the town, &amp; we think in the best neighborhood that Bridgeport affords. It will be a still more agreeable home if thee will come &amp; share it with us. It is rather too far from the store to step in as often as I would like to,
+                
+                    <pb n="003" facs="488892"/>
+                but perhaps the walk is what has contributed to my health. Brother Elisha proposed to start to Jersey as soon as he returns from Kentucky; he wished to have both journeys performed before harvest. Aunt Elizabeth Cattell has had a severe spell, but has got about again, has been at meeting 2 or 3 times since. </p>
+                <p>Does David &amp; Rachel talk of coming this summer? We want to see them. My love to them, &amp; Mary says hers to you all. My Rhoda I only see at night &amp; early in the morning as I don’t go home <damage><gap/></damage> dinner when Elisha is not here.</p>
+                <closer>
+                    <salute>In heart, thy son</salute>
+                    <signed>Caleb Hunt</signed>
+                </closer>
+            </div>
+            <pb n="004" facs="488893"/>
+                <closer><address><addrLine>Esther Collins</addrLine>
+                    <addrLine>Caleb Hunt</addrLine> 
+                    <addrLine>near Moorestown New Jersey</addrLine></address>
+                </closer>
+                
+        </body>
+    </text>
+</TEI>

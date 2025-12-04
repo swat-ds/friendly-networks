@@ -1,0 +1,120 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esther Hunt letter to John Hunt, 1805 6mo 8: Electronic Version</title>
+                <editor>Friends Historical Library of Swarthmore College</editor>
+                <respStmt>
+                    <resp>TEI Markup done by</resp>
+                    <name>Victoria Kimmel</name>
+                </respStmt>
+            </titleStmt>
+            <extent>ca. 12 KB</extent>
+            <publicationStmt>
+                <publisher>Friends Historical Library of Swarthmore College</publisher>
+                <address>
+                    <street>500 College Avenue</street>
+                    <addrLine>Swarthmore, Pennsylvania</addrLine>
+                    <postCode>19081</postCode>
+                    <country>United States of America</country>
+                </address>
+                <availability status="free">
+                    <p>The text of the original item is in the public domain. The text encoding and editorial notes were created and/or prepared by the <hi rend="italic" >Friends Historical Library of Swarthmore College</hi> and are licensed under a <ref target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ref> (CC BY 4.0). Any reuse of the material should credit the <hi rend="italic"> Friends Historical Library of Swarthmore College </hi>.</p>
+                </availability>
+                <date when="2023">2024</date>
+                <idno type="local">A00187321</idno>
+            </publicationStmt>
+            <seriesStmt>
+				<title level="s" type="project">Friendly Networks</title>
+				<title level="s" type="series">
+				    <title level="s" type="main">The Correspondence of Esther Roberts Hunt Collins</title>
+				</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Friends Historical Library of Swarthmore College</institution>
+                        <collection>Roberts-Hunt family papers, SC-061</collection>
+                        <idno type="local">A00187322</idno>
+                        <idno type="IslandoraNodeid">488801</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>4 pp.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The correspondence of Quaker minister Esther Roberts Hunt Collins is stored at the Friends Historical Library of Swarthmore College. With the generous support of H. David and Joyce E. Hunt, Library staff scanned and transcribed these letters in 2024 and encoded the text in TEI.</p>           
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Original written <date when="1805-06-08">6th mo 8th 1805</date></creation>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#lcsh">
+                    <term>Quakers--Social life and customs</term>
+                    <term>Religious life</term>
+                    <term>Domestic relations</term>
+                </keywords>
+                <keywords scheme="#lcnaf">
+                    <term>Hunt, Robert, 1745-1805|</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <list>
+                <item><date/></item>
+            </list>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="001" facs="488802"/>
+            <div type="letter">
+            <opener><dateline>Redstone <date when="1805-06-08">6th month 8th 1805</date></dateline>
+                Beloved Brother <persName key="w6n9820p">John Hunt</persName>,
+            </opener>
+                <p>Thou art often in my remembrance with feeling nearness, desiring thy peace &amp; prosperity. Pleasant would it be to my natural inclination to have the pleasure of seeing and conversing with thee–yet so it is that except we use the pen, our communication comes to a stop. Dear <rs key="w6n9820p">Brother</rs>, I would not have thee to think I have forgotten thee because I have been so long silent. Too, verily, I believe there is not one day passes but thou art in my remembrance with tender regard—my not writing particularly to thee has been from the unpreparedness of my weak mind—having been cumbered about (as it were) within &amp; without. O, the unpleasant account I must give of us hereaway. Thou mayst remember G. Dilhorn, he remains in a poor disordered way, offended with everybody except self, and that he hugs close. He has me some very full setdowns, exclaiming hard for thy going to see him, saying I had better kept my Brother at home than to send thee to disturb his house etc. Samuel Jackson has appeared to the Quarter. Sarah Shaw offered her acknowledgement to Middleton Monthly-meeting. They rejected it and testified against her, and she has also appealed. Masheck Sexton has had several hard spell of colic, is now I think much about as when thee saw him–mind filled with hard and unprofitable things, yet there appears something tender about him, If it had room would help him. He don’t look as if he would be long for this world. His daughter C.J. appears striving after substance which will endure, yet there appears many hindering things in her way.</p>
+                <p>O, my dear <rs key="w6n9820p">Brother</rs>, it would be very agreeable if I had better tidings but alas, nothing very reviving amongst us. Poor Mary Coope departed this life a few days ago. I was at her burial which was large. David Grave &amp; Henry Mills were there. Joseph Townsend and company at Beaver has lot of great disappointments &amp; losses last winter; a saw mill completely fixed, with several saws on some extraordinary plan burned down with 50 L of hides &amp; in a short time after, an uncommon fresh, or flood, of water swept off their great Merchant Mill with all belonging to it. &amp;
+                
+                    <pb n="002" facs="488803"/>
+                this spring, Samuel Jackson had his Old Grist Mill Burned, so we see that the wise and ingenious are not exempt from blasting &amp; disappointments.</p>
+                <p>It’s like thou mayst have heard the request of Concord &amp; Short Creek was revived for the establishment of a quarterly meeting which is under consideration a committee being appointed thereon–there has been a request for preparative and the establishment of a meeting for worship at still water, which was united with at the last quarter–the division of Middleton monthly meeting has also been under consideration. <add>a</add> committee appointed in the third month <del>was appointed</del>; the proposal is to have monthly meeting established at Salem (I was disappointed going when friends went in the 4th month last by Caleb, Engles’ Wife being ill here and he gone to Jersey. She was above 6 weeks here). Its proposed now for to attend there in the 8th month next. </p>
+                <p> Oh, the need of rightly qualified members in this place lest truth suffers. Oh my dear <rs key="w6n9820p">Brother</rs>, may I have a place in thy mind in favored seasons (&amp; may we all) for truly there is a great need of skillful workmen and women in this time and place, where truth is in danger of suffering in our parts in particular.</p> 
+                <p>Another request was brought for the establishment of a meeting at Cross Creek laying on the way from Salem to Plymouth, a branch of Short Creek monthly meeting. We had the company of Jonathan Wright from Virginia at our last quarter. Richard Ridgeway (his father-in-law) accompanied, also <persName key="w6t25v7b">Joseph Matlack</persName> &amp; his Brother Samuel &amp; some others from distant parts. A considerable number of our friends from over the Ohio attended, Ann Taylor Ruth Boswel and Hannah Pickering, <persName key="w6th9w2h">Horton Howard</persName>, Jacob Oug, ministers &amp; John Heald and Abigail Richards brought forward to the quarter from Middleton Monthly meeting to recommend them for Ministers. Now my dear <rs key="w6n9820p">Brother</rs>, if thou shouldst see this; thou mayst see it is not a time for ease in no sense, but rather that we petition for wisdom as one formerly did to know how to go in and out before the people, &amp; our families.</p> 
+            <closer>
+                <salute>from,</salute> 
+                <signed><persName key="w6gj3q0h">Esther Hunt </persName></signed>
+            </closer>
+            
+                <pb n="003" facs="488804"/>
+                <postscript> <p>17th of the 6th month. Not being ready to send the above, an opportunity now offers by Benjamin Borton. Therefore Dear <rs key="w6n9820p">Brother</rs>, I shall add a few lines more hoping I may not tire thee therewith, wishing thou mayst make all necessary allowance both for long silence as also for so great a flow at once. </p>
+                <p> We are partakers of health at this time with other Blessing which that we may be thankful receivers, is my ardent desire. <persName key="w6x74cd2a">Jonas</persName>’s Wife and family pretty well. Thomas French &amp; Wife have colds, but about—Charles Gause was here yesterday he and family as well as usual. The old man retains his love for his friends, though weak in faculties other ways. Our Brother <persName key="w66b7v5c">Robert</persName> I understand gets out amongst his friends at times, though often very poorly. The rest of his family &amp; Children as <add>well as</add> usual.</p>
+                </postscript>
+                 <closer>
+                     <salute>Thy visit in the general retains a precious savor, many friends have desired their love remembered to thee when there was opportunity–<persName key="w6x74cd2a">Jonas</persName> &amp; Elizabeth, Catherine Saxton &amp; with my Children joining me therein.</salute> 
+                     <signed><persName>Esther Hunt</persName></signed>
+             </closer>
+                 <postscript>
+                     <label>P.S.</label> <p>Nathan is free and hired with Septamas Cadwallader who is moved with his family about 20 miles from the mouth of Beaver toward Shenango. Expects to stay this summer &amp; work for him. I find it to be <add>a</add> world of cares and some of very different kind, we feel our concerns for our Children when thy are little &amp; believe we shall continue to have it, when they grow up ‘though it may be of quite another kind: and oh, may we never be forsaken by him who is the sure keeper &amp; preserver (if we are kept &amp; preserved) I think one petitioned that he might <add>not</add> be forsaken when he was old &amp; gray headed &amp; strength failed; even so, I think there is <add>need</add> for us to intercede that we be not forsaken &amp; that the Lord may not take his good Spirit from us when the infirmities of old age overtake, for assuredly I see myself in a spot that every step I take needs care as being attended with its consequences &amp; it doth not appear a time for a final stop. </p>
+                 </postscript>
+                 <closer>
+                     <salute>Therefore, Dear <rs key="w6n9820p">Brother</rs>, I crave thy sympathy and bid thee affectionate farewell, with desiring my love remembered to my dear friends &amp; relations as opportunity offers.</salute> 
+                     <signed><persName key="w6gj3q0h">Esther Hunt</persName></signed>
+              </closer>
+          
+            <postscript><p>I have wrote so free that I request thee not to expose it </p></postscript>
+            </div>
+            <pb n="004" facs="488805"/>
+                <closer>
+                    <address><addrLine><persName key="w6n9820p">John Hunt</persName> senior</addrLine>
+                    <addrLine>in Evesham Jersey</addrLine>
+                    <addrLine>by favor of Benjamin Borton </addrLine></address>
+                </closer>   
+        </body>
+    </text>
+</TEI>
