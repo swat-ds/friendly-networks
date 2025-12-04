@@ -34,9 +34,9 @@
                 <msDesc>
                     <msIdentifier>
                         <institution>Friends Historical Library of Swarthmore College</institution>
-                        <collection>Richardson-Yarnall family papers, </collection>
+                        <collection>Richardson-Yarnall family papers, RG5-187 </collection>
                         <idno type="local">A00187368</idno>
-                        <idno type="IslandoraNodeid">XXXXX</idno>
+                        <idno type="IslandoraNodeid">527613</idno>
                     </msIdentifier>
                     <physDesc>
                         <p>2 pp.</p>
@@ -50,7 +50,7 @@
             </projectDesc>
         </encodingDesc>
         <profileDesc>
-            <creation>Original written <date when="XXXXX">XXXXX</date></creation>
+            <creation>Original written <date when="1793-01-14">1793-01-14</date></creation>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
