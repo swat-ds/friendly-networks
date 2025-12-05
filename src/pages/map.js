@@ -31,7 +31,7 @@ const MapPage = ({ data }) => {
         <ToggleButtonGroup 
             name="collection" 
             type="radio"
-            defaultValue={''}
+            defaultValue={currentMap}
             id="map-choice"
           >
           {maps.map((map, idx) => (
