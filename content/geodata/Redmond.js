@@ -65,14 +65,14 @@ export const redmond = {
       {
         "type": "Feature",
         "properties": {
-          "name": "Westchester",
+          "name": "[New] York",
           "styleUrl": "#icon-1899-0288D1-nodesc"
         },
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -73.7392495,
-            41.2351914,
+            -74.010176,
+            40.709531,
             0
           ]
         }
@@ -641,8 +641,8 @@ export const redmond = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -72.4411969,
-            40.9376004,
+            -73.7009378,
+            40.8124293,
             0
           ]
         }
@@ -680,14 +680,14 @@ export const redmond = {
       {
         "type": "Feature",
         "properties": {
-          "name": "York",
+          "name": "[New] York",
           "styleUrl": "#icon-1899-0288D1-nodesc"
         },
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -73.8183804,
-            41.2625965,
+            -74.010176,
+            40.709531,
             0
           ]
         }
@@ -701,8 +701,8 @@ export const redmond = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -73.1409429,
-            40.9256538,
+            -74.6795761,
+            40.3271089 ,
             0
           ]
         }
@@ -760,8 +760,8 @@ export const redmond = {
               40.5575986
             ],
             [
-              -73.7392495,
-              41.2351914
+              -74.010176,
+            40.709531
             ],
             [
               -73.7360175,
@@ -912,8 +912,8 @@ export const redmond = {
               40.7556561
             ],
             [
-              -72.4411969,
-              40.9376004
+              -73.7009378,
+              40.8124293
             ],
             [
               -73.8306716,
@@ -924,12 +924,12 @@ export const redmond = {
               40.70906
             ],
             [
-              -73.8183804,
-              41.2625965
+              -74.010176,
+            40.709531
             ],
             [
-              -73.1409429,
-              40.9256538
+              -74.6795761,
+            40.3271089 
             ],
             [
               -74.6471763,
