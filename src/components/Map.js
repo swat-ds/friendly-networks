@@ -80,9 +80,12 @@ const MapNavButton = ({index, direction}) => {
   <Button 
     variant="secondary" 
     onClick={() => {
+      // Set fly speed based on proximity
+      const speed = map.getBounds().contains(layer._latlng) ? 0.5 : 1
       map.flyTo(
-        layer._latlng, maxZoom, {duration: 0.5, animate: true}
+        layer._latlng, maxZoom, {duration: speed, animate: true}
       )
+      
       layer.openPopup()
     }}
     >
