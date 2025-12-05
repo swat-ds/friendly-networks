@@ -85,8 +85,12 @@ const MapNavButton = ({index, direction}) => {
       map.flyTo(
         layer._latlng, maxZoom, {duration: speed, animate: true}
       )
-      
-      layer.openPopup()
+      // Only open new popup after zoom finishes, to prevent vector layer lag
+      map.once('zoomend', () => {
+        setTimeout(() => {
+          layer.openPopup()
+        })
+      })
     }}
     >
       {direction}
