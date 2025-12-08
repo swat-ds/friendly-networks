@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { Seo } from "../components/SEO";
 import {Row, Col, Card} from "react-bootstrap";
-import "../styles/background.scss";
 import "../styles/styles.scss"
+import "../styles/background.scss";
 
 const credits = () => {
 		return (

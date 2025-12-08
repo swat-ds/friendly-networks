@@ -41,7 +41,7 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
         // timeout: 10000,
       });
       let result = await fetchConstellation()
-      console.log(i, result.status, result.data.timing);
+      console.log(i, x, result.status, result.data.timing);
       if("constellation" in result.data){
         x++;
         constellations.push(result);

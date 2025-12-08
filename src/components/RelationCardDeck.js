@@ -7,7 +7,7 @@ import "../styles/entity.scss";
 const RelationCardDeck = ({ relationDeck }) => {
 
   const data = useStaticQuery(graphql`
-    query {
+    query ConstellationQuery {
       allConstellation {
         nodes {
           arkId

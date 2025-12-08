@@ -1,11 +1,11 @@
 import React, { useMemo } from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link, navigate, graphql } from "gatsby";
-import "../styles/volume.scss";
-import "../styles/styles.scss";
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 import Layout from "./Layout";
 import Viewer from "./Viewer";
+import "../styles/styles.scss";
+import "../styles/volume.scss";
 import ShadowedCeteicean from "../gatsby-theme-ceteicean/components/Ceteicean";
 import { Seo } from "../components/SEO";
 

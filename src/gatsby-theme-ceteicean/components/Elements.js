@@ -2,7 +2,6 @@ import React from "react";
 import { TEINodes } from "react-teirouter";
 // import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
 import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
-import "../../styles/ceteicean.scss";
 import {Link} from 'gatsby';
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";

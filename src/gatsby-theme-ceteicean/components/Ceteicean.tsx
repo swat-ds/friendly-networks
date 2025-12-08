@@ -1,8 +1,9 @@
 import React from "react"
 import Ceteicean from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import * as El from "./Elements"
-import "../../styles/styles.scss";
 import {TBehavior} from "gatsby-theme-ceteicean/src/components/DefaultBehaviors"
+import "../../styles/styles.scss";
+import "../../styles/ceteicean.scss";
 
 export type Routes = {
   [key: string]: TBehavior | JSX.Element
