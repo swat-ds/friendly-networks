@@ -1,4 +1,4 @@
-export const redmond = {
+export const redman = {
     "type": "FeatureCollection",
     "features": [
       {
