@@ -414,9 +414,7 @@ export const Table = (props) => {
   return(
     <Behavior node={props.teiNode}>
       <table className={tableType}>
-        <tbody>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        </tbody>
       </table>
       <br/>
     </Behavior>
