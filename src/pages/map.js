@@ -1,5 +1,5 @@
 import React from "react";
-import {useState } from "react";
+import {useState, useEffect } from "react";
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Map from "../components/Map"
@@ -24,15 +24,48 @@ const MapPage = ({ data }) => {
   
   const [currentMap, setMap] = useState(0)
 
+  // Handle display of filter buttons: 
+  const minWidth = 530;
+  const [filterVertical, setFilterVertical] = useState(false)
+  useEffect(() => { // Check size of window on component load
+    if (window && window.innerWidth < minWidth) {
+      setFilterVertical(true)
+    }
+    else if (window && window.innerWidth >= minWidth) {
+      setFilterVertical(false)
+    }
+  }, [])
+  useEffect(() => {   // Keep track of window resize
+    const handleResize = () => {
+      if (window && window.innerWidth < minWidth) {
+        setFilterVertical(true)
+      }
+      else if (window && window.innerWidth >= minWidth) {
+        setFilterVertical(false)
+      }
+    };
+    if (window) {
+      window.addEventListener('resize', handleResize)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      };
+    }
+  }, [])
+
   return (
     <Layout>
       <Row id="main-row">
         <h1>Map</h1>
+        <p>
+          The journals of Joshua Evans and Mercy Redmond record their travels
+          in the ministry, 
+        </p>
         <ToggleButtonGroup 
             name="collection" 
             type="radio"
             defaultValue={currentMap}
             id="map-choice"
+            vertical={filterVertical}
           >
           {maps.map((map, idx) => (
             <ToggleButton
