@@ -10,7 +10,7 @@ import { nj1 } from "/content/geodata/northern-journey-1.js"
 import { nj2 } from "/content/geodata/northern-journey-2.js"
 import { sj1 } from "/content/geodata/southern-journey-1.js"
 import { sj2 } from "/content/geodata/southern-journey-2.js"
-import { redmond } from "/content/geodata/redmond.js"
+import { redman } from "/content/geodata/redman.js"
 
 
 const MapPage = ({ data }) => {
@@ -19,7 +19,7 @@ const MapPage = ({ data }) => {
     {name: "Evans's 2nd journey North", data: nj2},
     {name: "Evans's 1st journey South", data: sj1},
     {name: "Evans's 2nd journey South", data: sj2},
-    {name: "Redmond's journey North", data: redmond},
+    {name: "Redman's journey North", data: redman},
   ]
   
   const [currentMap, setMap] = useState(0)
