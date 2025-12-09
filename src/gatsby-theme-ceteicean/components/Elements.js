@@ -433,13 +433,25 @@ export const TableRow = (props) => {
     };
   }
 
-  return(
+  // Lay out the main content of the row which we'll return
+  let row = (
     <Behavior node={props.teiNode}>
       <tr className={className}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </tr>
     </Behavior>
-  );
+  )
+
+  // If this is a header row (type=label), wrap the row in the <thead> element
+  if (props.teiNode?.attributes?.getNamedItem("role")?.value === 'label') {
+    return(
+      <thead>
+        {row}
+      </thead>
+    );
+  } else { // Otherwise just return the plain row
+    return row
+  }
 };
 
 export const TableCell = (props) => {
