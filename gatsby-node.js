@@ -46,6 +46,11 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
         x++;
         constellations.push(result);
       }
+      // For testing purposes
+      // TODO: Delete this
+      if (x > 10) {
+        break
+      }
   }
 
   console.log(constellations.length)
