@@ -1,8 +1,8 @@
 {
-  "name": "obf",
+  "name": "friendly-networks",
   "version": "1.0.0",
   "private": true,
-  "description": "obf",
+  "description": "Static site for the Friendly Networks project",
   "keywords": [
     "gatsby"
   ],
