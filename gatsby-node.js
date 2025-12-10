@@ -47,7 +47,7 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
         constellations.push(result);
       }
       // TODO: Delete this debugging code
-      if (x > 10) {
+      if (x > 70) {
         break
       }
   }
