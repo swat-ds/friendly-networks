@@ -25,7 +25,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // Pull in constellation data and add to GraphQL
 let constellations = [];
-exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
+exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
   const { createNode } = actions;
   console.log("(1)", "read");
 
@@ -46,8 +46,7 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
         x++;
         constellations.push(result);
       }
-      // For testing purposes
-      // TODO: Delete this
+      // TODO: Delete this debugging code
       if (x > 10) {
         break
       }
