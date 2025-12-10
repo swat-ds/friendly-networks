@@ -3,8 +3,6 @@ import {useState, useEffect } from "react";
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Map from "../components/Map"
-import { MapContainer } from 'react-leaflet/MapContainer'
-import { TileLayer } from 'react-leaflet/TileLayer'
 
 import { nj1 } from "/content/geodata/northern-journey-1.js"
 import { nj2 } from "/content/geodata/northern-journey-2.js"

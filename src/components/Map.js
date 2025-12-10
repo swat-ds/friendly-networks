@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Button } from "react-bootstrap";
 import L from "leaflet";
-import { MapContainer } from 'react-leaflet/MapContainer'
-import { TileLayer } from 'react-leaflet/TileLayer'
-import { Popup, Marker, useMap } from 'react-leaflet'
+import { Popup, Marker, MapContainer, TileLayer, useMap } from 'react-leaflet'
 import TextPath from 'react-leaflet-textpath' 
 
 import "../styles/map.scss";
