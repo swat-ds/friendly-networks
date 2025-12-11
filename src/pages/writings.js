@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
+
+import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+
+import JournalCard from "../components/JournalCard";
 import Layout from "../components/Layout";
 import { Seo } from "../components/SEO";
-import JournalCard from "../components/JournalCard";
-import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+
 import "../styles/pageStyles.scss"
 
 const parseString = require("xml2js").parseString;

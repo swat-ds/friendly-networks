@@ -1,9 +1,13 @@
 import React from "react";
+
+import { Row, Col } from "react-bootstrap";
+
 import Layout from "../../components/Layout";
 import { Seo } from "../../components/SEO";
 import Timeline from "../../components/Timeline";
-import { Row, Col } from "react-bootstrap";
+
 import "../../styles/pageStyles.scss";
+
 const timelineData = require("../../../content/timeline.json");
 const timeline = () => {
   return (

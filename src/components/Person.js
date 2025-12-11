@@ -1,14 +1,16 @@
 //Package imports
 import React from "react";
 import {graphql} from "gatsby";
+
 import { Row, Col, Card } from "react-bootstrap";
 
 //Local imports
+import { months } from "../globalVariables.js";
 import Layout from "./Layout";
-import { Seo } from "../components/SEO";
 import Map from "./Map";
 import RelationCardDeck from "./RelationCardDeck";
-import { months } from "../globalVariables.js";
+import { Seo } from "../components/SEO";
+
 import "../styles/entity.scss";
 
 const parseString = require("xml2js").parseString;

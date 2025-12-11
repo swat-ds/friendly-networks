@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import {documentTnLookup} from '../globalVariables'
+
 import Card from 'react-bootstrap/Card'
+
+import {documentTnLookup} from '../globalVariables'
+
 import "../styles/card.scss";
 
 const DocumentCard = ({ node }) => {

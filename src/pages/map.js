@@ -1,6 +1,8 @@
 import React from "react";
-import {useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+
 import Layout from "../components/Layout";
 import Map from "../components/Map"
 

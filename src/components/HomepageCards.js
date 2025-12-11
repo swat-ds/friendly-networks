@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Row, Col, Card } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
 
 

@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { Link, navigate } from "gatsby";
+
 import { AiOutlineHome } from "react-icons/ai";
+
 import "../styles/styles.scss";
 import "../styles/nav.scss";
+
 import logo from "../../content/assets/images/Logo.png";
 import background from "../../content/assets/images/HuntSiteHeader.jpg";
-import { globalVariables } from "../globalVariables";
 
 import {
   Form,

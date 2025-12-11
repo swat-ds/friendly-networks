@@ -1,9 +1,11 @@
 import React from 'react'
 import {Link} from 'gatsby'
+
 import {Button} from 'react-bootstrap'
+import {BsBoxArrowRight} from 'react-icons/bs'
+
 import "../styles/styles.scss";
 import "../styles/card.scss";
-import {BsBoxArrowRight} from 'react-icons/bs'
 
 /**
  * Creates a bootstrap card for each of the @relation. Each card contains some brief info about the

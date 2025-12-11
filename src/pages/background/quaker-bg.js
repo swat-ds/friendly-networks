@@ -1,10 +1,13 @@
 import React from "react";
+
+import {Row} from 'react-bootstrap';
+
+import HomepageCards from "../../components/HomepageCards"
 import Layout from "../../components/Layout";
 import { Seo } from "../../components/SEO";
-import {Row, Col} from 'react-bootstrap';
-import HomepageCards from "../../components/HomepageCards"
+
 // import "../../../assets/styles/pageStyles.scss";
-// import { Row, Col } from "react-bootstrap";
+
 // const appendixData = require("../../../assets/data/john_hunt_appendix.json");
 
 // Image imports

@@ -1,8 +1,11 @@
 import React from "react";
 import {Link} from 'gatsby'
-import "../styles/error.scss";
+
 import { Row, Col, Button } from "react-bootstrap";
+
 import { globalVariables } from "../globalVariables";
+
+import "../styles/error.scss";
 
 const Error = () => {
   return (

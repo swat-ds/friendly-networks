@@ -1,7 +1,10 @@
 import React from 'react'
+
+import {Row, Col, Card} from "react-bootstrap";
+
 import Layout from '../components/Layout'
 import { Seo } from "../components/SEO";
-import {Row, Col, Card} from "react-bootstrap";
+
 import "../styles/styles.scss"
 import "../styles/background.scss";
 

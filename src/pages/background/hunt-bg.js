@@ -1,9 +1,12 @@
 import React from "react";
+
+import { Row } from "react-bootstrap";
+
+import backgroundCards from "../../components/BackgroundCards"
 import Layout from "../../components/Layout";
 import { Seo } from "../../components/SEO";
-import { Row } from "react-bootstrap";
+
 import "../../styles/pageStyles.scss";
-import backgroundCards from "../../components/BackgroundCards"
 
 // Image imports
 import one from "../../../content/markdown/images/image1.jpg";

@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
+
 import { Table } from "react-bootstrap";
 import "../styles/entity.scss";
 

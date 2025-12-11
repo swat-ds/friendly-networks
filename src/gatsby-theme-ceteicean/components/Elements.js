@@ -1,10 +1,12 @@
 import React from "react";
-import { TEINodes } from "react-teirouter";
-// import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
-import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
 import {Link} from 'gatsby';
-import Popover from "react-bootstrap/Popover";
+
+import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
+import { TEINodes } from "react-teirouter";
+
+import "../../styles/ceteicean.scss";
 
 export const Note = (props) => {
 

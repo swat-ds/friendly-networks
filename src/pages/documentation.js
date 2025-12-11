@@ -1,9 +1,11 @@
 import React from "react";
-import Layout from "../components/Layout";
 import { Link } from "gatsby";
-import { globalVariables } from "../globalVariables";
 
 import { Row, Col, Button } from "react-bootstrap";
+
+import { globalVariables } from "../globalVariables";
+import Layout from "../components/Layout";
+
 
 const documentation = () => {
   return (

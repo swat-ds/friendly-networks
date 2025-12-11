@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Button } from "react-bootstrap";
+
 import L from "leaflet";
+import { Button } from "react-bootstrap";
 import { Popup, Marker, MapContainer, TileLayer, useMap } from 'react-leaflet'
 import TextPath from 'react-leaflet-textpath' 
 

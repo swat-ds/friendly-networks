@@ -1,8 +1,11 @@
 import React from "react";
+
 import {Container} from "react-bootstrap"
-import "../styles/styles.scss";
-import NavBar from './NavBar';
+
 import Footer from './Footer';
+import NavBar from './NavBar';
+
+import "../styles/styles.scss";
 
 /**
  *

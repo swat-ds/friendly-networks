@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+
 import { Row, Col, Card } from "react-bootstrap";
 
 const buildCard = (entity, index) => {

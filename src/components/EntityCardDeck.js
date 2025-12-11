@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Row, Table, Card, Col } from "react-bootstrap";
+
+import { Card, Col, Row } from "react-bootstrap";
+
 import "../styles/entity.scss";
+
 import hat from "../../content/assets/images/A00184813_hat.jpg";
 import bonnet from "../../content/assets/images/A00184806_bonnet.jpg";
 

@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from 'gatsby'
-import {
-    Row
-} from 'react-bootstrap';
+
+import { Row } from 'react-bootstrap';
+
 import {globalVariables, contacts} from '../globalVariables'
+
 import '../styles/styles.scss'
 import "../styles/footer.scss";
 
