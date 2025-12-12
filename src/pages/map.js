@@ -86,7 +86,7 @@ const MapPage = ({ data }) => {
         <Col id="map-col">
           <Map
             maxZoom={11}
-            minZoom={3}
+            minZoom={5}
             startZoom={7}
             json={maps[currentMap].data}
             key={currentMap}

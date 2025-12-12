@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef} from "react"
 import { Link } from "gatsby";
 
 import L from "leaflet";
@@ -13,6 +14,10 @@ const Map = (props) => {
   // Unpack props
   const {center, maxZoom, minZoom, startZoom, json, path} = props;
   
+  // Make a list of useRefs to hold all the geoJSON markers in order
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const refs = json.features.filter(x => x.geometry.type === "Point").map(x => useRef(null))
+
   const PopupContent = ({feature}) => {    
     
     // Name and State
@@ -63,37 +68,35 @@ const MapNavButton = ({index, direction}) => {
   const map = useMap()
 
   // Calculate target index
-  const target = direction === "Next" ? index-1 : index+1;
-
-  // Look for relevant layer
-  const layers = Object.values(map._layers).filter( 
-    el => el?.options?.id === target
-  )
+  const target = direction === "Next" ? index+1 : index-1;
+  console.log(direction, target);
   
-  // Exit if no relevant marker exists (e.g., first/last in sequence)
-  if (layers.length === 0) {return null}
-
-  const layer = layers[0]
+  // Exit if trying to go out of list bounds
+  if (target < 0 || target >= refs.length) {return null}
+  
+  // Retrieve relevant useRef from list
+  const marker = refs[target].current
 
   return (
-  <Button 
-    variant="secondary" 
-    onClick={() => {
-      // Set fly speed based on proximity
-      const speed = map.getBounds().contains(layer._latlng) ? 0.5 : 1
-      map.flyTo(
-        layer._latlng, maxZoom, {duration: speed, animate: true}
-      )
-      // Only open new popup after zoom finishes, to prevent vector layer lag
-      map.once('zoomend', () => {
-        setTimeout(() => {
-          layer.openPopup()
+    <Button 
+      variant="secondary" 
+      onClick={() => {
+        // Set fly speed based on proximity
+        const speed = map.getBounds().contains(marker.getLatLng()) ? 0.5 : 1
+        map.flyTo(
+          marker.getLatLng(), maxZoom, {duration: speed, animate: true}
+        )
+
+        // Only open new popup after zoom finishes, to prevent vector layer lag
+        map.once('zoomend', () => {
+          setTimeout(() => {
+            marker.openPopup()
+          })
         })
-      })
-    }}
-    >
-      {direction}
-    </Button>)
+      }}
+      >
+        {direction}
+      </Button>)
 }
 
   // Define a small component to call fitBounds
@@ -132,7 +135,7 @@ const MapNavButton = ({index, direction}) => {
          minZoom={minZoom}
          subdomains={['mt0','mt1','mt2','mt3']}
        />
-        {json.features.toReversed().map((feature, index) => {
+        {json.features.map((feature, index) => {
           if (feature.geometry.type === "LineString") {
             // Flip coordinates to lat,lng instead of lng,lat
             const points = feature.geometry.coordinates.map(point => [point[1], [point[0]]])
@@ -147,7 +150,7 @@ const MapNavButton = ({index, direction}) => {
           }
           if (feature.geometry.type === "Point") {
             return(
-                <Marker id={index} position={[
+                <Marker ref={refs[index]} position={[
                     feature.geometry.coordinates[1],
                     feature.geometry.coordinates[0]
                   ]}>
