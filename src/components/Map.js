@@ -132,7 +132,7 @@ const MapNavButton = ({index, direction}) => {
          minZoom={minZoom}
          subdomains={['mt0','mt1','mt2','mt3']}
        />
-        {json.features.reverse().map((feature, index) => {
+        {json.features.toReversed().map((feature, index) => {
           if (feature.geometry.type === "LineString") {
             // Flip coordinates to lat,lng instead of lng,lat
             const points = feature.geometry.coordinates.map(point => [point[1], [point[0]]])
