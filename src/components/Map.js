@@ -69,7 +69,6 @@ const MapNavButton = ({index, direction}) => {
 
   // Calculate target index
   const target = direction === "Next" ? index+1 : index-1;
-  console.log(direction, target);
   
   // Exit if trying to go out of list bounds
   if (target < 0 || target >= refs.length) {return null}
