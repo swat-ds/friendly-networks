@@ -46,10 +46,6 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
         x++;
         constellations.push(result);
       }
-      // TODO: Delete this debugging code
-      if (x > 70) {
-        break
-      }
   }
 
   console.log(constellations.length)
