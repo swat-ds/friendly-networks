@@ -8,7 +8,7 @@ import { Card, Col, Row } from "react-bootstrap";
 import { months } from "../globalVariables.js";
 import Layout from "./Layout";
 import Map from "./Map";
-import RelationCardDeck from "./RelationCardDeck";
+import RelationTable from "./RelationTable.js";
 import { Seo } from "../components/SEO";
 
 import "../styles/entity.scss";
@@ -492,7 +492,7 @@ const Person = (props) => {
     }
     if (existentRelations.length > 0) {
       return (
-        <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
+        <RelationTable relationDeck={existentRelations}></RelationTable>
       );
     }
     return <p>None</p>;
