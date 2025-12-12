@@ -2,7 +2,7 @@
 import React from "react";
 import {graphql} from "gatsby";
 
-import { Row, Col, Card } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
 //Local imports
 import { months } from "../globalVariables.js";
@@ -66,9 +66,6 @@ const Person = (props) => {
     allArks,
     arkRegex,
   } = props.pageContext;
-
-  // console.log("data", props.data);
-  const tei = props.data.allCetei.nodes;
 
   /**
    * Extracts the bio of the @biogHist and renders it

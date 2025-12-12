@@ -1,9 +1,11 @@
+
 import React from "react";
 import { graphql } from "gatsby";
 
-import EntityCardDeck from  "../components/EntityCardDeck"
 import Layout from "../components/Layout";
+import EntityCardDeck from  "../components/EntityCardDeck"
 import { Seo } from "../components/SEO";
+
 
 const people = ({ data }) => {
   let deck = data.allConstellation.nodes

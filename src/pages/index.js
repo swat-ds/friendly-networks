@@ -2,8 +2,8 @@ import React from "react";
 
 import { Row, Col } from "react-bootstrap";
 
-import HomepageCards from "../components/HomepageCards"
 import Layout from "../components/Layout";
+import HomepageCards from "../components/HomepageCards"
 import { Seo } from "../components/SEO";
 
 import "../styles/styles.scss";

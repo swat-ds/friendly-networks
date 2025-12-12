@@ -3,8 +3,8 @@ import { graphql } from "gatsby";
 
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 
-import JournalCard from "../components/JournalCard";
 import Layout from "../components/Layout";
+import JournalCard from "../components/JournalCard";
 import { Seo } from "../components/SEO";
 
 import "../styles/pageStyles.scss"

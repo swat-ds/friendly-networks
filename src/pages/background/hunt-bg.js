@@ -2,8 +2,8 @@ import React from "react";
 
 import { Row } from "react-bootstrap";
 
-import backgroundCards from "../../components/BackgroundCards"
 import Layout from "../../components/Layout";
+import backgroundCards from "../../components/BackgroundCards"
 import { Seo } from "../../components/SEO";
 
 import "../../styles/pageStyles.scss";

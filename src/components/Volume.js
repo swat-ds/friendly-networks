@@ -4,8 +4,8 @@ import { Link, navigate, graphql } from "gatsby";
 
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 
-import ShadowedCeteicean from "../gatsby-theme-ceteicean/components/Ceteicean";
 import Layout from "./Layout";
+import ShadowedCeteicean from "../gatsby-theme-ceteicean/components/Ceteicean";
 import { Seo } from "../components/SEO";
 import Viewer from "./Viewer";
 
