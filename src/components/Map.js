@@ -64,6 +64,36 @@ const Map = (props) => {
     )
   }
 
+function toMarker(index, refs, map) {
+  console.log(`In toMarker(${index})`);
+
+  // Get & dereference the useRef for the relevant marker
+  const marker = refs[index].current
+  if (! marker) {
+    console.log("babye");
+    return null
+  };
+  console.log("index", index);
+  console.log("ref", refs[index])
+  console.log("marker", marker);
+  console.log("coords", marker.getLatLng());
+  
+  // Set fly speed based on proximity
+  const speed = map.getBounds().contains(marker.getLatLng()) ? 0.5 : 1
+
+  // Execute fly maneuver
+  map.flyTo(
+    marker.getLatLng(), maxZoom, {duration: speed, animate: true}
+  )
+
+  // Open marker's popup (only after zoom finishes, to prevent vector layer lag)
+  map.once('zoomend', () => {
+    setTimeout(() => {
+      marker.openPopup()
+    })
+  })
+}
+
 const MapNavButton = ({index, direction}) => {
   const map = useMap()
 
@@ -72,30 +102,29 @@ const MapNavButton = ({index, direction}) => {
   
   // Exit if trying to go out of list bounds
   if (target < 0 || target >= refs.length) {return null}
-  
-  // Retrieve relevant useRef from list
-  const marker = refs[target].current
 
   return (
     <Button 
       variant="secondary" 
-      onClick={() => {
-        // Set fly speed based on proximity
-        const speed = map.getBounds().contains(marker.getLatLng()) ? 0.5 : 1
-        map.flyTo(
-          marker.getLatLng(), maxZoom, {duration: speed, animate: true}
-        )
-
-        // Only open new popup after zoom finishes, to prevent vector layer lag
-        map.once('zoomend', () => {
-          setTimeout(() => {
-            marker.openPopup()
-          })
-        })
-      }}
+      onClick={() => toMarker(target, refs, map)}
       >
         {direction}
       </Button>)
+}
+
+const StartButton = (hasPath) => {
+  const map = useMap()
+
+  if (! hasPath) {return}
+  return (
+    <Button 
+      id="to-start" 
+      className="leaflet-control leaflet-bar" 
+      onClick={ () => toMarker(0, refs, map)}
+    >
+      Start
+    </Button>
+  )
 }
 
   // Define a small component to call fitBounds
@@ -128,12 +157,13 @@ const MapNavButton = ({index, direction}) => {
           minZoom={minZoom}
           /> */}
         <TileLayer
-         attribution='Tiles &copy; Google &mdash; Source: Google'
-         url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
-         maxZoom={maxZoom}
-         minZoom={minZoom}
-         subdomains={['mt0','mt1','mt2','mt3']}
-       />
+          attribution='Tiles &copy; Google &mdash; Source: Google'
+          url='http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}'
+          maxZoom={maxZoom}
+          minZoom={minZoom}
+          subdomains={['mt0','mt1','mt2','mt3']}
+        />
+        <StartButton hasPath={path} /> 
         {json.features.map((feature, index) => {
           if (feature.geometry.type === "LineString") {
             // Flip coordinates to lat,lng instead of lng,lat
