@@ -109,8 +109,8 @@ const NavBar = (props) => {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link as={Link} to="/map" activeClassName="active">
-                    Map
+                  <Nav.Link as={Link} to="/maps" activeClassName="active">
+                    Maps
                   </Nav.Link>
                 </Nav.Item>
                 <NavDropdown title="Background" id="background-dropdown">
