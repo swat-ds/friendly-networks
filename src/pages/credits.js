@@ -20,7 +20,7 @@ const credits = () => {
 
 	                <h2>Staff</h2>
 
-	                <h3>Project Manager (2021–2024)</h3>
+	                <h3>Project Manager (2021–2026)</h3>
 	                <ul style={{listStyleType: "none"}}>
 	                  <li>James Truitt, Digital Archivist</li>
 	                </ul>
@@ -43,13 +43,14 @@ const credits = () => {
 
 					<h2>Student Contributors</h2>
 
-					<h3>Web developer</h3>
+					<h3>Web Developer</h3>
 					<ul style={{listStyle: "none"}}>
 						<li>Zakir Hossain &rsquo;24</li>
 					</ul>
 
 					<h3>Research Assistants</h3>
 					<ul style={{listStyle: "none"}}>
+						<li>Victoria Kimmel &rsquo;25</li>
 						<li>Lyra Edgerington &rsquo;27</li>
 						<li>Ayodeji George &rsquo;21</li>
 						<li>Anna Chaewon Jeong &rsquo;23</li>
