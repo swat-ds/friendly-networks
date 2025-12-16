@@ -49,7 +49,7 @@ const Map = (props) => {
     }
     var link;
     if (feature.properties.link) {
-      link = <strong><Link to={feature.properties.link}>Journal Entry</Link></strong>
+      link = <strong><Link to={feature.properties.link } target="_blank">Journal Entry</Link></strong>
     }
     return (
       <div>
@@ -122,7 +122,7 @@ const StartButton = (hasPath) => {
       className="leaflet-control leaflet-bar" 
       onClick={ () => toMarker(0, refs, map)}
     >
-      Start
+      To Start
     </Button>
   )
 }
