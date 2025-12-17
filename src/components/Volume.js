@@ -165,7 +165,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
         .then(() => setFetched(true))
       return imageUrls
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
     
     if (imageUrls.length !== pids.length && imagesFetched ) {
       console.warn("Mismatch between number of images & number of pagebreaks!");

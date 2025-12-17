@@ -10,7 +10,7 @@ const Viewer = ({ tileSources, currentPage }) => {
     if (tileSources && viewer) {
       viewer.goToPage(currentPage);
     }
-  }, [currentPage, tileSources.length, viewer]);
+  }, [currentPage, tileSources.length, viewer]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // When the component mounts, check if window and document are available.
   // If they aren't, then we can't render the viewer.
@@ -42,7 +42,7 @@ const Viewer = ({ tileSources, currentPage }) => {
         InitOpenSeadragon(viewer, tileSources);
       });
     }
-  }, [tileSources.length]);
+  }, [tileSources.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div
