@@ -48,7 +48,7 @@ const Viewer = ({ tileSources, currentPage }) => {
     <div
       id="openseadragon"
       ref={viewerRef}
-      style={{ height: "85vh", width: "100%" }}
+      style={{ height: "100%", width: "100%" }}
     />
   );
 };

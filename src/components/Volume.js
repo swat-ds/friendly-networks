@@ -285,7 +285,24 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
       // Set currentPage useEffect, if not already at appropriate value
       if (pageNum !== currentPage) {
+        const decreasing = pageNum < currentPage ? 1 : 0
         setPage(pageNum)
+
+        // CSS tricks
+        const tscpt = containerRef.current
+        const parent = tscpt.parentElement
+        const label = tscpt.querySelectorAll('.page-num')[pageNum + decreasing]
+        const horizontal = tscpt.querySelectorAll('hr')[pageNum + decreasing]
+        parent.style.color = 'var(--bs-info)'
+        label.style.color = 'var(--bs-info)'
+        horizontal.style.color = 'var(--bs-info)'
+        horizontal.style.backgroundColor = 'var(--bs-info)'
+        setTimeout(() => {
+          parent.style.color = 'var(--bs-primary)'; 
+          label.style.color = 'var(--bs-primary)'; 
+          horizontal.style.color = 'var(--bs-primary)'; 
+          horizontal.style.backgroundColor = 'var(--bs-primary)'; 
+        }, 500)
       }
     };
 
