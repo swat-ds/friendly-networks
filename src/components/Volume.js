@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, navigate, graphql } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
 
@@ -311,6 +311,13 @@ let counter = 0; // counter to track the index of each transcript (cetei)
       <Row id="main-row">
         <Row>
           <h1 className="general-text header3">{getTitle(jsonPrefixed)}</h1>
+          <p>
+            Click, drag, and zoom in the viewer on the left to explore an image from the original manuscript.
+            See the righthand panel for an annotated transcript.
+          </p>
+          <p>
+             To see more page images, scroll through the transcript or click on the arrows above the text.
+          </p>
         </Row>
         <div id="image-tool">
           {/* <IconContext.Provider value={{ className: "left-arrow-icon" }}> */}
