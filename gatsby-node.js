@@ -6,6 +6,7 @@ const Volume = require.resolve(`./src/components/Volume.js`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
+const { log } = require("console");
 
 //Creates nodes for the markdown, which are used later to create pages.
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -24,7 +25,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // Pull in constellation data and add to GraphQL
 let constellations = [];
-exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
+exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
   const { createNode } = actions;
   console.log("(1)", "read");
 
@@ -40,6 +41,7 @@ exports.sourceNodes = async ({actions,createNodeId, createContentDigest}) => {
         // timeout: 10000,
       });
       let result = await fetchConstellation()
+      console.log(i, x, result.status, result.data.timing);
       if("constellation" in result.data){
         x++;
         constellations.push(result);

@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../styles/card.scss";
-import {documentTnLookup} from '../globalVariables'
+
 import Card from 'react-bootstrap/Card'
+
+import {documentTnLookup} from '../globalVariables'
+
+import "../styles/card.scss";
 
 const DocumentCard = ({ node }) => {
   const titleArray = node.title.split(/, (?=\d|undated)/);

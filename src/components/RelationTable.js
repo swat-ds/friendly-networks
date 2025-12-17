@@ -1,13 +1,14 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
+
 import { Table } from "react-bootstrap";
 import "../styles/entity.scss";
 
 
-const RelationCardDeck = ({ relationDeck }) => {
+const RelationTable = ({ relationDeck }) => {
 
   const data = useStaticQuery(graphql`
-    query {
+    query ConstellationQuery {
       allConstellation {
         nodes {
           arkId
@@ -95,4 +96,4 @@ const RelationCardDeck = ({ relationDeck }) => {
   );
 };
 
-export default RelationCardDeck;
+export default RelationTable;

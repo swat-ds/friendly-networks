@@ -1,9 +1,11 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+
 import Fuse from "fuse.js";
+import { Card, Row, Col, Tab, Tabs, Badge } from "react-bootstrap";
+
 import Layout from "../components/Layout";
 import { Seo } from "../components/SEO";
-import { Card, Row, Col, Tab, Tabs, Badge } from "react-bootstrap";
 
 import "../styles/styles.scss";
 

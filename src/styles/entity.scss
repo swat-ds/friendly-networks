@@ -52,6 +52,7 @@ table#relations-table {
 
 table#relations-table *{
   color: var(--bs-secondary);
+  background-color: rgba(0,0,0,0);
 }
 
 .rel-col, .name-col{

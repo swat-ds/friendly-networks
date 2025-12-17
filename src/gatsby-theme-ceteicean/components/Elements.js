@@ -1,11 +1,12 @@
 import React from "react";
-import { TEINodes } from "react-teirouter";
-// import { Behavior } from "gatsby-theme-ceteicean/src/components//Behavior";
-import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
-import "../../styles/ceteicean.scss";
 import {Link} from 'gatsby';
-import Popover from "react-bootstrap/Popover";
+
+import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
+import { TEINodes } from "react-teirouter";
+
+import "../../styles/ceteicean.scss";
 
 export const Note = (props) => {
 
@@ -414,9 +415,7 @@ export const Table = (props) => {
   return(
     <Behavior node={props.teiNode}>
       <table className={tableType}>
-        <tbody>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
-        </tbody>
       </table>
       <br/>
     </Behavior>
@@ -436,13 +435,25 @@ export const TableRow = (props) => {
     };
   }
 
-  return(
+  // Lay out the main content of the row which we'll return
+  let row = (
     <Behavior node={props.teiNode}>
       <tr className={className}>
         {<TEINodes teiNodes={props.teiNode.childNodes} {...props} />}
       </tr>
     </Behavior>
-  );
+  )
+
+  // If this is a header row (type=label), wrap the row in the <thead> element
+  if (props.teiNode?.attributes?.getNamedItem("role")?.value === 'label') {
+    return(
+      <thead>
+        {row}
+      </thead>
+    );
+  } else { // Otherwise just return the plain row
+    return row
+  }
 };
 
 export const TableCell = (props) => {

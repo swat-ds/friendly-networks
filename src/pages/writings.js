@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
-import {useState } from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import { Seo } from "../components/SEO";
-import JournalCard from "../components/JournalCard";
+
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+
+import Layout from "../components/Layout";
+import JournalCard from "../components/JournalCard";
+import { Seo } from "../components/SEO";
+
 import "../styles/pageStyles.scss"
-import { filter } from "d3";
 
 const parseString = require("xml2js").parseString;
 var xpath = require("xml2js-xpath");

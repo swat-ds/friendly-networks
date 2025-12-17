@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
-import { Seo } from "../components/SEO";
-import HomepageCards from "../components/HomepageCards"
+
 import { Row, Col } from "react-bootstrap";
+
+import Layout from "../components/Layout";
+import HomepageCards from "../components/HomepageCards"
+import { Seo } from "../components/SEO";
+
 import "../styles/styles.scss";
 
 // Import images

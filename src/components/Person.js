@@ -1,14 +1,16 @@
 //Package imports
 import React from "react";
 import {graphql} from "gatsby";
-import { Row, Col, Card } from "react-bootstrap";
+
+import { Card, Col, Row } from "react-bootstrap";
 
 //Local imports
-import Layout from "./Layout";
-import { Seo } from "../components/SEO";
-import Map from "./Map";
-import RelationCardDeck from "./RelationCardDeck";
 import { months } from "../globalVariables.js";
+import Layout from "./Layout";
+import Map from "./Map";
+import RelationTable from "./RelationTable.js";
+import { Seo } from "../components/SEO";
+
 import "../styles/entity.scss";
 
 const parseString = require("xml2js").parseString;
@@ -64,9 +66,6 @@ const Person = (props) => {
     allArks,
     arkRegex,
   } = props.pageContext;
-
-  // console.log("data", props.data);
-  const tei = props.data.allCetei.nodes;
 
   /**
    * Extracts the bio of the @biogHist and renders it
@@ -493,7 +492,7 @@ const Person = (props) => {
     }
     if (existentRelations.length > 0) {
       return (
-        <RelationCardDeck relationDeck={existentRelations}></RelationCardDeck>
+        <RelationTable relationDeck={existentRelations}></RelationTable>
       );
     }
     return <p>None</p>;

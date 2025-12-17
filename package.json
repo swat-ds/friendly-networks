@@ -1,8 +1,8 @@
 {
-  "name": "obf",
+  "name": "friendly-networks",
   "version": "1.0.0",
   "private": true,
-  "description": "obf",
+  "description": "Static site for the Friendly Networks project",
   "keywords": [
     "gatsby"
   ],
@@ -20,7 +20,7 @@
     "d3": "^7.0.3",
     "ftellipsis": "^0.2.3",
     "fuse.js": "^6.4.6",
-    "gatsby": "^4.5.4",
+    "gatsby": "^4.24.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^2.5.2",
@@ -43,7 +43,8 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-is": "^17.0.2",
-    "react-leaflet": "^4.0.0",
+    "react-leaflet": "^3.0.0",
+    "react-leaflet-textpath": "^2.1.1",
     "sass": "^1.42.0",
     "styled-components": "^5.3.1",
     "timers": "^0.1.1",

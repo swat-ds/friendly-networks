@@ -1,13 +1,16 @@
 import React, { useMemo } from "react";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, navigate, graphql } from "gatsby";
-import "../styles/volume.scss";
-import "../styles/styles.scss";
+
 import { Row, Button, Col, Form, InputGroup, Card } from "react-bootstrap";
+
 import Layout from "./Layout";
-import Viewer from "./Viewer";
 import ShadowedCeteicean from "../gatsby-theme-ceteicean/components/Ceteicean";
 import { Seo } from "../components/SEO";
+import Viewer from "./Viewer";
+
+import "../styles/styles.scss";
+import "../styles/volume.scss";
 
 
 
@@ -57,6 +60,9 @@ async function fetchAsync(url) {
  */
 function getImageUrls(manifest) {
   const iiifCanvases = manifest.sequences[0].canvases
+  if (! iiifCanvases) {
+    return null // Handle this downstack by calling up …/manifest-single
+  }
   const urls = iiifCanvases.map(canvas => canvas.images[0].resource.service["@id"])
   return urls
 }
@@ -161,7 +167,9 @@ let counter = 0; // counter to track the index of each transcript (cetei)
     const imageUrls = useMemo(() => {
       const imageUrls = []
       const nodeId = getNodeId(jsonPrefixed)
-      const url = `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`
+      const url = nodeId === '488797' 
+        ? `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest-single`
+        : `https://digitalcollections.tricolib.brynmawr.edu/node/${nodeId}/manifest`;
       const manifest = fetchAsync(url) // Get IIIF presentation manifest
       manifest.then(data => imageUrls.push(...getImageUrls(data)))
         .then(() => setFetched(true))

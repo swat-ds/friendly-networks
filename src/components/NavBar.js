@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { Link, navigate } from "gatsby";
+
 import { AiOutlineHome } from "react-icons/ai";
+
 import "../styles/styles.scss";
 import "../styles/nav.scss";
+
 import logo from "../../content/assets/images/Logo.png";
 import background from "../../content/assets/images/HuntSiteHeader.jpg";
-import { globalVariables } from "../globalVariables";
 
 import {
   Form,
@@ -104,6 +106,11 @@ const NavBar = (props) => {
                 <Nav.Item>
                   <Nav.Link as={Link} to="/network" activeClassName="active">
                     Network
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/maps" activeClassName="active">
+                    Maps
                   </Nav.Link>
                 </Nav.Item>
                 <NavDropdown title="Background" id="background-dropdown">

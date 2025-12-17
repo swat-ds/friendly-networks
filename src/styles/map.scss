@@ -6,10 +6,56 @@ div.leaflet-popup h3 {
   font-size: 1rem;
 }
 
-div#map-row div.leaflet-bar a {
+div div.leaflet-bar a {
   background-color: var(--bs-primary);
   &:hover, &:hover span, &.leaflet-disabled, &.leaflet-disabled span {
     background-color: var(--bs-secondary);
     color: var(--bs-primary);
   }
+}
+
+.leaflet-marker-icon {
+  // Change icon color to match primary green
+ filter: hue-rotate(-135.9deg) saturate(58%) brightness(95%); 
+}
+
+#map-choice {
+  display: flex;
+  align-items: stretch;
+  * {
+    vertical-align: middle;
+    color: var(--bs-secondary);
+    text
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  padding-bottom: 12px;
+}
+
+#map-row .leaflet-container {
+  height: 600px;
+}
+
+#map-col .leaflet-container {
+  height: 65vh;
+  margin-bottom: 12px;
+}
+
+div.mapButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+    button {
+    margin: 1px;
+  }
+}
+
+#to-start {
+  // z-index: 400;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--bs-secondary);
 }

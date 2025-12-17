@@ -1,9 +1,10 @@
 import React from "react";
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useRef, useState, useEffect } from "react";
 import { navigate } from "gatsby"
+
 import * as d3 from "d3";
 import { Row, Col, Button, Card } from "react-bootstrap";
-// import "../assets/styles/styles.scss";
+
 import "../styles/network.scss";
 
 /**

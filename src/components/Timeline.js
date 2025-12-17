@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import '../styles/timeline.scss'
 import { months } from "../globalVariables";
+import '../styles/timeline.scss'
 /**
  *
  * @returns

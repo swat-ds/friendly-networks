@@ -69,7 +69,7 @@
 
 #brand {
   background-color: var(--bs-primary);
-  padding: 8px;
+  padding: 6px;
   border-radius: 3px;
 }
 
@@ -146,7 +146,7 @@
 @media only screen and (min-width: 768px){
   .navbar-nav{
     display: flex;
-    column-gap: 2%;
+    column-gap: 1.5%;
   }
 
   .nav-item {

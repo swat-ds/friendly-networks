@@ -1,8 +1,9 @@
 import React from "react";
-import Layout from "../components/Layout";
-import { Seo } from "../components/SEO";
-import Network from "../components/Network";
 import { graphql } from "gatsby";
+
+import Layout from "../components/Layout";
+import Network from "../components/Network";
+import { Seo } from "../components/SEO";
 
 // const fs = require('fs')
 // const nodes = require("../assets/data/dataTable.json");

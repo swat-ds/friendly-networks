@@ -1,6 +1,6 @@
 import React from 'react'
-import Error from '../components/Error'
 import Layout from '../components/Layout'
+import Error from '../components/Error'
 
 const error = () => {
     return (

@@ -14,7 +14,8 @@ p, p * {
 
 a,
 p a,
-.background-col a {
+.background-col a,
+#map-col a {
   color: var(--bs-info);
   text-decoration-color: var(--bs-info);
 
