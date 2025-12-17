@@ -66,7 +66,7 @@ export const Note = (props) => {
       overlay={popover}
      >
       <div class="wrapper">
-        <span className="general-text">[{title}]</span>
+       [{title}]
       </div>
       </OverlayTrigger>
     </Behavior>

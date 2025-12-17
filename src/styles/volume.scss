@@ -1,5 +1,5 @@
 #image-document-row {
-	height: 90vh;
+	height: 85vh;
 	display: flex;
 	flex-direction: row;
 	margin: 0;
@@ -8,11 +8,12 @@
 
 #image-col,
 #document-col {
-	height: 90vh;
+	height: 85vh;
 	resize: none;
 	
-	#document-image, #document-transcript {
-		border: 4px solid var(--bs-primary)
+	#document-image {
+		border: 4px solid var(--bs-primary);
+		border-radius: 6px;
 
 	}
 }
@@ -108,7 +109,7 @@
 
 #document-col {
 	display: flex;
-	color: var(--bs-primary);
+	color: var(--bs-secondary);
 
 	&::before, &::after {
 		align-self: center;
@@ -120,18 +121,16 @@
 	&::after {
 		content: '«';
 	}
-
-	#document-transcript {
-		color: var(--bs-secondary)
-	}
 }
 
 #document-transcript {
 	height: 85vh;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	padding: 2em;
 	color: var(--bs-secondary);
 	scroll-behavior: smooth;
+	border: none;
 }
 
 #document-next-prev-citation {

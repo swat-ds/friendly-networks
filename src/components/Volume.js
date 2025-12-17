@@ -292,16 +292,14 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         const tscpt = containerRef.current
         const parent = tscpt.parentElement
         const label = tscpt.querySelectorAll('.page-num')[pageNum + decreasing]
-        const horizontal = tscpt.querySelectorAll('hr')[pageNum + decreasing]
+        const counter = document.querySelector("#image-tool strong")
         parent.style.color = 'var(--bs-info)'
         label.style.color = 'var(--bs-info)'
-        horizontal.style.color = 'var(--bs-info)'
-        horizontal.style.backgroundColor = 'var(--bs-info)'
+        counter.style.color = 'var(--bs-info)'
         setTimeout(() => {
-          parent.style.color = 'var(--bs-primary)'; 
-          label.style.color = 'var(--bs-primary)'; 
-          horizontal.style.color = 'var(--bs-primary)'; 
-          horizontal.style.backgroundColor = 'var(--bs-primary)'; 
+          parent.style.color = 'var(--bs-secondary)'; 
+          label.style.color = 'var(--bs-secondary)'; 
+          counter.style.color = 'var(--bs-secondary)'; 
         }, 500)
       }
     };
@@ -374,7 +372,7 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
           <Col id="document-col">
             <div
-              className="general-text"
+              className="general-text card bg-primary text-secondary"
               id="document-transcript"
               ref={containerRef}
               onScroll={handleScroll}
