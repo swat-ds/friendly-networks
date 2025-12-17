@@ -175,27 +175,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
 
     const [currentPage, setPage] = useState(0)
 
-    const names = data.allCetei.nodes.map(node => node.parent.name).sort()
-    
-    // Navigate to next document
-    function getNextCetei() {
-      const name = pageContext.name
-      const index = names.indexOf(name)
-      if (index < names.length-1) {
-        navigate("/writings/" + names[index+1])
-      }
-    }
-    
- 		//Sets the current cetei to the previous cetei
- 		function getPrevCetei() {
-      const name = pageContext.name
-      const index = names.indexOf(name)
-      if (index > 0) {
-        navigate("/writings/" + names[index-1])
-       }
- 		}
-
-
     // Get reference to transcript container div using useRef
     const containerRef = useRef(null);
 
@@ -383,15 +362,6 @@ let counter = 0; // counter to track the index of each transcript (cetei)
         </Row>
         <Row id="document-next-prev-citation">
           <Col>
-            <Button 
-              id="prev-document"
-              variant="outline-warning"
-              role="link"
-              onClick={() => getPrevCetei()}
-              disabled={names.indexOf(pageContext.name) < 1}
-            >
-              Prev Document
-            </Button>
           </Col>
           <Col id="preferred-citation">
             <Card bg="primary">
@@ -407,38 +377,12 @@ let counter = 0; // counter to track the index of each transcript (cetei)
             </Card>
           </Col>
           <Col>
-            <Button
-              id="next-document"
-              variant="outline-warning"
-              role="link"
-              onClick={() => getNextCetei()}
-              disabled={names.indexOf(pageContext.name) >= names.length-1}
-            >
-              Next Document
-            </Button>
           </Col>
         </Row>
         </Row>
       </Layout>
   );
 };
-
-export const query = graphql`
-  {
-    allCetei {
-      totalCount
-      nodes {
-        original
-        parent {
-          ... on File {
-            id
-            name
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default Volume;
 
