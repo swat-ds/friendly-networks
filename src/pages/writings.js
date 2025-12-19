@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 
@@ -155,7 +155,8 @@ const genres = [
           Jersey, and cover over 50 years, from 1770 to Hunt’s death in 1824 
           (though little material has survived from 1800 to 1812).
           Evans’s journals begin with an autobiography and go on to detail 
-          his religious travels from Nova Scotia to Georgia in the 1790s.
+          his <Link to='/maps'>religious travels</Link> from Nova Scotia to Georgia 
+          in the 1790s.
           Both men’s journals document their advocacy for non-violence, the 
           abolition of slavery, and the fair treatment of Native Americans 
           and African Americans.
