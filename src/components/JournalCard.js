@@ -26,7 +26,7 @@ const DocumentCard = ({ node }) => {
   return(
     <Card bg="primary" className="document-card">
       <Link to={node.route}>
-        <Card.Img src={thumbnailUrl} alt=""/>
+        <Card.Img src={thumbnailUrl} alt="" variant="top"/>
         <Card.Body>
           <Card.Title>
             {title}
