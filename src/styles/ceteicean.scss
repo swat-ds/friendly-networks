@@ -118,6 +118,7 @@ q:has(> p) {
   margin: 0 auto;
   padding: 5px 5px;
   width: fit-content;
+  transform: translateZ(0); /* webkit flicker fix */
   -webkit-transform: translateZ(0); /* webkit flicker fix */
   -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
   user-select: none;
