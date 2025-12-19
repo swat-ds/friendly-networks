@@ -19,6 +19,18 @@ div div.leaflet-bar a {
  filter: hue-rotate(-135.9deg) saturate(58%) brightness(95%); 
 }
 
+#map-text {
+  margin-left: 12px;
+  padding-right: 0px;
+  width: calc(100% - 24px);
+
+  + .tab-content {
+   text-wrap: pretty;
+   padding: 0px 24px;
+  }
+}
+
+
 #map-choice {
   display: flex;
   align-items: stretch;

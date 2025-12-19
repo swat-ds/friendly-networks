@@ -122,7 +122,7 @@ const StartButton = (hasPath) => {
       className="leaflet-control leaflet-bar" 
       onClick={ () => toMarker(0, refs, map)}
     >
-      Go to Start
+      Beginning
     </Button>
   )
 }
