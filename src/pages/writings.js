@@ -49,13 +49,13 @@ function prepareNode(node){
 
   // Extract genre from TEI
   let genre
-  if (title.toLowerCase().includes("journal")){
-    genre = "Journals";
-  } else if (title.toLowerCase().includes("account")){
-    genre = "Account Books"
+  if (title.toLowerCase().includes("letter")){
+    genre = "Letters";
   } else {
-    genre = "Letters"
+    genre = "Journals"
   }
+
+  let date
 
   let preparedNode = {
     route: route ,
@@ -95,13 +95,14 @@ const [genreFilter, setGenre] = useState('');
 const genres = [
   {name: 'All', value: ''},
   {name: 'Journals', value: 'journal'},
-  {name: 'Letters', value: 'letter'},
-  {name: 'Accounts', value: 'account'}
+  {name: 'Letters', value: 'letter'}
 ];
+
+const [yearFilter, setYear] = useState([''], [''])
 
   var filteredNodes;
   filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
-  filteredNodes = filteredNodes.filter(x => x.title.toLowerCase().includes(genreFilter))
+  filteredNodes = filteredNodes.filter(x => x.genre.toLowerCase().includes(genreFilter))
 
   // Handle display of filter buttons: 
   const minWidth = 992;
