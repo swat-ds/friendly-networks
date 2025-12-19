@@ -15,12 +15,15 @@ body {
 #document-filter-group {
   display: flex;
   align-items: center;
-  * {
+
+  *:not(.btn-check:checked + .btn) {
     color: var(--bs-secondary);
+
     &:focus {
       box-shadow: none !important;
     }
   }
+
   padding-bottom: 12px;
 }
 
@@ -159,4 +162,9 @@ body {
     &:hover{
       transform: rotate3d(1, 0, -1, -5deg);
     }
+}
+
+.btn-check:checked + .btn {
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
 }

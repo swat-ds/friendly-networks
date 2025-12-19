@@ -36,11 +36,12 @@ div div.leaflet-bar a {
   align-items: stretch;
   * {
     vertical-align: middle;
-    color: var(--bs-secondary);
-    text
     &:focus {
       box-shadow: none !important;
     }
+  }
+  *:not(.btn-check:checked + .btn) {
+    color: var(--bs-secondary);
   }
   padding-bottom: 12px;
 }

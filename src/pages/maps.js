@@ -7,6 +7,8 @@ import { Row, Col, Tab, Tabs, ToggleButtonGroup, ToggleButton } from "react-boot
 import Layout from "../components/Layout";
 import Map from "../components/Map"
 
+import "../styles/pageStyles.scss"
+
 import { nj1 } from "/content/geodata/northern-journey-1.js"
 import { nj2 } from "/content/geodata/northern-journey-2.js"
 import { sj1 } from "/content/geodata/southern-journey-1.js"
