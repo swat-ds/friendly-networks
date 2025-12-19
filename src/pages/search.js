@@ -144,7 +144,7 @@ const search = ({ location, data }) => {
 
     return (
           <Link to={"/writings/" + result.item.name + hash} className="result-link">
-            <Card bg="primary" className="result-card">
+            <Card bg="primary" text="secondary" className="result-card">
               <Card.Header>
                 <Card.Title>{result.item.title}</Card.Title>
                 <Card.Subtitle>{result.item.id}</Card.Subtitle>
@@ -175,7 +175,7 @@ const search = ({ location, data }) => {
     return (
       <Row>
           <Link to={"/people/" + result.item.arkId} className="result-link">
-            <Card bg="primary" className="result-card">
+            <Card bg="primary" text="secondary" className="result-card">
               <Card.Header>
                 <Card.Title>{name}</Card.Title>
                 <Card.Subtitle>{date}</Card.Subtitle>
