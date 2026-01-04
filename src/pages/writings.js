@@ -151,13 +151,11 @@ const [yearFilter, setYear] = useState([''], [''])
          <h1>Writings</h1>
          <p>
             The writings of John Hunt and Joshua Evans are valuable sources for 
-            Quaker history in the late eighteenth and early nineteenth centuries.
-            Hunt’s journals focus on his daily life in Burlington County, New 
-            Jersey, and cover over 50 years, from 1770 to Hunt’s death in 1824 
-            (though little material has survived from 1800 to 1812).
-            Evans’s journals begin with an autobiography and go on to detail 
-            his <Link to='/maps'>religious travels</Link> as far as Nova Scotia 
-            and Georgia in the 1790s.
+            Quaker history in the late 18th and early 19th centuries.
+            Hunt’s journals record over 50 years of his daily life in Burlington 
+            County, New Jersey (1770–1824).
+            Evans’s journals  detail his <Link to='/maps'>religious travels</Link>
+            as far as Nova Scotia and Georgia in the 1790s.
             Both men’s journals document their advocacy for non-violence, the 
             abolition of slavery, and the fair treatment of Native Americans 
             and African Americans.
@@ -165,14 +163,13 @@ const [yearFilter, setYear] = useState([''], [''])
          <p>
             Several other sets of documents help contextualize these journals. 
             First, letters to and from Hunt, Evans, and their families  
-            illustratethe beliefs of other Friends in their network and their  
+            illustrate the beliefs of other Friends in their network and their  
             reactions to Hunt and Evans’s ministries. 
-            Next, Hunt’s account book provides more evidence for his economic 
-            life as a rural joiner and his financial relationships with many of 
-            the neighbors discussed in his journals. 
-            Finally, journals and correspondence from several women ministers 
+            Next, Hunt’s account book provides more insights into his financial 
+            relationships with many of the neighbors discussed in his journals. 
+            Finally, journals and correspondence from several female ministers 
             in Hunt and Evans’s network—Mercy Redman, Esther Hunt Collins, 
-            and Hannah Thornton Yarnall—offer a female perspective on Quaker 
+            and Hannah Thornton Yarnall—offer women's perspectives on Quaker 
             life in southern New Jersey and beyond.
          </p>
          <p>
