@@ -98,8 +98,6 @@ const genres = [
   {name: 'Letters', value: 'letter'}
 ];
 
-const [yearFilter, setYear] = useState([''], [''])
-
   var filteredNodes;
   filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
   filteredNodes = filteredNodes.filter(x => x.genre.toLowerCase().includes(genreFilter))
