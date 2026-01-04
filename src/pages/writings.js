@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 
-import { Row, Col, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+import { Row, Col, Tab, Tabs, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 
 import Layout from "../components/Layout";
 import JournalCard from "../components/JournalCard";
@@ -54,8 +54,6 @@ function prepareNode(node){
   } else {
     genre = "Journals"
   }
-
-  let date
 
   let preparedNode = {
     route: route ,
@@ -143,33 +141,88 @@ const genres = [
     );
   }
 
+  const documentSets = [
+    {
+      name: "All",
+      collection: "",
+      genre: ""
+    },
+    {
+      name: "Hunt journals",
+      collection: "John Hunt",
+      genre: "journal"
+    },
+    {
+      name: "Evans journals",
+      collection: "Evans",
+      genre: "journal"
+    },
+    {
+      name: "Hunt letters",
+      collection: "John Hunt",
+      genre: "letter"
+    },
+    {
+      name: "Evans letters",
+      collection: "Evans",
+      genre: "letter"
+    },
+    {
+      name: "Redman journal",
+      collection: "Redman",
+      genre: ""
+    },
+    {
+      name: "Collins letters",
+      collection: "Roberts",
+      genre: ""
+    },
+    {
+      name: "Yarnall items",
+      collection: "Yarnall",
+      genre: ""
+    },
+  ]
+
   return (
       <Layout>
        <Row id="main-row"><Col>
          <h1>Writings</h1>
          <p>
             The writings of John Hunt and Joshua Evans are valuable sources for 
-            Quaker history in the late 18th and early 19th centuries.
+            Quaker history in the late 18th and early 19th centuries. 
             Hunt’s journals record over 50 years of his daily life in Burlington 
-            County, New Jersey (1770–1824).
-            Evans’s journals  detail his <Link to='/maps'>religious travels</Link>
-            as far as Nova Scotia and Georgia in the 1790s.
+            County, New Jersey (1770–1824). 
+            Evans’s journals detail his <Link to='/maps'>religious travels</Link>  
+            as far as Nova Scotia and Georgia in the 1790s. 
             Both men’s journals document their advocacy for non-violence, the 
             abolition of slavery, and the fair treatment of Native Americans 
-            and African Americans.
+            and African Americans. 
          </p>
          <p>
             Several other sets of documents help contextualize these journals. 
-            First, letters to and from Hunt, Evans, and their families  
-            illustrate the beliefs of other Friends in their network and their  
+            Letters to and from Hunt, Evans, and their families illustrate 
+            the beliefs of other Friends in their network and their 
             reactions to Hunt and Evans’s ministries. 
-            Next, Hunt’s account book provides more insights into his financial 
-            relationships with many of the neighbors discussed in his journals. 
-            Finally, journals and correspondence from several female ministers 
-            in Hunt and Evans’s network—Mercy Redman, Esther Hunt Collins, 
-            and Hannah Thornton Yarnall—offer women's perspectives on Quaker 
-            life in southern New Jersey and beyond.
+            In addition, journals and correspondence from several female 
+            ministers in Hunt and Evans’s network—Mercy Redman, Esther Hunt 
+            Collins, and Hannah Thornton Yarnall—offer women's perspectives on 
+            Quaker life in southern New Jersey and beyond.
          </p>
+        <Tabs id="document-tabs" fill>
+          {documentSets.map(
+            set => <Tab eventKey={set.name} title={set.name}>
+              <Col id="document-card-col">
+                <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="document-card-row">
+                  {preparedNodes // Filter nodes and then render each one as card
+                    .filter(x => x.genre.toLowerCase().includes(set.genre))
+                    .filter(x => x.collection.includes(set.collection))
+                    .map(renderJournals)}
+                </Row>
+              </Col>
+            </Tab>
+          )}
+        </Tabs>
          <p>
             Click on a document card to browse images and transcripts of that 
             document.
@@ -181,7 +234,7 @@ const genres = [
         <Row style={{"flexWrap": "wrap-reverse", "alignItems": "start"}}>
             <Col id="document-card-col">
               <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="document-card-row">
-                  {filteredNodes.map(renderJournals)}
+                  {/* {filteredNodes.map(renderJournals)} */}
               </Row>
             </Col>
           <Col id="document-filter-col" sm={12} lg={1}>

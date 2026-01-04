@@ -168,3 +168,19 @@ body {
   color: var(--bs-primary);
   background-color: var(--bs-secondary);
 }
+
+#document-tabs {
+  flex-wrap: nowrap;
+  
+  &, & li:last-child, & li:last-child button {
+    border-top-right-radius: var(--bs-border-radius);
+  }
+
+  &, & li:first-child, & li:first-child button {
+    border-top-left-radius: var(--bs-border-radius);
+  }
+  
+  button {
+    height: 100%;
+  }
+}
