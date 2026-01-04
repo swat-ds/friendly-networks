@@ -143,11 +143,6 @@ const genres = [
 
   const documentSets = [
     {
-      name: "All",
-      collection: "",
-      genre: ""
-    },
-    {
       name: "Hunt journals",
       collection: "John Hunt",
       genre: "journal"
@@ -182,6 +177,11 @@ const genres = [
       collection: "Yarnall",
       genre: ""
     },
+    {
+      name: "All",
+      collection: "",
+      genre: ""
+    },
   ]
 
   return (
@@ -209,7 +209,7 @@ const genres = [
             Collins, and Hannah Thornton Yarnall—offer women's perspectives on 
             Quaker life in southern New Jersey and beyond.
          </p>
-        <Tabs id="document-tabs" fill>
+        <div id="tab-row"><Tabs id="document-tabs" fill>
           {documentSets.map(
             set => <Tab eventKey={set.name} title={set.name}>
               <Col id="document-card-col">
@@ -222,7 +222,7 @@ const genres = [
               </Col>
             </Tab>
           )}
-        </Tabs>
+        </Tabs></div>
          <p>
             Click on a document card to browse images and transcripts of that 
             document.
