@@ -183,6 +183,12 @@ body {
   button {
     height: 100%;
   }
+
+  + .tab-content p {
+    padding-left: 1vw;
+    padding-right: 5vw;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 767px){
