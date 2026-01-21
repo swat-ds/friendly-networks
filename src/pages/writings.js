@@ -76,57 +76,7 @@ const WritingsPage = ({ data }) => {
   preparedNodes.sort((a, b)=>{
     return a.detailedDateStr > b.detailedDateStr ? 1 : -1;
   })
-  
-  // Create a useState to filter which collections are shown
-  const [collFilter, setColl] = useState('');
-  const collections = [
-    {name: 'All', value: ''},
-    {name: 'Hunt', value: 'John Hunt'},
-    {name: 'Evans', value: 'Evans'},
-    {name: 'Redman', value: 'Redman'},
-    {name: 'Roberts', value: 'Roberts'},
-    {name: 'Yarnall', value: 'Yarnall'},
-  ];
 
-// Create a useState to filter which genres are shown
-const [genreFilter, setGenre] = useState('');
-const genres = [
-  {name: 'All', value: ''},
-  {name: 'Journals', value: 'journal'},
-  {name: 'Letters', value: 'letter'}
-];
-
-  var filteredNodes;
-  filteredNodes = preparedNodes.filter(x => x.collection.includes(collFilter))
-  filteredNodes = filteredNodes.filter(x => x.genre.toLowerCase().includes(genreFilter))
-
-  // Handle display of filter buttons: 
-  const minWidth = 992;
-  const [filterOnSide, setFilterOnSide] = useState(true)
-  useEffect(() => { // Check size of window on component load
-    if (window && window.innerWidth < minWidth) {
-      setFilterOnSide(false)
-    }
-    else if (window && window.innerWidth >= minWidth) {
-      setFilterOnSide(true)
-    }
-  }, [])
-  useEffect(() => {   // Keep track of window resize
-    const handleResize = () => {
-      if (window && window.innerWidth < minWidth) {
-        setFilterOnSide(false)
-      }
-      else if (window && window.innerWidth >= minWidth) {
-        setFilterOnSide(true)
-      }
-    };
-    if (window) {
-      window.addEventListener('resize', handleResize)
-      return () => {
-        window.removeEventListener('resize', handleResize)
-      };
-    }
-  }, [])
 
   // Create a grid of journal cards
   const renderJournals = (node, index)=>{
@@ -141,6 +91,7 @@ const genres = [
     );
   }
 
+  // Information for displaying each set of documents
   const documentSets = [
     {
       name: "Hunt journals",
@@ -222,8 +173,8 @@ const genres = [
       collection: "Yarnall",
       genre: "",
       text: <>
-        <Link to="/people/w6g77m31">Hannah Haines Thornton Yarnall</Link> 
-        was a Quaker minister, the widow of 
+        <Link to="/people/w6g77m31">Hannah Haines Thornton Yarnall</Link> was 
+        a Quaker minister, the widow of 
         minister <Link to="/people/w6hf8m7k">Joseph Thornton</Link>, 
         and the second wife of 
         minister <Link to="/people/w6kx66c3">Peter Yarnall</Link>. 
@@ -237,7 +188,8 @@ const genres = [
     {
       name: "All",
       collection: "",
-      genre: ""
+      genre: "",
+      text: ""
     },
   ]
 
@@ -267,73 +219,6 @@ const genres = [
             </Tab>
           )}
         </Tabs></div>
-         <p>
-            Click on a document card to browse images and transcripts of that 
-            document.
-            Use the buttons under "Filter by collection" and "Filter by genre"
-            {filterOnSide ?" on the right ":" above the cards "}
-            to filter which document cards are displayed, or click "All" to 
-            view all cards.
-        </p>
-        <Row style={{"flexWrap": "wrap-reverse", "alignItems": "start"}}>
-            <Col id="document-card-col">
-              <Row xs={2} md={3} lg={4} xl={5} xxl={6} id="document-card-row">
-                  {/* {filteredNodes.map(renderJournals)} */}
-              </Row>
-            </Col>
-          <Col id="document-filter-col" sm={12} lg={1}>
-            <div className="filter-label h6">Filter by collection</div>
-            <ToggleButtonGroup 
-              name="collection" 
-              type="radio"
-              defaultValue={''}
-              id="document-filter-group"
-              vertical={filterOnSide}
-            >
-              {collections.map((collection, idx) => (
-                <ToggleButton
-                  className="document-toggle-btn"
-                  key={idx}
-                  id={`collection-${idx}`}
-                  type="radio"
-                  variant="primary"
-                  name="collection"
-                  value={collection.value}
-                  checked={collFilter === collection.value}
-                  onChange={(e) => setColl(e.currentTarget.value)}
-                >
-                  {collection.name}
-                </ToggleButton>
-              ))}
-            </ToggleButtonGroup>
-
-            {/* Genres */}
-            <div className="filter-label h6">Filter by genre</div>
-            <ToggleButtonGroup 
-              name="genre" 
-              type="radio"
-              defaultValue={''}
-              id="document-filter-group"
-              vertical={filterOnSide}
-            >
-              {genres.map((genre, idx) => (
-                <ToggleButton
-                  className="document-toggle-btn"
-                  key={idx}
-                  id={`genre-${idx}`}
-                  type="radio"
-                  variant="primary"
-                  name="genre"
-                  value={genre.value}
-                  checked={genreFilter === genres.value}
-                  onChange={(e) => setGenre(e.currentTarget.value)}
-                >
-                  {genre.name}
-                </ToggleButton>
-              ))}
-            </ToggleButtonGroup>
-          </Col>
-        </Row>  
       </Col></Row>
       </Layout>
   );
