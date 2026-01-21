@@ -72,7 +72,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527605"/>
             <div type="letter">
                 <opener><dateline>Philadelphia 7 mo 2 1782</dateline>
                     <salute>Respected Friend</salute>
@@ -83,7 +83,7 @@
                     <signed>Hannah Cathrall</signed>
                 </closer>
             </div>
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527606"/>
                <closer>
                    <address><addrLine>For <persName key="w6hf8m7k">Joseph Thronton</persName></addrLine>
                    <addrLine>Byberry</addrLine>

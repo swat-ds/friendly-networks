@@ -72,7 +72,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527626"/>
             <div type="letter">
                 <opener>
                     <dateline>Pelham <date when="1803-10-04">10th mo 4th 1803</date> </dateline>
@@ -86,10 +86,10 @@
             
             <postscript><p><label>PS</label> Please to let <rs key="w6hv3dnq">grandmother Evans</rs> know how we are if you have any opportunity</p></postscript>
             
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527627"/>
                 <postscript><p><persName key="w6096wx2">James Thornton</persName></p></postscript>
             </div>
-            <pb n="003" facs="xxxxx"/>
+            <pb n="003" facs="527628"/>
             <closer>
                 <address><addrLine>Ruth Cadwallader</addrLine>
                 <addrLine>Byberry</addrLine>

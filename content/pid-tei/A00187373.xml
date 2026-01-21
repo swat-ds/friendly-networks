@@ -70,7 +70,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527630"/>
             <div type="letter">
                 <opener>
                     <salute>Dear Children</salute>
@@ -83,7 +83,7 @@
                 </closer>
             <postscript><p>No more at this time but my kind love to you all </p></postscript>
             </div>
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527631"/>
             <closer>
                 <address><addrLine>To <persName key="w6hf8m7k">Joseph Thornton</persName></addrLine>
                 <addrLine>in Byberry</addrLine></address>

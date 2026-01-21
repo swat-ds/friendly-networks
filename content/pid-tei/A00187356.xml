@@ -74,7 +74,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527574"/>
             <div type="letter">
                 <opener>
                     <salute>Respected <rs key="w6g77m31">Cousin</rs>,</salute>
@@ -90,7 +90,7 @@
                             </closer>
                             
                         </div>
-                        <pb n="002" facs="xxxxx"/>
+                        <pb n="002" facs="527575"/>
                         <closer>
                             <address><addrLine>To Hannah Thornton </addrLine>
                             <addrLine>These</addrLine></address>

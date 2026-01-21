@@ -72,7 +72,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527623"/>
             <div type="letter">
                 <opener>
                     <salute>Beloved <rs key="w6g77m31">Daughter</rs>,</salute>
@@ -84,7 +84,7 @@
                     <dateline><date when="1793-07-03">the 3rd of the 7th mo 1793</date></dateline>
                 </closer>
             </div>
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527624"/>
            <closer>
                <address><addrLine>To <persName key="w6g77m31">Hannah Thornton</persName></addrLine> 
                <addrLine>in Byberry</addrLine></address>

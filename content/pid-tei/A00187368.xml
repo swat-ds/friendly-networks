@@ -73,7 +73,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527614"/>
             <div type="letter">
             <opener>
                 <salute>Beloved <rs key="w6g77m31">Daughter</rs></salute>
@@ -86,7 +86,7 @@
             <dateline><date when="1793-01-14">the 14 of the 1 mo 1793</date></dateline>
             <postscript><p><label>PS</label> Don’t expect to come soon, but should be glad to see thee if the way opens</p></postscript>
             </div>
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527615"/>
             <closer>
                 <address><addrLine>To <persName key="w6g77m31">Hannah Thornton</persName></addrLine>
                 <addrLine>in Byberry</addrLine></address>

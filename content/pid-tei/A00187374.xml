@@ -74,7 +74,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="001" facs="xxxxx"/>
+            <pb n="001" facs="527633"/>
             <div type="letter">
            <opener>
                <dateline>Byberry <date when="1795-04-20">4th mo 20th 1795</date></dateline>
@@ -86,7 +86,7 @@
                 <signed><persName key="w6g77m31">Hannah Thornton</persName></signed>
             </closer>
             </div>
-            <pb n="002" facs="xxxxx"/>
+            <pb n="002" facs="527634"/>
             <closer>
                 <address><addrLine>To Martha Sharpless</addrLine>
                 <addrLine>at <persName key="w6kx66c3">Peter Yarnall’s</persName></addrLine></address>
